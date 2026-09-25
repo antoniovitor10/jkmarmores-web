@@ -1,0 +1,85 @@
+import type { Pendente } from "@/content/pendente";
+
+export type Texto = string | Pendente;
+export type FatoBooleano = boolean | Pendente;
+export type Imagem = {
+  src: Texto;
+  alt: Texto;
+  largura: number;
+  altura: number;
+  credito?: Texto;
+  licenca?: Texto;
+  provisoria?: FatoBooleano;
+};
+export type SeoPagina = { titulo: Texto; descricao: Texto; canonicalPath?: string; robots?: string; imagem?: Imagem };
+export type Cta = { texto: string; mensagem: string };
+export type Secao = { id: string; titulo: Texto; texto: Texto; imagem?: Imagem; cta?: Cta };
+export type PaginaInstitucional = { titulo: Texto; introducao: Texto; seo: SeoPagina; secoes: Secao[]; cta: Cta };
+export type Acabamento = { slug: string; nome: Texto; descricao?: Texto };
+export type Material = {
+  slug: string;
+  nome: Texto;
+  tipo: "granito" | "marmore" | "quartzito" | "quartzo" | "ultracompacto";
+  confirmado: boolean;
+  resumo: Texto;
+  descricao: Texto;
+  seo: SeoPagina;
+  imagem?: Imagem;
+  acabamentos: Acabamento[];
+  aplicacoes: string[];
+  caracteristicas?: Texto[];
+  cuidados?: Texto[];
+  imagens?: Imagem[];
+  cta: Cta;
+};
+export type Aplicacao = {
+  slug: string;
+  nome: Texto;
+  confirmado: boolean;
+  resumo: Texto;
+  descricao: Texto;
+  seo: SeoPagina;
+  imagem?: Imagem;
+  materiais: string[];
+  beneficios?: Texto[];
+  imagens?: Imagem[];
+  cta: Cta;
+};
+export type Projeto = {
+  slug: string;
+  titulo: Texto;
+  descricao: Texto;
+  materialSlug?: string;
+  aplicacaoSlug?: string;
+  imagens: Imagem[];
+  autorizado: boolean;
+  materialSlugs?: string[];
+  aplicacaoSlugs?: string[];
+};
+export type ItemGaleria = { id: string; imagem: Imagem; legenda: Texto; projetoSlug?: string };
+export type Empresa = {
+  nome: Texto;
+  nomeComercial?: Texto;
+  razaoSocial?: Texto;
+  cnpj?: Texto;
+  telefone: Texto;
+  whatsapp: Texto;
+  email?: Texto;
+  endereco: Texto;
+  enderecoDetalhado?: { logradouro?: Texto; numero?: Texto; complemento?: Texto; bairro?: Texto; cidade?: Texto; uf?: Texto; cep?: Texto; atendeNoLocal?: FatoBooleano };
+  cidade: Texto;
+  regiaoAtendida: Texto;
+  areaAtendida?: Texto[];
+  horario?: Texto;
+  horarios?: { dia: Texto; abre?: Texto; fecha?: Texto; fechado?: FatoBooleano }[];
+  redes?: { nome: string; url: Texto }[];
+  perfilGoogleUrl?: Texto;
+};
+export type ConteudoSite = {
+  empresa: Empresa;
+  paginas: { inicio: PaginaInstitucional; sobre: PaginaInstitucional; materiais: PaginaInstitucional; aplicacoes: PaginaInstitucional; galeria: PaginaInstitucional; contato: PaginaInstitucional };
+  materiais: Material[];
+  aplicacoes: Aplicacao[];
+  galeria: ItemGaleria[];
+  projetos: Projeto[];
+};
