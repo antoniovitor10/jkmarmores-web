@@ -66,6 +66,6 @@ Site anterior: existiu um WordPress de uma página em 2016 (Wayback). Não há U
 
 | # | Item | Prioridade | Status | Fonte / observação |
 |---|---|---|---|---|
-| T1 | Domínio | P0 | parcial | jkmarmores.com.br registrado (Registro.br), mas o DNS público está no padrão do Registro.br (a/b.auto.dns.br) sem registro A e sem www (verificado 25/09). Apontar para o Napoleão: registro A do apex + www, ou trocar os nameservers. Quem tem acesso ao Registro.br? |
-| T2 | Hospedagem | P0 | parcial | Servidor Napoleão (Vitor, 25/09). Conferir se o domínio já existe no DirectAdmin e emitir SSL depois do DNS |
+| T1 | Domínio e SSL | P0 | parcial | DNS do apex e do www apontando para o Napoleão (verificado 26/09). Falta emitir o Let's Encrypt no DirectAdmin: hoje o https serve o certificado do servidor (pro127.dnspro.net.br) |
+| T2 | Hospedagem e deploy | P0 | resolvido | Domínio criado no DirectAdmin; deploy automático via GitHub Actions funcionando desde 26/09 (docs/deploy.md) |
 | T3 | Acesso ao Google Search Console / Analytics, se existirem | P1 | aberto | |

@@ -102,4 +102,5 @@ Acessibilidade: WCAG 2.2 AA. SEO: conteúdo indexável sem JS, títulos e metade
 | 25/09/2026 | Aplicações ficam como páginas próprias só para as aplicações que a JK confirmar (O1). Projetos só viram páginas quando houver obras reais autorizadas; até lá, apenas galeria |
 | 25/09/2026 | Execução local autorizada pelo Vitor: Cinzel (Dev), Bussola (Estrategista) e Prisma (3D). Sem GitHub, push, SSH ou DNS nesta etapa. Briefings em docs/tarefas/ |
 | 25/09/2026 | SITE_MODE: `homolog` (noindex, robots Disallow, pendências visíveis) e `producao` (indexável; o build falha se houver pendente()) |
+| 26/09/2026 | Publicado em homolog em http://jkmarmores.com.br: repositório público antoniovitor10/jkmarmores-web, deploy automático por GitHub Actions + rsync, noindex ativo. Vitor testa em aparelhos reais. SSL pendente no DirectAdmin |
 | 25/09/2026 | Catálogo: estrutura para granito, mármore, quartzito, quartzo/industrializado e ultracompacto; só aparece o tipo que o Lucas confirmar |
