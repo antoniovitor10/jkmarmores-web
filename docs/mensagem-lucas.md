@@ -22,7 +22,7 @@ Agora o que ainda falta:
 5. Serviços que vocês fazem (ex.: bancadas de cozinha, lavatórios, escadas, pisos, soleiras e peitoris, fachadas, lareiras, instalação, polimento, restauração).
 6. Materiais que vocês trabalham, com o nome que vocês usam, e os 4 a 6 que mais saem, porque eles vão para a parte interativa do site.
 7. Fotos de trabalhos já feitos que podem ir para o site. Se der, diga o material e o bairro ou a cidade de cada uma, sem endereço de cliente.
-8. Fotos das chapas ou amostras dos materiais, se tiverem.
+8. Fotos das chapas ou amostras dos materiais, se tiverem. Se tiverem também a ficha técnica ou as orientações do fornecedor de cada material (onde pode usar, acabamentos, cuidados), manda junto, porque é isso que deixa a página de cada material útil de verdade.
 9. Vocês recebem clientes no endereço (showroom)? Fazem visita para medir? Passam orçamento por foto e medida pelo WhatsApp?
 10. Se quiserem, um pouco da história: desde quando a empresa existe e quem está à frente.
 11. Quem tem o acesso do domínio jkmarmores.com.br no Registro.br? Preciso de um ajuste lá para o site novo abrir no endereço.
