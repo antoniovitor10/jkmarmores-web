@@ -25,6 +25,7 @@ Se algo aqui conflitar com o escopo, vale o escopo. Se o escopo não responder, 
 5. O conteúdo tem que ser indexável e útil sem JavaScript e sem a cena 3D. O 3D é camada extra, nunca dependência.
 6. Não publicar, não fazer push para `main`, não rodar rsync/SSH para produção sem aprovação explícita do Vitor.
 7. Fotos de terceiros (bancos de imagem, renders) só com licença registrada em `docs/PENDENCIAS.md` e marcadas como provisórias até o cliente aprovar.
+8. Navegadores: reaproveite um portal ou aba já aberto em vez de criar outro. Antes de abrir, rode `maestri list`; se já existir um portal seu, troque a URL com `maestri portal edit "Nome" --url ...`. Ao terminar a tarefa, feche o que não vai mais usar (`maestri portal close "Nome"`) e encerre processos de Chrome headless ou Lighthouse que você iniciou.
 
 ## Time (papéis no Maestri, workspace "jkmarmores")
 
