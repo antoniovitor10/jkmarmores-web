@@ -135,7 +135,7 @@ export default function StoneScene({ mode, materialSlug, materials, onSelectionC
     }));
   }, [materials]);
 
-  const [slug, setSlug] = useState(materialSlug || options[0]?.slug || "");
+  const [selectedSlug, setSelectedSlug] = useState("");
   const [finish, setFinish] = useState("");
   const [ambiente, setAmbiente] = useState(mode === "chapa" ? "chapa" : "cozinha");
   const [angle, setAngle] = useState(0);
@@ -150,23 +150,26 @@ export default function StoneScene({ mode, materialSlug, materials, onSelectionC
   const rafRef = useRef(0);
   const readyRef = useRef(false);
   const testedRef = useRef(false);
+  const slug = selectedSlug || materialSlug || options[0]?.slug || "";
   const option = options.find((item) => item.slug === slug) || options[0];
   const finishes = option?.acabamentos.length ? option.acabamentos : demoFinishes;
   const finishSlug = finishes.some((item) => item.slug === finish) ? finish : finishes[0]?.slug || "";
   const currentFinish = finishes.find((item) => item.slug === finishSlug);
   const canQuote = !!option && !option.demonstracao && !!option.acabamentos.length && !!currentFinish;
-  const poster = mode === "chapa" ? "/3d/poster-chapa.webp" : "/3d/poster-ambiente.webp";
-
-  useEffect(() => {
-    if (materialSlug && options.some((item) => item.slug === materialSlug)) setSlug(materialSlug);
-  }, [materialSlug, options]);
+  const posterSuffix = !option?.demonstracao ? "-neutro" : option.tipo === "marmore" ? "" : option.tipo === "granito" || option.tipo === "quartzito" ? `-${option.tipo}` : "-neutro";
+  const posterMode = mode === "ambiente" && ambiente === "lavatorio" ? "lavatorio" : mode;
+  const finishSuffix = /levig|acetinad/i.test(finishSlug) ? "-levigado" : /escov|flamead/i.test(finishSlug) ? "-escovado" : "";
+  const poster = `/3d/poster-${posterMode}${posterSuffix}${finishSuffix}.webp`;
 
   useEffect(() => {
     const memory = (navigator as Navigator & { deviceMemory?: number }).deviceMemory;
     const weak = (typeof memory === "number" && memory <= 2) || (typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 2);
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    setGate(weak || reduced ? "manual" : "ready");
-    if (weak || reduced) setReason(weak ? "Este aparelho usa a prévia estática por padrão." : "Movimento reduzido: a prévia estática está ativa.");
+    const timer = window.setTimeout(() => {
+      setGate(weak || reduced ? "manual" : "ready");
+      if (weak || reduced) setReason(weak ? "Este aparelho usa a prévia estática por padrão." : "Movimento reduzido: a prévia estática está ativa.");
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -182,9 +185,11 @@ export default function StoneScene({ mode, materialSlug, materials, onSelectionC
       performance.mark(`stone-scene-${mode}-start`);
       stage = makeStage(canvas, mode);
     } catch {
-      setFailed(true);
-      setReason("A visualização 3D não está disponível neste navegador.");
-      return;
+      const timer = window.setTimeout(() => {
+        setFailed(true);
+        setReason("A visualização 3D não está disponível neste navegador.");
+      }, 0);
+      return () => window.clearTimeout(timer);
     }
     runtimeRef.current = stage;
     const resize = new ResizeObserver(() => {
@@ -208,6 +213,8 @@ export default function StoneScene({ mode, materialSlug, materials, onSelectionC
     return () => {
       resize.disconnect();
       canvas.removeEventListener("webglcontextlost", lost);
+      // A geração corrente precisa ser invalidada para descartar carregamentos atrasados.
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       generationRef.current++;
       cancelAnimationFrame(rafRef.current);
       if (runtimeRef.current === stage) runtimeRef.current = null;
@@ -264,7 +271,8 @@ export default function StoneScene({ mode, materialSlug, materials, onSelectionC
       }
     };
 
-    const textureUrl = textureByType[option.tipo];
+    // Uma amostra CC0 do mesmo tipo de pedra não representa um material confirmado.
+    const textureUrl = option.demonstracao ? textureByType[option.tipo] : undefined;
     if (!textureUrl) {
       stage.texture?.dispose();
       stage.texture = undefined;
@@ -273,6 +281,10 @@ export default function StoneScene({ mode, materialSlug, materials, onSelectionC
       firstDraw();
       return;
     }
+    stage.stone.map = null;
+    stage.stone.color.set("#bdb9b2");
+    stage.stone.needsUpdate = true;
+    stage.draw();
     new THREE.TextureLoader().load(textureUrl, (texture) => {
       if (generationRef.current !== id || runtimeRef.current !== stage) { texture.dispose(); return; }
       texture.colorSpace = THREE.SRGBColorSpace;
@@ -285,6 +297,7 @@ export default function StoneScene({ mode, materialSlug, materials, onSelectionC
       firstDraw();
     }, undefined, () => {
       if (generationRef.current !== id) return;
+      setReady(false);
       setFailed(true);
       setReason("A textura não carregou; a prévia estática continua disponível.");
     });
@@ -306,15 +319,17 @@ export default function StoneScene({ mode, materialSlug, materials, onSelectionC
 
   return <div className={styles.root}>
     <div className={styles.viewport}>
-      {!ready && <img className={styles.poster} src={poster} alt={mode === "chapa" ? "Ilustração estática de uma chapa de pedra com borda visível." : "Ilustração estática de uma bancada em ambiente arquitetônico."} width="900" height="600" />}
+      {/* O poster já está comprimido e é servido como arquivo estático sem otimizador de imagens. */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      {!ready && <img className={styles.poster} src={poster} alt={mode === "chapa" ? "Ilustração estática de uma chapa de pedra com borda visível." : ambiente === "lavatorio" ? "Ilustração estática de uma bancada em lavatório." : "Ilustração estática de uma bancada em cozinha."} width="900" height="600" />}
       {gate === "ready" && !failed && <canvas ref={canvasRef} className={styles.canvas} aria-hidden="true" />}
     </div>
     <p className={styles.notice}>Visualização ilustrativa com texturas CC0 provisórias. Não é obra nem amostra comercial da JK. Cor e acabamento reais devem ser confirmados.</p>
     <div className={styles.controls}>
       {mode === "ambiente" && <label>Ambiente ilustrado<select value={ambiente} onChange={(event) => setAmbiente(event.target.value)}><option value="cozinha">Cozinha</option><option value="lavatorio">Lavatório</option></select></label>}
-      <label>Material ilustrado<select value={option?.slug || ""} onChange={(event) => setSlug(event.target.value)}>{options.map((item) => <option key={item.slug} value={item.slug}>{item.nome}{item.demonstracao ? " (demonstração)" : ""}</option>)}</select></label>
+      <label>Material ilustrado<select value={option?.slug || ""} onChange={(event) => setSelectedSlug(event.target.value)}>{options.map((item) => <option key={item.slug} value={item.slug}>{item.nome}{item.demonstracao ? " (demonstração)" : ""}</option>)}</select></label>
       <label>Acabamento visual<select value={finishSlug} onChange={(event) => setFinish(event.target.value)}>{finishes.map((item) => <option key={item.slug} value={item.slug}>{item.nome}</option>)}</select></label>
-      <div className={styles.buttons} aria-label="Controles de visualização"><button type="button" onClick={() => setAngle((value) => Math.max(-45, value - 15))}>Girar para a esquerda</button><button type="button" onClick={() => setAngle((value) => Math.min(45, value + 15))}>Girar para a direita</button>{mode === "chapa" && <><button type="button" onClick={() => setLight((value) => Math.max(-2, value - 1))}>Luz à esquerda</button><button type="button" onClick={() => setLight((value) => Math.min(2, value + 1))}>Luz à direita</button></>}</div>
+      <div className={styles.buttons} aria-label="Controles de visualização"><button type="button" disabled={!ready || failed} onClick={() => setAngle((value) => Math.max(-45, value - 15))}>Girar para a esquerda</button><button type="button" disabled={!ready || failed} onClick={() => setAngle((value) => Math.min(45, value + 15))}>Girar para a direita</button>{mode === "chapa" && <><button type="button" disabled={!ready || failed} onClick={() => setLight((value) => Math.max(-2, value - 1))}>Luz à esquerda</button><button type="button" disabled={!ready || failed} onClick={() => setLight((value) => Math.min(2, value + 1))}>Luz à direita</button></>}</div>
       <p className={styles.summary} aria-live="polite">{mode === "chapa" ? "Chapa ilustrativa" : ambiente === "cozinha" ? "Bancada em cozinha ilustrativa" : "Bancada em lavatório ilustrativo"}. {option?.nome || "Material a confirmar"}. {currentFinish?.nome || "Acabamento a confirmar"}. Borda reta ilustrativa.</p>
       {canQuote && <button type="button" onClick={quote}>Pedir orçamento desta combinação</button>}
       {!canQuote && <p>O pedido desta combinação ficará disponível após a confirmação dos materiais e acabamentos da JK.</p>}
