@@ -1,4 +1,50 @@
-# Assets provisórios da experiência 3D
+# Assets e licenças provisórias
+
+## A1: primeira prova da abertura da home
+
+Data: 26/09/2026. **Provisório, gerado por IA, não representa obra ou material da JK.** Uso somente no preview local; aprovação visual do Vitor e do cliente pendente, registrada como V7 em `docs/PENDENCIAS.md`. Não incluir na galeria de trabalhos.
+
+| Campo | Registro |
+|---|---|
+| Ferramenta | MCP Higgsfield, conector `mcp__codex_apps__higgsfield_generate_image` |
+| Modelo solicitado | Nano Banana Pro, `nano_banana_pro` |
+| Modelo no inventário do projeto após conclusão | `nano_banana_pro`, confirmado por `list_project_assets` |
+| Divergência de metadados | `jobs_wait` retornou `nano_banana_2` para o mesmo job. Não foi solicitada troca. As duas respostas são conflitantes; o identificador do motor efetivo não pôde ser atestado independentemente. Registrar e esclarecer antes das próximas gerações. |
+| Configuração enviada | 2K, 21:9, count 1, use_unlim false, sem imagem de referência |
+| Job | `cf89be34-0303-4814-8f71-566818019006` |
+| Fonte recebida | `assets/images/a1-prova-01.png`, 3168 x 1344 pixels; proporção efetiva 2,357:1, próxima de 21:9 |
+| Integridade da fonte | 6.415.899 bytes; SHA256 `212cd79c3fc1b9656d5b3bdce9a3f3bc33c57b19488f2ce593957abee58777d4` |
+| Derivados | `public/img/a1-prova-01-{390,768,1200,1600}.{avif,webp}`, gerados por `npm run images:build` |
+| Uso mobile nesta prova | Recorte por CSS do mesmo arquivo; não houve geração 4:5 nem variação paga |
+| Custo estimado pela ferramenta | 2 créditos exatos, confirmado imediatamente antes do envio |
+| Gasto observado | 2 créditos, diferença de saldo de 10 para 8 após a única geração |
+| Reserva autorizada não consumida | 8 créditos: até 4 para duas variações após revisão e 4 para finais desktop/celular |
+| Vídeo e outros assets | Nenhum gerado; fora do teto A1 |
+
+| Largura | AVIF em disco | WebP em disco |
+|---|---:|---:|
+| 390 | 2.508 bytes | 2.580 bytes |
+| 768 | 5.385 bytes | 6.446 bytes |
+| 1200 | 9.300 bytes | 12.388 bytes |
+| 1600 | 13.121 bytes | 19.292 bytes |
+
+O recorte mobile prioriza a quina central. `sizes` considera a largura necessária para preencher a moldura vertical sem ampliar uma miniatura; em DPR 2 pode receber o AVIF de 1600 px, ainda abaixo de 180 KB. Nenhum original PNG é servido pela página.
+
+Prompt integral enviado:
+
+> Architectural material study for a refined natural-stone website. One photorealistic photograph, panoramic 21:9. Extreme attention to physical stone texture and believable fabrication. A pale warm ivory natural stone kitchen island fills the foreground, delicate irregular grey and muted taupe mineral veins, subtle honed sheen, beautifully precise 45-degree mitered apron edge. Camera is very close to the front corner at countertop height, 50mm architectural lens, f/5.6. The long front edge travels horizontally across the frame, with the corner positioned slightly right of center so the center-right area also works as a vertical mobile crop. The top surface and the vertical stone apron are both clearly readable; natural veins continue plausibly across the miter. Low morning sunlight enters from the upper left, warm-neutral 4500K, grazing the stone to reveal fine mineral grain and a crisp narrow edge highlight. Soft realistic contact shadows beneath the slab. In the upper background, a quiet architectural interior in warm limestone plaster and dark walnut, gently out of focus, a single deep shadow opening on the right. Restrained palette of chalk, warm grey, muted bronze and charcoal. Understated tactile architectural photography, accurate rectilinear geometry, no glossy plastic finish, no fantasy oversized veins, no artificial repeating pattern. No people, hands, text, lettering, logos, watermarks, decorative objects, taps, sinks, plants, distorted reflections or impossible geometry. This is an illustrative material study, not a photograph of a real company's completed work.
+
+### Termos disponíveis e limites
+
+Consulta em 26/09/2026 aos [Termos de Uso do Higgsfield](https://higgsfield.ai/terms-of-use-agreement), atualização de 26/07/2026, seção 4.4: Higgsfield não reivindica propriedade dos inputs/outputs nem restringe o uso comercial dos outputs. A [central oficial de ajuda](https://higgsfield.ai/creator-hub/help-center/account/who-owns-my-generations-and-can-i-use-them-commercially) confirma o uso em trabalhos de clientes. Isso não comprova exclusividade, existência de copyright ou ausência de direitos de terceiros. Não foram usados arquivos, marcas ou pessoas de terceiros como referência.
+
+Inspeção visual do original: luz lateral quente, textura mineral fina, veios irregulares sem padrão evidente de repetição, quinas retas e sem reflexos plásticos. Não há pessoas, texto, logos ou marca d'água visível. A imagem representa um estudo arquitetônico genérico; não valida material comercial, técnica executada ou oferta da JK. A borda e a junção devem ser avaliadas como ilustração, não ficha de fabricação.
+
+### Fontes da prova
+
+Instrument Serif 400 e Instrument Sans variável 400–600, dois WOFF2 latinos em `public/fonts/`, total de 51.124 bytes em disco. Licença SIL Open Font License 1.1, com cópias `instrument-serif-OFL.txt` e `instrument-sans-OFL.txt`. Fontes oficiais: [Instrument Serif](https://github.com/google/fonts/tree/main/ofl/instrumentserif) e [Instrument Sans](https://github.com/google/fonts/tree/main/ofl/instrumentsans). Obtidas do CSS oficial Google Fonts em 26/09/2026, hospedadas localmente via `next/font/local`, sem chamadas externas no navegador.
+
+## Experiência 3D existente
 
 Registro em 25/09/2026. Todos são **amostras de demonstração**, não materiais oferecidos nem trabalhos executados pela JK. Trocar por fotos reais e autorização do cliente antes de apresentar como catálogo. Arquivos fontes ficaram apenas na pasta temporária local; os derivados WebP estão em `public/3d/textures/`.
 

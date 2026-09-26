@@ -8,7 +8,7 @@ const ctaOrcamento = (origem: string) => ({
 
 const paginas: ConteudoSite["paginas"] = {
   inicio: {
-    titulo: "Seu projeto começa com uma escolha bem informada",
+    titulo: "A escolha começa no detalhe.",
     introducao: pendente("confirmar serviço principal, cidade e área atendida para a abertura da home"),
     seo: {
       titulo: pendente("title da home com nome comercial, serviço e cidade confirmados"),
@@ -127,6 +127,15 @@ const paginas: ConteudoSite["paginas"] = {
     ],
     cta: ctaOrcamento("contato"),
   },
+};
+
+export const aberturaHome = {
+  sobretitulo: "MATÉRIA, FORMA E TEXTURA",
+  orientacao: "Veja a pedra de perto. Compare materiais e acabamentos antes de decidir.",
+  ctaSecundario: "Ver materiais",
+  legenda: "Estudo de matéria",
+  avisoImagem: "Imagem ilustrativa, gerada por IA",
+  alt: "Estudo ilustrativo de uma bancada de pedra clara: veios delicados e borda em meia-esquadria sob luz lateral de manhã. Imagem gerada por IA, não representa obra da JK.",
 };
 
 const materiais: Material[] = [

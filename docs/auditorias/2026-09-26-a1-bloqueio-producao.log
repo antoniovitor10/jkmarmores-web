@@ -1,0 +1,112 @@
+src\content\index.ts: confirmar serviço principal, cidade e área atendida para a abertura da home
+src\content\index.ts: title da home com nome comercial, serviço e cidade confirmados
+src\content\index.ts: meta description da home com oferta, localidade e diferencial verificáveis
+src\content\index.ts: confirmar quais aplicações a JK executa antes de apresentar caminhos por ambiente
+src\content\index.ts: receber fotos de obras reais com autorização, material e aplicação para mostrar trabalhos
+src\content\index.ts: confirmar cidade, endereço ou modalidade de atendimento e região atendida
+src\content\index.ts: confirmar história, responsável e trajetória da empresa
+src\content\index.ts: title da página Sobre com nome comercial confirmado
+src\content\index.ts: descrição da empresa baseada na história e no processo confirmados
+src\content\index.ts: receber história da empresa sem inventar anos de atuação ou equipe
+src\content\index.ts: confirmar etapas de orçamento, medição, produção e instalação executadas pela empresa
+src\content\index.ts: receber descrição ou fotos autorizadas da equipe, oficina ou fachada
+src\content\index.ts: confirmar cidades atendidas e se há atendimento presencial no endereço
+src\content\index.ts: confirmar lista de materiais e nomes comerciais trabalhados pela empresa
+src\content\index.ts: confirmar aplicações executadas pela empresa antes de listar ambientes ou peças
+src\content\index.ts: title de aplicações com serviços confirmados
+src\content\index.ts: meta description de aplicações com peças realmente executadas
+src\content\index.ts: confirmar quais aplicações terão páginas próprias
+src\content\index.ts: receber obras reais e autorização de uso antes de publicar a galeria
+src\content\index.ts: title da galeria com trabalhos reais autorizados
+src\content\index.ts: descrição da galeria baseada no acervo autorizado
+src\content\index.ts: receber fotos, legendas, materiais e aplicações verificadas das obras
+src\content\index.ts: title do contato com nome comercial e cidade confirmados
+src\content\index.ts: meta description do contato com canal e área atendida confirmados
+src\content\index.ts: confirmar número de WhatsApp e se a empresa recebe pedidos de orçamento por esse canal
+src\content\index.ts: confirmar endereço completo e se a empresa recebe visitantes; exibir mapa apenas se aplicável
+src\content\index.ts: confirmar dias e horários de atendimento
+src\content\index.ts: confirmar nomes comerciais, chapas e acabamentos de granito oferecidos
+src\content\index.ts: confirmar nomes comerciais, chapas e acabamentos de mármore oferecidos
+src\content\index.ts: confirmar nomes comerciais, chapas e acabamentos de quartzito oferecidos
+src\content\index.ts: confirmar marcas, linhas e acabamentos de quartzo oferecidos
+src\content\index.ts: confirmar marcas, linhas e acabamentos de ultracompacto oferecidos
+src\content\index.ts: confirmar se a empresa executa bancadas e para quais ambientes
+src\content\index.ts: confirmar materiais indicados e tipos de bancada executados
+src\content\index.ts: confirmar se a empresa executa lavatórios
+src\content\index.ts: confirmar materiais e acabamentos usados em lavatórios
+src\content\index.ts: confirmar se a empresa executa revestimento ou peças para escadas
+src\content\index.ts: confirmar escopo de execução, materiais e acabamentos de escadas
+src\content\index.ts: confirmar nome comercial exato e grafia
+src\content\index.ts: confirmar razão social
+src\content\index.ts: confirmar CNPJ
+src\content\index.ts: confirmar telefone comercial
+src\content\index.ts: confirmar número de WhatsApp e se é o mesmo do telefone
+src\content\index.ts: confirmar e-mail comercial atual
+src\content\index.ts: confirmar endereço completo ou informar que não atende no local
+src\content\index.ts: confirmar logradouro
+src\content\index.ts: confirmar número do endereço
+src\content\index.ts: confirmar bairro
+src\content\index.ts: confirmar cidade do endereço
+src\content\index.ts: confirmar UF
+src\content\index.ts: confirmar CEP
+src\content\index.ts: confirmar se recebe visitantes no endereço
+src\content\index.ts: confirmar cidade sede da empresa
+src\content\index.ts: confirmar região e cidades efetivamente atendidas
+src\content\index.ts: confirmar posse e URL do Perfil da Empresa no Google
+out\404\index.html: confirmar nome comercial exato e grafia
+out\404\index.html: confirmar endereço completo ou informar que não atende no local
+out\404\index.html: confirmar cidade sede da empresa
+out\404.html: confirmar nome comercial exato e grafia
+out\404.html: confirmar endereço completo ou informar que não atende no local
+out\404.html: confirmar cidade sede da empresa
+out\aplicacoes\index.html: confirmar nome comercial exato e grafia
+out\aplicacoes\index.html: confirmar aplicações executadas pela empresa antes de listar ambientes ou peças
+out\aplicacoes\index.html: confirmar quais aplicações terão páginas próprias
+out\aplicacoes\index.html: aplicações confirmadas pela JK
+out\aplicacoes\index.html: confirmar endereço completo ou informar que não atende no local
+out\aplicacoes\index.html: confirmar cidade sede da empresa
+out\aplicacoes\pendente\index.html: confirmar nome comercial exato e grafia
+out\aplicacoes\pendente\index.html: aplicação confirmada pela JK
+out\aplicacoes\pendente\index.html: confirmar endereço completo ou informar que não atende no local
+out\aplicacoes\pendente\index.html: confirmar cidade sede da empresa
+out\contato\index.html: confirmar nome comercial exato e grafia
+out\contato\index.html: confirmar número de WhatsApp e se a empresa recebe pedidos de orçamento por esse canal
+out\contato\index.html: confirmar endereço completo e se a empresa recebe visitantes; exibir mapa apenas se aplicável
+out\contato\index.html: confirmar dias e horários de atendimento
+out\contato\index.html: confirmar número de WhatsApp e se é o mesmo do telefone
+out\contato\index.html: confirmar telefone comercial
+out\contato\index.html: confirmar endereço completo ou informar que não atende no local
+out\contato\index.html: confirmar cidade sede da empresa
+out\galeria\index.html: confirmar nome comercial exato e grafia
+out\galeria\index.html: receber obras reais e autorização de uso antes de publicar a galeria
+out\galeria\index.html: receber fotos, legendas, materiais e aplicações verificadas das obras
+out\galeria\index.html: fotos reais autorizadas para a galeria
+out\galeria\index.html: confirmar endereço completo ou informar que não atende no local
+out\galeria\index.html: confirmar cidade sede da empresa
+out\index.html: confirmar nome comercial exato e grafia
+out\index.html: confirmar serviço principal, cidade e área atendida para a abertura da home
+out\index.html: confirmar quais aplicações a JK executa antes de apresentar caminhos por ambiente
+out\index.html: receber fotos de obras reais com autorização, material e aplicação para mostrar trabalhos
+out\index.html: confirmar cidade, endereço ou modalidade de atendimento e região atendida
+out\index.html: confirmar endereço completo ou informar que não atende no local
+out\index.html: confirmar cidade sede da empresa
+out\materiais\index.html: confirmar nome comercial exato e grafia
+out\materiais\index.html: confirmar lista de materiais e nomes comerciais trabalhados pela empresa
+out\materiais\index.html: materiais trabalhados pela JK
+out\materiais\index.html: confirmar endereço completo ou informar que não atende no local
+out\materiais\index.html: confirmar cidade sede da empresa
+out\materiais\pendente\index.html: confirmar nome comercial exato e grafia
+out\materiais\pendente\index.html: material confirmado pela JK
+out\materiais\pendente\index.html: confirmar endereço completo ou informar que não atende no local
+out\materiais\pendente\index.html: confirmar cidade sede da empresa
+out\sobre\index.html: confirmar nome comercial exato e grafia
+out\sobre\index.html: confirmar história, responsável e trajetória da empresa
+out\sobre\index.html: receber história da empresa sem inventar anos de atuação ou equipe
+out\sobre\index.html: confirmar etapas de orçamento, medição, produção e instalação executadas pela empresa
+out\sobre\index.html: receber descrição ou fotos autorizadas da equipe, oficina ou fachada
+out\sobre\index.html: confirmar cidades atendidas e se há atendimento presencial no endereço
+out\sobre\index.html: confirmar endereço completo ou informar que não atende no local
+out\sobre\index.html: confirmar cidade sede da empresa
+out\_not-found\index.html: confirmar nome comercial exato e grafia
+out\_not-found\index.html: confirmar endereço completo ou informar que não atende no local
+out\_not-found\index.html: confirmar cidade sede da empresa

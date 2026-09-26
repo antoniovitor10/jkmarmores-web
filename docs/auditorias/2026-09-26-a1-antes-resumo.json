@@ -1,0 +1,463 @@
+{
+  "stage": "antes",
+  "environment": "Emulacao Chrome headless; Lighthouse mobile, throttling simulado; servidor local gzip; cache frio",
+  "lighthouseVersion": "13.5.0",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "fetchTime": "2026-09-26T20:20:07.656Z",
+  "settings": {
+    "output": "json",
+    "maxWaitForFcp": 30000,
+    "maxWaitForLoad": 45000,
+    "pauseAfterFcpMs": 1000,
+    "pauseAfterLoadMs": 1000,
+    "networkQuietThresholdMs": 1000,
+    "cpuQuietThresholdMs": 1000,
+    "formFactor": "mobile",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "throttlingMethod": "simulate",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 2,
+      "disabled": false
+    },
+    "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+    "auditMode": false,
+    "gatherMode": false,
+    "clearStorageTypes": [
+      "file_systems",
+      "shader_cache",
+      "service_workers",
+      "cache_storage"
+    ],
+    "disableStorageReset": false,
+    "debugNavigation": false,
+    "channel": "node",
+    "usePassiveGathering": false,
+    "disableFullPageScreenshot": false,
+    "skipAboutBlank": false,
+    "blankPage": "about:blank",
+    "ignoreStatusCode": false,
+    "locale": "en-US",
+    "blockedUrlPatterns": null,
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "precomputedLanternData": null,
+    "onlyAudits": null,
+    "onlyCategories": [
+      "performance",
+      "accessibility",
+      "best-practices",
+      "seo"
+    ],
+    "skipAudits": null
+  },
+  "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 69
+  },
+  "lcpMs": 2051.0593,
+  "fcpMs": 756.0592999999999,
+  "tbtMs": 45,
+  "cls": 0,
+  "totalBytes": 154953,
+  "failures": [
+    {
+      "id": "unused-javascript",
+      "title": "Reduce unused JavaScript",
+      "displayValue": "Est savings of 29 KiB"
+    },
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing"
+    },
+    {
+      "id": "bf-cache",
+      "title": "Page prevented back/forward cache restoration",
+      "displayValue": "2 failure reasons"
+    },
+    {
+      "id": "legacy-javascript-insight",
+      "title": "Legacy JavaScript",
+      "displayValue": "Est savings of 13 KiB"
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree"
+    },
+    {
+      "id": "render-blocking-insight",
+      "title": "Render-blocking requests",
+      "displayValue": "Est savings of 120 ms"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "h1Count": 1,
+      "h1": {
+        "x": 16,
+        "y": 169,
+        "width": 358,
+        "height": 110.390625,
+        "top": 169,
+        "right": 374,
+        "bottom": 279.390625,
+        "left": 16
+      },
+      "cta": {
+        "x": 16,
+        "y": 387.546875,
+        "width": 151.390625,
+        "height": 46.78125,
+        "top": 387.546875,
+        "right": 167.390625,
+        "bottom": 434.328125,
+        "left": 16
+      },
+      "resourcesAtLoad": [
+        {
+          "name": "/_next/static/chunks/21t1-5dmjcpnb.css",
+          "type": "link",
+          "bytes": 3579
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "type": "script",
+          "bytes": 4153
+        },
+        {
+          "name": "/_next/static/chunks/23jw96my9wv0i.js",
+          "type": "script",
+          "bytes": 1707
+        },
+        {
+          "name": "/_next/static/chunks/1mpnoxox0-4cg.js",
+          "type": "script",
+          "bytes": 7063
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "type": "script",
+          "bytes": 45403
+        },
+        {
+          "name": "/3d/poster-ambiente.webp",
+          "type": "img",
+          "bytes": 3340
+        }
+      ],
+      "resourcesAfterIdle": [
+        {
+          "name": "/_next/static/chunks/21t1-5dmjcpnb.css",
+          "type": "link",
+          "bytes": 3579
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "type": "script",
+          "bytes": 4153
+        },
+        {
+          "name": "/_next/static/chunks/23jw96my9wv0i.js",
+          "type": "script",
+          "bytes": 1707
+        },
+        {
+          "name": "/_next/static/chunks/1mpnoxox0-4cg.js",
+          "type": "script",
+          "bytes": 7063
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "type": "script",
+          "bytes": 45403
+        },
+        {
+          "name": "/3d/poster-ambiente.webp",
+          "type": "img",
+          "bytes": 3340
+        },
+        {
+          "name": "/",
+          "type": "fetch",
+          "bytes": 300
+        },
+        {
+          "name": "/__next._tree.txt",
+          "type": "fetch",
+          "bytes": 499
+        },
+        {
+          "name": "/__next.__PAGE__.txt",
+          "type": "fetch",
+          "bytes": 3139
+        }
+      ],
+      "navigation": [
+        {
+          "bytes": 4621,
+          "loadMs": 59
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "h1Count": 1,
+      "h1": {
+        "x": 144,
+        "y": 169,
+        "width": 736,
+        "height": 220.78125,
+        "top": 169,
+        "right": 880,
+        "bottom": 389.78125,
+        "left": 144
+      },
+      "cta": {
+        "x": 144,
+        "y": 467.21875,
+        "width": 151.390625,
+        "height": 46.78125,
+        "top": 467.21875,
+        "right": 295.390625,
+        "bottom": 514,
+        "left": 144
+      },
+      "resourcesAtLoad": [
+        {
+          "name": "/_next/static/chunks/21t1-5dmjcpnb.css",
+          "type": "link",
+          "bytes": 3579
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "type": "script",
+          "bytes": 45403
+        },
+        {
+          "name": "/_next/static/chunks/23jw96my9wv0i.js",
+          "type": "script",
+          "bytes": 1707
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "type": "script",
+          "bytes": 4153
+        },
+        {
+          "name": "/_next/static/chunks/1mpnoxox0-4cg.js",
+          "type": "script",
+          "bytes": 7063
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/3d/poster-ambiente.webp",
+          "type": "img",
+          "bytes": 3340
+        }
+      ],
+      "resourcesAfterIdle": [
+        {
+          "name": "/_next/static/chunks/21t1-5dmjcpnb.css",
+          "type": "link",
+          "bytes": 3579
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "type": "script",
+          "bytes": 45403
+        },
+        {
+          "name": "/_next/static/chunks/23jw96my9wv0i.js",
+          "type": "script",
+          "bytes": 1707
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "type": "script",
+          "bytes": 4153
+        },
+        {
+          "name": "/_next/static/chunks/1mpnoxox0-4cg.js",
+          "type": "script",
+          "bytes": 7063
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/3d/poster-ambiente.webp",
+          "type": "img",
+          "bytes": 3340
+        },
+        {
+          "name": "/",
+          "type": "fetch",
+          "bytes": 300
+        },
+        {
+          "name": "/sobre/",
+          "type": "fetch",
+          "bytes": 300
+        },
+        {
+          "name": "/materiais/",
+          "type": "fetch",
+          "bytes": 300
+        },
+        {
+          "name": "/aplicacoes/",
+          "type": "fetch",
+          "bytes": 300
+        },
+        {
+          "name": "/materiais/__next._tree.txt",
+          "type": "fetch",
+          "bytes": 516
+        },
+        {
+          "name": "/sobre/__next._tree.txt",
+          "type": "fetch",
+          "bytes": 513
+        },
+        {
+          "name": "/aplicacoes/__next._tree.txt",
+          "type": "fetch",
+          "bytes": 517
+        },
+        {
+          "name": "/__next._tree.txt",
+          "type": "fetch",
+          "bytes": 499
+        },
+        {
+          "name": "/galeria/",
+          "type": "fetch",
+          "bytes": 300
+        },
+        {
+          "name": "/contato/",
+          "type": "fetch",
+          "bytes": 300
+        },
+        {
+          "name": "/__next.__PAGE__.txt",
+          "type": "fetch",
+          "bytes": 3139
+        },
+        {
+          "name": "/sobre/__next.sobre.__PAGE__.txt",
+          "type": "fetch",
+          "bytes": 314
+        },
+        {
+          "name": "/galeria/__next._tree.txt",
+          "type": "fetch",
+          "bytes": 514
+        },
+        {
+          "name": "/contato/__next._tree.txt",
+          "type": "fetch",
+          "bytes": 515
+        },
+        {
+          "name": "/materiais/__next.materiais.__PAGE__.txt",
+          "type": "fetch",
+          "bytes": 314
+        },
+        {
+          "name": "/aplicacoes/__next.aplicacoes.__PAGE__.txt",
+          "type": "fetch",
+          "bytes": 314
+        },
+        {
+          "name": "/galeria/__next.galeria.__PAGE__.txt",
+          "type": "fetch",
+          "bytes": 314
+        },
+        {
+          "name": "/contato/__next.contato.__PAGE__.txt",
+          "type": "fetch",
+          "bytes": 314
+        }
+      ],
+      "navigation": [
+        {
+          "bytes": 4621,
+          "loadMs": 35.30000000074506
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import type { ImgHTMLAttributes } from "react";
+import { preload } from "react-dom";
 import manifest from "@/generated/images.json";
 
 type FotoProps = { id: string; alt: string; sizes: string; prioridade?: boolean; className?: string };
@@ -12,6 +13,7 @@ export function Foto({ id, alt, sizes, prioridade = false, className }: FotoProp
   const srcSet = (formato: "avif" | "webp") => imagem.variantes.map((item) => `${item[formato]} ${item.width}w`).join(", ");
   const ultima = imagem.variantes.at(-1);
   if (!ultima) return null;
+  if (prioridade) preload(ultima.avif, { as: "image", type: "image/avif", imageSrcSet: srcSet("avif"), imageSizes: sizes, fetchPriority: "high" });
   const prioridadeAtributos: ImgHTMLAttributes<HTMLImageElement> = prioridade ? { fetchPriority: "high", loading: "eager" } : { loading: "lazy" };
   return <picture className={className}>
     <source type="image/avif" srcSet={srcSet("avif")} sizes={sizes} />

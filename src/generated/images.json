@@ -1,1 +1,29 @@
-{}
+{
+  "a1-prova-01": {
+    "width": 3168,
+    "height": 1344,
+    "placeholder": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADQAwCdASoYAAoAPwFsrE6rJiQiMAgBYCAJZQCsABu2Ag3oI6a9ROAA/rELYm+qMHBvX9F0C+n6LjfRkByagtQPOTRVBX24ksNOBe0X8RFEJy8S+R/pUercYRSn5woqXAAAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/a1-prova-01-390.avif",
+        "webp": "/img/a1-prova-01-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/a1-prova-01-768.avif",
+        "webp": "/img/a1-prova-01-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/a1-prova-01-1200.avif",
+        "webp": "/img/a1-prova-01-1200.webp"
+      },
+      {
+        "width": 1600,
+        "avif": "/img/a1-prova-01-1600.avif",
+        "webp": "/img/a1-prova-01-1600.webp"
+      }
+    ]
+  }
+}
