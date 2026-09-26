@@ -9,7 +9,7 @@ Data: 26/09/2026. **Provisório, gerado por IA, não representa obra ou material
 | Ferramenta | MCP Higgsfield, conector `mcp__codex_apps__higgsfield_generate_image` |
 | Modelo solicitado | Nano Banana Pro, `nano_banana_pro` |
 | Modelo no inventário do projeto após conclusão | `nano_banana_pro`, confirmado por `list_project_assets` |
-| Divergência de metadados | `jobs_wait` retornou `nano_banana_2` para o mesmo job. Não foi solicitada troca. As duas respostas são conflitantes; o identificador do motor efetivo não pôde ser atestado independentemente. Registrar e esclarecer antes das próximas gerações. |
+| Identificador esclarecido em 26/09/2026 | `jobs_wait` retorna o backend/CLI `nano_banana_2`, nomeado Nano Banana Pro no catálogo oficial. O mapeamento oficial liga MCP `nano_banana_pro` a esse identificador; não houve troca. Fontes e conferência antes da segunda geração em [sequencia-geracao.md](sequencia-geracao.md). |
 | Configuração enviada | 2K, 21:9, count 1, use_unlim false, sem imagem de referência |
 | Job | `cf89be34-0303-4814-8f71-566818019006` |
 | Fonte recebida | `assets/images/a1-prova-01.png`, 3168 x 1344 pixels; proporção efetiva 2,357:1, próxima de 21:9 |
@@ -18,7 +18,7 @@ Data: 26/09/2026. **Provisório, gerado por IA, não representa obra ou material
 | Uso mobile nesta prova | Recorte por CSS do mesmo arquivo; não houve geração 4:5 nem variação paga |
 | Custo estimado pela ferramenta | 2 créditos exatos, confirmado imediatamente antes do envio |
 | Gasto observado | 2 créditos, diferença de saldo de 10 para 8 após a única geração |
-| Reserva autorizada não consumida | 8 créditos: até 4 para duas variações após revisão e 4 para finais desktop/celular |
+| Reserva ao encerrar A1 | 8 créditos; posteriormente realocados por Vitor para quatro imagens-chave da sequência, conforme registro abaixo |
 | Vídeo e outros assets | Nenhum gerado; fora do teto A1 |
 
 | Largura | AVIF em disco | WebP em disco |
@@ -28,7 +28,7 @@ Data: 26/09/2026. **Provisório, gerado por IA, não representa obra ou material
 | 1200 | 9.300 bytes | 12.388 bytes |
 | 1600 | 13.121 bytes | 19.292 bytes |
 
-O recorte mobile prioriza a quina central. `sizes` considera a largura necessária para preencher a moldura vertical sem ampliar uma miniatura; em DPR 2 pode receber o AVIF de 1600 px, ainda abaixo de 180 KB. Nenhum original PNG é servido pela página.
+O recorte mobile prioriza a quina central. `sizes` considera a largura necessária para preencher a moldura vertical sem ampliar uma miniatura; em DPR 2 pode receber o AVIF de 1600 px, ainda abaixo de 180 KB. Nenhum original PNG é servido pela página. Na segunda entrega, o AVIF A1 de 1600 px foi incorporado ao HTML; WebP responsivo permanece como alternativa.
 
 Prompt integral enviado:
 
@@ -43,6 +43,14 @@ Inspeção visual do original: luz lateral quente, textura mineral fina, veios i
 ### Fontes da prova
 
 Instrument Serif 400 e Instrument Sans variável 400–600, dois WOFF2 latinos em `public/fonts/`, total de 51.124 bytes em disco. Licença SIL Open Font License 1.1, com cópias `instrument-serif-OFL.txt` e `instrument-sans-OFL.txt`. Fontes oficiais: [Instrument Serif](https://github.com/google/fonts/tree/main/ofl/instrumentserif) e [Instrument Sans](https://github.com/google/fonts/tree/main/ofl/instrumentsans). Obtidas do CSS oficial Google Fonts em 26/09/2026, hospedadas localmente via `next/font/local`, sem chamadas externas no navegador.
+
+## Segunda entrega: quatro imagens-chave
+
+26/09/2026. A1 aprovado como base visual por Vitor. Os 8 créditos restantes foram autorizados para quatro imagens de 2 créditos, todas no mesmo Nano Banana Pro e com A1 como referência. **Gasto real desta entrega: 8; acumulado: 10; saldo: 0.** Nenhuma divergência, recarga, trial, vídeo ou geração adicional. Abertura mobile derivada do A1 por recorte.
+
+Registro completo de ferramenta, modelo efetivo, quatro jobs, prompts integrais, saldos após cada envio, revisão visual, licença e cotação de vídeo: [sequencia-geracao.md](sequencia-geracao.md). Fontes: `assets/images/sequencia-{01-chapa,02-borda,03-acabamento,04-aplicada}.png`; finais AVIF/WebP em `public/img/`, larguras 390, 768, 1200 e 1600. Todos **provisórios, gerados por IA, não representam obra ou material da JK**, nem comprovam execução de processos pela empresa. V7 e O1/O4 continuam pendentes de confirmação do cliente.
+
+Fontes agora reduzidas com FontTools 4.66.0 e Brotli 1.2.0: Instrument Serif 7.288 bytes (caracteres efetivamente usados no display, incluindo números) e Instrument Sans 19.664 bytes (ASCII, acentos PT-BR e pontuação editorial; eixo 400–600). Total 26.952 bytes, mesmos dois arquivos e licenças OFL. Serif tem preload; Sans é incorporada no CSS do HTML estático, sem requisição ou preload separado, preservando a tipografia em rede lenta. Ao mudar um título display, ampliar o subset a partir do original do commit A1 com `scripts/subset-home-fonts.py`; não adicionar uma terceira família. Sem nova dependência de runtime.
 
 ## Experiência 3D existente
 

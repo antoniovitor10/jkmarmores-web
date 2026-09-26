@@ -39,7 +39,7 @@
 @media (max-width: 700px) {
   .intro { grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 16px; padding: 26px 24px 28px; }
   .eyebrow { margin-bottom: 21px; font-size: 10px; letter-spacing: .13em; }
-  .intro h1 { grid-column: 1 / -1; max-width: 12ch; font-size: clamp(48px, 14.35vw, 72px); line-height: 1.02; }
+  .intro h1 { grid-column: 1 / -1; max-width: none; font-size: clamp(48px, 14.35vw, 72px); line-height: 1.02; }
   .action { grid-column: 1 / -1; padding: 0; margin-top: 23px; }
   .action p { max-width: 35ch; font-size: 14px; line-height: 1.6; margin-bottom: 18px; }
   .links { gap: 20px; }
@@ -50,6 +50,6 @@
   .caption { margin-inline: 24px; padding-block: 15px; font-size: 10px; align-items: start; }
   .caption > span:first-child { max-width: 17ch; gap: 12px; letter-spacing: .08em; }
   .caption > span:last-child { max-width: 18ch; text-align: right; }
-  .pending { padding: 12px 24px 20px; font-size: 10px; }
+  .pending { padding: 96px 24px 28px; font-size: 10px; }
 }
 @media (prefers-reduced-motion: reduce) { .links a:first-child { transition: none; } }

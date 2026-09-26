@@ -61,7 +61,7 @@ Os registros detalhados seguem agrupados por assunto abaixo. Um item com status 
 
 ## Técnico
 
-V7 (P0, aberto): aprovar a imagem A1 da abertura e sua identificação como ilustração. Uma prova de IA produzida em 26/09/2026, sem representar obra ou material da JK. Fonte, prompt, termos comerciais disponíveis, gasto de 2 créditos e divergência de identificador entre respostas do MCP registrados em [assets-licencas.md](proposta/assets-licencas.md). Esclarecer o identificador de modelo antes de novas gerações. Finais desktop/celular e aprovação do cliente ainda pendentes.
+V7 (P0, aberto para o cliente): Vitor aprovou A1 como base visual em 26/09/2026 e autorizou quatro imagens-chave ilustrativas para a jornada da pedra. Não representam obra, material ou processo da JK; O1/O4 não foram resolvidos. A divergência do modelo foi esclarecida antes das novas gerações pelo mapeamento oficial: MCP `nano_banana_pro` corresponde ao backend/CLI `nano_banana_2` (Nano Banana Pro). Fontes, prompts, licença, jobs e gasto total de 10 créditos (2 A1 + 8 sequência; saldo 0) em [assets-licencas.md](proposta/assets-licencas.md) e [sequencia-geracao.md](proposta/sequencia-geracao.md). Abertura mobile recortada do A1, sem outra geração. Aprovação do cliente e revisão da segunda entrega pelo Vitor pendentes; vídeo não autorizado nem gerado.
 
 Site anterior: existiu um WordPress de uma página em 2016 (Wayback). Não há URLs antigas de conteúdo que exijam 301 específica; só 301 de http e www para https no apex. Detalhes em docs/referencias/dominio-e-presenca-atual.md.
 

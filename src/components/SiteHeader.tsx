@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { SiteLink as Link } from "./SiteLink";
 import { conteudo } from "@/content";
 import { PendenteTexto } from "@/components/PendenteTexto";
 import { linkWhatsApp } from "@/lib/whatsapp";

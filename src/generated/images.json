@@ -25,5 +25,113 @@
         "webp": "/img/a1-prova-01-1600.webp"
       }
     ]
+  },
+  "sequencia-01-chapa": {
+    "width": 2752,
+    "height": 1536,
+    "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoYAA0APwFurU6rJqQiMAgBYCAJYwCnFB6u6wbokBpVNCUAAP7unZG8sezyJh0c4UCS58+4XGqcs1hBsgVTsN9n5F6oylVjlkqrxgyewZsSWNTJhcx9BNhIK8zFIjAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/sequencia-01-chapa-390.avif",
+        "webp": "/img/sequencia-01-chapa-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/sequencia-01-chapa-768.avif",
+        "webp": "/img/sequencia-01-chapa-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/sequencia-01-chapa-1200.avif",
+        "webp": "/img/sequencia-01-chapa-1200.webp"
+      },
+      {
+        "width": 1600,
+        "avif": "/img/sequencia-01-chapa-1600.avif",
+        "webp": "/img/sequencia-01-chapa-1600.webp"
+      }
+    ]
+  },
+  "sequencia-02-borda": {
+    "width": 2752,
+    "height": 1536,
+    "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAACQAwCdASoYAA0APwFssE6rJiUiMAgBYCAJZQCdACHXGzgejhcAAP7Y25ZJ/ILXSlFIjH22ReZA0tYNlPbHEfpo8sXFCn570I7iEYAnhqixV36Tz2vtpjZ4H+oXm7nuqBINlMWfsAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/sequencia-02-borda-390.avif",
+        "webp": "/img/sequencia-02-borda-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/sequencia-02-borda-768.avif",
+        "webp": "/img/sequencia-02-borda-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/sequencia-02-borda-1200.avif",
+        "webp": "/img/sequencia-02-borda-1200.webp"
+      },
+      {
+        "width": 1600,
+        "avif": "/img/sequencia-02-borda-1600.avif",
+        "webp": "/img/sequencia-02-borda-1600.webp"
+      }
+    ]
+  },
+  "sequencia-03-acabamento": {
+    "width": 2752,
+    "height": 1536,
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAABwAwCdASoYAA0APwFurk+rJqQiMAgBYCAJYwCdAB2QOBN318AA8k/qhFaTzepu8/pu1vJddnqZBrasDCp6PgTDwiOt9/nvcBfcQKZkdduCAAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/sequencia-03-acabamento-390.avif",
+        "webp": "/img/sequencia-03-acabamento-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/sequencia-03-acabamento-768.avif",
+        "webp": "/img/sequencia-03-acabamento-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/sequencia-03-acabamento-1200.avif",
+        "webp": "/img/sequencia-03-acabamento-1200.webp"
+      },
+      {
+        "width": 1600,
+        "avif": "/img/sequencia-03-acabamento-1600.avif",
+        "webp": "/img/sequencia-03-acabamento-1600.webp"
+      }
+    ]
+  },
+  "sequencia-04-aplicada": {
+    "width": 2752,
+    "height": 1536,
+    "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoYAA0APwFsrU8rJiQiMAgBYCAJZQCsABjM6QsNAaoNeAAA+KYFA3k+aMeMFdsg0QEm60QPiy+Y588BxBZ9eWjt71TGYriEPvDeIdAkdzOYUrbjTiBvEAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/sequencia-04-aplicada-390.avif",
+        "webp": "/img/sequencia-04-aplicada-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/sequencia-04-aplicada-768.avif",
+        "webp": "/img/sequencia-04-aplicada-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/sequencia-04-aplicada-1200.avif",
+        "webp": "/img/sequencia-04-aplicada-1200.webp"
+      },
+      {
+        "width": 1600,
+        "avif": "/img/sequencia-04-aplicada-1600.avif",
+        "webp": "/img/sequencia-04-aplicada-1600.webp"
+      }
+    ]
   }
 }

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import "tailwindcss" source("../");
 
 :root { --cor-fundo:#f8f7f5; --cor-texto:#242424; --cor-superficie:#fff; --cor-borda:#777; --cor-destaque:#333; --fonte-corpo:Arial,Helvetica,sans-serif; --espaco-1:.5rem; --espaco-2:1rem; --espaco-3:1.5rem; --espaco-4:2rem; --espaco-5:3rem; --raio:.25rem; }
 @theme inline { --color-background:var(--cor-fundo); --color-foreground:var(--cor-texto); --font-sans:var(--fonte-corpo); }
@@ -31,6 +31,7 @@ h2 { font-size:clamp(1.5rem,3vw,2.5rem); line-height:1.2; }
 .pendente { background:#fff0b2; color:#342500; padding:.1rem .25rem; border:1px dashed #6b5200; }
 .site-footer { border-top:1px solid var(--cor-borda); padding:var(--espaco-4) 0; }
 .mobile-whatsapp { display:none; }
+.mobile-quote-dock { display:none; }
 .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1rem; margin-block:2rem; }
 .card { border:1px solid var(--cor-borda); padding:1.25rem; background:var(--cor-superficie); }
 .card a { display:inline-flex; align-items:center; }
@@ -66,4 +67,12 @@ body:has(.home-hero) .site-header :focus-visible { outline:2px solid #262820; ou
 @media (max-width:700px) {
   body:has(.home-hero) .header-inner { width:calc(100% - 48px); min-height:76px; }
   body:has(.home-hero) .brand { max-width:220px; font-size:10px; }
+}
+@media (max-width:800px) {
+  html { scroll-padding-bottom:calc(92px + env(safe-area-inset-bottom,0px)); }
+  body { padding-bottom:calc(76px + env(safe-area-inset-bottom,0px)); }
+  .mobile-quote-dock { display:flex; align-items:center; justify-content:flex-end; position:fixed; inset:auto 0 0; z-index:20; min-height:76px; padding:12px 24px calc(12px + env(safe-area-inset-bottom,0px)); background:#f2efe8; border-top:1px solid #d6d2c7; }
+  .mobile-quote-dock .mobile-whatsapp { position:static; width:100%; min-height:48px; justify-content:center; box-shadow:none; border-radius:0; }
+  body:has(.quote-form:focus-within) .mobile-quote-dock { visibility:hidden; pointer-events:none; }
+  :is(input,button,a,[tabindex]) { scroll-margin-block:24px 96px; }
 }

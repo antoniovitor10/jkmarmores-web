@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
+import { SiteFooter, MobileQuoteDock } from "@/components/SiteFooter";
 import { JsonLd } from "@/components/JsonLd";
 import { conteudo } from "@/content";
 import { isPendente } from "@/content/pendente";
@@ -21,6 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return <html lang="pt-BR"><body>
     <a className="skip-link" href="#conteudo">Ir para o conteúdo</a>
     <SiteHeader />
+    <MobileQuoteDock />
     {children}
     <SiteFooter />
     <JsonLd dados={{ "@context": "https://schema.org", "@type": "WebSite", url: siteUrl }} />

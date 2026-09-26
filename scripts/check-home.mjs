@@ -13,6 +13,7 @@ try {
   const page = await browser.newPage();
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
+  page.on("response", response => { if (response.status() >= 400) errors.push(`${response.status()}: ${response.url()}`); });
   page.on("console", message => { if (message.type() === "error") errors.push(message.text()); });
   for (const js of [false, true]) {
     await page.setJavaScriptEnabled(js);
@@ -22,7 +23,7 @@ try {
       h1: [...document.querySelectorAll("h1")].map(n => n.textContent),
       pending: document.querySelectorAll("[data-pendente]").length,
       overflow: document.documentElement.scrollWidth > innerWidth,
-      image: { ready: document.querySelector(".home-hero img").complete, url: document.querySelector(".home-hero img").currentSrc, priority: document.querySelector(".home-hero img").fetchPriority },
+      image: { ready: document.querySelector(".home-hero img").complete, url: document.querySelector(".home-hero img").currentSrc.startsWith("data:") ? "AVIF incorporado no HTML" : document.querySelector(".home-hero img").currentSrc, priority: document.querySelector(".home-hero img").fetchPriority },
       cta: { href: document.querySelector(".home-hero .button").href, bottom: document.querySelector(".home-hero .button").getBoundingClientRect().bottom },
       noindex: document.querySelector('meta[name="robots"]').content.includes("noindex"),
       sections: [...document.querySelectorAll(".content-section")].map(n => n.id),
@@ -61,6 +62,6 @@ try {
   assert.ok(reduced.transition.split(",").every(value => parseFloat(value) <= 0.00001));
   checks.push({ reducedMotion: reduced });
   assert.deepEqual(errors, []);
-  await fs.writeFile("docs/auditorias/2026-09-26-a1-funcional.json", JSON.stringify({ environment: "Emulacao Chrome headless; nenhum contato enviado", checks, errors }, null, 2));
+  await fs.writeFile(`docs/auditorias/2026-09-26-${process.env.AUDIT_LABEL ?? "a1"}-home-funcional.json`, JSON.stringify({ environment: "Emulacao Chrome headless; nenhum contato enviado", checks, errors }, null, 2));
   process.stdout.write("Home: verificacoes sem JS/com JS, imagem, links, teclado, menu, noindex e movimento reduzido passaram.\n");
 } finally { await browser.close(); }
