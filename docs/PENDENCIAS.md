@@ -66,6 +66,6 @@ Site anterior: existiu um WordPress de uma página em 2016 (Wayback). Não há U
 
 | # | Item | Prioridade | Status | Fonte / observação |
 |---|---|---|---|---|
-| T1 | Domínio e SSL | P0 | parcial | DNS do apex e do www apontando para o Napoleão (verificado 26/09). Falta emitir o Let's Encrypt no DirectAdmin: hoje o https serve o certificado do servidor (pro127.dnspro.net.br) |
+| T1 | Domínio e SSL | P0 | resolvido | DNS apontado e Let's Encrypt emitido (*.jkmarmores.com.br + apex, vence 25/12/2026). https ativo com 301 de http e www (26/09) |
 | T2 | Hospedagem e deploy | P0 | resolvido | Domínio criado no DirectAdmin; deploy automático via GitHub Actions funcionando desde 26/09 (docs/deploy.md) |
 | T3 | Acesso ao Google Search Console / Analytics, se existirem | P1 | aberto | |

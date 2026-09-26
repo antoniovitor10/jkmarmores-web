@@ -103,4 +103,6 @@ Acessibilidade: WCAG 2.2 AA. SEO: conteúdo indexável sem JS, títulos e metade
 | 25/09/2026 | Execução local autorizada pelo Vitor: Cinzel (Dev), Bussola (Estrategista) e Prisma (3D). Sem GitHub, push, SSH ou DNS nesta etapa. Briefings em docs/tarefas/ |
 | 25/09/2026 | SITE_MODE: `homolog` (noindex, robots Disallow, pendências visíveis) e `producao` (indexável; o build falha se houver pendente()) |
 | 26/09/2026 | Publicado em homolog em http://jkmarmores.com.br: repositório público antoniovitor10/jkmarmores-web, deploy automático por GitHub Actions + rsync, noindex ativo. Vitor testa em aparelhos reais. SSL pendente no DirectAdmin |
+| 26/09/2026 | SSL emitido (*.jkmarmores.com.br + apex); https ativo com 301 de http e www |
+| 26/09/2026 | 3D passa para o Astra, que gera imagens no Higgsfield via MCP. Prisma sai do 3D. Astra trabalha na branch 3d-astra; merge na main só pelo Planejador. Briefing em docs/tarefas/04-astra-3d.md |
 | 25/09/2026 | Catálogo: estrutura para granito, mármore, quartzito, quartzo/industrializado e ultracompacto; só aparece o tipo que o Lucas confirmar |

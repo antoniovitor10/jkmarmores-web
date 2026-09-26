@@ -32,8 +32,8 @@ Ao gravar secrets com caminho pelo Git Bash, use `MSYS_NO_PATHCONV=1 gh secret s
 
 ## Lançamento (quando as pendências P0 estiverem zeradas)
 
-1. Emitir o SSL Let's Encrypt de `jkmarmores.com.br` e `www` no DirectAdmin.
-2. Descomentar o redirecionamento http para https em `public/.htaccess` e trocar o redirecionamento do www para https.
+1. (feito em 26/09) SSL emitido e https ativo com 301 de http e www.
+2. Conferir se o certificado renovou (vence em 25/12/2026; o DirectAdmin renova sozinho).
 3. `gh variable set SITE_MODE -b producao` e rodar o workflow.
 4. Search Console: verificar o domínio e enviar `https://jkmarmores.com.br/sitemap.xml`.
 5. Trocar o link "Site" do Perfil da Empresa no Google para o domínio.
