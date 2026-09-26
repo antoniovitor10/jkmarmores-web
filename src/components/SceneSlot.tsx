@@ -13,13 +13,24 @@ export function SceneSlot({ mode, materialSlug, materials, quoteBase, whatsapp }
   const [carregar, setCarregar] = useState(false);
   const [selection, setSelection] = useState<StoneSelection | null>(null);
   const [erro, setErro] = useState(false);
+  const [tentativa, setTentativa] = useState(0);
   const mensagem = selection ? `${quoteBase} Material: ${selection.materialSlug}. Acabamento: ${selection.acabamento}. Ambiente: ${selection.ambiente}.` : quoteBase;
-  const poster = mode === "chapa" ? "/3d/poster-chapa.webp" : "/3d/poster-ambiente.webp";
+  const temMaterialConfirmado = materials.some((item) => item.confirmado && typeof item.nome === "string");
+  const posterBase = mode === "chapa" ? "poster-chapa" : "poster-ambiente";
+  const poster = `/3d/${posterBase}${temMaterialConfirmado ? "-neutro" : ""}.webp`;
 
   function pedirOrcamento(escolha: StoneSelection) {
     setSelection(escolha);
     const detalhe = `${quoteBase} Material: ${escolha.materialSlug}. Acabamento: ${escolha.acabamento}. Ambiente: ${escolha.ambiente}.`;
     window.open(linkWhatsApp(detalhe, whatsapp), "_blank", "noopener,noreferrer");
+  }
+
+  function carregarCena() {
+    if (erro) {
+      setErro(false);
+      setTentativa((atual) => atual + 1);
+    }
+    setCarregar(true);
   }
 
   useEffect(() => {
@@ -34,11 +45,12 @@ export function SceneSlot({ mode, materialSlug, materials, quoteBase, whatsapp }
   useEffect(() => {
     if (!carregar || Scene || erro) return;
     import("./stone-scene/StoneScene").then((mod) => setScene(() => mod.default)).catch(() => setErro(true));
-  }, [carregar, Scene, erro]);
+  }, [carregar, Scene, erro, tentativa]);
 
   return <div className="scene-slot" ref={sectionRef}>
     {!Scene && <picture><source srcSet={poster} type="image/webp" /><img className="scene-poster" src={poster} width={900} height={600} loading="lazy" alt={mode === "chapa" ? "Maquete provisória de uma chapa de pedra" : "Maquete provisória de um ambiente com bancada"} /></picture>}
-    {Scene && !erro ? <Scene mode={mode} materialSlug={materialSlug} materials={materials} onSelectionChange={setSelection} onQuoteRequest={pedirOrcamento} /> : <button type="button" onClick={() => setCarregar(true)} disabled={carregar && !erro}>{erro ? "Cena indisponível" : carregar ? "Carregando cena" : "Explorar em 3D"}</button>}
+    {Scene && !erro ? <Scene mode={mode} materialSlug={materialSlug} materials={materials} onSelectionChange={setSelection} onQuoteRequest={pedirOrcamento} /> : <button type="button" onClick={carregarCena} disabled={carregar && !erro}>{erro ? "Tentar carregar o 3D novamente" : carregar ? "Carregando cena" : "Explorar em 3D"}</button>}
+    {erro && <p role="status">Não foi possível abrir a cena. O poster e o pedido de orçamento continuam disponíveis.</p>}
     <p>Selecione o material e o acabamento. A cena é opcional; você pode solicitar um orçamento diretamente.</p>
     <a href={linkWhatsApp(mensagem, whatsapp)}>Pedir orçamento desta escolha</a>
   </div>;
