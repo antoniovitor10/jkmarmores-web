@@ -14,6 +14,7 @@ export function SceneSlot({ mode, materialSlug, materials, quoteBase, whatsapp }
   const [selection, setSelection] = useState<StoneSelection | null>(null);
   const [erro, setErro] = useState(false);
   const mensagem = selection ? `${quoteBase} Material: ${selection.materialSlug}. Acabamento: ${selection.acabamento}. Ambiente: ${selection.ambiente}.` : quoteBase;
+  const poster = mode === "chapa" ? "/3d/poster-chapa.webp" : "/3d/poster-ambiente.webp";
 
   function pedirOrcamento(escolha: StoneSelection) {
     setSelection(escolha);
@@ -36,7 +37,7 @@ export function SceneSlot({ mode, materialSlug, materials, quoteBase, whatsapp }
   }, [carregar, Scene, erro]);
 
   return <div className="scene-slot" ref={sectionRef}>
-    <div className="scene-poster" aria-hidden="true">Prévia do material em 3D</div>
+    {!Scene && <picture><source srcSet={poster} type="image/webp" /><img className="scene-poster" src={poster} width={900} height={600} loading="lazy" alt={mode === "chapa" ? "Maquete provisória de uma chapa de pedra" : "Maquete provisória de um ambiente com bancada"} /></picture>}
     {Scene && !erro ? <Scene mode={mode} materialSlug={materialSlug} materials={materials} onSelectionChange={setSelection} onQuoteRequest={pedirOrcamento} /> : <button type="button" onClick={() => setCarregar(true)} disabled={carregar && !erro}>{erro ? "Cena indisponível" : carregar ? "Carregando cena" : "Explorar em 3D"}</button>}
     <p>Selecione o material e o acabamento. A cena é opcional; você pode solicitar um orçamento diretamente.</p>
     <a href={linkWhatsApp(mensagem, whatsapp)}>Pedir orçamento desta escolha</a>

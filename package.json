@@ -10,6 +10,7 @@
     "lint": "eslint .",
     "build": "npm run images:build && next build && npm run check:pendencias",
     "images:build": "node scripts/build-images.mjs",
+    "measure:bundle": "node scripts/measure-bundle.mjs",
     "check:pendencias": "node scripts/check-pendencias.mjs"
   },
   "dependencies": {
