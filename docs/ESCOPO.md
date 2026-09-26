@@ -45,7 +45,7 @@ As duas compartilham motor, texturas e fallback, para não pagar o peso duas vez
 | INP | até 150 ms |
 | CLS | até 0,05 |
 | Lighthouse mobile | Performance 90+, Acessibilidade 100, Boas práticas 100, SEO 100 |
-| JS inicial por página (sem 3D) | até 90 KB gzip |
+| JS inicial por página (sem 3D) | até 150 KB gzip (ajustado em 26/09) |
 | Cena 3D | até 250 KB gzip de JS, carregada sob demanda |
 | Peso da página inicial sem 3D | até 1 MB no primeiro carregamento no celular |
 
@@ -105,4 +105,6 @@ Acessibilidade: WCAG 2.2 AA. SEO: conteúdo indexável sem JS, títulos e metade
 | 26/09/2026 | Publicado em homolog em http://jkmarmores.com.br: repositório público antoniovitor10/jkmarmores-web, deploy automático por GitHub Actions + rsync, noindex ativo. Vitor testa em aparelhos reais. SSL pendente no DirectAdmin |
 | 26/09/2026 | SSL emitido (*.jkmarmores.com.br + apex); https ativo com 301 de http e www |
 | 26/09/2026 | 3D passa para o Astra, que gera imagens no Higgsfield via MCP. Prisma sai do 3D. Astra trabalha na branch 3d-astra; merge na main só pelo Planejador. Briefing em docs/tarefas/04-astra-3d.md |
+| 26/09/2026 | Redesign completo liderado pelo Astra com Higgsfield (imagem, vídeo e 3D), sem esperar a logo (substitui a decisão de esperar a logo para a direção visual; a área da logo fica reservada). Ponto de parada: direção visual e abertura da home aprovadas pelo Vitor antes de gerar assets em volume. Briefing em docs/tarefas/05-astra-redesign.md, branch redesign-astra |
+| 26/09/2026 | Meta de JS inicial ajustada de 90 para 150 KB gzip (Next 16 + React 19 já ocupa ~138 KB), mantendo LCP, INP e CLS como metas principais |
 | 25/09/2026 | Catálogo: estrutura para granito, mármore, quartzito, quartzo/industrializado e ultracompacto; só aparece o tipo que o Lucas confirmar |

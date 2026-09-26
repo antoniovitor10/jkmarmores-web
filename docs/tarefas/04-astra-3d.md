@@ -1,3 +1,5 @@
+> **Substituída pela tarefa 05 (`05-astra-redesign.md`) em 26/09/2026.** Mantida só como histórico.
+
 # Tarefa 04 - Astra: experiência 3D (com Higgsfield via MCP)
 
 Decisão do Vitor (26/09/2026): o Astra assume **só a parte 3D**, usando o Higgsfield via MCP para gerar imagens. O Prisma (Codex) sai do 3D.
