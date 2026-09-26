@@ -18,9 +18,9 @@ Ordem visual dos links comuns após o pacote local; módulos de IA, vídeos, ima
 
 | Busca | 1º | 2º | 3º | 4º | 5º |
 |---|---|---|---|---|---|
-| `marmoraria Barueri` | [Marmoraria Pompeia, página “Vila São Francisco Barueri”](https://www.marmorariapompeia.com.br/vila_sao_francisco/) | [MTF Marmoraria, Jardim Tupanci](https://www.mtfmarmoraria.com.br/marmoraria/sp/barueri/jardim-tupanci) | Instagram Aquarela Mármores | [Renove, pisos de mármore](https://marmorariarenove.com.br/pisos-de-marmore-e-granito.html) | [Encontra Barueri, diretório](https://www.encontrabarueri.com.br/m/marmoraria-em-barueri.shtml) |
-| `marmoraria Alphaville Barueri` | Perla Mármores, artigo sobre bordas | Instagram Barueri Mármores | Facebook Mansão do Mármore | Instagram Barueri Mármores, vídeo | Renove, página de produto |
-| `bancada de granito Barueri` | Instagram AN Mármores e Granitos | Instagram Macaúbas, vídeo | Facebook Macaúbas | OLX, listagem de pias | Instagram Tamboré Mármores, vídeo |
+| [marmoraria Barueri](https://www.google.com/search?q=marmoraria%20Barueri&hl=pt-BR&gl=br) | [Marmoraria Pompeia, página “Vila São Francisco Barueri”](https://www.marmorariapompeia.com.br/vila_sao_francisco/) | [MTF Marmoraria, Jardim Tupanci](https://www.mtfmarmoraria.com.br/marmoraria/sp/barueri/jardim-tupanci) | Instagram Aquarela Mármores | [Renove, pisos de mármore](https://marmorariarenove.com.br/pisos-de-marmore-e-granito.html) | [Encontra Barueri, diretório](https://www.encontrabarueri.com.br/m/marmoraria-em-barueri.shtml) |
+| [marmoraria Alphaville Barueri](https://www.google.com/search?q=marmoraria%20Alphaville%20Barueri&hl=pt-BR&gl=br) | [Perla Mármores](https://perlamarmores.com.br/), artigo sobre bordas | Instagram Barueri Mármores | Facebook Mansão do Mármore | Instagram Barueri Mármores, vídeo | [Renove](https://www.marmorariarenove.com.br/), página de produto |
+| [bancada de granito Barueri](https://www.google.com/search?q=bancada%20de%20granito%20Barueri&hl=pt-BR&gl=br) | Instagram AN Mármores e Granitos | Instagram Macaúbas, vídeo | Facebook Macaúbas | OLX, listagem de pias | Instagram Tamboré Mármores, vídeo |
 
 Na consulta ampla, o primeiro resultado era uma página local de texto extenso da [Marmoraria Pompeia](https://www.marmorariapompeia.com.br/vila_sao_francisco/); o segundo, uma [página de bairro da MTF](https://www.mtfmarmoraria.com.br/marmoraria/sp/barueri/jardim-tupanci). O quinto era diretório. Isso mostra disputa por intenção local em páginas próprias e agregadores; a busca de bancada exibiu mais redes sociais e listagens. Não há base para inferir volume de busca ou vantagem de criar páginas de bairro sem conteúdo próprio.
 
@@ -28,7 +28,7 @@ Na consulta ampla, o primeiro resultado era uma página local de texto extenso d
 
 Os títulos e H1 são transcritos apenas para análise de estrutura; não reutilizar copy nem layout. “Páginas” descreve links ou seções observados, não garante que todos sejam indexados. A nota do Maps só aparece quando o perfil entrou nos três cards observados; demais notas são de [diretório secundário](https://marmorebrasil.com.br/barueri/).
 
-| Empresa e domínio | Title / H1 observados | Páginas por material ou aplicação | Uso de cidade | Nota/avaliações públicas, fonte secundária |
+| Empresa e domínio | Title / H1 observados | Páginas por material ou aplicação | Uso de cidade | Nota/avaliações e fonte |
 |---|---|---|---|---|
 | [Marmoraria Pompeia, página local](https://www.marmorariapompeia.com.br/vila_sao_francisco/) | “MARMORARIA VILA SãO FRANCISCO BARUERI | MÁRMORES E GRANITOS” / “MARMORARIA VILA SãO FRANCISCO ?” | Página local longa mistura material, serviços e contato; não foi encontrada ficha específica de chapa nesta análise. | Barueri no title, São Paulo/Osasco/Barueri no corpo; não prova unidade em Barueri. | Não verificada |
 | [MTF Marmoraria, Jardim Tupanci](https://www.mtfmarmoraria.com.br/marmoraria/sp/barueri/jardim-tupanci) | “Marmoraria no Bairro Jardim Tupanci, Cidade de Barueri/SP | Mármores e Granitos” / “Marmoraria no Bairro Jardim Tupanci, Cidade de Barueri/SP: Mármore E Granito Sob Medida” | Página de bairro; catálogo e aplicação não verificados. | Barueri e bairro no title/H1. | Não verificada |
