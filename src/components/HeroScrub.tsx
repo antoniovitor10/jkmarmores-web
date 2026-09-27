@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
+import { timedVideo } from "@/lib/timed-video";
 import styles from "./HomeHero.module.css";
 
 type Connection = EventTarget & { saveData?: boolean; effectiveType?: string };
@@ -18,12 +19,13 @@ export function HeroScrub({ children }: { children: ReactNode }) {
       delete el.dataset.motion;
       if (reduced.matches || connection?.saveData || /(^|-)2g|3g/.test(connection?.effectiveType ?? "")) return;
       el.dataset.motion = "true";
-      const stage = el.querySelector<HTMLElement>("[data-hero-stage]")!;
       const intro = el.querySelector<HTMLElement>("[data-hero-intro]")!;
       const figure = el.querySelector<HTMLElement>("figure")!;
       const poster = figure.querySelector<HTMLImageElement>("img")!;
       const button = el.querySelector<HTMLButtonElement>("button")!;
       let media: HTMLVideoElement | null = null;
+      let motion: ReturnType<typeof timedVideo> | null = null;
+      let advanced = false;
       let raf = 0;
       let paused = false;
       let failed = false;
@@ -58,30 +60,30 @@ export function HeroScrub({ children }: { children: ReactNode }) {
           button.hidden = true;
           el.dataset.failed = "true";
         });
+        motion = timedVideo(media);
         figure.prepend(media);
         media.load();
       }
       function render() {
         raf = 0;
         const rect = el.getBoundingClientRect();
-        const progress = Math.max(0, Math.min(1, -rect.top / Math.max(1, rect.height - stage.offsetHeight)));
         const focused = intro.contains(document.activeElement);
-        const opacity = focused ? 1 : Math.max(0, 1 - progress / .19);
+        if (scrollY > 32) advanced = true;
+        if (scrollY < 12) advanced = false;
+        const opacity = focused || !advanced ? 1 : 0;
         // Retira o painel por corte, sem reduzir o contraste do texto visível.
         intro.style.clipPath = `inset(0 ${100 * (1 - opacity)}% 0 0)`;
         intro.style.transform = `translateX(${-24 * (1 - opacity)}px)`;
         intro.inert = opacity === 0;
-        el.style.setProperty("--cover-progress", String(progress));
+        el.style.setProperty("--cover-progress", String(advanced ? 1 : 0));
         if (rect.bottom > 0 && rect.top < innerHeight) prepare();
         if (media && media.readyState >= 2 && Number.isFinite(media.duration)) {
           media.style.opacity = "1";
-          if (!paused && !media.seeking) {
-            const target = progress * Math.max(0, media.duration - .05);
-            if (Math.abs(media.currentTime - target) > .035) media.currentTime = target;
-          }
+          motion?.pause(paused || rect.bottom <= 0 || rect.top >= innerHeight || document.hidden);
+          motion?.to(advanced ? 1 : 0);
         }
       }
-      function schedule() { if (!raf) raf = requestAnimationFrame(render); }
+      function schedule() { if (!disposed && !raf) raf = requestAnimationFrame(render); }
       function scroll() { scrolled = true; schedule(); }
       function toggle() {
         paused = !paused;
@@ -95,6 +97,7 @@ export function HeroScrub({ children }: { children: ReactNode }) {
       intro.addEventListener("focusout", schedule);
       addEventListener("scroll", scroll, { passive: true });
       addEventListener("resize", schedule);
+      document.addEventListener("visibilitychange", schedule);
       if (document.readyState === "complete") void allowMedia();
       else addEventListener("load", allowMedia, { once: true });
       schedule();
@@ -103,6 +106,8 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         cancelAnimationFrame(raf);
         removeEventListener("scroll", scroll);
         removeEventListener("resize", schedule);
+        document.removeEventListener("visibilitychange", schedule);
+        motion?.dispose();
         removeEventListener("load", allowMedia);
         button.removeEventListener("click", toggle);
         intro.removeEventListener("focusin", schedule);
@@ -130,7 +135,7 @@ export function HeroScrub({ children }: { children: ReactNode }) {
     <div className={styles.stage} data-hero-stage>
       {children}
       <div className={styles.controls}>
-        <span className={styles.scrollHint}>Role para se aproximar</span>
+        <span className={styles.scrollHint}>Role para descobrir</span>
         <button type="button" aria-pressed="false" hidden>Pausar movimento</button>
         <a href="#jornada-pedra">Continuar pela pedra</a>
       </div>

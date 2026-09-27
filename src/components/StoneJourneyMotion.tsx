@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { timedVideo } from "@/lib/timed-video";
 import type { JourneyVideo } from "@/content/stone-journey";
 
 type Connection = EventTarget & { saveData?: boolean; effectiveType?: string };
@@ -26,6 +27,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
       const sticky = el.querySelector<HTMLElement>(".journey-sticky")!;
       let raf = 0;
       const media: (HTMLVideoElement | null)[] = frames.map(() => null);
+      const motions: (ReturnType<typeof timedVideo> | null)[] = frames.map(() => null);
       const mediaSources: string[] = frames.map(() => "");
       let loaded = false;
       let visible = false;
@@ -42,6 +44,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         const mobile = innerWidth <= 700;
         const source = mobile ? clip.mobile : clip.desktop;
         if (media[index] && mediaSources[index] !== source.src) {
+          motions[index]?.dispose();
           media[index]!.removeAttribute("src");
           media[index]!.load();
           media[index]!.remove();
@@ -65,6 +68,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         // Cada vídeo pertence ao seu quadro: a transição aprovada continua no figure.
         frames[index].append(item);
         media[index] = item;
+        motions[index] = timedVideo(item);
         item.load();
       }
       function render() {
@@ -72,29 +76,27 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         if (visible && loaded) el!.style.setProperty("--mask-image", "url('/img/a1-prova-01-1200.avif')");
         const rect = el!.getBoundingClientRect();
         const travel = Math.max(1, rect.height - sticky.offsetHeight);
-        const p = clamp(-rect.top / travel);
-        const reveal = clamp(p / .22);
-        const story = clamp((p - .22) / .78);
+        // Preserva o trajeto da m?scara aprovada; encurta somente os quatro quadros.
+        const maskTravel = (innerHeight * 6.2 - sticky.offsetHeight) * .22;
+        const reveal = clamp(-rect.top / maskTravel);
+        const story = clamp((-rect.top - maskTravel) / Math.max(1, travel - maskTravel));
         el!.style.setProperty("--mask-scale", String(1 + Math.pow(reveal, 2.4) * 13));
         el!.style.setProperty("--mask-opacity", String(1 - clamp((reveal - .58) / .42)));
         el!.style.setProperty("--mask-copy-opacity", String(1 - clamp(reveal * 4)));
         el!.style.setProperty("--journey-progress", String(story));
         const position = story * 3.65;
-        frames.forEach((frame, index) => {
-          frame.style.setProperty("--frame-opacity", String(index === 0 ? 1 : clamp((position - index + .3) / .3)));
-          frame.dataset.current = String(index === Math.min(3, Math.floor(position + .15)));
-        });
         const active = Math.min(3, Math.floor(position + .15));
+        frames.forEach((frame, index) => {
+          frame.style.setProperty("--frame-opacity", String(index <= active ? 1 : 0));
+          frame.dataset.current = String(index === active);
+        });
         prepareVideo(active);
         if (position - active > .45 && active < 3) prepareVideo(active + 1);
         if (position - active < .15 && active > 0) prepareVideo(active - 1);
         media.forEach((item, index) => {
           if (!item || item.readyState < 2 || !Number.isFinite(item.duration)) return;
-          const start = index === 0 ? 0 : index - .3;
-          const end = index === 3 ? 3.65 : index + .7;
-          const local = clamp((position - start) / (end - start));
-          const target = local * Math.max(0, item.duration - .04);
-          if (visible && !item.seeking && Math.abs(item.currentTime - target) > .035) item.currentTime = target;
+          motions[index]?.pause(!visible || document.hidden || reveal < 1 || index !== active);
+          motions[index]?.to(index <= active && reveal === 1 ? 1 : 0);
           item.style.height = `${frames[index].querySelector("picture")!.getBoundingClientRect().height}px`;
           item.style.bottom = "auto";
           item.style.opacity = reveal === 1 ? "1" : "0";
@@ -105,6 +107,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
       observer.observe(el);
       addEventListener("scroll", schedule, { passive: true });
       addEventListener("resize", schedule);
+      document.addEventListener("visibilitychange", schedule);
       if (document.readyState === "complete") allowMedia();
       else addEventListener("load", allowMedia, { once: true });
       render();
@@ -113,6 +116,8 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         observer.disconnect();
         removeEventListener("scroll", schedule);
         removeEventListener("resize", schedule);
+        document.removeEventListener("visibilitychange", schedule);
+        motions.forEach(motion => motion?.dispose());
         removeEventListener("load", allowMedia);
         cancelAnimationFrame(raf);
         media.forEach(item => { item?.pause(); item?.removeAttribute("src"); item?.load(); item?.remove(); });
