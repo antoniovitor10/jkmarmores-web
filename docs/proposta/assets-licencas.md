@@ -1,5 +1,35 @@
 # Assets e licenças provisórias
 
+## Quarta entrega: prova de capa pela API, 27/09/2026
+
+Teto autorizado por Vitor: US$ 5. A etapa (a) foi entregue em c15c6d9. A prova de capa **não foi aprovada na revisão técnica de movimento** e não entrou na home. Não foram enviados configurador, sequência ou regenerações adicionais.
+
+Estimativas consultadas com autenticação em POST /estimate/{modelo}, antes de cada envio. Plano: capa Standard 6 s US$ 0,278; seis órbitas Pro 8 s (2 ambientes × 3 materiais) US$ 2,958; três transições Standard 3 s US$ 0,417; dez imagens Z-Image 2k US$ 0,150. Total US$ 3,803 + reserva de 20% US$ 0,7606 = US$ 4,5636. Terceiro ambiente excluído: acrescentaria três imagens e três órbitas, US$ 1,524. Quarto material nos dois ambientes excluído: duas imagens e duas órbitas, US$ 1,016. Esses acréscimos usam as mesmas configurações estimadas, não são cotações de envios realizados.
+
+| Asset | Modelo efetivo | Request ID | Estimativa autenticada | Débito efetivo | Arquivo |
+|---|---|---|---:|---|---|
+| Imagem-chave quente, 2048×1152 | z-image/turbo; 2k; 16:9; prompt_extend false; seed 270926 | 325213ae-35bb-483b-9b76-af009803348e | US$ 0,015 / 0,240 créditos API | Não disponível na resposta | assets/provas/capa-quente-frame.png |
+| Primeira e única prova de vídeo | kling-video/v3.0/std/image-to-video; 6 s; sound off; cfg_scale 0,5; multi_shots false; imagem-chave no início e fim | 56942962-4226-423d-a673-0922e4e9ed95 | US$ 0,278 / 4,436 créditos API | Não disponível na resposta | assets/provas/capa-quente-prova.mp4 |
+
+Ambas concluíram com status completed. Vídeo recebido: H.264, 1280×720, 24 fps, duração 6,041667 s, 1.116.164 bytes, sem áudio. Total **estimado dos envios: US$ 0,293**. **Não declarar este total como cobrança confirmada.** Respostas finais e headers inspecionados não trouxeram custo; o portal da API estava sem login. Foi solicitada ao Vitor a cobrança por request para conferir a margem de 20%. Saldo API não consultável pelo SDK usado. Saldo MCP anterior 0 não é saldo API.
+
+Prompts completos e parâmetros: [quarta-prova-api.json](quarta-prova-api.json). A credencial foi carregada somente pelo Node --env-file; nenhum arquivo de credenciais foi lido, impresso, copiado ou versionado. A imagem-chave local foi enviada ao armazenamento Higgsfield como referência do vídeo; nenhuma marca ou foto da cliente enviada.
+
+### Prompt da imagem-chave
+
+Architectural editorial photograph, extreme close view of a precisely mitered thick marble kitchen island edge. Natural WARM blush pink and honey beige stone, subtle caramel and dusty rose mineral veins, absolutely not white or blue-grey marble. Warm walnut architecture and charcoal plaster in softly blurred background. One long grazing beam of 4300K sunlight from the left reveals crystalline depth and fine polished surface. Island edge diagonally crosses lower right foreground, sculptural solid geometry, restrained luxury, tactile natural texture, 50mm tilt-shift lens, believable scale, realistic photography. Quiet dark negative space upper left. No people, hands, writing, logos, watermarks, duplicated patterns, plastic surfaces or impossible edges.
+
+### Prompt do vídeo
+
+A single continuous luxury architectural macro shot of this exact warm rose-beige marble island. Locked camera with an almost imperceptible slow lateral drift returning to the same framing. A soft warm grazing beam of sunlight slowly travels across the stone and settles back, revealing the caramel and blush mineral veins. Preserve every vein in its exact physical position, all stone geometry rigid and unchanged. Gentle natural specular highlights, calm warm walnut background, rich warm neutral color. Seamless loop, matching start and end. No people, hands, text, logos, watermark, cuts, melting, warping, changing veins, cold white marble or blue light.
+
+### Revisão e termos
+
+A imagem-chave tem temperatura bege rosada/caramelo coerente com a logo. Na sequência de quadros amostrados a cada 0,5 s, a geometria e os veios permanecem estáveis, mas deslocamento de câmera e luz são discretos demais para a intenção de capa cinematográfica. A restrição de câmera quase fixa e primeiro/último frame idênticos reduziu a ação. Prova rejeitada por movimento insuficiente, não por moderação. **Parada obrigatória acionada conforme instrução do Vitor; sem nova tentativa paga.** [Quadros da prova](capturas/quarta-prova-capa-quadros.jpg).
+
+Conforme [API Terms of Service, seção 12](https://open.higgsfield.ai/terms-of-service) e [Termos de Uso, seção 4.4](https://higgsfield.ai/terms-of-use-agreement), consultados em 27/09/2026, Higgsfield não reivindica propriedade dos outputs nem restringe uso comercial; não garante exclusividade ou ausência de direitos de terceiros. Preservar atribuições de procedência quando existentes. [Cobrança e retenção](https://docs.higgsfield.ai/docs/concepts/billing-and-retention) documenta estimativa autenticada e cobrança de gerações concluídas, mas não devolve o débito neste resultado. Nada foi apresentado como obra ou material comercial da JK. Todo asset é **provisório, gerado por IA, não representa obra ou material da JK**.
+
+
 ## Terceira entrega institucional, 27/09/2026
 
 Nenhuma geração, chamada paga, recarga ou vídeo nesta rodada. Gasto adicional: **0 créditos**. Último saldo MCP confirmado na entrega anterior: **0**; acumulado de gerações: **10 créditos**. Nenhuma nova consulta de saldo necessária para os recortes locais.
