@@ -6,10 +6,62 @@ export const stoneJourney = [
   { id: "sequencia-04-aplicada", title: "Peça aplicada", detail: "A matéria passa a fazer parte do espaço.", alt: "Imagem ilustrativa de uma ilha de pedra clara em um ambiente arquitetônico fictício." },
 ] as const;
 
-export type JourneyVideo = {
+export type JourneyClip = {
   desktop: { src: string; bytes: number };
   mobile: { src: string; bytes: number; height: 720 };
   durationSeconds: number;
 };
+export type JourneyVideo = { clips: readonly JourneyClip[] };
 // Preencher somente com video aprovado, sem audio, GOP curto e faststart.
-export const stoneJourneyVideo: JourneyVideo | null = null;
+export const stoneJourneyVideo: JourneyVideo | null = {
+  "clips": [
+    {
+      "desktop": {
+        "src": "/video/jornada-1-desktop.mp4",
+        "bytes": 490136
+      },
+      "durationSeconds": 4.041667,
+      "mobile": {
+        "src": "/video/jornada-1-mobile.mp4",
+        "bytes": 317824,
+        "height": 720
+      }
+    },
+    {
+      "desktop": {
+        "src": "/video/jornada-2-desktop.mp4",
+        "bytes": 350646
+      },
+      "durationSeconds": 4.041667,
+      "mobile": {
+        "src": "/video/jornada-2-mobile.mp4",
+        "bytes": 104748,
+        "height": 720
+      }
+    },
+    {
+      "desktop": {
+        "src": "/video/jornada-3-desktop.mp4",
+        "bytes": 485962
+      },
+      "durationSeconds": 4.041667,
+      "mobile": {
+        "src": "/video/jornada-3-mobile.mp4",
+        "bytes": 311336,
+        "height": 720
+      }
+    },
+    {
+      "desktop": {
+        "src": "/video/jornada-4-desktop.mp4",
+        "bytes": 548759
+      },
+      "durationSeconds": 4.041667,
+      "mobile": {
+        "src": "/video/jornada-4-mobile.mp4",
+        "bytes": 351260,
+        "height": 720
+      }
+    }
+  ]
+};

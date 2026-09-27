@@ -1,0 +1,1734 @@
+{
+  "environment": "Emulacao Chrome headless; viewports 390x844 e 1440x900, DPR 1; CPU 4x nos testes de interacao; nenhum aparelho real",
+  "captures": [
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-390-mascara.png",
+      "progress": 0,
+      "width": 390,
+      "scrollY": 2458,
+      "overflow": false,
+      "current": "Chapa",
+      "sticky": {
+        "x": 0,
+        "y": 0.1875,
+        "width": 390,
+        "height": 768,
+        "top": 0.1875,
+        "right": 390,
+        "bottom": 768.1875,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 629.203125,
+        "width": 390,
+        "height": 134.984375,
+        "top": 629.203125,
+        "right": 390,
+        "bottom": 764.1875,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 768,
+        "width": 390,
+        "height": 76,
+        "top": 768,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-mobile-390.avif",
+          "bytes": 9841,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/video/capa-mobile-av1.mp4",
+          "bytes": 1251739,
+          "type": "video"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1200.avif",
+          "bytes": 12942,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-mobile-390.avif",
+          "bytes": 3275,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1200.avif",
+          "bytes": 15490,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1200.avif",
+          "bytes": 12246,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-390-transicao.png",
+      "progress": 0.13,
+      "width": 390,
+      "scrollY": 3039,
+      "overflow": false,
+      "current": "Chapa",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 768,
+        "top": 0,
+        "right": 390,
+        "bottom": 768,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 629.015625,
+        "width": 390,
+        "height": 134.984375,
+        "top": 629.015625,
+        "right": 390,
+        "bottom": 764,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 768,
+        "width": 390,
+        "height": 76,
+        "top": 768,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-mobile-390.avif",
+          "bytes": 9841,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/video/capa-mobile-av1.mp4",
+          "bytes": 1251739,
+          "type": "video"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1200.avif",
+          "bytes": 12942,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-mobile-390.avif",
+          "bytes": 3275,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1200.avif",
+          "bytes": 15490,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1200.avif",
+          "bytes": 12246,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-390-01.png",
+      "progress": 0.28,
+      "width": 390,
+      "scrollY": 3708,
+      "overflow": false,
+      "current": "Chapa",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 768,
+        "top": 0,
+        "right": 390,
+        "bottom": 768,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 629.015625,
+        "width": 390,
+        "height": 134.984375,
+        "top": 629.015625,
+        "right": 390,
+        "bottom": 764,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 768,
+        "width": 390,
+        "height": 76,
+        "top": 768,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-mobile-390.avif",
+          "bytes": 9841,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/video/capa-mobile-av1.mp4",
+          "bytes": 1251739,
+          "type": "video"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1200.avif",
+          "bytes": 12942,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-mobile-390.avif",
+          "bytes": 3275,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1200.avif",
+          "bytes": 15490,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1200.avif",
+          "bytes": 12246,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-390-02.png",
+      "progress": 0.48,
+      "width": 390,
+      "scrollY": 4601,
+      "overflow": false,
+      "current": "Borda",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 768,
+        "top": 0,
+        "right": 390,
+        "bottom": 768,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 610.875,
+        "width": 390,
+        "height": 153.125,
+        "top": 610.875,
+        "right": 390,
+        "bottom": 764,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 768,
+        "width": 390,
+        "height": 76,
+        "top": 768,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-mobile-390.avif",
+          "bytes": 9841,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/video/capa-mobile-av1.mp4",
+          "bytes": 1251739,
+          "type": "video"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1200.avif",
+          "bytes": 12942,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-mobile-390.avif",
+          "bytes": 3275,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1200.avif",
+          "bytes": 15490,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1200.avif",
+          "bytes": 12246,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-390-03.png",
+      "progress": 0.71,
+      "width": 390,
+      "scrollY": 5628,
+      "overflow": false,
+      "current": "Acabamento",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 768,
+        "top": 0,
+        "right": 390,
+        "bottom": 768,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 629.015625,
+        "width": 390,
+        "height": 134.984375,
+        "top": 629.015625,
+        "right": 390,
+        "bottom": 764,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 768,
+        "width": 390,
+        "height": 76,
+        "top": 768,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-mobile-390.avif",
+          "bytes": 9841,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/video/capa-mobile-av1.mp4",
+          "bytes": 1251739,
+          "type": "video"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1200.avif",
+          "bytes": 12942,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-mobile-390.avif",
+          "bytes": 3275,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1200.avif",
+          "bytes": 15490,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1200.avif",
+          "bytes": 12246,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-390-04.png",
+      "progress": 0.98,
+      "width": 390,
+      "scrollY": 6834,
+      "overflow": false,
+      "current": "Peça aplicada",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 768,
+        "top": 0,
+        "right": 390,
+        "bottom": 768,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 610.875,
+        "width": 390,
+        "height": 153.125,
+        "top": 610.875,
+        "right": 390,
+        "bottom": 764,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 768,
+        "width": 390,
+        "height": 76,
+        "top": 768,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-mobile-390.avif",
+          "bytes": 9841,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/video/capa-mobile-av1.mp4",
+          "bytes": 1251739,
+          "type": "video"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1200.avif",
+          "bytes": 12942,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-mobile-390.avif",
+          "bytes": 3275,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1200.avif",
+          "bytes": 15490,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1200.avif",
+          "bytes": 12246,
+          "type": "img"
+        },
+        {
+          "name": "/img/material-detalhe-quente-390.avif",
+          "bytes": 5319,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-1440-mascara.png",
+      "progress": 0,
+      "width": 1440,
+      "scrollY": 2631,
+      "overflow": false,
+      "current": "Chapa",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "top": 0,
+        "right": 1440,
+        "bottom": 900,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 778.203125,
+        "width": 1440,
+        "height": 117.796875,
+        "top": 778.203125,
+        "right": 1440,
+        "bottom": 896,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-1200.avif",
+          "bytes": 23882,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1600.avif",
+          "bytes": 18632,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-1600.avif",
+          "bytes": 12194,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1600.avif",
+          "bytes": 18057,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1600.avif",
+          "bytes": 22507,
+          "type": "img"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-1440-transicao.png",
+      "progress": 0.13,
+      "width": 1440,
+      "scrollY": 3239,
+      "overflow": false,
+      "current": "Chapa",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "top": 0,
+        "right": 1440,
+        "bottom": 900,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 778.203125,
+        "width": 1440,
+        "height": 117.796875,
+        "top": 778.203125,
+        "right": 1440,
+        "bottom": 896,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-1200.avif",
+          "bytes": 23882,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1600.avif",
+          "bytes": 18632,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-1600.avif",
+          "bytes": 12194,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1600.avif",
+          "bytes": 18057,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1600.avif",
+          "bytes": 22507,
+          "type": "img"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-1440-01.png",
+      "progress": 0.28,
+      "width": 1440,
+      "scrollY": 3941,
+      "overflow": false,
+      "current": "Chapa",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "top": 0,
+        "right": 1440,
+        "bottom": 900,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 778.203125,
+        "width": 1440,
+        "height": 117.796875,
+        "top": 778.203125,
+        "right": 1440,
+        "bottom": 896,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-1200.avif",
+          "bytes": 23882,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1600.avif",
+          "bytes": 18632,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-1600.avif",
+          "bytes": 12194,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1600.avif",
+          "bytes": 18057,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1600.avif",
+          "bytes": 22507,
+          "type": "img"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-1440-02.png",
+      "progress": 0.48,
+      "width": 1440,
+      "scrollY": 4877,
+      "overflow": false,
+      "current": "Borda",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "top": 0,
+        "right": 1440,
+        "bottom": 900,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 778.203125,
+        "width": 1440,
+        "height": 117.796875,
+        "top": 778.203125,
+        "right": 1440,
+        "bottom": 896,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-1200.avif",
+          "bytes": 23882,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1600.avif",
+          "bytes": 18632,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-1600.avif",
+          "bytes": 12194,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1600.avif",
+          "bytes": 18057,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1600.avif",
+          "bytes": 22507,
+          "type": "img"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-1440-03.png",
+      "progress": 0.71,
+      "width": 1440,
+      "scrollY": 5954,
+      "overflow": false,
+      "current": "Acabamento",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "top": 0,
+        "right": 1440,
+        "bottom": 900,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 778.203125,
+        "width": 1440,
+        "height": 117.796875,
+        "top": 778.203125,
+        "right": 1440,
+        "bottom": 896,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-1200.avif",
+          "bytes": 23882,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1600.avif",
+          "bytes": 18632,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-1600.avif",
+          "bytes": 12194,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1600.avif",
+          "bytes": 18057,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1600.avif",
+          "bytes": 22507,
+          "type": "img"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        }
+      ]
+    },
+    {
+      "capture": "docs/proposta/capturas/sequencia-video-antes-1440-04.png",
+      "progress": 0.98,
+      "width": 1440,
+      "scrollY": 7217,
+      "overflow": false,
+      "current": "Peça aplicada",
+      "sticky": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "top": 0,
+        "right": 1440,
+        "bottom": 900,
+        "left": 0
+      },
+      "caption": {
+        "x": 0,
+        "y": 778.203125,
+        "width": 1440,
+        "height": 117.796875,
+        "top": 778.203125,
+        "right": 1440,
+        "bottom": 896,
+        "left": 0
+      },
+      "dock": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "video": 0,
+      "videoTime": null,
+      "resources": [
+        {
+          "name": "/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+          "bytes": 10824,
+          "type": "link"
+        },
+        {
+          "name": "/img/capa-poster-1200.avif",
+          "bytes": 23882,
+          "type": "link"
+        },
+        {
+          "name": "/brand/jk-logo-288.webp",
+          "bytes": 7506,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/310vm2bl3xxpt.js",
+          "bytes": 2270,
+          "type": "link"
+        },
+        {
+          "name": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "bytes": 7914,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/0bma92pht_c97.js",
+          "bytes": 71928,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/344n2zhqbh4pn.js",
+          "bytes": 45403,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+          "bytes": 4153,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/3fntmmi971322.js",
+          "bytes": 3961,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/22i43cg4l4-dq.js",
+          "bytes": 3908,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/chunks/1n2at6zjfeeaj.js",
+          "bytes": 4379,
+          "type": "script"
+        },
+        {
+          "name": "/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+          "bytes": 11496,
+          "type": "css"
+        },
+        {
+          "name": "/img/sequencia-01-chapa-1600.avif",
+          "bytes": 18632,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-02-borda-1600.avif",
+          "bytes": 12194,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-03-acabamento-1600.avif",
+          "bytes": 18057,
+          "type": "img"
+        },
+        {
+          "name": "/img/sequencia-04-aplicada-1600.avif",
+          "bytes": 22507,
+          "type": "img"
+        },
+        {
+          "name": "/img/a1-prova-01-1200.avif",
+          "bytes": 9600,
+          "type": "css"
+        },
+        {
+          "name": "/img/material-detalhe-quente-768.avif",
+          "bytes": 12085,
+          "type": "img"
+        }
+      ]
+    }
+  ],
+  "fallbacks": [
+    {
+      "mode": "sem-js",
+      "enhanced": true,
+      "frames": [
+        {
+          "title": "Chapa",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        },
+        {
+          "title": "Borda",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        },
+        {
+          "title": "Acabamento",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        },
+        {
+          "title": "Peça aplicada",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        }
+      ],
+      "videos": 0,
+      "h1": 1,
+      "whatsapp": "https://wa.me/5511967976902?text=Ol%C3%A1.%20Vim%20da%20p%C3%A1gina%20in%C3%ADcio%20e%20quero%20conversar%20sobre%20um%20projeto.%20Posso%20informar%20ambiente%2C%20material%20que%20estou%20considerando%2C%20medidas%20aproximadas%20e%20cidade.",
+      "scene": true
+    },
+    {
+      "mode": "reduced-motion",
+      "enhanced": false,
+      "frames": [
+        {
+          "title": "Chapa",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        },
+        {
+          "title": "Borda",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        },
+        {
+          "title": "Acabamento",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        },
+        {
+          "title": "Peça aplicada",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        }
+      ],
+      "videos": 0,
+      "h1": 1,
+      "whatsapp": "https://wa.me/5511967976902?text=Ol%C3%A1.%20Vim%20da%20p%C3%A1gina%20in%C3%ADcio%20e%20quero%20conversar%20sobre%20um%20projeto.%20Posso%20informar%20ambiente%2C%20material%20que%20estou%20considerando%2C%20medidas%20aproximadas%20e%20cidade.",
+      "scene": true
+    },
+    {
+      "mode": "save-data",
+      "enhanced": false,
+      "frames": [
+        {
+          "title": "Chapa",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        },
+        {
+          "title": "Borda",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        },
+        {
+          "title": "Acabamento",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        },
+        {
+          "title": "Peça aplicada",
+          "display": "block",
+          "position": "static",
+          "caption": "visible"
+        }
+      ],
+      "videos": 0,
+      "h1": 1,
+      "whatsapp": "https://wa.me/5511967976902?text=Ol%C3%A1.%20Vim%20da%20p%C3%A1gina%20in%C3%ADcio%20e%20quero%20conversar%20sobre%20um%20projeto.%20Posso%20informar%20ambiente%2C%20material%20que%20estou%20considerando%2C%20medidas%20aproximadas%20e%20cidade.",
+      "scene": true
+    }
+  ],
+  "errors": [],
+  "interactions": {
+    "samples": [
+      {
+        "name": "keydown",
+        "duration": 24,
+        "id": 2684
+      },
+      {
+        "name": "keypress",
+        "duration": 24,
+        "id": 2684
+      },
+      {
+        "name": "click",
+        "duration": 24,
+        "id": 2684
+      },
+      {
+        "name": "keydown",
+        "duration": 16,
+        "id": 2691
+      },
+      {
+        "name": "keypress",
+        "duration": 16,
+        "id": 2691
+      },
+      {
+        "name": "click",
+        "duration": 16,
+        "id": 2691
+      },
+      {
+        "name": "keyup",
+        "duration": 16,
+        "id": 2691
+      },
+      {
+        "name": "keydown",
+        "duration": 32,
+        "id": 2698
+      },
+      {
+        "name": "keypress",
+        "duration": 32,
+        "id": 2698
+      },
+      {
+        "name": "click",
+        "duration": 32,
+        "id": 2698
+      },
+      {
+        "name": "keyup",
+        "duration": 16,
+        "id": 2698
+      }
+    ],
+    "note": "Event Timing em sessao sintetica curta, nao INP de campo; valores abaixo de 16ms nao entram no observador."
+  }
+}

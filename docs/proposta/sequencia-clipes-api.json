@@ -1,0 +1,275 @@
+{
+  "budgetUsd": 2.7,
+  "previousEstimatedUsedUsd": 0.909,
+  "newEstimatedUsedUsd": 0.74,
+  "estimatedUsedUsd": 1.649,
+  "remainingBudgetUsd": 1.051,
+  "actualCostUsd": null,
+  "accounting": "Valores da ferramenta autenticada de estimativa antes de cada envio; Vitor confere a cobrança no portal. Inclui provas rejeitadas concluídas.",
+  "requests": [
+    {
+      "date": "2026-09-27T05:36:21.568Z",
+      "model": "kling-video/v3.0/std/image-to-video",
+      "input": {
+        "sound": "off",
+        "duration": 4,
+        "cfg_scale": 0.5,
+        "image_url": "assets/images/sequencia-01-chapa.png",
+        "multi_shots": false,
+        "prompt": "Slow cinematic dolly-in towards the upright marble slab, with a gentle rightward camera slide creating visible parallax against the dark studio wall. The slab remains standing in its exact position on its two metal supports throughout. Keep its entire upper edge and most of its perimeter visible. The camera advances approximately thirty centimeters, not the object. Camera moves slowly, the stone object stays perfectly still and rigid, no morphing, no rotation of the object, no transformation, no people, no text. One continuous shot, precise rigid geometry, physically anchored mineral veins, same restrained lighting and palette as the reference. No bending, melting, animated texture, shifting veins, cuts, logos or watermarks. End on the same physical object from a slightly closer camera position."
+      },
+      "request_id": "b2d3902e-f26c-41f5-bd6e-99264d454139",
+      "status": "completed",
+      "estimate": {
+        "type": "estimate",
+        "credits": "2.957",
+        "usd": "0.185",
+        "discount": {
+          "percentage": "45.00",
+          "credits": "2.420",
+          "usd": "0.152"
+        }
+      },
+      "actualCostUsd": null,
+      "output": "assets/provas/jornada-rigida-1.mp4",
+      "quality": "Aprovado na inspeção de quadros a intervalos de 0,5 s: câmera em movimento, objeto rígido, sem transformação perceptível."
+    },
+    {
+      "date": "2026-09-27T05:39:02.177Z",
+      "model": "kling-video/v3.0/std/image-to-video",
+      "input": {
+        "sound": "off",
+        "duration": 4,
+        "cfg_scale": 0.5,
+        "image_url": "assets/images/sequencia-02-borda.png",
+        "multi_shots": false,
+        "prompt": "Slow cinematic lateral camera slide along the mitered marble corner, moving gently from left to right and slightly closer to reveal the crisp join and thickness. The corner and the separate small sample remain on the table in exactly the same positions, never rotating or sliding. Clear gentle perspective change from physical camera travel. Camera moves slowly, the stone object stays perfectly still and rigid, no morphing, no rotation of the object, no transformation, no people, no text. One continuous shot, precise rigid geometry, physically anchored mineral veins, same restrained lighting and palette as the reference. No bending, melting, animated texture, shifting veins, cuts, logos or watermarks. End on the same physical object from a slightly closer camera position."
+      },
+      "request_id": "9e6bff5f-8815-440c-8075-251750d0dace",
+      "status": "completed",
+      "estimate": {
+        "type": "estimate",
+        "credits": "2.957",
+        "usd": "0.185",
+        "discount": {
+          "percentage": "45.00",
+          "credits": "2.420",
+          "usd": "0.152"
+        }
+      },
+      "actualCostUsd": null,
+      "output": "assets/provas/jornada-rigida-2.mp4",
+      "quality": "Aprovado na inspeção de quadros a intervalos de 0,5 s: câmera em movimento, objeto rígido, sem transformação perceptível."
+    },
+    {
+      "date": "2026-09-27T05:41:43.081Z",
+      "model": "kling-video/v3.0/std/image-to-video",
+      "input": {
+        "sound": "off",
+        "duration": 4,
+        "cfg_scale": 0.5,
+        "image_url": "assets/images/sequencia-03-acabamento.png",
+        "multi_shots": false,
+        "prompt": "Slow cinematic macro camera slide diagonally across this mineral stone surface. The camera travels a short physical distance, revealing delicate crystalline details under the same grazing side light. The mineral veins remain fixed and unchanged on the rigid stone; only camera perspective changes. Camera moves slowly, the stone object stays perfectly still and rigid, no morphing, no rotation of the object, no transformation, no people, no text. One continuous shot, precise rigid geometry, physically anchored mineral veins, same restrained lighting and palette as the reference. No bending, melting, animated texture, shifting veins, cuts, logos or watermarks. End on the same physical object from a slightly closer camera position."
+      },
+      "request_id": "94d86d20-1599-4951-8f7f-f1efbeab1e55",
+      "status": "completed",
+      "estimate": {
+        "type": "estimate",
+        "credits": "2.957",
+        "usd": "0.185",
+        "discount": {
+          "percentage": "45.00",
+          "credits": "2.420",
+          "usd": "0.152"
+        }
+      },
+      "actualCostUsd": null,
+      "output": "assets/provas/jornada-rigida-3.mp4",
+      "quality": "Aprovado na inspeção de quadros a intervalos de 0,5 s: câmera em movimento, objeto rígido, sem transformação perceptível."
+    },
+    {
+      "date": "2026-09-27T05:43:19.623Z",
+      "model": "kling-video/v3.0/std/image-to-video",
+      "input": {
+        "sound": "off",
+        "duration": 4,
+        "cfg_scale": 0.5,
+        "image_url": "assets/images/sequencia-04-aplicada.png",
+        "multi_shots": false,
+        "prompt": "Slow cinematic dolly-in towards this finished marble island in its architectural room. Gentle visible parallax between the island and the dark wall, stable straight architecture. The island remains permanently fixed to the floor, with no rotation, change of shape or movement of its own. Camera moves slowly, the stone object stays perfectly still and rigid, no morphing, no rotation of the object, no transformation, no people, no text. One continuous shot, precise rigid geometry, physically anchored mineral veins, same restrained lighting and palette as the reference. No bending, melting, animated texture, shifting veins, cuts, logos or watermarks. End on the same physical object from a slightly closer camera position."
+      },
+      "request_id": "c6e6b2da-c0fd-4a1b-907f-62802e0c9cd4",
+      "status": "completed",
+      "estimate": {
+        "type": "estimate",
+        "credits": "2.957",
+        "usd": "0.185",
+        "discount": {
+          "percentage": "45.00",
+          "credits": "2.420",
+          "usd": "0.152"
+        }
+      },
+      "actualCostUsd": null,
+      "output": "assets/provas/jornada-rigida-4.mp4",
+      "quality": "Aprovado na inspeção de quadros a intervalos de 0,5 s: câmera em movimento, objeto rígido, sem transformação perceptível."
+    }
+  ],
+  "media": [
+    {
+      "file": "public/video/jornada-1-desktop.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "4.041667",
+        "size": "490136"
+      },
+      "keyframeIntervalMaxSeconds": 0.333334
+    },
+    {
+      "file": "public/video/jornada-1-mobile.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "4.041667",
+        "size": "317824"
+      },
+      "keyframeIntervalMaxSeconds": 0.333334
+    },
+    {
+      "file": "public/video/jornada-2-desktop.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "4.041667",
+        "size": "350646"
+      },
+      "keyframeIntervalMaxSeconds": 0.333334
+    },
+    {
+      "file": "public/video/jornada-2-mobile.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 576,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "4.041667",
+        "size": "104748"
+      },
+      "keyframeIntervalMaxSeconds": 0.333334
+    },
+    {
+      "file": "public/video/jornada-3-desktop.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "4.041667",
+        "size": "485962"
+      },
+      "keyframeIntervalMaxSeconds": 0.333334
+    },
+    {
+      "file": "public/video/jornada-3-mobile.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "4.041667",
+        "size": "311336"
+      },
+      "keyframeIntervalMaxSeconds": 0.333334
+    },
+    {
+      "file": "public/video/jornada-4-desktop.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "4.041667",
+        "size": "548759"
+      },
+      "keyframeIntervalMaxSeconds": 0.333334
+    },
+    {
+      "file": "public/video/jornada-4-mobile.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "4.041667",
+        "size": "351260"
+      },
+      "keyframeIntervalMaxSeconds": 0.333334
+    }
+  ],
+  "desktopTotal": 1875503,
+  "mobileTotal": 1085168
+}

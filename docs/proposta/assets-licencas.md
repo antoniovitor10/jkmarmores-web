@@ -106,6 +106,25 @@ Licença: [Termos da API](https://open.higgsfield.ai/terms-of-service), seção 
 
 27/09/2026: `material-detalhe-quente.png` reutiliza integralmente `assets/provas/capa-quente-frame.png`, request `325213ae-35bb-483b-9b76-af009803348e`, Z-Image Turbo já registrado na prova API. Cópia e derivados AVIF/WebP locais; **nenhuma geração ou cobrança adicional**. Substitui a repetição do quadro 03 na seção de materiais da home. Mesmos termos da API acima, alt descritivo e legenda de imagem ilustrativa, não obra da JK.
 
+## Prova da sequência rejeitada — etapa (e), 27/09/2026
+
+Kling 3.0 Standard image-to-video, 5 s, dos quadros já aprovados 01 e 02. Request `33f8925b-6d45-4994-b11a-090f5a687a54`, completed, custo estimado prévio **US$ 0,231**. O sucesso técnico pode ser cobrado mesmo com rejeição visual: **incluído integralmente no acumulado estimado US$ 0,909**. Restante do teto Astra: **US$ 1,791**. Débito real não retornado pela API; Vitor confere o portal.
+
+Rejeitado por transformação da geometria da pedra. Original arquivado em `assets/provas/jornada-video-1.mp4`, fora de public; não aplicado ao site. Dois envios seguintes cotados em US$ 0,231 cada não realizados. Registro completo de prompt, duração, parâmetros e estimativa em [sequencia-video-prova-api.json](sequencia-video-prova-api.json), decisão e quadros em [sequencia-video-parada.md](sequencia-video-parada.md). Mesmos termos API/Higgsfield já registrados; material ilustrativo gerado por IA, não obra ou processo da JK.
+
+## Sequência por vídeos independentes — etapa (e) retomada
+
+27/09/2026. Após a prova rejeitada, Planejador/Vitor autorizou um vídeo por quadro, somente com imagem inicial. Quatro envios `kling-video/v3.0/std/image-to-video`, 4 s cada, sem áudio ou imagem final: **US$ 0,185 estimados por envio**, **US$ 0,740 adicionais**. Acumulado de toda esta frente API, incluindo a prova rejeitada: **US$ 1,649**; restante do teto Astra US$ 2,70: **US$ 1,051**. Débito efetivo não retornado, a conferir por Vitor. MCP: zero nesta rodada.
+
+| Quadro | Request ID | Resultado |
+|---|---|---|
+| 01 Chapa | b2d3902e-f26c-41f5-bd6e-99264d454139 | completed; aprovado antes de enviar 02 |
+| 02 Borda | 9e6bff5f-8815-440c-8075-251750d0dace | completed; aprovado antes de enviar 03 |
+| 03 Acabamento | 94d86d20-1599-4951-8f7f-f1efbeab1e55 | completed; aprovado antes de enviar 04 |
+| 04 Peça aplicada | c6e6b2da-c0fd-4a1b-907f-62802e0c9cd4 | completed; aprovado na inspeção |
+
+Prompts completos, parâmetros e metadados finais em [sequencia-clipes-api.json](sequencia-clipes-api.json). Fontes `assets/provas/jornada-rigida-{1,2,3,4}.mp4`; derivados em `public/video/jornada-*-{desktop,mobile}.mp4`. Revisão, recorte mobile 02 e comportamento em [sequencia-clipes.md](sequencia-clipes.md). Mesmos termos comerciais API/Higgsfield já citados, sem garantia de exclusividade. Apenas referências próprias geradas; imagens/vídeos ilustrativos, não obras, catálogo ou processos da JK. As legendas em HTML continuam explícitas e os quatro quadros estáticos são preservados como fallback.
+
 ## Experiência 3D existente
 
 Registro em 25/09/2026. Todos são **amostras de demonstração**, não materiais oferecidos nem trabalhos executados pela JK. Trocar por fotos reais e autorização do cliente antes de apresentar como catálogo. Arquivos fontes ficaram apenas na pasta temporária local; os derivados WebP estão em `public/3d/textures/`.

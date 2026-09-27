@@ -25,42 +25,47 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
       const frames = [...el.querySelectorAll<HTMLElement>(".journey-frame")];
       const sticky = el.querySelector<HTMLElement>(".journey-sticky")!;
       let raf = 0;
-      let media: HTMLVideoElement | null = null;
-      let mediaSource = "";
+      const media: (HTMLVideoElement | null)[] = frames.map(() => null);
+      const mediaSources: string[] = frames.map(() => "");
       let loaded = false;
       let visible = false;
-      let videoFailed = false;
+      const failed = new Set<number>();
       let disposed = false;
       const allowMedia = () => {
         // Duas pinturas depois de load: poster e tipografia ja foram apresentados.
         requestAnimationFrame(() => requestAnimationFrame(() => { if (!disposed) { loaded = true; schedule(); } }));
       };
-      function prepareVideo() {
-        if (!video || videoFailed || !loaded || !visible || /(^|-)2g|3g/.test(connection?.effectiveType ?? "")) return;
-        const source = innerWidth <= 700 ? video.mobile : video.desktop;
-        if (media && mediaSource !== source.src) {
-          media.removeAttribute("src");
-          media.load();
-          media.remove();
-          media = null;
+      function prepareVideo(index: number) {
+        if (!video || failed.has(index) || !loaded || !visible || /(^|-)2g|3g/.test(connection?.effectiveType ?? "")) return;
+        const clip = video.clips[index];
+        if (!clip) return;
+        const mobile = innerWidth <= 700;
+        const source = mobile ? clip.mobile : clip.desktop;
+        if (media[index] && mediaSources[index] !== source.src) {
+          media[index]!.removeAttribute("src");
+          media[index]!.load();
+          media[index]!.remove();
+          media[index] = null;
         }
-        if (media) return;
-        const limit = innerWidth <= 700 ? 3_000_000 : 8_000_000;
-        if (source.bytes > limit || source.bytes <= 0 || video.durationSeconds <= 0) return;
-        media = document.createElement("video");
-        media.muted = true;
-        media.playsInline = true;
-        media.preload = "none";
-        media.setAttribute("aria-hidden", "true");
-        media.className = "journey-video";
-        media.poster = frames[0].querySelector("img")?.currentSrc ?? "";
-        media.addEventListener("error", () => { videoFailed = true; media?.remove(); media = null; });
-        media.addEventListener("loadeddata", schedule);
-        media.addEventListener("seeked", schedule);
-        mediaSource = source.src;
-        media.src = source.src;
-        el!.querySelector(".journey-frames")!.append(media);
-        media.load();
+        if (media[index]) return;
+        const totalBytes = video.clips.reduce((sum, item) => sum + (mobile ? item.mobile.bytes : item.desktop.bytes), 0);
+        if (totalBytes > (mobile ? 3_000_000 : 8_000_000) || source.bytes <= 0 || clip.durationSeconds <= 0) return;
+        const item = document.createElement("video");
+        item.muted = true;
+        item.playsInline = true;
+        item.preload = "none";
+        item.setAttribute("aria-hidden", "true");
+        item.className = "journey-video";
+        item.poster = frames[index].querySelector("img")?.currentSrc ?? "";
+        item.addEventListener("error", () => { failed.add(index); item.remove(); media[index] = null; });
+        item.addEventListener("loadeddata", schedule);
+        item.addEventListener("seeked", schedule);
+        mediaSources[index] = source.src;
+        item.src = source.src;
+        // Cada vídeo pertence ao seu quadro: a transição aprovada continua no figure.
+        frames[index].append(item);
+        media[index] = item;
+        item.load();
       }
       function render() {
         raf = 0;
@@ -79,14 +84,23 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
           frame.style.setProperty("--frame-opacity", String(index === 0 ? 1 : clamp((position - index + .3) / .3)));
           frame.dataset.current = String(index === Math.min(3, Math.floor(position + .15)));
         });
-        prepareVideo();
-        if (media && media.readyState >= 2 && Number.isFinite(media.duration)) {
-          const target = story * Math.max(0, media.duration - .04);
-          if (!media.seeking && Math.abs(media.currentTime - target) > .035) media.currentTime = target;
-          media.style.opacity = reveal === 1 ? "1" : "0";
-        }
+        const active = Math.min(3, Math.floor(position + .15));
+        prepareVideo(active);
+        if (position - active > .45 && active < 3) prepareVideo(active + 1);
+        if (position - active < .15 && active > 0) prepareVideo(active - 1);
+        media.forEach((item, index) => {
+          if (!item || item.readyState < 2 || !Number.isFinite(item.duration)) return;
+          const start = index === 0 ? 0 : index - .3;
+          const end = index === 3 ? 3.65 : index + .7;
+          const local = clamp((position - start) / (end - start));
+          const target = local * Math.max(0, item.duration - .04);
+          if (visible && !item.seeking && Math.abs(item.currentTime - target) > .035) item.currentTime = target;
+          item.style.height = `${frames[index].querySelector("picture")!.getBoundingClientRect().height}px`;
+          item.style.bottom = "auto";
+          item.style.opacity = reveal === 1 ? "1" : "0";
+        });
       }
-      function schedule() { if (!raf) raf = requestAnimationFrame(render); }
+      function schedule() { if (!disposed && !raf) raf = requestAnimationFrame(render); }
       const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; schedule(); }, { rootMargin: "0px" });
       observer.observe(el);
       addEventListener("scroll", schedule, { passive: true });
@@ -101,10 +115,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         removeEventListener("resize", schedule);
         removeEventListener("load", allowMedia);
         cancelAnimationFrame(raf);
-        media?.pause();
-        media?.removeAttribute("src");
-        media?.load();
-        media?.remove();
+        media.forEach(item => { item?.pause(); item?.removeAttribute("src"); item?.load(); item?.remove(); });
         delete el.dataset.enhanced;
         el.removeAttribute("style");
         frames.forEach(frame => { frame.removeAttribute("style"); delete frame.dataset.current; });

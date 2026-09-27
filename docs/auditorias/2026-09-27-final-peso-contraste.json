@@ -1,0 +1,41 @@
+{
+  "environment": "Emulação Chrome, recursos transferidos até load com gzip; inclui headers, diferente de bytes gzip em disco",
+  "before": {
+    "groups": {
+      "html": 29334,
+      "js": 142907,
+      "fonts": 22320,
+      "images": 11110,
+      "video": 0,
+      "other": 0
+    },
+    "total": 205671
+  },
+  "after": {
+    "groups": {
+      "html": 32809,
+      "js": 144142,
+      "fonts": 22320,
+      "images": 17347,
+      "video": 0,
+      "other": 0
+    },
+    "total": 216618
+  },
+  "contrast": {
+    "heroDisplay": 10.75874951401601,
+    "heroBody": 9.251270869300004,
+    "heroEyebrow": 7.2009826614023495,
+    "cta": 7.92331277520426,
+    "budgetBodyWorstTransition": 8.480450275423438,
+    "budgetAccentWorstTransition": 5.831222504427979
+  },
+  "initialJsGzipBytes": 141742,
+  "deferred": {
+    "coverDesktopBytes": 1634784,
+    "coverMobileBytes": 1251439,
+    "note": "Capa após pintura do pôster e primeira rolagem. Sequência após load/pintura e entrada da seção, etapa atual e vizinha sob demanda. 3D existente não alterado.",
+    "sequenceDesktopBytes": 1875503,
+    "sequenceMobileBytes": 1085168
+  }
+}
