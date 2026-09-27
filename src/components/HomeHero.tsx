@@ -1,38 +1,23 @@
-import { homeDisplay, homeBody, homeBodyStyles } from "./home-fonts";
-import { aberturaHome, conteudo } from "@/content";
-import { Foto } from "@/components/Foto";
-import { PendenteTexto } from "@/components/PendenteTexto";
-import { linkWhatsApp } from "@/lib/whatsapp";
-import styles from "./HomeHero.module.css";
+import { aberturaHome, conteudo, telefoneUrl } from '@/content';
+import { institucional } from '@/content/institucional';
+import { Foto } from './Foto';
+import { SiteLink } from './SiteLink';
+import styles from './HomeHero.module.css';
 
 export function HomeHero() {
-  const pagina = conteudo.paginas.inicio;
-  return (
-    <header className={`home-hero ${styles.hero} ${homeDisplay.variable} ${homeBody.variable}`}>
-      <style href="home-body-type" precedence="next">{homeBodyStyles}</style>
+  return <header className={`home-hero ${styles.hero}`}>
+    <div className={styles.composition}>
       <div className={styles.intro}>
-        <p className={styles.eyebrow}>{aberturaHome.sobretitulo}</p>
-        <h1><PendenteTexto valor={pagina.titulo} /></h1>
-        <div className={styles.action}>
-          <p>{aberturaHome.orientacao}</p>
-          <div className={styles.links}>
-            <a className="button" href={linkWhatsApp(pagina.cta.mensagem, conteudo.empresa.whatsapp)}>{pagina.cta.texto}</a>
-            {/* Navegacao nativa evita requisicoes RSC de segmentos ausentes no export estatico. */}
-            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-            <a href="/materiais/">{aberturaHome.ctaSecundario}</a>
-          </div>
-        </div>
+        <p className="eyebrow">{institucional.hero.local}</p>
+        <h1>{institucional.hero.titulo}</h1>
+        <p className={styles.description}>{institucional.hero.texto}</p>
+        <div className="actions"><SiteLink className="button" href="/contato/">Fale sobre seu projeto</SiteLink><SiteLink href="/materiais/">Conheça os materiais</SiteLink></div>
       </div>
       <figure className={styles.figure}>
-        <div className={styles.frame}>
-          <Foto id="a1-prova-01" alt={aberturaHome.alt} sizes="(max-width: 700px) 1000px, 100vw" prioridade incorporarAvif className={styles.picture} />
-        </div>
-        <figcaption className={styles.caption}>
-          <span><span className={styles.number}>01</span>{aberturaHome.legenda}</span>
-          <span>{aberturaHome.avisoImagem}</span>
-        </figcaption>
+        <Foto id="a1-prova-01" mobileId="a1-mobile" alt={aberturaHome.alt} sizes="65vw" prioridade />
+        <figcaption>Imagem ilustrativa, gerada por IA</figcaption>
       </figure>
-      <div className={styles.pending}><PendenteTexto valor={pagina.introducao} /></div>
-    </header>
-  );
+    </div>
+    <div className={`container ${styles.rail}`}><p><span>JK MARMORES E GRANITOS</span>Pedra, textura e possibilidades.</p><p><span>CONVERSE COM A JK</span><a href={telefoneUrl}>{String(conteudo.empresa.telefone)}</a></p><SiteLink href="/sobre/">Conheça a empresa</SiteLink></div>
+  </header>;
 }

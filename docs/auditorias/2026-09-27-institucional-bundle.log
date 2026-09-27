@@ -1,0 +1,5 @@
+
+> jkmarmores-web@0.1.0 measure:bundle
+> node scripts/measure-bundle.mjs
+
+Scripts iniciais da home: 8 arquivos, 140507 bytes gzip

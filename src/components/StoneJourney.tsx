@@ -40,7 +40,9 @@ function DeferredImage({ id, alt }: { id: string; alt: string }) {
   const image = (manifest as Record<string, { width: number; height: number; variantes: { width: number; avif: string; webp: string }[] }>)[id];
   if (!image) return null;
   const sizes = "(max-width: 700px) 1050px, 100vw";
-  return <JourneyImage alt={alt} width={image.width} height={image.height} sizes={sizes} src={image.variantes.at(-1)!.webp} avif={image.variantes.map(v => `${v.avif} ${v.width}w`).join(", ")} webp={image.variantes.map(v => `${v.webp} ${v.width}w`).join(", ")}>
-    <Foto id={id} alt={alt} sizes={sizes} />
+  const mobileId = id === "sequencia-02-borda" ? "sequencia-02-borda-mobile" : undefined;
+  const mobile = mobileId ? (manifest as typeof manifest & Record<string, typeof image>)[mobileId] : undefined;
+  return <JourneyImage alt={alt} width={image.width} height={image.height} sizes={sizes} src={image.variantes.at(-1)!.webp} avif={image.variantes.map(v => `${v.avif} ${v.width}w`).join(", ")} webp={image.variantes.map(v => `${v.webp} ${v.width}w`).join(", ")} mobileAvif={mobile?.variantes.map(v => `${v.avif} ${v.width}w`).join(", ")} mobileWebp={mobile?.variantes.map(v => `${v.webp} ${v.width}w`).join(", ")}>
+    <Foto id={id} mobileId={mobileId} alt={alt} sizes={sizes} />
   </JourneyImage>;
 }

@@ -1,4 +1,21 @@
 {
+  "a1-mobile": {
+    "width": 780,
+    "height": 600,
+    "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwBACdASoYABIAPwFork6rJaQiMBgMAWAgCWcAthQLd0ufhWJPwgsl2U1EAAD4VuRmoWh00PT+Tnhz7W6/vD6qq25FuKhP26832L5v1zs6R53yLPxX6FbW9eO4Zv3e1cRhYyQ4Sce+AAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/a1-mobile-390.avif",
+        "webp": "/img/a1-mobile-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/a1-mobile-768.avif",
+        "webp": "/img/a1-mobile-768.webp"
+      }
+    ]
+  },
   "a1-prova-01": {
     "width": 3168,
     "height": 1344,
@@ -50,6 +67,23 @@
         "width": 1600,
         "avif": "/img/sequencia-01-chapa-1600.avif",
         "webp": "/img/sequencia-01-chapa-1600.webp"
+      }
+    ]
+  },
+  "sequencia-02-borda-mobile": {
+    "width": 850,
+    "height": 1063,
+    "placeholder": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABwBACdASoYAB4APwFurE+rJqQiMAgBYCAJZQC7ACHV55nJ+iQt4qyQvdOLYAD+yvND33VAYiBz0Ehj7RlOiyHP/v32j47cO9ceMX+uqT4Wn9EduxmA6n79L6Oq/NMaN6tlKHD79NdzTr3Rt5ErqwN75uZBGvFGEdlZHIAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/sequencia-02-borda-mobile-390.avif",
+        "webp": "/img/sequencia-02-borda-mobile-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/sequencia-02-borda-mobile-768.avif",
+        "webp": "/img/sequencia-02-borda-mobile-768.webp"
       }
     ]
   },

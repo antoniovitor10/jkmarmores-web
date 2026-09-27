@@ -12,7 +12,7 @@ const stage = process.argv[2];
 if (!["antes", "depois"].includes(stage)) throw new Error("Use antes ou depois.");
 const url = `http://127.0.0.1:${process.env.AUDIT_PORT ?? "3105"}${process.env.AUDIT_ROUTE ?? "/"}`;
 const label = process.env.AUDIT_LABEL ?? "a1";
-const prefix = `docs/auditorias/2026-09-26-${label}-${stage}`;
+const prefix = `docs/auditorias/${process.env.AUDIT_DATE ?? new Date().toISOString().slice(0,10)}-${label}-${stage}`;
 await fs.mkdir("docs/proposta/capturas", { recursive: true });
 const browser = await puppeteer.launch({ executablePath: process.env.CHROME_PATH ?? "C:/Program Files/Google/Chrome/Application/chrome.exe", headless: true, args: ["--no-first-run", "--disable-extensions"] });
 try {

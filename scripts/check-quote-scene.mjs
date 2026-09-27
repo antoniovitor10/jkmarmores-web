@@ -30,9 +30,9 @@ try {
   }
   await page.keyboard.press("Enter");
   const opened = await page.evaluate(() => window.__opened);
-  assert.equal(opened.length, 1);
-  assert.ok(new URL(opened[0]).searchParams.get("text").includes("Cozinha de teste"));
-  results.push({ contact: "Teclado do skip link ao submit; 4 campos visiveis; URL capturada localmente, sem abrir WhatsApp nem enviar mensagem" });
+  assert.equal(opened.length, 0);
+  assert.ok(await page.$eval(".quote-draft", el => el.textContent.includes("Cozinha de teste")));
+  results.push({ contact: "Teclado do skip link ao submit; 4 campos visiveis; Rascunho local gerado; WhatsApp pendente nao abre destino externo" });
   await page.evaluateOnNewDocument(() => {
     const original = HTMLCanvasElement.prototype.getContext;
     HTMLCanvasElement.prototype.getContext = function(type, ...args) { return /webgl/i.test(type) ? null : original.call(this, type, ...args); };
@@ -55,13 +55,15 @@ try {
       if (values.length > 1) await select.select(values[1]);
     }
     const state = await page.$eval(".scene-slot", el => ({ controls: el.querySelectorAll("select").length, summary: el.querySelector('[aria-live="polite"]').textContent, image: el.querySelector("img").currentSrc, status: el.querySelector('[role="status"]')?.textContent, quote: el.querySelector("a").href }));
-    assert.ok(state.image.includes(".webp") && state.quote.startsWith("https://api.whatsapp.com/"));
+    assert.ok(state.image.includes(".webp") && state.quote.endsWith("/contato/#whatsapp"));
     assert.equal(state.controls, route === "/" ? 3 : 2);
     const retry = await page.$$(".scene-slot button");
     for (const button of retry) if ((await button.evaluate(n => n.textContent)) === "Tentar visualização 3D") await button.click();
     await page.waitForFunction(() => document.querySelector('.scene-slot [role="status"]')?.textContent.includes("não está disponível"));
     results.push({ route, reducedMotion: true, webglBlocked: true, cpuSlowdown: 4, ...state, unavailableAfterRetry: true });
+    await page.$eval('.scene-slot', el => el.scrollIntoView());
+    await page.screenshot({ path: 'docs/proposta/capturas/institucional-390-configurador-fallback.png' });
   }
-  await fs.writeFile("docs/auditorias/2026-09-26-sequencia-orcamento-3d.json", JSON.stringify({ environment: "Emulacao Chrome headless, CPU 4x; WebGL bloqueado; nenhum envio externo", results }, null, 2));
+  await fs.writeFile("docs/auditorias/2026-09-27-institucional-orcamento-3d.json", JSON.stringify({ environment: "Emulacao Chrome headless, CPU 4x; WebGL bloqueado; nenhum envio externo", results }, null, 2));
   console.log("Orcamento por teclado, configurador e fallbacks 3D passaram; rota de material permanece pendente de catalogo.");
 } finally { await browser.close(); }

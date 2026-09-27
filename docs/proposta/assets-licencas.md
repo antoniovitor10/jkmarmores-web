@@ -1,5 +1,19 @@
 # Assets e licenças provisórias
 
+## Terceira entrega institucional, 27/09/2026
+
+Nenhuma geração, chamada paga, recarga ou vídeo nesta rodada. Gasto adicional: **0 créditos**. Último saldo MCP confirmado na entrega anterior: **0**; acumulado de gerações: **10 créditos**. Nenhuma nova consulta de saldo necessária para os recortes locais.
+
+| Asset | Origem e tratamento | Uso / direitos |
+|---|---|---|
+| `assets/brand/logo-jk-cliente-2026-09-26.jpg` | JPEG 1600×1200 enviado pela cliente em 26/09/2026 e encaminhado pelo Planejador. Sem geração. | Marca fornecida para este site; uso no header/rodapé autorizado na instrução desta rodada. Vetor pendente (V1 parcial). |
+| `public/brand/jk-logo-{288,480}.webp` | Recorte x260/y266, 1080×666, redimensionamento proporcional; fundo preto, desenho e assinatura preservados. Sharp; qualidades 88/92. | Derivados da marca da cliente, não redesenhada. Resolução suficiente para exibição em 2x. |
+| `assets/images/a1-mobile.png`, `public/img/a1-mobile-*` | Recorte x710/y0, 1748×1344 do A1 existente, reduzido a 780 px; AVIF/WebP responsivos. | Mesma origem, licença e caráter provisório de A1; não é nova geração. |
+| `assets/images/sequencia-02-borda-mobile.png`, `public/img/sequencia-02-borda-mobile-*` | Recorte x950/y470, 850×1063 do quadro 02 existente; aproxima quina e exclui peça solta. | Mesma origem e licença do quadro 02. Desktop e fonte original intactos; continua imagem ilustrativa. |
+| Instrument Sans 400 estático / Instrument Serif 400 | Subsets locais das mesmas fontes OFL registradas abaixo; FontTools, caracteres portugueses. | Sem nova licença ou serviço; fonte de corpo sem eixos variáveis não usados. |
+
+Tratamentos reproduzíveis: `node scripts/prepare-brand.mjs`, `npm run images:build` e `scripts/subset-home-fonts.py`. Nada da logo foi enviado a serviço de IA. A1 e os quatro quadros continuam claramente ilustrativos; nunca entram na galeria como obras. As seções abaixo preservam o histórico das gerações, licenças e gastos.
+
 ## A1: primeira prova da abertura da home
 
 Data: 26/09/2026. **Provisório, gerado por IA, não representa obra ou material da JK.** Uso somente no preview local; aprovação visual do Vitor e do cliente pendente, registrada como V7 em `docs/PENDENCIAS.md`. Não incluir na galeria de trabalhos.

@@ -1,0 +1,1110 @@
+{
+  "environment": "Emulação Chrome, DPR 1, 390x844 e 1440x900. Captura integral da home no modo estático acessível para mostrar os quatro quadros; rolagem animada documentada separadamente.",
+  "pages": [
+    {
+      "route": "/",
+      "width": 390,
+      "capture": "docs/proposta/capturas/institucional-home-390-inteira.png",
+      "title": "Marmoraria em Barueri/SP | JK Marmores e Granitos",
+      "h1": [
+        "Mármores e granitos em Barueri."
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902",
+        "tel:+5511967976902",
+        "tel:+5511967976902",
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/a1-mobile-390.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-01-chapa-1200.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-02-borda-mobile-390.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-03-acabamento-1200.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-04-aplicada-1200.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-03-acabamento-390.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/3d/poster-ambiente.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 120,
+          "width": 120
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 180,
+          "width": 180
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/sobre/",
+      "width": 390,
+      "capture": "docs/proposta/capturas/institucional-sobre-390-inteira.png",
+      "title": "A empresa | JK Marmores e Granitos em Barueri",
+      "h1": [
+        "JK Marmores e Granitos."
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/sobre/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902",
+        "tel:+5511967976902",
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-04-aplicada-1200.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 120,
+          "width": 120
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 180,
+          "width": 180
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/materiais/",
+      "width": 390,
+      "capture": "docs/proposta/capturas/institucional-materiais-390-inteira.png",
+      "title": "Materiais e acabamentos | JK Marmores e Granitos",
+      "h1": [
+        "A pedra certa começa pelo seu projeto."
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/materiais/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902",
+        "tel:+5511967976902",
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-01-chapa-1200.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-02-borda-390.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 120,
+          "width": 120
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 180,
+          "width": 180
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/contato/",
+      "width": 390,
+      "capture": "docs/proposta/capturas/institucional-contato-390-inteira.png",
+      "title": "Contato e orçamento em Barueri | JK Marmores e Granitos",
+      "h1": [
+        "Vamos falar do seu projeto."
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/contato/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902",
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 120,
+          "width": 120
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 180,
+          "width": 180
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/aplicacoes/",
+      "width": 390,
+      "capture": "docs/proposta/capturas/institucional-aplicacoes-390-inteira.png",
+      "title": "Pendente: title de aplicações com serviços confirmados",
+      "h1": [
+        "Escolha pela aplicação"
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/aplicacoes/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 120,
+          "width": 120
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 180,
+          "width": 180
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/galeria/",
+      "width": 390,
+      "capture": "docs/proposta/capturas/institucional-galeria-390-inteira.png",
+      "title": "Pendente: title da galeria com trabalhos reais autorizados",
+      "h1": [
+        "Trabalhos realizados"
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/galeria/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 120,
+          "width": 120
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 180,
+          "width": 180
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/materiais/pendente/",
+      "width": 390,
+      "capture": "docs/proposta/capturas/institucional-material-pendente-390-inteira.png",
+      "title": "Pendente: material confirmado",
+      "h1": [
+        "Pendente: material confirmado pela JK"
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/materiais/pendente/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 120,
+          "width": 120
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 180,
+          "width": 180
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/aplicacoes/pendente/",
+      "width": 390,
+      "capture": "docs/proposta/capturas/institucional-aplicacao-pendente-390-inteira.png",
+      "title": "Pendente: aplicação confirmada",
+      "h1": [
+        "Pendente: aplicação confirmada pela JK"
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/aplicacoes/pendente/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 120,
+          "width": 120
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 180,
+          "width": 180
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "capture": "docs/proposta/capturas/institucional-home-1440-inteira.png",
+      "title": "Marmoraria em Barueri/SP | JK Marmores e Granitos",
+      "h1": [
+        "Mármores e granitos em Barueri."
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902",
+        "tel:+5511967976902",
+        "tel:+5511967976902",
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/a1-prova-01-1200.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-01-chapa-1600.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-02-borda-1600.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-03-acabamento-1600.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-04-aplicada-1600.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-03-acabamento-1200.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/3d/poster-ambiente.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 144,
+          "width": 144
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 209,
+          "width": 210
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/sobre/",
+      "width": 1440,
+      "capture": "docs/proposta/capturas/institucional-sobre-1440-inteira.png",
+      "title": "A empresa | JK Marmores e Granitos em Barueri",
+      "h1": [
+        "JK Marmores e Granitos."
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/sobre/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902",
+        "tel:+5511967976902",
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-04-aplicada-1600.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 144,
+          "width": 144
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 209,
+          "width": 210
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/materiais/",
+      "width": 1440,
+      "capture": "docs/proposta/capturas/institucional-materiais-1440-inteira.png",
+      "title": "Materiais e acabamentos | JK Marmores e Granitos",
+      "h1": [
+        "A pedra certa começa pelo seu projeto."
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/materiais/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902",
+        "tel:+5511967976902",
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-01-chapa-1600.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/img/sequencia-02-borda-1600.avif",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 144,
+          "width": 144
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 209,
+          "width": 210
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/contato/",
+      "width": 1440,
+      "capture": "docs/proposta/capturas/institucional-contato-1440-inteira.png",
+      "title": "Contato e orçamento em Barueri | JK Marmores e Granitos",
+      "h1": [
+        "Vamos falar do seu projeto."
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/contato/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902",
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 144,
+          "width": 144
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 209,
+          "width": 210
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/aplicacoes/",
+      "width": 1440,
+      "capture": "docs/proposta/capturas/institucional-aplicacoes-1440-inteira.png",
+      "title": "Pendente: title de aplicações com serviços confirmados",
+      "h1": [
+        "Escolha pela aplicação"
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/aplicacoes/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 144,
+          "width": 144
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 209,
+          "width": 210
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/galeria/",
+      "width": 1440,
+      "capture": "docs/proposta/capturas/institucional-galeria-1440-inteira.png",
+      "title": "Pendente: title da galeria com trabalhos reais autorizados",
+      "h1": [
+        "Trabalhos realizados"
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/galeria/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 144,
+          "width": 144
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 209,
+          "width": 210
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/materiais/pendente/",
+      "width": 1440,
+      "capture": "docs/proposta/capturas/institucional-material-pendente-1440-inteira.png",
+      "title": "Pendente: material confirmado",
+      "h1": [
+        "Pendente: material confirmado pela JK"
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/materiais/pendente/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 144,
+          "width": 144
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 209,
+          "width": 210
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "route": "/aplicacoes/pendente/",
+      "width": 1440,
+      "capture": "docs/proposta/capturas/institucional-aplicacao-pendente-1440-inteira.png",
+      "title": "Pendente: aplicação confirmada",
+      "h1": [
+        "Pendente: aplicação confirmada pela JK"
+      ],
+      "overflow": false,
+      "noindex": "noindex, nofollow",
+      "canonical": "https://jkmarmores.com.br/aplicacoes/pendente/",
+      "schema": [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "url": "https://jkmarmores.com.br"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://jkmarmores.com.br/#empresa",
+          "name": "JK Marmores e Granitos",
+          "url": "https://jkmarmores.com.br",
+          "telephone": "+5511967976902",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+            "addressLocality": "Barueri",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+          }
+        }
+      ],
+      "phones": [
+        "tel:+5511967976902"
+      ],
+      "whatsapp": [],
+      "images": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "complete": true
+        }
+      ],
+      "logo": [
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 144,
+          "width": 144
+        },
+        {
+          "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+          "naturalWidth": 209,
+          "width": 210
+        }
+      ],
+      "videos": 0,
+      "bodyFont": "homeBody, \"homeBody Fallback\", Arial, sans-serif",
+      "displayFont": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    }
+  ],
+  "errors": []
+}

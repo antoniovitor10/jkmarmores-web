@@ -26,26 +26,37 @@ try {
       image: { ready: document.querySelector(".home-hero img").complete, url: document.querySelector(".home-hero img").currentSrc.startsWith("data:") ? "AVIF incorporado no HTML" : document.querySelector(".home-hero img").currentSrc, priority: document.querySelector(".home-hero img").fetchPriority },
       cta: { href: document.querySelector(".home-hero .button").href, bottom: document.querySelector(".home-hero .button").getBoundingClientRect().bottom },
       noindex: document.querySelector('meta[name="robots"]').content.includes("noindex"),
-      sections: [...document.querySelectorAll(".content-section")].map(n => n.id),
+      sections: [...document.querySelectorAll("main section[id]")].map(n => n.id),
       scene: document.querySelector(".scene-slot") !== null,
+      deferredHydration: {
+        bootstrap: !!document.querySelector('#jk-hydration-bootstrap'),
+        scriptsPending: document.querySelectorAll('script[data-jk-src]').length,
+        paint: performance.getEntriesByName('first-contentful-paint')[0]?.startTime,
+        firstScript: performance.getEntriesByType('resource').filter(r => /\/_next\/static\/.*\.js$/.test(new URL(r.name).pathname)).sort((a,b) => a.startTime-b.startTime)[0]?.startTime,
+      },
     }));
     assert.equal(state.h1.length, 1);
-    assert.equal(state.h1[0], "A escolha começa no detalhe.");
+    assert.equal(state.h1[0], "Mármores e granitos em Barueri.");
     assert.equal(state.overflow, false);
     assert.ok(state.pending > 0 && state.image.ready && state.scene && state.noindex);
-    assert.ok(state.cta.bottom < 844 && state.cta.href.startsWith("https://api.whatsapp.com/send?text="));
-    assert.deepEqual(state.sections, ["materiais", "aplicacoes", "configurador", "orcamento", "trabalhos", "atendimento"]);
+    assert.ok(state.deferredHydration.bootstrap);
+    if (js) {
+      assert.equal(state.deferredHydration.scriptsPending,0,'Hidratacao deve iniciar automaticamente, sem esperar um clique');
+      assert.ok(state.deferredHydration.firstScript > state.deferredHydration.paint,'Scripts interativos entram depois da primeira pintura');
+    } else assert.ok(state.deferredHydration.scriptsPending > 0);
+    assert.ok(state.cta.bottom < 844 && state.cta.href.endsWith("/contato/"));
+    assert.deepEqual(state.sections, ["jornada-pedra", "materiais", "configurador", "orcamento", "trabalhos"]);
     checks.push({ javascript: js, ...state });
     await page.click('.home-hero a[href="/materiais/"]');
     await page.waitForFunction(() => location.pathname === "/materiais/");
-    assert.equal(await page.$eval("h1", n => n.textContent), "Materiais para escolher com critério");
+    assert.equal(await page.$eval("h1", n => n.textContent), "A pedra certa começa pelo seu projeto.");
   }
   await page.goto("http://127.0.0.1:3105/", { waitUntil: "networkidle0" });
   await page.keyboard.press("Tab");
   assert.equal(await page.evaluate(() => document.activeElement.textContent), "Ir para o conteúdo");
   await page.keyboard.press("Enter");
   await page.keyboard.press("Tab");
-  assert.equal(await page.evaluate(() => document.activeElement.textContent), "Pedir orçamento");
+  assert.equal(await page.evaluate(() => document.activeElement.textContent), "Fale sobre seu projeto");
   checks.push({ keyboard: "Skip link seguido do CTA da abertura; foco visivel e ordem nativa" });
   await page.goto("http://127.0.0.1:3105/", { waitUntil: "networkidle0" });
   await page.focus(".mobile-nav summary");
@@ -62,6 +73,6 @@ try {
   assert.ok(reduced.transition.split(",").every(value => parseFloat(value) <= 0.00001));
   checks.push({ reducedMotion: reduced });
   assert.deepEqual(errors, []);
-  await fs.writeFile(`docs/auditorias/2026-09-26-${process.env.AUDIT_LABEL ?? "a1"}-home-funcional.json`, JSON.stringify({ environment: "Emulacao Chrome headless; nenhum contato enviado", checks, errors }, null, 2));
+  await fs.writeFile(`docs/auditorias/2026-09-27-${process.env.AUDIT_LABEL ?? "institucional"}-home-funcional.json`, JSON.stringify({ environment: "Emulacao Chrome headless; nenhum contato enviado", checks, errors }, null, 2));
   process.stdout.write("Home: verificacoes sem JS/com JS, imagem, links, teclado, menu, noindex e movimento reduzido passaram.\n");
 } finally { await browser.close(); }

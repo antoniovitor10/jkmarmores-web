@@ -1,0 +1,25 @@
+{
+  "environment": "Emulacao Chrome headless, CPU 4x; WebGL bloqueado; nenhum envio externo",
+  "results": [
+    {
+      "contact": "Teclado do skip link ao submit; 4 campos visiveis; Rascunho local gerado; WhatsApp pendente nao abre destino externo"
+    },
+    {
+      "route": "/",
+      "reducedMotion": true,
+      "webglBlocked": true,
+      "cpuSlowdown": 4,
+      "controls": 3,
+      "summary": "Bancada em lavatório ilustrativo. Amostra de granito. Levigado (simulação). Borda reta ilustrativa.",
+      "image": "http://127.0.0.1:3105/3d/poster-lavatorio-granito-levigado.webp",
+      "status": "Movimento reduzido: a prévia estática está ativa.",
+      "quote": "http://127.0.0.1:3105/contato/#whatsapp",
+      "unavailableAfterRetry": true
+    },
+    {
+      "route": "/materiais/pendente/",
+      "pendingCatalog": true,
+      "note": "Rota de material continua placeholder, sem catalogo confirmado. Explorador preservado no codigo da rota real; nao exercitado por esta pagina."
+    }
+  ]
+}

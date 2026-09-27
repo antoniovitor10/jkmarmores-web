@@ -31,7 +31,7 @@ try {
       }, progress);
       await new Promise(resolve => setTimeout(resolve, 350));
       await page.evaluate(() => Promise.all([...document.querySelectorAll(".journey-frame img")].map(img => img.decode())));
-      const capture = `docs/proposta/capturas/sequencia-${width}-${name}.png`;
+      const capture = `docs/proposta/capturas/institucional-${width}-${name}.png`;
       await page.screenshot({ path: capture });
       const state = await page.evaluate(() => ({
         width: innerWidth, scrollY, overflow: document.documentElement.scrollWidth > innerWidth,
@@ -77,15 +77,15 @@ try {
     assert.ok(state.frames.every(n => n.display !== "none" && n.position === "static" && n.caption === "visible"));
     assert.equal(state.videos, 0);
     assert.equal(state.h1, 1);
-    assert.ok(state.scene && state.whatsapp.startsWith("https://api.whatsapp.com/"));
+    assert.ok(state.scene && state.whatsapp.endsWith("/contato/"));
     await fallback.evaluate(() => { document.documentElement.style.scrollBehavior = "auto"; document.querySelector(".journey-frame").scrollIntoView(); });
     await fallback.waitForFunction(() => Math.abs(document.querySelector(".journey-frame").getBoundingClientRect().top) < 2);
     await fallback.waitForFunction(() => [...document.querySelectorAll(".journey-frame img")].some(img => img.getBoundingClientRect().width > 0 && img.complete && img.naturalWidth > 0));
-    await fallback.screenshot({ path: `docs/proposta/capturas/sequencia-390-${mode}.png` });
+    await fallback.screenshot({ path: `docs/proposta/capturas/institucional-390-${mode}.png` });
     results.fallbacks.push({ mode, ...state });
     await fallback.close();
   }
   assert.deepEqual(results.errors, []);
-  await fs.writeFile("docs/auditorias/2026-09-26-sequencia-funcional.json", JSON.stringify(results, null, 2));
+  await fs.writeFile("docs/auditorias/2026-09-27-institucional-jornada.json", JSON.stringify(results, null, 2));
   console.log(JSON.stringify({ captures: results.captures.length, fallbacks: results.fallbacks, interactions: results.interactions, errors: results.errors }, null, 2));
 } finally { await browser.close(); }

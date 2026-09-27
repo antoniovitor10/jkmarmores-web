@@ -1,5 +1,34 @@
 # Direção visual: o corte
 
+## Terceira entrega: identidade institucional, 27/09/2026
+
+Esta seção é a direção vigente. Vitor aprovou a máscara PEDRA e os quatro quadros da segunda entrega, mas pediu reconstrução da abertura e das páginas institucionais. A logo JPEG da cliente, recebida em 26/09, passa a orientar a identidade. Os registros de A1 e da segunda entrega abaixo são históricos.
+
+Tom: confiança institucional com composição editorial. Preto na marca, grafite na abertura e no contato, pedra quente nos intervalos e caramelo nos detalhes e ações. A apresentação responde quem é a empresa, onde está e como falar com ela usando exclusivamente os dados confirmados. Serviços e materiais não recebidos continuam explicitamente pendentes. Sem números comerciais, depoimentos, prazos ou promessas técnicas inventados; sem gradientes genéricos, ícones decorativos ou imagens de IA apresentadas como obras.
+
+Logo: recorte integral do desenho e assinatura do JPEG, mantendo fundo preto e proporção. WebP 288/480 px com seleção responsiva; atende 2x no header (120/144 px) e no rodapé (180/210 px). Sem vetor fabricado, redesenho ou mudança de cores da marca. V1 parcial até chegar o vetor.
+
+Instrument Serif 400 continua nos títulos e Instrument Sans 400 no corpo e controles. Subset com caracteres portugueses, agora com cobertura de títulos das páginas internas. Desktop: H1 até 104 px e H2 até 60 px; mobile: H1 54 px e H2 40 px. Corpo de 15–18 px, com entrelinha de 1,65. Apenas o display recebe preload; fallback com size-adjust. O peso 400 estático do Sans evita transferir eixos não usados.
+
+| Par de cor | Contraste |
+|---|---:|
+| Texto `#211c18` / papel `#f3ece2` | 14,40:1 |
+| Secundário `#695b4e` / superfície `#e8ddcf` | 4,89:1 |
+| Papel `#f3ece2` / grafite `#191715` | 15,24:1 |
+| Caramelo `#cea57e` / grafite | 7,92:1 |
+| Botão claro `#fff8f0` / bronze `#835638` | 5,95:1 |
+| Pendência `#62462f` / fundo `#ead7bc` | 6,13:1 |
+
+Todos os pares funcionais, hover e foco estão em `docs/auditorias/2026-09-27-institucional-contraste.json`, reproduzidos por `node scripts/check-contrast.mjs`. O caramelo fica sobre o escuro; no claro, texto e botão usam bronze mais escuro.
+
+Home: abertura com nome de atividade/cidade, CTA cedo e A1 reenquadrado; apresentação local antes da sequência para situar o visitante; máscara PEDRA e jornada escura aprovadas; orientação sobre material/aplicação; configurador 3D; três passos para preparar o contato; espaço honesto para obras reais; endereço e telefone. A inclusão da apresentação antes da jornada corrige a ausência de contexto institucional sem substituir a experiência aprovada.
+
+Sobre apresenta os dados confirmados e orienta o primeiro contato, sem inventar história ou processo. Materiais oferece critérios de escolha e o estado explícito do catálogo ainda não recebido. Contato prioriza telefone e endereço, com formulário de rascunho enquanto o WhatsApp não for confirmado. Aplicações, Galeria e placeholders herdam tipografia, header, footer e composição coerentes. Os controles do 3D ganham painel com hierarquia, mantendo contratos e fallback.
+
+Grid de até 1280 px; margens móveis de 24 px; respiro alternado de 64/100 px. A1 reaproveitado na abertura; imagens da sequência reaproveitadas em blocos editoriais com legendas ilustrativas. O quadro 02 ganha somente um recorte móvel mais próximo da quina, excluindo a peça solta da direita; desktop permanece intacto. Máscara, duração da rolagem, quatro etapas e alternativas estáticas preservadas. Sem novas gerações, sem vídeo e sem publicação.
+
+Configuração experimental `inlineCss: true`, introduzida em eef51ef, permanece: o CSS chega no HTML para eliminar uma requisição bloqueante. A opção é global e duplica estilos no payload RSC; perde cache independente entre páginas e aumenta HTML. Não houve nova alteração de `next.config.ts` nesta rodada. O comando de build em `package.json` agora inclui `scripts/defer-hydration.mjs`: no export estático, scripts de interatividade iniciam automaticamente após load e a primeira pintura observada, sem depender de clique; interação pode antecipar. Há fallback de 1,5 s e preservação dos scripts originais. Isso exige rever o pós-processamento ao atualizar Next/React; os testes conferem início automático, ausência de erros de hidratação, formulário e 3D. HTML, CSS, fontes e imagem continuam disponíveis sem JS. O relatório mede também o tráfego após a ativação dos scripts, para não confundir o novo load antecipado com economia de bytes. Workflow e destino de deploy permanecem intactos.
+
 Prova A1 e segunda entrega, 26/09/2026. Tarefa vigente: `docs/tarefas/05-astra-redesign.md`. A1 aprovado por Vitor como base, não como resultado final. A revisão mais recente abaixo substitui as reservas e o movimento da primeira prova. O histórico da direção A1 está preservado nas seções seguintes.
 
 ## Segunda entrega: da matéria à forma

@@ -8,11 +8,11 @@ const ctaOrcamento = (origem: string) => ({
 
 const paginas: ConteudoSite["paginas"] = {
   inicio: {
-    titulo: "A escolha começa no detalhe.",
-    introducao: pendente("confirmar serviço principal, cidade e área atendida para a abertura da home"),
+    titulo: "Mármores e granitos em Barueri.",
+    introducao: "A JK Marmores e Granitos está no Parque Viana, em Barueri/SP. Fale por telefone sobre o seu projeto.",
     seo: {
-      titulo: pendente("title da home com nome comercial, serviço e cidade confirmados"),
-      descricao: pendente("meta description da home com oferta, localidade e diferencial verificáveis"),
+      titulo: "Marmoraria em Barueri/SP | JK Marmores e Granitos",
+      descricao: "Conheça a JK Marmores e Granitos em Barueri/SP. Estrada dos Pinheiros, 379, Parque Viana. Ligue para (11) 96797-6902 e converse sobre seu projeto.",
       canonicalPath: "/",
     },
     secoes: [
@@ -45,17 +45,17 @@ const paginas: ConteudoSite["paginas"] = {
       {
         id: "atendimento",
         titulo: "Onde atendemos",
-        texto: pendente("confirmar cidade, endereço ou modalidade de atendimento e região atendida"),
+        texto: "Estamos na Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP. Consulte por telefone a disponibilidade de atendimento para sua cidade.",
       },
     ],
     cta: ctaOrcamento("início"),
   },
   sobre: {
     titulo: "Conheça a empresa",
-    introducao: pendente("confirmar história, responsável e trajetória da empresa"),
+    introducao: "A JK Marmores e Granitos é uma marmoraria localizada no Parque Viana, em Barueri/SP. Conheça os dados da empresa e os canais de contato.",
     seo: {
-      titulo: pendente("title da página Sobre com nome comercial confirmado"),
-      descricao: pendente("descrição da empresa baseada na história e no processo confirmados"),
+      titulo: "A empresa | JK Marmores e Granitos em Barueri",
+      descricao: "Conheça a JK Marmores e Granitos, marmoraria no Parque Viana, em Barueri/SP. Consulte endereço e telefone para conversar sobre seu projeto.",
       canonicalPath: "/sobre/",
     },
     secoes: [
@@ -68,9 +68,9 @@ const paginas: ConteudoSite["paginas"] = {
   },
   materiais: {
     titulo: "Materiais para escolher com critério",
-    introducao: "Cada tipo de superfície pede uma avaliação de uso, acabamento e cuidados. As fichas abaixo só aparecem depois da confirmação de que o material faz parte da oferta.",
+    introducao: "A escolha passa pelo desenho da chapa, pelo uso e pelo acabamento. Reúna suas referências e consulte a JK sobre as opções para o seu projeto.",
     seo: {
-      titulo: "Materiais e acabamentos | Guia de escolha",
+      titulo: "Materiais e acabamentos | JK Marmores e Granitos",
       descricao: "Entenda diferenças gerais entre materiais, acabamento e cuidados. Consulte as opções confirmadas para o seu projeto.",
       canonicalPath: "/materiais/",
     },
@@ -115,14 +115,14 @@ const paginas: ConteudoSite["paginas"] = {
     titulo: "Converse sobre o seu projeto",
     introducao: "Você pode começar com uma descrição curta. Ambiente, material desejado, medidas aproximadas e cidade ajudam a organizar o pedido.",
     seo: {
-      titulo: pendente("title do contato com nome comercial e cidade confirmados"),
-      descricao: pendente("meta description do contato com canal e área atendida confirmados"),
+      titulo: "Contato e orçamento em Barueri | JK Marmores e Granitos",
+      descricao: "Fale com a JK Marmores e Granitos pelo telefone (11) 96797-6902. Endereço: Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP.",
       canonicalPath: "/contato/",
     },
     secoes: [
       { id: "whatsapp", titulo: "Envie as informações pelo WhatsApp", texto: pendente("confirmar número de WhatsApp e se a empresa recebe pedidos de orçamento por esse canal") },
       { id: "formulario", titulo: "Monte sua mensagem", texto: "Informe ambiente ou peça, material que considera, medidas aproximadas e cidade. O formulário abre uma mensagem no WhatsApp; nenhuma informação é enviada ao site." },
-      { id: "endereco", titulo: "Endereço e atendimento", texto: pendente("confirmar endereço completo e se a empresa recebe visitantes; exibir mapa apenas se aplicável") },
+      { id: "endereco", titulo: "Endereço e atendimento", texto: "Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP. Ligue antes para confirmar a possibilidade de visita." },
       { id: "horario", titulo: "Horário", texto: pendente("confirmar dias e horários de atendimento") },
     ],
     cta: ctaOrcamento("contato"),
@@ -220,24 +220,24 @@ const aplicacoes: Aplicacao[] = [
 
 export const conteudo: ConteudoSite = {
   empresa: {
-    nome: pendente("confirmar nome comercial exato e grafia"),
+    nome: "JK Marmores e Granitos",
     razaoSocial: pendente("confirmar razão social"),
     cnpj: pendente("confirmar CNPJ"),
-    telefone: pendente("confirmar telefone comercial"),
-    whatsapp: pendente("confirmar número de WhatsApp e se é o mesmo do telefone"),
+    telefone: "(11) 96797-6902",
+    whatsapp: pendente("confirmar se (11) 96797-6902 e o WhatsApp"),
     email: pendente("confirmar e-mail comercial atual"),
-    endereco: pendente("confirmar endereço completo ou informar que não atende no local"),
+    endereco: "Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP",
     enderecoDetalhado: {
-      logradouro: pendente("confirmar logradouro"),
-      numero: pendente("confirmar número do endereço"),
-      bairro: pendente("confirmar bairro"),
-      cidade: pendente("confirmar cidade do endereço"),
-      uf: pendente("confirmar UF"),
+      logradouro: "Estrada dos Pinheiros",
+      numero: "379",
+      bairro: "Parque Viana",
+      cidade: "Barueri",
+      uf: "SP",
       cep: pendente("confirmar CEP"),
       atendeNoLocal: pendente("confirmar se recebe visitantes no endereço"),
     },
-    cidade: pendente("confirmar cidade sede da empresa"),
-    regiaoAtendida: pendente("confirmar região e cidades efetivamente atendidas"),
+    cidade: "Barueri",
+    regiaoAtendida: pendente("confirmar região atendida além de Barueri"),
     horario: pendente("confirmar dias e horários de atendimento"),
     perfilGoogleUrl: pendente("confirmar posse e URL do Perfil da Empresa no Google"),
   },
@@ -249,3 +249,6 @@ export const conteudo: ConteudoSite = {
 };
 
 export type { PaginaInstitucional };
+
+// Única origem dos links telefônicos; o canal WhatsApp tem confirmação separada.
+export const telefoneUrl = typeof conteudo.empresa.telefone === "string" ? `tel:+55${conteudo.empresa.telefone.replace(/\D/g, "")}` : "/contato/";

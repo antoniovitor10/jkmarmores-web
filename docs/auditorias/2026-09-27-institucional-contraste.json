@@ -1,0 +1,122 @@
+[
+  {
+    "role": "Texto / papel",
+    "foreground": "#211c18",
+    "background": "#f3ece2",
+    "ratio": 14.4,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Texto / superfície quente",
+    "foreground": "#211c18",
+    "background": "#e8ddcf",
+    "ratio": 12.6,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Secundário / papel",
+    "foreground": "#695b4e",
+    "background": "#f3ece2",
+    "ratio": 5.58,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Secundário / superfície",
+    "foreground": "#695b4e",
+    "background": "#e8ddcf",
+    "ratio": 4.89,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Papel / grafite",
+    "foreground": "#f3ece2",
+    "background": "#191715",
+    "ratio": 15.24,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Texto secundário / grafite",
+    "foreground": "#d8cec3",
+    "background": "#191715",
+    "ratio": 11.52,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Caramelo / grafite",
+    "foreground": "#cea57e",
+    "background": "#191715",
+    "ratio": 7.92,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Caramelo / preto",
+    "foreground": "#cea57e",
+    "background": "#000000",
+    "ratio": 9.31,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Botão claro / caramelo",
+    "foreground": "#191715",
+    "background": "#cea57e",
+    "ratio": 7.92,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Botão escuro / bronze",
+    "foreground": "#fff8f0",
+    "background": "#835638",
+    "ratio": 5.95,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Botão hover",
+    "foreground": "#fff8f0",
+    "background": "#644029",
+    "ratio": 8.64,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Pendência",
+    "foreground": "#62462f",
+    "background": "#ead7bc",
+    "ratio": 6.13,
+    "minimum": 4.5,
+    "pass": true
+  },
+  {
+    "role": "Borda de campo / papel",
+    "foreground": "#8c7a66",
+    "background": "#f3ece2",
+    "ratio": 3.52,
+    "minimum": 3,
+    "pass": true
+  },
+  {
+    "role": "Foco / papel",
+    "foreground": "#98704d",
+    "background": "#f3ece2",
+    "ratio": 3.76,
+    "minimum": 3,
+    "pass": true
+  },
+  {
+    "role": "Foco / grafite",
+    "foreground": "#98704d",
+    "background": "#191715",
+    "ratio": 4.05,
+    "minimum": 3,
+    "pass": true
+  }
+]

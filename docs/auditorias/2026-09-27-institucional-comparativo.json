@@ -1,0 +1,57 @@
+{
+  "reference": "Lighthouse simulate",
+  "baseline": "eef51efcf90184cdedcb3c8646de9d9417b97394",
+  "simulate": {
+    "before": 2271.7621,
+    "after": [
+      1281.0041,
+      1282.5732,
+      1209.5936
+    ],
+    "median": 1281.0041,
+    "allWithinTwoSeconds": true,
+    "cls": [
+      0,
+      0.0006084312065136072,
+      0
+    ]
+  },
+  "devtools": {
+    "before": 1198.727,
+    "after": 1368.123
+  },
+  "weightsBefore": {
+    "HTML": 93817,
+    "JS": 142848,
+    "Fontes": 7588,
+    "Imagens": 0,
+    "CSS": 0,
+    "Video": 0,
+    "3D": 0,
+    "Outros": 0,
+    "Total": 244253
+  },
+  "weightsAfter": {
+    "HTML": 29688,
+    "JS": 0,
+    "Fontes": 22320,
+    "Imagens": 11110,
+    "CSS": 0,
+    "Video": 0,
+    "3D": 0,
+    "Outros": 0,
+    "Total": 63118
+  },
+  "weightsAfterHydration": {
+    "HTML": 29688,
+    "JS": 142907,
+    "Fontes": 22320,
+    "Imagens": 11110,
+    "CSS": 0,
+    "Video": 0,
+    "3D": 0,
+    "Outros": 0,
+    "Total": 206025
+  },
+  "bootstrapGzip": 594
+}
