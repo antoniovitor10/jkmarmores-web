@@ -22,12 +22,10 @@ export function HeroScrub({ children }: { children: ReactNode }) {
       const intro = el.querySelector<HTMLElement>("[data-hero-intro]")!;
       const figure = el.querySelector<HTMLElement>("figure")!;
       const poster = figure.querySelector<HTMLImageElement>("img")!;
-      const button = el.querySelector<HTMLButtonElement>("button")!;
       let media: HTMLVideoElement | null = null;
       let motion: ReturnType<typeof timedVideo> | null = null;
       let advanced = false;
       let raf = 0;
-      let paused = false;
       let failed = false;
       let ready = false;
       let scrolled = false;
@@ -41,7 +39,7 @@ export function HeroScrub({ children }: { children: ReactNode }) {
       function prepare() {
         // Apenas o vídeo espera a primeira rolagem e a pintura do pôster.
         // A hidratação de menu, links e formulário continua nativa do Next.
-        if (media || failed || !ready || !scrolled || paused) return;
+        if (media || failed || !ready || !scrolled) return;
         media = document.createElement("video");
         media.muted = true;
         media.playsInline = true;
@@ -57,7 +55,6 @@ export function HeroScrub({ children }: { children: ReactNode }) {
           failed = true;
           media?.remove();
           media = null;
-          button.hidden = true;
           el.dataset.failed = "true";
         });
         motion = timedVideo(media);
@@ -84,20 +81,12 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         if (rect.bottom > 0 && rect.top < innerHeight) prepare();
         if (media && media.readyState >= 2 && Number.isFinite(media.duration)) {
           media.style.opacity = "1";
-          motion?.pause(paused || rect.bottom <= 0 || rect.top >= innerHeight || document.hidden);
+          motion?.pause(rect.bottom <= 0 || rect.top >= innerHeight || document.hidden);
           motion?.to(advanced ? 1 : 0);
         }
       }
       function schedule() { if (!disposed && !raf) raf = requestAnimationFrame(render); }
       function scroll() { scrolled = true; schedule(); }
-      function toggle() {
-        paused = !paused;
-        button.textContent = paused ? "Retomar movimento" : "Pausar movimento";
-        button.setAttribute("aria-pressed", String(paused));
-        schedule();
-      }
-      button.hidden = false;
-      button.addEventListener("click", toggle);
       intro.addEventListener("focusin", schedule);
       intro.addEventListener("focusout", schedule);
       addEventListener("scroll", scroll, { passive: true });
@@ -114,14 +103,10 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         document.removeEventListener("visibilitychange", schedule);
         motion?.dispose();
         removeEventListener("load", allowMedia);
-        button.removeEventListener("click", toggle);
         intro.removeEventListener("focusin", schedule);
         intro.removeEventListener("focusout", schedule);
         intro.removeAttribute("style");
         intro.inert = false;
-        button.textContent = "Pausar movimento";
-        button.setAttribute("aria-pressed", "false");
-        button.hidden = true;
         media?.removeAttribute("src");
         media?.load();
         media?.remove();
@@ -139,14 +124,9 @@ export function HeroScrub({ children }: { children: ReactNode }) {
   }, []);
 
   return <div ref={root} className={styles.track} data-motion="true">
-    <noscript><style>{`.${styles.track}[data-motion] { height:auto; } .${styles.stage} { position:relative; } .${styles.controls} { display:none; }`}</style></noscript>
+    <noscript><style>{`.${styles.track}[data-motion] { height:auto; } .${styles.stage} { position:relative; }`}</style></noscript>
     <div className={styles.stage} data-hero-stage>
       {children}
-      <div className={styles.controls}>
-        <span className={styles.scrollHint}>Role para descobrir</span>
-        <button type="button" aria-pressed="false" hidden>Pausar movimento</button>
-        <a href="#jornada-pedra">Continuar pela pedra</a>
-      </div>
       <div className={styles.progress} aria-hidden="true" />
     </div>
   </div>;

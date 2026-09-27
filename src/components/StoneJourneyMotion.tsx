@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import { timedVideo } from "@/lib/timed-video";
 import type { JourneyVideo } from "@/content/stone-journey";
 
@@ -9,7 +9,6 @@ const clamp = (n: number) => Math.max(0, Math.min(1, n));
 
 export function StoneJourneyMotion({ children, video }: { children: ReactNode; video: JourneyVideo | null }) {
   const root = useRef<HTMLDivElement>(null);
-  const [staticView, setStaticView] = useState(false);
 
   useEffect(() => {
     const el = root.current;
@@ -21,7 +20,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
       dispose();
       if (!el) return;
       delete el.dataset.enhanced;
-      if (staticView || reduced.matches || connection?.saveData) return;
+      if (reduced.matches || connection?.saveData) return;
       el.dataset.enhanced = "true";
       const frames = [...el.querySelectorAll<HTMLElement>(".journey-frame")];
       const sticky = el.querySelector<HTMLElement>(".journey-sticky")!;
@@ -132,7 +131,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
     reduced.addEventListener("change", configure);
     connection?.addEventListener("change", configure);
     return () => { dispose(); reduced.removeEventListener("change", configure); connection?.removeEventListener("change", configure); };
-  }, [staticView, video]);
+  }, [video]);
 
   return <div ref={root} className="journey-track" data-enhanced="true">
     <noscript><style>{`
@@ -142,13 +141,9 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
       [data-enhanced] .journey-frame { position:static; display:block; opacity:1; }
       [data-enhanced] .journey-frame figcaption { visibility:visible; }
       [data-enhanced] .journey-frame img { height:auto; aspect-ratio:16/9; }
-      [data-enhanced] .journey-mask,[data-enhanced] .journey-progress,[data-enhanced] .journey-controls { display:none; }
+      [data-enhanced] .journey-mask,[data-enhanced] .journey-progress { display:none; }
       @media(max-width:700px) { [data-enhanced] .journey-frame img { aspect-ratio:4/5; } }
     `}</style></noscript>
-    <div className="journey-controls">
-      <button type="button" onClick={() => setStaticView(true)}>Ver imagens sem movimento</button>
-      <a href="#configurador">Pular para combinações</a>
-    </div>
     {children}
   </div>;
 }
