@@ -67,8 +67,9 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         const progress = Math.max(0, Math.min(1, -rect.top / Math.max(1, rect.height - stage.offsetHeight)));
         const focused = intro.contains(document.activeElement);
         const opacity = focused ? 1 : Math.max(0, 1 - progress / .19);
-        intro.style.opacity = String(opacity);
-        intro.style.transform = `translateY(${-24 * (1 - opacity)}px)`;
+        // Retira o painel por corte, sem reduzir o contraste do texto visível.
+        intro.style.clipPath = `inset(0 ${100 * (1 - opacity)}% 0 0)`;
+        intro.style.transform = `translateX(${-24 * (1 - opacity)}px)`;
         intro.inert = opacity === 0;
         el.style.setProperty("--cover-progress", String(progress));
         if (rect.bottom > 0 && rect.top < innerHeight) prepare();

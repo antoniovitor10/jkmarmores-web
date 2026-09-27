@@ -102,6 +102,10 @@ Vitor autorizou a continuação pelas estimativas, com teto revisado de US$ 2,70
 
 Licença: [Termos da API](https://open.higgsfield.ai/terms-of-service), seção 12, e [Termos Higgsfield](https://higgsfield.ai/terms-of-use-agreement), seção 4.4, permitem uso comercial dos resultados nos limites contratuais, sem garantia de exclusividade ou ausência de direitos de terceiros. Referências próprias geradas; nenhuma pessoa, marca ou obra real de terceiros. Asset provisório com legenda **imagem ilustrativa, gerada por IA**; não é portfólio da JK. Nenhuma alteração na máscara PEDRA ou nos quatro quadros nesta etapa.
 
+## Reuso do detalhe quente — etapa (d)
+
+27/09/2026: `material-detalhe-quente.png` reutiliza integralmente `assets/provas/capa-quente-frame.png`, request `325213ae-35bb-483b-9b76-af009803348e`, Z-Image Turbo já registrado na prova API. Cópia e derivados AVIF/WebP locais; **nenhuma geração ou cobrança adicional**. Substitui a repetição do quadro 03 na seção de materiais da home. Mesmos termos da API acima, alt descritivo e legenda de imagem ilustrativa, não obra da JK.
+
 ## Experiência 3D existente
 
 Registro em 25/09/2026. Todos são **amostras de demonstração**, não materiais oferecidos nem trabalhos executados pela JK. Trocar por fotos reais e autorização do cliente antes de apresentar como catálogo. Arquivos fontes ficaram apenas na pasta temporária local; os derivados WebP estão em `public/3d/textures/`.

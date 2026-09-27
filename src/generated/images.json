@@ -109,6 +109,33 @@
       }
     ]
   },
+  "material-detalhe-quente": {
+    "width": 2048,
+    "height": 1152,
+    "placeholder": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoYAA4APwForE6rJaQiMAgBYCAJZQCdACIj09WByzVKILfS7oAA/sthK0jAC1FRkhohXw5hjNtshoxo0zkJhzYPP1YVlCTuxanb3OgK6MlGeVamG1TDWBuzGFJ1i02j8A7jF7hUxZOhzSAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/material-detalhe-quente-390.avif",
+        "webp": "/img/material-detalhe-quente-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/material-detalhe-quente-768.avif",
+        "webp": "/img/material-detalhe-quente-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/material-detalhe-quente-1200.avif",
+        "webp": "/img/material-detalhe-quente-1200.webp"
+      },
+      {
+        "width": 1600,
+        "avif": "/img/material-detalhe-quente-1600.avif",
+        "webp": "/img/material-detalhe-quente-1600.webp"
+      }
+    ]
+  },
   "sequencia-01-chapa": {
     "width": 2752,
     "height": 1536,

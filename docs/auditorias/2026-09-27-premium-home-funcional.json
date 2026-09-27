@@ -1,0 +1,83 @@
+{
+  "environment": "Emulacao Chrome headless; nenhum contato enviado",
+  "checks": [
+    {
+      "javascript": false,
+      "h1": [
+        "Mármores e granitos em Barueri."
+      ],
+      "pending": 4,
+      "overflow": false,
+      "image": {
+        "ready": true,
+        "url": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif",
+        "priority": "high"
+      },
+      "cta": {
+        "href": "https://wa.me/5511967976902?text=Ol%C3%A1.%20Vim%20da%20p%C3%A1gina%20in%C3%ADcio%20e%20quero%20conversar%20sobre%20um%20projeto.%20Posso%20informar%20ambiente%2C%20material%20que%20estou%20considerando%2C%20medidas%20aproximadas%20e%20cidade.",
+        "bottom": 487.1875
+      },
+      "noindex": true,
+      "sections": [
+        "jornada-pedra",
+        "materiais",
+        "configurador",
+        "orcamento",
+        "trabalhos"
+      ],
+      "scene": true,
+      "deferredHydration": {
+        "bootstrap": false,
+        "scriptsPending": 0,
+        "paint": 136,
+        "firstScript": 12.199999995529652
+      }
+    },
+    {
+      "javascript": true,
+      "h1": [
+        "Mármores e granitos em Barueri."
+      ],
+      "pending": 4,
+      "overflow": false,
+      "image": {
+        "ready": true,
+        "url": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif",
+        "priority": "high"
+      },
+      "cta": {
+        "href": "https://wa.me/5511967976902?text=Ol%C3%A1.%20Vim%20da%20p%C3%A1gina%20in%C3%ADcio%20e%20quero%20conversar%20sobre%20um%20projeto.%20Posso%20informar%20ambiente%2C%20material%20que%20estou%20considerando%2C%20medidas%20aproximadas%20e%20cidade.",
+        "bottom": 487.1875
+      },
+      "noindex": true,
+      "sections": [
+        "jornada-pedra",
+        "materiais",
+        "configurador",
+        "orcamento",
+        "trabalhos"
+      ],
+      "scene": true,
+      "deferredHydration": {
+        "bootstrap": false,
+        "scriptsPending": 0,
+        "paint": 68,
+        "firstScript": 9.400000005960464
+      }
+    },
+    {
+      "keyboard": "Skip link seguido do CTA da abertura; foco visivel e ordem nativa"
+    },
+    {
+      "menu": "Abre por Enter e links acessiveis por Tab"
+    },
+    {
+      "reducedMotion": {
+        "transition": "1e-05s",
+        "videos": 0,
+        "canvas": 0
+      }
+    }
+  ],
+  "errors": []
+}

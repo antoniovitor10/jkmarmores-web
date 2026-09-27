@@ -7,6 +7,7 @@ const puppeteer = requireAudit('puppeteer-core');
 const browser = await puppeteer.launch({ executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe', headless:true });
 const results = { environment:'Emulação Chrome headless, rolagem nativa, DPR 1; nenhum contato enviado', checks:[], errors:[] };
 const pause = ms => new Promise(resolve => setTimeout(resolve,ms));
+const label = process.env.AUDIT_LABEL ?? 'capa-video';
 try {
   const page = await browser.newPage();
   page.on('pageerror', e => results.errors.push(e.message));
@@ -16,7 +17,7 @@ try {
     await page.goto('http://127.0.0.1:3105/',{waitUntil:'networkidle0'});
     const initial = await page.evaluate(() => ({ videos:document.querySelectorAll('video').length, media:performance.getEntriesByType('resource').filter(r => /\.mp4/.test(r.name)).length, ctaBottom:document.querySelector('.home-hero .button').getBoundingClientRect().bottom, overflow:document.documentElement.scrollWidth>innerWidth, poster:document.querySelector('.home-hero img').currentSrc }));
     assert.equal(initial.videos,0); assert.equal(initial.media,0); assert.equal(initial.overflow,false); assert.ok(initial.ctaBottom < (width===390 ? 768 : 900));
-    await page.screenshot({path:`docs/proposta/capturas/capa-video-${width}-00.png`});
+    await page.screenshot({path:`docs/proposta/capturas/${label}-${width}-00.png`});
     const times = [];
     for(const progress of [.25,.5,.95,.25]) {
       await page.evaluate(p => {
@@ -27,7 +28,7 @@ try {
       const state = await page.evaluate(() => ({ time:document.querySelector('.home-hero video').currentTime, source:document.querySelector('.home-hero video').currentSrc, scroll:scrollY, introInert:document.querySelector('[data-hero-intro]').inert }));
       assert.equal(state.introInert,true);
       times.push({progress,...state});
-      await page.screenshot({path:`docs/proposta/capturas/capa-video-${width}-${times.length}.png`});
+      await page.screenshot({path:`docs/proposta/capturas/${label}-${width}-${times.length}.png`});
     }
     assert.ok(times[0].time < times[1].time && times[1].time < times[2].time && times[3].time < times[2].time);
     await page.click('.home-hero button');
@@ -52,6 +53,6 @@ try {
     await isolated.close();
   }
   assert.deepEqual(results.errors,[]);
-  await fs.writeFile('docs/auditorias/2026-09-27-capa-video-funcional.json',JSON.stringify(results,null,2));
+  await fs.writeFile(`docs/auditorias/2026-09-27-${label}-funcional.json`,JSON.stringify(results,null,2));
   console.log('Capa: carga posterior ao pôster/rolagem, avanço, retorno, pausa, reduced-motion e Save-Data passaram.');
 } finally { await browser.close(); }

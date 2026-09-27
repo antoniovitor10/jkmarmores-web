@@ -5,8 +5,8 @@ import { stoneJourney } from '@/content/stone-journey';
 import { PendenteTexto } from './PendenteTexto';
 import { Foto } from './Foto';
 
-export function Illustration({ id, caption = 'Imagem ilustrativa, gerada por IA. Não representa obra da JK.', priority = false }: { id: string; caption?: string; priority?: boolean }) {
-  const alt = stoneJourney.find(image => image.id === id)?.alt ?? caption;
+export function Illustration({ id, caption = 'Imagem ilustrativa, gerada por IA. Não representa obra da JK.', priority = false, alt: description }: { id: string; caption?: string; priority?: boolean; alt?: string }) {
+  const alt = description ?? stoneJourney.find(image => image.id === id)?.alt ?? caption;
   return <figure className="editorial-image"><Foto id={id} alt={alt} sizes="(max-width: 700px) 100vw, 50vw" prioridade={priority} /><figcaption>{caption}</figcaption></figure>;
 }
 export function SectionHeading({ number, label, title }: { number: string; label: string; title: string }) {

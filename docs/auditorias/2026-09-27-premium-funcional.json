@@ -1,0 +1,98 @@
+{
+  "environment": "Emulação Chrome headless, rolagem nativa, DPR 1; nenhum contato enviado",
+  "checks": [
+    {
+      "width": 390,
+      "initial": {
+        "videos": 0,
+        "media": 0,
+        "ctaBottom": 487.1875,
+        "overflow": false,
+        "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-390.avif"
+      },
+      "times": [
+        {
+          "progress": 0.25,
+          "time": 1.998985,
+          "source": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+          "scroll": 475,
+          "introInert": true
+        },
+        {
+          "progress": 0.5,
+          "time": 3.99797,
+          "source": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+          "scroll": 855,
+          "introInert": true
+        },
+        {
+          "progress": 0.95,
+          "time": 7.590883,
+          "source": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+          "scroll": 1538,
+          "introInert": true
+        },
+        {
+          "progress": 0.25,
+          "time": 1.998985,
+          "source": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+          "scroll": 475,
+          "introInert": true
+        }
+      ],
+      "pause": "Congela o vídeo mantendo a rolagem nativa"
+    },
+    {
+      "width": 1440,
+      "initial": {
+        "videos": 0,
+        "media": 0,
+        "ctaBottom": 704,
+        "overflow": false,
+        "poster": "http://127.0.0.1:3105/img/capa-poster-1200.avif"
+      },
+      "times": [
+        {
+          "progress": 0.25,
+          "time": 1.997916,
+          "source": "http://127.0.0.1:3105/video/capa-desktop-av1.mp4",
+          "scroll": 516,
+          "introInert": true
+        },
+        {
+          "progress": 0.5,
+          "time": 3.995833,
+          "source": "http://127.0.0.1:3105/video/capa-desktop-av1.mp4",
+          "scroll": 921,
+          "introInert": true
+        },
+        {
+          "progress": 0.95,
+          "time": 7.592083,
+          "source": "http://127.0.0.1:3105/video/capa-desktop-av1.mp4",
+          "scroll": 1650,
+          "introInert": true
+        },
+        {
+          "progress": 0.25,
+          "time": 1.997916,
+          "source": "http://127.0.0.1:3105/video/capa-desktop-av1.mp4",
+          "scroll": 516,
+          "introInert": true
+        }
+      ],
+      "pause": "Congela o vídeo mantendo a rolagem nativa"
+    },
+    {
+      "mode": "reduced-motion",
+      "posterOnly": true,
+      "videoRequests": 0
+    },
+    {
+      "mode": "save-data",
+      "posterOnly": true,
+      "videoRequests": 0
+    }
+  ],
+  "errors": []
+}
