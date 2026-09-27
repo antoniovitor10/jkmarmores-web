@@ -18,50 +18,50 @@ export const stoneJourneyVideo: JourneyVideo | null = {
     {
       "desktop": {
         "src": "/video/jornada-1-desktop.mp4",
-        "bytes": 490136
+        "bytes": 240259
       },
-      "durationSeconds": 4.041667,
       "mobile": {
         "src": "/video/jornada-1-mobile.mp4",
-        "bytes": 317824,
+        "bytes": 166010,
         "height": 720
-      }
+      },
+      "durationSeconds": 1.458333
     },
     {
       "desktop": {
         "src": "/video/jornada-2-desktop.mp4",
-        "bytes": 350646
+        "bytes": 176059
       },
-      "durationSeconds": 4.041667,
       "mobile": {
         "src": "/video/jornada-2-mobile.mp4",
-        "bytes": 104748,
+        "bytes": 60529,
         "height": 720
-      }
+      },
+      "durationSeconds": 1.458333
     },
     {
       "desktop": {
         "src": "/video/jornada-3-desktop.mp4",
-        "bytes": 485962
+        "bytes": 244192
       },
-      "durationSeconds": 4.041667,
       "mobile": {
         "src": "/video/jornada-3-mobile.mp4",
-        "bytes": 311336,
+        "bytes": 167156,
         "height": 720
-      }
+      },
+      "durationSeconds": 1.458333
     },
     {
       "desktop": {
         "src": "/video/jornada-4-desktop.mp4",
-        "bytes": 548759
+        "bytes": 249175
       },
-      "durationSeconds": 4.041667,
       "mobile": {
         "src": "/video/jornada-4-mobile.mp4",
-        "bytes": 351260,
+        "bytes": 169017,
         "height": 720
-      }
+      },
+      "durationSeconds": 1.458333
     }
   ]
 };

@@ -1,0 +1,194 @@
+[
+  {
+    "file": "public/video/capa-desktop-av1.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 1634784,
+    "bytes": 391818,
+    "originalDuration": 8.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "av1",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/capa-desktop-h264.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 1630324,
+    "bytes": 427719,
+    "originalDuration": 8.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/capa-mobile-av1.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 1251439,
+    "bytes": 332556,
+    "originalDuration": 8.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "av1",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/capa-mobile-h264.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 1040978,
+    "bytes": 282544,
+    "originalDuration": 8.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/jornada-1-desktop.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 490136,
+    "bytes": 240259,
+    "originalDuration": 4.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/jornada-1-mobile.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 317824,
+    "bytes": 166010,
+    "originalDuration": 4.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/jornada-2-desktop.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 350646,
+    "bytes": 176059,
+    "originalDuration": 4.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/jornada-2-mobile.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 104748,
+    "bytes": 60529,
+    "originalDuration": 4.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 576,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/jornada-3-desktop.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 485962,
+    "bytes": 244192,
+    "originalDuration": 4.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/jornada-3-mobile.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 311336,
+    "bytes": 167156,
+    "originalDuration": 4.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/jornada-4-desktop.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 548759,
+    "bytes": 249175,
+    "originalDuration": 4.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  },
+  {
+    "file": "public/video/jornada-4-mobile.mp4",
+    "sourceCommit": "cc06d32",
+    "originalBytes": 351260,
+    "bytes": 169017,
+    "originalDuration": 4.041667,
+    "duration": 1.458333,
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "gopFrames": 6
+  }
+]

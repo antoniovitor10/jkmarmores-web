@@ -66,8 +66,6 @@ address { font-style:normal; }
 .material-criteria article > span { font-size:11px; padding-top:10px; }
 .material-criteria article h2 { font-size:38px; margin:0 0 12px; }
 .material-criteria article p { margin:0; }
-.availability-note { border-top:1px solid var(--cor-borda); margin-top:40px; padding-top:24px; font-size:13px; }
-.availability-note p { margin:8px 0; }
 .pendente { color:inherit; font-family:var(--fonte-corpo); font-size:11px; font-weight:400; letter-spacing:0; border-bottom:1px dotted currentColor; }
 .editorial-note { font-size:12px; line-height:1.8; margin-top:24px; }
 .request-steps { list-style:none; margin:48px 0; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:48px; counter-reset:item; }
@@ -75,9 +73,6 @@ address { font-style:normal; }
 .step-number { display:block; font-family:var(--fonte-display-a1),Georgia,serif; color:var(--cor-destaque); font-size:64px; line-height:1; margin:0 0 32px; }
 .request-steps h3 { font-size:30px; }
 .request-steps p { font-size:15px; }
-.portfolio-empty { display:grid; grid-template-columns:1fr 1fr; column-gap:80px; }
-.portfolio-empty > .eyebrow { grid-column:1/-1; }
-.portfolio-empty > div { max-width:44ch; }
 .contact-panel { background:var(--cor-grafite); color:var(--cor-papel); padding-block:88px; }
 .contact-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:100px; }
 .contact-grid .eyebrow { color:var(--cor-caramelo); }
@@ -128,8 +123,8 @@ address { font-style:normal; }
   .brand-image { width:120px; }
   html { scroll-padding-bottom:calc(92px + env(safe-area-inset-bottom,0px)); }
   body { padding-bottom:calc(76px + env(safe-area-inset-bottom,0px)); }
-  .mobile-quote-dock { display:flex; position:fixed; inset:auto 0 0; z-index:20; min-height:76px; padding:12px 24px calc(12px + env(safe-area-inset-bottom,0px)); background:#191715; border-top:1px solid #927254; }
-  .mobile-whatsapp { width:100%; min-height:48px; display:flex; align-items:center; justify-content:center; background:var(--cor-caramelo); color:var(--cor-grafite); text-decoration:none; font-size:13px; }
+  .mobile-quote-dock { display:flex; position:fixed; inset:auto 16px 0 auto; z-index:20; min-height:76px; padding:12px 0 calc(12px + env(safe-area-inset-bottom,0px)); pointer-events:none; }
+  .mobile-whatsapp { min-width:148px; padding:12px 20px; min-height:48px; display:flex; align-items:center; justify-content:center; background:var(--cor-caramelo); color:var(--cor-grafite); border:1px solid #191715; text-decoration:none; font-size:13px; pointer-events:auto; }
   body:has(.quote-form:focus-within) .mobile-quote-dock { visibility:hidden; pointer-events:none; }
   :is(input,button,a,[tabindex]) { scroll-margin-block:24px 96px; }
   .footer-grid { grid-template-columns:1fr 1fr; gap:40px; }
@@ -143,7 +138,7 @@ address { font-style:normal; }
   .actions { gap:12px 20px; }
   .actions .button { font-size:13px; padding:13px 18px; }
   .actions > a:not(.button) { font-size:12px; }
-  .company-introduction,.split-heading,.material-editorial,.about-editorial,.catalog-status,.contact-grid,.contact-details,.form-layout,.portfolio-empty { grid-template-columns:1fr; gap:32px; }
+  .company-introduction,.split-heading,.material-editorial,.about-editorial,.catalog-status,.contact-grid,.contact-details,.form-layout { grid-template-columns:1fr; gap:32px; }
   .company-introduction > div:last-child { padding:0; }
   .section-heading { margin-bottom:32px; }
   .split-heading .section-heading { margin-bottom:0; }
@@ -155,7 +150,6 @@ address { font-style:normal; }
   .step-number { grid-row:1/3; font-size:44px; margin:0; }
   .request-steps p { grid-column:2; margin-bottom:0; }
   .request-steps h3 { font-size:29px; }
-  .portfolio-empty > .eyebrow,.portfolio-empty h2 { margin:0; }
   .contact-panel { padding-block:64px; }
   .contact-phone { font-size:34px; }
   .institutional-intro { padding:40px 0 48px; }
@@ -170,12 +164,8 @@ address { font-style:normal; }
   .page-intro { padding-bottom:40px; }
 }
 .editorial-motion { padding-block:clamp(72px,9vw,136px); }
-.editorial-motion .section-heading { position:relative; padding-top:28px; }
-.editorial-motion .section-heading::before { content:""; position:absolute; top:0; left:0; width:100%; height:1px; background:var(--cor-borda); transform-origin:left; }
 .editorial-motion h2 { font-size:clamp(44px,5.2vw,76px); line-height:1.02; }
 .editorial-motion :is(.eyebrow,.step-number,figcaption),.material-criteria article > span { font-variant-numeric:tabular-nums; }
-.editorial-motion .text-link { text-decoration-thickness:1px; transition:text-underline-offset .2s ease,color .2s ease; }
-.editorial-motion .text-link:is(:hover,:focus-visible) { text-underline-offset:9px; }
 .editorial-motion .editorial-image picture { overflow:hidden; }
 .editorial-motion .editorial-image img { aspect-ratio:4/5; }
 .home-page > #orcamento { background:#211c18; color:#f3ece2; }
@@ -183,13 +173,11 @@ address { font-style:normal; }
 .home-page > #orcamento .button { background:#cea57e; color:#191715; border-color:#cea57e; }
 .home-page > #orcamento .button:is(:hover,:focus-visible) { background:#e3bd96; }
 @keyframes editorial-cut { from { clip-path:inset(0 0 12% 0); transform:translateY(18px); } to { clip-path:inset(0); transform:none; } }
-@keyframes editorial-line { from { transform:scaleX(.15); } to { transform:scaleX(1); } }
 @keyframes editorial-stone { from { clip-path:inset(0 16% 0 0); } to { clip-path:inset(0); } }
 @keyframes editorial-tone { from { background-color:#3a2e24; } to { background-color:#211c18; } }
 @supports (animation-timeline:view()) {
   @media(prefers-reduced-motion:no-preference) {
     .editorial-motion h2 { animation:editorial-cut .45s ease-out both; animation-timeline:view(); animation-range:entry 0% entry 100%; }
-    .editorial-motion .section-heading::before { animation:editorial-line .4s ease-out both; animation-timeline:view(); animation-range:entry 0% entry 100%; }
     .editorial-motion .editorial-image picture { animation:editorial-stone .6s ease-out both; animation-timeline:view(); animation-range:entry 0% entry 85%; }
     .home-page > #orcamento { animation:editorial-tone .5s ease-out both; animation-timeline:view(); animation-range:entry 0% entry 60%; }
   }

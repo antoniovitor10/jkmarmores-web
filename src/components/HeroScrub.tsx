@@ -66,11 +66,16 @@ export function HeroScrub({ children }: { children: ReactNode }) {
       }
       function render() {
         raf = 0;
+        // O estado inicial já vem do CSS; evita layout e escrita de estilos no LCP.
+        if (!scrolled && scrollY < 12) return;
         const rect = el.getBoundingClientRect();
         const focused = intro.contains(document.activeElement);
         if (scrollY > 32) advanced = true;
         if (scrollY < 12) advanced = false;
         const opacity = focused || !advanced ? 1 : 0;
+        el.style.setProperty("--hero-veil", String(opacity));
+        el.style.setProperty("--hero-veil-duration", opacity ? "0ms" : "200ms");
+        el.style.setProperty("--hero-veil-delay", opacity ? "0ms" : "250ms");
         // Retira o painel por corte, sem reduzir o contraste do texto visível.
         intro.style.clipPath = `inset(0 ${100 * (1 - opacity)}% 0 0)`;
         intro.style.transform = `translateX(${-24 * (1 - opacity)}px)`;
@@ -122,6 +127,9 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         media?.remove();
         delete el.dataset.failed;
         el.style.removeProperty("--cover-progress");
+        el.style.removeProperty("--hero-veil");
+        el.style.removeProperty("--hero-veil-duration");
+        el.style.removeProperty("--hero-veil-delay");
       };
     }
     configure();

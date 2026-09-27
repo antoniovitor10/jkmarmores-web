@@ -10,7 +10,7 @@ export function QuoteForm({ numero }: { numero: string | null }) {
   const [rascunho, setRascunho] = useState("");
   function enviar(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const mensagem = `Olá, gostaria de pedir um orçamento. Ambiente: ${ambiente}. Material: ${material}. Medidas aproximadas: ${medidas}. Cidade: ${cidade}.`;
+    const mensagem = `Oi, vi o site da JK e quero um orçamento para ${ambiente}. Material: ${material}.${medidas.trim() ? ` Medidas aproximadas: ${medidas}.` : ""} Cidade: ${cidade}.`;
     if (!numero) { setRascunho(mensagem); return; }
     const base = numero ? `https://wa.me/${numero}` : "https://api.whatsapp.com/send";
     window.open(`${base}?text=${encodeURIComponent(mensagem)}`, "_blank", "noopener,noreferrer");

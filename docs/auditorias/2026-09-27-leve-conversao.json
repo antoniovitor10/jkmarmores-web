@@ -1,0 +1,94 @@
+{
+  "environment": "Emulação Chrome 390/1440, sem envio externo",
+  "checks": [
+    {
+      "width": 390,
+      "cta": "Fale com a JK no WhatsApp",
+      "actions": 1,
+      "controlBottom": 733,
+      "dockTop": 768,
+      "pendingClosed": true,
+      "links": [
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Pedir orçamento"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK no WhatsApp"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20as%20refer%C3%AAncias%20no%20site%20da%20JK%20e%20quero%20conversar%20sobre%20uma%20pedra%20para%20meu%20espa%C3%A7o.",
+          "label": "Quero uma pedra para meu espaço"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20desta%20combina%C3%A7%C3%A3o%20ilustrativa%3A%20ambiente%20Cozinha%20com%20ilha%3B%20refer%C3%AAncia%20de%20material%20M%C3%A1rmore%20rosado%3B%20acabamento%20Polido.%20Sei%20que%20a%20visualiza%C3%A7%C3%A3o%20%C3%A9%20gerada%20por%20IA%20e%20gostaria%20de%20confirmar%20materiais%2C%20acabamentos%20e%20disponibilidade%20com%20a%20JK.",
+          "label": "Pedir orçamento desta combinação"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK no WhatsApp"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "WhatsApp e orçamento"
+        }
+      ],
+      "overflow": false,
+      "violations": [],
+      "keyboardDisclosure": true
+    },
+    {
+      "width": 1440,
+      "cta": "Fale com a JK no WhatsApp",
+      "actions": 1,
+      "controlBottom": 979,
+      "dockTop": 0,
+      "pendingClosed": true,
+      "links": [
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Pedir orçamento"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK no WhatsApp"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20as%20refer%C3%AAncias%20no%20site%20da%20JK%20e%20quero%20conversar%20sobre%20uma%20pedra%20para%20meu%20espa%C3%A7o.",
+          "label": "Quero uma pedra para meu espaço"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20gostaria%20de%20pedir%20um%20or%C3%A7amento%20desta%20combina%C3%A7%C3%A3o%20ilustrativa%3A%20ambiente%20Cozinha%20com%20ilha%3B%20refer%C3%AAncia%20de%20material%20M%C3%A1rmore%20rosado%3B%20acabamento%20Polido.%20Sei%20que%20a%20visualiza%C3%A7%C3%A3o%20%C3%A9%20gerada%20por%20IA%20e%20gostaria%20de%20confirmar%20materiais%2C%20acabamentos%20e%20disponibilidade%20com%20a%20JK.",
+          "label": "Pedir orçamento desta combinação"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK no WhatsApp"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "WhatsApp e orçamento"
+        }
+      ],
+      "overflow": false,
+      "violations": [],
+      "keyboardDisclosure": true
+    }
+  ],
+  "contrast": {
+    "method": "Pior fundo possível branco puro sob véu mínimo80% nas áreas de texto; vale para qualquer quadro. Véu só sai depois que o texto termina de sair; retorna imediatamente ao foco.",
+    "title": 8.095433525158628,
+    "eyebrow": 5.418387738766332,
+    "button": 7.92331277520426,
+    "contact": 8.480450275423438
+  }
+}
