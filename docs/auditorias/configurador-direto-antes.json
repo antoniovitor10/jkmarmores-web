@@ -1,0 +1,29 @@
+{
+  "environment": "Chrome 153; viewport 390x844 DPR2; cache disabled; CDP CPU4x, latency150ms, download200000B/s, upload100000B/s; 3 cold navigations",
+  "runs": [
+    {
+      "lcp": {
+        "time": 956,
+        "element": "IMG",
+        "url": "http://127.0.0.1:3107/img/a1-mobile-768.avif"
+      },
+      "media": 0
+    },
+    {
+      "lcp": {
+        "time": 900,
+        "element": "IMG",
+        "url": "http://127.0.0.1:3107/img/a1-mobile-768.avif"
+      },
+      "media": 0
+    },
+    {
+      "lcp": {
+        "time": 840,
+        "element": "IMG",
+        "url": "http://127.0.0.1:3107/img/a1-mobile-768.avif"
+      },
+      "media": 0
+    }
+  ]
+}

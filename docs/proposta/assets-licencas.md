@@ -112,3 +112,38 @@ Registro em 25/09/2026. Todos são **amostras de demonstração**, não materiai
 Os recortes WebP foram feitos com Pillow 12.3.0, qualidade 78 e método 6. As 27 capturas do canvas também foram exportadas com Pillow para WebP de 900 × 600, qualidade 74. Não foi gerado mapa normal ou rugosidade novo a partir da cor. O protótipo usa rugosidade parametrizada; sua aparência não é medição física dos acabamentos reais. Materiais confirmados no conteúdo recebem superfície e poster neutros enquanto não houver textura autorizada específica.
 
 **Pendência para o cliente:** confirmar materiais, nomes comerciais, acabamentos, aplicações e fornecer fotos de chapas reais com autorização de uso. A Bussola registrou “Assets provisórios” em `docs/PENDENCIAS.md`, vinculada a O2, V3 e V4.
+
+
+## Configurador
+
+Gerado em 27/09/2026 por Orbita, branch configurador-imersivo. Teto US$ 2,00; total conservador dos 21 envios concluídos: US$ 1,8882. Débito financeiro real não informado pela API. Plano e revisão em [configurador.md](configurador.md); prompts integrais e parâmetros em [configurador-geracoes.json](../auditorias/configurador-geracoes.json).
+
+Todos os assets: provisório, gerado por IA, não representa obra ou material da JK. Confirmação comercial e aprovação do cliente seguem pendentes em O2/V3/V4 e Assets provisórios de docs/PENDENCIAS.md.
+
+Termos consultados: [API Terms, seção 12](https://open.higgsfield.ai/terms-of-service) e [Terms of Use, seção 4.4](https://higgsfield.ai/terms-of-use-agreement). Higgsfield não reivindica propriedade dos outputs nem restringe uso comercial; não garante exclusividade ou ausência de direitos de terceiros. A divulgação de geração por IA é mantida. Nenhuma foto de cliente, logo ou pessoa foi enviada.
+
+| Asset | Modelo | request_id | Estimativa conservadora USD | Derivados |
+|---|---|---|---:|---|
+| cozinha-rosado / image | z-image/turbo | abcf1de8-6eed-4510-8aca-e6827d7ed421 | 0.0150 | Imagem-chave usada no vídeo de mesmo id, fonte local não versionada |
+| cozinha-rosado / video | kling-video/v3.0/std/image-to-video | 82eed1ea-cb61-41b5-a351-43b864d380ec | 0.2772 | public/configurador/cozinha-rosado/{720,1280,2048}/00..23.avif |
+| close-rosado-polido / close | z-image/turbo | 11aab6e7-8ea6-462f-9f28-b2b578c0acb3 | 0.0150 | public/configurador/closes/rosado-polido.avif |
+| close-rosado-levigado / close | z-image/turbo | 8bd0a318-de14-402d-963f-dd5754a07b76 | 0.0150 | public/configurador/closes/rosado-levigado.avif |
+| close-rosado-escovado / close | z-image/turbo | 0c875aa1-b188-4ead-90af-84d44dca2cde | 0.0150 | public/configurador/closes/rosado-escovado.avif |
+| cozinha-bege / image | z-image/turbo | a06425d5-9517-47d9-867d-72402e23ad8a | 0.0150 | Imagem-chave usada no vídeo de mesmo id, fonte local não versionada |
+| cozinha-bege / video | kling-video/v3.0/std/image-to-video | bd85e37a-fe9b-4460-8af7-e60baa961e0b | 0.2772 | public/configurador/cozinha-bege/{720,1280,2048}/00..23.avif |
+| cozinha-escuro / image | z-image/turbo | 69679d06-3c00-472e-b0c3-7d5a264667df | 0.0150 | Imagem-chave usada no vídeo de mesmo id, fonte local não versionada |
+| cozinha-escuro / video | kling-video/v3.0/std/image-to-video | 2ccd45c8-d9df-40b7-a89b-c9c822c4ec00 | 0.2772 | public/configurador/cozinha-escuro/{720,1280,2048}/00..23.avif |
+| lavatorio-rosado / image | z-image/turbo | f6fcaa1d-fa03-4c44-8211-ca4ddc1c6d60 | 0.0150 | Imagem-chave usada no vídeo de mesmo id, fonte local não versionada |
+| lavatorio-rosado / video | kling-video/v3.0/std/image-to-video | 1d66ad18-fc96-46f5-a902-fda2fe810340 | 0.2772 | public/configurador/lavatorio-rosado/{720,1280,2048}/00..23.avif |
+| lavatorio-bege / image | z-image/turbo | 5095ac71-5452-45ca-aa7c-a353adbfbe1f | 0.0150 | Imagem-chave usada no vídeo de mesmo id, fonte local não versionada |
+| lavatorio-bege / video | kling-video/v3.0/std/image-to-video | 773cf567-a4a2-44b9-a2df-6b7184f609d5 | 0.2772 | public/configurador/lavatorio-bege/{720,1280,2048}/00..23.avif |
+| lavatorio-escuro / image | z-image/turbo | 50229011-cdf6-497c-9806-39d9902a43a2 | 0.0150 | Imagem-chave usada no vídeo de mesmo id, fonte local não versionada |
+| lavatorio-escuro / video | kling-video/v3.0/std/image-to-video | 1a08f16f-c300-4522-9423-913e983b5d11 | 0.2772 | public/configurador/lavatorio-escuro/{720,1280,2048}/00..23.avif |
+| close-bege-polido / close | z-image/turbo | d154de0d-8cdb-4ee9-a4fc-1823f7a0f26b | 0.0150 | public/configurador/closes/bege-polido.avif |
+| close-bege-levigado / close | z-image/turbo | 12ee353a-90c8-49e6-afb7-d372514934fb | 0.0150 | public/configurador/closes/bege-levigado.avif |
+| close-bege-escovado / close | z-image/turbo | d1162bfb-227a-42eb-aa72-760201c59d8a | 0.0150 | public/configurador/closes/bege-escovado.avif |
+| close-escuro-polido / close | z-image/turbo | 9150edee-5ca0-4fd7-aa18-4eb65ab5ebf4 | 0.0150 | public/configurador/closes/escuro-polido.avif |
+| close-escuro-levigado / close | z-image/turbo | 4ea409e5-eda6-4d1b-8e87-eb8a4e715063 | 0.0150 | public/configurador/closes/escuro-levigado.avif |
+| close-escuro-escovado / close | z-image/turbo | 538946e7-caca-44bc-8347-3adf907cd94a | 0.0150 | public/configurador/closes/escuro-escovado.avif |
+
+2048 px dos quadros são reamostrados de vídeo 1280 px; não são detalhe óptico nativo 2k. Closes derivam de imagens nativas 2048 px. Vídeos e fontes PNG ficam apenas no diretório local tools/higgsfield/configurador-assets. Não foram publicados vídeos nem credenciais.

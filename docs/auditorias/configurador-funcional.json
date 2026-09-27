@@ -1,0 +1,21 @@
+{
+  "viewports": [
+    {
+      "width": 390,
+      "initialMedia": 0,
+      "errors": [],
+      "axe": []
+    },
+    {
+      "width": 1440,
+      "initialMedia": 0,
+      "errors": [],
+      "axe": []
+    }
+  ],
+  "checks": [
+    "reduced",
+    "save-data",
+    "no-js"
+  ]
+}
