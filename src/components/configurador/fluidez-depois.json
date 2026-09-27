@@ -1,0 +1,129 @@
+{
+  "label": "depois",
+  "conditions": "Chromium 393x873, DPR1, CPU4x, 150ms, 200KiB/s down,75KiB/s up, perfil novo, scroll900px/s iniciando500ms após load",
+  "runs": [
+    {
+      "lcp": 772,
+      "image": 5379.79999999702,
+      "enter": 5588.29999999702,
+      "load": 1531.199999988079,
+      "firstFrameRequest": 4419.199999988079,
+      "waitAfterEnter": 0,
+      "resources": [
+        {
+          "url": "/configurador/orbita-rosado/retrato/00.avif",
+          "start": 4419.199999988079,
+          "end": 5331.699999988079,
+          "bytes": 35473
+        },
+        {
+          "url": "/configurador/orbita-rosado/retrato/01.avif",
+          "start": 4419.5999999940395,
+          "end": 5345.79999999702,
+          "bytes": 35027
+        },
+        {
+          "url": "/configurador/closes/rosado-polido.avif",
+          "start": 5310.5,
+          "end": 5737.29999999702,
+          "bytes": 8578
+        },
+        {
+          "url": "/configurador/closes/bege-polido.avif",
+          "start": 5311,
+          "end": 5752.899999991059,
+          "bytes": 8329
+        },
+        {
+          "url": "/configurador/closes/escuro-polido.avif",
+          "start": 5311.29999999702,
+          "end": 6360.29999999702,
+          "bytes": 16775
+        }
+      ],
+      "beforeLoad": 0
+    },
+    {
+      "lcp": 728,
+      "image": 5357.899999991059,
+      "enter": 5552.29999999702,
+      "load": 1492.5999999940395,
+      "firstFrameRequest": 4372.79999999702,
+      "waitAfterEnter": 0,
+      "resources": [
+        {
+          "url": "/configurador/orbita-rosado/retrato/00.avif",
+          "start": 4372.79999999702,
+          "end": 5282.699999988079,
+          "bytes": 35473
+        },
+        {
+          "url": "/configurador/orbita-rosado/retrato/01.avif",
+          "start": 4373.199999988079,
+          "end": 5310.79999999702,
+          "bytes": 35027
+        },
+        {
+          "url": "/configurador/closes/rosado-polido.avif",
+          "start": 5284.0999999940395,
+          "end": 5688.199999988079,
+          "bytes": 8578
+        },
+        {
+          "url": "/configurador/closes/bege-polido.avif",
+          "start": 5284.5999999940395,
+          "end": 5720.0999999940395,
+          "bytes": 8329
+        },
+        {
+          "url": "/configurador/closes/escuro-polido.avif",
+          "start": 5285.199999988079,
+          "end": 6315.899999991059,
+          "bytes": 16775
+        }
+      ],
+      "beforeLoad": 0
+    },
+    {
+      "lcp": 736,
+      "image": 5354.5999999940395,
+      "enter": 5553.199999988079,
+      "load": 1497.199999988079,
+      "firstFrameRequest": 4374.199999988079,
+      "waitAfterEnter": 0,
+      "resources": [
+        {
+          "url": "/configurador/orbita-rosado/retrato/00.avif",
+          "start": 4374.199999988079,
+          "end": 5310,
+          "bytes": 35473
+        },
+        {
+          "url": "/configurador/orbita-rosado/retrato/01.avif",
+          "start": 4374.5,
+          "end": 5279.399999991059,
+          "bytes": 35027
+        },
+        {
+          "url": "/configurador/closes/rosado-polido.avif",
+          "start": 5282.899999991059,
+          "end": 5671.199999988079,
+          "bytes": 8578
+        },
+        {
+          "url": "/configurador/closes/bege-polido.avif",
+          "start": 5283.199999988079,
+          "end": 5717.899999991059,
+          "bytes": 8329
+        },
+        {
+          "url": "/configurador/closes/escuro-polido.avif",
+          "start": 5283.5,
+          "end": 6289.899999991059,
+          "bytes": 16775
+        }
+      ],
+      "beforeLoad": 0
+    }
+  ]
+}

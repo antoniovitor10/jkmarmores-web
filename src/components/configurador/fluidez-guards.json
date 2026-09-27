@@ -1,0 +1,92 @@
+{
+  "checks": [
+    {
+      "name": "normal: nenhum asset na abertura",
+      "pass": true,
+      "requests": []
+    },
+    {
+      "name": "normal: só 2 quadros iniciais antes da montagem",
+      "pass": true,
+      "requests": [
+        "/configurador/orbita-rosado/retrato/00.avif",
+        "/configurador/orbita-rosado/retrato/01.avif"
+      ]
+    },
+    {
+      "name": "normal: primeiro quadro reutilizado sem novo pedido",
+      "pass": true
+    },
+    {
+      "name": "desktop: nenhum asset na abertura",
+      "pass": true,
+      "requests": []
+    },
+    {
+      "name": "desktop: só 2 quadros iniciais antes da montagem",
+      "pass": true,
+      "requests": [
+        "/configurador/orbita-rosado/1280/00.avif",
+        "/configurador/orbita-rosado/1280/01.avif"
+      ]
+    },
+    {
+      "name": "desktop: primeiro quadro reutilizado sem novo pedido",
+      "pass": true
+    },
+    {
+      "name": "reduced: nenhum asset na abertura",
+      "pass": true,
+      "requests": []
+    },
+    {
+      "name": "reduced: só 1 quadros iniciais antes da montagem",
+      "pass": true,
+      "requests": [
+        "/configurador/orbita-rosado/retrato/00.avif"
+      ]
+    },
+    {
+      "name": "reduced: primeiro quadro reutilizado sem novo pedido",
+      "pass": true
+    },
+    {
+      "name": "save: nenhum asset na abertura",
+      "pass": true,
+      "requests": []
+    },
+    {
+      "name": "save: só 1 quadros iniciais antes da montagem",
+      "pass": true,
+      "requests": [
+        "/configurador/orbita-rosado/retrato/00.avif"
+      ]
+    },
+    {
+      "name": "save: primeiro quadro reutilizado sem novo pedido",
+      "pass": true
+    },
+    {
+      "name": "fallback: nenhum asset na abertura",
+      "pass": true,
+      "requests": []
+    },
+    {
+      "name": "fallback: só 2 quadros iniciais antes da montagem",
+      "pass": true,
+      "requests": [
+        "/configurador/orbita-rosado/retrato/00.avif",
+        "/configurador/orbita-rosado/retrato/01.avif"
+      ]
+    },
+    {
+      "name": "fallback: primeiro quadro reutilizado sem novo pedido",
+      "pass": true
+    },
+    {
+      "name": "load pendente: nenhuma antecipação mesmo com palco próximo",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

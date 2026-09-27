@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { quadroUrl, quantidadeQuadros } from "@/content/configurador";
 import type { Camera } from "./useCamera";
 import styles from "./Configurador.module.css";
+import { loadFrame } from "./initialFrames";
 
 type Props = {
   combo: string;
@@ -76,15 +77,10 @@ export function FrameCanvas({
     function load(url: string) {
       let entry = cache.current.get(url);
       if (!entry) {
-        const img = new Image();
-        img.src = url;
-        entry = img
-          .decode()
-          .then(() => img)
-          .catch((e) => {
-            cache.current.delete(url);
-            throw e;
-          });
+        entry = loadFrame(url).catch((e) => {
+          cache.current.delete(url);
+          throw e;
+        });
         cache.current.set(url, entry);
         // A decoded 2560 px frame uses about 14 MB; cap high-resolution retention.
         const capacity = url.includes("/2560/") ? 4 : 18;

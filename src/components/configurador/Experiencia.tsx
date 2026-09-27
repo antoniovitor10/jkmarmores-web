@@ -14,6 +14,7 @@ import type { ConfiguradorProps } from "./Configurador";
 import { FrameCanvas } from "./FrameCanvas";
 import { useCamera } from "./useCamera";
 import styles from "./Configurador.module.css";
+export { preloadInitialFrames } from "./initialFrames";
 
 export default function Experiencia({
   compact,
