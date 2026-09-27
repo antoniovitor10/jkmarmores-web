@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { conteudo } from "@/content";
 import { PageView } from "@/components/PageView";
-import { SceneSlot } from "@/components/SceneSlot";
+import { Configurador } from "@/components/configurador/Configurador";
 import { PendenteTexto } from "@/components/PendenteTexto";
 import { pendente } from "@/content/pendente";
 import { metadataPagina } from "@/lib/site";
@@ -17,5 +17,5 @@ export default async function MaterialPage({ params }: { params: Promise<{ slug:
   const item = conteudo.materiais.find((material) => material.slug === slug && material.confirmado);
   if (slug === "pendente" && !item) return <PageView pagina={{ titulo: pendente("material confirmado pela JK"), introducao: "Esta página será preenchida quando houver um material confirmado.", seo: { titulo: pendente("material confirmado"), descricao: pendente("descrição do material") }, secoes: [], cta: conteudo.paginas.materiais.cta }} />;
   if (!item) notFound();
-  return <PageView pagina={{ titulo: item.nome, introducao: item.resumo, seo: item.seo, secoes: [{ id: "detalhes", titulo: "Sobre o material", texto: item.descricao }], cta: item.cta }}><section><h2>Acabamentos</h2>{item.acabamentos.map((acabamento) => <p key={acabamento.slug}><PendenteTexto valor={acabamento.nome} /></p>)}</section><section><h2>Explore a chapa</h2><SceneSlot mode="chapa" materialSlug={item.slug} materials={conteudo.materiais.filter((material) => material.confirmado)} quoteBase={`Olá, gostaria de pedir um orçamento para ${typeof item.nome === "string" ? item.nome : "este material"}.`} whatsapp={conteudo.empresa.whatsapp} /></section></PageView>;
+  return <PageView pagina={{ titulo: item.nome, introducao: item.resumo, seo: item.seo, secoes: [{ id: "detalhes", titulo: "Sobre o material", texto: item.descricao }], cta: item.cta }}><section><h2>Acabamentos</h2>{item.acabamentos.map((acabamento) => <p key={acabamento.slug}><PendenteTexto valor={acabamento.nome} /></p>)}</section><section><h2>Explore a chapa</h2><Configurador compact materialContext={typeof item.nome === "string" ? item.nome : undefined} /></section></PageView>;
 }
