@@ -27,7 +27,7 @@ try {
       cta: { href: document.querySelector(".home-hero .button").href, bottom: document.querySelector(".home-hero .button").getBoundingClientRect().bottom },
       noindex: document.querySelector('meta[name="robots"]').content.includes("noindex"),
       sections: [...document.querySelectorAll("main section[id]")].map(n => n.id),
-      scene: document.querySelector(".scene-slot") !== null,
+      scene: document.querySelector("[data-configurador]") !== null,
       deferredHydration: {
         bootstrap: !!document.querySelector('#jk-hydration-bootstrap'),
         scriptsPending: document.querySelectorAll('script[data-jk-src]').length,
@@ -42,7 +42,7 @@ try {
     assert.equal(state.deferredHydration.bootstrap, false);
     assert.equal(state.deferredHydration.scriptsPending, 0);
     assert.ok(state.cta.bottom < 844 && state.cta.href.startsWith("https://wa.me/5511967976902?text="));
-    assert.deepEqual(state.sections, ["jornada-pedra", "materiais", "configurador", "orcamento", "trabalhos"]);
+    assert.deepEqual(state.sections, ["jornada-pedra", "configurador", "orcamento"]);
     checks.push({ javascript: js, ...state });
     await page.click('.home-hero a[href="/materiais/"]');
     await page.waitForFunction(() => location.pathname === "/materiais/");

@@ -10,7 +10,13 @@ await fs.mkdir(destino, { recursive: true });
 for (const nome of await fs.readdir(fonte)) {
   if (!/\.(jpe?g|png|webp|avif)$/i.test(nome)) continue;
   const id = path.parse(nome).name;
+  // Fontes históricas ficam no acervo, sem derivados sem uso no site exportado.
+  if (["a1-mobile", "capa-aberto-01"].includes(id)) continue;
   const arquivo = path.join(fonte, nome);
+  if (id === "a1-prova-01") {
+    await sharp(arquivo).resize({ width: 1200 }).avif({ quality: 55 }).toFile(path.join(destino, "a1-prova-01-1200.avif"));
+    continue;
+  }
   const dados = await sharp(arquivo).metadata();
   if (!dados.width || !dados.height) continue;
   const variantes = [];

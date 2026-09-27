@@ -76,7 +76,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         if (visible && loaded) el!.style.setProperty("--mask-image", "url('/img/a1-prova-01-1200.avif')");
         const rect = el!.getBoundingClientRect();
         const travel = Math.max(1, rect.height - sticky.offsetHeight);
-        // Preserva o trajeto da m?scara aprovada; encurta somente os quatro quadros.
+        // Preserva o trajeto da máscara aprovada; encurta somente os quatro quadros.
         const maskTravel = (innerHeight * 6.2 - sticky.offsetHeight) * .22;
         const reveal = clamp(-rect.top / maskTravel);
         const story = clamp((-rect.top - maskTravel) / Math.max(1, travel - maskTravel));
@@ -145,7 +145,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
     `}</style></noscript>
     <div className="journey-controls">
       <button type="button" onClick={() => setStaticView(true)}>Ver imagens sem movimento</button>
-      <a href="#materiais">Pular para materiais</a>
+      <a href="#configurador">Pular para combinações</a>
     </div>
     {children}
   </div>;

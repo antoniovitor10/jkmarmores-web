@@ -1,6 +1,7 @@
 import { pendente } from './pendente';
 
 export const institucional = {
+  contatoHome: { titulo: 'Sua ideia começa aqui.', texto: 'Mande uma foto ou a medida aproximada e converse com a JK sobre o seu espaço.' },
   apresentacao: 'A JK Marmores e Granitos é uma marmoraria em Barueri, no bairro Parque Viana. Conheça nosso endereço e fale por telefone sobre o seu projeto.',
   hero: { titulo: 'Mármores e granitos em Barueri.', local: 'PARQUE VIANA / BARUERI, SP', texto: 'Seu projeto começa com uma conversa. Fale com a JK sobre a peça que você precisa e as possibilidades para o seu espaço.' },
   materiais: [
