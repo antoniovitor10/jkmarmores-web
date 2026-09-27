@@ -3,7 +3,7 @@ import { pendente } from "./pendente";
 
 const ctaOrcamento = (origem: string) => ({
   texto: "Pedir orçamento",
-  mensagem: `Olá. Vim da página ${origem} e quero conversar sobre um projeto. Posso informar ambiente, material que estou considerando, medidas aproximadas e cidade.`,
+  mensagem: origem === "início" ? "Oi, vi o site da JK e quero conversar sobre um orçamento." : `Oi, vi a página de ${origem} no site da JK e quero conversar sobre um orçamento.`,
 });
 
 const paginas: ConteudoSite["paginas"] = {

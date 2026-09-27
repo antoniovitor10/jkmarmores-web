@@ -36,6 +36,9 @@
 .journey-controls a,.journey-controls button { display:inline-flex; align-items:center; padding:8px 0; font-family:inherit; font-size:11px; color:#211c18; background:#f3ece2; border:0; border-radius:0; text-decoration:underline; text-underline-offset:4px; }
 .stone-journey :focus-visible { outline:2px solid #cea57e; outline-offset:4px; }
 .journey-video { position:absolute; inset:0 0 112px; width:100%; height:calc(100% - 112px); object-fit:cover; opacity:0; z-index:2; pointer-events:none; }
+.journey-contact { padding:32px 24px 40px; text-align:center; border-top:1px solid #5a4b3e; }
+.journey-contact a { display:inline-flex; align-items:center; padding:8px 0; color:#e3bd96; text-decoration-thickness:1px; transition:text-underline-offset .2s ease; }
+.journey-contact a:is(:hover,:focus-visible) { text-underline-offset:9px; }
 @media (min-width:701px) and (max-width:800px) {
   [data-enhanced] .journey-sticky { height:calc(100svh - 76px - env(safe-area-inset-bottom,0px)); }
 }

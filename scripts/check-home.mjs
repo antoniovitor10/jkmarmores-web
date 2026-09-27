@@ -44,7 +44,7 @@ try {
     assert.ok(state.cta.bottom < 844 && state.cta.href.startsWith("https://wa.me/5511967976902?text="));
     assert.deepEqual(state.sections, ["jornada-pedra", "configurador", "orcamento"]);
     checks.push({ javascript: js, ...state });
-    await page.click('.home-hero a[href="/materiais/"]');
+    await page.click('.site-footer a[href="/materiais/"]');
     await page.waitForFunction(() => location.pathname === "/materiais/");
     assert.equal(await page.$eval("h1", n => n.textContent), "A pedra certa começa pelo seu projeto.");
   }
@@ -53,7 +53,7 @@ try {
   assert.equal(await page.evaluate(() => document.activeElement.textContent), "Ir para o conteúdo");
   await page.keyboard.press("Enter");
   await page.keyboard.press("Tab");
-  assert.equal(await page.evaluate(() => document.activeElement.textContent), "Fale sobre seu projeto");
+  assert.equal(await page.evaluate(() => document.activeElement.textContent), "Fale com a JK no WhatsApp");
   checks.push({ keyboard: "Skip link seguido do CTA da abertura; foco visivel e ordem nativa" });
   await page.goto("http://127.0.0.1:3105/", { waitUntil: "networkidle0" });
   await page.focus(".mobile-nav summary");

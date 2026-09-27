@@ -5,6 +5,9 @@ import { homeBody, homeDisplay } from "./home-fonts";
 import { stoneJourney, stoneJourneyVideo } from "@/content/stone-journey";
 import { StoneJourneyMotion } from "./StoneJourneyMotion";
 import "./StoneJourney.css";
+import { conteudo } from "@/content";
+import { institucional } from "@/content/institucional";
+import { linkWhatsApp } from "@/lib/whatsapp";
 
 export function StoneJourney() {
   return <section id="jornada-pedra" className={`stone-journey ${homeDisplay.variable} ${homeBody.variable}`} aria-labelledby="jornada-titulo">
@@ -33,6 +36,7 @@ export function StoneJourney() {
         </div>
       </div>
     </StoneJourneyMotion>
+    <div className="journey-contact"><a href={linkWhatsApp(institucional.jornadaCta.mensagem, conteudo.empresa.whatsapp)}>{institucional.jornadaCta.texto}</a></div>
   </section>;
 }
 

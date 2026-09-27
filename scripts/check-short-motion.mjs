@@ -24,7 +24,7 @@ try {
       await cdp.detach();
     } else { await page.mouse.move(700,450); await page.mouse.wheel({deltaY:140}); }
     console.log('gesto',width,await page.evaluate(()=>({y:scrollY,v:document.querySelector('.home-hero video')?.currentTime})));
-    await page.waitForFunction(()=>document.querySelector('.home-hero video')?.dataset.settled==='1');
+    await page.waitForFunction(()=>{const v=document.querySelector('.home-hero video');return v?.dataset.settled==='1' && !v.seeking && v.readyState>=2;});
     const coverMs=Date.now()-start;
     assert.ok(coverMs<2400,`Capa demorou ${coverMs}ms`);
     const scrollAfter=await page.evaluate(()=>scrollY);
@@ -32,7 +32,7 @@ try {
     assert.equal(await page.evaluate(()=>scrollY),scrollAfter,'A animação não pode rolar a página');
     await page.screenshot({path:`docs/proposta/capturas/${label}-${width}-capa.png`});
     await page.evaluate(()=>scrollTo(0,0));
-    await page.waitForFunction(()=>document.querySelector('.home-hero video')?.dataset.settled==='0');
+    await page.waitForFunction(()=>{const v=document.querySelector('.home-hero video');return v?.dataset.settled==='0' && !v.seeking && v.readyState>=2;});
     const dimensions=await page.evaluate(()=>({hero:document.querySelector('[data-hero-stage]').parentElement.offsetHeight,journey:document.querySelector('.journey-track').offsetHeight,viewport:innerHeight}));
     const points=[];
     for(const index of [-1,0,1,2,3]) {
@@ -44,7 +44,7 @@ try {
         scrollTo(0,scrollY+root.getBoundingClientRect().top+position);
       },index);
       const begin=Date.now();
-      if(index>=0) await page.waitForFunction(i=>document.querySelector(`[data-frame="${i}"] video`)?.dataset.settled==='1',{},index);
+      if(index>=0) await page.waitForFunction(i=>{const v=document.querySelector(`[data-frame="${i}"] video`);return v?.dataset.settled==='1' && !v.seeking && v.readyState>=2;},{},index);
       else await sleep(250);
       const elapsed=Date.now()-begin;
       if(index>=0) assert.ok(elapsed<2300,`Etapa ${index}: ${elapsed}ms`);

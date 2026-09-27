@@ -73,6 +73,8 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
       }
       function render() {
         raf = 0;
+        // Não mede quatro figuras nem invalida estilos enquanto a seção está fora da tela.
+        if (!visible) { motions.forEach(motion => motion?.pause(true)); return; }
         if (visible && loaded) el!.style.setProperty("--mask-image", "url('/img/a1-prova-01-1200.avif')");
         const rect = el!.getBoundingClientRect();
         const travel = Math.max(1, rect.height - sticky.offsetHeight);

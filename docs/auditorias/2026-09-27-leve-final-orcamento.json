@@ -1,0 +1,8 @@
+{
+  "environment": "Emulacao Chrome headless, CPU 4x; nenhum envio externo",
+  "results": [
+    {
+      "contact": "Teclado do skip link ao submit; 4 campos visiveis; Mensagem WhatsApp correta interceptada sem envio externo"
+    }
+  ]
+}

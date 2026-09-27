@@ -1,0 +1,9 @@
+{
+  "environment": "Emulação Chrome touch390x844, CPU4x; vídeo sob150ms/200000Bps depois do load, cache frio de mídia; não aparelho real",
+  "gestureToLastFrameMs": 2034,
+  "src": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+  "currentTime": 1.408333,
+  "duration": 1.458333,
+  "ready": 4,
+  "seeking": false
+}

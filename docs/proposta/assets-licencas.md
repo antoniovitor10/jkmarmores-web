@@ -176,3 +176,6 @@ Termos consultados: [API Terms, seção 12](https://open.higgsfield.ai/terms-of-
 | close-escuro-escovado / close | z-image/turbo | 538946e7-caca-44bc-8347-3adf907cd94a | 0.0150 | public/configurador/closes/escuro-escovado.avif |
 
 2048 px dos quadros são reamostrados de vídeo 1280 px; não são detalhe óptico nativo 2k. Closes derivam de imagens nativas 2048 px. Vídeos e fontes PNG ficam apenas no diretório local tools/higgsfield/configurador-assets. Não foram publicados vídeos nem credenciais.
+
+## Derivados para rolagem curta — 27/09/2026
+Sem nova geração, sem novo request_id e sem custo. Os vídeos aprovados da capa e quatro etapas foram retemporizados para1,458333s/24fps, H.264 e AV1 já previstos, sem áudio, faststart, GOP6. Mesma pedra, mesmos enquadramentos/cortes de dispositivo e movimento original completo. Fontes fixadas no commit cc06d32; script scripts/shorten-motion-videos.mjs e bytes/parametrização em docs/auditorias/2026-09-27-videos-curtos.json. Licenças, prompts e IDs de origem nas entradas anteriores continuam válidos. Capa mobile282.544B H.264 /332.556B AV1; desktop427.719B H.264 /391.818B AV1. Quatro etapas somadas:909.685B desktop /562.712B mobile. Fontes históricas mantidas no acervo; derivados públicos sem uso e fonte variável sem uso retirados. Custo desta rodada: US$0; nenhum acesso à API ou ao saldo da Orbita.
