@@ -1,0 +1,49 @@
+{
+  "budgetUsd": 2.7,
+  "previousEstimatedUsedUsd": 0.678,
+  "estimatedUsedUsd": 0.909,
+  "remainingBudgetUsd": 1.791,
+  "actualCostUsd": null,
+  "sequencePlanEstimatedUsd": 0.693,
+  "unsubmittedRequests": [
+    {
+      "name": "jornada-video-2",
+      "estimatedUsd": 0.231
+    },
+    {
+      "name": "jornada-video-3",
+      "estimatedUsd": 0.231
+    }
+  ],
+  "request": {
+    "date": "2026-09-27T05:29:11.859Z",
+    "model": "kling-video/v3.0/std/image-to-video",
+    "input": {
+      "sound": "off",
+      "duration": 5,
+      "cfg_scale": 0.5,
+      "image_url": "assets/images/sequencia-01-chapa.png",
+      "last_image_url": "assets/images/sequencia-02-borda.png",
+      "multi_shots": false,
+      "prompt": "Cinematic architectural material study. A slow continuous camera move begins facing the large upright marble slab in the first frame. Track gently to the right and down, pass very close behind the foreground stone edge as a natural occlusion, and reveal a SEPARATE already finished mitered stone corner on the nearby workbench, matching the final reference. These are separate solid stone objects in an editorial studio, not a fabrication demonstration. No slab bends, folds, rotates by itself or turns into another shape. The rigid foreground edge naturally fills the lens briefly to connect the two views. Preserve the precise mineral veining and the geometries of each reference. Restrained grazing warm-neutral side light against the dark charcoal background. Slow steady cinematic camera, clear physical perspective, no people, hands, machinery in motion, writing, logos, watermarks, melting stone, texture crawling or crossfade ghosts."
+    },
+    "request_id": "33f8925b-6d45-4994-b11a-090f5a687a54",
+    "status": "completed",
+    "estimate": {
+      "type": "estimate",
+      "credits": "3.696",
+      "usd": "0.231",
+      "discount": {
+        "percentage": "45.00",
+        "credits": "3.024",
+        "usd": "0.189"
+      }
+    },
+    "output": "assets/provas/jornada-video-1.mp4",
+    "billingEvidence": []
+  },
+  "quality": {
+    "approved": false,
+    "reason": "A chapa gira sozinha e se transforma na geometria de borda; a pedra não permanece rígida. Não aplicado ao site."
+  }
+}

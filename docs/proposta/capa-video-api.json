@@ -1,0 +1,269 @@
+{
+  "budgetUsd": 2.7,
+  "previousEstimatedUsedUsd": 0.293,
+  "estimatedUsedUsd": 0.678,
+  "remainingBudgetUsd": 2.022,
+  "actualCostUsd": null,
+  "accounting": "Vitor autorizou seguir pelas estimativas; débito real será conferido por ele. Qwen falhou por indisponibilidade, sem output; política oficial não cobra falhas.",
+  "requests": [
+    {
+      "date": "2026-09-27T04:59:43.795Z",
+      "name": "capa-aberto-01",
+      "model": "alibaba/qwen-image-3/edit",
+      "input": {
+        "image_urls": "Referência local enviada pelo upload oficial; sem URL temporária no registro",
+        "resolution": "2k",
+        "aspect_ratio": "16:9",
+        "prompt_extend": false,
+        "enable_thinking": false,
+        "prompt": "Use this exact kitchen and this exact warm blush beige marble island as the reference. Move the camera backwards by four meters to make a WIDE ESTABLISHING ARCHITECTURAL PHOTOGRAPH of the whole room, maintaining the same viewing direction and the exact same stone island design and material. Show the entire freestanding waterfall island in the center, a generous stone floor foreground leading toward its front-left corner, walnut cabinets across the back wall, charcoal plaster, a large floor-to-ceiling window at the left with warm late afternoon grazing sunlight. The island must occupy only the middle third of the wide frame; its identifiable front-left mitered edge will be the target of a later camera dolly-in. Keep the reference salmon, rose, caramel and honey-beige veins and precise solid geometry. Sophisticated quiet residential architecture, natural proportions, photorealistic, 24mm lens, high texture detail, warm neutral palette. No people, text, logos or watermarks. Do not produce another close-up."
+      },
+      "request_id": "4e1a3228-ddd1-4bfd-8d07-1d8b14d07efc",
+      "status": "failed",
+      "estimate": {
+        "type": "estimate",
+        "credits": "1.200",
+        "usd": "0.075",
+        "discount": null
+      },
+      "actualCostUsd": null,
+      "output": null
+    },
+    {
+      "date": "2026-09-27T05:02:29.663Z",
+      "name": "capa-aberto-z01",
+      "model": "z-image/turbo",
+      "input": {
+        "prompt": "Wide establishing architectural photograph of a walnut kitchen, 24mm lens. An entire freestanding waterfall marble island occupies the central third of the room, seen diagonally from its front-left corner, its long countertop extends toward the right. The stone is warm blush-pink and honey beige with caramel mineral veins, precise thick mitered edge, full stone side panels. Walnut flat cabinets across the rear wall, dark gray plaster backsplash, subtle black sink behind. Large window on left, warm late-afternoon sunlight grazing the stone, beige stone floor foreground, ample circulation around island. Quiet expensive natural materials, photorealism, deep perspective, rich texture. No people, stools blocking island, text, logos, watermarks, cold white marble or impossible geometry.",
+        "resolution": "2k",
+        "aspect_ratio": "16:9",
+        "prompt_extend": false,
+        "seed": 270926
+      },
+      "request_id": "8c527910-75c7-46c7-8b40-224506d0576a",
+      "status": "completed",
+      "estimate": {
+        "type": "estimate",
+        "credits": "0.240",
+        "usd": "0.015",
+        "discount": null
+      },
+      "actualCostUsd": null,
+      "output": "assets/images/capa-aberto-01.png"
+    },
+    {
+      "date": "2026-09-27T05:08:10.186Z",
+      "name": "capa-dolly-01",
+      "model": "kling-video/v3.0/std/image-to-video",
+      "input": {
+        "sound": "off",
+        "duration": 8,
+        "cfg_scale": 0.5,
+        "image_url": "Referência local enviada pelo upload oficial; sem URL temporária no registro",
+        "last_image_url": "Referência local enviada pelo upload oficial; sem URL temporária no registro",
+        "multi_shots": false,
+        "prompt": "Slow continuous dolly-in from wide establishing shot to macro close-up of the marble countertop edge, strong parallax, steady cinematic camera, no cuts, no people, no text. The camera physically travels forward through the kitchen toward the front-right corner of the warm rose-beige marble island, covering a clear substantial distance from the wide first image to the close final image. Background walnut cabinets move with realistic perspective parallax. End very close to the precise mitered stone edge and caramel mineral veins. Continuous fluid forward movement for the entire shot, warm late-afternoon grazing sunlight. Preserve rigid countertop geometry and the exact mineral vein positions on the stone; the stone never changes shape or texture. No crossfade between still pictures, no dissolve, no transitions, no logos, no watermarks."
+      },
+      "request_id": "8caef78f-c547-4d79-adf1-585f905b1499",
+      "status": "completed",
+      "estimate": {
+        "type": "estimate",
+        "credits": "5.914",
+        "usd": "0.370",
+        "discount": {
+          "percentage": "45.00",
+          "credits": "4.839",
+          "usd": "0.303"
+        }
+      },
+      "actualCostUsd": null,
+      "output": "assets/provas/capa-dolly-01.mp4"
+    }
+  ],
+  "media": [
+    {
+      "file": "capa-desktop-av1.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.041667",
+        "size": "1634784"
+      },
+      "keyframes": [
+        0,
+        0.333333,
+        0.666667,
+        1,
+        1.333333,
+        1.666667,
+        2,
+        2.333333,
+        2.666667,
+        3,
+        3.333333,
+        3.666667,
+        4,
+        4.333333,
+        4.666667,
+        5,
+        5.333333,
+        5.666667,
+        6,
+        6.333333,
+        6.666667,
+        7,
+        7.333333,
+        7.666667,
+        8
+      ],
+      "maxKeyframeIntervalSeconds": 0.3333340000000007
+    },
+    {
+      "file": "capa-desktop-h264.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.041667",
+        "size": "1630324"
+      },
+      "keyframes": [
+        0,
+        0.333333,
+        0.666667,
+        1,
+        1.333333,
+        1.666667,
+        2,
+        2.333333,
+        2.666667,
+        3,
+        3.333333,
+        3.666667,
+        4,
+        4.333333,
+        4.666667,
+        5,
+        5.333333,
+        5.666667,
+        6,
+        6.333333,
+        6.666667,
+        7,
+        7.333333,
+        7.666667,
+        8
+      ],
+      "maxKeyframeIntervalSeconds": 0.3333340000000007
+    },
+    {
+      "file": "capa-mobile-av1.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "av1",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.041667",
+        "size": "1251439"
+      },
+      "keyframes": [
+        0,
+        0.333333,
+        0.666667,
+        1,
+        1.333333,
+        1.666667,
+        2,
+        2.333333,
+        2.666667,
+        3,
+        3.333333,
+        3.666667,
+        4,
+        4.333333,
+        4.666667,
+        5,
+        5.333333,
+        5.666667,
+        6,
+        6.333333,
+        6.666667,
+        7,
+        7.333333,
+        7.666667,
+        8
+      ],
+      "maxKeyframeIntervalSeconds": 0.3333340000000007
+    },
+    {
+      "file": "capa-mobile-h264.mp4",
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "8.041667",
+        "size": "1040978"
+      },
+      "keyframes": [
+        0,
+        0.333333,
+        0.666667,
+        1,
+        1.333333,
+        1.666667,
+        2,
+        2.333333,
+        2.666667,
+        3,
+        3.333333,
+        3.666667,
+        4,
+        4.333333,
+        4.666667,
+        5,
+        5.333333,
+        5.666667,
+        6,
+        6.333333,
+        6.666667,
+        7,
+        7.333333,
+        7.666667,
+        8
+      ],
+      "maxKeyframeIntervalSeconds": 0.3333340000000007
+    }
+  ]
+}

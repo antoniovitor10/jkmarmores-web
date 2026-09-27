@@ -1,0 +1,82 @@
+{
+  "environment": "Emulacao Chrome headless; nenhum contato enviado",
+  "checks": [
+    {
+      "javascript": false,
+      "h1": [
+        "Mármores e granitos em Barueri."
+      ],
+      "pending": 4,
+      "overflow": false,
+      "image": {
+        "ready": true,
+        "url": "http://127.0.0.1:3105/img/a1-mobile-768.avif",
+        "priority": "high"
+      },
+      "cta": {
+        "href": "http://127.0.0.1:3105/contato/",
+        "bottom": 482.15625
+      },
+      "noindex": true,
+      "sections": [
+        "jornada-pedra",
+        "materiais",
+        "configurador",
+        "orcamento",
+        "trabalhos"
+      ],
+      "scene": true,
+      "deferredHydration": {
+        "bootstrap": true,
+        "scriptsPending": 8,
+        "paint": 136
+      }
+    },
+    {
+      "javascript": true,
+      "h1": [
+        "Mármores e granitos em Barueri."
+      ],
+      "pending": 4,
+      "overflow": false,
+      "image": {
+        "ready": true,
+        "url": "http://127.0.0.1:3105/img/a1-mobile-768.avif",
+        "priority": "high"
+      },
+      "cta": {
+        "href": "http://127.0.0.1:3105/contato/",
+        "bottom": 482.15625
+      },
+      "noindex": true,
+      "sections": [
+        "jornada-pedra",
+        "materiais",
+        "configurador",
+        "orcamento",
+        "trabalhos"
+      ],
+      "scene": true,
+      "deferredHydration": {
+        "bootstrap": true,
+        "scriptsPending": 0,
+        "paint": 40,
+        "firstScript": 63.399999998509884
+      }
+    },
+    {
+      "keyboard": "Skip link seguido do CTA da abertura; foco visivel e ordem nativa"
+    },
+    {
+      "menu": "Abre por Enter e links acessiveis por Tab"
+    },
+    {
+      "reducedMotion": {
+        "transition": "1e-05s",
+        "videos": 0,
+        "canvas": 0
+      }
+    }
+  ],
+  "errors": []
+}

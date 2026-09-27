@@ -1,0 +1,62 @@
+{
+  "budgetUsd": 5,
+  "estimatedPlanUsd": 3.803,
+  "reserve20PercentUsd": 0.7606,
+  "estimatedUsedUsd": 0.293,
+  "actualUsedUsd": null,
+  "reason": "Resposta da API não informa débito real; portal sem sessão autenticada. Nenhuma geração adicional após primeira prova de vídeo.",
+  "requests": [
+    {
+      "date": "2026-09-27T04:28:58.910Z",
+      "model": "z-image/turbo",
+      "prompt": "Architectural editorial photograph, extreme close view of a precisely mitered thick marble kitchen island edge. Natural WARM blush pink and honey beige stone, subtle caramel and dusty rose mineral veins, absolutely not white or blue-grey marble. Warm walnut architecture and charcoal plaster in softly blurred background. One long grazing beam of 4300K sunlight from the left reveals crystalline depth and fine polished surface. Island edge diagonally crosses lower right foreground, sculptural solid geometry, restrained luxury, tactile natural texture, 50mm tilt-shift lens, believable scale, realistic photography. Quiet dark negative space upper left. No people, hands, writing, logos, watermarks, duplicated patterns, plastic surfaces or impossible edges.",
+      "input": {
+        "prompt": "Architectural editorial photograph, extreme close view of a precisely mitered thick marble kitchen island edge. Natural WARM blush pink and honey beige stone, subtle caramel and dusty rose mineral veins, absolutely not white or blue-grey marble. Warm walnut architecture and charcoal plaster in softly blurred background. One long grazing beam of 4300K sunlight from the left reveals crystalline depth and fine polished surface. Island edge diagonally crosses lower right foreground, sculptural solid geometry, restrained luxury, tactile natural texture, 50mm tilt-shift lens, believable scale, realistic photography. Quiet dark negative space upper left. No people, hands, writing, logos, watermarks, duplicated patterns, plastic surfaces or impossible edges.",
+        "resolution": "2k",
+        "aspect_ratio": "16:9",
+        "prompt_extend": false,
+        "seed": 270926
+      },
+      "request_id": "325213ae-35bb-483b-9b76-af009803348e",
+      "status": "completed",
+      "estimate": {
+        "type": "estimate",
+        "credits": "0.240",
+        "usd": "0.015",
+        "discount": null
+      },
+      "actualCostUsd": null,
+      "billingEvidence": [],
+      "output": "assets/provas/capa-quente-frame.png"
+    },
+    {
+      "date": "2026-09-27T04:30:26.024Z",
+      "model": "kling-video/v3.0/std/image-to-video",
+      "prompt": "A single continuous luxury architectural macro shot of this exact warm rose-beige marble island. Locked camera with an almost imperceptible slow lateral drift returning to the same framing. A soft warm grazing beam of sunlight slowly travels across the stone and settles back, revealing the caramel and blush mineral veins. Preserve every vein in its exact physical position, all stone geometry rigid and unchanged. Gentle natural specular highlights, calm warm walnut background, rich warm neutral color. Seamless loop, matching start and end. No people, hands, text, logos, watermark, cuts, melting, warping, changing veins, cold white marble or blue light.",
+      "input": {
+        "sound": "off",
+        "duration": 6,
+        "cfg_scale": 0.5,
+        "image_url": "upload da imagem-chave local",
+        "last_image_url": "mesma imagem-chave local",
+        "multi_shots": false,
+        "prompt": "A single continuous luxury architectural macro shot of this exact warm rose-beige marble island. Locked camera with an almost imperceptible slow lateral drift returning to the same framing. A soft warm grazing beam of sunlight slowly travels across the stone and settles back, revealing the caramel and blush mineral veins. Preserve every vein in its exact physical position, all stone geometry rigid and unchanged. Gentle natural specular highlights, calm warm walnut background, rich warm neutral color. Seamless loop, matching start and end. No people, hands, text, logos, watermark, cuts, melting, warping, changing veins, cold white marble or blue light."
+      },
+      "request_id": "56942962-4226-423d-a673-0922e4e9ed95",
+      "status": "completed",
+      "estimate": {
+        "type": "estimate",
+        "credits": "4.436",
+        "usd": "0.278",
+        "discount": {
+          "percentage": "45.00",
+          "credits": "3.629",
+          "usd": "0.227"
+        }
+      },
+      "actualCostUsd": null,
+      "billingEvidence": [],
+      "output": "assets/provas/capa-quente-prova.mp4"
+    }
+  ]
+}

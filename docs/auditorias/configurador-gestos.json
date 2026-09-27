@@ -1,0 +1,33 @@
+{
+  "checks": [
+    "Pinça nativa CDP: 1x para 2x",
+    "Duplo toque: 2x",
+    "Swipe horizontal: ângulo 01 para 08",
+    "Roda livre fora de foco; zoom com foco",
+    "Ctrl+roda ativa zoom sem foco",
+    "Duplo clique: 2x"
+  ],
+  "firstFrameMs": 453,
+  "deferred": [
+    {
+      "name": "/_next/static/chunks/3w-q4cnv3qsgq.css",
+      "bytes": 2269
+    },
+    {
+      "name": "/_next/static/chunks/3n8puexfu_ppd.js",
+      "bytes": 4369
+    },
+    {
+      "name": "/configurador/cozinha-rosado/thumb.avif",
+      "bytes": 1442
+    },
+    {
+      "name": "/configurador/lavatorio-rosado/thumb.avif",
+      "bytes": 1065
+    },
+    {
+      "name": "/configurador/cozinha-rosado/720/00.avif",
+      "bytes": 8368
+    }
+  ]
+}

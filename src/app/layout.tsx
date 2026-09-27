@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
+import { SiteFooter, MobileQuoteDock } from "@/components/SiteFooter";
 import { JsonLd } from "@/components/JsonLd";
 import { conteudo } from "@/content";
 import { isPendente } from "@/content/pendente";
 import { isHomolog, siteUrl } from "@/lib/site";
 import "./globals.css";
+import { homeDisplay, homeBody } from "@/components/home-fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -15,12 +16,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const empresa = conteudo.empresa;
+  const endereco = empresa.enderecoDetalhado;
+  const address = endereco && [endereco.logradouro, endereco.numero, endereco.bairro, endereco.cidade, endereco.uf].every(item => typeof item === "string")
+    ? { "@type": "PostalAddress", streetAddress: `${endereco.logradouro}, ${endereco.numero}, ${endereco.bairro}`, addressLocality: endereco.cidade, addressRegion: endereco.uf, addressCountry: "BR" } : undefined;
   const dadosEmpresa = !isPendente(empresa.nome) && !isPendente(empresa.telefone) && !isPendente(empresa.endereco) && !isPendente(empresa.cidade)
-    ? { "@context": "https://schema.org", "@type": "HomeAndConstructionBusiness", name: empresa.nome, url: siteUrl, telephone: empresa.telefone, address: { "@type": "PostalAddress", streetAddress: empresa.endereco, addressLocality: empresa.cidade } }
+    ? { "@context": "https://schema.org", "@type": "LocalBusiness", "@id": `${siteUrl}/#empresa`, name: empresa.nome, url: siteUrl, telephone: `+55${empresa.telefone.replace(/\D/g, "")}`, address }
     : null;
-  return <html lang="pt-BR"><body>
+  return <html lang="pt-BR"><body className={`${homeDisplay.variable} ${homeBody.variable}`}>
     <a className="skip-link" href="#conteudo">Ir para o conteúdo</a>
     <SiteHeader />
+    <MobileQuoteDock />
     {children}
     <SiteFooter />
     <JsonLd dados={{ "@context": "https://schema.org", "@type": "WebSite", url: siteUrl }} />

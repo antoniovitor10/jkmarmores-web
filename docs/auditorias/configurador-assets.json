@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cozinha-rosado",
+    "bytes": {
+      "720": 189786,
+      "1280": 434674,
+      "2048": 1216193
+    },
+    "nativeVideoWidth": 1280,
+    "highResolution": "2048 px resampled from video; no new optical detail"
+  },
+  {
+    "id": "cozinha-bege",
+    "bytes": {
+      "720": 162197,
+      "1280": 355604,
+      "2048": 991607
+    },
+    "nativeVideoWidth": 1280,
+    "highResolution": "2048 px resampled from video; no new optical detail"
+  },
+  {
+    "id": "cozinha-escuro",
+    "bytes": {
+      "720": 155793,
+      "1280": 343096,
+      "2048": 961633
+    },
+    "nativeVideoWidth": 1280,
+    "highResolution": "2048 px resampled from video; no new optical detail"
+  },
+  {
+    "id": "lavatorio-rosado",
+    "bytes": {
+      "720": 78885,
+      "1280": 177991,
+      "2048": 603584
+    },
+    "nativeVideoWidth": 1280,
+    "highResolution": "2048 px resampled from video; no new optical detail"
+  },
+  {
+    "id": "lavatorio-bege",
+    "bytes": {
+      "720": 100650,
+      "1280": 219051,
+      "2048": 686305
+    },
+    "nativeVideoWidth": 1280,
+    "highResolution": "2048 px resampled from video; no new optical detail"
+  },
+  {
+    "id": "lavatorio-escuro",
+    "bytes": {
+      "720": 90193,
+      "1280": 204043,
+      "2048": 694737
+    },
+    "nativeVideoWidth": 1280,
+    "highResolution": "2048 px resampled from video; no new optical detail"
+  }
+]

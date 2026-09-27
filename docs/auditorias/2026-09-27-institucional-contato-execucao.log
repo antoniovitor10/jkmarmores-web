@@ -1,0 +1,88 @@
+{
+  "stage": "depois",
+  "environment": "Emulacao Chrome headless; Lighthouse mobile, throttling simulate; servidor local gzip; cache frio",
+  "lighthouseVersion": "13.5.0",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "fetchTime": "2026-09-27T04:12:11.822Z",
+  "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 69
+  },
+  "lcpMs": 980.7991,
+  "fcpMs": 755.7991,
+  "tbtMs": 31.999999999999773,
+  "cls": 0,
+  "totalBytes": 196857,
+  "failures": [
+    {
+      "id": "unused-javascript",
+      "title": "Reduce unused JavaScript",
+      "displayValue": "Est savings of 54 KiB"
+    },
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing"
+    },
+    {
+      "id": "legacy-javascript-insight",
+      "title": "Legacy JavaScript",
+      "displayValue": "Est savings of 13 KiB"
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "h1Count": 1,
+      "h1": {
+        "x": 24,
+        "y": 171,
+        "width": 342,
+        "height": 116.625,
+        "top": 171,
+        "right": 366,
+        "bottom": 287.625,
+        "left": 24
+      },
+      "navigation": [
+        {
+          "bytes": 11795,
+          "loadMs": 47.20000000298023
+        }
+      ],
+      "resourcesAtLoadBytes": 29826,
+      "resourcesAfterIdleBytes": 170414
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "h1Count": 1,
+      "h1": {
+        "x": 80,
+        "y": 220.59375,
+        "width": 596.15625,
+        "height": 186.625,
+        "top": 220.59375,
+        "right": 676.15625,
+        "bottom": 407.21875,
+        "left": 80
+      },
+      "navigation": [
+        {
+          "bytes": 11795,
+          "loadMs": 20.799999997019768
+        }
+      ],
+      "resourcesAtLoadBytes": 29826,
+      "resourcesAfterIdleBytes": 177920
+    }
+  ]
+}

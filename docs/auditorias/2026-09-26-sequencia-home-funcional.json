@@ -1,0 +1,73 @@
+{
+  "environment": "Emulacao Chrome headless; nenhum contato enviado",
+  "checks": [
+    {
+      "javascript": false,
+      "h1": [
+        "A escolha começa no detalhe."
+      ],
+      "pending": 8,
+      "overflow": false,
+      "image": {
+        "ready": true,
+        "url": "AVIF incorporado no HTML",
+        "priority": "high"
+      },
+      "cta": {
+        "href": "https://api.whatsapp.com/send?text=Ol%C3%A1.%20Vim%20da%20p%C3%A1gina%20in%C3%ADcio%20e%20quero%20conversar%20sobre%20um%20projeto.%20Posso%20informar%20ambiente%2C%20material%20que%20estou%20considerando%2C%20medidas%20aproximadas%20e%20cidade.",
+        "bottom": 389.125
+      },
+      "noindex": true,
+      "sections": [
+        "materiais",
+        "aplicacoes",
+        "configurador",
+        "orcamento",
+        "trabalhos",
+        "atendimento"
+      ],
+      "scene": true
+    },
+    {
+      "javascript": true,
+      "h1": [
+        "A escolha começa no detalhe."
+      ],
+      "pending": 8,
+      "overflow": false,
+      "image": {
+        "ready": true,
+        "url": "AVIF incorporado no HTML",
+        "priority": "high"
+      },
+      "cta": {
+        "href": "https://api.whatsapp.com/send?text=Ol%C3%A1.%20Vim%20da%20p%C3%A1gina%20in%C3%ADcio%20e%20quero%20conversar%20sobre%20um%20projeto.%20Posso%20informar%20ambiente%2C%20material%20que%20estou%20considerando%2C%20medidas%20aproximadas%20e%20cidade.",
+        "bottom": 389.125
+      },
+      "noindex": true,
+      "sections": [
+        "materiais",
+        "aplicacoes",
+        "configurador",
+        "orcamento",
+        "trabalhos",
+        "atendimento"
+      ],
+      "scene": true
+    },
+    {
+      "keyboard": "Skip link seguido do CTA da abertura; foco visivel e ordem nativa"
+    },
+    {
+      "menu": "Abre por Enter e links acessiveis por Tab"
+    },
+    {
+      "reducedMotion": {
+        "transition": "1e-05s",
+        "videos": 0,
+        "canvas": 0
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "source": "assets/images/sequencia-01-chapa.png",
+    "width": 2752,
+    "height": 1536,
+    "bytes": 5884308,
+    "sha256": "b496cf54e30802017fde6f6ec9d75ff77c91eb722dd70254758df9d02892d4fd"
+  },
+  {
+    "source": "assets/images/sequencia-02-borda.png",
+    "width": 2752,
+    "height": 1536,
+    "bytes": 6012309,
+    "sha256": "824f1915d11e944003be318f6bd5b4f6e0f9866c4f08088c11d700eea00888dd"
+  },
+  {
+    "source": "assets/images/sequencia-03-acabamento.png",
+    "width": 2752,
+    "height": 1536,
+    "bytes": 5766259,
+    "sha256": "ac21a6d3649ae0ba0834645a0b901f904d1d86a95d69603858679ff82973a881"
+  },
+  {
+    "source": "assets/images/sequencia-04-aplicada.png",
+    "width": 2752,
+    "height": 1536,
+    "bytes": 6201254,
+    "sha256": "4d51d774cbd703408440b96479422aee34eb80bc6b6d1935579de7fc03d86826"
+  }
+]

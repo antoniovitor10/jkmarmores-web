@@ -2,7 +2,11 @@
 
 Substitui a tarefa 04. Decisão do Vitor (26/09/2026): o Astra lidera a qualidade visual e tem liberdade para reconstruir o layout de todas as páginas, usando o Higgsfield (via MCP) para imagens e vídeos. O resultado precisa ser **de alto nível, bonito e leve**. O Planejador (Claude Code) cuida de escopo, regras e revisão; o Vitor aprova.
 
-Pasta: `C:\Users\Vitor\Desktop\sites-wordpress\jk-marmores`. Branch: `redesign-astra`.
+**Status: preparada, aguardando o Vitor liberar uma vaga de execução para o JK.** Nada roda nem é gerado antes disso.
+
+Worktree exclusiva: `C:\Users\Vitor\Desktop\sites-wordpress\jk-marmores-redesign`, branch `redesign-astra`; o SHA de referência vem na mensagem de encaminhamento. Trabalhe só nessa pasta. Não troque de branch na pasta compartilhada `jk-marmores` e nunca use `--force`, `reset --hard` ou descarte de alterações para liberar um checkout.
+
+**Equipe durante o redesign:** você é o único escritor. O Planejador revisa cada entrega num commit identificável e não implementa versão concorrente; as correções voltam para você. Os agentes Codex (Sonda, Bussola, Cinzel, Prisma) não recebem tarefas sobre o redesign. Não abra subagentes nem ciclos contínuos de acompanhamento sem autorização. Ao iniciar, informe o modelo que está realmente selecionado no seu terminal.
 
 ---
 
@@ -23,6 +27,13 @@ Pasta: `C:\Users\Vitor\Desktop\sites-wordpress\jk-marmores`. Branch: `redesign-a
 - **Pode:** reescrever `src/app/globals.css`, os componentes de `src/components/` e o JSX das páginas em `src/app/**/page.tsx`, criar componentes novos, reorganizar seções e reescrever a cena 3D inteira.
 - **Pode ajustar o texto** de `src/content/` para caber no layout (encurtar, dividir título e subtítulo, criar legendas). Não pode acrescentar fatos: todo dado da empresa continua saindo de `pendente()`.
 - **Não pode quebrar:** rotas e URLs, `metadataPagina`, JSON-LD, `sitemap.ts`, `robots.ts`, `SITE_MODE`, `pendente()` e `check:pendencias`, o formulário de orçamento que monta a mensagem e abre o WhatsApp, o link do WhatsApp que funciona sem JS e o contrato `StoneSceneProps` / `StoneSelection` de `src/lib/stone.ts` (pode ampliar, não quebrar).
+- **A liberdade não autoriza:**
+  - inventar dados da JK (nomes comerciais, serviços, contatos, características);
+  - remover sem discussão uma funcionalidade aprovada: configurador de ambiente, explorador de chapa, seleção de material e acabamento e orçamento pelo WhatsApp continuam vigentes;
+  - alterar infraestrutura (`.github/workflows/`, `public/.htaccess`, `output: "export"` em `next.config`, secrets e variáveis do repositório);
+  - publicar. Homologação, noindex e os bloqueios de lançamento continuam como estão.
+- **Apresentação e interação são coisas separadas:** uma abertura em vídeo ou imagem cinematográfica é apresentação e não substitui as interações acima.
+- **A direção é ponto de partida:** o conceito "o corte" (seção 2) e a lista de assets (seção 4) podem ser refinados com justificativa curta. Não é preciso produzir todos os assets só para cumprir a lista.
 
 ---
 
@@ -94,15 +105,22 @@ A ordem e a função das seções vêm de `docs/proposta/arquitetura.md`. O que 
 
 ## 4. Higgsfield: plano de assets
 
-### 4.1 Créditos (conta nova, saldo desconhecido)
+### 4.1 Créditos e orçamento (conta nova)
 
-1. Antes de gerar qualquer coisa, consulte o saldo e o custo por modelo e anote em `docs/proposta/direcao-visual.md`.
-2. Para cada geração, estime o custo antes de enviar.
-3. **Itere barato, finalize caro:**
-   - explore composição e luz em modelo rápido ou barato (ex.: Z Image) e em resolução menor;
-   - só a versão aprovada vai para o modelo de alta qualidade (GPT Image 2 para imagens gerais, Soul Location para ambientes sem pessoas);
+1. **Antes de qualquer geração paga, informe ao Vitor:**
+   - quais ferramentas o MCP do Higgsfield realmente expõe no seu terminal;
+   - qual conta está autenticada;
+   - o saldo;
+   - o custo estimado da primeira prova.
+
+   Se alguma ferramenta não permitir consultar isso, diga qual limitação encontrou. Não invente valores.
+2. **Saldo não é orçamento autorizado.** Proponha um teto em créditos que cubra a prova inicial, as variações previstas e uma reserva para os arquivos finais, e **espere o Vitor aprovar** antes de gerar conteúdo pago.
+3. **Custos a considerar:**
+   - não recarregue a conta nem contrate outro serviço;
+   - estime o custo de cada geração antes de enviar;
    - vídeo só a partir de um frame já aprovado (image-to-video), nunca direto de texto.
-4. Se o plano completo não couber no saldo, siga a ordem de prioridade da lista abaixo e avise o Vitor do que ficou de fora.
+4. **Modelos mais baratos:** servem para explorar composição e luz, mas trocar de modelo depois pode não reproduzir a cena aprovada. Defina cedo o modelo em que a versão final será feita.
+5. **Se o plano não couber no teto aprovado,** siga a ordem de prioridade da lista abaixo e avise o Vitor do que ficou de fora.
 
 ### 4.2 Lista de assets, em ordem de prioridade
 
@@ -140,7 +158,16 @@ A ordem e a função das seções vêm de `docs/proposta/arquitetura.md`. O que 
   - pausa fora da tela;
   - botão acessível de pausar.
   - O vídeo nunca atrasa o LCP: o LCP é o pôster.
-- **Registro obrigatório:** cada asset gerado entra em `docs/proposta/assets-licencas.md` com ferramenta, modelo, prompt, data, custo em créditos, arquivo final e a nota "provisório, gerado por IA, não representa obra ou material da JK". Confira e anote os termos de uso comercial da conta.
+- **Registro obrigatório:** cada asset gerado entra em `docs/proposta/assets-licencas.md` com:
+  - ferramenta e modelo;
+  - prompt;
+  - data;
+  - custo informado pela ferramenta;
+  - arquivo final;
+  - os termos de uso comercial disponíveis;
+  - a nota "provisório, gerado por IA, não representa obra ou material da JK".
+
+  Nunca registre credenciais, tokens ou dados da conta.
 - **Na página:** imagem gerada que mostre ambiente leva a legenda discreta "Imagem ilustrativa". Galeria e trabalhos só com foto real.
 
 ---
@@ -192,12 +219,23 @@ Metas no celular, Lighthouse mobile em build de produção:
 
 ## 7. Processo e ponto de consulta
 
-1. **Direção (antes de gastar crédito em volume):**
-   - Crie `docs/proposta/direcao-visual.md` com: conceito, paleta com contrastes medidos, fontes escolhidas (com licença), grid, a assinatura de motion, a lista de assets com prompts e o custo estimado contra o saldo.
-   - Gere só o A1 em versão de exploração (2 ou 3 variações baratas) e implemente a abertura da home com ele.
-   - Tire capturas em 390 px e 1440 px em `docs/proposta/capturas/`.
-   - **Pare e mostre ao Vitor.** Ele aprova ou ajusta a direção. É o único ponto de parada obrigatório.
-2. **Produção:** gere os assets aprovados (A1 final, A2 a A6 conforme crédito) e implemente todas as páginas e o 3D.
+0. **Linha de base (antes de mudar qualquer coisa):** registre em `docs/auditorias/` as medidas do estado atual com os comandos exatos. Serve de "antes" para comparar.
+1. **Primeira entrega: só a abertura da home, não o redesign completo.**
+   - **Orçamento:** passo 1 da seção 4.1, com o teto aprovado pelo Vitor.
+   - **Direção:** crie `docs/proposta/direcao-visual.md` com conceito, paleta com contrastes medidos, fontes (com licença), grid, a proposta do movimento principal, a lista de assets com prompts e o custo estimado contra o teto aprovado.
+   - **Imagem:** gere **uma** imagem representativa da qualidade final pretendida para o A1 e implemente a abertura da home com ela. Nesta etapa não entram vídeo nem variações em volume. O movimento principal é descrito, ou demonstrado com CSS sobre a imagem.
+   - **Referência externa:** se o Vitor indicar uma referência (por exemplo, um vídeo) que você não consiga acessar, diga isso. Não apresente uma proposta própria como reprodução verificada da referência.
+   - **Onde mostrar:** preview local (`npm run dev` ou `out/` servido localmente), com capturas em 390 px e 1440 px em `docs/proposta/capturas/`. **Não publique no domínio para apresentar.**
+   - **Pare e mostre ao Vitor**, num commit identificável, o que vai ser avaliado:
+     - composição e iluminação;
+     - aparência e escala dos materiais;
+     - tipografia e hierarquia;
+     - espaço para conteúdo e orçamento;
+     - adaptação ao celular;
+     - proposta do movimento principal.
+
+     É o único ponto de parada obrigatório.
+2. **Produção:** depois da aprovação, gere os assets necessários dentro do teto (A1 final, A2 a A6 só se fizerem sentido) e implemente todas as páginas e o 3D.
 3. **Verificação:** rode a checklist da seção 8.
 4. **Entrega:** commits pequenos e descritivos em português, sem emoji, na branch `redesign-astra`, com push dela. **Não faça push nem merge na `main`**, porque a `main` publica direto em https://jkmarmores.com.br. O Planejador revisa e faz o merge.
 
@@ -207,6 +245,12 @@ Metas no celular, Lighthouse mobile em build de produção:
 
 - [ ] `npm run lint`, `npm run build` e `npm run check:pendencias` (homolog) sem erro.
 - [ ] `npm run measure:bundle` com o JS inicial da home até 150 KB gzip.
+- [ ] Relatório de peso, antes e depois da mudança, separando:
+  - carregamento inicial;
+  - downloads adiados (vídeo, 3D, imagens fora da tela);
+  - peso por tipo (imagens, vídeos, 3D, JS, fontes).
+
+  Cada resultado indica se foi medido em emulação ou em aparelho real; um não substitui o outro. Se uma meta impedir um resultado visual aceitável, apresente o conflito e uma alternativa. Não aumente limites por conta própria nem sacrifique a qualidade só para bater um número.
 - [ ] Lighthouse mobile da home, de uma página de material e do contato, servidos de `out/` com compressão, dentro das metas da seção 6. Relatórios em `docs/auditorias/`.
 - [ ] Página navegada só com teclado, do skip link ao envio do formulário.
 - [ ] Página com JS desativado mostrando todo o texto e os links de WhatsApp.

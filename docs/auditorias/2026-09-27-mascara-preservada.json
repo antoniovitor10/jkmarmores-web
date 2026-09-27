@@ -1,0 +1,14 @@
+[
+  {
+    "width": 390,
+    "channels": 987480,
+    "differentChannels": 0,
+    "meanDelta": 0
+  },
+  {
+    "width": 1440,
+    "channels": 3888000,
+    "differentChannels": 87,
+    "meanDelta": 0.000022376543209876542
+  }
+]

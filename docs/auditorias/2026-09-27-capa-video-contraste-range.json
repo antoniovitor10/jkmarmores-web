@@ -1,0 +1,36 @@
+{
+  "contrast": {
+    "worstBackground": [
+      52.599999999999994,
+      50.839999999999996,
+      49.08
+    ],
+    "display": 10.75874951401601,
+    "body": 9.251270869300004,
+    "eyebrow": 7.2009826614023495,
+    "cta": 7.931149465579857
+  },
+  "ranges": [
+    {
+      "range": "bytes=0-63",
+      "status": 206,
+      "type": "video/mp4",
+      "contentRange": "bytes 0-63/1040978",
+      "bytes": 64
+    },
+    {
+      "range": "bytes=-64",
+      "status": 206,
+      "type": "video/mp4",
+      "contentRange": "bytes 1040914-1040977/1040978",
+      "bytes": 64
+    },
+    {
+      "range": "bytes=999999999-",
+      "status": 416,
+      "type": "video/mp4",
+      "contentRange": "bytes */1040978",
+      "bytes": 0
+    }
+  ]
+}

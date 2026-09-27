@@ -1,0 +1,344 @@
+[
+  {
+    "kind": "image",
+    "id": "cozinha-rosado",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Editorial architectural interior photograph. spacious contemporary kitchen, walnut cabinetry, plaster walls, floor to ceiling side window, a freestanding rectangular stone kitchen island with waterfall sides. The entire island is warm blush pink marble with delicate ivory and caramel veins, polished finish. Whole island visible centered with generous space around all sides, foreground floor and complete room around it. Camera at counter height, three-quarter view, 35mm lens. Warm 4500K side daylight, precise straight edges, natural mineral veining, realistic reflections, restrained luxurious atmosphere. No people, text, logos, watermark, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:05:12.003Z",
+    "request_id": "abcf1de8-6eed-4510-8aca-e6827d7ed421"
+  },
+  {
+    "kind": "video",
+    "id": "cozinha-rosado",
+    "model": "kling-video/v3.0/std/image-to-video",
+    "input": {
+      "image_url": "Generated still of the same id; no client media",
+      "prompt": "One continuous architectural photography shot. The camera orbits clockwise around the stationary stone island through a smooth 90 degree arc, revealing its adjacent side, with strong natural background parallax. Constant distance and camera height, keep the entire island centered. No zoom, no cuts. Perfectly rigid stone edges and stable vein patterns. The furniture and room remain completely still and coherent. No people, no text, no logos. Realistic daylight and reflections.",
+      "duration": 4,
+      "sound": "off",
+      "multi_shots": false,
+      "cfg_scale": 0.5
+    },
+    "estimated": 0.2772,
+    "status": "completed",
+    "date": "2026-09-27T05:06:01.225Z",
+    "request_id": "82eed1ea-cb61-41b5-a351-43b864d380ec"
+  },
+  {
+    "kind": "close",
+    "id": "close-rosado-polido",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Architectural material macro photograph of warm blush pink marble with delicate ivory and caramel veins, mirror polished surface, crisp soft window reflection, smooth reflective finish. A thick stone slab edge in foreground, surface fills image. Warm lateral daylight at 4500K, 90mm macro lens, believable mineral detail. Minimal dark background. No people, text, logos, watermark. Photographic, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:06:11.443Z",
+    "request_id": "11aab6e7-8ea6-462f-9f28-b2b578c0acb3"
+  },
+  {
+    "kind": "close",
+    "id": "close-rosado-levigado",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Architectural material macro photograph of warm blush pink marble with delicate ivory and caramel veins, honed matte surface, soft broad reflection, smooth low sheen finish. A thick stone slab edge in foreground, surface fills image. Warm lateral daylight at 4500K, 90mm macro lens, believable mineral detail. Minimal dark background. No people, text, logos, watermark. Photographic, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:06:28.037Z",
+    "request_id": "8bd0a318-de14-402d-963f-dd5754a07b76"
+  },
+  {
+    "kind": "close",
+    "id": "close-rosado-escovado",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Architectural material macro photograph of warm blush pink marble with delicate ivory and caramel veins, brushed tactile surface, fine irregular micro relief under raking light, soft satin finish. A thick stone slab edge in foreground, surface fills image. Warm lateral daylight at 4500K, 90mm macro lens, believable mineral detail. Minimal dark background. No people, text, logos, watermark. Photographic, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:06:44.982Z",
+    "request_id": "0c875aa1-b188-4ead-90af-84d44dca2cde"
+  },
+  {
+    "kind": "image",
+    "id": "cozinha-bege",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Editorial architectural interior photograph. spacious contemporary kitchen, walnut cabinetry, plaster walls, floor to ceiling side window, a freestanding rectangular stone kitchen island with waterfall sides. The entire island is warm sandy beige stone with restrained cream veins, polished finish. Whole island visible centered with generous space around all sides, foreground floor and complete room around it. Camera at counter height, three-quarter view, 35mm lens. Warm 4500K side daylight, precise straight edges, natural mineral veining, realistic reflections, restrained luxurious atmosphere. No people, text, logos, watermark, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:07:41.499Z",
+    "request_id": "a06425d5-9517-47d9-867d-72402e23ad8a"
+  },
+  {
+    "kind": "video",
+    "id": "cozinha-bege",
+    "model": "kling-video/v3.0/std/image-to-video",
+    "input": {
+      "image_url": "Generated still of the same id; no client media",
+      "prompt": "One continuous architectural photography shot. The camera orbits clockwise around the stationary stone island through a smooth 90 degree arc, revealing its adjacent side, with strong natural background parallax. Constant distance and camera height, keep the entire island centered. No zoom, no cuts. Perfectly rigid stone edges and stable vein patterns. The furniture and room remain completely still and coherent. No people, no text, no logos. Realistic daylight and reflections.",
+      "duration": 4,
+      "sound": "off",
+      "multi_shots": false,
+      "cfg_scale": 0.5
+    },
+    "estimated": 0.2772,
+    "status": "completed",
+    "date": "2026-09-27T05:07:58.381Z",
+    "request_id": "bd85e37a-fe9b-4460-8af7-e60baa961e0b"
+  },
+  {
+    "kind": "image",
+    "id": "cozinha-escuro",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Editorial architectural interior photograph. spacious contemporary kitchen, walnut cabinetry, plaster walls, floor to ceiling side window, a freestanding rectangular stone kitchen island with waterfall sides. The entire island is deep charcoal black stone with fine warm copper veins, polished finish. Whole island visible centered with generous space around all sides, foreground floor and complete room around it. Camera at counter height, three-quarter view, 35mm lens. Warm 4500K side daylight, precise straight edges, natural mineral veining, realistic reflections, restrained luxurious atmosphere. No people, text, logos, watermark, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:09:06.576Z",
+    "request_id": "69679d06-3c00-472e-b0c3-7d5a264667df"
+  },
+  {
+    "kind": "video",
+    "id": "cozinha-escuro",
+    "model": "kling-video/v3.0/std/image-to-video",
+    "input": {
+      "image_url": "Generated still of the same id; no client media",
+      "prompt": "One continuous architectural photography shot. The camera orbits clockwise around the stationary stone island through a smooth 90 degree arc, revealing its adjacent side, with strong natural background parallax. Constant distance and camera height, keep the entire island centered. No zoom, no cuts. Perfectly rigid stone edges and stable vein patterns. The furniture and room remain completely still and coherent. No people, no text, no logos. Realistic daylight and reflections.",
+      "duration": 4,
+      "sound": "off",
+      "multi_shots": false,
+      "cfg_scale": 0.5
+    },
+    "estimated": 0.2772,
+    "status": "completed",
+    "date": "2026-09-27T05:09:23.485Z",
+    "request_id": "2ccd45c8-d9df-40b7-a89b-c9c822c4ec00"
+  },
+  {
+    "kind": "image",
+    "id": "lavatorio-rosado",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Editorial architectural interior photograph. contemporary spa bathroom with warm plaster walls, walnut storage, freestanding rectangular stone washstand island with one sculpted oval vessel basin and bronze faucet, a large side window. The entire island is warm blush pink marble with delicate ivory and caramel veins, polished finish. Whole island visible centered with generous space around all sides, foreground floor and complete room around it. Camera at counter height, three-quarter view, 35mm lens. Warm 4500K side daylight, precise straight edges, natural mineral veining, realistic reflections, restrained luxurious atmosphere. No people, text, logos, watermark, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:10:24.639Z",
+    "request_id": "f6fcaa1d-fa03-4c44-8211-ca4ddc1c6d60"
+  },
+  {
+    "kind": "video",
+    "id": "lavatorio-rosado",
+    "model": "kling-video/v3.0/std/image-to-video",
+    "input": {
+      "image_url": "Generated still of the same id; no client media",
+      "prompt": "One continuous architectural photography shot. The camera orbits clockwise around the stationary stone island through a smooth 90 degree arc, revealing its adjacent side, with strong natural background parallax. Constant distance and camera height, keep the entire island centered. No zoom, no cuts. Perfectly rigid stone edges and stable vein patterns. The furniture and room remain completely still and coherent. No people, no text, no logos. Realistic daylight and reflections.",
+      "duration": 4,
+      "sound": "off",
+      "multi_shots": false,
+      "cfg_scale": 0.5
+    },
+    "estimated": 0.2772,
+    "status": "completed",
+    "date": "2026-09-27T05:10:41.051Z",
+    "request_id": "1d66ad18-fc96-46f5-a902-fda2fe810340"
+  },
+  {
+    "kind": "image",
+    "id": "lavatorio-bege",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Editorial architectural interior photograph. contemporary spa bathroom with warm plaster walls, walnut storage, freestanding rectangular stone washstand island with one sculpted oval vessel basin and bronze faucet, a large side window. The entire island is warm sandy beige stone with restrained cream veins, polished finish. Whole island visible centered with generous space around all sides, foreground floor and complete room around it. Camera at counter height, three-quarter view, 35mm lens. Warm 4500K side daylight, precise straight edges, natural mineral veining, realistic reflections, restrained luxurious atmosphere. No people, text, logos, watermark, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:11:35.494Z",
+    "request_id": "5095ac71-5452-45ca-aa7c-a353adbfbe1f"
+  },
+  {
+    "kind": "video",
+    "id": "lavatorio-bege",
+    "model": "kling-video/v3.0/std/image-to-video",
+    "input": {
+      "image_url": "Generated still of the same id; no client media",
+      "prompt": "One continuous architectural photography shot. The camera orbits clockwise around the stationary stone island through a smooth 90 degree arc, revealing its adjacent side, with strong natural background parallax. Constant distance and camera height, keep the entire island centered. No zoom, no cuts. Perfectly rigid stone edges and stable vein patterns. The furniture and room remain completely still and coherent. No people, no text, no logos. Realistic daylight and reflections.",
+      "duration": 4,
+      "sound": "off",
+      "multi_shots": false,
+      "cfg_scale": 0.5
+    },
+    "estimated": 0.2772,
+    "status": "completed",
+    "date": "2026-09-27T05:11:51.845Z",
+    "request_id": "773cf567-a4a2-44b9-a2df-6b7184f609d5"
+  },
+  {
+    "kind": "image",
+    "id": "lavatorio-escuro",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Editorial architectural interior photograph. contemporary spa bathroom with warm plaster walls, walnut storage, freestanding rectangular stone washstand island with one sculpted oval vessel basin and bronze faucet, a large side window. The entire island is deep charcoal black stone with fine warm copper veins, polished finish. Whole island visible centered with generous space around all sides, foreground floor and complete room around it. Camera at counter height, three-quarter view, 35mm lens. Warm 4500K side daylight, precise straight edges, natural mineral veining, realistic reflections, restrained luxurious atmosphere. No people, text, logos, watermark, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:12:50.803Z",
+    "request_id": "50229011-cdf6-497c-9806-39d9902a43a2"
+  },
+  {
+    "kind": "video",
+    "id": "lavatorio-escuro",
+    "model": "kling-video/v3.0/std/image-to-video",
+    "input": {
+      "image_url": "Generated still of the same id; no client media",
+      "prompt": "One continuous architectural photography shot. The camera orbits clockwise around the stationary stone island through a smooth 90 degree arc, revealing its adjacent side, with strong natural background parallax. Constant distance and camera height, keep the entire island centered. No zoom, no cuts. Perfectly rigid stone edges and stable vein patterns. The furniture and room remain completely still and coherent. No people, no text, no logos. Realistic daylight and reflections.",
+      "duration": 4,
+      "sound": "off",
+      "multi_shots": false,
+      "cfg_scale": 0.5
+    },
+    "estimated": 0.2772,
+    "status": "completed",
+    "date": "2026-09-27T05:13:07.115Z",
+    "request_id": "1a08f16f-c300-4522-9423-913e983b5d11"
+  },
+  {
+    "kind": "close",
+    "id": "close-bege-polido",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Architectural material macro photograph of warm sandy beige stone with restrained cream veins, mirror polished surface, crisp soft window reflection, smooth reflective finish. A thick stone slab edge in foreground, surface fills image. Warm lateral daylight at 4500K, 90mm macro lens, believable mineral detail. Minimal dark background. No people, text, logos, watermark. Photographic, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:15:10.267Z",
+    "request_id": "d154de0d-8cdb-4ee9-a4fc-1823f7a0f26b"
+  },
+  {
+    "kind": "close",
+    "id": "close-bege-levigado",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Architectural material macro photograph of warm sandy beige stone with restrained cream veins, honed matte surface, soft broad reflection, smooth low sheen finish. A thick stone slab edge in foreground, surface fills image. Warm lateral daylight at 4500K, 90mm macro lens, believable mineral detail. Minimal dark background. No people, text, logos, watermark. Photographic, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:15:31.625Z",
+    "request_id": "12ee353a-90c8-49e6-afb7-d372514934fb"
+  },
+  {
+    "kind": "close",
+    "id": "close-bege-escovado",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Architectural material macro photograph of warm sandy beige stone with restrained cream veins, brushed tactile surface, fine irregular micro relief under raking light, soft satin finish. A thick stone slab edge in foreground, surface fills image. Warm lateral daylight at 4500K, 90mm macro lens, believable mineral detail. Minimal dark background. No people, text, logos, watermark. Photographic, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:15:48.490Z",
+    "request_id": "d1162bfb-227a-42eb-aa72-760201c59d8a"
+  },
+  {
+    "kind": "close",
+    "id": "close-escuro-polido",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Architectural material macro photograph of deep charcoal black stone with fine warm copper veins, mirror polished surface, crisp soft window reflection, smooth reflective finish. A thick stone slab edge in foreground, surface fills image. Warm lateral daylight at 4500K, 90mm macro lens, believable mineral detail. Minimal dark background. No people, text, logos, watermark. Photographic, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:16:04.815Z",
+    "request_id": "9150edee-5ca0-4fd7-aa18-4eb65ab5ebf4"
+  },
+  {
+    "kind": "close",
+    "id": "close-escuro-levigado",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Architectural material macro photograph of deep charcoal black stone with fine warm copper veins, honed matte surface, soft broad reflection, smooth low sheen finish. A thick stone slab edge in foreground, surface fills image. Warm lateral daylight at 4500K, 90mm macro lens, believable mineral detail. Minimal dark background. No people, text, logos, watermark. Photographic, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:16:22.130Z",
+    "request_id": "4ea409e5-eda6-4d1b-8e87-eb8a4e715063"
+  },
+  {
+    "kind": "close",
+    "id": "close-escuro-escovado",
+    "model": "z-image/turbo",
+    "input": {
+      "prompt": "Architectural material macro photograph of deep charcoal black stone with fine warm copper veins, brushed tactile surface, fine irregular micro relief under raking light, soft satin finish. A thick stone slab edge in foreground, surface fills image. Warm lateral daylight at 4500K, 90mm macro lens, believable mineral detail. Minimal dark background. No people, text, logos, watermark. Photographic, no plastic CGI.",
+      "resolution": "2k",
+      "aspect_ratio": "16:9",
+      "prompt_extend": false,
+      "seed": 27461
+    },
+    "estimated": 0.015,
+    "status": "completed",
+    "date": "2026-09-27T05:16:39.546Z",
+    "request_id": "538946e7-caca-44bc-8347-3adf907cd94a"
+  }
+]

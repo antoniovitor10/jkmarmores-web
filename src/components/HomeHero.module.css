@@ -1,0 +1,35 @@
+.hero { background:var(--cor-grafite); color:var(--cor-papel); }
+.track[data-motion] { height:280svh; }
+.stage { position:sticky; top:0; height:100svh; min-height:680px; overflow:hidden; isolation:isolate; }
+.figure { position:absolute; inset:0; margin:0; z-index:-2; background:#191715; }
+.figure picture,.figure img,.video { display:block; width:100%; height:100%; }
+.figure img,.video { object-fit:cover; object-position:63% center; }
+.video { position:absolute; inset:0; opacity:0; z-index:1; }
+.figure figcaption { position:absolute; right:32px; bottom:92px; z-index:2; font-size:10px; background:#191715; color:#f3ece2; padding:6px 10px; }
+.intro { position:absolute; top:clamp(36px,7svh,80px); left:max(40px,calc((100vw - 1280px)/2)); padding:28px 32px 32px; max-width:640px; background:rgb(25 23 21 / 88%); }
+.intro h1 { font-size:clamp(64px,6.7vw,100px); max-width:11ch; line-height:.98; margin:24px 0; font-weight:400; }
+.description { max-width:42ch; margin-bottom:24px; color:#e6dbcf; font-size:16px; }
+.intro :global(.eyebrow) { color:#e3bd96; }
+.controls { position:absolute; inset:auto 32px 24px; display:flex; align-items:center; gap:24px; padding:8px 16px; background:#191715; color:#f3ece2; font-size:12px; width:fit-content; max-width:calc(100% - 64px); }
+.controls button { background:transparent; color:#f3ece2; border:1px solid #927254; padding:10px 14px; min-height:44px; font-size:12px; }
+.controls button[hidden] { display:none; }
+.controls a { min-height:44px; display:flex; align-items:center; }
+.scrollHint { font-size:11px; color:#e3bd96; }
+.progress { position:absolute; bottom:0; left:0; width:100%; height:2px; background:#d2a477; transform:scaleX(var(--cover-progress,0)); transform-origin:left; }
+.track:not([data-motion]) .controls,.track:not([data-motion]) .progress { display:none; }
+@media(max-width:700px) {
+  .stage { min-height:650px; }
+  .intro { top:20px; left:16px; right:16px; padding:24px; max-width:none; }
+  .intro h1 { font-size:54px; margin:18px 0; }
+  .description { font-size:14px; margin-bottom:20px; }
+  .figure img,.video { object-position:65% center; }
+  .figure figcaption { bottom:176px; right:16px; font-size:9px; }
+  .controls { left:16px; right:16px; bottom:104px; max-width:none; gap:16px; padding:8px 12px; }
+  .controls button,.controls a { font-size:11px; }
+  .scrollHint { display:none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .track[data-motion] { height:auto; }
+  .stage { position:relative; }
+  .controls,.progress { display:none; }
+}

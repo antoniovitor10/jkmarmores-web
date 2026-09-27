@@ -1,0 +1,40 @@
+{
+  "initialBefore": {
+    "HTML": 5834,
+    "JS": 140438,
+    "Fontes externas": 51724,
+    "Imagens externas": 9600,
+    "CSS externo": 6041,
+    "3D": 0,
+    "Outros": 0,
+    "Total": 213637
+  },
+  "initialAfter": {
+    "HTML": 93817,
+    "JS": 142848,
+    "Fontes externas": 7588,
+    "Imagens externas": 0,
+    "CSS externo": 0,
+    "3D": 0,
+    "Outros": 0,
+    "Total": 244253
+  },
+  "idleAfter": {
+    "HTML": 93817,
+    "JS": 142848,
+    "Fontes externas": 7588,
+    "Imagens externas": 0,
+    "CSS externo": 0,
+    "3D": 0,
+    "Outros": 0,
+    "Total": 244253
+  },
+  "scrolled": {
+    "Fontes externas": 7588,
+    "JS": 142848,
+    "Imagens externas": 59009
+  },
+  "simulationLcpMedian": 2644.3286,
+  "appliedLcpMedian": 1204.439,
+  "eventMax": 32
+}
