@@ -1,3 +1,4 @@
+import { linkWhatsApp } from '@/lib/whatsapp';
 import { aberturaHome, conteudo, telefoneUrl } from '@/content';
 import { institucional } from '@/content/institucional';
 import { Foto } from './Foto';
@@ -11,7 +12,7 @@ export function HomeHero() {
         <p className="eyebrow">{institucional.hero.local}</p>
         <h1>{institucional.hero.titulo}</h1>
         <p className={styles.description}>{institucional.hero.texto}</p>
-        <div className="actions"><SiteLink className="button" href="/contato/">Fale sobre seu projeto</SiteLink><SiteLink href="/materiais/">Conheça os materiais</SiteLink></div>
+        <div className="actions"><a className="button" href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}>Fale sobre seu projeto</a><SiteLink href="/materiais/">Conheça os materiais</SiteLink></div>
       </div>
       <figure className={styles.figure}>
         <Foto id="a1-prova-01" mobileId="a1-mobile" alt={aberturaHome.alt} sizes="65vw" prioridade />

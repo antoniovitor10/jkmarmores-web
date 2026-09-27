@@ -43,7 +43,7 @@ try {
       assert.equal(state.overflow,false);
       assert.ok(state.noindex.includes('noindex'));
       assert.ok(state.phones.every(url => url === 'tel:+5511967976902'));
-      assert.equal(state.whatsapp.length,0,'WhatsApp não confirmado não deve receber link de envio');
+      assert.ok(state.whatsapp.length > 0 && state.whatsapp.every(url => url.startsWith('https://wa.me/5511967976902?text=')), 'Todos os destinos devem usar o WhatsApp confirmado');
       const business = state.schema.find(item => item['@type'] === 'LocalBusiness');
       assert.equal(business.name,'JK Marmores e Granitos');
       assert.equal(business.telephone,'+5511967976902');
@@ -54,12 +54,12 @@ try {
       assert.ok(state.images.every(img => img.complete),'Imagens visíveis devem carregar');
       assert.equal(state.videos,0);
       assert.ok(/homeBody|InstrumentBody/i.test(state.bodyFont));
-      const file = `docs/proposta/capturas/institucional-${name}-${width}-inteira.png`;
+      const file = `docs/proposta/capturas/${process.env.AUDIT_LABEL ?? 'institucional'}-${name}-${width}-inteira.png`;
       await page.screenshot({ path: file, fullPage: true });
       results.pages.push({ route, width, capture: file, ...state });
     }
   }
   assert.deepEqual(results.errors,[]);
-  await fs.writeFile('docs/auditorias/2026-09-27-institucional-paginas.json',JSON.stringify(results,null,2));
+  await fs.writeFile(`docs/auditorias/2026-09-27-${process.env.AUDIT_LABEL ?? 'institucional'}-paginas.json`,JSON.stringify(results,null,2));
   console.log(`Capturas e verificações de ${results.pages.length} páginas/viewports concluídas.`);
 } finally { await browser.close(); }

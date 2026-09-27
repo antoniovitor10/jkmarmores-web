@@ -120,7 +120,7 @@ const paginas: ConteudoSite["paginas"] = {
       canonicalPath: "/contato/",
     },
     secoes: [
-      { id: "whatsapp", titulo: "Envie as informações pelo WhatsApp", texto: pendente("confirmar número de WhatsApp e se a empresa recebe pedidos de orçamento por esse canal") },
+      { id: "whatsapp", titulo: "Envie as informações pelo WhatsApp", texto: "Conte sua ideia e envie as informações do seu projeto pelo WhatsApp da JK." },
       { id: "formulario", titulo: "Monte sua mensagem", texto: "Informe ambiente ou peça, material que considera, medidas aproximadas e cidade. O formulário abre uma mensagem no WhatsApp; nenhuma informação é enviada ao site." },
       { id: "endereco", titulo: "Endereço e atendimento", texto: "Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP. Ligue antes para confirmar a possibilidade de visita." },
       { id: "horario", titulo: "Horário", texto: pendente("confirmar dias e horários de atendimento") },
@@ -224,7 +224,7 @@ export const conteudo: ConteudoSite = {
     razaoSocial: pendente("confirmar razão social"),
     cnpj: pendente("confirmar CNPJ"),
     telefone: "(11) 96797-6902",
-    whatsapp: pendente("confirmar se (11) 96797-6902 e o WhatsApp"),
+    whatsapp: "5511967976902",
     email: pendente("confirmar e-mail comercial atual"),
     endereco: "Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP",
     enderecoDetalhado: {

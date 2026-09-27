@@ -1,0 +1,109 @@
+
+> jkmarmores-web@0.1.0 build
+> npm run images:build && next build && npm run check:pendencias
+
+
+> jkmarmores-web@0.1.0 images:build
+> node scripts/build-images.mjs
+
+▲ Next.js 16.3.6 (Turbopack)
+✓ Running next.config.ts took 101ms
+- Experiments (use with caution):
+  ✓ inlineCss
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 6.0s
+  Running TypeScript ...
+  Finished TypeScript in 3.4s ...
+  Collecting page data using 13 workers ...
+  Generating static pages using 13 workers (0/12) ...
+  Generating static pages using 13 workers (3/12)
+  Generating static pages using 13 workers (6/12)
+  Generating static pages using 13 workers (9/12)
+✓ Generating static pages using 13 workers (12/12) in 859ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /aplicacoes
+├   /aplicacoes/[slug]
+│ └ ● /aplicacoes/pendente
+├ ○ /contato
+├ ○ /galeria
+├ ○ /materiais
+├   /materiais/[slug]
+│ └ ● /materiais/pendente
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+└ ○ /sobre
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+
+> jkmarmores-web@0.1.0 check:pendencias
+> node scripts/check-pendencias.mjs
+
+src\content\index.ts: confirmar quais aplicações a JK executa antes de apresentar caminhos por ambiente
+src\content\index.ts: receber fotos de obras reais com autorização, material e aplicação para mostrar trabalhos
+src\content\index.ts: receber história da empresa sem inventar anos de atuação ou equipe
+src\content\index.ts: confirmar etapas de orçamento, medição, produção e instalação executadas pela empresa
+src\content\index.ts: receber descrição ou fotos autorizadas da equipe, oficina ou fachada
+src\content\index.ts: confirmar cidades atendidas e se há atendimento presencial no endereço
+src\content\index.ts: confirmar lista de materiais e nomes comerciais trabalhados pela empresa
+src\content\index.ts: confirmar aplicações executadas pela empresa antes de listar ambientes ou peças
+src\content\index.ts: title de aplicações com serviços confirmados
+src\content\index.ts: meta description de aplicações com peças realmente executadas
+src\content\index.ts: confirmar quais aplicações terão páginas próprias
+src\content\index.ts: receber obras reais e autorização de uso antes de publicar a galeria
+src\content\index.ts: title da galeria com trabalhos reais autorizados
+src\content\index.ts: descrição da galeria baseada no acervo autorizado
+src\content\index.ts: receber fotos, legendas, materiais e aplicações verificadas das obras
+src\content\index.ts: confirmar dias e horários de atendimento
+src\content\index.ts: confirmar nomes comerciais, chapas e acabamentos de granito oferecidos
+src\content\index.ts: confirmar nomes comerciais, chapas e acabamentos de mármore oferecidos
+src\content\index.ts: confirmar nomes comerciais, chapas e acabamentos de quartzito oferecidos
+src\content\index.ts: confirmar marcas, linhas e acabamentos de quartzo oferecidos
+src\content\index.ts: confirmar marcas, linhas e acabamentos de ultracompacto oferecidos
+src\content\index.ts: confirmar se a empresa executa bancadas e para quais ambientes
+src\content\index.ts: confirmar materiais indicados e tipos de bancada executados
+src\content\index.ts: confirmar se a empresa executa lavatórios
+src\content\index.ts: confirmar materiais e acabamentos usados em lavatórios
+src\content\index.ts: confirmar se a empresa executa revestimento ou peças para escadas
+src\content\index.ts: confirmar escopo de execução, materiais e acabamentos de escadas
+src\content\index.ts: confirmar razão social
+src\content\index.ts: confirmar CNPJ
+src\content\index.ts: confirmar e-mail comercial atual
+src\content\index.ts: confirmar CEP
+src\content\index.ts: confirmar se recebe visitantes no endereço
+src\content\index.ts: confirmar região atendida além de Barueri
+src\content\index.ts: confirmar posse e URL do Perfil da Empresa no Google
+src\content\institucional.ts: confirmar lista de serviços e aplicações executados pela JK
+src\content\institucional.ts: receber lista de materiais, nomes comerciais e acabamentos trabalhados pela JK
+src\content\institucional.ts: receber história, trajetória e apresentação da equipe da JK
+src\content\institucional.ts: confirmar etapas de atendimento, medição, produção e instalação da JK
+src\content\institucional.ts: receber fotos de obras reais e autorização de uso
+out\aplicacoes\index.html: confirmar aplicações executadas pela empresa antes de listar ambientes ou peças
+out\aplicacoes\index.html: confirmar quais aplicações terão páginas próprias
+out\aplicacoes\index.html: aplicações confirmadas pela JK
+out\aplicacoes\pendente\index.html: aplicação confirmada pela JK
+out\contato\index.html: confirmar dias e horários de atendimento
+out\contato\index.html: confirmar região atendida além de Barueri
+out\contato\index.html: confirmar CEP
+out\galeria\index.html: receber obras reais e autorização de uso antes de publicar a galeria
+out\galeria\index.html: receber fotos, legendas, materiais e aplicações verificadas das obras
+out\galeria\index.html: fotos reais autorizadas para a galeria
+out\index.html: receber lista de materiais, nomes comerciais e acabamentos trabalhados pela JK
+out\index.html: confirmar lista de serviços e aplicações executados pela JK
+out\index.html: receber fotos de obras reais e autorização de uso
+out\index.html: confirmar região atendida além de Barueri
+out\materiais\index.html: receber lista de materiais, nomes comerciais e acabamentos trabalhados pela JK
+out\materiais\index.html: confirmar região atendida além de Barueri
+out\materiais\pendente\index.html: material confirmado pela JK
+out\sobre\index.html: receber história, trajetória e apresentação da equipe da JK
+out\sobre\index.html: confirmar etapas de atendimento, medição, produção e instalação da JK
+out\sobre\index.html: confirmar lista de serviços e aplicações executados pela JK
+out\sobre\index.html: receber lista de materiais, nomes comerciais e acabamentos trabalhados pela JK
+out\sobre\index.html: confirmar região atendida além de Barueri

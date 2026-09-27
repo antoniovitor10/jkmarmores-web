@@ -1,5 +1,11 @@
 # Direção visual: o corte
 
+## Quarta entrega, etapa (a): revisão de 27/09/2026
+
+Identidade institucional aprovada como base. Removido `scripts/defer-hydration.mjs` e seu passo no build por decisão do Planejador: prioridade à hidratação nativa, sem reescrever HTML. A medição simulate sem o pós-processamento é 2,304 s; conflito com a meta registrado em `docs/auditorias/2026-09-27-quarta-a.md`. Poster com fetchpriority high/preload e fontes locais permanecem. `experimental.inlineCss` continua sem alteração.
+
+WhatsApp confirmado por Vitor: os CTAs abrem o canal real, e o formulário prepara a mensagem para revisão no aplicativo. D5 resolvido. Os registros abaixo descrevem entregas anteriores, inclusive o adiamento de hidratação agora removido e o WhatsApp que ainda estava pendente naquela ocasião.
+
 ## Terceira entrega: identidade institucional, 27/09/2026
 
 Esta seção é a direção vigente. Vitor aprovou a máscara PEDRA e os quatro quadros da segunda entrega, mas pediu reconstrução da abertura e das páginas institucionais. A logo JPEG da cliente, recebida em 26/09, passa a orientar a identidade. Os registros de A1 e da segunda entrega abaixo são históricos.

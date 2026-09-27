@@ -11,7 +11,7 @@ Prioridade: **P0** bloqueia a publicação | **P1** bloqueia uma página ou seç
 
 | Prioridade | Itens abertos ou parciais | Efeito |
 |---|---|---|
-| P0 | D3 (cobertura), D4 (CEP/visita), D5 (WhatsApp), D9, O1, O2, V1 (vetor), V3, V6, V7 | Sem esses dados ou aprovações, o lançamento permanece bloqueado. D1, T1 e T2 resolvidos. |
+| P0 | D3 (cobertura), D4 (CEP/visita), D9, O1, O2, V1 (vetor), V3, V6, V7 | Sem esses dados ou aprovações, o lançamento permanece bloqueado. D1, D5, T1 e T2 resolvidos. |
 | P1 | D2, D6, D10, O3, O4, O6, V2, V4, T3 | Segurar a página, seção ou funcionalidade que dependa de cada item. |
 | P2 | D7, D8, O5, V5 | Melhorias condicionadas à confirmação. |
 
@@ -25,7 +25,7 @@ Os registros detalhados seguem agrupados por assunto abaixo. Um item com status 
 | D2 | Razão social e CNPJ (rodapé e dados estruturados) | P1 | aberto | O CNPJ do Vitor encontrado no histórico não pertence à JK e não pode ser usado. |
 | D3 | Cidade, bairro e região atendida (cidades vizinhas) | P0 | parcial | Cliente confirmou Parque Viana, Barueri/SP em 26/09/2026. Cobertura além de Barueri permanece pendente; nenhuma cidade vizinha foi adicionada. |
 | D4 | Endereço completo com CEP, ou confirmação de que não atende no local | P0 | parcial | Cliente confirmou Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP em 26/09/2026. CEP e atendimento a visitantes pendentes. Sem mapa ou promessa de showroom. |
-| D5 | Telefone e número de WhatsApp (e se são o mesmo) | P0 | parcial | Cliente confirmou (11) 96797-6902 como telefone em 26/09/2026. WhatsApp ainda não confirmado: conteúdo mantém pendente("confirmar se (11) 96797-6902 e o WhatsApp"). Telefones históricos não usados. |
+| D5 | Telefone e número de WhatsApp (e se são o mesmo) | P0 | resolvido | Vitor confirmou em 27/09/2026 que (11) 96797-6902 também é o WhatsApp da JK. CTAs e formulário usam wa.me/5511967976902. Telefones históricos não usados. |
 | D6 | Horário de funcionamento | P1 | aberto | |
 | D7 | E-mail comercial | P2 | pista | jkmarmores@uol.com.br no site 2016. Confirmar se ainda usa |
 | D8 | Instagram e outras redes | P2 | pista | @jkmarmoresoficial e facebook.com/jkmarmores ligados ao Perfil Google. Confirmar posse |

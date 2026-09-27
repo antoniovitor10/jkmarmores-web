@@ -39,12 +39,9 @@ try {
     assert.equal(state.h1[0], "Mármores e granitos em Barueri.");
     assert.equal(state.overflow, false);
     assert.ok(state.pending > 0 && state.image.ready && state.scene && state.noindex);
-    assert.ok(state.deferredHydration.bootstrap);
-    if (js) {
-      assert.equal(state.deferredHydration.scriptsPending,0,'Hidratacao deve iniciar automaticamente, sem esperar um clique');
-      assert.ok(state.deferredHydration.firstScript > state.deferredHydration.paint,'Scripts interativos entram depois da primeira pintura');
-    } else assert.ok(state.deferredHydration.scriptsPending > 0);
-    assert.ok(state.cta.bottom < 844 && state.cta.href.endsWith("/contato/"));
+    assert.equal(state.deferredHydration.bootstrap, false);
+    assert.equal(state.deferredHydration.scriptsPending, 0);
+    assert.ok(state.cta.bottom < 844 && state.cta.href.startsWith("https://wa.me/5511967976902?text="));
     assert.deepEqual(state.sections, ["jornada-pedra", "materiais", "configurador", "orcamento", "trabalhos"]);
     checks.push({ javascript: js, ...state });
     await page.click('.home-hero a[href="/materiais/"]');
