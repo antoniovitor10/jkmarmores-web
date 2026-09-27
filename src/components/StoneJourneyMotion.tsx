@@ -25,6 +25,18 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
       const frames = [...el.querySelectorAll<HTMLElement>(".journey-frame")];
       const sticky = el.querySelector<HTMLElement>(".journey-sticky")!;
       let raf = 0;
+      let stickyHeight = innerHeight;
+      const pictureHeights = new Map<Element, number>();
+      const pictures = frames.map(frame => frame.querySelector("picture")!);
+      const sizes = new ResizeObserver(entries => {
+        for (const entry of entries) {
+          if (entry.target === sticky) stickyHeight = entry.borderBoxSize[0]?.blockSize ?? entry.contentRect.height;
+          else pictureHeights.set(entry.target, entry.contentRect.height);
+        }
+        schedule();
+      });
+      sizes.observe(sticky);
+      pictures.forEach(picture => sizes.observe(picture));
       const media: (HTMLVideoElement | null)[] = frames.map(() => null);
       const motions: (ReturnType<typeof timedVideo> | null)[] = frames.map(() => null);
       const mediaSources: string[] = frames.map(() => "");
@@ -74,11 +86,10 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         raf = 0;
         // Não mede quatro figuras nem invalida estilos enquanto a seção está fora da tela.
         if (!visible) { motions.forEach(motion => motion?.pause(true)); return; }
-        if (visible && loaded) el!.style.setProperty("--mask-image", "url('/img/a1-prova-01-1200.avif')");
         const rect = el!.getBoundingClientRect();
-        const travel = Math.max(1, rect.height - sticky.offsetHeight);
+        const travel = Math.max(1, rect.height - stickyHeight);
         // Preserva o trajeto da máscara aprovada; encurta somente os quatro quadros.
-        const maskTravel = (innerHeight * 6.2 - sticky.offsetHeight) * .22;
+        const maskTravel = (innerHeight * 6.2 - stickyHeight) * .22;
         const reveal = clamp(-rect.top / maskTravel);
         const story = clamp((-rect.top - maskTravel) / Math.max(1, travel - maskTravel));
         el!.style.setProperty("--mask-scale", String(1 + Math.pow(reveal, 2.4) * 13));
@@ -98,13 +109,14 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
           if (!item || item.readyState < 2 || !Number.isFinite(item.duration)) return;
           motions[index]?.pause(!visible || document.hidden || reveal < 1 || index !== active);
           motions[index]?.to(index <= active && reveal === 1 ? 1 : 0);
-          item.style.height = `${frames[index].querySelector("picture")!.getBoundingClientRect().height}px`;
+          const height = pictureHeights.get(pictures[index]);
+          if (height) item.style.height = `${height}px`;
           item.style.bottom = "auto";
           item.style.opacity = reveal === 1 ? "1" : "0";
         });
       }
       function schedule() { if (!disposed && !raf) raf = requestAnimationFrame(render); }
-      const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; schedule(); }, { rootMargin: "0px" });
+      const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; if (visible) el.style.setProperty("--mask-image", "url('/img/a1-prova-01-1200.avif')"); schedule(); }, { rootMargin: "0px" });
       observer.observe(el);
       addEventListener("scroll", schedule, { passive: true });
       addEventListener("resize", schedule);
@@ -115,6 +127,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
       dispose = () => {
         disposed = true;
         observer.disconnect();
+        sizes.disconnect();
         removeEventListener("scroll", schedule);
         removeEventListener("resize", schedule);
         document.removeEventListener("visibilitychange", schedule);

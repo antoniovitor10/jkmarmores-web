@@ -1,0 +1,76 @@
+[
+  [
+    {
+      "selector": "home-hero HomeHero-module__ZWTPJG__hero",
+      "id": "",
+      "y": 95,
+      "height": 1012.796875,
+      "width": 390
+    },
+    {
+      "selector": "journey-track",
+      "id": "",
+      "y": 1107.796875,
+      "height": 2363.1875,
+      "width": 390
+    },
+    {
+      "selector": "container section-space",
+      "id": "configurador",
+      "y": 3587.984375,
+      "height": 1251.9375,
+      "width": 390
+    },
+    {
+      "selector": "section-space editorial-motion home-contact",
+      "id": "orcamento",
+      "y": 4839.921875,
+      "height": 917.46875,
+      "width": 390
+    },
+    {
+      "selector": "site-footer",
+      "id": "",
+      "y": 5757.390625,
+      "height": 1123.28125,
+      "width": 390
+    }
+  ],
+  [
+    {
+      "selector": "home-hero HomeHero-module__ZWTPJG__hero",
+      "id": "",
+      "y": 111,
+      "height": 1305,
+      "width": 1440
+    },
+    {
+      "selector": "journey-track",
+      "id": "",
+      "y": 1416,
+      "height": 3060,
+      "width": 1440
+    },
+    {
+      "selector": "container section-space",
+      "id": "configurador",
+      "y": 4593,
+      "height": 1309.96875,
+      "width": 1440
+    },
+    {
+      "selector": "section-space editorial-motion home-contact",
+      "id": "orcamento",
+      "y": 5902.96875,
+      "height": 1016.1875,
+      "width": 1440
+    },
+    {
+      "selector": "site-footer",
+      "id": "",
+      "y": 6919.15625,
+      "height": 496.796875,
+      "width": 1440
+    }
+  ]
+]

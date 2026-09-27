@@ -17,7 +17,7 @@
 .journey-image-label { margin-left:auto; font-size:10px; color:#d8cec3; }
 .journey-mask,.journey-progress { display:none; }
 .journey-track[data-enhanced] { height:340svh; }
-[data-enhanced] .journey-sticky { position:sticky; top:0; height:100svh; display:grid; grid-template-rows:auto 1fr 4px; overflow:hidden; }
+[data-enhanced] .journey-sticky { position:sticky; top:0; height:100svh; display:grid; grid-template-rows:auto 1fr 4px; overflow:hidden; contain:layout paint; }
 [data-enhanced] .journey-heading { position:relative; z-index:4; }
 [data-enhanced] .journey-frames { position:relative; min-height:0; }
 [data-enhanced] .journey-frame { position:absolute; inset:0; display:grid; grid-template-rows:1fr auto; opacity:var(--frame-opacity,0); transition:opacity .22s ease; }

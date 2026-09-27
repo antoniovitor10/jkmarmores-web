@@ -1,6 +1,6 @@
 .hero { background:var(--cor-grafite); color:var(--cor-papel); }
 .track[data-motion] { height:145svh; }
-.stage { position:sticky; top:0; height:100svh; min-height:680px; overflow:hidden; isolation:isolate; }
+.stage { position:sticky; top:0; height:100svh; min-height:680px; overflow:hidden; isolation:isolate; contain:layout paint; }
 .figure { position:absolute; inset:0; margin:0; z-index:-2; background:#191715; }
 .figure picture,.figure img,.video { display:block; width:100%; height:100%; }
 .figure img,.video { object-fit:cover; object-position:63% center; }
