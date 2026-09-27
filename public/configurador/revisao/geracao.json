@@ -1,0 +1,43 @@
+{
+  "model": "kling-video/v3.0/4k/image-to-video",
+  "input": {
+    "image_url": "Imagem-chave cozinha rosada da rodada anterior, request abcf1de8-6eed-4510-8aca-e6827d7ed421",
+    "duration": 4,
+    "sound": "off",
+    "cfg_scale": 0.8,
+    "multi_shots": false,
+    "prompt": "A single uninterrupted 4K architectural walkthrough. The CAMERA MOVES BRISKLY on a wide circular track CLOCKWISE around the stationary pink marble island, completing a large 120 degree orbit in four seconds. Start at the reference three-quarter view, pass square-on across the short end, finish viewing the OPPOSITE long side. Large unmistakable perspective change and strong background parallax. Camera is physically moving around the object, never rotating the object. Constant eye-level height and radius, island remains centered and fills the lower half of the frame. Preserve the exact rigid island shape, stone veins and kitchen layout. Photorealistic warm daylight, no cuts, no zoom, no morphing, no people, no text, no logos."
+  },
+  "estimateConservativeUsd": 0.924,
+  "budgetUsd": 1.2,
+  "created": "2026-09-27T15:57:37.728Z",
+  "status": "completed",
+  "request_id": "280dd062-8c37-43a2-a272-1bbec70fae44",
+  "sourceResolution": [
+    3840,
+    2160
+  ],
+  "frames": 48,
+  "widths": [
+    720,
+    1280,
+    2560
+  ],
+  "bytes": {
+    "720": 456595,
+    "1280": 1098908,
+    "2560": 3710427
+  },
+  "review": "Órbita ampliada com passagem pela lateral e vista do outro lado; geometria e ambiente coerentes. Não se anunciam graus calibrados.",
+  "terms": [
+    "https://open.higgsfield.ai/terms-of-service",
+    "https://higgsfield.ai/terms-of-use-agreement"
+  ],
+  "notice": "Ilustração gerada por IA; não representa obra ou material confirmado da JK. Custo estimado autenticado; débito final não retornado.",
+  "portrait": {
+    "width": 720,
+    "height": 1558,
+    "bytes": 1171997,
+    "source": "Recorte central nativo do vídeo 3840x2160; sem ampliação."
+  }
+}

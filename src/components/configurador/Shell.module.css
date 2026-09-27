@@ -1,13 +1,66 @@
-.root { background:var(--cor-grafite); color:var(--cor-papel); position:relative; }
-.full { width:100vw; margin-left:calc(50% - 50vw); }
-.compact { width:100%; }
-.placeholder { min-height:980px; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; padding:60px max(24px,calc((100vw - 1280px) / 2)); }
-.placeholder > p { max-width:55ch; }
-.placeholder h3 { font-size:clamp(38px,4vw,60px); }
-.placeholder button { background:var(--cor-grafite); border:1px solid var(--cor-caramelo); color:var(--cor-papel); }
-.placeholder :is(a,button):focus-visible { outline:3px solid var(--cor-caramelo); outline-offset:4px; }
-.disclaimer { color:#d8cec3; font-size:11px; padding:24px 0; margin:0; }
-.quote { display:inline-flex; align-items:center; justify-content:center; background:var(--cor-caramelo); color:var(--cor-grafite); padding:20px 28px; min-height:52px; font-size:14px; text-decoration:none; }
-.kicker { font-size:11px; letter-spacing:.13em; color:var(--cor-caramelo); }
-.compact .placeholder { padding:32px; min-height:660px; }
-@media(max-width:767px) { .placeholder { min-height:740px; padding:36px 24px; } }
+.root {
+  background: var(--cor-grafite);
+  color: var(--cor-papel);
+  position: relative;
+}
+.full {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+.compact {
+  width: 100%;
+}
+.placeholder {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px max(24px, calc((100vw - 1280px) / 2));
+}
+.placeholder > p {
+  max-width: 55ch;
+}
+.placeholder h3 {
+  font-size: clamp(38px, 4vw, 60px);
+}
+.placeholder button {
+  background: var(--cor-grafite);
+  border: 1px solid var(--cor-caramelo);
+  color: var(--cor-papel);
+}
+.placeholder :is(a, button):focus-visible {
+  outline: 3px solid var(--cor-caramelo);
+  outline-offset: 4px;
+}
+.disclaimer {
+  color: #d8cec3;
+  font-size: 11px;
+  padding: 24px 0;
+  margin: 0;
+}
+.quote {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor-caramelo);
+  color: var(--cor-grafite);
+  padding: 20px 28px;
+  min-height: 52px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.kicker {
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  color: var(--cor-caramelo);
+}
+.compact .placeholder {
+  padding: 32px;
+  min-height: 80svh;
+}
+@media (max-width: 767px) {
+  .placeholder {
+    padding: 36px 24px;
+  }
+}

@@ -1,0 +1,508 @@
+{
+  "checks": [
+    {
+      "name": "normal zero mídia inicial",
+      "pass": true
+    },
+    {
+      "name": "1440 demo na entrada",
+      "pass": true,
+      "evidence": {
+        "position": 0.11,
+        "zoom": 1,
+        "pan": "0.0,0.0",
+        "full": "false",
+        "quality": "standard",
+        "frame": "5",
+        "combo": "cozinha-rosado",
+        "rect": {
+          "width": 1440,
+          "height": 900,
+          "top": 0.359375
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1440 palco ocupa viewport",
+      "pass": true,
+      "evidence": {
+        "width": 1440,
+        "height": 900,
+        "top": 0.359375
+      }
+    },
+    {
+      "name": "1440 sem overflow horizontal",
+      "pass": true
+    },
+    {
+      "name": "1440 controles ocultam",
+      "pass": true,
+      "evidence": "0"
+    },
+    {
+      "name": "1440 controles retornam",
+      "pass": true
+    },
+    {
+      "name": "1440 seta animada",
+      "pass": true,
+      "evidence": {
+        "before": 0.11,
+        "mid": 0.1419,
+        "end": 0.165
+      }
+    },
+    {
+      "name": "1440 inércia após arrastar",
+      "pass": true,
+      "evidence": {
+        "release": 0.3095,
+        "coast": 0.5902
+      }
+    },
+    {
+      "name": "1440 roda livre sem foco",
+      "pass": true
+    },
+    {
+      "name": "1440 zoom ancorado + alta nativa",
+      "pass": true,
+      "evidence": {
+        "position": 0.7084,
+        "zoom": 1.69,
+        "pan": "414.3,34.8",
+        "full": "false",
+        "quality": "native-2560",
+        "frame": "33",
+        "combo": "cozinha-rosado",
+        "rect": {
+          "width": 1440,
+          "height": 900,
+          "top": 0.359375
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1440 material preserva câmera",
+      "pass": true,
+      "evidence": {
+        "position": 0.7084,
+        "zoom": 1.69,
+        "pan": "414.3,34.8",
+        "full": "false",
+        "quality": "standard",
+        "frame": "16",
+        "combo": "cozinha-bege",
+        "rect": {
+          "width": 1440,
+          "height": 900,
+          "top": 0.359375
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1440 ambiente preserva câmera",
+      "pass": true,
+      "evidence": {
+        "position": 0.7084,
+        "zoom": 1.69,
+        "pan": "414.3,34.8",
+        "full": "false",
+        "quality": "standard",
+        "frame": "16",
+        "combo": "lavatorio-bege",
+        "rect": {
+          "width": 1440,
+          "height": 900,
+          "top": 0.359375
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1440 acabamento preserva câmera",
+      "pass": true,
+      "evidence": {
+        "position": 0.7084,
+        "zoom": 1.69,
+        "pan": "414.3,34.8",
+        "full": "false",
+        "quality": "standard",
+        "frame": "16",
+        "combo": "cozinha-bege",
+        "rect": {
+          "width": 1440,
+          "height": 900,
+          "top": 0.359375
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1440 WhatsApp combinação",
+      "pass": true,
+      "evidence": "https://wa.me/5511967976902?text=Olá, JK! Gostei desta combinação: Cozinha com ilha, pedra bege e acabamento levigado. Podemos conversar sobre um orçamento? A imagem é ilustrativa; quero confirmar as opções disponíveis."
+    },
+    {
+      "name": "1440 axe componente",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1440 Fullscreen API",
+      "pass": true,
+      "evidence": {
+        "position": 0.7084,
+        "zoom": 1,
+        "pan": "0.0,0.0",
+        "full": "true",
+        "quality": "standard",
+        "frame": "33",
+        "combo": "cozinha-rosado",
+        "rect": {
+          "width": 1440,
+          "height": 900,
+          "top": 0
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "1440 axe tela cheia",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1440 sair tela cheia",
+      "pass": true
+    },
+    {
+      "name": "1440 teclado gira",
+      "pass": true
+    },
+    {
+      "name": "1440 teclado aproxima",
+      "pass": true
+    },
+    {
+      "name": "1440 duplo clique",
+      "pass": true
+    },
+    {
+      "name": "1440 fallback modal",
+      "pass": true
+    },
+    {
+      "name": "1440 restaura fallback e foco",
+      "pass": true
+    },
+    {
+      "name": "1440 demonstração somente uma vez",
+      "pass": true
+    },
+    {
+      "name": "normal zero mídia inicial",
+      "pass": true
+    },
+    {
+      "name": "390 demo na entrada",
+      "pass": true,
+      "evidence": {
+        "position": 0.11,
+        "zoom": 1,
+        "pan": "0.0,0.0",
+        "full": "false",
+        "quality": "standard",
+        "frame": "5",
+        "combo": "cozinha-rosado",
+        "rect": {
+          "width": 390,
+          "height": 844,
+          "top": -0.390625
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390 palco ocupa viewport",
+      "pass": true,
+      "evidence": {
+        "width": 390,
+        "height": 844,
+        "top": -0.390625
+      }
+    },
+    {
+      "name": "390 sem overflow horizontal",
+      "pass": true
+    },
+    {
+      "name": "390 controles ocultam",
+      "pass": true,
+      "evidence": "0"
+    },
+    {
+      "name": "390 controles retornam",
+      "pass": true
+    },
+    {
+      "name": "390 seta animada",
+      "pass": true,
+      "evidence": {
+        "before": 0.11,
+        "mid": 0.1442,
+        "end": 0.165
+      }
+    },
+    {
+      "name": "390 inércia após arrastar",
+      "pass": true,
+      "evidence": {
+        "release": 0.3092,
+        "coast": 0.4608
+      }
+    },
+    {
+      "name": "390 roda livre sem foco",
+      "pass": true
+    },
+    {
+      "name": "390 zoom ancorado + alta nativa",
+      "pass": true,
+      "evidence": {
+        "position": 0.5224,
+        "zoom": 1.69,
+        "pan": "51.8,14.9",
+        "full": "false",
+        "quality": "native-2560",
+        "frame": "25",
+        "combo": "cozinha-rosado",
+        "rect": {
+          "width": 390,
+          "height": 844,
+          "top": -0.390625
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390 material preserva câmera",
+      "pass": true,
+      "evidence": {
+        "position": 0.5224,
+        "zoom": 1.69,
+        "pan": "51.8,14.9",
+        "full": "false",
+        "quality": "standard",
+        "frame": "12",
+        "combo": "cozinha-bege",
+        "rect": {
+          "width": 390,
+          "height": 844,
+          "top": -0.390625
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390 ambiente preserva câmera",
+      "pass": true,
+      "evidence": {
+        "position": 0.5224,
+        "zoom": 1.69,
+        "pan": "51.8,14.9",
+        "full": "false",
+        "quality": "standard",
+        "frame": "12",
+        "combo": "lavatorio-bege",
+        "rect": {
+          "width": 390,
+          "height": 844,
+          "top": -0.390625
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390 acabamento preserva câmera",
+      "pass": true,
+      "evidence": {
+        "position": 0.5224,
+        "zoom": 1.69,
+        "pan": "51.8,14.9",
+        "full": "false",
+        "quality": "standard",
+        "frame": "12",
+        "combo": "cozinha-bege",
+        "rect": {
+          "width": 390,
+          "height": 844,
+          "top": -0.390625
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390 WhatsApp combinação",
+      "pass": true,
+      "evidence": "https://wa.me/5511967976902?text=Olá, JK! Gostei desta combinação: Cozinha com ilha, pedra bege e acabamento levigado. Podemos conversar sobre um orçamento? A imagem é ilustrativa; quero confirmar as opções disponíveis."
+    },
+    {
+      "name": "390 axe componente",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "390 Fullscreen API",
+      "pass": true,
+      "evidence": {
+        "position": 0.5224,
+        "zoom": 1,
+        "pan": "0.0,0.0",
+        "full": "true",
+        "quality": "standard",
+        "frame": "25",
+        "combo": "cozinha-rosado",
+        "rect": {
+          "width": 390,
+          "height": 844,
+          "top": 0
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390 axe tela cheia",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "390 sair tela cheia",
+      "pass": true
+    },
+    {
+      "name": "390 teclado gira",
+      "pass": true
+    },
+    {
+      "name": "390 teclado aproxima",
+      "pass": true
+    },
+    {
+      "name": "390 duplo clique",
+      "pass": true
+    },
+    {
+      "name": "390 duplo toque",
+      "pass": true
+    },
+    {
+      "name": "390 pinça fluida",
+      "pass": true,
+      "evidence": {
+        "position": 0.055,
+        "zoom": 1.667,
+        "pan": "3.3,41.1",
+        "full": "false",
+        "quality": "native-2560",
+        "frame": "3",
+        "combo": "cozinha-rosado",
+        "rect": {
+          "width": 390,
+          "height": 844,
+          "top": -0.390625
+        },
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "390 fallback modal",
+      "pass": true
+    },
+    {
+      "name": "390 restaura fallback e foco",
+      "pass": true
+    },
+    {
+      "name": "390 demonstração somente uma vez",
+      "pass": true
+    },
+    {
+      "name": "reduced zero mídia inicial",
+      "pass": true
+    },
+    {
+      "name": "reduced imagem estática",
+      "pass": true,
+      "evidence": {
+        "state": {
+          "position": 0,
+          "zoom": 1,
+          "pan": "0.0,0.0",
+          "full": "false",
+          "quality": "standard",
+          "frame": "0",
+          "combo": "cozinha-rosado",
+          "rect": {
+            "width": 390,
+            "height": 844,
+            "top": 0.34375
+          },
+          "opacity": "1"
+        },
+        "media": [
+          "http://127.0.0.1:3107/configurador/orbita-rosado/retrato/00.avif"
+        ]
+      }
+    },
+    {
+      "name": "save zero mídia inicial",
+      "pass": true
+    },
+    {
+      "name": "save imagem estática",
+      "pass": true,
+      "evidence": {
+        "state": {
+          "position": 0,
+          "zoom": 1,
+          "pan": "0.0,0.0",
+          "full": "false",
+          "quality": "standard",
+          "frame": "0",
+          "combo": "cozinha-rosado",
+          "rect": {
+            "width": 390,
+            "height": 844,
+            "top": 0.34375
+          },
+          "opacity": "1"
+        },
+        "media": [
+          "http://127.0.0.1:3107/configurador/orbita-rosado/retrato/00.avif"
+        ]
+      }
+    },
+    {
+      "name": "sem JS: imagem e WhatsApp",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "1440-imersao.png",
+    "1440-giro.png",
+    "1440-zoom.png",
+    "1440-selecao.png",
+    "1440-tela-cheia.png",
+    "390-imersao.png",
+    "390-giro.png",
+    "390-zoom.png",
+    "390-selecao.png",
+    "390-tela-cheia.png"
+  ]
+}

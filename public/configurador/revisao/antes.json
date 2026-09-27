@@ -1,0 +1,27 @@
+{
+  "label": "antes",
+  "runs": [
+    {
+      "lcp": 1044,
+      "configuradorResources": []
+    },
+    {
+      "lcp": 820,
+      "configuradorResources": []
+    },
+    {
+      "lcp": 836,
+      "configuradorResources": []
+    }
+  ],
+  "lighthouse": {
+    "scores": {
+      "performance": 91,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "lcp": 2450.305,
+    "cls": 0.011908123098707668
+  }
+}

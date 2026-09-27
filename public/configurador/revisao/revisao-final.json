@@ -1,0 +1,28 @@
+{
+  "checks": [
+    {
+      "name": "Zoom nativo e rotação após limitar cache de alta",
+      "pass": true,
+      "evidence": {
+        "quality": "native-2560",
+        "zoom": 1.4,
+        "position": 0.385
+      }
+    },
+    {
+      "name": "Somente combinação escolhida",
+      "pass": true
+    },
+    {
+      "name": "Assets sem erros HTTP",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "Axe na revisão final",
+      "pass": true,
+      "evidence": []
+    }
+  ],
+  "errors": []
+}

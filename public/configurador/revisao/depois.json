@@ -1,0 +1,27 @@
+{
+  "label": "depois",
+  "runs": [
+    {
+      "lcp": 1012,
+      "configuradorResources": []
+    },
+    {
+      "lcp": 912,
+      "configuradorResources": []
+    },
+    {
+      "lcp": 1000,
+      "configuradorResources": []
+    }
+  ],
+  "lighthouse": {
+    "scores": {
+      "performance": 99,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 69
+    },
+    "lcp": 1986.812483406834,
+    "cls": 0.011908123098707668
+  }
+}
