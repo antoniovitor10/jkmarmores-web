@@ -1,0 +1,108 @@
+{
+  "stage": "antes",
+  "environment": "Emulacao Chrome headless; Lighthouse mobile, throttling simulate; servidor local gzip; cache frio",
+  "lighthouseVersion": "13.5.0",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "fetchTime": "2026-09-27T04:59:54.670Z",
+  "scores": {
+    "performance": 98,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 69
+  },
+  "lcpMs": 2441.373375,
+  "fcpMs": 917.8987,
+  "tbtMs": 22,
+  "cls": 0,
+  "totalBytes": 208898,
+  "failures": [
+    {
+      "id": "unused-javascript",
+      "title": "Reduce unused JavaScript",
+      "displayValue": "Est savings of 55 KiB"
+    },
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing"
+    },
+    {
+      "id": "legacy-javascript-insight",
+      "title": "Legacy JavaScript",
+      "displayValue": "Est savings of 13 KiB"
+    },
+    {
+      "id": "network-dependency-tree-insight",
+      "title": "Network dependency tree"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "h1Count": 1,
+      "h1": {
+        "x": 24,
+        "y": 163,
+        "width": 273.234375,
+        "height": 158.71875,
+        "top": 163,
+        "right": 297.234375,
+        "bottom": 321.71875,
+        "left": 24
+      },
+      "cta": {
+        "x": 24,
+        "y": 435.96875,
+        "width": 168.546875,
+        "height": 46.1875,
+        "top": 435.96875,
+        "right": 192.546875,
+        "bottom": 482.15625,
+        "left": 24
+      },
+      "navigation": [
+        {
+          "bytes": 29334,
+          "loadMs": 88.29999999701977
+        }
+      ],
+      "resourcesAtLoadBytes": 176337,
+      "resourcesAfterIdleBytes": 176337
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "h1Count": 1,
+      "h1": {
+        "x": 80,
+        "y": 232.59375,
+        "width": 387.359375,
+        "height": 287.859375,
+        "top": 232.59375,
+        "right": 467.359375,
+        "bottom": 520.453125,
+        "left": 80
+      },
+      "cta": {
+        "x": 80,
+        "y": 660.59375,
+        "width": 190.578125,
+        "height": 49.59375,
+        "top": 660.59375,
+        "right": 270.578125,
+        "bottom": 710.1875,
+        "left": 80
+      },
+      "navigation": [
+        {
+          "bytes": 29334,
+          "loadMs": 127
+        }
+      ],
+      "resourcesAtLoadBytes": 182333,
+      "resourcesAfterIdleBytes": 182333
+    }
+  ]
+}

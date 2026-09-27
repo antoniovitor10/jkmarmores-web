@@ -43,6 +43,72 @@
       }
     ]
   },
+  "capa-aberto-01": {
+    "width": 2048,
+    "height": 1152,
+    "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAwBACdASoYAA4APwFqrE8rJiQiMAgBYCAJQBOmUABYIOtk7kKnKh4mtaQA/pTsdciTJwCFQAPudQ05gTcdqYG7ibFf5wGWHn4x71OaxETUqzDv/qAIOlkAd1qtyJIbuUrFJ4JZefK+XvV4auAFHgDmQAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/capa-aberto-01-390.avif",
+        "webp": "/img/capa-aberto-01-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/capa-aberto-01-768.avif",
+        "webp": "/img/capa-aberto-01-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/capa-aberto-01-1200.avif",
+        "webp": "/img/capa-aberto-01-1200.webp"
+      },
+      {
+        "width": 1600,
+        "avif": "/img/capa-aberto-01-1600.avif",
+        "webp": "/img/capa-aberto-01-1600.webp"
+      }
+    ]
+  },
+  "capa-poster-mobile": {
+    "width": 780,
+    "height": 1692,
+    "placeholder": "data:image/webp;base64,UklGRtQAAABXRUJQVlA4IMgAAACwBgCdASoYADQAPwF0tlOrJiUiqBgJWWAgCWUAxgQajQKyqaqUB+Hnk4Z5pPblGX3k4VyeL0ZdeRUTitFqAADwu8LE5wUgCM/VFqpe/NY8lFZ4e+HqfePePFA/+GdJ5oY0tlzN22nCghw40pnp82OkxaQpOrk2CXv7LswfYv9qh4/ICYfXadd5vhkBulerDUXJmBWOoLjGu7UHzRYnnfSo0gCDFCKQonE6gGzImGLJc19E8a54w0VLznIWoLfAY/d7HOXh58AAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/capa-poster-mobile-390.avif",
+        "webp": "/img/capa-poster-mobile-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/capa-poster-mobile-768.avif",
+        "webp": "/img/capa-poster-mobile-768.webp"
+      }
+    ]
+  },
+  "capa-poster": {
+    "width": 1280,
+    "height": 720,
+    "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAABQBACdASoYAA4APwFqrE8rJiQiMAgBYCAJQBOmUABYPRObNNC0mSFRJV/MAP5hNVfv6FLrQiNPEwX5PTZlVcUTW5YShogJFV2jDsgzajD8I497AH+e7hWN4MDgNHQguQSLMwf+xBTvYb4AowgE54BY9gA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/capa-poster-390.avif",
+        "webp": "/img/capa-poster-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/capa-poster-768.avif",
+        "webp": "/img/capa-poster-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/capa-poster-1200.avif",
+        "webp": "/img/capa-poster-1200.webp"
+      }
+    ]
+  },
   "sequencia-01-chapa": {
     "width": 2752,
     "height": 1536,

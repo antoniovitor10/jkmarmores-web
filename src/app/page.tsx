@@ -13,11 +13,11 @@ export const metadata = metadataPagina(conteudo.paginas.inicio.seo, '/');
 export default function Inicio() {
   return <main id="conteudo" className="home-page">
     <HomeHero />
+    <StoneJourney />
     <section className="container section-space company-introduction">
       <SectionHeading number="01" label="A EMPRESA" title="Uma conversa próxima. Uma escolha bem pensada." />
       <div><p className="lead">{institucional.apresentacao}</p><p>Da primeira referência aos detalhes da peça, entender o que você precisa é o ponto de partida para o contato.</p><SiteLink className="text-link" href="/sobre/">Conheça a JK</SiteLink></div>
     </section>
-    <StoneJourney />
     <section id="materiais" className="section-space warm-section"><div className="container">
       <SectionHeading number="02" label="MATERIAIS E APLICAÇÕES" title="Encontre o ponto de partida para a sua escolha." />
       <div className="material-editorial"><Illustration id="sequencia-03-acabamento" /><div className="material-criteria">{institucional.materiais.map((item, i) => <article key={item.titulo}><span>0{i+1}</span><div><h3>{item.titulo}</h3><p>{item.texto}</p></div></article>)}<SiteLink className="text-link" href="/materiais/">O que considerar ao escolher</SiteLink></div></div>

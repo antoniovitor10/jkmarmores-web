@@ -96,6 +96,12 @@ Registro completo de ferramenta, modelo efetivo, quatro jobs, prompts integrais,
 
 Fontes agora reduzidas com FontTools 4.66.0 e Brotli 1.2.0: Instrument Serif 7.288 bytes (caracteres efetivamente usados no display, incluindo números) e Instrument Sans 19.664 bytes (ASCII, acentos PT-BR e pontuação editorial; eixo 400–600). Total 26.952 bytes, mesmos dois arquivos e licenças OFL. Serif tem preload; Sans é incorporada no CSS do HTML estático, sem requisição ou preload separado, preservando a tipografia em rede lenta. Ao mudar um título display, ampliar o subset a partir do original do commit A1 com `scripts/subset-home-fonts.py`; não adicionar uma terceira família. Sem nova dependência de runtime.
 
+## Capa pela rolagem — API, 27/09/2026
+
+Vitor autorizou a continuação pelas estimativas, com teto revisado de US$ 2,70 para Astra e configurador em outra frente. A capa aprovada na inspeção usa `z-image/turbo` (plano aberto quente) e `kling-video/v3.0/std/image-to-video` (8 s, imagem inicial e final distintas). Pôster é o primeiro quadro; recorte celular e compressão por Sharp/FFmpeg, sem geração adicional. Prompts, parâmetros, datas, request IDs, durações, estimativas e arquivos em [capa-video-api.json](capa-video-api.json); revisão e tratamento em [capa-video.md](capa-video.md). Acumulado estimado: **US$ 0,678**; restante do teto: **US$ 2,022**. Valor efetivo não retornado pela API, a conferir por Vitor. Qwen edit falhou por indisponibilidade, sem resultado: não contabilizado como débito conforme a [política oficial de falhas](https://docs.higgsfield.ai/docs/concepts/billing-and-retention).
+
+Licença: [Termos da API](https://open.higgsfield.ai/terms-of-service), seção 12, e [Termos Higgsfield](https://higgsfield.ai/terms-of-use-agreement), seção 4.4, permitem uso comercial dos resultados nos limites contratuais, sem garantia de exclusividade ou ausência de direitos de terceiros. Referências próprias geradas; nenhuma pessoa, marca ou obra real de terceiros. Asset provisório com legenda **imagem ilustrativa, gerada por IA**; não é portfólio da JK. Nenhuma alteração na máscara PEDRA ou nos quatro quadros nesta etapa.
+
 ## Experiência 3D existente
 
 Registro em 25/09/2026. Todos são **amostras de demonstração**, não materiais oferecidos nem trabalhos executados pela JK. Trocar por fotos reais e autorização do cliente antes de apresentar como catálogo. Arquivos fontes ficaram apenas na pasta temporária local; os derivados WebP estão em `public/3d/textures/`.

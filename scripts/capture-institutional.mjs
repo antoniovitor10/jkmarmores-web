@@ -16,6 +16,7 @@ try {
   for (const width of [390, 1440]) {
     await page.setViewport({ width, height: width === 390 ? 844 : 900, deviceScaleFactor: 1 });
     for (const [name, route] of [['home','/'], ['sobre','/sobre/'], ['materiais','/materiais/'], ['contato','/contato/'], ['aplicacoes','/aplicacoes/'], ['galeria','/galeria/'], ['material-pendente','/materiais/pendente/'], ['aplicacao-pendente','/aplicacoes/pendente/']]) {
+      if (process.env.CAPTURE_ROUTES && !process.env.CAPTURE_ROUTES.split(',').includes(name)) continue;
       await page.goto(`http://127.0.0.1:3105${route}`, { waitUntil: 'networkidle0' });
       await page.evaluate(() => document.fonts.ready);
       // Percorre a página para que os lazy loads correspondam ao que o visitante vê.
