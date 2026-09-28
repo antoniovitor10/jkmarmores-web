@@ -1,0 +1,4 @@
+# Arquivos brutos gerados pela API (336 MB): ficam so localmente
+configurador-assets/
+node_modules/
+.env*
