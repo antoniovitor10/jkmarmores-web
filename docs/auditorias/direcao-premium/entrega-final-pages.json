@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "contato",
+    "a11y": 100,
+    "failures": []
+  },
+  {
+    "slug": "sobre",
+    "a11y": 100,
+    "failures": []
+  },
+  {
+    "slug": "materiais",
+    "a11y": 100,
+    "failures": []
+  },
+  {
+    "slug": "aplicacoes",
+    "a11y": 100,
+    "failures": []
+  },
+  {
+    "slug": "galeria",
+    "a11y": 100,
+    "failures": []
+  }
+]

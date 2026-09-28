@@ -1,0 +1,1317 @@
+{
+  "kind": "mobile",
+  "startedAt": "2026-09-28T11:43:12.036Z",
+  "elapsedMs": 13645,
+  "emulation": {
+    "viewport": "393x873",
+    "CPU": "4x",
+    "network": "150ms / 200KB/s down / 75KB/s up",
+    "device": "Moto G Power emulado; sem aparelho real"
+  },
+  "navError": null,
+  "entry": {
+    "connection": {
+      "saveData": false,
+      "effectiveType": "4g",
+      "downlink": 1.5
+    },
+    "url": "http://127.0.0.1:3105/",
+    "title": "Marmoraria em Barueri/SP | JK Marmores e Granitos",
+    "nav": {
+      "type": "navigate",
+      "domContentLoaded": 452.90000000596046,
+      "load": 1445.800000011921,
+      "domInteractive": 452.5,
+      "transferSize": 37326,
+      "encodedBodySize": 37026
+    },
+    "paints": {
+      "first-paint": 500,
+      "first-contentful-paint": 500
+    },
+    "fonts": "loaded",
+    "fontsLoaded": true,
+    "images": [
+      {
+        "src": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+        "complete": true,
+        "naturalWidth": 240,
+        "naturalHeight": 146,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/capa-close-768.avif",
+        "complete": true,
+        "naturalWidth": 393,
+        "naturalHeight": 184,
+        "loading": "eager",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/sequencia-01-chapa-1200.avif",
+        "complete": true,
+        "naturalWidth": 1049,
+        "naturalHeight": 586,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/sequencia-02-borda-mobile-768.avif",
+        "complete": true,
+        "naturalWidth": 393,
+        "naturalHeight": 491,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/sequencia-03-acabamento-1200.avif",
+        "complete": true,
+        "naturalWidth": 1049,
+        "naturalHeight": 586,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/sequencia-04-aplicada-1200.avif",
+        "complete": true,
+        "naturalWidth": 1049,
+        "naturalHeight": 586,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/material-detalhe-quente-1600.webp",
+        "complete": false,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "lazy",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/brand/jk-logo-480.webp",
+        "complete": false,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "lazy",
+        "decode": null
+      }
+    ],
+    "videos": [],
+    "scripts": [
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/3yu0p005vzusw.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/2octk3vnc5u67.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/2o5cved4s94lc.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0mnz56-pokal0.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/3pqja19_8yru9.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 133
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 85
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 361
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 57
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 845
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 16
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 43
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 23582
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 22397
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 21826
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 17696
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 15442
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/barlow_semi_condensed_latin_600-s.p.3scgoviz3o105.woff2",
+        "initiatorType": "link",
+        "startTime": 197.40000000596046,
+        "duration": 393.2000000178814,
+        "transferSize": 13572,
+        "encodedBodySize": 13272,
+        "decodedBodySize": 13272,
+        "requestStart": 201.90000000596046,
+        "responseEnd": 590.6000000238419
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/capa-close-768.avif",
+        "initiatorType": "link",
+        "startTime": 198.80000001192093,
+        "duration": 387.40000000596046,
+        "transferSize": 11888,
+        "encodedBodySize": 11588,
+        "decodedBodySize": 11588,
+        "requestStart": 202.5,
+        "responseEnd": 586.2000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+        "initiatorType": "link",
+        "startTime": 199.40000000596046,
+        "duration": 294.59999999403954,
+        "transferSize": 5830,
+        "encodedBodySize": 5530,
+        "decodedBodySize": 5530,
+        "requestStart": 220.5,
+        "responseEnd": 494
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+        "initiatorType": "link",
+        "startTime": 211.30000001192093,
+        "duration": 236.09999999403954,
+        "transferSize": 2270,
+        "encodedBodySize": 1970,
+        "decodedBodySize": 5364,
+        "requestStart": 221.2000000178814,
+        "responseEnd": 447.40000000596046
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+        "initiatorType": "script",
+        "startTime": 213.7000000178814,
+        "duration": 372.40000000596046,
+        "transferSize": 7914,
+        "encodedBodySize": 7614,
+        "decodedBodySize": 28907,
+        "requestStart": 222.10000002384186,
+        "responseEnd": 586.1000000238419
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+        "initiatorType": "script",
+        "startTime": 214.30000001192093,
+        "duration": 1094.0999999940395,
+        "transferSize": 71928,
+        "encodedBodySize": 71628,
+        "decodedBodySize": 229156,
+        "requestStart": 333.80000001192093,
+        "responseEnd": 1308.4000000059605
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+        "initiatorType": "script",
+        "startTime": 214.5,
+        "duration": 1016.3000000119209,
+        "transferSize": 45403,
+        "encodedBodySize": 45103,
+        "decodedBodySize": 165229,
+        "requestStart": 494.40000000596046,
+        "responseEnd": 1230.800000011921
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "initiatorType": "script",
+        "startTime": 214.90000000596046,
+        "duration": 616.3000000119209,
+        "transferSize": 4153,
+        "encodedBodySize": 3853,
+        "decodedBodySize": 9721,
+        "requestStart": 586.8000000119209,
+        "responseEnd": 831.2000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/3yu0p005vzusw.js",
+        "initiatorType": "script",
+        "startTime": 215.40000000596046,
+        "duration": 631,
+        "transferSize": 4181,
+        "encodedBodySize": 3881,
+        "decodedBodySize": 14806,
+        "requestStart": 587.2000000178814,
+        "responseEnd": 846.4000000059605
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+        "initiatorType": "script",
+        "startTime": 215.5,
+        "duration": 646.2000000178814,
+        "transferSize": 3908,
+        "encodedBodySize": 3608,
+        "decodedBodySize": 8868,
+        "requestStart": 591,
+        "responseEnd": 861.7000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/2octk3vnc5u67.js",
+        "initiatorType": "script",
+        "startTime": 215.7000000178814,
+        "duration": 798.5999999940395,
+        "transferSize": 4249,
+        "encodedBodySize": 3949,
+        "decodedBodySize": 9810,
+        "requestStart": 801,
+        "responseEnd": 1014.3000000119209
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/barlow_latin_400-s.1rw28ynp2j7n0.woff2",
+        "initiatorType": "css",
+        "startTime": 244.90000000596046,
+        "duration": 555.3000000119209,
+        "transferSize": 13344,
+        "encodedBodySize": 13044,
+        "decodedBodySize": 13044,
+        "requestStart": 447.60000002384186,
+        "responseEnd": 800.2000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/2o5cved4s94lc.js",
+        "initiatorType": "script",
+        "startTime": 1529.800000011921,
+        "duration": 179,
+        "transferSize": 1418,
+        "encodedBodySize": 1118,
+        "decodedBodySize": 2226,
+        "requestStart": 1537.300000011921,
+        "responseEnd": 1708.800000011921
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/sequencia-01-chapa-1200.avif",
+        "initiatorType": "img",
+        "startTime": 1577.2000000178814,
+        "duration": 407.5,
+        "transferSize": 12942,
+        "encodedBodySize": 12642,
+        "decodedBodySize": 12642,
+        "requestStart": 1579.7000000178814,
+        "responseEnd": 1984.7000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/sequencia-02-borda-mobile-768.avif",
+        "initiatorType": "img",
+        "startTime": 1577.6000000238419,
+        "duration": 299.89999997615814,
+        "transferSize": 7298,
+        "encodedBodySize": 6998,
+        "decodedBodySize": 6998,
+        "requestStart": 1580.1000000238419,
+        "responseEnd": 1877.5
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/sequencia-03-acabamento-1200.avif",
+        "initiatorType": "img",
+        "startTime": 1577.800000011921,
+        "duration": 421.80000001192093,
+        "transferSize": 12246,
+        "encodedBodySize": 11946,
+        "decodedBodySize": 11946,
+        "requestStart": 1580.2000000178814,
+        "responseEnd": 1999.6000000238419
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/sequencia-04-aplicada-1200.avif",
+        "initiatorType": "img",
+        "startTime": 1578.2000000178814,
+        "duration": 451.5,
+        "transferSize": 15490,
+        "encodedBodySize": 15190,
+        "decodedBodySize": 15190,
+        "requestStart": 1580.2000000178814,
+        "responseEnd": 2029.7000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/0mnz56-pokal0.js",
+        "initiatorType": "script",
+        "startTime": 1726.4000000059605,
+        "duration": 212.40000000596046,
+        "transferSize": 1658,
+        "encodedBodySize": 1358,
+        "decodedBodySize": 2798,
+        "requestStart": 1731.1000000238419,
+        "responseEnd": 1938.800000011921
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/3pqja19_8yru9.js",
+        "initiatorType": "script",
+        "startTime": 1727.300000011921,
+        "duration": 517.3000000119209,
+        "transferSize": 45664,
+        "encodedBodySize": 45364,
+        "decodedBodySize": 116966,
+        "requestStart": 1731.2000000178814,
+        "responseEnd": 2244.600000023842
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/3qs9e91qp30_9.css",
+        "initiatorType": "link",
+        "startTime": 1728.6000000238419,
+        "duration": 331.39999997615814,
+        "transferSize": 2034,
+        "encodedBodySize": 1734,
+        "decodedBodySize": 5862,
+        "requestStart": 1877.6000000238419,
+        "responseEnd": 2060
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/barlow_latin_400-s.1rw28ynp2j7n0.woff2",
+        "initiatorType": "css",
+        "startTime": 2071.9000000059605,
+        "duration": 310.80000001192093,
+        "transferSize": 13344,
+        "encodedBodySize": 13044,
+        "decodedBodySize": 13044,
+        "requestStart": 2081.600000023842,
+        "responseEnd": 2382.7000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/barlow_semi_condensed_latin_600-s.p.3scgoviz3o105.woff2",
+        "initiatorType": "css",
+        "startTime": 2072.4000000059605,
+        "duration": 310.2000000178814,
+        "transferSize": 13572,
+        "encodedBodySize": 13272,
+        "decodedBodySize": 13272,
+        "requestStart": 2082,
+        "responseEnd": 2382.600000023842
+      }
+    ],
+    "bytes": 314306,
+    "reactPresent": true,
+    "audit": {
+      "longTasks": [
+        {
+          "start": 220.80000001192093,
+          "duration": 113,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 349.40000000596046,
+          "duration": 96,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 1312.6000000238419,
+          "duration": 121,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        }
+      ],
+      "shifts": [],
+      "clicks": [],
+      "raf": 5,
+      "videos": [],
+      "reactCommits": [
+        {
+          "t": 1522.300000011921,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1545.300000011921,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1549.4000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1565,
+          "renderer": 1,
+          "hydrating": false
+        }
+      ],
+      "renderer": [
+        {
+          "t": 1359,
+          "version": "19.3.0-canary-cbb046ab-20260731"
+        }
+      ]
+    }
+  },
+  "firstScroll": {
+    "wallMs": 1797,
+    "y": 0,
+    "scrollHeight": 8054
+  },
+  "targets": {
+    "menus": [
+      {
+        "tag": "A",
+        "text": "",
+        "aria": null,
+        "cls": "button menu-whatsapp",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      }
+    ],
+    "whatsapp": [
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "text": "Chamar no WhatsApp",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 200.5625,
+          "y": 879.4000244140625,
+          "w": 176.4375,
+          "h": 56
+        }
+      },
+      {
+        "text": "Chamar no WhatsApp",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 377.21875,
+          "w": 159.109375,
+          "h": 46.1875
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20as%20refer%C3%AAncias%20no%20site%20da%20JK%20e%20quero%20conversar%20sobre%20uma%20pedra%20para%20meu%20espa%C3%A7o.",
+        "box": {
+          "x": 238.5625,
+          "y": 2121.796875,
+          "w": 130.4375,
+          "h": 44
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20combina%C3%A7%C3%A3o%3A%20Cozinha%20com%20ilha%2C%20m%C3%A1rmore%20rosado%20e%20acabamento%20polido.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F%20A%20imagem%20%C3%A9%20ilustrativa%3B%20quero%20confirmar%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis.",
+        "box": {
+          "x": 24,
+          "y": 4748.703125,
+          "w": 197.890625,
+          "h": 63.09375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 6716.40625,
+          "w": 180.4375,
+          "h": 49.59375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 7723.75,
+          "w": 345,
+          "h": 44
+        }
+      }
+    ]
+  },
+  "menuResult": {
+    "ok": false,
+    "reason": "nenhum seletor de menu comum encontrado"
+  },
+  "waResult": {
+    "ok": false,
+    "error": "TimeoutError: locator.tap: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"wa.me\"],a[href*=\"whatsapp\" i]').first()\u001b[22m\n\u001b[2m    - locator resolved to <a class=\"button menu-whatsapp\" href=\"https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.\">Chamar no WhatsApp</a>\u001b[22m\n\u001b[2m  - attempting tap action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+    "wallMs": 4001
+  },
+  "interaction": {
+    "audit": {
+      "longTasks": [
+        {
+          "start": 220.80000001192093,
+          "duration": 113,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 349.40000000596046,
+          "duration": 96,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 1312.6000000238419,
+          "duration": 121,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        }
+      ],
+      "shifts": [],
+      "clicks": [
+        {
+          "name": "pointerover",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5494.600000023842,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5498.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerdown",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5498.5,
+          "processingEnd": 5499.4000000059605,
+          "interactionId": 8981
+        },
+        {
+          "name": "touchstart",
+          "entryType": "event",
+          "start": 5482.700000017881,
+          "duration": 24,
+          "processingStart": 5499.700000017881,
+          "processingEnd": 5500.600000023842,
+          "interactionId": 0
+        },
+        {
+          "name": "gotpointercapture",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5501.100000023842,
+          "processingEnd": 5501.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerup",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5501.300000011921,
+          "processingEnd": 5501.9000000059605,
+          "interactionId": 8981
+        },
+        {
+          "name": "lostpointercapture",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5501.9000000059605,
+          "processingEnd": 5502.100000023842,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerout",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5502.100000023842,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503,
+          "interactionId": 0
+        },
+        {
+          "name": "touchend",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5503,
+          "processingEnd": 5503.100000023842,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseover",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5505.100000023842,
+          "processingEnd": 5506,
+          "interactionId": 0
+        },
+        {
+          "name": "mousedown",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5506.600000023842,
+          "processingEnd": 5507.100000023842,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseup",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5508.100000023842,
+          "processingEnd": 5508.800000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "click",
+          "entryType": "event",
+          "start": 5482.800000011921,
+          "duration": 24,
+          "processingStart": 5508.800000011921,
+          "processingEnd": 5509.200000017881,
+          "interactionId": 8981
+        },
+        {
+          "name": "dragstart",
+          "entryType": "event",
+          "start": 5514.600000023842,
+          "duration": 24,
+          "processingStart": 5527.800000011921,
+          "processingEnd": 5528.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointercancel",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5536.100000023842,
+          "processingEnd": 5536.800000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerout",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5536.800000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5537.300000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5537.300000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5537.300000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5537.300000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5537.300000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5537.300000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5537.300000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5537.300000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5537.300000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5523.200000017881,
+          "duration": 16,
+          "processingStart": 5537.300000011921,
+          "processingEnd": 5537.300000011921,
+          "interactionId": 0
+        }
+      ],
+      "raf": 11,
+      "videos": [],
+      "reactCommits": [
+        {
+          "t": 1522.300000011921,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1545.300000011921,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1549.4000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1565,
+          "renderer": 1,
+          "hydrating": false
+        }
+      ],
+      "renderer": [
+        {
+          "t": 1359,
+          "version": "19.3.0-canary-cbb046ab-20260731"
+        }
+      ]
+    },
+    "fonts": "loaded",
+    "videos": [],
+    "scrollY": 0,
+    "resourceBytes": 323906
+  },
+  "consoleErr": [],
+  "pageErr": [],
+  "requestsCount": 24,
+  "requestList": [
+    {
+      "url": "http://127.0.0.1:3105/",
+      "resourceType": "document",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/barlow_semi_condensed_latin_600-s.p.3scgoviz3o105.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/capa-close-768.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/3yu0p005vzusw.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/2octk3vnc5u67.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/barlow_latin_400-s.1rw28ynp2j7n0.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/2o5cved4s94lc.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/sequencia-01-chapa-1200.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/sequencia-02-borda-mobile-768.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/sequencia-03-acabamento-1200.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/sequencia-04-aplicada-1200.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/0mnz56-pokal0.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/3pqja19_8yru9.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/3qs9e91qp30_9.css",
+      "resourceType": "stylesheet",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/barlow_latin_400-s.1rw28ynp2j7n0.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/barlow_semi_condensed_latin_600-s.p.3scgoviz3o105.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/a1-prova-01-1200.avif",
+      "resourceType": "image",
+      "method": "GET"
+    }
+  ]
+}

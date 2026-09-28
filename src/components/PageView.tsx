@@ -6,7 +6,7 @@ import type { PaginaInstitucional } from "@/lib/types";
 
 export function PageView({ pagina, children, abertura }: { pagina: PaginaInstitucional; children?: React.ReactNode; abertura?: React.ReactNode }) {
   return <main id="conteudo" className={abertura ? "home-page" : undefined}>
-    {abertura ?? <header className="institutional-intro"><div className="container"><p className="eyebrow">JK MARMORES E GRANITOS / BARUERI, SP</p><h1><PendenteTexto valor={pagina.titulo} /></h1><p className="intro-description"><PendenteTexto valor={pagina.introducao} /></p></div></header>}
+    {abertura ?? <header className="institutional-intro"><div className="container"><h1><PendenteTexto valor={pagina.titulo} /></h1><p className="intro-description"><PendenteTexto valor={pagina.introducao} /></p></div></header>}
     <div className="container page-content">
     {pagina.secoes.map((secao) => <section key={secao.id} id={secao.id} className="content-section"><h2><PendenteTexto valor={secao.titulo} /></h2><p><PendenteTexto valor={secao.texto} /></p></section>)}
     {children}

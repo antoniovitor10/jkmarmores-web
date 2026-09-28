@@ -1,0 +1,72 @@
+{
+  "label": "jornada-validada",
+  "emulation": "393x873 CPU4x; Lighthouse simulate; entry CDP 200KiB/s 150ms",
+  "runs": [
+    {
+      "run": 1,
+      "lcp": 2412.9892,
+      "tbt": 34,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 141,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight"
+      ]
+    },
+    {
+      "run": 2,
+      "lcp": 2341.0955,
+      "tbt": 34.98090000000002,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 138,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight"
+      ]
+    },
+    {
+      "run": 3,
+      "lcp": 2347.4825,
+      "tbt": 42.10349999999994,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 153,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight"
+      ]
+    },
+    {
+      "run": 4,
+      "lcp": 2339.6425,
+      "tbt": 39.27150000000006,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 129,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight"
+      ]
+    },
+    {
+      "run": 5,
+      "lcp": 2357.7023750000003,
+      "tbt": 53.05952500000012,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 139,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight"
+      ]
+    }
+  ],
+  "median": {
+    "lcp": 2347.4825,
+    "tbt": 39.27150000000006,
+    "cls": 0
+  },
+  "maxLongTask": 153
+}

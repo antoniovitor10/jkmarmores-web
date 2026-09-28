@@ -1,0 +1,5292 @@
+{
+  "kind": "mobile",
+  "startedAt": "2026-09-28T11:43:35.048Z",
+  "elapsedMs": 14062,
+  "emulation": {
+    "viewport": "393x873",
+    "CPU": "4x",
+    "network": "150ms / 200KB/s down / 75KB/s up",
+    "device": "Moto G Power emulado; sem aparelho real"
+  },
+  "navError": null,
+  "entry": {
+    "connection": {
+      "saveData": false,
+      "effectiveType": "4g",
+      "downlink": 1.7
+    },
+    "url": "http://127.0.0.1:3105/",
+    "title": "Marmoraria em Barueri/SP | JK Marmores e Granitos",
+    "nav": {
+      "type": "navigate",
+      "domContentLoaded": 878.7000000178814,
+      "load": 1575.4000000059605,
+      "domInteractive": 877.8000000119209,
+      "transferSize": 37326,
+      "encodedBodySize": 37026
+    },
+    "paints": {
+      "first-paint": 872,
+      "first-contentful-paint": 872
+    },
+    "fonts": "loaded",
+    "fontsLoaded": true,
+    "images": [
+      {
+        "src": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+        "complete": true,
+        "naturalWidth": 240,
+        "naturalHeight": 146,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/capa-close-768.avif",
+        "complete": true,
+        "naturalWidth": 393,
+        "naturalHeight": 184,
+        "loading": "eager",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/sequencia-01-chapa-1200.avif",
+        "complete": true,
+        "naturalWidth": 1049,
+        "naturalHeight": 586,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/sequencia-02-borda-mobile-768.avif",
+        "complete": true,
+        "naturalWidth": 393,
+        "naturalHeight": 491,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/sequencia-03-acabamento-1200.avif",
+        "complete": true,
+        "naturalWidth": 1049,
+        "naturalHeight": 586,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/sequencia-04-aplicada-1200.avif",
+        "complete": true,
+        "naturalWidth": 1049,
+        "naturalHeight": 586,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/material-detalhe-quente-1600.webp",
+        "complete": false,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "lazy",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/brand/jk-logo-480.webp",
+        "complete": false,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "lazy",
+        "decode": null
+      }
+    ],
+    "videos": [
+      {
+        "src": "",
+        "poster": "",
+        "readyState": 0,
+        "networkState": 0,
+        "paused": true,
+        "currentTime": 0,
+        "videoWidth": 0,
+        "videoHeight": 0,
+        "preload": "metadata",
+        "autoplay": false,
+        "muted": true
+      },
+      {
+        "src": "blob:http://127.0.0.1:3105/bf056e87-466a-4661-b368-6cc899f10e4e",
+        "poster": "http://127.0.0.1:3105/",
+        "readyState": 4,
+        "networkState": 1,
+        "paused": true,
+        "currentTime": 0,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "preload": "metadata",
+        "autoplay": false,
+        "muted": true
+      },
+      {
+        "src": "blob:http://127.0.0.1:3105/b69d3eae-21e0-4166-86e9-c2e898864c75",
+        "poster": "http://127.0.0.1:3105/",
+        "readyState": 4,
+        "networkState": 1,
+        "paused": true,
+        "currentTime": 0,
+        "videoWidth": 576,
+        "videoHeight": 720,
+        "preload": "metadata",
+        "autoplay": false,
+        "muted": true
+      }
+    ],
+    "scripts": [
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/3yu0p005vzusw.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/2octk3vnc5u67.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/2o5cved4s94lc.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0mnz56-pokal0.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/3pqja19_8yru9.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 133
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 85
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 361
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 57
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 845
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 16
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 43
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 23582
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 22397
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 21826
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 17696
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 15442
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/barlow_semi_condensed_latin_600-s.p.3scgoviz3o105.woff2",
+        "initiatorType": "link",
+        "startTime": 239.2000000178814,
+        "duration": 409.09999999403954,
+        "transferSize": 13572,
+        "encodedBodySize": 13272,
+        "decodedBodySize": 13272,
+        "requestStart": 253.2000000178814,
+        "responseEnd": 648.3000000119209
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/capa-close-768.avif",
+        "initiatorType": "link",
+        "startTime": 241.5,
+        "duration": 393.2000000178814,
+        "transferSize": 11888,
+        "encodedBodySize": 11588,
+        "decodedBodySize": 11588,
+        "requestStart": 254,
+        "responseEnd": 634.7000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+        "initiatorType": "link",
+        "startTime": 242.2000000178814,
+        "duration": 298.89999997615814,
+        "transferSize": 5830,
+        "encodedBodySize": 5530,
+        "decodedBodySize": 5530,
+        "requestStart": 254.7000000178814,
+        "responseEnd": 541.0999999940395
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+        "initiatorType": "link",
+        "startTime": 243,
+        "duration": 240.80000001192093,
+        "transferSize": 2270,
+        "encodedBodySize": 1970,
+        "decodedBodySize": 5364,
+        "requestStart": 273,
+        "responseEnd": 483.80000001192093
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+        "initiatorType": "script",
+        "startTime": 243.09999999403954,
+        "duration": 389.7000000178814,
+        "transferSize": 7914,
+        "encodedBodySize": 7614,
+        "decodedBodySize": 28907,
+        "requestStart": 274.90000000596046,
+        "responseEnd": 632.8000000119209
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+        "initiatorType": "script",
+        "startTime": 243.30000001192093,
+        "duration": 1124.5,
+        "transferSize": 71928,
+        "encodedBodySize": 71628,
+        "decodedBodySize": 229156,
+        "requestStart": 349.90000000596046,
+        "responseEnd": 1367.800000011921
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+        "initiatorType": "script",
+        "startTime": 243.90000000596046,
+        "duration": 1047.800000011921,
+        "transferSize": 45403,
+        "encodedBodySize": 45103,
+        "decodedBodySize": 165229,
+        "requestStart": 541.8000000119209,
+        "responseEnd": 1291.7000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "initiatorType": "script",
+        "startTime": 244.40000000596046,
+        "duration": 649.4000000059605,
+        "transferSize": 4153,
+        "encodedBodySize": 3853,
+        "decodedBodySize": 9721,
+        "requestStart": 633.5,
+        "responseEnd": 893.8000000119209
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/3yu0p005vzusw.js",
+        "initiatorType": "script",
+        "startTime": 244.5,
+        "duration": 664.8000000119209,
+        "transferSize": 4181,
+        "encodedBodySize": 3881,
+        "decodedBodySize": 14806,
+        "requestStart": 635.0999999940395,
+        "responseEnd": 909.3000000119209
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+        "initiatorType": "script",
+        "startTime": 244.90000000596046,
+        "duration": 664.3000000119209,
+        "transferSize": 3908,
+        "encodedBodySize": 3608,
+        "decodedBodySize": 8868,
+        "requestStart": 649.2000000178814,
+        "responseEnd": 909.2000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/2octk3vnc5u67.js",
+        "initiatorType": "script",
+        "startTime": 245.30000001192093,
+        "duration": 832.0999999940395,
+        "transferSize": 4249,
+        "encodedBodySize": 3949,
+        "decodedBodySize": 9810,
+        "requestStart": 863.5999999940395,
+        "responseEnd": 1077.4000000059605
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/barlow_latin_400-s.1rw28ynp2j7n0.woff2",
+        "initiatorType": "css",
+        "startTime": 303.2000000178814,
+        "duration": 559.7999999821186,
+        "transferSize": 13344,
+        "encodedBodySize": 13044,
+        "decodedBodySize": 13044,
+        "requestStart": 484.2000000178814,
+        "responseEnd": 863
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/2o5cved4s94lc.js",
+        "initiatorType": "script",
+        "startTime": 1761,
+        "duration": 175.2000000178814,
+        "transferSize": 1418,
+        "encodedBodySize": 1118,
+        "decodedBodySize": 2226,
+        "requestStart": 1768.300000011921,
+        "responseEnd": 1936.2000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/sequencia-01-chapa-1200.avif",
+        "initiatorType": "img",
+        "startTime": 1855.800000011921,
+        "duration": 463.5,
+        "transferSize": 12942,
+        "encodedBodySize": 12642,
+        "decodedBodySize": 12642,
+        "requestStart": 1861.2000000178814,
+        "responseEnd": 2319.300000011921
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/sequencia-02-borda-mobile-768.avif",
+        "initiatorType": "img",
+        "startTime": 1856.7000000178814,
+        "duration": 309.09999999403954,
+        "transferSize": 7298,
+        "encodedBodySize": 6998,
+        "decodedBodySize": 6998,
+        "requestStart": 1861.9000000059605,
+        "responseEnd": 2165.800000011921
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/sequencia-03-acabamento-1200.avif",
+        "initiatorType": "img",
+        "startTime": 1857.5,
+        "duration": 477.2000000178814,
+        "transferSize": 12246,
+        "encodedBodySize": 11946,
+        "decodedBodySize": 11946,
+        "requestStart": 1862.2000000178814,
+        "responseEnd": 2334.7000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/sequencia-04-aplicada-1200.avif",
+        "initiatorType": "img",
+        "startTime": 1858.4000000059605,
+        "duration": 537.6999999880791,
+        "transferSize": 15490,
+        "encodedBodySize": 15190,
+        "decodedBodySize": 15190,
+        "requestStart": 1862.2000000178814,
+        "responseEnd": 2396.0999999940395
+      },
+      {
+        "name": "http://127.0.0.1:3105/video/jornada-1-mobile.mp4",
+        "initiatorType": "fetch",
+        "startTime": 1892,
+        "duration": 2116.300000011921,
+        "transferSize": 166310,
+        "encodedBodySize": 166010,
+        "decodedBodySize": 166010,
+        "requestStart": 1909.9000000059605,
+        "responseEnd": 4008.300000011921
+      },
+      {
+        "name": "http://127.0.0.1:3105/video/jornada-2-mobile.mp4",
+        "initiatorType": "fetch",
+        "startTime": 1898.0999999940395,
+        "duration": 1327.5,
+        "transferSize": 60829,
+        "encodedBodySize": 60529,
+        "decodedBodySize": 60529,
+        "requestStart": 1936.800000011921,
+        "responseEnd": 3225.5999999940395
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/0mnz56-pokal0.js",
+        "initiatorType": "script",
+        "startTime": 1960.7000000178814,
+        "duration": 558.1999999880791,
+        "transferSize": 1658,
+        "encodedBodySize": 1358,
+        "decodedBodySize": 2798,
+        "requestStart": 2320,
+        "responseEnd": 2518.9000000059605
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/3pqja19_8yru9.js",
+        "initiatorType": "script",
+        "startTime": 1962.7000000178814,
+        "duration": 1325,
+        "transferSize": 45664,
+        "encodedBodySize": 45364,
+        "decodedBodySize": 116966,
+        "requestStart": 2335.300000011921,
+        "responseEnd": 3287.7000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/3qs9e91qp30_9.css",
+        "initiatorType": "link",
+        "startTime": 1966.7000000178814,
+        "duration": 414.5,
+        "transferSize": 2034,
+        "encodedBodySize": 1734,
+        "decodedBodySize": 5862,
+        "requestStart": 2166,
+        "responseEnd": 2381.2000000178814
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/barlow_latin_400-s.1rw28ynp2j7n0.woff2",
+        "initiatorType": "css",
+        "startTime": 2399.0999999940395,
+        "duration": 503.90000000596046,
+        "transferSize": 13344,
+        "encodedBodySize": 13044,
+        "decodedBodySize": 13044,
+        "requestStart": 2411.9000000059605,
+        "responseEnd": 2903
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/barlow_semi_condensed_latin_600-s.p.3scgoviz3o105.woff2",
+        "initiatorType": "css",
+        "startTime": 2400.300000011921,
+        "duration": 487.5,
+        "transferSize": 13572,
+        "encodedBodySize": 13272,
+        "decodedBodySize": 13272,
+        "requestStart": 2412.2000000178814,
+        "responseEnd": 2887.800000011921
+      }
+    ],
+    "bytes": 541445,
+    "reactPresent": true,
+    "audit": {
+      "longTasks": [
+        {
+          "start": 269.09999999403954,
+          "duration": 211,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 506.30000001192093,
+          "duration": 284,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 890.5999999940395,
+          "duration": 52,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 1369.800000011921,
+          "duration": 192,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 3289.4000000059605,
+          "duration": 68,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        }
+      ],
+      "shifts": [],
+      "clicks": [],
+      "raf": 5,
+      "videos": [
+        {
+          "t": 1930.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 1930.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2032.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2032.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2130.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2130.4000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2229.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2229.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2329.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2329.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2432.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2432.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2529.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2529.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2629.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2629.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2729.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2729.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2829.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2829.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2965.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2965.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3028.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3029.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3129.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3129.4000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3245.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3245.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3377.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3377.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3377.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3429.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3429.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3429.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3528.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3528.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3528.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3629.4000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3629.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3629.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3729.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3729.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3729.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3829.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3829.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3829.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3929.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3929.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3929.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4030.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4030.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4030.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4129.700000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4129.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4129.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4229.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4229.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4229.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4330.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4330.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4330.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4431.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4431.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4431.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4529.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4529.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4529.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4629.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4629.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4629.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4729.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4729.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4729.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4829.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4829.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4829.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4929.4000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4929.4000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4929.4000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5029.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5029.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5029.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5129.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5129.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5129.4000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5229.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5229.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5229.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5329.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5329.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5329.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5431.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5431.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5431.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5529,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5529,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5529,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5629,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5629,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5629,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5729.700000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5729.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5729.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5829.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5829.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5829.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        }
+      ],
+      "reactCommits": [
+        {
+          "t": 1734.5999999940395,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1791.9000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1794.4000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1826.2000000178814,
+          "renderer": 1,
+          "hydrating": false
+        }
+      ],
+      "renderer": [
+        {
+          "t": 1436.2000000178814,
+          "version": "19.3.0-canary-cbb046ab-20260731"
+        }
+      ]
+    }
+  },
+  "firstScroll": {
+    "wallMs": 1895,
+    "y": 0,
+    "scrollHeight": 8030
+  },
+  "targets": {
+    "menus": [
+      {
+        "tag": "A",
+        "text": "",
+        "aria": null,
+        "cls": "button menu-whatsapp",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      }
+    ],
+    "whatsapp": [
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "text": "Chamar no WhatsApp",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 200.5625,
+          "y": 879.4000244140625,
+          "w": 176.4375,
+          "h": 56
+        }
+      },
+      {
+        "text": "Chamar no WhatsApp",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 377.21875,
+          "w": 159.109375,
+          "h": 46.1875
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20as%20refer%C3%AAncias%20no%20site%20da%20JK%20e%20quero%20conversar%20sobre%20uma%20pedra%20para%20meu%20espa%C3%A7o.",
+        "box": {
+          "x": 238.5625,
+          "y": 2121.796875,
+          "w": 130.4375,
+          "h": 44
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20combina%C3%A7%C3%A3o%3A%20Cozinha%20com%20ilha%2C%20m%C3%A1rmore%20rosado%20e%20acabamento%20polido.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F%20A%20imagem%20%C3%A9%20ilustrativa%3B%20quero%20confirmar%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis.",
+        "box": {
+          "x": 24,
+          "y": 4748.703125,
+          "w": 197.890625,
+          "h": 63.09375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 6692.34375,
+          "w": 180.4375,
+          "h": 49.59375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 7699.6875,
+          "w": 345,
+          "h": 44
+        }
+      }
+    ]
+  },
+  "menuResult": {
+    "ok": false,
+    "reason": "nenhum seletor de menu comum encontrado"
+  },
+  "waResult": {
+    "ok": false,
+    "error": "TimeoutError: locator.tap: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"wa.me\"],a[href*=\"whatsapp\" i]').first()\u001b[22m\n\u001b[2m    - locator resolved to <a class=\"button menu-whatsapp\" href=\"https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.\">Chamar no WhatsApp</a>\u001b[22m\n\u001b[2m  - attempting tap action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+    "wallMs": 4013
+  },
+  "interaction": {
+    "audit": {
+      "longTasks": [
+        {
+          "start": 269.09999999403954,
+          "duration": 211,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 506.30000001192093,
+          "duration": 284,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 890.5999999940395,
+          "duration": 52,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 1369.800000011921,
+          "duration": 192,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 3289.4000000059605,
+          "duration": 68,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        }
+      ],
+      "shifts": [],
+      "clicks": [
+        {
+          "name": "pointerover",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5959.200000017881,
+          "processingEnd": 5963.200000017881,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5963.200000017881,
+          "processingEnd": 5963.200000017881,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5963.200000017881,
+          "processingEnd": 5963.200000017881,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5963.200000017881,
+          "processingEnd": 5963.200000017881,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5963.200000017881,
+          "processingEnd": 5963.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5963.4000000059605,
+          "processingEnd": 5963.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5963.4000000059605,
+          "processingEnd": 5963.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5963.4000000059605,
+          "processingEnd": 5963.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5963.4000000059605,
+          "processingEnd": 5963.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5963.4000000059605,
+          "processingEnd": 5963.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerdown",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5963.800000011921,
+          "processingEnd": 5965.800000011921,
+          "interactionId": 7011
+        },
+        {
+          "name": "touchstart",
+          "entryType": "event",
+          "start": 5941.300000011921,
+          "duration": 40,
+          "processingStart": 5967.800000011921,
+          "processingEnd": 5969,
+          "interactionId": 0
+        },
+        {
+          "name": "gotpointercapture",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5970.0999999940395,
+          "processingEnd": 5970.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerup",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5970.5,
+          "processingEnd": 5972.0999999940395,
+          "interactionId": 7011
+        },
+        {
+          "name": "lostpointercapture",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.0999999940395,
+          "processingEnd": 5972.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerout",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.5,
+          "processingEnd": 5972.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.9000000059605,
+          "processingEnd": 5972.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.9000000059605,
+          "processingEnd": 5972.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.9000000059605,
+          "processingEnd": 5972.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.9000000059605,
+          "processingEnd": 5972.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.9000000059605,
+          "processingEnd": 5972.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.9000000059605,
+          "processingEnd": 5972.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.9000000059605,
+          "processingEnd": 5972.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.9000000059605,
+          "processingEnd": 5972.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5972.9000000059605,
+          "processingEnd": 5972.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "touchend",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5973.0999999940395,
+          "processingEnd": 5973.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseover",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5976.5,
+          "processingEnd": 5977.700000017881,
+          "interactionId": 0
+        },
+        {
+          "name": "mousedown",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5978.9000000059605,
+          "processingEnd": 5979.200000017881,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseup",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5981,
+          "processingEnd": 5981.5,
+          "interactionId": 0
+        },
+        {
+          "name": "click",
+          "entryType": "event",
+          "start": 5941.700000017881,
+          "duration": 40,
+          "processingStart": 5981.800000011921,
+          "processingEnd": 5982.300000011921,
+          "interactionId": 7011
+        }
+      ],
+      "raf": 11,
+      "videos": [
+        {
+          "t": 1930.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 1930.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2032.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2032.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2130.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2130.4000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2229.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2229.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2329.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2329.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2432.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2432.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2529.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2529.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2629.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2629.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2729.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2729.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2829.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2829.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2965.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 2965.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3028.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3029.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3129.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3129.4000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3245.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3245.2000000178814,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3377.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3377.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3377.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3429.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3429.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3429.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3528.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3528.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3528.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3629.4000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3629.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3629.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3729.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3729.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3729.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3829.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3829.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3829.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3929.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 3929.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 3929.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4030.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4030.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4030.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4129.700000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4129.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4129.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4229.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4229.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4229.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4330.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4330.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4330.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4431.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4431.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4431.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4529.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4529.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4529.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4629.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4629.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4629.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4729.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4729.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4729.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4829.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4829.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4829.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4929.4000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 4929.4000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 4929.4000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5029.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5029.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5029.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5129.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5129.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5129.4000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5229.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5229.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5229.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5329.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5329.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5329.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5431.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5431.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5431.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5529,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5529,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5529,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5629,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5629,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5629,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5729.700000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5729.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5729.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5829.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5829.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5829.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5929,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 5929,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 5929,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6028.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 6028.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6028.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6129.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 6129.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6129.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6229.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 6229.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6229.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6329,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 6329,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6329.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6429.0999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 6429.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6429.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6529.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 6529.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6529.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6631.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 6631.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6631.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6729,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 6729,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6729.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6829.4000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 6829.4000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6829.4000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6930,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 6930,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 6930.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7029.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 7029.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7029.300000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7128.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 7128.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7128.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7229.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 7229.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7229.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7329.700000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 7329.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7329.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7429.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 7429.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7429.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7528.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 7529,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7529,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7629.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 7629.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7629.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7729,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 7729,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7729,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7829.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 7829.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7829.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7947.4000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 7947.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 7947.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8028.700000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 8028.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8028.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8130.9000000059605,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 8130.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8130.9000000059605,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8229,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 8229,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8229,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8328.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 8328.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8328.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8429.09999999404,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 8429.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8429.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8529.09999999404,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 8529.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8529.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8629.700000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 8629.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8629.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8729.40000000596,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 8729.40000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8729.40000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8829.09999999404,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 8829.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8829.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8929.09999999404,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 8929.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 8929.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9029.90000000596,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 9029.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9029.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9129.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 9129.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9129.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9228.90000000596,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 9228.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9228.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9328.700000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 9328.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9328.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9428.90000000596,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 9428.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9428.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9529.90000000596,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 9529.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9529.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9629.40000000596,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 9629.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9629.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9729,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 9729,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9729.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9829.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 9829.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9829.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9931,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 9931,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 9931,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10028.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 10028.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10028.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10130.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 10130.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10130.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10229.700000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 10229.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10229.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10329.90000000596,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 10329.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10329.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10429.09999999404,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 10429.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10429.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10529.300000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 10529.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10529.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10629.40000000596,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 10629.40000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10629.40000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10729.59999999404,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 10729.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10729.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10829.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 10829.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10829.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10928.90000000596,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 10928.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 10928.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11029.59999999404,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 11029.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11029.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11129.200000017881,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 11129.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11129.200000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11228.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 11229,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11229,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11329.09999999404,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 11329.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11329.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11429.5,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 11429.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11429.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11529.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 11530,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11530,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11629.59999999404,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 11629.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11629.700000017881,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11728.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 11728.800000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11728.800000011921,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11829.59999999404,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 11829.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11829.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11928.800000011921,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 0,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": ""
+        },
+        {
+          "t": 11928.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        },
+        {
+          "t": 11928.90000000596,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 576,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/"
+        }
+      ],
+      "reactCommits": [
+        {
+          "t": 1734.5999999940395,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1791.9000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1794.4000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1826.2000000178814,
+          "renderer": 1,
+          "hydrating": false
+        }
+      ],
+      "renderer": [
+        {
+          "t": 1436.2000000178814,
+          "version": "19.3.0-canary-cbb046ab-20260731"
+        }
+      ]
+    },
+    "fonts": "loaded",
+    "videos": [
+      {
+        "currentTime": 0,
+        "readyState": 0,
+        "networkState": 0,
+        "paused": true
+      },
+      {
+        "currentTime": 0,
+        "readyState": 4,
+        "networkState": 1,
+        "paused": true
+      },
+      {
+        "currentTime": 0,
+        "readyState": 4,
+        "networkState": 1,
+        "paused": true
+      }
+    ],
+    "scrollY": 0,
+    "resourceBytes": 551045
+  },
+  "consoleErr": [],
+  "pageErr": [],
+  "requestsCount": 29,
+  "requestList": [
+    {
+      "url": "http://127.0.0.1:3105/",
+      "resourceType": "document",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/barlow_semi_condensed_latin_600-s.p.3scgoviz3o105.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/capa-close-768.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/3yu0p005vzusw.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/2octk3vnc5u67.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/barlow_latin_400-s.1rw28ynp2j7n0.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/2o5cved4s94lc.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/sequencia-01-chapa-1200.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/sequencia-02-borda-mobile-768.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/sequencia-03-acabamento-1200.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/sequencia-04-aplicada-1200.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/video/jornada-1-mobile.mp4",
+      "resourceType": "fetch",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/video/jornada-2-mobile.mp4",
+      "resourceType": "fetch",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/0mnz56-pokal0.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/3pqja19_8yru9.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/3qs9e91qp30_9.css",
+      "resourceType": "stylesheet",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/barlow_latin_400-s.1rw28ynp2j7n0.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/barlow_semi_condensed_latin_600-s.p.3scgoviz3o105.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/video/capa-close.mp4",
+      "resourceType": "fetch",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:3105/bf056e87-466a-4661-b368-6cc899f10e4e",
+      "resourceType": "media",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/a1-prova-01-1200.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "blob:http://127.0.0.1:3105/4020fac7-c2bb-4c8c-8b2c-271c69da7d65",
+      "resourceType": "media",
+      "method": "GET"
+    }
+  ]
+}

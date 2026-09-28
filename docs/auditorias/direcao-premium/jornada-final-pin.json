@@ -1,0 +1,38 @@
+{
+  "emulation": "393x873 CPU 4x; scrollBy de 45 px, sem aparelho real",
+  "frameCount": 341,
+  "scriptPaintMaxMs": 24.694999999999997,
+  "scriptPaintP95Ms": 4.523000000000001,
+  "eventTiming": [
+    {
+      "name": "mouseover",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "mousedown",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "mouseup",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "click",
+      "duration": 32,
+      "interactionId": 9320
+    },
+    {
+      "name": "keydown",
+      "duration": 16,
+      "interactionId": 9327
+    },
+    {
+      "name": "keyup",
+      "duration": 16,
+      "interactionId": 9327
+    }
+  ]
+}

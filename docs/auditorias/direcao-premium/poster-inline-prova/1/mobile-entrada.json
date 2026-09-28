@@ -1,0 +1,1133 @@
+{
+  "kind": "mobile",
+  "startedAt": "2026-09-28T12:26:10.220Z",
+  "elapsedMs": 13497,
+  "emulation": {
+    "viewport": "393x873",
+    "CPU": "4x",
+    "network": "150ms / 200KB/s down / 75KB/s up",
+    "device": "Moto G Power emulado; sem aparelho real"
+  },
+  "navError": null,
+  "entry": {
+    "connection": {
+      "saveData": false,
+      "effectiveType": "4g",
+      "downlink": 1.55
+    },
+    "url": "http://127.0.0.1:3105/",
+    "title": "Marmoraria em Barueri/SP | JK Marmores e Granitos",
+    "nav": {
+      "type": "navigate",
+      "domContentLoaded": 704.7999999821186,
+      "load": 1517.5,
+      "domInteractive": 704.1999999880791,
+      "transferSize": 57690,
+      "encodedBodySize": 57390
+    },
+    "paints": {
+      "first-paint": 516,
+      "first-contentful-paint": 516
+    },
+    "fonts": "loaded",
+    "fontsLoaded": true,
+    "images": [
+      {
+        "src": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+        "complete": true,
+        "naturalWidth": 240,
+        "naturalHeight": 146,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "data:image/avif;base64,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",
+        "complete": true,
+        "naturalWidth": 768,
+        "naturalHeight": 983,
+        "loading": "eager",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/brand/jk-logo-480.webp",
+        "complete": false,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "lazy",
+        "decode": null
+      }
+    ],
+    "videos": [],
+    "scripts": [
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/41uqm4v64uy5t.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0p-49o75j6yez.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/2z13zt20_z7pg.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 85
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 361
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 57
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 845
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 43
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 24251
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 20126
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 36441
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 18731
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 2146
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/bodoni_latin_400-s.p.2aby03jc8bj_i.woff2",
+        "initiatorType": "link",
+        "startTime": 205,
+        "duration": 443.5,
+        "transferSize": 13320,
+        "encodedBodySize": 13020,
+        "decodedBodySize": 13020,
+        "requestStart": 213.5,
+        "responseEnd": 648.5
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+        "initiatorType": "link",
+        "startTime": 206.69999998807907,
+        "duration": 456.80000001192093,
+        "transferSize": 12136,
+        "encodedBodySize": 11836,
+        "decodedBodySize": 11836,
+        "requestStart": 214.40000000596046,
+        "responseEnd": 663.5
+      },
+      {
+        "name": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+        "initiatorType": "link",
+        "startTime": 207.09999999403954,
+        "duration": 334.19999998807907,
+        "transferSize": 5830,
+        "encodedBodySize": 5530,
+        "decodedBodySize": 5530,
+        "requestStart": 214.69999998807907,
+        "responseEnd": 541.2999999821186
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+        "initiatorType": "link",
+        "startTime": 207.69999998807907,
+        "duration": 257.5,
+        "transferSize": 2270,
+        "encodedBodySize": 1970,
+        "decodedBodySize": 5364,
+        "requestStart": 228.09999999403954,
+        "responseEnd": 465.19999998807907
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+        "initiatorType": "script",
+        "startTime": 207.90000000596046,
+        "duration": 394.69999998807907,
+        "transferSize": 7914,
+        "encodedBodySize": 7614,
+        "decodedBodySize": 28907,
+        "requestStart": 228.59999999403954,
+        "responseEnd": 602.5999999940395
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+        "initiatorType": "script",
+        "startTime": 208.2999999821186,
+        "duration": 1177.300000011921,
+        "transferSize": 71928,
+        "encodedBodySize": 71628,
+        "decodedBodySize": 229156,
+        "requestStart": 465.40000000596046,
+        "responseEnd": 1385.5999999940395
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "initiatorType": "script",
+        "startTime": 209.09999999403954,
+        "duration": 623.1999999880791,
+        "transferSize": 4153,
+        "encodedBodySize": 3853,
+        "decodedBodySize": 9721,
+        "requestStart": 602.9000000059605,
+        "responseEnd": 832.2999999821186
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+        "initiatorType": "script",
+        "startTime": 209.09999999403954,
+        "duration": 1021.0999999940395,
+        "transferSize": 45403,
+        "encodedBodySize": 45103,
+        "decodedBodySize": 165229,
+        "requestStart": 541.4000000059605,
+        "responseEnd": 1230.199999988079
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/41uqm4v64uy5t.js",
+        "initiatorType": "script",
+        "startTime": 209.7999999821186,
+        "duration": 668.4000000059605,
+        "transferSize": 4181,
+        "encodedBodySize": 3881,
+        "decodedBodySize": 14806,
+        "requestStart": 648.6999999880791,
+        "responseEnd": 878.1999999880791
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+        "initiatorType": "script",
+        "startTime": 209.90000000596046,
+        "duration": 730.5,
+        "transferSize": 3908,
+        "encodedBodySize": 3608,
+        "decodedBodySize": 8868,
+        "requestStart": 663.9000000059605,
+        "responseEnd": 940.4000000059605
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/0p-49o75j6yez.js",
+        "initiatorType": "script",
+        "startTime": 210.19999998807907,
+        "duration": 637.9000000059605,
+        "transferSize": 1409,
+        "encodedBodySize": 1109,
+        "decodedBodySize": 2167,
+        "requestStart": 664.4000000059605,
+        "responseEnd": 848.0999999940395
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/2z13zt20_z7pg.js",
+        "initiatorType": "script",
+        "startTime": 1593.199999988079,
+        "duration": 176.5,
+        "transferSize": 2033,
+        "encodedBodySize": 1733,
+        "decodedBodySize": 3759,
+        "requestStart": 1601.0999999940395,
+        "responseEnd": 1769.699999988079
+      },
+      {
+        "name": "http://127.0.0.1:3105/brand/jk-textura-transparente.webp",
+        "initiatorType": "image",
+        "startTime": 1795.2999999821186,
+        "duration": 280.80000001192093,
+        "transferSize": 22938,
+        "encodedBodySize": 22638,
+        "decodedBodySize": 22638,
+        "requestStart": 1796.699999988079,
+        "responseEnd": 2076.0999999940395
+      }
+    ],
+    "bytes": 197423,
+    "reactPresent": true,
+    "audit": {
+      "longTasks": [
+        {
+          "start": 327.19999998807907,
+          "duration": 150,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 1389.4000000059605,
+          "duration": 115,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        }
+      ],
+      "shifts": [],
+      "clicks": [],
+      "raf": 5,
+      "videos": [],
+      "reactCommits": [
+        {
+          "t": 1586.9000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1607.9000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1613.2999999821186,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1624,
+          "renderer": 1,
+          "hydrating": false
+        }
+      ],
+      "renderer": [
+        {
+          "t": 1432.5,
+          "version": "19.3.0-canary-cbb046ab-20260731"
+        }
+      ]
+    }
+  },
+  "firstScroll": {
+    "wallMs": 1844,
+    "y": 0,
+    "scrollHeight": 7820
+  },
+  "targets": {
+    "menus": [
+      {
+        "tag": "A",
+        "text": "",
+        "aria": null,
+        "cls": "button menu-whatsapp",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      }
+    ],
+    "whatsapp": [
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "text": "Chamar no WhatsApp",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 204.875,
+          "y": 879.4000244140625,
+          "w": 172.125,
+          "h": 56
+        }
+      },
+      {
+        "text": "Chamar no WhatsApp",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 263.125,
+          "w": 176.125,
+          "h": 49.59375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20as%20refer%C3%AAncias%20no%20site%20da%20JK%20e%20quero%20conversar%20sobre%20uma%20pedra%20para%20meu%20espa%C3%A7o.",
+        "box": {
+          "x": 72,
+          "y": 4577.125,
+          "w": 126.125,
+          "h": 44
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20combina%C3%A7%C3%A3o%3A%20Cozinha%20com%20ilha%2C%20m%C3%A1rmore%20rosado%20e%20acabamento%20polido.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F%20A%20imagem%20%C3%A9%20ilustrativa%3B%20quero%20confirmar%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis.",
+        "box": {
+          "x": 24,
+          "y": 5728.71875,
+          "w": 193.859375,
+          "h": 63.09375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 6393.9375,
+          "w": 176.125,
+          "h": 49.59375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 7503.0625,
+          "w": 345,
+          "h": 44
+        }
+      }
+    ]
+  },
+  "menuResult": {
+    "ok": false,
+    "reason": "nenhum seletor de menu comum encontrado"
+  },
+  "waResult": {
+    "ok": false,
+    "error": "TimeoutError: locator.tap: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"wa.me\"],a[href*=\"whatsapp\" i]').first()\u001b[22m\n\u001b[2m    - locator resolved to <a class=\"button menu-whatsapp\" href=\"https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.\">Chamar no WhatsApp</a>\u001b[22m\n\u001b[2m  - attempting tap action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+    "wallMs": 4016
+  },
+  "interaction": {
+    "audit": {
+      "longTasks": [
+        {
+          "start": 327.19999998807907,
+          "duration": 150,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 1389.4000000059605,
+          "duration": 115,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        }
+      ],
+      "shifts": [],
+      "clicks": [
+        {
+          "name": "pointerover",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5754.5,
+          "processingEnd": 5758.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5758.299999982119,
+          "processingEnd": 5758.299999982119,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5758.299999982119,
+          "processingEnd": 5758.299999982119,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5758.299999982119,
+          "processingEnd": 5758.299999982119,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5758.299999982119,
+          "processingEnd": 5758.299999982119,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5758.299999982119,
+          "processingEnd": 5758.299999982119,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5758.299999982119,
+          "processingEnd": 5758.299999982119,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5758.299999982119,
+          "processingEnd": 5758.299999982119,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5758.299999982119,
+          "processingEnd": 5758.299999982119,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerdown",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5758.299999982119,
+          "processingEnd": 5758.699999988079,
+          "interactionId": 5693
+        },
+        {
+          "name": "touchstart",
+          "entryType": "event",
+          "start": 5748.0999999940395,
+          "duration": 24,
+          "processingStart": 5759.199999988079,
+          "processingEnd": 5760,
+          "interactionId": 0
+        },
+        {
+          "name": "gotpointercapture",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5760.4000000059605,
+          "processingEnd": 5760.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerup",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5760.5999999940395,
+          "processingEnd": 5761,
+          "interactionId": 5693
+        },
+        {
+          "name": "lostpointercapture",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761,
+          "processingEnd": 5761,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerout",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761,
+          "processingEnd": 5761.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761.4000000059605,
+          "processingEnd": 5761.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761.4000000059605,
+          "processingEnd": 5761.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761.4000000059605,
+          "processingEnd": 5761.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761.4000000059605,
+          "processingEnd": 5761.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761.4000000059605,
+          "processingEnd": 5761.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761.4000000059605,
+          "processingEnd": 5761.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761.4000000059605,
+          "processingEnd": 5761.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761.4000000059605,
+          "processingEnd": 5761.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "touchend",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5761.5999999940395,
+          "processingEnd": 5761.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseover",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5763.4000000059605,
+          "processingEnd": 5764.4000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "mousedown",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5765.299999982119,
+          "processingEnd": 5765.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseup",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5767.0999999940395,
+          "processingEnd": 5768.0999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "click",
+          "entryType": "event",
+          "start": 5748.199999988079,
+          "duration": 24,
+          "processingStart": 5768.0999999940395,
+          "processingEnd": 5768.9000000059605,
+          "interactionId": 5693
+        },
+        {
+          "name": "pointerover",
+          "entryType": "event",
+          "start": 5771,
+          "duration": 24,
+          "processingStart": 5782.0999999940395,
+          "processingEnd": 5785.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5771,
+          "duration": 24,
+          "processingStart": 5785.5999999940395,
+          "processingEnd": 5785.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5771,
+          "duration": 24,
+          "processingStart": 5785.5999999940395,
+          "processingEnd": 5785.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5771,
+          "duration": 24,
+          "processingStart": 5785.5999999940395,
+          "processingEnd": 5785.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5771,
+          "duration": 24,
+          "processingStart": 5785.5999999940395,
+          "processingEnd": 5785.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5771,
+          "duration": 24,
+          "processingStart": 5785.5999999940395,
+          "processingEnd": 5785.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5771,
+          "duration": 24,
+          "processingStart": 5785.5999999940395,
+          "processingEnd": 5785.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5771,
+          "duration": 24,
+          "processingStart": 5785.5999999940395,
+          "processingEnd": 5785.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5771,
+          "duration": 24,
+          "processingStart": 5785.5999999940395,
+          "processingEnd": 5785.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "dragstart",
+          "entryType": "event",
+          "start": 5791.4000000059605,
+          "duration": 48,
+          "processingStart": 5820.0999999940395,
+          "processingEnd": 5820.799999982119,
+          "interactionId": 0
+        },
+        {
+          "name": "pointercancel",
+          "entryType": "event",
+          "start": 5807.5,
+          "duration": 32,
+          "processingStart": 5840,
+          "processingEnd": 5840.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerout",
+          "entryType": "event",
+          "start": 5807.5,
+          "duration": 32,
+          "processingStart": 5840.5999999940395,
+          "processingEnd": 5841.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5807.5,
+          "duration": 32,
+          "processingStart": 5841.199999988079,
+          "processingEnd": 5841.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5807.5,
+          "duration": 32,
+          "processingStart": 5841.199999988079,
+          "processingEnd": 5841.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5807.5,
+          "duration": 32,
+          "processingStart": 5841.199999988079,
+          "processingEnd": 5841.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5807.5,
+          "duration": 32,
+          "processingStart": 5841.199999988079,
+          "processingEnd": 5841.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5807.5,
+          "duration": 32,
+          "processingStart": 5841.199999988079,
+          "processingEnd": 5841.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5807.5,
+          "duration": 32,
+          "processingStart": 5841.199999988079,
+          "processingEnd": 5841.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5807.5,
+          "duration": 32,
+          "processingStart": 5841.199999988079,
+          "processingEnd": 5841.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5807.5,
+          "duration": 32,
+          "processingStart": 5841.199999988079,
+          "processingEnd": 5841.199999988079,
+          "interactionId": 0
+        }
+      ],
+      "raf": 11,
+      "videos": [],
+      "reactCommits": [
+        {
+          "t": 1586.9000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1607.9000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1613.2999999821186,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1624,
+          "renderer": 1,
+          "hydrating": false
+        }
+      ],
+      "renderer": [
+        {
+          "t": 1432.5,
+          "version": "19.3.0-canary-cbb046ab-20260731"
+        }
+      ]
+    },
+    "fonts": "loaded",
+    "videos": [],
+    "scrollY": 0,
+    "resourceBytes": 197423
+  },
+  "consoleErr": [],
+  "pageErr": [],
+  "requestsCount": 14,
+  "requestList": [
+    {
+      "url": "http://127.0.0.1:3105/",
+      "resourceType": "document",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/bodoni_latin_400-s.p.2aby03jc8bj_i.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/41uqm4v64uy5t.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/0p-49o75j6yez.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/2z13zt20_z7pg.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/brand/jk-textura-transparente.webp",
+      "resourceType": "image",
+      "method": "GET"
+    }
+  ]
+}

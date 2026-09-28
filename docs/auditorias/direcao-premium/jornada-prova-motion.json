@@ -1,0 +1,42 @@
+[
+  {
+    "mode": "normal",
+    "waiting": 0,
+    "scroll": 1261.5,
+    "response": 0.20000001788139343,
+    "lcp": 144,
+    "videos": 0,
+    "media": []
+  },
+  {
+    "mode": "slow",
+    "waiting": 0,
+    "scroll": 2656.800000011921,
+    "response": 0.19999998807907104,
+    "lcp": 504,
+    "videos": 0,
+    "media": []
+  },
+  {
+    "mode": "save-data",
+    "waiting": 0,
+    "scroll": 1267.5,
+    "response": 602.0999999940395,
+    "lcp": 120,
+    "videos": 0,
+    "media": []
+  },
+  {
+    "mode": "reduced",
+    "waiting": 0,
+    "scroll": 1297.7999999821186,
+    "response": 0.20000001788139343,
+    "lcp": 132,
+    "videos": 0,
+    "media": []
+  },
+  {
+    "mode": "no-js",
+    "media": []
+  }
+]

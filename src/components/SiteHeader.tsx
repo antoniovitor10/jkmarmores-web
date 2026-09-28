@@ -4,9 +4,9 @@ import { Brand } from "./Brand";
 import { linkWhatsApp } from "@/lib/whatsapp";
 
 const nav = [
-  { href: "/", nome: "Início" }, { href: "/sobre/", nome: "A empresa" },
-  { href: "/materiais/", nome: "Materiais" }, { href: "/aplicacoes/", nome: "Aplicações" },
-  { href: "/galeria/", nome: "Galeria" }, { href: "/contato/", nome: "Contato" },
+  { href: "/sobre/", nome: "A empresa" },
+  { href: "/materiais/", nome: "Materiais" },
+  { href: "/contato/", nome: "Contato" },
 ];
 
 export function SiteHeader() {

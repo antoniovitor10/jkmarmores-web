@@ -1,0 +1,1076 @@
+{
+  "kind": "mobile",
+  "startedAt": "2026-09-28T12:19:37.163Z",
+  "elapsedMs": 12999,
+  "emulation": {
+    "viewport": "393x873",
+    "CPU": "4x",
+    "network": "150ms / 200KB/s down / 75KB/s up",
+    "device": "Moto G Power emulado; sem aparelho real"
+  },
+  "navError": null,
+  "entry": {
+    "connection": {
+      "saveData": false,
+      "effectiveType": "4g",
+      "downlink": 1.45
+    },
+    "url": "http://127.0.0.1:3105/",
+    "title": "Marmoraria em Barueri/SP | JK Marmores e Granitos",
+    "nav": {
+      "type": "navigate",
+      "domContentLoaded": 331.5,
+      "load": 1432.9000000059605,
+      "domInteractive": 331.09999999403954,
+      "transferSize": 33962,
+      "encodedBodySize": 33662
+    },
+    "paints": {
+      "first-paint": 504,
+      "first-contentful-paint": 504
+    },
+    "fonts": "loaded",
+    "fontsLoaded": true,
+    "images": [
+      {
+        "src": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+        "complete": true,
+        "naturalWidth": 240,
+        "naturalHeight": 146,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/capa-editorial-mobile-768.avif",
+        "complete": true,
+        "naturalWidth": 393,
+        "naturalHeight": 503,
+        "loading": "eager",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/material-detalhe-quente-1600.webp",
+        "complete": false,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "lazy",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/brand/jk-logo-480.webp",
+        "complete": false,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "lazy",
+        "decode": null
+      }
+    ],
+    "videos": [],
+    "scripts": [
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/41uqm4v64uy5t.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0p-49o75j6yez.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/2z13zt20_z7pg.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 85
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 361
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 57
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 845
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 43
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 24767
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 21098
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 22443
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 18137
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 4765
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/bodoni_latin_400-s.p.2aby03jc8bj_i.woff2",
+        "initiatorType": "link",
+        "startTime": 207.59999999403954,
+        "duration": 405.30000001192093,
+        "transferSize": 13320,
+        "encodedBodySize": 13020,
+        "decodedBodySize": 13020,
+        "requestStart": 215.19999998807907,
+        "responseEnd": 612.9000000059605
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+        "initiatorType": "link",
+        "startTime": 208.59999999403954,
+        "duration": 435.30000001192093,
+        "transferSize": 12136,
+        "encodedBodySize": 11836,
+        "decodedBodySize": 11836,
+        "requestStart": 215.69999998807907,
+        "responseEnd": 643.9000000059605
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/capa-editorial-mobile-768.avif",
+        "initiatorType": "link",
+        "startTime": 209,
+        "duration": 419.30000001192093,
+        "transferSize": 11100,
+        "encodedBodySize": 10800,
+        "decodedBodySize": 10800,
+        "requestStart": 216.30000001192093,
+        "responseEnd": 628.3000000119209
+      },
+      {
+        "name": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+        "initiatorType": "link",
+        "startTime": 209.19999998807907,
+        "duration": 277.7000000178814,
+        "transferSize": 5830,
+        "encodedBodySize": 5530,
+        "decodedBodySize": 5530,
+        "requestStart": 216.30000001192093,
+        "responseEnd": 486.90000000596046
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+        "initiatorType": "link",
+        "startTime": 209.59999999403954,
+        "duration": 234.40000000596046,
+        "transferSize": 2270,
+        "encodedBodySize": 1970,
+        "decodedBodySize": 5364,
+        "requestStart": 226.90000000596046,
+        "responseEnd": 444
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+        "initiatorType": "script",
+        "startTime": 209.80000001192093,
+        "duration": 464.5,
+        "transferSize": 7914,
+        "encodedBodySize": 7614,
+        "decodedBodySize": 28907,
+        "requestStart": 321.90000000596046,
+        "responseEnd": 674.3000000119209
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+        "initiatorType": "script",
+        "startTime": 210,
+        "duration": 1093.699999988079,
+        "transferSize": 71928,
+        "encodedBodySize": 71628,
+        "decodedBodySize": 229156,
+        "requestStart": 444.40000000596046,
+        "responseEnd": 1303.699999988079
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+        "initiatorType": "script",
+        "startTime": 210.19999998807907,
+        "duration": 985.8000000119209,
+        "transferSize": 45403,
+        "encodedBodySize": 45103,
+        "decodedBodySize": 165229,
+        "requestStart": 487.30000001192093,
+        "responseEnd": 1196
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "initiatorType": "script",
+        "startTime": 210.59999999403954,
+        "duration": 647,
+        "transferSize": 4153,
+        "encodedBodySize": 3853,
+        "decodedBodySize": 9721,
+        "requestStart": 613.5,
+        "responseEnd": 857.5999999940395
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/41uqm4v64uy5t.js",
+        "initiatorType": "script",
+        "startTime": 210.80000001192093,
+        "duration": 676.8999999761581,
+        "transferSize": 4181,
+        "encodedBodySize": 3881,
+        "decodedBodySize": 14806,
+        "requestStart": 628.6999999880791,
+        "responseEnd": 887.6999999880791
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+        "initiatorType": "script",
+        "startTime": 211.19999998807907,
+        "duration": 691.7000000178814,
+        "transferSize": 3908,
+        "encodedBodySize": 3608,
+        "decodedBodySize": 8868,
+        "requestStart": 644.4000000059605,
+        "responseEnd": 902.9000000059605
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/0p-49o75j6yez.js",
+        "initiatorType": "script",
+        "startTime": 211.40000000596046,
+        "duration": 646.5,
+        "transferSize": 1409,
+        "encodedBodySize": 1109,
+        "decodedBodySize": 2167,
+        "requestStart": 674.8000000119209,
+        "responseEnd": 857.9000000059605
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/2z13zt20_z7pg.js",
+        "initiatorType": "script",
+        "startTime": 1501.800000011921,
+        "duration": 187,
+        "transferSize": 2033,
+        "encodedBodySize": 1733,
+        "decodedBodySize": 3759,
+        "requestStart": 1507.699999988079,
+        "responseEnd": 1688.800000011921
+      },
+      {
+        "name": "http://127.0.0.1:3105/brand/jk-textura-transparente.webp",
+        "initiatorType": "image",
+        "startTime": 1715.5999999940395,
+        "duration": 280.7000000178814,
+        "transferSize": 22938,
+        "encodedBodySize": 22638,
+        "decodedBodySize": 22638,
+        "requestStart": 1716.9000000059605,
+        "responseEnd": 1996.300000011921
+      }
+    ],
+    "bytes": 208523,
+    "reactPresent": true,
+    "audit": {
+      "longTasks": [
+        {
+          "start": 343.90000000596046,
+          "duration": 141,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 1307.300000011921,
+          "duration": 113,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        }
+      ],
+      "shifts": [],
+      "clicks": [],
+      "raf": 5,
+      "videos": [],
+      "reactCommits": [
+        {
+          "t": 1496.800000011921,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1515.300000011921,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1518.9000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1526.0999999940395,
+          "renderer": 1,
+          "hydrating": false
+        }
+      ],
+      "renderer": [
+        {
+          "t": 1350.699999988079,
+          "version": "19.3.0-canary-cbb046ab-20260731"
+        }
+      ]
+    }
+  },
+  "firstScroll": {
+    "wallMs": 1813,
+    "y": 0,
+    "scrollHeight": 8840
+  },
+  "targets": {
+    "menus": [
+      {
+        "tag": "A",
+        "text": "",
+        "aria": null,
+        "cls": "button menu-whatsapp",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      }
+    ],
+    "whatsapp": [
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "text": "Chamar no WhatsApp",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 204.875,
+          "y": 879.4000244140625,
+          "w": 172.125,
+          "h": 56
+        }
+      },
+      {
+        "text": "Chamar no WhatsApp",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 263.125,
+          "w": 176.125,
+          "h": 49.59375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20as%20refer%C3%AAncias%20no%20site%20da%20JK%20e%20quero%20conversar%20sobre%20uma%20pedra%20para%20meu%20espa%C3%A7o.",
+        "box": {
+          "x": 72,
+          "y": 4577.125,
+          "w": 126.125,
+          "h": 44
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20combina%C3%A7%C3%A3o%3A%20Cozinha%20com%20ilha%2C%20m%C3%A1rmore%20rosado%20e%20acabamento%20polido.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F%20A%20imagem%20%C3%A9%20ilustrativa%3B%20quero%20confirmar%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis.",
+        "box": {
+          "x": 24,
+          "y": 5712.71875,
+          "w": 193.859375,
+          "h": 63.09375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 7528.609375,
+          "w": 176.125,
+          "h": 49.59375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 8509.5625,
+          "w": 345,
+          "h": 44
+        }
+      }
+    ]
+  },
+  "menuResult": {
+    "ok": false,
+    "reason": "nenhum seletor de menu comum encontrado"
+  },
+  "waResult": {
+    "ok": false,
+    "error": "TimeoutError: locator.tap: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"wa.me\"],a[href*=\"whatsapp\" i]').first()\u001b[22m\n\u001b[2m    - locator resolved to <a class=\"button menu-whatsapp\" href=\"https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.\">Chamar no WhatsApp</a>\u001b[22m\n\u001b[2m  - attempting tap action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+    "wallMs": 4007
+  },
+  "interaction": {
+    "audit": {
+      "longTasks": [
+        {
+          "start": 343.90000000596046,
+          "duration": 141,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 1307.300000011921,
+          "duration": 113,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        }
+      ],
+      "shifts": [],
+      "clicks": [
+        {
+          "name": "pointerover",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5410.4000000059605,
+          "processingEnd": 5420.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5420.5,
+          "processingEnd": 5420.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5420.5,
+          "processingEnd": 5420.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5420.5,
+          "processingEnd": 5420.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5420.5,
+          "processingEnd": 5420.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5420.5,
+          "processingEnd": 5420.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5420.5,
+          "processingEnd": 5420.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5420.5,
+          "processingEnd": 5420.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5420.5,
+          "processingEnd": 5420.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerdown",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5420.5,
+          "processingEnd": 5421.0999999940395,
+          "interactionId": 4561
+        },
+        {
+          "name": "touchstart",
+          "entryType": "event",
+          "start": 5395,
+          "duration": 32,
+          "processingStart": 5421.300000011921,
+          "processingEnd": 5421.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "gotpointercapture",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5422.300000011921,
+          "processingEnd": 5422.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerup",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5422.699999988079,
+          "processingEnd": 5423.0999999940395,
+          "interactionId": 4561
+        },
+        {
+          "name": "lostpointercapture",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.0999999940395,
+          "processingEnd": 5423.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerout",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.300000011921,
+          "processingEnd": 5423.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.699999988079,
+          "processingEnd": 5423.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.699999988079,
+          "processingEnd": 5423.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.699999988079,
+          "processingEnd": 5423.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.699999988079,
+          "processingEnd": 5423.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.699999988079,
+          "processingEnd": 5423.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.699999988079,
+          "processingEnd": 5423.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.699999988079,
+          "processingEnd": 5423.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.699999988079,
+          "processingEnd": 5423.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "touchend",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5423.699999988079,
+          "processingEnd": 5423.9000000059605,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseover",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5425.0999999940395,
+          "processingEnd": 5425.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "mousedown",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5426.300000011921,
+          "processingEnd": 5426.300000011921,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseup",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5427.4000000059605,
+          "processingEnd": 5428.5,
+          "interactionId": 0
+        },
+        {
+          "name": "click",
+          "entryType": "event",
+          "start": 5395.0999999940395,
+          "duration": 32,
+          "processingStart": 5428.5,
+          "processingEnd": 5428.800000011921,
+          "interactionId": 4561
+        },
+        {
+          "name": "dragstart",
+          "entryType": "event",
+          "start": 5434.0999999940395,
+          "duration": 48,
+          "processingStart": 5461.800000011921,
+          "processingEnd": 5464.0999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointercancel",
+          "entryType": "event",
+          "start": 5445.5999999940395,
+          "duration": 32,
+          "processingStart": 5476.5,
+          "processingEnd": 5477.0999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerout",
+          "entryType": "event",
+          "start": 5445.5999999940395,
+          "duration": 32,
+          "processingStart": 5477.0999999940395,
+          "processingEnd": 5477.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5445.5999999940395,
+          "duration": 32,
+          "processingStart": 5477.5,
+          "processingEnd": 5477.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5445.5999999940395,
+          "duration": 32,
+          "processingStart": 5477.5,
+          "processingEnd": 5477.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5445.5999999940395,
+          "duration": 32,
+          "processingStart": 5477.5,
+          "processingEnd": 5477.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5445.5999999940395,
+          "duration": 32,
+          "processingStart": 5477.5,
+          "processingEnd": 5477.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5445.5999999940395,
+          "duration": 32,
+          "processingStart": 5477.5,
+          "processingEnd": 5477.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5445.5999999940395,
+          "duration": 32,
+          "processingStart": 5477.5,
+          "processingEnd": 5477.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5445.5999999940395,
+          "duration": 32,
+          "processingStart": 5477.5,
+          "processingEnd": 5477.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5445.5999999940395,
+          "duration": 32,
+          "processingStart": 5477.5,
+          "processingEnd": 5477.5,
+          "interactionId": 0
+        }
+      ],
+      "raf": 11,
+      "videos": [],
+      "reactCommits": [
+        {
+          "t": 1496.800000011921,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1515.300000011921,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1518.9000000059605,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1526.0999999940395,
+          "renderer": 1,
+          "hydrating": false
+        }
+      ],
+      "renderer": [
+        {
+          "t": 1350.699999988079,
+          "version": "19.3.0-canary-cbb046ab-20260731"
+        }
+      ]
+    },
+    "fonts": "loaded",
+    "videos": [],
+    "scrollY": 0,
+    "resourceBytes": 208523
+  },
+  "consoleErr": [],
+  "pageErr": [],
+  "requestsCount": 15,
+  "requestList": [
+    {
+      "url": "http://127.0.0.1:3105/",
+      "resourceType": "document",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/bodoni_latin_400-s.p.2aby03jc8bj_i.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/capa-editorial-mobile-768.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/brand/jk-monograma-240.webp",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/41uqm4v64uy5t.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/0p-49o75j6yez.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/2z13zt20_z7pg.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/brand/jk-textura-transparente.webp",
+      "resourceType": "image",
+      "method": "GET"
+    }
+  ]
+}

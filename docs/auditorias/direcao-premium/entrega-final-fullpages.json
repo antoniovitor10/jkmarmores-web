@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "home",
+    "width": 390,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "sobre",
+    "width": 390,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "materiais",
+    "width": 390,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "contato",
+    "width": 390,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "aplicacoes",
+    "width": 390,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "galeria",
+    "width": 390,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "home",
+    "width": 1440,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "sobre",
+    "width": 1440,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "materiais",
+    "width": 1440,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "contato",
+    "width": 1440,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "aplicacoes",
+    "width": 1440,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  },
+  {
+    "slug": "galeria",
+    "width": 1440,
+    "overflow": false,
+    "mode": "prefers-reduced-motion: reduce"
+  }
+]
