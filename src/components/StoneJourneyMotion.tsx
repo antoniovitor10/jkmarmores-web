@@ -13,6 +13,19 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
   useEffect(() => {
     const el = root.current;
     if (!el) return;
+    // Uma observação para as imagens HTML; sem quatro estados/montagens React.
+    // Também funciona no modo estático por preferência ou economia de dados.
+    const images = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return;
+      el.querySelectorAll<HTMLSourceElement>("[data-journey-image] source").forEach(source => {
+        source.srcset = source.dataset.srcset!;
+      });
+      el.querySelectorAll<HTMLImageElement>("[data-journey-image] img").forEach(image => {
+        image.src = image.dataset.src!;
+      });
+      images.disconnect();
+    });
+    images.observe(el);
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
     const connection = (navigator as Navigator & { connection?: Connection }).connection;
     let dispose = () => {};
@@ -143,7 +156,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
     configure();
     reduced.addEventListener("change", configure);
     connection?.addEventListener("change", configure);
-    return () => { dispose(); reduced.removeEventListener("change", configure); connection?.removeEventListener("change", configure); };
+    return () => { images.disconnect(); dispose(); reduced.removeEventListener("change", configure); connection?.removeEventListener("change", configure); };
   }, [video]);
 
   return <div ref={root} className="journey-track" data-enhanced="true">

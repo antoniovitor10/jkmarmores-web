@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { Foto } from "./Foto";
 import manifest from "@/generated/images.json";
 import { JourneyImage } from "./JourneyImage";
@@ -11,7 +12,7 @@ import { linkWhatsApp } from "@/lib/whatsapp";
 
 export function StoneJourney() {
   return <section id="jornada-pedra" className={`stone-journey ${homeDisplay.variable} ${homeBody.variable}`} aria-labelledby="jornada-titulo">
-    <StoneJourneyMotion video={stoneJourneyVideo}>
+    <Suspense><StoneJourneyMotion video={stoneJourneyVideo}>
       <div className="journey-sticky">
         <div className="journey-heading">
           <p>ESTUDO DE MATÉRIA</p>
@@ -35,7 +36,7 @@ export function StoneJourney() {
           <span className="journey-mask-footer">Da escala da chapa ao detalhe da superfície.<br />Continue a rolagem.</span>
         </div>
       </div>
-    </StoneJourneyMotion>
+    </StoneJourneyMotion></Suspense>
     <div className="journey-contact"><a href={linkWhatsApp(institucional.jornadaCta.mensagem, conteudo.empresa.whatsapp)}>{institucional.jornadaCta.texto}</a></div>
   </section>;
 }

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter, MobileQuoteDock } from "@/components/SiteFooter";
@@ -27,7 +28,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <SiteHeader />
     <MobileQuoteDock />
     {children}
-    <SiteFooter />
+    <Suspense><SiteFooter /></Suspense>
     <JsonLd dados={{ "@context": "https://schema.org", "@type": "WebSite", url: siteUrl }} />
     {dadosEmpresa && <JsonLd dados={dadosEmpresa} />}
   </body></html>;

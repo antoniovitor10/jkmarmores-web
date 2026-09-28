@@ -26,3 +26,9 @@ ResizeObserver conserva dimensões do palco e das imagens da jornada. Eliminadas
 Cinco amostras antes: mediana simulate LCP2418,7ms/TBT19ms/CLS0. A amostra exploratória layout teve LCP2345ms/TBT33ms/CLS0, tarefa máxima279ms: ainda fora da meta100ms. O primeiro Layout caiu de273 objetos/294,8ms para50 objetos/82,7ms; a jornada próxima ao viewport ainda entra no cálculo seguinte. Estes dados exploratórios não substituem a mediana final.
 
 Lint e build homolog (incluindo check:pendencias) executados. Evidências de gestos: ../2026-09-27-fluidez-layout-gestos.json. Capturas antes/layout de390/1440 nesta pasta. Protocolo CSS conferido em [MDN content-visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/content-visibility) e [contain-intrinsic-size](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/contain-intrinsic-size).
+
+## Etapa hidratação
+
+Header, rodapé, menu nativo details, contato e textos já eram Server Components. JourneyImage agora também é: removidos quatro useState/useEffect e quatro observadores. Um observador da ilha da jornada ativa os src/srcset, inclusive em reduced-motion/Save-Data; fallback noscript preservado. Suspense nativo delimita capa, jornada e rodapé sem alterar HTML visual nem reescrever saída do Next. Loader do configurador intocado.
+
+Lint/build homolog/check:pendencias e check-short-motion aprovados (390/1440, avanço/reversão, quatro etapas, reduced-motion, Save-Data e sem JS). Amostra intermediária simulate: LCP2346,5ms/TBT35,1ms/CLS0; tarefa máxima275ms. As metas ainda dependem da comparação final; não atribuir uma melhora não observada à hidratação.

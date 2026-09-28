@@ -333,6 +333,58 @@
         "maxTask": 279,
         "entryBlocking": 302
       }
+    },
+    "hidratacao": {
+      "runs": [
+        {
+          "run": 1,
+          "lcp": 2346.508378857963,
+          "tbt": 35.09832422840759,
+          "cls": 0,
+          "maxTask": 275,
+          "entryBlocking": 318,
+          "tasks": [
+            {
+              "start": 320.40000000596046,
+              "duration": 275,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1376.7999999970198,
+              "duration": 143,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.7
+          }
+        }
+      ],
+      "median": {
+        "lcp": 2346.508378857963,
+        "tbt": 35.09832422840759,
+        "cls": 0,
+        "maxTask": 275,
+        "entryBlocking": 318
+      }
     }
   }
 }
