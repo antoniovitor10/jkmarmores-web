@@ -219,7 +219,7 @@ body:has(.home-page) { --page-bg:var(--cor-papel); --page-ink:var(--cor-texto); 
 }
 
 /* Reserva o espaço abaixo da dobra sem calcular todos os descendentes na entrada. */
-.home-page > :is(#configurador,.home-contact),body:has(.home-page) > .site-footer { content-visibility:auto; }
+.home-page > :is(#configurador,.home-contact,.request-story),body:has(.home-page) > .site-footer { content-visibility:auto; }
 .home-page > #configurador { contain-intrinsic-block-size:auto calc(100svh + 210px); width:100%; max-width:none; padding-inline:max(40px,calc((100% - 1280px)/2)); }
 .home-page > .home-contact { contain-intrinsic-block-size:auto calc((min(100vw - 80px,1280px) - clamp(40px,8vw,112px))*0.625 + 27px); }
 body:has(.home-page) > .site-footer { contain-intrinsic-block-size:auto 409px; }
@@ -230,3 +230,5 @@ body:has(.home-page) > .site-footer { contain-intrinsic-block-size:auto 409px; }
   .home-page > .home-contact { contain-intrinsic-block-size:auto 773px; }
   body:has(.home-page) > .site-footer { contain-intrinsic-block-size:auto 1035px; }
 }
+
+.home-page > .request-story { contain-intrinsic-block-size:auto 600px; }

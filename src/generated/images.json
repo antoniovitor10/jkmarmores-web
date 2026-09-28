@@ -206,5 +206,22 @@
         "webp": "/img/sequencia-04-aplicada-1600.webp"
       }
     ]
+  },
+  "capa-editorial-mobile": {
+    "width": 900,
+    "height": 1152,
+    "placeholder": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADQBACdASoYAB8APvlqpk6qpiMiMAwBUB8JZQDA3CHWrrnIxs+hafNpdy8V1m9SAAD+y4IyivQkYggEWZ7qRgae6/DS6YBty23YUu2JCJsDCTlcUFPkeA5S8AYV/p5vwgTJUF9o4WW3zRvKpYts8K+JjnCrgJrZ/Ts7a+9p5IPDRlQLKREENHIc2cAqDx6klpeRQghR8Q43AAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/capa-editorial-mobile-390.avif",
+        "webp": "/img/capa-editorial-mobile-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/capa-editorial-mobile-768.avif",
+        "webp": "/img/capa-editorial-mobile-768.webp"
+      }
+    ]
   }
 }

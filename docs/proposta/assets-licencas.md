@@ -189,3 +189,6 @@ Derivados locais do video aprovado assets/provas/capa-dolly-01.mp4: recorte 850x
 
 ## 28/09: fontes da direcao premium
 Bodoni Moda 400 (opsz 48), Owen Earl: https://github.com/google/fonts/tree/main/ofl/bodonimoda. Source Sans 3 400, Paul D. Hunt/Adobe: https://github.com/google/fonts/tree/main/ofl/sourcesans3. SIL OFL 1.1, copias locais OFL-BodoniModa.txt e OFL-SourceSans3.txt. Subsets WOFF2 latinos de 13.020 e 11.836 bytes, sem hinting. Hospedagem local e fallbacks metricos ajustados. Custo US$ 0. Nenhum envio a API.
+
+## 28/09: tratamento editorial e capa
+Sem geração ou request_id novo. Fontes pagas e direitos permanecem os registrados acima; originais intactos. scripts/editorial-image.mjs aplica Sharp no build: saturação 0,86; ganho RGB 0,92/0,91/0,90 e offset 10/9/8; grão monocromático determinista de amplitude 2,4/255. Derivados AVIF qualidade 50 e WebP 72. O recorte móvel da capa parte de material-detalhe-quente.png em x160/y0, 900x1152, sem ampliação. Logo e imagens do configurador não recebem esse tratamento. A capa usa uma imagem, conforme a nova direção; fontes dos vídeos pagos ficam preservadas no acervo. Aviso IA único no rodapé e alt ilustrativo nas imagens. Custo desta entrega US$ 0.

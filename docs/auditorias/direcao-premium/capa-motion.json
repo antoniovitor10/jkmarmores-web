@@ -1,0 +1,45 @@
+[
+  {
+    "mode": "normal",
+    "waiting": 0,
+    "scroll": 1328.300000011921,
+    "response": 605.4000000059605,
+    "lcp": 160,
+    "videos": 2,
+    "media": [
+      "http://127.0.0.1:3105/video/jornada-1-mobile.mp4",
+      "http://127.0.0.1:3105/video/jornada-2-mobile.mp4"
+    ]
+  },
+  {
+    "mode": "slow",
+    "waiting": 0,
+    "scroll": 3007.800000011921,
+    "response": 0.19999998807907104,
+    "lcp": 552,
+    "videos": 0,
+    "media": []
+  },
+  {
+    "mode": "save-data",
+    "waiting": 0,
+    "scroll": 1333.199999988079,
+    "response": 0.30000001192092896,
+    "lcp": 140,
+    "videos": 0,
+    "media": []
+  },
+  {
+    "mode": "reduced",
+    "waiting": 0,
+    "scroll": 1362.699999988079,
+    "response": 614.8000000119209,
+    "lcp": 152,
+    "videos": 0,
+    "media": []
+  },
+  {
+    "mode": "no-js",
+    "media": []
+  }
+]
