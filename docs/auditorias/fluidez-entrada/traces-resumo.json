@@ -1,0 +1,490 @@
+{
+  "antes": [
+    {
+      "run": "1",
+      "events": [
+        {
+          "event": "UpdateLayoutTree",
+          "atMs": 331.896,
+          "durationMs": 109.732,
+          "args": {
+            "beginData": {
+              "frame": "46C7F1947A6C542D94234D6E63B47966"
+            },
+            "elementCount": 195
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 450.116,
+          "durationMs": 294.795,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 273,
+              "frame": "46C7F1947A6C542D94234D6E63B47966",
+              "partialLayout": false,
+              "totalObjects": 273
+            }
+          }
+        },
+        {
+          "event": "EvaluateScript",
+          "atMs": 1371.738,
+          "durationMs": 131.27,
+          "args": {
+            "data": {
+              "columnNumber": 1,
+              "frame": "46C7F1947A6C542D94234D6E63B47966",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "2",
+      "events": [
+        {
+          "event": "UpdateLayoutTree",
+          "atMs": 341.338,
+          "durationMs": 120.194,
+          "args": {
+            "beginData": {
+              "frame": "8A838DB3663EBA68F4788BDB5AE334C8"
+            },
+            "elementCount": 195
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 471.033,
+          "durationMs": 317.242,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 273,
+              "frame": "8A838DB3663EBA68F4788BDB5AE334C8",
+              "partialLayout": false,
+              "totalObjects": 273
+            }
+          }
+        },
+        {
+          "event": "EvaluateScript",
+          "atMs": 1371.017,
+          "durationMs": 123.589,
+          "args": {
+            "data": {
+              "columnNumber": 1,
+              "frame": "8A838DB3663EBA68F4788BDB5AE334C8",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "3",
+      "events": [
+        {
+          "event": "UpdateLayoutTree",
+          "atMs": 321.854,
+          "durationMs": 93.142,
+          "args": {
+            "beginData": {
+              "frame": "C606CF214AAC96336BEDCC0E9460FFF3"
+            },
+            "elementCount": 195
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 415.004,
+          "durationMs": 271.387,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 273,
+              "frame": "C606CF214AAC96336BEDCC0E9460FFF3",
+              "partialLayout": false,
+              "totalObjects": 273
+            }
+          }
+        },
+        {
+          "event": "EvaluateScript",
+          "atMs": 1355.346,
+          "durationMs": 118.218,
+          "args": {
+            "data": {
+              "columnNumber": 1,
+              "frame": "C606CF214AAC96336BEDCC0E9460FFF3",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "4",
+      "events": [
+        {
+          "event": "UpdateLayoutTree",
+          "atMs": 336.626,
+          "durationMs": 101.162,
+          "args": {
+            "beginData": {
+              "frame": "29E9D493ACFAA5D96E688EA367E66EF2"
+            },
+            "elementCount": 195
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 445.137,
+          "durationMs": 257.608,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 273,
+              "frame": "29E9D493ACFAA5D96E688EA367E66EF2",
+              "partialLayout": false,
+              "totalObjects": 273
+            }
+          }
+        },
+        {
+          "event": "EvaluateScript",
+          "atMs": 1378.227,
+          "durationMs": 115.244,
+          "args": {
+            "data": {
+              "columnNumber": 1,
+              "frame": "29E9D493ACFAA5D96E688EA367E66EF2",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "5",
+      "events": [
+        {
+          "event": "UpdateLayoutTree",
+          "atMs": 347.449,
+          "durationMs": 93.927,
+          "args": {
+            "beginData": {
+              "frame": "4D7000B0ABB2FD99F743433CFB4CEFF8"
+            },
+            "elementCount": 195
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 447.469,
+          "durationMs": 294.163,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 273,
+              "frame": "4D7000B0ABB2FD99F743433CFB4CEFF8",
+              "partialLayout": false,
+              "totalObjects": 273
+            }
+          }
+        },
+        {
+          "event": "EvaluateScript",
+          "atMs": 1372.665,
+          "durationMs": 114.98,
+          "args": {
+            "data": {
+              "columnNumber": 1,
+              "frame": "4D7000B0ABB2FD99F743433CFB4CEFF8",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "depois": [
+    {
+      "run": "1",
+      "events": [
+        {
+          "event": "UpdateLayoutTree",
+          "atMs": 343.27,
+          "durationMs": 56.02,
+          "args": {
+            "beginData": {
+              "frame": "A6176A200D5613DF81A9B2915A8321A3"
+            },
+            "elementCount": 59
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 407.398,
+          "durationMs": 82.444,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 50,
+              "frame": "A6176A200D5613DF81A9B2915A8321A3",
+              "partialLayout": false,
+              "totalObjects": 50
+            }
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 506.7,
+          "durationMs": 115.771,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 126,
+              "frame": "A6176A200D5613DF81A9B2915A8321A3",
+              "partialLayout": false,
+              "totalObjects": 171
+            }
+          }
+        },
+        {
+          "event": "EvaluateScript",
+          "atMs": 1386.758,
+          "durationMs": 115.75,
+          "args": {
+            "data": {
+              "columnNumber": 1,
+              "frame": "A6176A200D5613DF81A9B2915A8321A3",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "2",
+      "events": [
+        {
+          "event": "UpdateLayoutTree",
+          "atMs": 333.593,
+          "durationMs": 57.425,
+          "args": {
+            "beginData": {
+              "frame": "4A5955D6FDE534A08F92ECEB6BA71083"
+            },
+            "elementCount": 56
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 391.028,
+          "durationMs": 74.185,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 50,
+              "frame": "4A5955D6FDE534A08F92ECEB6BA71083",
+              "partialLayout": false,
+              "totalObjects": 50
+            }
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 481.901,
+          "durationMs": 106.403,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 126,
+              "frame": "4A5955D6FDE534A08F92ECEB6BA71083",
+              "partialLayout": false,
+              "totalObjects": 171
+            }
+          }
+        },
+        {
+          "event": "EvaluateScript",
+          "atMs": 1355.233,
+          "durationMs": 119.479,
+          "args": {
+            "data": {
+              "columnNumber": 1,
+              "frame": "4A5955D6FDE534A08F92ECEB6BA71083",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "3",
+      "events": [
+        {
+          "event": "Layout",
+          "atMs": 375.297,
+          "durationMs": 77.512,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 50,
+              "frame": "6E257698073545E71EE13A450F0953DD",
+              "partialLayout": false,
+              "totalObjects": 50
+            }
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 469.546,
+          "durationMs": 115.356,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 126,
+              "frame": "6E257698073545E71EE13A450F0953DD",
+              "partialLayout": false,
+              "totalObjects": 171
+            }
+          }
+        },
+        {
+          "event": "EvaluateScript",
+          "atMs": 1353.903,
+          "durationMs": 113.661,
+          "args": {
+            "data": {
+              "columnNumber": 1,
+              "frame": "6E257698073545E71EE13A450F0953DD",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "4",
+      "events": [
+        {
+          "event": "UpdateLayoutTree",
+          "atMs": 330.152,
+          "durationMs": 51.966,
+          "args": {
+            "beginData": {
+              "frame": "E50741B11F6E364124BC92BC87B03D9E"
+            },
+            "elementCount": 56
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 382.125,
+          "durationMs": 76.082,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 50,
+              "frame": "E50741B11F6E364124BC92BC87B03D9E",
+              "partialLayout": false,
+              "totalObjects": 50
+            }
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 473.801,
+          "durationMs": 98.983,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 126,
+              "frame": "E50741B11F6E364124BC92BC87B03D9E",
+              "partialLayout": false,
+              "totalObjects": 171
+            }
+          }
+        },
+        {
+          "event": "EvaluateScript",
+          "atMs": 1352.91,
+          "durationMs": 109.068,
+          "args": {
+            "data": {
+              "columnNumber": 1,
+              "frame": "E50741B11F6E364124BC92BC87B03D9E",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "run": "5",
+      "events": [
+        {
+          "event": "UpdateLayoutTree",
+          "atMs": 326.92,
+          "durationMs": 53.935,
+          "args": {
+            "beginData": {
+              "frame": "6384968F2C1522A8BEB897ACF37B7F17"
+            },
+            "elementCount": 56
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 380.862,
+          "durationMs": 81.35,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 50,
+              "frame": "6384968F2C1522A8BEB897ACF37B7F17",
+              "partialLayout": false,
+              "totalObjects": 50
+            }
+          }
+        },
+        {
+          "event": "Layout",
+          "atMs": 476.727,
+          "durationMs": 105.705,
+          "args": {
+            "beginData": {
+              "dirtyObjects": 126,
+              "frame": "6384968F2C1522A8BEB897ACF37B7F17",
+              "partialLayout": false,
+              "totalObjects": 171
+            }
+          }
+        },
+        {
+          "event": "EvaluateScript",
+          "atMs": 1353.019,
+          "durationMs": 115.042,
+          "args": {
+            "data": {
+              "columnNumber": 1,
+              "frame": "6384968F2C1522A8BEB897ACF37B7F17",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

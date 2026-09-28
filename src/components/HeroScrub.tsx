@@ -29,6 +29,7 @@ export function HeroScrub({ children }: { children: ReactNode }) {
       let failed = false;
       let ready = false;
       let scrolled = false;
+      let visible = false;
       let disposed = false;
       const allowMedia = async () => {
         try { await poster.decode(); } catch { return; }
@@ -37,13 +38,14 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         }));
       };
       function prepare() {
-        // Apenas o vídeo espera a primeira rolagem e a pintura do pôster.
-        // A hidratação de menu, links e formulário continua nativa do Next.
-        if (media || failed || !ready || !scrolled) return;
+        // Aquece o clipe somente depois de load, decode e duas pinturas do pôster.
+        // O gesto começa a reprodução; menu e links hidratam normalmente.
+        if (media || failed || !ready || !visible) return;
         media = document.createElement("video");
         media.muted = true;
         media.playsInline = true;
-        media.preload = "none";
+        media.preload = "auto";
+        media.poster = poster.currentSrc;
         media.setAttribute("aria-hidden", "true");
         media.className = styles.video;
         const mobile = innerWidth <= 700;
@@ -63,9 +65,9 @@ export function HeroScrub({ children }: { children: ReactNode }) {
       }
       function render() {
         raf = 0;
+        prepare();
         // O estado inicial já vem do CSS; evita layout e escrita de estilos no LCP.
         if (!scrolled && scrollY < 12) return;
-        const rect = el.getBoundingClientRect();
         const focused = intro.contains(document.activeElement);
         if (scrollY > 32) advanced = true;
         if (scrollY < 12) advanced = false;
@@ -78,15 +80,19 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         intro.style.transform = `translateX(${-24 * (1 - opacity)}px)`;
         intro.inert = opacity === 0;
         el.style.setProperty("--cover-progress", String(advanced ? 1 : 0));
-        if (rect.bottom > 0 && rect.top < innerHeight) prepare();
         if (media && media.readyState >= 2 && Number.isFinite(media.duration)) {
           media.style.opacity = "1";
-          motion?.pause(rect.bottom <= 0 || rect.top >= innerHeight || document.hidden);
+          motion?.pause(!visible || document.hidden);
           motion?.to(advanced ? 1 : 0);
         }
       }
       function schedule() { if (!disposed && !raf) raf = requestAnimationFrame(render); }
       function scroll() { scrolled = true; schedule(); }
+      const observer = new IntersectionObserver(([entry]) => {
+        visible = entry.isIntersecting;
+        schedule();
+      });
+      observer.observe(el);
       intro.addEventListener("focusin", schedule);
       intro.addEventListener("focusout", schedule);
       addEventListener("scroll", scroll, { passive: true });
@@ -97,6 +103,7 @@ export function HeroScrub({ children }: { children: ReactNode }) {
       schedule();
       dispose = () => {
         disposed = true;
+        observer.disconnect();
         cancelAnimationFrame(raf);
         removeEventListener("scroll", scroll);
         removeEventListener("resize", schedule);

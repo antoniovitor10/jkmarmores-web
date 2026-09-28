@@ -14,7 +14,8 @@ try {
     await page.setViewport({width,height:width===390?844:900,isMobile:width===390,hasTouch:width===390});
     await page.goto('http://127.0.0.1:3105/',{waitUntil:'networkidle0'});
     await page.evaluate(()=>document.documentElement.style.scrollBehavior='auto');
-    assert.equal(await page.$$eval('video',v=>v.length),0);
+    assert.equal(await page.$$eval('.home-hero video',v=>v.length),1);
+    assert.equal(await page.$eval('.home-hero video',v=>v.currentTime),0,'Preload não pode iniciar reprodução');
     const start=Date.now();
     if(width===390) {
       const cdp=await page.createCDPSession();
