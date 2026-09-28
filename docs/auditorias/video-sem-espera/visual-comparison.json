@@ -1,0 +1,81 @@
+[
+  {
+    "width": 390,
+    "section": "capa",
+    "sameSize": true,
+    "changedChannels": 6,
+    "fraction": 6.0760724267833275e-06,
+    "bbox": [
+      123,
+      748,
+      124,
+      750
+    ]
+  },
+  {
+    "width": 390,
+    "section": "pedra",
+    "sameSize": true,
+    "changedChannels": 0,
+    "fraction": 0.0,
+    "bbox": null
+  },
+  {
+    "width": 390,
+    "section": "contato",
+    "sameSize": true,
+    "changedChannels": 0,
+    "fraction": 0.0,
+    "bbox": null
+  },
+  {
+    "width": 390,
+    "section": "rodape",
+    "sameSize": true,
+    "changedChannels": 0,
+    "fraction": 0.0,
+    "bbox": null
+  },
+  {
+    "width": 1440,
+    "section": "capa",
+    "sameSize": true,
+    "changedChannels": 3498971,
+    "fraction": 0.8999411008230452,
+    "bbox": [
+      0,
+      0,
+      1440,
+      900
+    ]
+  },
+  {
+    "width": 1440,
+    "section": "pedra",
+    "sameSize": true,
+    "changedChannels": 1,
+    "fraction": 2.57201646090535e-07,
+    "bbox": [
+      461,
+      317,
+      462,
+      318
+    ]
+  },
+  {
+    "width": 1440,
+    "section": "contato",
+    "sameSize": true,
+    "changedChannels": 0,
+    "fraction": 0.0,
+    "bbox": null
+  },
+  {
+    "width": 1440,
+    "section": "rodape",
+    "sameSize": true,
+    "changedChannels": 0,
+    "fraction": 0.0,
+    "bbox": null
+  }
+]

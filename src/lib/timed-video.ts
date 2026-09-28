@@ -1,6 +1,6 @@
 // Movimento em tempo, disparado por um limiar; nunca controla a rolagem.
 export function timedVideo(video: HTMLVideoElement) {
-  let destination = 0;
+  let destination = -1;
   let stopped = false;
   let disposed = false;
   let raf = 0;
@@ -23,7 +23,7 @@ export function timedVideo(video: HTMLVideoElement) {
   function run() {
     cancelAnimationFrame(raf);
     video.pause();
-    if (disposed || stopped || video.readyState < 2 || !Number.isFinite(video.duration)) return;
+    if (disposed || stopped || destination < 0 || video.readyState < 3 || !Number.isFinite(video.duration)) return;
     from = video.currentTime;
     const end = destination * Math.max(0, video.duration - .05);
     if (Math.abs(from - end) < .06) { video.dataset.settled = String(destination); return; }
@@ -35,10 +35,9 @@ export function timedVideo(video: HTMLVideoElement) {
     }
     raf = requestAnimationFrame(tick);
   }
-  video.addEventListener('loadeddata', run);
   return {
     to(value: number) { if (destination !== value) { destination = value; run(); } },
     pause(value: boolean) { if (stopped === value) return; stopped = value; run(); },
-    dispose() { disposed = true; cancelAnimationFrame(raf); video.pause(); video.removeEventListener('loadeddata', run); },
+    dispose() { disposed = true; cancelAnimationFrame(raf); video.pause(); },
   };
 }

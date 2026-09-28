@@ -1,0 +1,35 @@
+[
+  {
+    "mode": "no-js",
+    "videos": 0,
+    "frames": [
+      "static",
+      "static",
+      "static",
+      "static"
+    ],
+    "skip": "#conteudo"
+  },
+  {
+    "mode": "save-data",
+    "videos": 0,
+    "frames": [
+      "static",
+      "static",
+      "static",
+      "static"
+    ],
+    "skip": "#conteudo"
+  },
+  {
+    "mode": "reduced",
+    "videos": 0,
+    "frames": [
+      "static",
+      "static",
+      "static",
+      "static"
+    ],
+    "skip": "#conteudo"
+  }
+]

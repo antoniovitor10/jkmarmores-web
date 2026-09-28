@@ -1,0 +1,597 @@
+[
+  {
+    "mode": "normal4g",
+    "swipeWallMs": 2563,
+    "requests": [
+      {
+        "url": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"Windows\"",
+          "referer": "http://127.0.0.1:3105/",
+          "accept-encoding": "identity;q=1, *;q=0",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "range": "bytes=0-",
+          "sec-ch-ua-mobile": "?0"
+        }
+      },
+      {
+        "url": "http://127.0.0.1:3105/video/jornada-1-mobile.mp4",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"Windows\"",
+          "referer": "http://127.0.0.1:3105/",
+          "accept-encoding": "identity;q=1, *;q=0",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "range": "bytes=0-",
+          "sec-ch-ua-mobile": "?0"
+        }
+      }
+    ],
+    "before": {
+      "now": 1460.8999999910593,
+      "saveData": false,
+      "overrideError": null,
+      "video": {
+        "src": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+        "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif",
+        "paused": true,
+        "currentTime": 0,
+        "readyState": 4,
+        "networkState": 1,
+        "preload": "auto",
+        "autoplay": false,
+        "videoWidth": 1280,
+        "videoHeight": 720
+      },
+      "videoResource": {
+        "start": 545.2999999970198,
+        "end": 550.0999999940395,
+        "transferSize": 332856,
+        "encoded": 332556
+      },
+      "events": [
+        {
+          "name": "loadstart",
+          "t": 550.0999999940395,
+          "time": 0,
+          "readyState": 0,
+          "networkState": 2
+        },
+        {
+          "name": "loadedmetadata",
+          "t": 558.1999999880791,
+          "time": 0,
+          "readyState": 1,
+          "networkState": 1
+        },
+        {
+          "name": "loadeddata",
+          "t": 592.0999999940395,
+          "time": 0,
+          "readyState": 4,
+          "networkState": 1
+        },
+        {
+          "name": "canplay",
+          "t": 592.5999999940395,
+          "time": 0,
+          "readyState": 4,
+          "networkState": 1
+        }
+      ],
+      "frames": [
+        {
+          "now": 586.6,
+          "mediaTime": 0,
+          "presentedFrames": 1
+        }
+      ]
+    },
+    "immediate": {
+      "at": 2118.199999988079,
+      "y": 393,
+      "progress": "1"
+    },
+    "after": {
+      "now": 3933,
+      "saveData": false,
+      "overrideError": null,
+      "video": {
+        "src": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+        "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif",
+        "paused": true,
+        "currentTime": 1.408333,
+        "readyState": 4,
+        "networkState": 1,
+        "preload": "auto",
+        "autoplay": false,
+        "videoWidth": 1280,
+        "videoHeight": 720
+      },
+      "videoResource": {
+        "start": 545.2999999970198,
+        "end": 550.0999999940395,
+        "transferSize": 332856,
+        "encoded": 332556
+      },
+      "events": [
+        {
+          "name": "loadstart",
+          "t": 550.0999999940395,
+          "time": 0,
+          "readyState": 0,
+          "networkState": 2
+        },
+        {
+          "name": "loadedmetadata",
+          "t": 558.1999999880791,
+          "time": 0,
+          "readyState": 1,
+          "networkState": 1
+        },
+        {
+          "name": "loadeddata",
+          "t": 592.0999999940395,
+          "time": 0,
+          "readyState": 4,
+          "networkState": 1
+        },
+        {
+          "name": "canplay",
+          "t": 592.5999999940395,
+          "time": 0,
+          "readyState": 4,
+          "networkState": 1
+        },
+        {
+          "name": "playing",
+          "t": 1540.0999999940395,
+          "time": 0.006703,
+          "readyState": 4,
+          "networkState": 1
+        },
+        {
+          "name": "timeupdate",
+          "t": 1799.5,
+          "time": 0.258468,
+          "readyState": 4,
+          "networkState": 1
+        },
+        {
+          "name": "timeupdate",
+          "t": 2062,
+          "time": 0.513408,
+          "readyState": 4,
+          "networkState": 1
+        },
+        {
+          "name": "timeupdate",
+          "t": 2328.3999999910593,
+          "time": 0.772152,
+          "readyState": 4,
+          "networkState": 1
+        },
+        {
+          "name": "timeupdate",
+          "t": 2596.5999999940395,
+          "time": 1.032659,
+          "readyState": 4,
+          "networkState": 1
+        },
+        {
+          "name": "timeupdate",
+          "t": 2858.5999999940395,
+          "time": 1.287161,
+          "readyState": 4,
+          "networkState": 1
+        },
+        {
+          "name": "timeupdate",
+          "t": 2992,
+          "time": 1.408333,
+          "readyState": 1,
+          "networkState": 1
+        },
+        {
+          "name": "pause",
+          "t": 2993.3999999910593,
+          "time": 1.408333,
+          "readyState": 1,
+          "networkState": 1
+        },
+        {
+          "name": "timeupdate",
+          "t": 2995.0999999940395,
+          "time": 1.408333,
+          "readyState": 4,
+          "networkState": 1
+        },
+        {
+          "name": "canplay",
+          "t": 2995.0999999940395,
+          "time": 1.408333,
+          "readyState": 4,
+          "networkState": 1
+        }
+      ],
+      "frames": [
+        {
+          "now": 586.6,
+          "mediaTime": 0,
+          "presentedFrames": 1
+        },
+        {
+          "now": 1595,
+          "mediaTime": 0.041667,
+          "presentedFrames": 2
+        },
+        {
+          "now": 1611.7,
+          "mediaTime": 0.083333,
+          "presentedFrames": 3
+        },
+        {
+          "now": 1653.3,
+          "mediaTime": 0.125,
+          "presentedFrames": 4
+        },
+        {
+          "now": 1695,
+          "mediaTime": 0.166667,
+          "presentedFrames": 5
+        },
+        {
+          "now": 1736.6,
+          "mediaTime": 0.208333,
+          "presentedFrames": 6
+        },
+        {
+          "now": 1778.4,
+          "mediaTime": 0.25,
+          "presentedFrames": 7
+        },
+        {
+          "now": 1828.3,
+          "mediaTime": 0.291667,
+          "presentedFrames": 8
+        },
+        {
+          "now": 1870,
+          "mediaTime": 0.333333,
+          "presentedFrames": 9
+        },
+        {
+          "now": 1911.6,
+          "mediaTime": 0.375,
+          "presentedFrames": 10
+        },
+        {
+          "now": 1953.2,
+          "mediaTime": 0.416667,
+          "presentedFrames": 11
+        },
+        {
+          "now": 1995,
+          "mediaTime": 0.458333,
+          "presentedFrames": 12
+        }
+      ]
+    }
+  },
+  {
+    "mode": "slow4g",
+    "swipeWallMs": 2515,
+    "requests": [
+      {
+        "url": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"Windows\"",
+          "referer": "http://127.0.0.1:3105/",
+          "accept-encoding": "identity;q=1, *;q=0",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "range": "bytes=0-",
+          "sec-ch-ua-mobile": "?0"
+        }
+      },
+      {
+        "url": "http://127.0.0.1:3105/video/jornada-1-mobile.mp4",
+        "method": "GET",
+        "headers": {
+          "sec-ch-ua-platform": "\"Windows\"",
+          "referer": "http://127.0.0.1:3105/",
+          "accept-encoding": "identity;q=1, *;q=0",
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+          "sec-ch-ua": "\"Google Chrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "range": "bytes=0-",
+          "sec-ch-ua-mobile": "?0"
+        }
+      }
+    ],
+    "before": {
+      "now": 1681.1000000089407,
+      "saveData": false,
+      "overrideError": null,
+      "video": {
+        "src": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+        "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif",
+        "paused": true,
+        "currentTime": 0,
+        "readyState": 0,
+        "networkState": 2,
+        "preload": "metadata",
+        "autoplay": false,
+        "videoWidth": 0,
+        "videoHeight": 0
+      },
+      "events": [
+        {
+          "name": "loadstart",
+          "t": 1593,
+          "time": 0,
+          "readyState": 0,
+          "networkState": 2
+        }
+      ],
+      "frames": []
+    },
+    "immediate": {
+      "at": 2292.9000000059605,
+      "y": 393,
+      "progress": "1"
+    },
+    "after": {
+      "now": 4103.79999999702,
+      "saveData": false,
+      "overrideError": null,
+      "video": {
+        "src": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+        "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif",
+        "paused": true,
+        "currentTime": 1.408333,
+        "readyState": 1,
+        "networkState": 2,
+        "preload": "metadata",
+        "autoplay": false,
+        "videoWidth": 1280,
+        "videoHeight": 720
+      },
+      "events": [
+        {
+          "name": "loadstart",
+          "t": 1593,
+          "time": 0,
+          "readyState": 0,
+          "networkState": 2
+        },
+        {
+          "name": "loadedmetadata",
+          "t": 2085.4000000059605,
+          "time": 0,
+          "readyState": 1,
+          "networkState": 2
+        },
+        {
+          "name": "loadeddata",
+          "t": 2092.7000000029802,
+          "time": 0,
+          "readyState": 3,
+          "networkState": 2
+        },
+        {
+          "name": "canplay",
+          "t": 2092.7000000029802,
+          "time": 0,
+          "readyState": 3,
+          "networkState": 2
+        },
+        {
+          "name": "playing",
+          "t": 2099.4000000059605,
+          "time": 0.00372,
+          "readyState": 3,
+          "networkState": 2
+        },
+        {
+          "name": "timeupdate",
+          "t": 2360.7000000029802,
+          "time": 0.257308,
+          "readyState": 4,
+          "networkState": 2
+        },
+        {
+          "name": "timeupdate",
+          "t": 2387.1000000089407,
+          "time": 0.282596,
+          "readyState": 2,
+          "networkState": 2
+        },
+        {
+          "name": "waiting",
+          "t": 2387.2999999970198,
+          "time": 0.282596,
+          "readyState": 2,
+          "networkState": 2
+        },
+        {
+          "name": "canplay",
+          "t": 2763.5,
+          "time": 0.28306,
+          "readyState": 3,
+          "networkState": 2
+        },
+        {
+          "name": "playing",
+          "t": 2763.5,
+          "time": 0.283087,
+          "readyState": 3,
+          "networkState": 2
+        },
+        {
+          "name": "timeupdate",
+          "t": 2908.1000000089407,
+          "time": 0.423271,
+          "readyState": 3,
+          "networkState": 2
+        },
+        {
+          "name": "timeupdate",
+          "t": 2978,
+          "time": 0.489874,
+          "readyState": 2,
+          "networkState": 2
+        },
+        {
+          "name": "waiting",
+          "t": 2978.2000000029802,
+          "time": 0.489874,
+          "readyState": 2,
+          "networkState": 2
+        },
+        {
+          "name": "canplay",
+          "t": 3092.1000000089407,
+          "time": 0.490441,
+          "readyState": 3,
+          "networkState": 2
+        },
+        {
+          "name": "playing",
+          "t": 3092.2999999970198,
+          "time": 0.490628,
+          "readyState": 3,
+          "networkState": 2
+        },
+        {
+          "name": "timeupdate",
+          "t": 3235.7999999970198,
+          "time": 0.629792,
+          "readyState": 3,
+          "networkState": 2
+        },
+        {
+          "name": "timeupdate",
+          "t": 3345.2000000029802,
+          "time": 0.73433,
+          "readyState": 2,
+          "networkState": 2
+        },
+        {
+          "name": "waiting",
+          "t": 3345.2999999970198,
+          "time": 0.73433,
+          "readyState": 2,
+          "networkState": 2
+        },
+        {
+          "name": "timeupdate",
+          "t": 3553.5,
+          "time": 1.408333,
+          "readyState": 1,
+          "networkState": 2
+        },
+        {
+          "name": "pause",
+          "t": 3553.7999999970198,
+          "time": 1.408333,
+          "readyState": 1,
+          "networkState": 2
+        }
+      ],
+      "frames": [
+        {
+          "now": 2092.9,
+          "mediaTime": 0,
+          "presentedFrames": 1
+        },
+        {
+          "now": 2134.6,
+          "mediaTime": 0.041667,
+          "presentedFrames": 2
+        },
+        {
+          "now": 2176.4,
+          "mediaTime": 0.083333,
+          "presentedFrames": 3
+        },
+        {
+          "now": 2218,
+          "mediaTime": 0.125,
+          "presentedFrames": 4
+        },
+        {
+          "now": 2259.7,
+          "mediaTime": 0.166667,
+          "presentedFrames": 5
+        },
+        {
+          "now": 2301.3,
+          "mediaTime": 0.208333,
+          "presentedFrames": 6
+        },
+        {
+          "now": 2342.9,
+          "mediaTime": 0.25,
+          "presentedFrames": 7
+        },
+        {
+          "now": 2767.9,
+          "mediaTime": 0.291667,
+          "presentedFrames": 8
+        },
+        {
+          "now": 2818,
+          "mediaTime": 0.333333,
+          "presentedFrames": 9
+        },
+        {
+          "now": 2859.7,
+          "mediaTime": 0.375,
+          "presentedFrames": 10
+        },
+        {
+          "now": 2901.3,
+          "mediaTime": 0.416667,
+          "presentedFrames": 11
+        },
+        {
+          "now": 2943,
+          "mediaTime": 0.458333,
+          "presentedFrames": 12
+        }
+      ]
+    }
+  },
+  {
+    "mode": "save-data",
+    "swipeWallMs": 2478,
+    "requests": [],
+    "before": {
+      "now": 1432.2999999970198,
+      "saveData": true,
+      "overrideError": null,
+      "video": null,
+      "videoResource": null,
+      "events": [],
+      "frames": []
+    },
+    "immediate": {
+      "at": 2030,
+      "y": 393,
+      "progress": ""
+    },
+    "after": {
+      "now": 3843.699999988079,
+      "saveData": true,
+      "overrideError": null,
+      "video": null,
+      "videoResource": null,
+      "events": [],
+      "frames": []
+    }
+  }
+]

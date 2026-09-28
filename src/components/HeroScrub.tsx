@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
-import { timedVideo } from "@/lib/timed-video";
+import { gestureMedia, loadBufferedClip } from "@/lib/gesture-media";
+import { motionNetworkPolicy, type MotionConnection } from "@/lib/motion-network";
 import styles from "./HomeHero.module.css";
-
-type Connection = EventTarget & { saveData?: boolean; effectiveType?: string };
 
 export function HeroScrub({ children }: { children: ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
@@ -12,18 +11,19 @@ export function HeroScrub({ children }: { children: ReactNode }) {
   useEffect(() => {
     const el = root.current!;
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
-    const connection = (navigator as Navigator & { connection?: Connection }).connection;
+    const connection = (navigator as Navigator & { connection?: MotionConnection }).connection;
     let dispose = () => {};
     function configure() {
       dispose();
       delete el.dataset.motion;
-      if (reduced.matches || connection?.saveData || /(^|-)2g|3g/.test(connection?.effectiveType ?? "")) return;
+      if (reduced.matches || connection?.saveData) return;
       el.dataset.motion = "true";
       const intro = el.querySelector<HTMLElement>("[data-hero-intro]")!;
       const figure = el.querySelector<HTMLElement>("figure")!;
       const poster = figure.querySelector<HTMLImageElement>("img")!;
       let media: HTMLVideoElement | null = null;
-      let motion: ReturnType<typeof timedVideo> | null = null;
+      let releaseMedia = () => {};
+      const motion = gestureMedia(el, poster, () => media);
       let advanced = false;
       let raf = 0;
       let failed = false;
@@ -34,7 +34,11 @@ export function HeroScrub({ children }: { children: ReactNode }) {
       const allowMedia = async () => {
         try { await poster.decode(); } catch { return; }
         requestAnimationFrame(() => requestAnimationFrame(() => {
-          if (!disposed) { ready = true; schedule(); }
+          if (!disposed) {
+            el.dataset.mediaPolicy = motionNetworkPolicy(connection);
+            ready = el.dataset.mediaPolicy === "allowed";
+            schedule();
+          }
         }));
       };
       function prepare() {
@@ -50,7 +54,7 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         media.className = styles.video;
         const mobile = innerWidth <= 700;
         const av1 = !!media.canPlayType('video/mp4; codecs="av01.0.04M.08"');
-        media.src = `/video/capa-${mobile ? "mobile" : "desktop"}-${av1 ? "av1" : "h264"}.mp4`;
+        const source = `/video/capa-${mobile ? "mobile" : "desktop"}-${av1 ? "av1" : "h264"}.mp4`;
         media.addEventListener("loadeddata", schedule);
         media.addEventListener("seeked", schedule);
         media.addEventListener("error", () => {
@@ -59,9 +63,8 @@ export function HeroScrub({ children }: { children: ReactNode }) {
           media = null;
           el.dataset.failed = "true";
         });
-        motion = timedVideo(media);
         figure.prepend(media);
-        media.load();
+        releaseMedia = loadBufferedClip(media, source);
       }
       function render() {
         raf = 0;
@@ -80,11 +83,8 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         intro.style.transform = `translateX(${-24 * (1 - opacity)}px)`;
         intro.inert = opacity === 0;
         el.style.setProperty("--cover-progress", String(advanced ? 1 : 0));
-        if (media && media.readyState >= 2 && Number.isFinite(media.duration)) {
-          media.style.opacity = "1";
-          motion?.pause(!visible || document.hidden);
-          motion?.to(advanced ? 1 : 0);
-        }
+        motion.pause(!visible || document.hidden);
+        motion.to(advanced ? 1 : 0);
       }
       function schedule() { if (!disposed && !raf) raf = requestAnimationFrame(render); }
       function scroll() { scrolled = true; schedule(); }
@@ -108,7 +108,7 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         removeEventListener("scroll", scroll);
         removeEventListener("resize", schedule);
         document.removeEventListener("visibilitychange", schedule);
-        motion?.dispose();
+        motion.dispose();
         removeEventListener("load", allowMedia);
         intro.removeEventListener("focusin", schedule);
         intro.removeEventListener("focusout", schedule);
@@ -117,7 +117,9 @@ export function HeroScrub({ children }: { children: ReactNode }) {
         media?.removeAttribute("src");
         media?.load();
         media?.remove();
+        releaseMedia();
         delete el.dataset.failed;
+        delete el.dataset.mediaPolicy;
         el.style.removeProperty("--cover-progress");
         el.style.removeProperty("--hero-veil");
         el.style.removeProperty("--hero-veil-duration");

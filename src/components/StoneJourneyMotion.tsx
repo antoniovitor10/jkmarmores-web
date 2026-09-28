@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
-import { timedVideo } from "@/lib/timed-video";
+import { gestureMedia, loadBufferedClip } from "@/lib/gesture-media";
+import { motionNetworkPolicy, type MotionConnection } from "@/lib/motion-network";
 import type { JourneyVideo } from "@/content/stone-journey";
 
-type Connection = EventTarget & { saveData?: boolean; effectiveType?: string };
 const clamp = (n: number) => Math.max(0, Math.min(1, n));
 
 export function StoneJourneyMotion({ children, video }: { children: ReactNode; video: JourneyVideo | null }) {
@@ -27,7 +27,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
     });
     images.observe(el);
     const reduced = matchMedia("(prefers-reduced-motion: reduce)");
-    const connection = (navigator as Navigator & { connection?: Connection }).connection;
+    const connection = (navigator as Navigator & { connection?: MotionConnection }).connection;
     let dispose = () => {};
     function configure() {
       dispose();
@@ -51,15 +51,22 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
       sizes.observe(sticky);
       pictures.forEach(picture => sizes.observe(picture));
       const media: (HTMLVideoElement | null)[] = frames.map(() => null);
-      const motions: (ReturnType<typeof timedVideo> | null)[] = frames.map(() => null);
+      const motions = frames.map((frame, index) => gestureMedia(frame, frame.querySelector("img")!, () => media[index]));
       const mediaSources: string[] = frames.map(() => "");
+      const releaseMedia = frames.map(() => () => {});
       let loaded = false;
       let visible = false;
       const failed = new Set<number>();
       let disposed = false;
       const allowMedia = () => {
         // Duas pinturas depois de load: poster e tipografia ja foram apresentados.
-        requestAnimationFrame(() => requestAnimationFrame(() => { if (!disposed) { loaded = true; schedule(); } }));
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          if (!disposed) {
+            el!.dataset.mediaPolicy = motionNetworkPolicy(connection);
+            loaded = el!.dataset.mediaPolicy === "allowed";
+            schedule();
+          }
+        }));
       };
       function prepareVideo(index: number) {
         if (!video || failed.has(index) || !loaded || !visible || /(^|-)2g|3g/.test(connection?.effectiveType ?? "")) return;
@@ -68,11 +75,13 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         const mobile = innerWidth <= 700;
         const source = mobile ? clip.mobile : clip.desktop;
         if (media[index] && mediaSources[index] !== source.src) {
-          motions[index]?.dispose();
+          motions[index].dispose();
           media[index]!.removeAttribute("src");
           media[index]!.load();
           media[index]!.remove();
+          releaseMedia[index]();
           media[index] = null;
+          motions[index] = gestureMedia(frames[index], frames[index].querySelector("img")!, () => media[index]);
         }
         if (media[index]) return;
         const totalBytes = video.clips.reduce((sum, item) => sum + (mobile ? item.mobile.bytes : item.desktop.bytes), 0);
@@ -80,7 +89,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         const item = document.createElement("video");
         item.muted = true;
         item.playsInline = true;
-        item.preload = "none";
+        item.preload = "auto";
         item.setAttribute("aria-hidden", "true");
         item.className = "journey-video";
         item.poster = frames[index].querySelector("img")?.currentSrc ?? "";
@@ -88,12 +97,10 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         item.addEventListener("loadeddata", schedule);
         item.addEventListener("seeked", schedule);
         mediaSources[index] = source.src;
-        item.src = source.src;
         // Cada vídeo pertence ao seu quadro: a transição aprovada continua no figure.
         frames[index].append(item);
         media[index] = item;
-        motions[index] = timedVideo(item);
-        item.load();
+        releaseMedia[index] = loadBufferedClip(item, source.src);
       }
       function render() {
         raf = 0;
@@ -116,16 +123,18 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
           frame.dataset.current = String(index === active);
         });
         prepareVideo(active);
-        if (position - active > .45 && active < 3) prepareVideo(active + 1);
+        // Aquece só a próxima etapa enquanto a atual está em cena, em rede elegível.
+        if (active < 3) prepareVideo(active + 1);
         if (position - active < .15 && active > 0) prepareVideo(active - 1);
-        media.forEach((item, index) => {
-          if (!item || item.readyState < 2 || !Number.isFinite(item.duration)) return;
-          motions[index]?.pause(!visible || document.hidden || reveal < 1 || index !== active);
-          motions[index]?.to(index <= active && reveal === 1 ? 1 : 0);
+        motions.forEach((motion, index) => {
+          motion.pause(!visible || document.hidden || reveal < 1 || index !== active);
+          motion.to(index <= active && reveal === 1 ? 1 : 0);
+          const item = media[index];
+          if (!item) return;
           const height = pictureHeights.get(pictures[index]);
           if (height) item.style.height = `${height}px`;
           item.style.bottom = "auto";
-          item.style.opacity = reveal === 1 ? "1" : "0";
+          item.style.opacity = reveal === 1 && frames[index].dataset.mediaMode === "video" ? "1" : "0";
         });
       }
       function schedule() { if (!disposed && !raf) raf = requestAnimationFrame(render); }
@@ -148,7 +157,9 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
         removeEventListener("load", allowMedia);
         cancelAnimationFrame(raf);
         media.forEach(item => { item?.pause(); item?.removeAttribute("src"); item?.load(); item?.remove(); });
+        releaseMedia.forEach(release => release());
         delete el.dataset.enhanced;
+        delete el.dataset.mediaPolicy;
         el.removeAttribute("style");
         frames.forEach(frame => { frame.removeAttribute("style"); delete frame.dataset.current; });
       };
