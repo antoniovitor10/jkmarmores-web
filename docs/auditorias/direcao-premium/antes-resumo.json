@@ -1,0 +1,77 @@
+{
+  "label": "antes",
+  "emulation": "393x873 CPU4x; Lighthouse simulate; entry CDP 200KiB/s 150ms",
+  "runs": [
+    {
+      "run": 1,
+      "lcp": 2408.88195,
+      "tbt": 18,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 172,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    {
+      "run": 2,
+      "lcp": 2407.197925,
+      "tbt": 26.5,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 121,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    {
+      "run": 3,
+      "lcp": 2407.9658249999998,
+      "tbt": 18,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 284,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    {
+      "run": 4,
+      "lcp": 2405.871075,
+      "tbt": 22.5,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 133,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    {
+      "run": 5,
+      "lcp": 2502.6636750000002,
+      "tbt": 35.5,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 129,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight",
+        "network-dependency-tree-insight"
+      ]
+    }
+  ],
+  "median": {
+    "lcp": 2407.9658249999998,
+    "tbt": 22.5,
+    "cls": 0
+  },
+  "maxLongTask": 284
+}

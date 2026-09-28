@@ -1,0 +1,72 @@
+{
+  "label": "fontes",
+  "emulation": "393x873 CPU4x; Lighthouse simulate; entry CDP 200KiB/s 150ms",
+  "runs": [
+    {
+      "run": 1,
+      "lcp": 2406.8710250000004,
+      "tbt": 19,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 134,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight"
+      ]
+    },
+    {
+      "run": 2,
+      "lcp": 2407.311675,
+      "tbt": 82.5,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 144,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight"
+      ]
+    },
+    {
+      "run": 3,
+      "lcp": 2408.9332249999998,
+      "tbt": 21.5,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 138,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight"
+      ]
+    },
+    {
+      "run": 4,
+      "lcp": 2409.8623,
+      "tbt": 23.5,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 138,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight"
+      ]
+    },
+    {
+      "run": 5,
+      "lcp": 2409.3737,
+      "tbt": 44,
+      "cls": 0,
+      "a11y": 100,
+      "longTaskMax": 180,
+      "failures": [
+        "unused-javascript",
+        "legacy-javascript-insight"
+      ]
+    }
+  ],
+  "median": {
+    "lcp": 2408.9332249999998,
+    "tbt": 23.5,
+    "cls": 0
+  },
+  "maxLongTask": 180
+}

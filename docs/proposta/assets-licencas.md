@@ -185,3 +185,7 @@ Barlow Regular 400 e Barlow Semi Condensed SemiBold 600: Google Fonts, https://g
 
 ## 28/09: close e monograma da capa (entrega C)
 Derivados locais do video aprovado assets/provas/capa-dolly-01.mp4: recorte 850x400 em x100/y315, H.264 CRF19, GOP6, sem audio, faststart, 1.893.993 bytes. Poster extraido do primeiro quadro (assets/images/capa-close.png), AVIF/WebP responsivos. Nenhuma geracao, request_id ou custo novo. Logo do header: recorte fiel do JPEG da cliente em x380/y276, 790x480, WebP240px; nao e o vetor oficial. Legenda global IA e textos alternativos mantidos. O SVG provisorio pertence a entrega D.
+
+
+## 28/09: fontes da direcao premium
+Bodoni Moda 400 (opsz 48), Owen Earl: https://github.com/google/fonts/tree/main/ofl/bodonimoda. Source Sans 3 400, Paul D. Hunt/Adobe: https://github.com/google/fonts/tree/main/ofl/sourcesans3. SIL OFL 1.1, copias locais OFL-BodoniModa.txt e OFL-SourceSans3.txt. Subsets WOFF2 latinos de 13.020 e 11.836 bytes, sem hinting. Hospedagem local e fallbacks metricos ajustados. Custo US$ 0. Nenhum envio a API.
