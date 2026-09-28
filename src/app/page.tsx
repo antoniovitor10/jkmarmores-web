@@ -14,7 +14,7 @@ export default function Inicio() {
   return <main id="conteudo" className="home-page">
     <HomeHero />
     <StoneJourney />
-    <section id="configurador" className="container section-space"><div className="split-heading"><SectionHeading number="03" label="EXPLORE EM 3D" title="Veja como a escolha muda o ambiente." /><p>Compare composições, materiais e acabamentos em uma maquete ilustrativa. As amostras são de demonstração e não representam o catálogo da JK.</p></div><Configurador /></section>
+    <section id="configurador" className="container section-space" style={{ color: "var(--cor-texto)", background: "var(--cor-fundo)" }}><div className="split-heading"><SectionHeading number="03" label="AMBIENTES E PEDRAS" title="Veja a pedra no ambiente." /><p>Escolha um ambiente e um tom de pedra para encontrar uma referência para o seu espaço.</p></div><Configurador /></section>
     <section className="request-story"><div className="container"><h2>Como pedir orçamento</h2><RequestSteps /><div className="actions"><SiteLink href="/materiais/">Materiais</SiteLink><SiteLink href="/aplicacoes/">Aplicações</SiteLink></div></div></section>
     <section id="orcamento" className="section-space editorial-motion home-contact"><div className="container home-contact-grid">
       <Illustration id="material-detalhe-quente" alt="Detalhe ilustrativo de pedra rosada, com veios caramelo e borda em meia-esquadria." />

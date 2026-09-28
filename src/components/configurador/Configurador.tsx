@@ -1,55 +1,21 @@
-/* eslint-disable @next/next/no-img-element */
+﻿import { escolhaInicial } from "@/content/configurador";
 import { ConfiguradorLoader } from "./ConfiguradorLoader";
-import { orcamentoConfigurador } from "@/content/configurador";
-import styles from "./Shell.module.css";
-
+import { Vista } from "./Vista";
 export type ConfiguradorProps = { compact?: boolean; materialContext?: string };
-export function Configurador({
-  compact = false,
-  materialContext,
-}: ConfiguradorProps) {
+export function Configurador(props: ConfiguradorProps) {
   return (
-    <ConfiguradorLoader compact={compact} materialContext={materialContext}>
-      <div className={styles.placeholder}>
-        <p className={styles.kicker}>O SEU AMBIENTE, EM PERSPECTIVA</p>
-        <h3>Escolha. Aproxime. Imagine.</h3>
+    <ConfiguradorLoader {...props} initialChoice={escolhaInicial}>
+      <Vista
+        escolha={escolhaInicial}
+        exibida={escolhaInicial}
+        materialContext={props.materialContext}
+      />
+      <noscript>
         <p>
-          Cozinha com ilha ou lavatório. Referências em pedra rosada, bege e
-          escura, com detalhes de acabamento polido, levigado ou escovado.
+          A imagem mostra a referência inicial. Ative JavaScript para trocar as
+          escolhas.
         </p>
-        <button type="button" data-activate>
-          Explorar combinações
-        </button>
-        <p className={styles.disclaimer}>
-          Materiais e acabamentos a confirmar com a JK.
-        </p>
-        <a
-          className={styles.quote}
-          href={orcamentoConfigurador(
-            "Cozinha com ilha",
-            "Rosado",
-            "Polido",
-            materialContext,
-          )}
-        >
-          Pedir orçamento desta pedra
-        </a>
-        <noscript>
-          <img
-            src="/configurador/orbita-rosado/720/00.avif"
-            width="720"
-            height="405"
-            loading="lazy"
-            alt="Cozinha com ilha em pedra rosada, visualização ilustrativa gerada por IA."
-            style={{ width: "100%", height: "auto" }}
-          />
-          <p>
-            Prévia: cozinha com ilha, referência rosada e acabamento
-            polido. Ative JavaScript para trocar a combinação e explorar os
-            ângulos.
-          </p>
-        </noscript>
-      </div>
+      </noscript>
     </ConfiguradorLoader>
   );
 }

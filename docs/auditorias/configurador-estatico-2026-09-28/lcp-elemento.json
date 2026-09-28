@@ -1,0 +1,42 @@
+[
+  {
+    "lcp": [
+      {
+        "time": 600,
+        "url": "",
+        "tag": "SPAN",
+        "element": "<span>Pedra que dá</span>"
+      },
+      {
+        "time": 632,
+        "url": "http://127.0.0.1:3107/img/capa-close-390.avif",
+        "tag": "IMG",
+        "element": "<img src=\"/img/capa-close-768.webp\" alt=\"Close ilustrativo de pedra rosada com veios caramelo e borda em meia-esquadria.\" width=\"850\" height=\"400\" sizes=\"100vw\" style=\"background-image:url(data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAwCdASoYAAsAPwFqrU6rJiQiMAgBYCAJQBOgBENsGG40W+/QAADOHubipXNh4UFbntgcIi0XlpVk63FD2P3tn5nt1VW++Unt7X3OGl9NkUqCq5tTKTAA)\" fetchpriority=\"high\" loading=\"eager\">"
+      },
+      {
+        "time": 12824,
+        "url": "blob:http://127.0.0.1:3107/2c744c0a-0775-4bb4-88db-801eb807d5c4",
+        "tag": "VIDEO",
+        "element": "<video playsinline=\"\" preload=\"auto\" class=\"HomeHero-module__ZWTPJG__video\" aria-hidden=\"true\" src=\"blob:http://127.0.0.1:3107/2c744c0a-0775-4bb4-88db-801eb807d5c4\"></video>"
+      }
+    ],
+    "configResources": 0
+  },
+  {
+    "lcp": [
+      {
+        "time": 576,
+        "url": "",
+        "tag": "SPAN",
+        "element": "<span>Pedra que dá</span>"
+      },
+      {
+        "time": 608,
+        "url": "http://127.0.0.1:3107/img/capa-close-390.avif",
+        "tag": "IMG",
+        "element": "<img src=\"/img/capa-close-768.webp\" alt=\"Close ilustrativo de pedra rosada com veios caramelo e borda em meia-esquadria.\" width=\"850\" height=\"400\" sizes=\"100vw\" style=\"background-image:url(data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAwCdASoYAAsAPwFqrU6rJiQiMAgBYCAJQBOgBENsGG40W+/QAADOHubipXNh4UFbntgcIi0XlpVk63FD2P3tn5nt1VW++Unt7X3OGl9NkUqCq5tTKTAA)\" fetchpriority=\"high\" loading=\"eager\">"
+      }
+    ],
+    "configResources": 0
+  }
+]

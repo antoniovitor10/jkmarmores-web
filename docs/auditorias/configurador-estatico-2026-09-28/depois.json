@@ -1,0 +1,99 @@
+{
+  "label": "depois",
+  "runs": [
+    {
+      "lcp": 688,
+      "tasks": [
+        257,
+        188,
+        53
+      ],
+      "configResources": 0
+    },
+    {
+      "lcp": 12888,
+      "tasks": [
+        254,
+        190
+      ],
+      "configResources": 0
+    },
+    {
+      "lcp": 12848,
+      "tasks": [
+        250,
+        142
+      ],
+      "configResources": 0
+    },
+    {
+      "lcp": 12808,
+      "tasks": [
+        215,
+        149,
+        107
+      ],
+      "configResources": 0
+    },
+    {
+      "lcp": 580,
+      "tasks": [
+        210,
+        140
+      ],
+      "configResources": 0
+    }
+  ],
+  "views": [
+    {
+      "width": 390,
+      "media": [
+        {
+          "url": "/configurador/estatico/cozinha-rosado-720.avif",
+          "bytes": 19238
+        }
+      ],
+      "scripts": [
+        "/_next/static/chunks/19mx3mg6lkumu.js",
+        "/_next/static/chunks/0bma92pht_c97.js",
+        "/_next/static/chunks/344n2zhqbh4pn.js",
+        "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "/_next/static/chunks/11wvh8x0wxtnr.js",
+        "/_next/static/chunks/22i43cg4l4-dq.js",
+        "/_next/static/chunks/159g8bf754unt.js",
+        "/_next/static/chunks/20pfaflu_9rsx.js",
+        "/_next/static/chunks/0mnz56-pokal0.js",
+        "/_next/static/chunks/3pqja19_8yru9.js",
+        "/_next/static/chunks/2gknen0nxgzm9.js",
+        "/_next/static/chunks/310vm2bl3xxpt.js"
+      ]
+    },
+    {
+      "width": 1440,
+      "media": [
+        {
+          "url": "/configurador/estatico/cozinha-rosado-1280.avif",
+          "bytes": 42811
+        }
+      ],
+      "scripts": [
+        "/_next/static/chunks/19mx3mg6lkumu.js",
+        "/_next/static/chunks/0bma92pht_c97.js",
+        "/_next/static/chunks/344n2zhqbh4pn.js",
+        "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "/_next/static/chunks/11wvh8x0wxtnr.js",
+        "/_next/static/chunks/22i43cg4l4-dq.js",
+        "/_next/static/chunks/159g8bf754unt.js",
+        "/_next/static/chunks/20pfaflu_9rsx.js",
+        "/_next/static/chunks/0mnz56-pokal0.js",
+        "/_next/static/chunks/3pqja19_8yru9.js",
+        "/_next/static/chunks/2gknen0nxgzm9.js",
+        "/_next/static/chunks/310vm2bl3xxpt.js"
+      ]
+    }
+  ],
+  "initialJS": {
+    "count": 8,
+    "gzipBytes": 141467
+  }
+}

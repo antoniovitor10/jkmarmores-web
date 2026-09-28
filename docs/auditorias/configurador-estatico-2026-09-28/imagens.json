@@ -1,0 +1,85 @@
+{
+    "images":  [
+                   {
+                       "destination":  "estatico/cozinha-rosado-720.avif",
+                       "sha256":  "2DB0BE6A0103AE82ADAFBE29E42F7BC77867EBC5EA1172651D9BD5F60A070DE6",
+                       "source":  "uniforme/cozinha-rosado/720/00.avif",
+                       "bytes":  19238
+                   },
+                   {
+                       "destination":  "estatico/cozinha-rosado-1280.avif",
+                       "sha256":  "E28008A0548EC9E5CE9F5F9B2BD36F9150C7BCC8BF697C3AE2C22741F234AD5E",
+                       "source":  "uniforme/cozinha-rosado/1280/00.avif",
+                       "bytes":  42811
+                   },
+                   {
+                       "destination":  "estatico/cozinha-bege-720.avif",
+                       "sha256":  "2420AB9F13BE9911559AB4730470D7DDDAC4817F74ED3CC8ED4BC26AE305F708",
+                       "source":  "uniforme/cozinha-bege/720/00.avif",
+                       "bytes":  14640
+                   },
+                   {
+                       "destination":  "estatico/cozinha-bege-1280.avif",
+                       "sha256":  "059E566A1B4C4D06D6CAF761DB63A66F78D6220FA8D42330F42141BDB54B8F12",
+                       "source":  "uniforme/cozinha-bege/1280/00.avif",
+                       "bytes":  29296
+                   },
+                   {
+                       "destination":  "estatico/cozinha-escuro-720.avif",
+                       "sha256":  "42E2496900492DCFDD0A6C4E715D8164FDCB53FA784928C0E3E5690DE02CE537",
+                       "source":  "uniforme/cozinha-escuro/720/00.avif",
+                       "bytes":  14640
+                   },
+                   {
+                       "destination":  "estatico/cozinha-escuro-1280.avif",
+                       "sha256":  "273ADDBCCA7C2788AF541E64EA54A6883A71142F5DBC296ED83CD288C8CF556A",
+                       "source":  "uniforme/cozinha-escuro/1280/00.avif",
+                       "bytes":  29921
+                   },
+                   {
+                       "destination":  "estatico/lavatorio-rosado-720.avif",
+                       "sha256":  "D11062A6E573A97DCC901A57BA2475FC488C289FD81913A9873246517CCD195A",
+                       "source":  "uniforme/lavatorio-rosado/720/00.avif",
+                       "bytes":  8431
+                   },
+                   {
+                       "destination":  "estatico/lavatorio-rosado-1280.avif",
+                       "sha256":  "57B224636F1D449E309C16B4EFA97BA1A0AC0A90BA372D23A351511C35A4F637",
+                       "source":  "uniforme/lavatorio-rosado/1280/00.avif",
+                       "bytes":  19093
+                   },
+                   {
+                       "destination":  "estatico/lavatorio-bege-720.avif",
+                       "sha256":  "287D58D508E3460711261E356B208D4E6F0398B4515ECA06B6877B2370254BC2",
+                       "source":  "uniforme/lavatorio-bege/720/00.avif",
+                       "bytes":  7900
+                   },
+                   {
+                       "destination":  "estatico/lavatorio-bege-1280.avif",
+                       "sha256":  "67A5C4EA8A3F931C94B8A9E678EC3C4955B079008DD6403AAAD842D52179CFA2",
+                       "source":  "uniforme/lavatorio-bege/1280/00.avif",
+                       "bytes":  17921
+                   },
+                   {
+                       "destination":  "estatico/lavatorio-escuro-720.avif",
+                       "sha256":  "D5171FBAD5AEC8EEB83A4CA3DA896F26184134AA69A26B20158619EA18996E65",
+                       "source":  "uniforme/lavatorio-escuro/720/00.avif",
+                       "bytes":  7902
+                   },
+                   {
+                       "destination":  "estatico/lavatorio-escuro-1280.avif",
+                       "sha256":  "A7D86AD51818A45B65FBF96ECDA56E2627E513D3DCE6C80526C1B8E747E43E27",
+                       "source":  "uniforme/lavatorio-escuro/1280/00.avif",
+                       "bytes":  17599
+                   }
+               ],
+    "before":  {
+                   "bytes":  33251514,
+                   "files":  1311
+               },
+    "apiCostUSD":  0,
+    "after":  {
+                  "bytes":  229392,
+                  "files":  12
+              }
+}

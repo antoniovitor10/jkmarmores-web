@@ -1,0 +1,2459 @@
+[
+  {
+    "name": "Layout e controles 390",
+    "pass": true,
+    "evidence": {
+      "image": {
+        "x": 24,
+        "y": 280.703125,
+        "width": 342,
+        "height": 192.375,
+        "top": 280.703125,
+        "right": 366,
+        "bottom": 473.078125,
+        "left": 24
+      },
+      "buttons": [
+        {
+          "text": "Cozinha com ilha",
+          "x": 61.484375,
+          "y": 51.125,
+          "width": 151.703125,
+          "height": 49.59375,
+          "top": 51.125,
+          "right": 213.1875,
+          "bottom": 100.71875,
+          "left": 61.484375,
+          "whiteSpace": "nowrap"
+        },
+        {
+          "text": "Lavatório",
+          "x": 221.1875,
+          "y": 51.125,
+          "width": 107.3125,
+          "height": 49.59375,
+          "top": 51.125,
+          "right": 328.5,
+          "bottom": 100.71875,
+          "left": 221.1875,
+          "whiteSpace": "nowrap"
+        },
+        {
+          "text": "Rosado",
+          "x": 52.40625,
+          "y": 183.109375,
+          "width": 95.328125,
+          "height": 49.59375,
+          "top": 183.109375,
+          "right": 147.734375,
+          "bottom": 232.703125,
+          "left": 52.40625,
+          "whiteSpace": "nowrap"
+        },
+        {
+          "text": "Bege",
+          "x": 155.734375,
+          "y": 183.109375,
+          "width": 81.203125,
+          "height": 49.59375,
+          "top": 183.109375,
+          "right": 236.9375,
+          "bottom": 232.703125,
+          "left": 155.734375,
+          "whiteSpace": "nowrap"
+        },
+        {
+          "text": "Escuro",
+          "x": 244.9375,
+          "y": 183.109375,
+          "width": 92.65625,
+          "height": 49.59375,
+          "top": 183.109375,
+          "right": 337.59375,
+          "bottom": 232.703125,
+          "left": 244.9375,
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "cta": {
+        "x": 82.390625,
+        "y": 531.46875,
+        "width": 225.21875,
+        "height": 49.59375,
+        "top": 531.46875,
+        "right": 307.609375,
+        "bottom": 581.0625,
+        "left": 82.390625
+      },
+      "pageWidth": 390,
+      "width": 390,
+      "forbidden": false,
+      "canvas": 0
+    }
+  },
+  {
+    "name": "Axe 390",
+    "pass": true,
+    "evidence": []
+  },
+  {
+    "name": "390 cozinha-rosado",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Cozinha%20com%20ilha%20%2F%20Rosado.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Cozinha com ilha / Rosado. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "390 cozinha-bege",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Cozinha%20com%20ilha%20%2F%20Bege.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Cozinha com ilha / Bege. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "390 cozinha-escuro",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Cozinha%20com%20ilha%20%2F%20Escuro.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Cozinha com ilha / Escuro. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "390 lavatorio-rosado",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Lavat%C3%B3rio%20%2F%20Rosado.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Lavatório / Rosado. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "390 lavatorio-bege",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Lavat%C3%B3rio%20%2F%20Bege.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Lavatório / Bege. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "390 lavatorio-escuro",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Lavat%C3%B3rio%20%2F%20Escuro.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Lavatório / Escuro. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "Teclado 390",
+    "pass": true
+  },
+  {
+    "name": "Eventos CPU4x 390",
+    "pass": true,
+    "evidence": {
+      "events": [
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerover",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "mouseout",
+          "duration": 32
+        },
+        {
+          "name": "mouseover",
+          "duration": 32
+        },
+        {
+          "name": "pointerdown",
+          "duration": 32
+        },
+        {
+          "name": "mousedown",
+          "duration": 32
+        },
+        {
+          "name": "pointerup",
+          "duration": 32
+        },
+        {
+          "name": "mouseup",
+          "duration": 32
+        },
+        {
+          "name": "click",
+          "duration": 32
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 40
+        },
+        {
+          "name": "pointerleave",
+          "duration": 40
+        },
+        {
+          "name": "pointerleave",
+          "duration": 40
+        },
+        {
+          "name": "pointerleave",
+          "duration": 40
+        },
+        {
+          "name": "pointerover",
+          "duration": 40
+        },
+        {
+          "name": "pointerenter",
+          "duration": 40
+        },
+        {
+          "name": "pointerenter",
+          "duration": 40
+        },
+        {
+          "name": "pointerenter",
+          "duration": 40
+        },
+        {
+          "name": "mouseout",
+          "duration": 40
+        },
+        {
+          "name": "mouseover",
+          "duration": 40
+        },
+        {
+          "name": "pointerdown",
+          "duration": 40
+        },
+        {
+          "name": "mousedown",
+          "duration": 40
+        },
+        {
+          "name": "pointerup",
+          "duration": 40
+        },
+        {
+          "name": "mouseup",
+          "duration": 40
+        },
+        {
+          "name": "click",
+          "duration": 40
+        },
+        {
+          "name": "pointerout",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerover",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "mouseout",
+          "duration": 32
+        },
+        {
+          "name": "mouseover",
+          "duration": 32
+        },
+        {
+          "name": "pointerdown",
+          "duration": 32
+        },
+        {
+          "name": "mousedown",
+          "duration": 32
+        },
+        {
+          "name": "pointerup",
+          "duration": 32
+        },
+        {
+          "name": "mouseup",
+          "duration": 32
+        },
+        {
+          "name": "click",
+          "duration": 32
+        },
+        {
+          "name": "pointerout",
+          "duration": 40
+        },
+        {
+          "name": "pointerleave",
+          "duration": 40
+        },
+        {
+          "name": "pointerleave",
+          "duration": 40
+        },
+        {
+          "name": "pointerleave",
+          "duration": 40
+        },
+        {
+          "name": "pointerover",
+          "duration": 40
+        },
+        {
+          "name": "pointerenter",
+          "duration": 40
+        },
+        {
+          "name": "pointerenter",
+          "duration": 40
+        },
+        {
+          "name": "pointerenter",
+          "duration": 40
+        },
+        {
+          "name": "mouseout",
+          "duration": 40
+        },
+        {
+          "name": "mouseover",
+          "duration": 40
+        },
+        {
+          "name": "pointerdown",
+          "duration": 40
+        },
+        {
+          "name": "mousedown",
+          "duration": 40
+        },
+        {
+          "name": "pointerup",
+          "duration": 40
+        },
+        {
+          "name": "mouseup",
+          "duration": 40
+        },
+        {
+          "name": "click",
+          "duration": 40
+        },
+        {
+          "name": "keydown",
+          "duration": 32
+        },
+        {
+          "name": "keypress",
+          "duration": 32
+        },
+        {
+          "name": "click",
+          "duration": 32
+        },
+        {
+          "name": "keyup",
+          "duration": 16
+        }
+      ],
+      "tasks": []
+    }
+  },
+  {
+    "name": "Herança dos tokens 390",
+    "pass": true,
+    "evidence": {
+      "font": "serif",
+      "color": "rgb(1, 2, 3)"
+    }
+  },
+  {
+    "name": "Lighthouse A11y 390",
+    "pass": false,
+    "evidence": {
+      "score": 0.96,
+      "failures": [
+        {
+          "id": "color-contrast",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-H2",
+                  "path": "1,HTML,1,BODY,4,MAIN,4,SECTION,0,DIV,1,DIV,0,H2",
+                  "selector": "section#orcamento > div.container > div > h2",
+                  "boundingRect": {
+                    "top": 5957,
+                    "bottom": 6047,
+                    "left": 24,
+                    "right": 366,
+                    "width": 342,
+                    "height": 90
+                  },
+                  "snippet": "<h2>",
+                  "nodeLabel": "Sua ideia começa aqui.",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.17 (foreground color: #ffffff, background color: #f3ece2, font size: 33.0pt (44px), font weight: normal). Expected contrast ratio of 3:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-1-SECTION",
+                        "path": "1,HTML,1,BODY,4,MAIN,4,SECTION",
+                        "selector": "body.homedisplay_26ccc5aa-module__J6E70a__variable > main#conteudo > section#orcamento",
+                        "boundingRect": {
+                          "top": 5559,
+                          "bottom": 6381,
+                          "left": 0,
+                          "right": 390,
+                          "width": 390,
+                          "height": 822
+                        },
+                        "snippet": "<section id=\"orcamento\" class=\"section-space editorial-motion home-contact\">",
+                        "nodeLabel": "Sua ideia começa aqui.\n\nMande uma foto ou a medida aproximada e converse com a …"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-2-P",
+                  "path": "1,HTML,1,BODY,4,MAIN,4,SECTION,0,DIV,1,DIV,1,P",
+                  "selector": "section#orcamento > div.container > div > p",
+                  "boundingRect": {
+                    "top": 6075,
+                    "bottom": 6127,
+                    "left": 24,
+                    "right": 331,
+                    "width": 307,
+                    "height": 53
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Mande uma foto ou a medida aproximada e converse com a JK sobre o seu espaço.",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.17 (foreground color: #ffffff, background color: #f3ece2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-1-SECTION",
+                        "path": "1,HTML,1,BODY,4,MAIN,4,SECTION",
+                        "selector": "body.homedisplay_26ccc5aa-module__J6E70a__variable > main#conteudo > section#orcamento",
+                        "boundingRect": {
+                          "top": 5559,
+                          "bottom": 6381,
+                          "left": 0,
+                          "right": 390,
+                          "width": 390,
+                          "height": 822
+                        },
+                        "snippet": "<section id=\"orcamento\" class=\"section-space editorial-motion home-contact\">",
+                        "nodeLabel": "Sua ideia começa aqui.\n\nMande uma foto ou a medida aproximada e converse com a …"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-3-ADDRESS",
+                  "path": "1,HTML,1,BODY,4,MAIN,4,SECTION,0,DIV,1,DIV,2,ADDRESS",
+                  "selector": "section#orcamento > div.container > div > address",
+                  "boundingRect": {
+                    "top": 6159,
+                    "bottom": 6227,
+                    "left": 24,
+                    "right": 244,
+                    "width": 220,
+                    "height": 68
+                  },
+                  "snippet": "<address>",
+                  "nodeLabel": "Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.17 (foreground color: #ffffff, background color: #f3ece2, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-1-SECTION",
+                        "path": "1,HTML,1,BODY,4,MAIN,4,SECTION",
+                        "selector": "body.homedisplay_26ccc5aa-module__J6E70a__variable > main#conteudo > section#orcamento",
+                        "boundingRect": {
+                          "top": 5559,
+                          "bottom": 6381,
+                          "left": 0,
+                          "right": 390,
+                          "width": 390,
+                          "height": 822
+                        },
+                        "snippet": "<section id=\"orcamento\" class=\"section-space editorial-motion home-contact\">",
+                        "nodeLabel": "Sua ideia começa aqui.\n\nMande uma foto ou a medida aproximada e converse com a …"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143",
+                "TTv5",
+                "TT13.c",
+                "EN-301-549",
+                "EN-9.1.4.3",
+                "ACT",
+                "RGAAv4",
+                "RGAA-3.2.1"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sem erros JS 390",
+    "pass": true,
+    "evidence": []
+  },
+  {
+    "name": "Layout e controles 1440",
+    "pass": true,
+    "evidence": {
+      "image": {
+        "x": 80,
+        "y": 148.171875,
+        "width": 1280,
+        "height": 720,
+        "top": 148.171875,
+        "right": 1360,
+        "bottom": 868.171875,
+        "left": 80
+      },
+      "buttons": [
+        {
+          "text": "Cozinha com ilha",
+          "x": 427.890625,
+          "y": 50.578125,
+          "width": 151.703125,
+          "height": 49.59375,
+          "top": 50.578125,
+          "right": 579.59375,
+          "bottom": 100.171875,
+          "left": 427.890625,
+          "whiteSpace": "nowrap"
+        },
+        {
+          "text": "Lavatório",
+          "x": 587.59375,
+          "y": 50.578125,
+          "width": 107.3125,
+          "height": 49.59375,
+          "top": 50.578125,
+          "right": 694.90625,
+          "bottom": 100.171875,
+          "left": 587.59375,
+          "whiteSpace": "nowrap"
+        },
+        {
+          "text": "Rosado",
+          "x": 726.90625,
+          "y": 50.578125,
+          "width": 95.328125,
+          "height": 49.59375,
+          "top": 50.578125,
+          "right": 822.234375,
+          "bottom": 100.171875,
+          "left": 726.90625,
+          "whiteSpace": "nowrap"
+        },
+        {
+          "text": "Bege",
+          "x": 830.234375,
+          "y": 50.578125,
+          "width": 81.203125,
+          "height": 49.59375,
+          "top": 50.578125,
+          "right": 911.4375,
+          "bottom": 100.171875,
+          "left": 830.234375,
+          "whiteSpace": "nowrap"
+        },
+        {
+          "text": "Escuro",
+          "x": 919.4375,
+          "y": 50.578125,
+          "width": 92.65625,
+          "height": 49.59375,
+          "top": 50.578125,
+          "right": 1012.09375,
+          "bottom": 100.171875,
+          "left": 919.4375,
+          "whiteSpace": "nowrap"
+        }
+      ],
+      "cta": {
+        "x": 607.390625,
+        "y": 926.5625,
+        "width": 225.21875,
+        "height": 49.59375,
+        "top": 926.5625,
+        "right": 832.609375,
+        "bottom": 976.15625,
+        "left": 607.390625
+      },
+      "pageWidth": 1440,
+      "width": 1440,
+      "forbidden": false,
+      "canvas": 0
+    }
+  },
+  {
+    "name": "Axe 1440",
+    "pass": true,
+    "evidence": []
+  },
+  {
+    "name": "1440 cozinha-rosado",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Cozinha%20com%20ilha%20%2F%20Rosado.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Cozinha com ilha / Rosado. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "1440 cozinha-bege",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Cozinha%20com%20ilha%20%2F%20Bege.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Cozinha com ilha / Bege. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "1440 cozinha-escuro",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Cozinha%20com%20ilha%20%2F%20Escuro.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Cozinha com ilha / Escuro. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "1440 lavatorio-rosado",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Lavat%C3%B3rio%20%2F%20Rosado.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Lavatório / Rosado. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "1440 lavatorio-bege",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Lavat%C3%B3rio%20%2F%20Bege.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Lavatório / Bege. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "1440 lavatorio-escuro",
+    "pass": true,
+    "evidence": {
+      "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Lavat%C3%B3rio%20%2F%20Escuro.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "message": "Olá, JK! Gostei desta referência: Lavatório / Escuro. Podemos conversar sobre um orçamento?"
+    }
+  },
+  {
+    "name": "Teclado 1440",
+    "pass": true
+  },
+  {
+    "name": "Eventos CPU4x 1440",
+    "pass": true,
+    "evidence": {
+      "events": [
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerover",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "mouseout",
+          "duration": 32
+        },
+        {
+          "name": "mouseover",
+          "duration": 32
+        },
+        {
+          "name": "pointerdown",
+          "duration": 32
+        },
+        {
+          "name": "mousedown",
+          "duration": 32
+        },
+        {
+          "name": "pointerup",
+          "duration": 32
+        },
+        {
+          "name": "mouseup",
+          "duration": 32
+        },
+        {
+          "name": "click",
+          "duration": 32
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "mouseout",
+          "duration": 16
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerleave",
+          "duration": 24
+        },
+        {
+          "name": "pointerover",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "pointerenter",
+          "duration": 24
+        },
+        {
+          "name": "mouseout",
+          "duration": 24
+        },
+        {
+          "name": "mouseover",
+          "duration": 24
+        },
+        {
+          "name": "pointerdown",
+          "duration": 24
+        },
+        {
+          "name": "mousedown",
+          "duration": 24
+        },
+        {
+          "name": "pointerup",
+          "duration": 24
+        },
+        {
+          "name": "mouseup",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "pointerout",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerover",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "mouseout",
+          "duration": 32
+        },
+        {
+          "name": "mouseover",
+          "duration": 32
+        },
+        {
+          "name": "pointerdown",
+          "duration": 32
+        },
+        {
+          "name": "mousedown",
+          "duration": 32
+        },
+        {
+          "name": "pointerup",
+          "duration": 32
+        },
+        {
+          "name": "mouseup",
+          "duration": 32
+        },
+        {
+          "name": "click",
+          "duration": 32
+        },
+        {
+          "name": "pointerout",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerleave",
+          "duration": 32
+        },
+        {
+          "name": "pointerover",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "pointerenter",
+          "duration": 32
+        },
+        {
+          "name": "mouseout",
+          "duration": 32
+        },
+        {
+          "name": "mouseover",
+          "duration": 32
+        },
+        {
+          "name": "pointerdown",
+          "duration": 32
+        },
+        {
+          "name": "mousedown",
+          "duration": 32
+        },
+        {
+          "name": "pointerup",
+          "duration": 32
+        },
+        {
+          "name": "mouseup",
+          "duration": 32
+        },
+        {
+          "name": "click",
+          "duration": 32
+        },
+        {
+          "name": "keydown",
+          "duration": 24
+        },
+        {
+          "name": "keypress",
+          "duration": 24
+        },
+        {
+          "name": "click",
+          "duration": 24
+        },
+        {
+          "name": "keyup",
+          "duration": 16
+        }
+      ],
+      "tasks": []
+    }
+  },
+  {
+    "name": "Herança dos tokens 1440",
+    "pass": true,
+    "evidence": {
+      "font": "serif",
+      "color": "rgb(1, 2, 3)"
+    }
+  },
+  {
+    "name": "Lighthouse A11y 1440",
+    "pass": false,
+    "evidence": {
+      "score": 0.96,
+      "failures": [
+        {
+          "id": "color-contrast",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "relatedNode",
+                  "valueType": "node"
+                },
+                "label": "Failing Elements"
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-0-H2",
+                  "path": "1,HTML,1,BODY,4,MAIN,4,SECTION,0,DIV,1,DIV,0,H2",
+                  "selector": "section#orcamento > div.container > div > h2",
+                  "boundingRect": {
+                    "top": 6948,
+                    "bottom": 7100,
+                    "left": 776,
+                    "right": 1360,
+                    "width": 584,
+                    "height": 153
+                  },
+                  "snippet": "<h2>",
+                  "nodeLabel": "Sua ideia começa aqui.",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.17 (foreground color: #ffffff, background color: #f3ece2, font size: 56.2pt (74.88px), font weight: normal). Expected contrast ratio of 3:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-1-SECTION",
+                        "path": "1,HTML,1,BODY,4,MAIN,4,SECTION",
+                        "selector": "body.homedisplay_26ccc5aa-module__J6E70a__variable > main#conteudo > section#orcamento",
+                        "boundingRect": {
+                          "top": 6655,
+                          "bottom": 7644,
+                          "left": 0,
+                          "right": 1440,
+                          "width": 1440,
+                          "height": 989
+                        },
+                        "snippet": "<section id=\"orcamento\" class=\"section-space editorial-motion home-contact\">",
+                        "nodeLabel": "Sua ideia começa aqui.\n\nMande uma foto ou a medida aproximada e converse com a …"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-2-P",
+                  "path": "1,HTML,1,BODY,4,MAIN,4,SECTION,0,DIV,1,DIV,1,P",
+                  "selector": "section#orcamento > div.container > div > p",
+                  "boundingRect": {
+                    "top": 7128,
+                    "bottom": 7181,
+                    "left": 776,
+                    "right": 1083,
+                    "width": 307,
+                    "height": 53
+                  },
+                  "snippet": "<p>",
+                  "nodeLabel": "Mande uma foto ou a medida aproximada e converse com a JK sobre o seu espaço.",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.17 (foreground color: #ffffff, background color: #f3ece2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-1-SECTION",
+                        "path": "1,HTML,1,BODY,4,MAIN,4,SECTION",
+                        "selector": "body.homedisplay_26ccc5aa-module__J6E70a__variable > main#conteudo > section#orcamento",
+                        "boundingRect": {
+                          "top": 6655,
+                          "bottom": 7644,
+                          "left": 0,
+                          "right": 1440,
+                          "width": 1440,
+                          "height": 989
+                        },
+                        "snippet": "<section id=\"orcamento\" class=\"section-space editorial-motion home-contact\">",
+                        "nodeLabel": "Sua ideia começa aqui.\n\nMande uma foto ou a medida aproximada e converse com a …"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "1-3-ADDRESS",
+                  "path": "1,HTML,1,BODY,4,MAIN,4,SECTION,0,DIV,1,DIV,2,ADDRESS",
+                  "selector": "section#orcamento > div.container > div > address",
+                  "boundingRect": {
+                    "top": 7213,
+                    "bottom": 7281,
+                    "left": 776,
+                    "right": 996,
+                    "width": 220,
+                    "height": 68
+                  },
+                  "snippet": "<address>",
+                  "nodeLabel": "Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP",
+                  "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 1.17 (foreground color: #ffffff, background color: #f3ece2, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "relatedNode": {
+                        "type": "node",
+                        "lhId": "1-1-SECTION",
+                        "path": "1,HTML,1,BODY,4,MAIN,4,SECTION",
+                        "selector": "body.homedisplay_26ccc5aa-module__J6E70a__variable > main#conteudo > section#orcamento",
+                        "boundingRect": {
+                          "top": 6655,
+                          "bottom": 7644,
+                          "left": 0,
+                          "right": 1440,
+                          "width": 1440,
+                          "height": 989
+                        },
+                        "snippet": "<section id=\"orcamento\" class=\"section-space editorial-motion home-contact\">",
+                        "nodeLabel": "Sua ideia começa aqui.\n\nMande uma foto ou a medida aproximada e converse com a …"
+                      }
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "impact": "serious",
+              "tags": [
+                "cat.color",
+                "wcag2aa",
+                "wcag143",
+                "TTv5",
+                "TT13.c",
+                "EN-301-549",
+                "EN-9.1.4.3",
+                "ACT",
+                "RGAAv4",
+                "RGAA-3.2.1"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sem erros JS 1440",
+    "pass": true,
+    "evidence": []
+  },
+  {
+    "name": "reduced",
+    "pass": true,
+    "evidence": {
+      "images": 1,
+      "animations": 0,
+      "src": "http://127.0.0.1:3107/configurador/estatico/cozinha-bege-720.avif",
+      "complete": true,
+      "natural": 390,
+      "link": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Cozinha%20com%20ilha%20%2F%20Bege.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "canvas": 0
+    }
+  },
+  {
+    "name": "saveData",
+    "pass": true,
+    "evidence": {
+      "images": 1,
+      "animations": 0,
+      "src": "http://127.0.0.1:3107/configurador/estatico/cozinha-bege-720.avif",
+      "complete": true,
+      "natural": 390,
+      "link": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Cozinha%20com%20ilha%20%2F%20Bege.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "canvas": 0
+    }
+  },
+  {
+    "name": "noJS",
+    "pass": true,
+    "evidence": {
+      "images": 1,
+      "animations": 0,
+      "src": "http://127.0.0.1:3107/configurador/estatico/cozinha-rosado-720.avif",
+      "complete": true,
+      "natural": 390,
+      "link": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Cozinha%20com%20ilha%20%2F%20Rosado.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+      "canvas": 0
+    }
+  },
+  {
+    "name": "Imagem anterior durante espera",
+    "pass": true
+  },
+  {
+    "name": "Erro mantém imagem e oferece tentativa",
+    "pass": true
+  },
+  {
+    "name": "Nova tentativa carrega",
+    "pass": true
+  }
+]
