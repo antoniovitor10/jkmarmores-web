@@ -1,4 +1,13 @@
+import { afterPoster } from '@/lib/after-poster';
+
 export function mountSiteInteractions() {
+  let disposed = false;
+  let motion = () => {};
+  const cancelMotion = afterPoster(() => {
+    void import('./motion-runtime').then(({ mountPageMotion }) => {
+      if (!disposed) motion = mountPageMotion();
+    });
+  });
   const dock = document.querySelector<HTMLElement>(".mobile-quote-dock");
   const hero = document.querySelector(".prologo, .home-hero");
   const menu = document.querySelector<HTMLDetailsElement>(".mobile-nav");
@@ -32,5 +41,5 @@ export function mountSiteInteractions() {
   menu?.addEventListener("toggle", toggle);
   document.addEventListener("keydown", key);
   toggle();
-  return () => { cover.disconnect(); zones.disconnect(); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
+  return () => { disposed = true; cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
 }
