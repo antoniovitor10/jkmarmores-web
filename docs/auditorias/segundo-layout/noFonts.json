@@ -1,0 +1,200 @@
+{
+  "probe": {
+    "tasks": [
+      {
+        "start": 376.29999999701977,
+        "duration": 180
+      },
+      {
+        "start": 1227.2999999970198,
+        "duration": 133
+      }
+    ],
+    "marks": [
+      {
+        "t": 375.59999999403954,
+        "type": "fonts-loading",
+        "fonts": []
+      },
+      {
+        "t": 376.09999999403954,
+        "type": "cv",
+        "target": "jornada-pedra",
+        "skipped": false
+      },
+      {
+        "t": 376.29999999701977,
+        "type": "cv",
+        "target": "configurador",
+        "skipped": true
+      },
+      {
+        "t": 568.7999999970198,
+        "type": "cv",
+        "target": "configurador",
+        "skipped": false
+      },
+      {
+        "t": 569,
+        "type": "cv",
+        "target": "orcamento",
+        "skipped": true
+      },
+      {
+        "t": 569,
+        "type": "cv",
+        "target": "site-footer",
+        "skipped": true
+      },
+      {
+        "t": 578.7000000029802,
+        "type": "fonts-loadingdone",
+        "fonts": [
+          "homeDisplay Fallback",
+          "homeBody Fallback"
+        ]
+      },
+      {
+        "t": 578.8999999910593,
+        "type": "fonts-loadingerror",
+        "fonts": [
+          "homeDisplay",
+          "homeBody"
+        ]
+      },
+      {
+        "t": 581,
+        "type": "cv",
+        "target": "configurador",
+        "skipped": true
+      },
+      {
+        "t": 1487.7999999970198,
+        "type": "mutation",
+        "target": "HomeHero-module__ZWTPJG__track",
+        "attr": "data-motion",
+        "value": "true"
+      },
+      {
+        "t": 1487.7999999970198,
+        "type": "mutation",
+        "target": "HomeHero-module__ZWTPJG__track",
+        "attr": "data-motion",
+        "value": "true"
+      },
+      {
+        "t": 1487.7999999970198,
+        "type": "mutation",
+        "target": "journey-track",
+        "attr": "data-enhanced",
+        "value": "true"
+      },
+      {
+        "t": 1487.7999999970198,
+        "type": "mutation",
+        "target": "journey-track",
+        "attr": "data-enhanced",
+        "value": "true"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "name": "http://127.0.0.1:3106/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+      "start": 203.70000000298023,
+      "end": 208.20000000298023
+    },
+    {
+      "name": "http://127.0.0.1:3106/img/capa-poster-mobile-768.avif",
+      "start": 205,
+      "end": 710.7999999970198
+    },
+    {
+      "name": "http://127.0.0.1:3106/brand/jk-logo-288.webp",
+      "start": 205.20000000298023,
+      "end": 495.70000000298023
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/310vm2bl3xxpt.js",
+      "start": 218.29999999701977,
+      "end": 432.8999999910593
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/19mx3mg6lkumu.js",
+      "start": 218.70000000298023,
+      "end": 556.7000000029802
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/344n2zhqbh4pn.js",
+      "start": 219.09999999403954,
+      "end": 1114.2999999970198
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/0bma92pht_c97.js",
+      "start": 219.09999999403954,
+      "end": 1223.2999999970198
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+      "start": 219.29999999701977,
+      "end": 695.2000000029802
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/3fntmmi971322.js",
+      "start": 219.5,
+      "end": 756.7999999970198
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/22i43cg4l4-dq.js",
+      "start": 219.8999999910593,
+      "end": 787
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/23zs9wf0ve6x-.js",
+      "start": 220.09999999403954,
+      "end": 911
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+      "start": 258,
+      "end": 361.59999999403954
+    },
+    {
+      "name": "http://127.0.0.1:3106/video/capa-mobile-av1.mp4",
+      "start": 1516.7000000029802,
+      "end": 3323.5
+    }
+  ],
+  "paints": [
+    {
+      "name": "first-paint",
+      "t": 392
+    },
+    {
+      "name": "first-contentful-paint",
+      "t": 392
+    }
+  ],
+  "fontFaces": [
+    {
+      "family": "homeDisplay",
+      "status": "error",
+      "display": "swap"
+    },
+    {
+      "family": "homeDisplay Fallback",
+      "status": "loaded",
+      "display": "auto"
+    },
+    {
+      "family": "homeBody",
+      "status": "error",
+      "display": "swap"
+    },
+    {
+      "family": "homeBody Fallback",
+      "status": "loaded",
+      "display": "auto"
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "method": "Chrome emulado 393x873 DPR1; CDP CPU4x,150ms,200KiB/s down,75KiB/s up; Lighthouse13.5 simulate; preview gzip3105; caches frios; sem aparelho real",
+  "stages": {
+    "antes": {
+      "runs": [
+        {
+          "run": 1,
+          "lcp": 2346.4572499999995,
+          "tbt": 35.10855000000015,
+          "cls": 0,
+          "maxTask": 274,
+          "entryBlocking": 300,
+          "tasks": [
+            {
+              "start": 341.40000000596046,
+              "duration": 274,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1366.2999999970198,
+              "duration": 126,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.5
+          }
+        },
+        {
+          "run": 2,
+          "lcp": 2339.3448750000002,
+          "tbt": 29.331024999999954,
+          "cls": 0,
+          "maxTask": 262,
+          "entryBlocking": 295,
+          "tasks": [
+            {
+              "start": 331.29999999701977,
+              "duration": 262,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1350.2999999970198,
+              "duration": 133,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.4
+          }
+        },
+        {
+          "run": 3,
+          "lcp": 2355.192375,
+          "tbt": 40.561525000000074,
+          "cls": 0,
+          "maxTask": 262,
+          "entryBlocking": 282,
+          "tasks": [
+            {
+              "start": 320,
+              "duration": 262,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1345.5,
+              "duration": 120,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.4
+          }
+        },
+        {
+          "run": 4,
+          "lcp": 2367.846125,
+          "tbt": 55.630775000000085,
+          "cls": 0,
+          "maxTask": 294,
+          "entryBlocking": 319,
+          "tasks": [
+            {
+              "start": 334.20000000298023,
+              "duration": 294,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1356.2999999970198,
+              "duration": 125,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.7
+          }
+        },
+        {
+          "run": 5,
+          "lcp": 2345.481,
+          "tbt": 36.503799999999956,
+          "cls": 0,
+          "maxTask": 276,
+          "entryBlocking": 303,
+          "tasks": [
+            {
+              "start": 331.19999998807907,
+              "duration": 276,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1363.2999999970198,
+              "duration": 127,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.6
+          }
+        }
+      ],
+      "median": {
+        "lcp": 2346.4572499999995,
+        "tbt": 36.503799999999956,
+        "cls": 0,
+        "maxTask": 274,
+        "entryBlocking": 300
+      }
+    },
+    "depois": {
+      "runs": [
+        {
+          "run": 1,
+          "lcp": 2338.3039999999996,
+          "tbt": 28.33920000000012,
+          "cls": 0,
+          "maxTask": 144,
+          "entryBlocking": 177,
+          "tasks": [
+            {
+              "start": 353.20000000298023,
+              "duration": 82,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 439.20000000298023,
+              "duration": 101,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1381,
+              "duration": 144,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.6
+          }
+        },
+        {
+          "run": 2,
+          "lcp": 2356.2482499999996,
+          "tbt": 45.15035000000012,
+          "cls": 0,
+          "maxTask": 134,
+          "entryBlocking": 157,
+          "tasks": [
+            {
+              "start": 336.59999999403954,
+              "duration": 134,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1364,
+              "duration": 123,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.4
+          }
+        },
+        {
+          "run": 3,
+          "lcp": 2349.8945000000003,
+          "tbt": 41.62110000000007,
+          "cls": 0,
+          "maxTask": 150,
+          "entryBlocking": 188,
+          "tasks": [
+            {
+              "start": 328.29999999701977,
+              "duration": 150,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1350.5,
+              "duration": 138,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.7
+          }
+        },
+        {
+          "run": 4,
+          "lcp": 2345.153875,
+          "tbt": 34.169225000000324,
+          "cls": 0,
+          "maxTask": 130,
+          "entryBlocking": 126,
+          "tasks": [
+            {
+              "start": 333.90000000596046,
+              "duration": 56,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 392.29999999701977,
+              "duration": 90,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1350.7000000029802,
+              "duration": 130,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.55
+          }
+        },
+        {
+          "run": 5,
+          "lcp": 2349.88875,
+          "tbt": 34.422250000000076,
+          "cls": 0,
+          "maxTask": 137,
+          "entryBlocking": 153,
+          "tasks": [
+            {
+              "start": 325,
+              "duration": 137,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            },
+            {
+              "start": 1344,
+              "duration": 116,
+              "name": "self",
+              "attribution": [
+                {
+                  "name": "unknown",
+                  "containerType": "window",
+                  "containerName": "",
+                  "containerSrc": ""
+                }
+              ]
+            }
+          ],
+          "connection": {
+            "saveData": false,
+            "effectiveType": "4g",
+            "downlink": 1.6
+          }
+        }
+      ],
+      "median": {
+        "lcp": 2349.88875,
+        "tbt": 34.422250000000076,
+        "cls": 0,
+        "maxTask": 137,
+        "entryBlocking": 157
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "probe": {
+    "tasks": [
+      {
+        "start": 314,
+        "duration": 264
+      },
+      {
+        "start": 1333.300000011921,
+        "duration": 143
+      }
+    ],
+    "marks": [
+      {
+        "t": 586.1000000089407,
+        "type": "fonts-loading",
+        "fonts": []
+      },
+      {
+        "t": 587,
+        "type": "cv",
+        "target": "jornada-pedra",
+        "skipped": false
+      },
+      {
+        "t": 587.7000000029802,
+        "type": "cv",
+        "target": "configurador",
+        "skipped": true
+      },
+      {
+        "t": 587.7000000029802,
+        "type": "cv",
+        "target": "orcamento",
+        "skipped": true
+      },
+      {
+        "t": 587.8000000119209,
+        "type": "cv",
+        "target": "site-footer",
+        "skipped": true
+      },
+      {
+        "t": 1063.7000000029802,
+        "type": "fonts-loadingdone",
+        "fonts": [
+          "homeDisplay Fallback",
+          "homeBody Fallback",
+          "homeDisplay",
+          "homeBody"
+        ]
+      },
+      {
+        "t": 1607.6000000089407,
+        "type": "mutation",
+        "target": "HomeHero-module__ZWTPJG__track",
+        "attr": "data-motion",
+        "value": "true"
+      },
+      {
+        "t": 1607.6000000089407,
+        "type": "mutation",
+        "target": "HomeHero-module__ZWTPJG__track",
+        "attr": "data-motion",
+        "value": "true"
+      },
+      {
+        "t": 1607.6000000089407,
+        "type": "mutation",
+        "target": "journey-track",
+        "attr": "data-enhanced",
+        "value": "true"
+      },
+      {
+        "t": 1607.6000000089407,
+        "type": "mutation",
+        "target": "journey-track",
+        "attr": "data-enhanced",
+        "value": "true"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "name": "http://127.0.0.1:3106/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+      "start": 189.40000000596046,
+      "end": 568.8000000119209
+    },
+    {
+      "name": "http://127.0.0.1:3106/img/capa-poster-mobile-768.avif",
+      "start": 191.40000000596046,
+      "end": 693.4000000059605
+    },
+    {
+      "name": "http://127.0.0.1:3106/brand/jk-logo-288.webp",
+      "start": 192.20000000298023,
+      "end": 506.80000001192093
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/310vm2bl3xxpt.js",
+      "start": 206.20000000298023,
+      "end": 427.80000001192093
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/19mx3mg6lkumu.js",
+      "start": 206.70000000298023,
+      "end": 552.9000000059605
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/0bma92pht_c97.js",
+      "start": 207.1000000089407,
+      "end": 1330.300000011921
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/344n2zhqbh4pn.js",
+      "start": 207.30000001192093,
+      "end": 1222
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+      "start": 207.70000000298023,
+      "end": 739.9000000059605
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/3fntmmi971322.js",
+      "start": 208.20000000298023,
+      "end": 786.8000000119209
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/22i43cg4l4-dq.js",
+      "start": 208.20000000298023,
+      "end": 802.1000000089407
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/23zs9wf0ve6x-.js",
+      "start": 208.40000000596046,
+      "end": 973.2000000029802
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+      "start": 355.70000000298023,
+      "end": 1034.800000011921
+    },
+    {
+      "name": "http://127.0.0.1:3106/video/capa-mobile-av1.mp4",
+      "start": 1649.6000000089407,
+      "end": 3444
+    }
+  ],
+  "paints": [
+    {
+      "name": "first-paint",
+      "t": 604
+    },
+    {
+      "name": "first-contentful-paint",
+      "t": 604
+    }
+  ],
+  "fontFaces": [
+    {
+      "family": "homeDisplay",
+      "status": "loaded",
+      "display": "swap"
+    },
+    {
+      "family": "homeDisplay Fallback",
+      "status": "loaded",
+      "display": "auto"
+    },
+    {
+      "family": "homeBody",
+      "status": "loaded",
+      "display": "swap"
+    },
+    {
+      "family": "homeBody Fallback",
+      "status": "loaded",
+      "display": "auto"
+    }
+  ]
+}

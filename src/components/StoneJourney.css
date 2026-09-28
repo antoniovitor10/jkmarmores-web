@@ -16,8 +16,9 @@
 .journey-frame figcaption p { font-size:12px; color:#d8cec3; margin:0; }
 .journey-image-label { margin-left:auto; font-size:10px; color:#d8cec3; }
 .journey-mask,.journey-progress { display:none; }
-.journey-track[data-enhanced] { height:340svh; }
-[data-enhanced] .journey-sticky { position:sticky; top:0; height:100svh; display:grid; grid-template-rows:auto 1fr 4px; overflow:hidden; contain:layout paint; }
+/* O track tem altura definida: isola o desbloqueio do palco sem recalcular a página. */
+.journey-track[data-enhanced] { height:340svh; contain:strict; }
+[data-enhanced] .journey-sticky { position:sticky; top:0; height:100svh; display:grid; grid-template-rows:auto 1fr 4px; overflow:hidden; contain:layout paint; content-visibility:auto; }
 [data-enhanced] .journey-heading { position:relative; z-index:4; }
 [data-enhanced] .journey-frames { position:relative; min-height:0; }
 [data-enhanced] .journey-frame { position:absolute; inset:0; display:grid; grid-template-rows:1fr auto; opacity:var(--frame-opacity,0); transition:opacity .22s ease; }
@@ -57,8 +58,8 @@
   .journey-video { bottom:150px; height:calc(100% - 150px); }
 }
 @media (prefers-reduced-motion:reduce) {
-  .journey-track[data-enhanced] { height:auto; }
-  [data-enhanced] .journey-sticky { position:static; display:block; height:auto; }
+  .journey-track[data-enhanced] { height:auto; contain:none; }
+  [data-enhanced] .journey-sticky { position:static; display:block; height:auto; content-visibility:visible; }
   [data-enhanced] .journey-frame { position:static; display:block; opacity:1; }
   [data-enhanced] .journey-frame figcaption { visibility:visible; }
   [data-enhanced] .journey-mask,[data-enhanced] .journey-progress,.journey-video { display:none; }

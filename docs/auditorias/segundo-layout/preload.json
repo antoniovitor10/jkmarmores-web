@@ -1,0 +1,182 @@
+{
+  "probe": {
+    "tasks": [
+      {
+        "start": 329.29999999701977,
+        "duration": 275
+      },
+      {
+        "start": 1343,
+        "duration": 141
+      }
+    ],
+    "marks": [
+      {
+        "t": 612.4000000059605,
+        "type": "fonts-loading",
+        "fonts": []
+      },
+      {
+        "t": 613.0999999940395,
+        "type": "cv",
+        "target": "jornada-pedra",
+        "skipped": false
+      },
+      {
+        "t": 613.0999999940395,
+        "type": "cv",
+        "target": "configurador",
+        "skipped": true
+      },
+      {
+        "t": 613.2000000029802,
+        "type": "cv",
+        "target": "orcamento",
+        "skipped": true
+      },
+      {
+        "t": 613.2999999970198,
+        "type": "cv",
+        "target": "site-footer",
+        "skipped": true
+      },
+      {
+        "t": 679.9000000059605,
+        "type": "fonts-loadingdone",
+        "fonts": [
+          "homeDisplay Fallback",
+          "homeBody Fallback",
+          "homeDisplay",
+          "homeBody"
+        ]
+      },
+      {
+        "t": 1605.0999999940395,
+        "type": "mutation",
+        "target": "HomeHero-module__ZWTPJG__track",
+        "attr": "data-motion",
+        "value": "true"
+      },
+      {
+        "t": 1605.0999999940395,
+        "type": "mutation",
+        "target": "HomeHero-module__ZWTPJG__track",
+        "attr": "data-motion",
+        "value": "true"
+      },
+      {
+        "t": 1605.0999999940395,
+        "type": "mutation",
+        "target": "journey-track",
+        "attr": "data-enhanced",
+        "value": "true"
+      },
+      {
+        "t": 1605.0999999940395,
+        "type": "mutation",
+        "target": "journey-track",
+        "attr": "data-enhanced",
+        "value": "true"
+      }
+    ]
+  },
+  "resources": [
+    {
+      "name": "http://127.0.0.1:3106/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+      "start": 204.70000000298023,
+      "end": 562
+    },
+    {
+      "name": "http://127.0.0.1:3106/img/capa-poster-mobile-768.avif",
+      "start": 207,
+      "end": 700.5
+    },
+    {
+      "name": "http://127.0.0.1:3106/brand/jk-logo-288.webp",
+      "start": 208.79999999701977,
+      "end": 558
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/310vm2bl3xxpt.js",
+      "start": 222.09999999403954,
+      "end": 450.29999999701977
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/19mx3mg6lkumu.js",
+      "start": 223,
+      "end": 668.4000000059605
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/0bma92pht_c97.js",
+      "start": 223.5,
+      "end": 1338.7999999970198
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/344n2zhqbh4pn.js",
+      "start": 223.70000000298023,
+      "end": 1261.2000000029802
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+      "start": 224,
+      "end": 779.2000000029802
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/3fntmmi971322.js",
+      "start": 224.20000000298023,
+      "end": 857
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/22i43cg4l4-dq.js",
+      "start": 224.29999999701977,
+      "end": 903.4000000059605
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/23zs9wf0ve6x-.js",
+      "start": 224.5,
+      "end": 934.7000000029802
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+      "start": 225.70000000298023,
+      "end": 636.5999999940395
+    },
+    {
+      "name": "http://127.0.0.1:3106/video/capa-mobile-av1.mp4",
+      "start": 1638.2000000029802,
+      "end": 3433.2999999970198
+    }
+  ],
+  "paints": [
+    {
+      "name": "first-paint",
+      "t": 632
+    },
+    {
+      "name": "first-contentful-paint",
+      "t": 632
+    }
+  ],
+  "fontFaces": [
+    {
+      "family": "homeDisplay",
+      "status": "loaded",
+      "display": "swap"
+    },
+    {
+      "family": "homeDisplay Fallback",
+      "status": "loaded",
+      "display": "auto"
+    },
+    {
+      "family": "homeBody",
+      "status": "loaded",
+      "display": "swap"
+    },
+    {
+      "family": "homeBody Fallback",
+      "status": "loaded",
+      "display": "auto"
+    }
+  ]
+}

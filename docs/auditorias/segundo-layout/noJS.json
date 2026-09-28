@@ -1,0 +1,95 @@
+{
+  "probe": {
+    "tasks": [],
+    "marks": []
+  },
+  "resources": [
+    {
+      "name": "http://127.0.0.1:3106/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+      "start": 211.79999999701977,
+      "end": 651.0999999940395
+    },
+    {
+      "name": "http://127.0.0.1:3106/img/capa-poster-mobile-768.avif",
+      "start": 213.09999999403954,
+      "end": 746.5
+    },
+    {
+      "name": "http://127.0.0.1:3106/brand/jk-logo-288.webp",
+      "start": 213.79999999701977,
+      "end": 557.0999999940395
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/chunks/310vm2bl3xxpt.js",
+      "start": 225.79999999701977,
+      "end": 225.79999999701977
+    },
+    {
+      "name": "http://127.0.0.1:3106/configurador/orbita-rosado/720/00.avif",
+      "start": 233.3999999910593,
+      "end": 634.8999999910593
+    },
+    {
+      "name": "http://127.0.0.1:3106/img/material-detalhe-quente-768.avif",
+      "start": 233.79999999701977,
+      "end": 667.2999999970198
+    },
+    {
+      "name": "http://127.0.0.1:3106/img/sequencia-01-chapa-1200.avif",
+      "start": 235.70000000298023,
+      "end": 761.2999999970198
+    },
+    {
+      "name": "http://127.0.0.1:3106/img/sequencia-02-borda-mobile-768.avif",
+      "start": 239,
+      "end": 871.2000000029802
+    },
+    {
+      "name": "http://127.0.0.1:3106/img/sequencia-03-acabamento-1200.avif",
+      "start": 239.29999999701977,
+      "end": 964.3999999910593
+    },
+    {
+      "name": "http://127.0.0.1:3106/img/sequencia-04-aplicada-1200.avif",
+      "start": 239.70000000298023,
+      "end": 979.5
+    },
+    {
+      "name": "http://127.0.0.1:3106/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+      "start": 372.59999999403954,
+      "end": 793.7000000029802
+    }
+  ],
+  "paints": [
+    {
+      "name": "first-paint",
+      "t": 500
+    },
+    {
+      "name": "first-contentful-paint",
+      "t": 500
+    }
+  ],
+  "fontFaces": [
+    {
+      "family": "homeDisplay",
+      "status": "loaded",
+      "display": "swap"
+    },
+    {
+      "family": "homeDisplay Fallback",
+      "status": "loaded",
+      "display": "auto"
+    },
+    {
+      "family": "homeBody",
+      "status": "loaded",
+      "display": "swap"
+    },
+    {
+      "family": "homeBody Fallback",
+      "status": "loaded",
+      "display": "auto"
+    }
+  ]
+}

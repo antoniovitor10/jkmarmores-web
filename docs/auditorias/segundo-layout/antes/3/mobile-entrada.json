@@ -1,0 +1,2460 @@
+{
+  "kind": "mobile",
+  "startedAt": "2026-09-28T00:23:30.485Z",
+  "elapsedMs": 13174,
+  "emulation": {
+    "viewport": "393x873",
+    "CPU": "4x",
+    "network": "150ms / 200KB/s down / 75KB/s up",
+    "device": "Moto G Power emulado; sem aparelho real"
+  },
+  "navError": null,
+  "entry": {
+    "connection": {
+      "saveData": false,
+      "effectiveType": "4g",
+      "downlink": 1.4
+    },
+    "url": "http://127.0.0.1:3105/",
+    "title": "Marmoraria em Barueri/SP | JK Marmores e Granitos",
+    "nav": {
+      "type": "navigate",
+      "domContentLoaded": 628.8999999910593,
+      "load": 1480.3999999910593,
+      "domInteractive": 628.2999999970198,
+      "transferSize": 35704,
+      "encodedBodySize": 35404
+    },
+    "paints": {
+      "first-paint": 616,
+      "first-contentful-paint": 616
+    },
+    "fonts": "loaded",
+    "fontsLoaded": true,
+    "images": [
+      {
+        "src": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+        "complete": true,
+        "naturalWidth": 120,
+        "naturalHeight": 74,
+        "loading": "eager",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif",
+        "complete": true,
+        "naturalWidth": 393,
+        "naturalHeight": 852,
+        "loading": "eager",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "",
+        "complete": true,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "auto",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/img/material-detalhe-quente-1600.webp",
+        "complete": false,
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "loading": "lazy",
+        "decode": null
+      },
+      {
+        "src": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+        "complete": false,
+        "naturalWidth": 180,
+        "naturalHeight": 111,
+        "loading": "lazy",
+        "decode": null
+      }
+    ],
+    "videos": [
+      {
+        "src": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+        "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif",
+        "readyState": 4,
+        "networkState": 1,
+        "paused": true,
+        "currentTime": 0,
+        "videoWidth": 1280,
+        "videoHeight": 720,
+        "preload": "metadata",
+        "autoplay": false,
+        "muted": true
+      }
+    ],
+    "scripts": [
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/3fntmmi971322.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/23zs9wf0ve6x-.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/0cz1d0mv5g_q7.js",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 85
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 361
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 57
+      },
+      {
+        "src": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+        "type": "",
+        "async": true,
+        "defer": false,
+        "inlineBytes": 0
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 845
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 16
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 43
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 22026
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 20328
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 25651
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 18269
+      },
+      {
+        "src": "",
+        "type": "",
+        "async": false,
+        "defer": false,
+        "inlineBytes": 11573
+      }
+    ],
+    "resources": [
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+        "initiatorType": "link",
+        "startTime": 202.19999998807907,
+        "duration": 388.1000000089407,
+        "transferSize": 10824,
+        "encodedBodySize": 10524,
+        "decodedBodySize": 10524,
+        "requestStart": 209.79999999701977,
+        "responseEnd": 590.2999999970198
+      },
+      {
+        "name": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif",
+        "initiatorType": "link",
+        "startTime": 203.29999999701977,
+        "duration": 509.8999999910593,
+        "transferSize": 18987,
+        "encodedBodySize": 18687,
+        "decodedBodySize": 18687,
+        "requestStart": 210.29999999701977,
+        "responseEnd": 713.1999999880791
+      },
+      {
+        "name": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+        "initiatorType": "link",
+        "startTime": 203.69999998807907,
+        "duration": 326,
+        "transferSize": 7506,
+        "encodedBodySize": 7206,
+        "decodedBodySize": 7206,
+        "requestStart": 222.09999999403954,
+        "responseEnd": 529.6999999880791
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+        "initiatorType": "link",
+        "startTime": 204.09999999403954,
+        "duration": 234.20000000298023,
+        "transferSize": 2270,
+        "encodedBodySize": 1970,
+        "decodedBodySize": 5364,
+        "requestStart": 222.8999999910593,
+        "responseEnd": 438.29999999701977
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+        "initiatorType": "script",
+        "startTime": 204.79999999701977,
+        "duration": 370,
+        "transferSize": 7914,
+        "encodedBodySize": 7614,
+        "decodedBodySize": 28907,
+        "requestStart": 223.5,
+        "responseEnd": 574.7999999970198
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+        "initiatorType": "script",
+        "startTime": 204.8999999910593,
+        "duration": 1031.4000000059605,
+        "transferSize": 45403,
+        "encodedBodySize": 45103,
+        "decodedBodySize": 165229,
+        "requestStart": 438.79999999701977,
+        "responseEnd": 1236.2999999970198
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+        "initiatorType": "script",
+        "startTime": 204.8999999910593,
+        "duration": 1137.7000000029802,
+        "transferSize": 71928,
+        "encodedBodySize": 71628,
+        "decodedBodySize": 229156,
+        "requestStart": 331.69999998807907,
+        "responseEnd": 1342.5999999940395
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+        "initiatorType": "script",
+        "startTime": 205.69999998807907,
+        "duration": 553.5,
+        "transferSize": 4153,
+        "encodedBodySize": 3853,
+        "decodedBodySize": 9721,
+        "requestStart": 530.0999999940395,
+        "responseEnd": 759.1999999880791
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/3fntmmi971322.js",
+        "initiatorType": "script",
+        "startTime": 206.09999999403954,
+        "duration": 615,
+        "transferSize": 3961,
+        "encodedBodySize": 3661,
+        "decodedBodySize": 14377,
+        "requestStart": 575.2999999970198,
+        "responseEnd": 821.0999999940395
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+        "initiatorType": "script",
+        "startTime": 206.19999998807907,
+        "duration": 753.1000000089407,
+        "transferSize": 3908,
+        "encodedBodySize": 3608,
+        "decodedBodySize": 8868,
+        "requestStart": 713.5999999940395,
+        "responseEnd": 959.2999999970198
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/chunks/23zs9wf0ve6x-.js",
+        "initiatorType": "script",
+        "startTime": 206.3999999910593,
+        "duration": 799.2999999970198,
+        "transferSize": 4362,
+        "encodedBodySize": 4062,
+        "decodedBodySize": 11348,
+        "requestStart": 759.7999999970198,
+        "responseEnd": 1005.6999999880791
+      },
+      {
+        "name": "http://127.0.0.1:3105/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+        "initiatorType": "css",
+        "startTime": 355.8999999910593,
+        "duration": 618.7999999970198,
+        "transferSize": 11496,
+        "encodedBodySize": 11196,
+        "decodedBodySize": 11196,
+        "requestStart": 590.3999999910593,
+        "responseEnd": 974.6999999880791
+      },
+      {
+        "name": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+        "initiatorType": "video",
+        "startTime": 1635.699999988079,
+        "duration": 799.5,
+        "transferSize": 300,
+        "encodedBodySize": 0,
+        "decodedBodySize": 0,
+        "requestStart": 1636.7999999970198,
+        "responseEnd": 2435.199999988079
+      }
+    ],
+    "bytes": 193012,
+    "reactPresent": true,
+    "audit": {
+      "longTasks": [
+        {
+          "start": 320,
+          "duration": 262,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 1345.5,
+          "duration": 120,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        }
+      ],
+      "shifts": [],
+      "clicks": [],
+      "raf": 5,
+      "videos": [
+        {
+          "t": 1694.8999999910593,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 1794.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 1895.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 1994.7999999970198,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2093.7999999970198,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2194.8999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2295,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2394.3999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2494.3999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2594.8999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2694.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2794.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2895.2999999970198,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2994.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3093.8999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3194.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3294.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3394.7999999970198,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3494.2999999970198,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3594.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3695.8999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3793.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3894.2999999970198,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3994.2999999970198,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4094.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4194.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4294.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4394.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4494.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4594.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4694.79999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4795,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4895,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4993.699999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5094.79999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5194.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5294.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5394.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5494,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5594.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        }
+      ],
+      "reactCommits": [
+        {
+          "t": 1553.8999999910593,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1571.199999988079,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1575.7999999970198,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1589.8999999910593,
+          "renderer": 1,
+          "hydrating": false
+        }
+      ],
+      "renderer": [
+        {
+          "t": 1387.5,
+          "version": "19.3.0-canary-cbb046ab-20260731"
+        }
+      ]
+    }
+  },
+  "firstScroll": {
+    "wallMs": 1862,
+    "y": 0,
+    "scrollHeight": 7101
+  },
+  "targets": {
+    "menus": [],
+    "whatsapp": [
+      {
+        "text": "Pedir orçamento",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "text": "Fale com a JK",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 229,
+          "y": 809,
+          "w": 148,
+          "h": 52
+        }
+      },
+      {
+        "text": "Fale com a JK no WhatsApp",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 413.359375,
+          "w": 204.046875,
+          "h": 46.1875
+        }
+      },
+      {
+        "text": "Quero uma pedra para meu espaço",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20as%20refer%C3%AAncias%20no%20site%20da%20JK%20e%20quero%20conversar%20sobre%20uma%20pedra%20para%20meu%20espa%C3%A7o.",
+        "box": {
+          "x": 68.3125,
+          "y": 3619.984375,
+          "w": 256.359375,
+          "h": 44
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20combina%C3%A7%C3%A3o%3A%20Cozinha%20com%20ilha%2C%20m%C3%A1rmore%20rosado%20e%20acabamento%20polido.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F%20A%20imagem%20%C3%A9%20ilustrativa%3B%20quero%20confirmar%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis.",
+        "box": {
+          "x": 24,
+          "y": 4614.984375,
+          "w": 208.8125,
+          "h": 63.09375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 5783.265625,
+          "w": 228.8125,
+          "h": 49.59375
+        }
+      },
+      {
+        "text": "",
+        "href": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+        "box": {
+          "x": 24,
+          "y": 6694.984375,
+          "w": 345,
+          "h": 44
+        }
+      }
+    ]
+  },
+  "menuResult": {
+    "ok": false,
+    "reason": "nenhum seletor de menu comum encontrado"
+  },
+  "waResult": {
+    "ok": false,
+    "error": "TimeoutError: locator.tap: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[href*=\"wa.me\"],a[href*=\"whatsapp\" i]').first()\u001b[22m\n\u001b[2m    - locator resolved to <a class=\"header-cta\" href=\"https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.\">Pedir orçamento</a>\u001b[22m\n\u001b[2m  - attempting tap action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    8 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 500ms\u001b[22m\n",
+    "wallMs": 4012
+  },
+  "interaction": {
+    "audit": {
+      "longTasks": [
+        {
+          "start": 320,
+          "duration": 262,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        },
+        {
+          "start": 1345.5,
+          "duration": 120,
+          "name": "self",
+          "attribution": [
+            {
+              "name": "unknown",
+              "containerType": "window",
+              "containerName": "",
+              "containerSrc": ""
+            }
+          ]
+        }
+      ],
+      "shifts": [],
+      "clicks": [
+        {
+          "name": "pointerover",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5676,
+          "processingEnd": 5678.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5678.5999999940395,
+          "processingEnd": 5678.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5678.5999999940395,
+          "processingEnd": 5678.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5678.5999999940395,
+          "processingEnd": 5678.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5678.5999999940395,
+          "processingEnd": 5678.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5678.5999999940395,
+          "processingEnd": 5678.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5678.5999999940395,
+          "processingEnd": 5678.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5678.5999999940395,
+          "processingEnd": 5678.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5678.5999999940395,
+          "processingEnd": 5678.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5678.5999999940395,
+          "processingEnd": 5678.5999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerdown",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5678.5999999940395,
+          "processingEnd": 5679.29999999702,
+          "interactionId": 1380
+        },
+        {
+          "name": "touchstart",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5679.399999991059,
+          "processingEnd": 5680,
+          "interactionId": 0
+        },
+        {
+          "name": "gotpointercapture",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5680.199999988079,
+          "processingEnd": 5680.5,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerup",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5680.5,
+          "processingEnd": 5680.899999991059,
+          "interactionId": 1380
+        },
+        {
+          "name": "lostpointercapture",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5680.899999991059,
+          "processingEnd": 5680.899999991059,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerout",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5680.899999991059,
+          "processingEnd": 5681.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5681.29999999702,
+          "processingEnd": 5681.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5681.29999999702,
+          "processingEnd": 5681.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5681.29999999702,
+          "processingEnd": 5681.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5681.29999999702,
+          "processingEnd": 5681.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5681.29999999702,
+          "processingEnd": 5681.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5681.29999999702,
+          "processingEnd": 5681.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5681.29999999702,
+          "processingEnd": 5681.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5681.29999999702,
+          "processingEnd": 5681.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5681.29999999702,
+          "processingEnd": 5681.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "touchend",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5681.29999999702,
+          "processingEnd": 5681.399999991059,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseover",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5682.699999988079,
+          "processingEnd": 5683.29999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "mousedown",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5683.899999991059,
+          "processingEnd": 5684.0999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseup",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5684.5,
+          "processingEnd": 5685.0999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "click",
+          "entryType": "event",
+          "start": 5666.399999991059,
+          "duration": 16,
+          "processingStart": 5685.0999999940395,
+          "processingEnd": 5685.29999999702,
+          "interactionId": 1380
+        },
+        {
+          "name": "pointerout",
+          "entryType": "event",
+          "start": 5744.199999988079,
+          "duration": 24,
+          "processingStart": 5750.199999988079,
+          "processingEnd": 5751.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5744.199999988079,
+          "duration": 24,
+          "processingStart": 5751.199999988079,
+          "processingEnd": 5751.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerleave",
+          "entryType": "event",
+          "start": 5744.199999988079,
+          "duration": 24,
+          "processingStart": 5751.199999988079,
+          "processingEnd": 5751.199999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerover",
+          "entryType": "event",
+          "start": 5744.199999988079,
+          "duration": 24,
+          "processingStart": 5751.199999988079,
+          "processingEnd": 5751.699999988079,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5744.199999988079,
+          "duration": 24,
+          "processingStart": 5751.79999999702,
+          "processingEnd": 5751.79999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5744.199999988079,
+          "duration": 24,
+          "processingStart": 5751.79999999702,
+          "processingEnd": 5751.79999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "pointerenter",
+          "entryType": "event",
+          "start": 5744.199999988079,
+          "duration": 24,
+          "processingStart": 5751.79999999702,
+          "processingEnd": 5751.79999999702,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseout",
+          "entryType": "event",
+          "start": 5744.199999988079,
+          "duration": 24,
+          "processingStart": 5751.79999999702,
+          "processingEnd": 5752.0999999940395,
+          "interactionId": 0
+        },
+        {
+          "name": "mouseover",
+          "entryType": "event",
+          "start": 5744.199999988079,
+          "duration": 24,
+          "processingStart": 5752.0999999940395,
+          "processingEnd": 5752.199999988079,
+          "interactionId": 0
+        }
+      ],
+      "raf": 11,
+      "videos": [
+        {
+          "t": 1694.8999999910593,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 1794.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 1895.5999999940395,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 1994.7999999970198,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2093.7999999970198,
+          "currentTime": 0,
+          "readyState": 0,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 0,
+          "videoHeight": 0,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2194.8999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2295,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2394.3999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 2,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2494.3999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2594.8999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2694.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2794.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2895.2999999970198,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 2994.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3093.8999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3194.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3294.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3394.7999999970198,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3494.2999999970198,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3594.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3695.8999999910593,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3793.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3894.2999999970198,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 3994.2999999970198,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4094.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4194.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4294.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4394.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4494.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4594.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4694.79999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4795,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4895,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 4993.699999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5094.79999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5194.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5294.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5394.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5494,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5594.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5703.399999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5794.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5894.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 5994.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 6095,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 6194.79999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 6294.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 6395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 6494.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 6595.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 6694.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 6794.79999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 6894.699999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 6994.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 7094.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 7193.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 7294.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 7393.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 7494.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 7601.0999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 7693.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 7795,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 7894.899999991059,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 7994.5999999940395,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 8094.699999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 8194.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 8294.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 8394.39999999106,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 8494.39999999106,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 8594.79999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 8694.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 8793.89999999106,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 8894.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 8994.89999999106,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 9094.39999999106,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 9194.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 9294.39999999106,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 9394.89999999106,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 9493.699999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 9594.09999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 9693.39999999106,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 9794.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 9894.39999999106,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 9994.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 10095.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 10194.79999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 10294,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 10394.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 10494.89999999106,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 10595,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 10694.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 10794.29999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 10894,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 10993.699999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 11094.59999999404,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 11194,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 11294.79999999702,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 11394.5,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 11494.699999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        },
+        {
+          "t": 11594.199999988079,
+          "currentTime": 0,
+          "readyState": 4,
+          "paused": true,
+          "networkState": 1,
+          "videoWidth": 1280,
+          "videoHeight": 720,
+          "poster": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif"
+        }
+      ],
+      "reactCommits": [
+        {
+          "t": 1553.8999999910593,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1571.199999988079,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1575.7999999970198,
+          "renderer": 1,
+          "hydrating": false
+        },
+        {
+          "t": 1589.8999999910593,
+          "renderer": 1,
+          "hydrating": false
+        }
+      ],
+      "renderer": [
+        {
+          "t": 1387.5,
+          "version": "19.3.0-canary-cbb046ab-20260731"
+        }
+      ]
+    },
+    "fonts": "loaded",
+    "videos": [
+      {
+        "currentTime": 0,
+        "readyState": 4,
+        "networkState": 1,
+        "paused": true
+      }
+    ],
+    "scrollY": 0,
+    "resourceBytes": 193012
+  },
+  "consoleErr": [],
+  "pageErr": [],
+  "requestsCount": 14,
+  "requestList": [
+    {
+      "url": "http://127.0.0.1:3105/",
+      "resourceType": "document",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/instrument_serif_latin_400-s.p.3-c98w3lqzfoq.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/img/capa-poster-mobile-768.avif",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/brand/jk-logo-288.webp",
+      "resourceType": "image",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/310vm2bl3xxpt.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/19mx3mg6lkumu.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/344n2zhqbh4pn.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/3fntmmi971322.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/22i43cg4l4-dq.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/chunks/23zs9wf0ve6x-.js",
+      "resourceType": "script",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/_next/static/media/instrument_sans_latin_400-s.3z59fb5y927g_.woff2",
+      "resourceType": "font",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:3105/video/capa-mobile-av1.mp4",
+      "resourceType": "media",
+      "method": "GET"
+    }
+  ]
+}

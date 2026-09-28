@@ -162,8 +162,8 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
   return <div ref={root} className="journey-track" data-enhanced="true">
     <noscript><style>{`
       .journey-frame noscript { display:contents; }
-      .journey-track[data-enhanced] { height:auto; }
-      [data-enhanced] .journey-sticky { position:static; display:block; height:auto; }
+      .journey-track[data-enhanced] { height:auto; contain:none; }
+      [data-enhanced] .journey-sticky { position:static; display:block; height:auto; content-visibility:visible; }
       [data-enhanced] .journey-frame { position:static; display:block; opacity:1; }
       [data-enhanced] .journey-frame figcaption { visibility:visible; }
       [data-enhanced] .journey-frame img { height:auto; aspect-ratio:16/9; }

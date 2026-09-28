@@ -1,0 +1,246 @@
+{
+  "antes": [
+    {
+      "run": "1",
+      "layouts": [
+        {
+          "atMs": 399.413,
+          "durationMs": 83.064,
+          "dirtyObjects": 50,
+          "frame": "87BB7CC6491BF2BC18A40BB0DE0B3E48",
+          "partialLayout": false,
+          "totalObjects": 50
+        },
+        {
+          "atMs": 501.061,
+          "durationMs": 104.663,
+          "dirtyObjects": 126,
+          "frame": "87BB7CC6491BF2BC18A40BB0DE0B3E48",
+          "partialLayout": false,
+          "totalObjects": 171
+        }
+      ],
+      "scripts": [
+        {
+          "atMs": 1366.44,
+          "durationMs": 123.286,
+          "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+        }
+      ]
+    },
+    {
+      "run": "2",
+      "layouts": [
+        {
+          "atMs": 389.885,
+          "durationMs": 77.493,
+          "dirtyObjects": 50,
+          "frame": "D7ED6C0F953B9AE437EA7E23247BF7B4",
+          "partialLayout": false,
+          "totalObjects": 50
+        },
+        {
+          "atMs": 481.716,
+          "durationMs": 109.013,
+          "dirtyObjects": 126,
+          "frame": "D7ED6C0F953B9AE437EA7E23247BF7B4",
+          "partialLayout": false,
+          "totalObjects": 171
+        }
+      ],
+      "scripts": [
+        {
+          "atMs": 1354.201,
+          "durationMs": 128.739,
+          "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+        }
+      ]
+    },
+    {
+      "run": "3",
+      "layouts": [
+        {
+          "atMs": 371.598,
+          "durationMs": 75.507,
+          "dirtyObjects": 50,
+          "frame": "9337A85CE3C3C107089D1560AE962070",
+          "partialLayout": false,
+          "totalObjects": 50
+        },
+        {
+          "atMs": 463.424,
+          "durationMs": 112.87,
+          "dirtyObjects": 126,
+          "frame": "9337A85CE3C3C107089D1560AE962070",
+          "partialLayout": false,
+          "totalObjects": 171
+        }
+      ],
+      "scripts": [
+        {
+          "atMs": 1346.606,
+          "durationMs": 116.213,
+          "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+        }
+      ]
+    },
+    {
+      "run": "4",
+      "layouts": [
+        {
+          "atMs": 399.493,
+          "durationMs": 75.397,
+          "dirtyObjects": 50,
+          "frame": "86AD60FE3996DD0FA7A8BA04FC2CFA03",
+          "partialLayout": false,
+          "totalObjects": 50
+        },
+        {
+          "atMs": 494.697,
+          "durationMs": 126.533,
+          "dirtyObjects": 126,
+          "frame": "86AD60FE3996DD0FA7A8BA04FC2CFA03",
+          "partialLayout": false,
+          "totalObjects": 171
+        }
+      ],
+      "scripts": [
+        {
+          "atMs": 1358.075,
+          "durationMs": 121.361,
+          "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+        }
+      ]
+    },
+    {
+      "run": "5",
+      "layouts": [
+        {
+          "atMs": 400.666,
+          "durationMs": 86.637,
+          "dirtyObjects": 50,
+          "frame": "DA64E9CE4030C0FDC8DF9A35626A9BB9",
+          "partialLayout": false,
+          "totalObjects": 50
+        },
+        {
+          "atMs": 502.855,
+          "durationMs": 98.285,
+          "dirtyObjects": 126,
+          "frame": "DA64E9CE4030C0FDC8DF9A35626A9BB9",
+          "partialLayout": false,
+          "totalObjects": 171
+        }
+      ],
+      "scripts": [
+        {
+          "atMs": 1365.375,
+          "durationMs": 123.123,
+          "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+        }
+      ]
+    }
+  ],
+  "depois": [
+    {
+      "run": "1",
+      "layouts": [
+        {
+          "atMs": 444.675,
+          "durationMs": 88.241,
+          "dirtyObjects": 56,
+          "frame": "156F8A3B5061B00A83671AB688B707CB",
+          "partialLayout": false,
+          "totalObjects": 56
+        }
+      ],
+      "scripts": [
+        {
+          "atMs": 1381.765,
+          "durationMs": 141.082,
+          "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+        }
+      ]
+    },
+    {
+      "run": "2",
+      "layouts": [
+        {
+          "atMs": 393.848,
+          "durationMs": 74.306,
+          "dirtyObjects": 56,
+          "frame": "8B48B5E0D1A1A6B4F72B496701767780",
+          "partialLayout": false,
+          "totalObjects": 56
+        }
+      ],
+      "scripts": [
+        {
+          "atMs": 1367.623,
+          "durationMs": 120.279,
+          "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+        }
+      ]
+    },
+    {
+      "run": "3",
+      "layouts": [
+        {
+          "atMs": 387.904,
+          "durationMs": 84.304,
+          "dirtyObjects": 56,
+          "frame": "1373EF71C3E9F6DA220152A8C4211C19",
+          "partialLayout": false,
+          "totalObjects": 56
+        }
+      ],
+      "scripts": [
+        {
+          "atMs": 1351.423,
+          "durationMs": 134.098,
+          "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+        }
+      ]
+    },
+    {
+      "run": "4",
+      "layouts": [
+        {
+          "atMs": 397.485,
+          "durationMs": 80.15,
+          "dirtyObjects": 56,
+          "frame": "002733F0CBAE9C354C2DF15A724C4E38",
+          "partialLayout": false,
+          "totalObjects": 56
+        }
+      ],
+      "scripts": [
+        {
+          "atMs": 1352.319,
+          "durationMs": 125.6,
+          "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+        }
+      ]
+    },
+    {
+      "run": "5",
+      "layouts": [
+        {
+          "atMs": 380.671,
+          "durationMs": 77.195,
+          "dirtyObjects": 56,
+          "frame": "83B9A42461A524BE1466D760EAA296B7",
+          "partialLayout": false,
+          "totalObjects": 56
+        }
+      ],
+      "scripts": [
+        {
+          "atMs": 1346.777,
+          "durationMs": 113.233,
+          "url": "http://127.0.0.1:3105/_next/static/chunks/0bma92pht_c97.js"
+        }
+      ]
+    }
+  ]
+}

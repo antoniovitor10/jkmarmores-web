@@ -197,15 +197,13 @@ address { font-style:normal; }
 @media(max-width:700px) { .home-contact-grid { grid-template-columns:1fr; } }
 
 /* Reserva o espaço abaixo da dobra sem calcular todos os descendentes na entrada. */
-.home-page > :is(.stone-journey,#configurador,.home-contact),body:has(.home-page) > .site-footer { content-visibility:auto; }
-.home-page > .stone-journey { contain-intrinsic-block-size:auto calc(340svh + 121px); }
+.home-page > :is(#configurador,.home-contact),body:has(.home-page) > .site-footer { content-visibility:auto; }
 .home-page > #configurador { contain-intrinsic-block-size:auto calc(100svh + 210px); width:100%; max-width:none; padding-inline:max(40px,calc((100% - 1280px)/2)); }
 .home-page > .home-contact { contain-intrinsic-block-size:auto calc((min(100vw - 80px,1280px) - clamp(40px,8vw,112px))*0.625 + 27px); }
 body:has(.home-page) > .site-footer { contain-intrinsic-block-size:auto 409px; }
 /* O fallback de tela cheia da Orbita precisa continuar relativo ao viewport. */
 .home-page > #configurador:has([data-fullscreen="true"]) { content-visibility:visible; contain:none; }
 @media(max-width:700px) {
-  .home-page > .stone-journey { contain-intrinsic-block-size:auto calc(280svh + 121px); }
   .home-page > #configurador { padding-inline:24px; contain-intrinsic-block-size:auto calc(100svh + 280px); }
   .home-page > .home-contact { contain-intrinsic-block-size:auto 773px; }
   body:has(.home-page) > .site-footer { contain-intrinsic-block-size:auto 1035px; }
