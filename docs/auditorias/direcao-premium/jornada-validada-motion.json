@@ -1,0 +1,51 @@
+[
+  {
+    "mode": "normal",
+    "waiting": 0,
+    "scroll": 1316.2000000178814,
+    "response": 0.19999998807907104,
+    "lcp": 148,
+    "videos": 4,
+    "enhanced": true,
+    "media": [
+      "http://127.0.0.1:3105/video/jornada-1-mobile-editorial.mp4",
+      "http://127.0.0.1:3105/video/jornada-2-mobile-editorial.mp4",
+      "http://127.0.0.1:3105/video/jornada-3-mobile-editorial.mp4",
+      "http://127.0.0.1:3105/video/jornada-4-mobile-editorial.mp4"
+    ]
+  },
+  {
+    "mode": "slow",
+    "waiting": 0,
+    "scroll": 2866.0999999940395,
+    "response": 0.19999998807907104,
+    "lcp": 500,
+    "videos": 0,
+    "enhanced": false,
+    "media": []
+  },
+  {
+    "mode": "save-data",
+    "waiting": 0,
+    "scroll": 1298.300000011921,
+    "response": 1.199999988079071,
+    "lcp": 140,
+    "videos": 0,
+    "enhanced": false,
+    "media": []
+  },
+  {
+    "mode": "reduced",
+    "waiting": 0,
+    "scroll": 1308.0999999940395,
+    "response": 0.09999999403953552,
+    "lcp": 132,
+    "videos": 0,
+    "enhanced": false,
+    "media": []
+  },
+  {
+    "mode": "no-js",
+    "media": []
+  }
+]

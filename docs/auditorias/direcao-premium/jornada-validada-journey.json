@@ -1,0 +1,474 @@
+[
+  {
+    "width": 390,
+    "shots": [
+      {
+        "progress": 0,
+        "mask": 1,
+        "frames": [
+          {
+            "opacity": 1,
+            "image": 960
+          },
+          {
+            "opacity": 0,
+            "image": 390
+          },
+          {
+            "opacity": 0,
+            "image": 960
+          },
+          {
+            "opacity": 0,
+            "image": 960
+          }
+        ],
+        "scrollY": 793
+      },
+      {
+        "progress": 0.25,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 960,
+            "video": 0.916666
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 390,
+            "video": 0
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 960
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 960
+          }
+        ],
+        "scrollY": 1276
+      },
+      {
+        "progress": 0.43,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 960,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 390,
+            "video": 0.791666
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 960,
+            "video": 0
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 960
+          }
+        ],
+        "scrollY": 1624
+      },
+      {
+        "progress": 0.62,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 960,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 390,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 960,
+            "video": 0.708333
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 960,
+            "video": 0
+          }
+        ],
+        "scrollY": 1991
+      },
+      {
+        "progress": 0.82,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 960,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 390,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 960,
+            "video": 1.333333
+          },
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 960,
+            "video": 0.708333
+          }
+        ],
+        "scrollY": 2378
+      },
+      {
+        "progress": 1,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 960,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 390,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 960,
+            "video": 1.333333
+          },
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 960,
+            "video": 1.416666
+          }
+        ],
+        "scrollY": 2726
+      },
+      {
+        "progress": 0.43,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 960,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 390,
+            "video": 0.791666
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "mode": "video",
+            "image": 960,
+            "video": 0.166666
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "mode": "video",
+            "image": 960,
+            "video": 0.041666
+          }
+        ],
+        "scrollY": 1624
+      }
+    ],
+    "media": [
+      "http://127.0.0.1:3105/video/jornada-1-mobile-editorial.mp4",
+      "http://127.0.0.1:3105/video/jornada-2-mobile-editorial.mp4",
+      "http://127.0.0.1:3105/video/jornada-3-mobile-editorial.mp4",
+      "http://127.0.0.1:3105/video/jornada-4-mobile-editorial.mp4"
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "shots": [
+      {
+        "progress": 0,
+        "mask": 1,
+        "frames": [
+          {
+            "opacity": 1,
+            "image": 1440
+          },
+          {
+            "opacity": 0,
+            "image": 1440
+          },
+          {
+            "opacity": 0,
+            "image": 1440
+          },
+          {
+            "opacity": 0,
+            "image": 1440
+          }
+        ],
+        "scrollY": 1114
+      },
+      {
+        "progress": 0.25,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 1440,
+            "video": 0.833333
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 1440,
+            "video": 0
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 1440
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 1440
+          }
+        ],
+        "scrollY": 1699
+      },
+      {
+        "progress": 0.43,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 1440,
+            "video": 0.666666
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 1440,
+            "video": 0
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 1440
+          }
+        ],
+        "scrollY": 2121
+      },
+      {
+        "progress": 0.62,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 1440,
+            "video": 0.541666
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "image": 1440,
+            "video": 0
+          }
+        ],
+        "scrollY": 2565
+      },
+      {
+        "progress": 0.82,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.416666
+          },
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 1440,
+            "video": 0.458333
+          }
+        ],
+        "scrollY": 3033
+      },
+      {
+        "progress": 1,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.416666
+          },
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.416666
+          }
+        ],
+        "scrollY": 3454
+      },
+      {
+        "progress": 0.43,
+        "mask": 0,
+        "frames": [
+          {
+            "opacity": 1,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 1.375
+          },
+          {
+            "opacity": 1,
+            "current": "true",
+            "mode": "video",
+            "image": 1440,
+            "video": 0.666666
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 0.166666
+          },
+          {
+            "opacity": 0,
+            "current": "false",
+            "mode": "video",
+            "image": 1440,
+            "video": 0.458333
+          }
+        ],
+        "scrollY": 2121
+      }
+    ],
+    "media": [
+      "http://127.0.0.1:3105/video/jornada-1-desktop-editorial.mp4",
+      "http://127.0.0.1:3105/video/jornada-2-desktop-editorial.mp4",
+      "http://127.0.0.1:3105/video/jornada-3-desktop-editorial.mp4",
+      "http://127.0.0.1:3105/video/jornada-4-desktop-editorial.mp4"
+    ],
+    "errors": []
+  }
+]

@@ -6,7 +6,7 @@ export function motionNetworkPolicy(connection?: MotionConnection) {
   if (connection?.saveData || /(^|-)2g|3g/.test(connection?.effectiveType ?? "") ||
       (connection?.downlink !== undefined && connection.downlink < 1.6)) return "slow-connection";
   const navigation = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming | undefined;
-  const poster = performance.getEntriesByType("resource").find(entry => entry.name.includes("/img/capa-poster-")) as PerformanceResourceTiming | undefined;
+  const poster = performance.getEntriesByType("resource").find(entry => /\/img\/(capa-|material-detalhe-quente-)/.test(entry.name)) as PerformanceResourceTiming | undefined;
   let measured = false;
   for (const entry of [navigation, poster]) {
     if (!entry || entry.transferSize === 0) continue; // Cache não mede a conexão atual.

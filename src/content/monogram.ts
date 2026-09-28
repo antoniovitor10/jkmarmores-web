@@ -1,0 +1,3 @@
+// Vetorização manual PROVISÓRIA do JPEG da cliente. Substituir pelo vetor oficial (V1).
+// Coordenadas relativas a (385,280) da imagem original de 1600x1200.
+export const jkMonogramPath = 'M197 3H291V314C291 418 237 468 152 468C62 468 -4 416 2 321H92C99 367 114 385 145 385C190 385 197 365 197 316Z M398 3H618Q616 16 600 29L398 207ZM398 259L618 462H398ZM773 3V461L517 235Q521 223 533 213Z';

@@ -1,5 +1,7 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { mountJourney } from './journey-motion';
+import { motionNetworkPolicy, type MotionConnection } from '@/lib/motion-network';
 
 export { gsap, ScrollTrigger };
 gsap.registerPlugin(ScrollTrigger);
@@ -7,7 +9,16 @@ ScrollTrigger.config({ ignoreMobileResize: true });
 
 export function mountPageMotion() {
   const mm = gsap.matchMedia();
+  const journey = document.querySelector<HTMLElement>('.journey-track');
   mm.add('(prefers-reduced-motion: no-preference)', () => {
+    const connection = (navigator as Navigator & { connection?: MotionConnection }).connection;
+    let stopJourney = () => {};
+    const configure = () => {
+      stopJourney();
+      stopJourney = journey && motionNetworkPolicy(connection) === 'allowed' ? mountJourney(journey) : () => {};
+    };
+    configure();
+    connection?.addEventListener('change', configure);
     const ctx = gsap.context(() => {});
     const observer = new IntersectionObserver(entries => {
       for (const entry of entries) {
@@ -27,7 +38,7 @@ export function mountPageMotion() {
     document.querySelectorAll('.editorial-image').forEach(el => {
       if (!el.matches('.editorial-image') || !el.closest('#configurador')) observer.observe(el);
     });
-    return () => { observer.disconnect(); ctx.revert(); document.body.style.removeProperty('--page-bg'); document.body.style.removeProperty('--page-ink'); };
+    return () => { stopJourney(); connection?.removeEventListener('change', configure); observer.disconnect(); ctx.revert(); };
   });
   return () => mm.revert();
 }

@@ -192,3 +192,8 @@ Bodoni Moda 400 (opsz 48), Owen Earl: https://github.com/google/fonts/tree/main/
 
 ## 28/09: tratamento editorial e capa
 Sem geração ou request_id novo. Fontes pagas e direitos permanecem os registrados acima; originais intactos. scripts/editorial-image.mjs aplica Sharp no build: saturação 0,86; ganho RGB 0,92/0,91/0,90 e offset 10/9/8; grão monocromático determinista de amplitude 2,4/255. Derivados AVIF qualidade 50 e WebP 72. O recorte móvel da capa parte de material-detalhe-quente.png em x160/y0, 900x1152, sem ampliação. Logo e imagens do configurador não recebem esse tratamento. A capa usa uma imagem, conforme a nova direção; fontes dos vídeos pagos ficam preservadas no acervo. Aviso IA único no rodapé e alt ilustrativo nas imagens. Custo desta entrega US$ 0.
+
+
+## 28/09: monograma provisório e jornada editorial
+JK vetorizado manualmente do JPEG fornecido pela cliente, coordenadas relativas x385/y280. Arquivo public/brand/jk-monograma-provisorio.svg, textura do JPEG e traçado src/content/monogram.ts; PROVISÓRIO, substituir pelo vetor oficial (V1 parcial). scripts/build-monogram.mjs remove só o preto do fundo nas bordas, sem redesenhar a marca. Nenhum modelo, request_id ou custo novo.
+Vídeos da jornada já pagos, tratados localmente por scripts/editorial-videos.mjs: saturação0,86, contraste0,91, brilho0,035 e leve calor de canais. H.264 CRF20, GOP6, faststart,1,458333s, sem áudio. Desktop somado1.170.426B; mobile928.746B/720p. Fontes originais preservadas. Aviso de IA único e alt ilustrativo; nenhuma afirmação de que a JK executa os processos ilustrados. Custo US$0.

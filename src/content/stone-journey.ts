@@ -16,52 +16,52 @@ export type JourneyVideo = { clips: readonly JourneyClip[] };
 export const stoneJourneyVideo: JourneyVideo | null = {
   "clips": [
     {
+      "durationSeconds": 1.458333,
       "desktop": {
-        "src": "/video/jornada-1-desktop.mp4",
-        "bytes": 240259
+        "src": "/video/jornada-1-desktop-editorial.mp4",
+        "bytes": 309779
       },
       "mobile": {
-        "src": "/video/jornada-1-mobile.mp4",
-        "bytes": 166010,
+        "src": "/video/jornada-1-mobile-editorial.mp4",
+        "bytes": 268763,
         "height": 720
-      },
-      "durationSeconds": 1.458333
+      }
     },
     {
+      "durationSeconds": 1.458333,
       "desktop": {
-        "src": "/video/jornada-2-desktop.mp4",
-        "bytes": 176059
+        "src": "/video/jornada-2-desktop-editorial.mp4",
+        "bytes": 215566
       },
       "mobile": {
-        "src": "/video/jornada-2-mobile.mp4",
-        "bytes": 60529,
+        "src": "/video/jornada-2-mobile-editorial.mp4",
+        "bytes": 98224,
         "height": 720
-      },
-      "durationSeconds": 1.458333
+      }
     },
     {
+      "durationSeconds": 1.458333,
       "desktop": {
-        "src": "/video/jornada-3-desktop.mp4",
-        "bytes": 244192
+        "src": "/video/jornada-3-desktop-editorial.mp4",
+        "bytes": 318011
       },
       "mobile": {
-        "src": "/video/jornada-3-mobile.mp4",
-        "bytes": 167156,
+        "src": "/video/jornada-3-mobile-editorial.mp4",
+        "bytes": 279216,
         "height": 720
-      },
-      "durationSeconds": 1.458333
+      }
     },
     {
+      "durationSeconds": 1.458333,
       "desktop": {
-        "src": "/video/jornada-4-desktop.mp4",
-        "bytes": 249175
+        "src": "/video/jornada-4-desktop-editorial.mp4",
+        "bytes": 327070
       },
       "mobile": {
-        "src": "/video/jornada-4-mobile.mp4",
-        "bytes": 169017,
+        "src": "/video/jornada-4-mobile-editorial.mp4",
+        "bytes": 282543,
         "height": 720
-      },
-      "durationSeconds": 1.458333
+      }
     }
   ]
 };

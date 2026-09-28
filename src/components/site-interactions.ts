@@ -1,12 +1,24 @@
 import { afterPoster } from '@/lib/after-poster';
+import { mountJourneyImages } from './journey-images';
+import { motionNetworkPolicy, type MotionConnection } from '@/lib/motion-network';
 
 export function mountSiteInteractions() {
   let disposed = false;
   let motion = () => {};
+  let nearby: IntersectionObserver | undefined;
+  const journey = document.querySelector<HTMLElement>('.journey-track');
+  let stopImages = () => {};
   const cancelMotion = afterPoster(() => {
-    void import('./motion-runtime').then(({ mountPageMotion }) => {
-      if (!disposed) motion = mountPageMotion();
-    });
+    stopImages = journey ? mountJourneyImages(journey) : () => {};
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches || motionNetworkPolicy((navigator as Navigator & { connection?: MotionConnection }).connection) !== 'allowed') return;
+    nearby = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      nearby?.disconnect();
+      void import('./motion-runtime').then(({ mountPageMotion }) => {
+        if (!disposed) motion = mountPageMotion();
+      });
+    }, { rootMargin: '300px 0px' });
+    document.querySelectorAll('.journey-heading,.editorial-image').forEach(el => nearby!.observe(el));
   });
   const dock = document.querySelector<HTMLElement>(".mobile-quote-dock");
   const hero = document.querySelector(".prologo, .home-hero");
@@ -19,12 +31,12 @@ export function mountSiteInteractions() {
   if (hero) cover.observe(hero);
   const zones = new IntersectionObserver(entries => {
     for (const entry of entries) {
-      if (entry.intersectionRect.height >= innerHeight * .5) occupied.add(entry.target);
+      if (entry.target.matches('.home-contact .button') ? entry.intersectionRatio >= .5 : entry.intersectionRect.height >= innerHeight * .5) occupied.add(entry.target);
       else occupied.delete(entry.target);
     }
     update();
   }, { threshold: Array.from({ length: 101 }, (_, i) => i / 100) });
-  document.querySelectorAll("#configurador, .home-contact, .contact-panel, .contact-details, .form-layout").forEach(el => zones.observe(el));
+  document.querySelectorAll("#configurador, .home-contact .button, .contact-panel, .contact-details, .form-layout").forEach(el => zones.observe(el));
   const targets = [...document.querySelectorAll<HTMLElement>("main, .site-footer, .site-header .brand, .desktop-nav, .header-cta")];
   const previous = targets.map(el => el.inert);
   const toggle = () => { targets.forEach((el, i) => { el.inert = !!menu?.open || previous[i]; }); update(); };
@@ -41,5 +53,5 @@ export function mountSiteInteractions() {
   menu?.addEventListener("toggle", toggle);
   document.addEventListener("keydown", key);
   toggle();
-  return () => { disposed = true; cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
+  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
 }
