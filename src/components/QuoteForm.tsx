@@ -20,7 +20,7 @@ export function QuoteForm({ numero }: { numero: string | null }) {
     <label>Material de interesse<input value={material} onChange={(event) => setMaterial(event.target.value)} required /></label>
     <label>Medidas aproximadas<input value={medidas} onChange={(event) => setMedidas(event.target.value)} /></label>
     <label>Cidade<input value={cidade} onChange={(event) => setCidade(event.target.value)} required /></label>
-    <button type="submit">{numero ? "Preparar mensagem no WhatsApp" : "Preparar rascunho do pedido"}</button>
+    <button type="submit">{numero ? "Chamar no WhatsApp" : "Preparar rascunho do pedido"}</button>
     {rascunho && <div role="status"><p>Rascunho preparado. O WhatsApp aguarda confirmação; para falar com a JK, use o telefone.</p><p className="quote-draft">{rascunho}</p></div>}
   </form>;
 }

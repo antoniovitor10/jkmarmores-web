@@ -1,0 +1,163 @@
+{
+  "emulation": "393x873 CPU 4x; scrollBy de 45 px, sem aparelho real",
+  "frameCount": 372,
+  "scriptPaintMaxMs": 27.221,
+  "scriptPaintP95Ms": 8.584000000000001,
+  "eventTiming": [
+    {
+      "name": "pointerover",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerenter",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerenter",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerenter",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerenter",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerenter",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerenter",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerenter",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerenter",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerenter",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerdown",
+      "duration": 32,
+      "interactionId": 5955
+    },
+    {
+      "name": "touchstart",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "gotpointercapture",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerup",
+      "duration": 32,
+      "interactionId": 5955
+    },
+    {
+      "name": "lostpointercapture",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerout",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerleave",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerleave",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerleave",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerleave",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerleave",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerleave",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerleave",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerleave",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "pointerleave",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "touchend",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "mouseover",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "mousedown",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "mouseup",
+      "duration": 32,
+      "interactionId": 0
+    },
+    {
+      "name": "click",
+      "duration": 32,
+      "interactionId": 5955
+    },
+    {
+      "name": "keydown",
+      "duration": 16,
+      "interactionId": 5962
+    }
+  ]
+}
