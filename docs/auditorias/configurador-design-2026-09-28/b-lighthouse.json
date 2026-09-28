@@ -1,0 +1,43 @@
+[
+  {
+    "width": 390,
+    "steps": [
+      {
+        "name": "Snapshot report (127.0.0.1/)",
+        "score": 1,
+        "failures": []
+      },
+      {
+        "name": "Snapshot report (127.0.0.1/)",
+        "score": 1,
+        "failures": []
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "steps": [
+      {
+        "name": "Snapshot report (127.0.0.1/)",
+        "score": 1,
+        "failures": []
+      }
+    ]
+  },
+  {
+    "fallback": {
+      "expanded": {
+        "role": "dialog",
+        "modal": "true",
+        "height": 844,
+        "window": 844
+      },
+      "exit": {
+        "full": "false",
+        "focused": "Tela cheia",
+        "overflow": "",
+        "hintStored": "1"
+      }
+    }
+  }
+]

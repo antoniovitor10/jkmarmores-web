@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import {
   useCallback,
   useEffect,
@@ -7,46 +7,35 @@ import {
   type ComponentType,
   type ReactNode,
 } from "react";
+import type { Escolha } from "@/content/configurador";
 import type { ConfiguradorProps } from "./Configurador";
-import styles from "./Shell.module.css";
-
+import styles from "./Configurador.module.css";
 export function ConfiguradorLoader({
   children,
+  initialChoice: defaultChoice,
   ...props
-}: ConfiguradorProps & { children: ReactNode }) {
-  const root = useRef<HTMLDivElement>(null);
-  const pending = useRef(false);
-  const experienceModule = useRef<Promise<
-    typeof import("./Experiencia")
+}: ConfiguradorProps & { children: ReactNode; initialChoice: Escolha }) {
+  const root = useRef<HTMLDivElement>(null),
+    pending = useRef(false);
+  const [initialChoice, setInitialChoice] = useState(defaultChoice);
+  const [Selector, setSelector] = useState<ComponentType<
+    ConfiguradorProps & { initialChoice: Escolha }
   > | null>(null);
-  const [Experience, setExperience] =
-    useState<ComponentType<ConfiguradorProps> | null>(null);
   const [error, setError] = useState(false);
-  const loadExperience = useCallback(() => {
-    return (experienceModule.current ??= import("./Experiencia").catch(
-      (error) => {
-        experienceModule.current = null;
-        throw error;
-      },
-    ));
-  }, []);
   const activate = useCallback(async () => {
     if (pending.current) return;
     pending.current = true;
     try {
-      const loaded = await loadExperience();
-      setExperience(() => loaded.default);
+      const loaded = await import("./Seletor");
+      setSelector(() => loaded.default);
     } catch {
       pending.current = false;
       setError(true);
     }
-  }, [loadExperience]);
+  }, []);
   useEffect(() => {
     const node = root.current;
     if (!node || !("IntersectionObserver" in window)) return;
-    let disposed = false;
-    let idle: number | undefined;
-    let timer: ReturnType<typeof setTimeout> | undefined;
     const observer = new IntersectionObserver(
       (entries) => {
         if (entries.some((entry) => entry.isIntersecting)) {
@@ -54,57 +43,47 @@ export function ConfiguradorLoader({
           observer.disconnect();
         }
       },
-      { rootMargin: "250px" },
+      { rootMargin: `${Math.round(innerHeight)}px 0px` },
     );
-    const ahead = new IntersectionObserver(
-      (entries) => {
-        if (!entries.some((entry) => entry.isIntersecting)) return;
-        ahead.disconnect();
-        void loadExperience()
-          .then((loaded) => {
-            if (!disposed)
-              loaded.preloadInitialFrames(
-                node.clientWidth,
-                innerHeight * (props.compact ? 0.8 : 1),
-              );
-          })
-          .catch(() => {}); // Activation can retry a failed speculative import.
-      },
-      { rootMargin: `${Math.round(innerHeight * 1.5)}px 0px` },
-    );
-    const start = () => {
-      observer.observe(node);
-      // Wait for the page load and idle time before preparing anything offscreen.
-      if ("requestIdleCallback" in window)
-        idle = window.requestIdleCallback(() => ahead.observe(node));
-      else timer = setTimeout(() => ahead.observe(node), 200);
-    };
+    const start = () => observer.observe(node);
     if (document.readyState === "complete") start();
     else window.addEventListener("load", start, { once: true });
     return () => {
-      disposed = true;
-      window.removeEventListener("load", start);
       observer.disconnect();
-      ahead.disconnect();
-      if (idle !== undefined) window.cancelIdleCallback(idle);
-      clearTimeout(timer);
+      window.removeEventListener("load", start);
     };
-  }, [activate, loadExperience, props.compact]);
+  }, [activate]);
   return (
     <div
       ref={root}
-      className={`${styles.root} ${props.compact ? styles.compact : styles.full}`}
+      className={styles.root}
       data-configurador
       onClick={(event) => {
-        if ((event.target as HTMLElement).closest("[data-activate]"))
-          void activate();
+        if (Selector) return;
+        const button = (event.target as HTMLElement).closest<HTMLButtonElement>(
+          "button",
+        );
+        if (!button) return;
+        setInitialChoice((previous) => ({
+          ambiente:
+            (button.dataset.ambiente as Escolha["ambiente"]) ||
+            previous.ambiente,
+          material:
+            (button.dataset.material as Escolha["material"]) ||
+            previous.material,
+        }));
+        void activate();
       }}
     >
-      {Experience ? <Experience {...props} /> : children}
-      {error && !Experience && (
+      {Selector ? (
+        <Selector {...props} initialChoice={initialChoice} />
+      ) : (
+        children
+      )}
+      {error && !Selector && (
         <p role="status">
-          Não foi possível abrir a experiência. Use Explorar combinações para
-          tentar novamente.
+          Não foi possível ativar as escolhas. Toque em um botão para tentar
+          novamente.
         </p>
       )}
     </div>

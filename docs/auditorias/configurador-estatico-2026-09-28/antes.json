@@ -1,0 +1,149 @@
+{
+    "label":  "antes",
+    "runs":  [
+                 {
+                     "lcp":  636,
+                     "tasks":  [
+                                   218,
+                                   159,
+                                   61
+                               ],
+                     "configResources":  0
+                 },
+                 {
+                     "lcp":  544,
+                     "tasks":  [
+                                   202,
+                                   153,
+                                   57
+                               ],
+                     "configResources":  0
+                 },
+                 {
+                     "lcp":  556,
+                     "tasks":  [
+                                   216,
+                                   148,
+                                   53
+                               ],
+                     "configResources":  0
+                 },
+                 {
+                     "lcp":  12848,
+                     "tasks":  [
+                                   216,
+                                   163
+                               ],
+                     "configResources":  0
+                 },
+                 {
+                     "lcp":  12792,
+                     "tasks":  [
+                                   205,
+                                   143,
+                                   73
+                               ],
+                     "configResources":  0
+                 }
+             ],
+    "views":  [
+                  {
+                      "width":  390,
+                      "media":  [
+                                    {
+                                        "url":  "/configurador/uniforme/cozinha-rosado/retrato/00.avif",
+                                        "bytes":  39725
+                                    },
+                                    {
+                                        "url":  "/configurador/uniforme/cozinha-rosado/retrato/01.avif",
+                                        "bytes":  39041
+                                    },
+                                    {
+                                        "url":  "/configurador/closes/bege-polido.avif",
+                                        "bytes":  8029
+                                    },
+                                    {
+                                        "url":  "/configurador/closes/rosado-polido.avif",
+                                        "bytes":  8278
+                                    },
+                                    {
+                                        "url":  "/configurador/closes/escuro-polido.avif",
+                                        "bytes":  16475
+                                    },
+                                    {
+                                        "url":  "/configurador/uniforme/cozinha-bege/retrato/00.avif",
+                                        "bytes":  21683
+                                    },
+                                    {
+                                        "url":  "/configurador/uniforme/cozinha-escuro/retrato/00.avif",
+                                        "bytes":  23027
+                                    }
+                                ],
+                      "scripts":  [
+                                      "/_next/static/chunks/19mx3mg6lkumu.js",
+                                      "/_next/static/chunks/0bma92pht_c97.js",
+                                      "/_next/static/chunks/344n2zhqbh4pn.js",
+                                      "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+                                      "/_next/static/chunks/45a6k5__05_b_.js",
+                                      "/_next/static/chunks/22i43cg4l4-dq.js",
+                                      "/_next/static/chunks/1i2u64wdp64qs.js",
+                                      "/_next/static/chunks/0fh5mf7omxal0.js",
+                                      "/_next/static/chunks/0mnz56-pokal0.js",
+                                      "/_next/static/chunks/3pqja19_8yru9.js",
+                                      "/_next/static/chunks/2azhigwn9mycy.js",
+                                      "/_next/static/chunks/310vm2bl3xxpt.js"
+                                  ]
+                  },
+                  {
+                      "width":  1440,
+                      "media":  [
+                                    {
+                                        "url":  "/configurador/uniforme/cozinha-rosado/1280/00.avif",
+                                        "bytes":  42811
+                                    },
+                                    {
+                                        "url":  "/configurador/uniforme/cozinha-rosado/1280/01.avif",
+                                        "bytes":  42555
+                                    },
+                                    {
+                                        "url":  "/configurador/closes/rosado-polido.avif",
+                                        "bytes":  8278
+                                    },
+                                    {
+                                        "url":  "/configurador/closes/bege-polido.avif",
+                                        "bytes":  8029
+                                    },
+                                    {
+                                        "url":  "/configurador/closes/escuro-polido.avif",
+                                        "bytes":  16475
+                                    },
+                                    {
+                                        "url":  "/configurador/uniforme/cozinha-bege/1280/00.avif",
+                                        "bytes":  29296
+                                    },
+                                    {
+                                        "url":  "/configurador/uniforme/cozinha-escuro/1280/00.avif",
+                                        "bytes":  29921
+                                    }
+                                ],
+                      "scripts":  [
+                                      "/_next/static/chunks/19mx3mg6lkumu.js",
+                                      "/_next/static/chunks/0bma92pht_c97.js",
+                                      "/_next/static/chunks/344n2zhqbh4pn.js",
+                                      "/_next/static/chunks/turbopack-154wuuf6u0_13.js",
+                                      "/_next/static/chunks/45a6k5__05_b_.js",
+                                      "/_next/static/chunks/22i43cg4l4-dq.js",
+                                      "/_next/static/chunks/1i2u64wdp64qs.js",
+                                      "/_next/static/chunks/0fh5mf7omxal0.js",
+                                      "/_next/static/chunks/0mnz56-pokal0.js",
+                                      "/_next/static/chunks/3pqja19_8yru9.js",
+                                      "/_next/static/chunks/2azhigwn9mycy.js",
+                                      "/_next/static/chunks/310vm2bl3xxpt.js"
+                                  ]
+                  }
+              ],
+    "initialJS":  {
+                      "count":  8,
+                      "gzipBytes":  141603
+                  }
+}

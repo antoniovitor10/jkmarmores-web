@@ -1,54 +1,34 @@
-// Referências visuais geradas por IA, independentes do catálogo comercial.
+﻿// Referências ilustrativas; a JK ainda confirmará seu catálogo comercial.
 export const ambientesConfigurador = [
   { id: "cozinha", nome: "Cozinha com ilha" },
   { id: "lavatorio", nome: "Lavatório" },
 ] as const;
 export const materiaisConfigurador = [
-  { id: "rosado", nome: "Mármore rosado", tom: "#cfa491" },
-  { id: "bege", nome: "Pedra bege", tom: "#c5b18d" },
-  { id: "escuro", nome: "Pedra escura", tom: "#37322f" },
-] as const;
-export const acabamentosConfigurador = [
-  {
-    id: "polido",
-    nome: "Polido",
-    descricao: "Reflexo mais definido na referência de superfície.",
-  },
-  {
-    id: "levigado",
-    nome: "Levigado",
-    descricao: "Superfície fosca, com reflexo mais difuso na referência.",
-  },
-  {
-    id: "escovado",
-    nome: "Escovado",
-    descricao: "Relevo delicado sob luz rasante na referência.",
-  },
+  { id: "rosado", nome: "Rosado" },
+  { id: "bege", nome: "Bege" },
+  { id: "escuro", nome: "Escuro" },
 ] as const;
 export type AmbienteConfigurador = (typeof ambientesConfigurador)[number]["id"];
 export type MaterialConfigurador = (typeof materiaisConfigurador)[number]["id"];
-export type AcabamentoConfigurador =
-  (typeof acabamentosConfigurador)[number]["id"];
-export const totalQuadros = 24;
-export function quantidadeQuadros(combinacao: string) {
-  return combinacao === "cozinha-rosado" ? 48 : totalQuadros;
+export type Escolha = {
+  ambiente: AmbienteConfigurador;
+  material: MaterialConfigurador;
+};
+export const escolhaInicial: Escolha = {
+  ambiente: "cozinha",
+  material: "rosado",
+};
+export const tamanhosImagem = "(max-width: 1280px) 100vw, 1280px";
+export function imagemEscolha(escolha: Escolha, largura: 720 | 1280) {
+  return `/configurador/estatico/${escolha.ambiente}-${escolha.material}-${largura}.avif`;
 }
-export function quadroUrl(
-  combinacao: string,
-  quadro: number,
-  largura: 720 | 1280 | 2048 | 2560,
-) {
-  if (combinacao === "cozinha-rosado")
-    return `/configurador/orbita-rosado/${largura === 2048 ? 2560 : largura}/${String(quadro).padStart(2, "0")}.avif`;
-  if (largura === 2560) largura = 1280;
-  return `/configurador/${combinacao}/${largura}/${String(quadro).padStart(2, "0")}.avif`;
+export function fontesImagem(escolha: Escolha) {
+  return `${imagemEscolha(escolha, 720)} 720w, ${imagemEscolha(escolha, 1280)} 1280w`;
 }
-export function orcamentoConfigurador(
-  ambiente: string,
-  material: string,
-  acabamento: string,
-  contexto?: string,
-) {
-  const mensagem = `Olá, JK! Gostei desta combinação: ${ambiente}, ${material.toLowerCase()} e acabamento ${acabamento.toLowerCase()}.${contexto ? ` Vi na página ${contexto}.` : ""} Podemos conversar sobre um orçamento? A imagem é ilustrativa; quero confirmar as opções disponíveis.`;
+export function nomeEscolha(escolha: Escolha) {
+  return `${ambientesConfigurador.find((item) => item.id === escolha.ambiente)!.nome} / ${materiaisConfigurador.find((item) => item.id === escolha.material)!.nome}`;
+}
+export function orcamentoConfigurador(escolha: Escolha, contexto?: string) {
+  const mensagem = `Olá, JK! Gostei desta referência: ${nomeEscolha(escolha)}.${contexto ? ` Vi na página ${contexto}.` : ""} Podemos conversar sobre um orçamento?`;
   return `https://wa.me/5511967976902?text=${encodeURIComponent(mensagem)}`;
 }

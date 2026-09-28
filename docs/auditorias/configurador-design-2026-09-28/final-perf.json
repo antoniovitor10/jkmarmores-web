@@ -1,0 +1,45 @@
+{
+  "conditions": "5 perfis novos Chromium390x844, CPU4x,150ms,200KiB/s down; longtasks início<3s",
+  "runs": [
+    {
+      "lcp": 580,
+      "tasks": [
+        190,
+        168
+      ],
+      "configResources": 0
+    },
+    {
+      "lcp": 604,
+      "tasks": [
+        160,
+        200
+      ],
+      "configResources": 0
+    },
+    {
+      "lcp": 592,
+      "tasks": [
+        209,
+        174
+      ],
+      "configResources": 0
+    },
+    {
+      "lcp": 572,
+      "tasks": [
+        150,
+        151
+      ],
+      "configResources": 0
+    },
+    {
+      "lcp": 568,
+      "tasks": [
+        165,
+        164
+      ],
+      "configResources": 0
+    }
+  ]
+}
