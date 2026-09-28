@@ -1,5 +1,6 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { mountHero } from './hero-motion';
 
 export { gsap, ScrollTrigger };
 gsap.registerPlugin(ScrollTrigger);
@@ -8,6 +9,8 @@ ScrollTrigger.config({ ignoreMobileResize: true });
 export function mountPageMotion() {
   const mm = gsap.matchMedia();
   mm.add('(prefers-reduced-motion: no-preference)', () => {
+    const hero = document.querySelector<HTMLElement>('.home-hero > div');
+    const disposeHero = hero ? mountHero(hero) : () => {};
     const ctx = gsap.context(() => {});
     const observer = new IntersectionObserver(entries => {
       for (const entry of entries) {
@@ -39,7 +42,7 @@ export function mountPageMotion() {
     document.querySelectorAll('.home-page > #configurador,.home-contact,.editorial-image').forEach(el => {
       if (!el.matches('.editorial-image') || !el.closest('#configurador')) observer.observe(el);
     });
-    return () => { observer.disconnect(); ctx.revert(); document.body.style.removeProperty('--page-bg'); document.body.style.removeProperty('--page-ink'); };
+    return () => { disposeHero(); observer.disconnect(); ctx.revert(); document.body.style.removeProperty('--page-bg'); document.body.style.removeProperty('--page-ink'); };
   });
   return () => mm.revert();
 }

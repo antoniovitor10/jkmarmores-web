@@ -36,6 +36,14 @@ address { font-style:normal; }
 .skip-link:focus { top:12px; }
 .site-header { background:#0b0a09; color:var(--cor-papel); border-bottom:1px solid #39332b; }
 .header-inner { display:flex; justify-content:space-between; gap:32px; align-items:center; min-height:110px; }
+.brand-monogram { width:58px; height:auto; display:block; }
+body:has(.home-page) .site-header { position:absolute; inset:0 0 auto; z-index:50; border:0; background:transparent; }
+body:has(.home-page) .header-inner { min-height:64px; }
+body:has(.home-page) .header-cta { display:none; }
+body:has(.home-page) .desktop-nav { padding:0 16px; background:#0b0a09; }
+body:has(.home-page) .mobile-nav summary { background:#0b0a09; }
+.request-story { padding-block:80px; background:#f3ece2; color:#0b0a09; }
+.request-story .actions { border-top:1px solid #b3a28e; padding-top:24px; }
 .brand { display:inline-flex; align-items:center; flex-shrink:0; }
 .brand-image { width:144px; height:auto; display:block; }
 .desktop-nav { display:flex; gap:28px; }
@@ -183,6 +191,7 @@ address { font-style:normal; }
 .home-contact-grid address { max-width:30ch; font-size:13px; padding-top:24px; margin:32px 0; border-top:1px solid #927254; }
 .home-contact .editorial-image figcaption { color:#d8cec3; }
 @media(max-width:700px) { .home-contact-grid { grid-template-columns:1fr; } }
+@media(max-width:800px) { body:has(.home-page) .header-inner { min-height:64px; } .brand-monogram { width:48px; } }
 
 .footer-bottom { font-size:13px; }
 .footer-bottom > span:last-child { max-width:64ch; }

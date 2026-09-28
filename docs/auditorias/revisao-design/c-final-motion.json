@@ -1,0 +1,46 @@
+[
+  {
+    "mode": "normal",
+    "waiting": 0,
+    "scroll": 1680.9000000059605,
+    "response": 8.900000005960464,
+    "lcp": 780,
+    "videos": 3,
+    "media": [
+      "http://127.0.0.1:3105/video/capa-close.mp4",
+      "http://127.0.0.1:3105/video/jornada-1-mobile.mp4",
+      "http://127.0.0.1:3105/video/jornada-2-mobile.mp4"
+    ]
+  },
+  {
+    "mode": "slow",
+    "waiting": 0,
+    "scroll": 3250.800000011921,
+    "response": 7.9000000059604645,
+    "lcp": 496,
+    "videos": 0,
+    "media": []
+  },
+  {
+    "mode": "save-data",
+    "waiting": 0,
+    "scroll": 1447.2999999821186,
+    "response": 8.900000005960464,
+    "lcp": 188,
+    "videos": 0,
+    "media": []
+  },
+  {
+    "mode": "reduced",
+    "waiting": 0,
+    "scroll": 1511.9000000059605,
+    "response": 614.1999999880791,
+    "lcp": 204,
+    "videos": 0,
+    "media": []
+  },
+  {
+    "mode": "no-js",
+    "media": []
+  }
+]

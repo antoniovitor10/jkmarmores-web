@@ -13,7 +13,7 @@ const fs=require('fs'),path=require('path'),assert=require('assert/strict');
    await page.locator('.mobile-nav summary').click();
    assert.equal(await page.locator('main').evaluate(e=>e.inert),true);
    await page.screenshot({path:path.join(__dirname,`${process.argv[2]}-menu.png`)});
-   await page.keyboard.press('Escape');assert.equal(await page.locator('main').evaluate(e=>e.inert),false);
+   await page.keyboard.press('Escape');await page.waitForFunction(()=>!document.querySelector('main').inert,{},{timeout:1000});
    await page.locator('.home-contact').scrollIntoViewIfNeeded();await page.waitForTimeout(400);
    assert.equal(await page.locator('.mobile-quote-dock').getAttribute('data-visible'),'false');
   }

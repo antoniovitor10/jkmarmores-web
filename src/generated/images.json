@@ -1,4 +1,21 @@
 {
+  "capa-close": {
+    "width": 850,
+    "height": 400,
+    "placeholder": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAACwAwCdASoYAAsAPwFqrU6rJiQiMAgBYCAJQBOgBENsGG40W+/QAADOHubipXNh4UFbntgcIi0XlpVk63FD2P3tn5nt1VW++Unt7X3OGl9NkUqCq5tTKTAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/capa-close-390.avif",
+        "webp": "/img/capa-close-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/capa-close-768.avif",
+        "webp": "/img/capa-close-768.webp"
+      }
+    ]
+  },
   "capa-poster-mobile": {
     "width": 780,
     "height": 1692,

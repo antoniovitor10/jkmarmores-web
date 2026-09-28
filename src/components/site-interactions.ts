@@ -15,7 +15,7 @@ export function mountSiteInteractions() {
   let pastHero = !hero;
   const occupied = new Set<Element>();
   const update = () => { if (dock) { const visible = pastHero && !occupied.size && !menu?.open; dock.dataset.visible = String(visible); dock.inert = !visible; } };
-  const cover = new IntersectionObserver(([entry]) => { pastHero = entry.boundingClientRect.bottom <= 0; update(); });
+  const cover = new IntersectionObserver(([entry]) => { pastHero = entry.boundingClientRect.bottom <= 0; document.querySelector<HTMLElement>(".site-header")?.setAttribute("data-past-hero", String(pastHero)); update(); });
   if (hero) cover.observe(hero);
   const zones = new IntersectionObserver(entries => {
     for (const entry of entries) {
