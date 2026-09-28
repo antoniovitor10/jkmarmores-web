@@ -34,8 +34,8 @@
   outline-offset: 4px;
 }
 .disclaimer {
-  color: #d8cec3;
-  font-size: 11px;
+  color: var(--cor-papel);
+  font-size: 13px;
   padding: 24px 0;
   margin: 0;
 }

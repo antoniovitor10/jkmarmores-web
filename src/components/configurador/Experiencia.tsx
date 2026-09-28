@@ -345,8 +345,7 @@ export default function Experiencia({
               Pedir orçamento desta pedra
             </a>
             <p className={styles.disclaimer}>
-              Visualização ilustrativa, gerada por IA.
-              <span>Materiais e acabamentos a confirmar com a JK.</span>
+              Materiais e acabamentos a confirmar com a JK.
             </p>
           </>
         }
@@ -442,9 +441,6 @@ export default function Experiencia({
       <span className={styles.srOnly} role="status" aria-live="polite">
         {loadState === "loading" ? "Carregando a pedra escolhida. " : ""}
         {envName}, {matName}, {finishItem.nome}.
-        {compact
-          ? "Referência ilustrativa; não representa o material desta página."
-          : ""}
       </span>
     </div>
   );

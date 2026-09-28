@@ -21,8 +21,7 @@ export function Configurador({
           Explorar combinações
         </button>
         <p className={styles.disclaimer}>
-          Visualização ilustrativa, gerada por IA. Materiais, aplicações e
-          acabamentos sujeitos à confirmação da JK.
+          Materiais e acabamentos a confirmar com a JK.
         </p>
         <a
           className={styles.quote}
@@ -33,7 +32,7 @@ export function Configurador({
             materialContext,
           )}
         >
-          Quero esta combinação
+          Pedir orçamento desta pedra
         </a>
         <noscript>
           <img

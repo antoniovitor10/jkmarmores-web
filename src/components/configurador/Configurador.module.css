@@ -163,12 +163,9 @@
   color: var(--cor-grafite);
 }
 .disclaimer {
-  font-size: 10px;
+  font-size: 13px;
   line-height: 1.5;
   margin: 0;
-}
-.disclaimer span {
-  display: block;
 }
 .sheetBody {
   padding-top: 24px;
@@ -384,7 +381,6 @@
   }
   .disclaimer {
     grid-column: 1/-1;
-    font-size: 9px;
   }
   .sheetBody {
     max-height: calc(100svh - 300px);
