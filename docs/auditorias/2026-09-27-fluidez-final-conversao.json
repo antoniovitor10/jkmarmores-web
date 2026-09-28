@@ -1,0 +1,96 @@
+{
+  "environment": "Emulação Chrome 390/1440, sem envio externo",
+  "checks": [
+    {
+      "width": 390,
+      "cta": "Fale com a JK no WhatsApp",
+      "actions": 1,
+      "captionBottom": 749,
+      "controls": 0,
+      "dockTop": 768,
+      "pendingClosed": true,
+      "links": [
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Pedir orçamento"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK no WhatsApp"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20as%20refer%C3%AAncias%20no%20site%20da%20JK%20e%20quero%20conversar%20sobre%20uma%20pedra%20para%20meu%20espa%C3%A7o.",
+          "label": "Quero uma pedra para meu espaço"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20combina%C3%A7%C3%A3o%3A%20Cozinha%20com%20ilha%2C%20m%C3%A1rmore%20rosado%20e%20acabamento%20polido.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F%20A%20imagem%20%C3%A9%20ilustrativa%3B%20quero%20confirmar%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis.",
+          "label": "Quero esta combinação"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK no WhatsApp"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "WhatsApp e orçamento"
+        }
+      ],
+      "overflow": false,
+      "violations": [],
+      "keyboardDisclosure": true
+    },
+    {
+      "width": 1440,
+      "cta": "Fale com a JK no WhatsApp",
+      "actions": 1,
+      "captionBottom": 987,
+      "controls": 0,
+      "dockTop": 0,
+      "pendingClosed": true,
+      "links": [
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Pedir orçamento"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK no WhatsApp"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20as%20refer%C3%AAncias%20no%20site%20da%20JK%20e%20quero%20conversar%20sobre%20uma%20pedra%20para%20meu%20espa%C3%A7o.",
+          "label": "Quero uma pedra para meu espaço"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20combina%C3%A7%C3%A3o%3A%20Cozinha%20com%20ilha%2C%20m%C3%A1rmore%20rosado%20e%20acabamento%20polido.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F%20A%20imagem%20%C3%A9%20ilustrativa%3B%20quero%20confirmar%20as%20op%C3%A7%C3%B5es%20dispon%C3%ADveis.",
+          "label": "Quero esta combinação"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "Fale com a JK no WhatsApp"
+        },
+        {
+          "url": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+          "label": "WhatsApp e orçamento"
+        }
+      ],
+      "overflow": false,
+      "violations": [],
+      "keyboardDisclosure": true
+    }
+  ],
+  "contrast": {
+    "method": "Pior fundo possível branco puro sob véu mínimo80% nas áreas de texto; vale para qualquer quadro. Véu só sai depois que o texto termina de sair; retorna imediatamente ao foco.",
+    "title": 8.095433525158628,
+    "eyebrow": 5.418387738766332,
+    "button": 7.92331277520426,
+    "contact": 8.480450275423438
+  }
+}

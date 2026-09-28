@@ -1,0 +1,34 @@
+[
+  {
+    "width": 390,
+    "initial": {
+      "x": 0,
+      "y": 343.921875,
+      "width": 390,
+      "height": 844
+    },
+    "fullscreenFallback": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 844
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "initial": {
+      "x": 0,
+      "y": 309.96875,
+      "width": 1440,
+      "height": 900
+    },
+    "fullscreenFallback": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900
+    },
+    "errors": []
+  }
+]
