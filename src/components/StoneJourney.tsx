@@ -15,9 +15,7 @@ export function StoneJourney() {
     <Suspense><StoneJourneyMotion video={stoneJourneyVideo}>
       <div className="journey-sticky">
         <div className="journey-heading">
-          <p>ESTUDO DE MATÉRIA</p>
-          <h2 id="jornada-titulo">Da matéria à forma.</h2>
-          <p className="journey-disclaimer">Imagens ilustrativas, geradas por IA.<br />Não representam obras, materiais ou processos da JK.</p>
+          <h2 id="jornada-titulo">Da chapa à sua bancada.</h2>
         </div>
         <div className="journey-frames">
           {stoneJourney.map((step, index) => <figure className="journey-frame" key={step.id} data-frame={index}>
@@ -25,19 +23,16 @@ export function StoneJourney() {
             <figcaption>
               <span className="journey-count">0{index + 1}<span> / 04</span></span>
               <div><h3>{step.title}</h3><p>{step.detail}</p></div>
-              <span className="journey-image-label">Imagem ilustrativa</span>
+              {index === 3 && <a className="journey-quote" href={linkWhatsApp(institucional.jornadaCta.mensagem, conteudo.empresa.whatsapp)}>{institucional.jornadaCta.texto}</a>}
             </figcaption>
           </figure>)}
         </div>
         <div className="journey-progress" aria-hidden="true"><span /></div>
         <div className="journey-mask" aria-hidden="true">
-          <span className="journey-mask-kicker">UM OUTRO OLHAR SOBRE A</span>
           <span className="journey-word">PEDRA</span>
-          <span className="journey-mask-footer">Da escala da chapa ao detalhe da superfície.<br />Continue a rolagem.</span>
         </div>
       </div>
     </StoneJourneyMotion></Suspense>
-    <div className="journey-contact"><a href={linkWhatsApp(institucional.jornadaCta.mensagem, conteudo.empresa.whatsapp)}>{institucional.jornadaCta.texto}</a></div>
   </section>;
 }
 

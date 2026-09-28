@@ -41,6 +41,7 @@ address { font-style:normal; }
 .desktop-nav a:hover { text-decoration:underline; }
 .header-cta { background:transparent; color:var(--cor-caramelo); border-color:#927254; font-size:12px; }
 .mobile-nav { display:none; }
+.menu-open { display:none; }
 .site-footer { background:#000; color:#d8cec3; padding:64px 0 24px; font-size:13px; }
 .footer-grid { display:grid; grid-template-columns:1.2fr .8fr 1.4fr 1fr; gap:48px; }
 .site-footer .brand-image { width:210px; }
@@ -122,7 +123,6 @@ address { font-style:normal; }
   .header-inner { min-height:94px; }
   .brand-image { width:120px; }
   html { scroll-padding-bottom:calc(92px + env(safe-area-inset-bottom,0px)); }
-  body { padding-bottom:calc(76px + env(safe-area-inset-bottom,0px)); }
   .mobile-quote-dock { display:flex; position:fixed; inset:auto 16px 0 auto; z-index:20; min-height:76px; padding:12px 0 calc(12px + env(safe-area-inset-bottom,0px)); pointer-events:none; }
   .mobile-whatsapp { min-width:148px; padding:12px 20px; min-height:48px; display:flex; align-items:center; justify-content:center; background:var(--cor-caramelo); color:var(--cor-grafite); border:1px solid #191715; text-decoration:none; font-size:13px; pointer-events:auto; }
   body:has(.quote-form:focus-within) .mobile-quote-dock { visibility:hidden; pointer-events:none; }
@@ -185,16 +185,31 @@ address { font-style:normal; }
 @media(max-width:700px) { .editorial-motion h2 { font-size:44px; } .editorial-motion .editorial-image img { aspect-ratio:5/4; } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; } .editorial-motion,.editorial-motion *,.editorial-motion *::before { animation:none !important; } }
 
-.pending-summary { margin-top:40px; border-top:1px solid #39332b; padding-top:16px; font-size:12px; }
-.pending-summary summary { cursor:pointer; display:flex; align-items:center; text-decoration:underline; text-underline-offset:4px; }
-.pending-summary ul { max-width:75ch; padding-left:20px; }
-.pending-summary li { margin:12px 0; }
 .home-contact-grid { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:clamp(40px,8vw,112px); }
 .home-contact-grid h2 { max-width:9ch; }
 .home-contact-grid p:not(.eyebrow) { max-width:34ch; color:#d8cec3; }
 .home-contact-grid address { max-width:30ch; font-size:13px; padding-top:24px; margin:32px 0; border-top:1px solid #927254; }
 .home-contact .editorial-image figcaption { color:#d8cec3; }
 @media(max-width:700px) { .home-contact-grid { grid-template-columns:1fr; } }
+
+.footer-bottom { font-size:13px; }
+.footer-bottom > span:last-child { max-width:64ch; }
+.home-contact-grid h2 { max-width:16ch; text-wrap:balance; }
+.journey-quote { margin-left:auto; display:inline-flex; align-items:center; font-size:14px; color:inherit; }
+@media(max-width:800px) {
+  .mobile-quote-dock { inset:auto 16px calc(16px + env(safe-area-inset-bottom,0px)) auto; padding:0; min-height:56px; visibility:hidden; transform:translateY(140%); transition:transform 220ms cubic-bezier(.5,0,.75,0),visibility 0s 220ms; }
+  .mobile-quote-dock[data-visible="true"] { visibility:visible; transform:translateY(0); transition:transform 320ms cubic-bezier(.16,1,.3,1); }
+  .mobile-whatsapp { min-height:56px; border-radius:28px; font-size:14px; padding:12px 22px; }
+  .mobile-nav[open] { position:fixed; inset:0; z-index:90; background:#0b0a09; }
+  .mobile-nav[open] summary { position:absolute; top:16px; right:24px; z-index:1; }
+  .mobile-nav[open] .menu-closed { display:none; }
+  .mobile-nav[open] .menu-open { display:block; }
+  .mobile-nav[open] nav { position:absolute; inset:80px 24px max(24px,env(safe-area-inset-bottom)); min-width:0; border:0; padding:0; display:flex; flex-direction:column; gap:8px; background:transparent; overflow-y:auto; }
+  .mobile-nav[open] nav a { padding:6px 0; font-size:24px; }
+  .mobile-nav[open] nav .menu-whatsapp { margin-top:auto; padding:16px; font-size:16px; flex-shrink:0; }
+  body:has(.mobile-nav[open]) { overflow:hidden; }
+  body:has(.mobile-nav[open]) .mobile-quote-dock { visibility:hidden; }
+}
 
 /* Reserva o espaço abaixo da dobra sem calcular todos os descendentes na entrada. */
 .home-page > :is(#configurador,.home-contact),body:has(.home-page) > .site-footer { content-visibility:auto; }

@@ -6,7 +6,7 @@
 .figure img,.video { object-fit:cover; object-position:63% center; }
 .video { position:absolute; inset:0; opacity:0; z-index:1; }
 .figure::after { content:""; position:absolute; inset:0; z-index:2; background:linear-gradient(90deg, rgb(25 23 21 / 88%) 0%,rgb(25 23 21 / 82%) 48%,rgb(25 23 21 / 12%) 100%); pointer-events:none; opacity:var(--hero-veil,1); transition:opacity var(--hero-veil-duration,0ms) ease var(--hero-veil-delay,0ms); }
-.figure figcaption { position:absolute; right:32px; bottom:24px; z-index:3; font-size:9px; background:#191715; color:#f3ece2; padding:3px 6px; }
+.figure figcaption { position:absolute; right:32px; bottom:24px; z-index:3; font-size:13px; line-height:1.45; max-width:58ch; background:#191715; color:#f3ece2; padding:8px 12px; }
 .intro { position:absolute; top:clamp(48px,8svh,88px); left:max(40px,calc((100vw - 1280px)/2)); max-width:560px; }
 .intro h1 { font-size:clamp(64px,6.7vw,100px); max-width:10ch; line-height:.98; margin:24px 0 28px; font-weight:400; }
 .description { max-width:32ch; margin-bottom:28px; color:#f3ece2; font-size:17px; }
@@ -21,7 +21,7 @@
   .description { font-size:15px; margin-bottom:24px; max-width:29ch; }
   .figure::after { background:linear-gradient(180deg,rgb(25 23 21 / 88%) 0%,rgb(25 23 21 / 80%) 58%,rgb(25 23 21 / 8%) 100%); }
   .figure img,.video { object-position:65% center; }
-  .figure figcaption { bottom:96px; right:16px; }
+  .figure figcaption { bottom:24px; right:24px; left:24px; }
 }
 @media(prefers-reduced-motion:reduce) {
   .track[data-motion] { height:auto; }

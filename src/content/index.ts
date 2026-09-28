@@ -2,7 +2,7 @@ import type { ConteudoSite, Material, Aplicacao, PaginaInstitucional } from "@/l
 import { pendente } from "./pendente";
 
 const ctaOrcamento = (origem: string) => ({
-  texto: "Pedir orçamento",
+  texto: "Chamar no WhatsApp",
   mensagem: origem === "início" ? "Oi, vi o site da JK e quero conversar sobre um orçamento." : `Oi, vi a página de ${origem} no site da JK e quero conversar sobre um orçamento.`,
 });
 
