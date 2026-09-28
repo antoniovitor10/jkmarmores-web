@@ -36,7 +36,8 @@ export function FrameCanvas({
     [high, setHigh] = useState(false),
     [error, setError] = useState(false),
     [settled, setSettled] = useState(0),
-    [inView, setInView] = useState(false), [painted,setPainted] = useState('');
+    [inView, setInView] = useState(false),
+    [painted, setPainted] = useState("");
   const ready = useRef(false);
   useEffect(() => {
     if (!canvas.current) return;
@@ -233,6 +234,7 @@ export function FrameCanvas({
       <canvas
         ref={canvas}
         className={styles.canvas}
+        style={{ touchAction: view.zoom > 1.01 ? "none" : "pan-y" }}
         role="img"
         aria-label={label}
       />

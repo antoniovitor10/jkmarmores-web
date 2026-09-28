@@ -7,6 +7,7 @@ import {
   type PointerEvent as PointerReactEvent,
   type RefObject,
 } from "react";
+import { motionDuration, motionEase } from "./motion";
 export type Camera = { position: number; zoom: number; x: number; y: number };
 export const limit = (v: number, min: number, max: number) =>
   Math.min(max, Math.max(min, v));
@@ -14,6 +15,7 @@ export function useCamera(
   stageRef: RefObject<HTMLElement | null>,
   staticMode: boolean,
   onInteract: () => void,
+  frameCount: number,
 ) {
   const [view, setView] = useState<Camera>({
     position: 0,
@@ -37,42 +39,63 @@ export function useCamera(
     midY: 0,
   });
   const lastTap = useRef(0);
+  const bounds = useRef({ left: 0, top: 0, width: 1, height: 1 });
+  const measure = useCallback(() => {
+    const box = stageRef.current
+      ?.querySelector("canvas")
+      ?.getBoundingClientRect();
+    if (box) bounds.current = box;
+    return bounds.current;
+  }, [stageRef]);
+  useEffect(() => {
+    const node = stageRef.current?.querySelector("canvas");
+    if (!node) return;
+    const observer = new ResizeObserver(measure);
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [measure, stageRef]);
   const stop = useCallback(() => {
     cancelAnimationFrame(animation.current);
     animation.current = 0;
   }, []);
-  const update = useCallback(
-    (next: Camera) => {
-      const box = stageRef.current?.getBoundingClientRect();
-      const zoom = limit(next.zoom, 1, 2.6);
-      const bounded = {
-        ...next,
-        position: limit(next.position, 0, 1),
-        zoom,
-        x: limit(
-          next.x,
-          (-(box?.width ?? 0) * (zoom - 1)) / 2,
-          ((box?.width ?? 0) * (zoom - 1)) / 2,
-        ),
-        y: limit(
-          next.y,
-          (-(box?.height ?? 0) * (zoom - 1)) / 2,
-          ((box?.height ?? 0) * (zoom - 1)) / 2,
-        ),
-      };
-      current.current = bounded;
-      setView(bounded);
-    },
-    [stageRef],
-  );
+  const update = useCallback((next: Camera) => {
+    const box = bounds.current;
+    const zoom = limit(next.zoom, 1, 2.6);
+    const bounded = {
+      ...next,
+      position: limit(next.position, 0, 1),
+      zoom,
+      x: limit(
+        next.x,
+        (-(box?.width ?? 0) * (zoom - 1)) / 2,
+        ((box?.width ?? 0) * (zoom - 1)) / 2,
+      ),
+      y: limit(
+        next.y,
+        (-(box?.height ?? 0) * (zoom - 1)) / 2,
+        ((box?.height ?? 0) * (zoom - 1)) / 2,
+      ),
+    };
+    current.current = bounded;
+    setView(bounded);
+  }, []);
   const glide = useCallback(
-    (target: Camera, duration = 380) => {
+    (target: Camera, duration?: number, coast = false) => {
       stop();
+      target = { ...target, position: limit(target.position, 0, 1) };
+      const node = stageRef.current;
+      const ms =
+        duration ?? (node ? motionDuration(node, "--dur-state", 200) : 200);
+      const curve = coast
+        ? (t: number) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t))
+        : node
+          ? motionEase(node)
+          : (t: number) => t;
       const from = current.current,
         start = performance.now();
       const tick = (time: number) => {
-        const t = limit((time - start) / duration, 0, 1),
-          ease = 1 - Math.pow(1 - t, 3);
+        const t = limit((time - start) / ms, 0, 1),
+          ease = curve(t);
         update({
           position: from.position + (target.position - from.position) * ease,
           zoom: from.zoom + (target.zoom - from.zoom) * ease,
@@ -84,12 +107,11 @@ export function useCamera(
       if (staticMode) update(target);
       else animation.current = requestAnimationFrame(tick);
     },
-    [staticMode, stop, update],
+    [staticMode, stop, update, stageRef],
   );
   const zoomAt = useCallback(
     (zoom: number, clientX?: number, clientY?: number, smooth = true) => {
-      const box = stageRef.current?.getBoundingClientRect();
-      if (!box) return;
+      const box = measure();
       const old = current.current,
         z = limit(zoom, 1, 2.6),
         px = (clientX ?? box.left + box.width / 2) - box.left - box.width / 2,
@@ -100,15 +122,22 @@ export function useCamera(
         x: px - ((px - old.x) * z) / old.zoom,
         y: py - ((py - old.y) * z) / old.zoom,
       };
-      if (smooth) glide(next, 250);
+      if (smooth)
+        glide(
+          next,
+          stageRef.current
+            ? motionDuration(stageRef.current, "--dur-sheet", 320)
+            : 320,
+        );
       else update(next);
     },
-    [glide, stageRef, update],
+    [glide, stageRef, update, measure],
   );
   useEffect(() => {
     const el = stageRef.current;
     if (!el) return;
     const wheel = (e: WheelEvent) => {
+      if ((e.target as HTMLElement).closest("[data-controls]")) return;
       if (!e.ctrlKey && document.activeElement !== el) return;
       e.preventDefault();
       onInteract();
@@ -128,7 +157,9 @@ export function useCamera(
     if (staticMode) stop();
   }, [staticMode, stop]);
   function down(e: PointerReactEvent<HTMLElement>) {
-    if ((e.target as HTMLElement).closest("button,a,aside,nav")) return;
+    if ((e.target as HTMLElement).closest("button,a,aside,nav,[data-controls]"))
+      return;
+    measure();
     onInteract();
     stop();
     if (e.pointerType === "mouse")
@@ -157,7 +188,7 @@ export function useCamera(
     pointers.current.set(e.pointerId, { x: e.clientX, y: e.clientY });
     const pair = [...pointers.current.values()];
     const d = drag.current,
-      box = e.currentTarget.getBoundingClientRect();
+      box = bounds.current;
     if (pair.length === 2 && d.distance) {
       const z = limit(
         (d.view.zoom *
@@ -227,7 +258,7 @@ export function useCamera(
     if (!d.moved) {
       const now = Date.now();
       if (now - lastTap.current < 360) {
-        zoomAt(current.current.zoom > 1.05 ? 1 : 2, e.clientX, e.clientY);
+        zoomAt(current.current.zoom > 1.05 ? 1 : 1.6, e.clientX, e.clientY);
         lastTap.current = 0;
       } else lastTap.current = now;
     } else if (
@@ -235,18 +266,14 @@ export function useCamera(
       current.current.zoom < 1.01 &&
       performance.now() - d.time < 100
     ) {
-      let velocity = limit(d.speed, -0.003, 0.003),
-        previous = performance.now();
-      const coast = (now: number) => {
-        const dt = Math.min(now - previous, 32);
-        previous = now;
-        velocity *= Math.exp(-dt / 220);
-        const next = limit(current.current.position + velocity * dt, 0, 1);
-        update({ ...current.current, position: next });
-        if (Math.abs(velocity) > 0.000012 && next > 0 && next < 1)
-          animation.current = requestAnimationFrame(coast);
-      };
-      animation.current = requestAnimationFrame(coast);
+      const projected = limit(
+        current.current.position + limit(d.speed, -0.003, 0.003) * 90,
+        0,
+        1,
+      );
+      const position =
+        Math.round(projected * (frameCount - 1)) / (frameCount - 1);
+      glide({ ...current.current, position }, 220, true);
     }
   }
   return { view, current, stop, glide, zoomAt, update, down, move, up };

@@ -1,0 +1,499 @@
+[
+  {
+    "name": "Axe recolhido 390",
+    "pass": true,
+    "evidence": []
+  },
+  {
+    "name": "Sem controles antigos no celular",
+    "pass": true,
+    "evidence": [
+      "Tela cheia",
+      "Ambiente e acabamento",
+      "Rosado",
+      "Bege",
+      "Escuro"
+    ]
+  },
+  {
+    "name": "Arrastar e inércia terminam no quadro",
+    "pass": true,
+    "evidence": {
+      "immediate": {
+        "immersive": "true",
+        "position": "0.4509",
+        "zoom": "1.000",
+        "pan": "0.0,0.0",
+        "fullscreen": "false",
+        "static": "false",
+        "combo": "cozinha-rosado"
+      },
+      "rotated": {
+        "immersive": "true",
+        "position": "0.4681",
+        "zoom": "1.000",
+        "pan": "0.0,0.0",
+        "fullscreen": "false",
+        "static": "false",
+        "combo": "cozinha-rosado"
+      }
+    }
+  },
+  {
+    "name": "Duplo toque 1,6x",
+    "pass": true,
+    "evidence": {
+      "immersive": "true",
+      "position": "0.4681",
+      "zoom": "1.600",
+      "pan": "-9.0,16.2",
+      "fullscreen": "false",
+      "static": "false",
+      "combo": "cozinha-rosado"
+    }
+  },
+  {
+    "name": "Pinça amplia",
+    "pass": true,
+    "evidence": {
+      "immersive": "true",
+      "position": "0.4681",
+      "zoom": "2.240",
+      "pan": "-12.6,39.4",
+      "fullscreen": "false",
+      "static": "false",
+      "combo": "cozinha-rosado"
+    }
+  },
+  {
+    "name": "Puxar abre gaveta",
+    "pass": true
+  },
+  {
+    "name": "Axe gaveta aberta",
+    "pass": true,
+    "evidence": []
+  },
+  {
+    "name": "Material preserva ângulo e zoom",
+    "pass": true,
+    "evidence": {
+      "prev": {
+        "immersive": "true",
+        "position": "0.4681",
+        "zoom": "2.240",
+        "pan": "-12.6,39.4",
+        "fullscreen": "false",
+        "static": "false",
+        "combo": "cozinha-rosado"
+      },
+      "next": {
+        "immersive": "true",
+        "position": "0.4681",
+        "zoom": "2.240",
+        "pan": "-12.6,39.4",
+        "fullscreen": "false",
+        "static": "false",
+        "combo": "cozinha-bege"
+      }
+    }
+  },
+  {
+    "name": "Fullscreen 390",
+    "pass": true,
+    "evidence": {
+      "immersive": "true",
+      "position": "0.4681",
+      "zoom": "2.240",
+      "pan": "-12.6,39.4",
+      "fullscreen": "true",
+      "static": "false",
+      "combo": "cozinha-bege"
+    }
+  },
+  {
+    "name": "Saída fullscreen 390",
+    "pass": true
+  },
+  {
+    "name": "Erros JS 390",
+    "pass": true,
+    "evidence": []
+  },
+  {
+    "name": "Tempos interação CPU4x 390",
+    "evidence": {
+      "events": [
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerenter",
+          "duration": 16
+        },
+        {
+          "name": "pointerdown",
+          "duration": 16
+        },
+        {
+          "name": "touchstart",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "gotpointercapture",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 56
+        },
+        {
+          "name": "lostpointercapture",
+          "duration": 56
+        },
+        {
+          "name": "pointerout",
+          "duration": 56
+        },
+        {
+          "name": "pointerleave",
+          "duration": 56
+        },
+        {
+          "name": "pointerleave",
+          "duration": 56
+        },
+        {
+          "name": "pointerleave",
+          "duration": 56
+        },
+        {
+          "name": "pointerleave",
+          "duration": 56
+        },
+        {
+          "name": "pointerleave",
+          "duration": 56
+        },
+        {
+          "name": "pointerleave",
+          "duration": 56
+        },
+        {
+          "name": "pointerleave",
+          "duration": 56
+        },
+        {
+          "name": "touchend",
+          "duration": 56
+        },
+        {
+          "name": "mouseover",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "gotpointercapture",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 16
+        },
+        {
+          "name": "lostpointercapture",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "touchend",
+          "duration": 16
+        },
+        {
+          "name": "mousedown",
+          "duration": 16
+        },
+        {
+          "name": "mouseup",
+          "duration": 16
+        },
+        {
+          "name": "click",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "gotpointercapture",
+          "duration": 16
+        },
+        {
+          "name": "pointerout",
+          "duration": 16
+        },
+        {
+          "name": "pointerleave",
+          "duration": 16
+        },
+        {
+          "name": "pointerover",
+          "duration": 16
+        },
+        {
+          "name": "gotpointercapture",
+          "duration": 16
+        },
+        {
+          "name": "gotpointercapture",
+          "duration": 16
+        },
+        {
+          "name": "pointerup",
+          "duration": 88
+        },
+        {
+          "name": "lostpointercapture",
+          "duration": 88
+        },
+        {
+          "name": "pointerout",
+          "duration": 88
+        },
+        {
+          "name": "pointerleave",
+          "duration": 88
+        },
+        {
+          "name": "pointerleave",
+          "duration": 88
+        },
+        {
+          "name": "pointerleave",
+          "duration": 88
+        },
+        {
+          "name": "pointerleave",
+          "duration": 88
+        },
+        {
+          "name": "pointerleave",
+          "duration": 88
+        },
+        {
+          "name": "pointerleave",
+          "duration": 88
+        },
+        {
+          "name": "pointerleave",
+          "duration": 88
+        },
+        {
+          "name": "pointerleave",
+          "duration": 88
+        },
+        {
+          "name": "pointerleave",
+          "duration": 88
+        },
+        {
+          "name": "touchend",
+          "duration": 88
+        },
+        {
+          "name": "mouseout",
+          "duration": 72
+        },
+        {
+          "name": "mouseover",
+          "duration": 72
+        },
+        {
+          "name": "mousedown",
+          "duration": 72
+        },
+        {
+          "name": "mouseup",
+          "duration": 72
+        },
+        {
+          "name": "click",
+          "duration": 72
+        }
+      ],
+      "tasks": [
+        77
+      ]
+    }
+  },
+  {
+    "name": "Axe recolhido 1440",
+    "pass": true,
+    "evidence": []
+  },
+  {
+    "name": "Seta desktop anima giro",
+    "pass": true
+  },
+  {
+    "name": "Zoom desktop",
+    "pass": true
+  },
+  {
+    "name": "Fullscreen 1440",
+    "pass": true,
+    "evidence": {
+      "immersive": "true",
+      "position": "0.0550",
+      "zoom": "1.400",
+      "pan": "0.0,0.0",
+      "fullscreen": "true",
+      "static": "false",
+      "combo": "cozinha-rosado"
+    }
+  },
+  {
+    "name": "Saída fullscreen 1440",
+    "pass": true
+  },
+  {
+    "name": "Erros JS 1440",
+    "pass": true,
+    "evidence": []
+  },
+  {
+    "name": "Tempos interação CPU4x 1440",
+    "evidence": {
+      "events": [],
+      "tasks": [
+        69
+      ]
+    }
+  },
+  {
+    "name": "Estático reduced",
+    "pass": true,
+    "evidence": {
+      "state": "true",
+      "frames": [
+        "/configurador/uniforme/cozinha-rosado/retrato/00.avif"
+      ],
+      "hint": false
+    }
+  },
+  {
+    "name": "Estático saveData",
+    "pass": true,
+    "evidence": {
+      "state": "true",
+      "frames": [
+        "/configurador/uniforme/cozinha-rosado/retrato/00.avif"
+      ],
+      "hint": false
+    }
+  }
+]

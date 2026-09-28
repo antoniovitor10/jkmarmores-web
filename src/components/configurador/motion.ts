@@ -18,7 +18,8 @@ export function motionEase(
   const curve = (t: number, a: number, b: number) =>
     3 * (1 - t) * (1 - t) * t * a + 3 * (1 - t) * t * t * b + t * t * t;
   return (progress: number) => {
-    if (progress <= 0 || progress >= 1) return Math.max(0,Math.min(1,progress));
+    if (progress <= 0 || progress >= 1)
+      return Math.max(0, Math.min(1, progress));
     let low = 0,
       high = 1,
       t = progress;
