@@ -1,0 +1,139 @@
+diff --git a/src/components/Brand.tsx b/src/components/Brand.tsx
+index c1ad0e7..7306fa2 100644
+--- a/src/components/Brand.tsx
++++ b/src/components/Brand.tsx
+@@ -3,7 +3,7 @@ import { texto } from '@/lib/site';
+ 
+ export function Brand({ footer = false }: { footer?: boolean }) {
+   // eslint-disable-next-line @next/next/no-img-element
+-  if (!footer) return <img src="/brand/jk-monograma-240.webp" width={240} height={146} alt={texto(conteudo.empresa.nome)} className="brand-monogram" />;
++  if (!footer) return <img src="/brand/jk-monograma-provisorio.svg" width={800} height={500} alt={texto(conteudo.empresa.nome)} className="brand-monogram" />;
+   // JPEG da cliente recortado e convertido em WebP 480 px; suficiente para 2x.
+   // eslint-disable-next-line @next/next/no-img-element
+   return <img src="/brand/jk-logo-480.webp" srcSet="/brand/jk-logo-288.webp 288w, /brand/jk-logo-480.webp 480w" sizes={footer ? '(max-width: 700px) 180px, 210px' : '(max-width: 800px) 120px, 144px'} width={480} height={296} alt={texto(conteudo.empresa.nome)} className="brand-image" loading={footer ? 'lazy' : 'eager'} />;
+diff --git a/src/components/HeroScrub.tsx b/src/components/HeroScrub.tsx
+index 1dcb7e6..3881108 100644
+--- a/src/components/HeroScrub.tsx
++++ b/src/components/HeroScrub.tsx
+@@ -1,12 +1,20 @@
+ import type { ReactNode } from "react";
+ import styles from "./HomeHero.module.css";
++import { PrologueArt } from './PrologueArt';
++import './Prologue.css';
+ 
+ export function HeroScrub({ children }: { children: ReactNode }) {
+-  return <div className={styles.track}>
++  return <div className={`${styles.track} prologue`}>
+     <noscript><style>{`.${styles.track}[data-motion] { height:auto; } .${styles.stage} { position:relative; }`}</style></noscript>
+     <div className={styles.stage} data-hero-stage>
+       {children}
++      <PrologueArt />
+       <div className={styles.progress} aria-hidden="true" />
+     </div>
++    <div className="monogram-static">
++      {/* eslint-disable-next-line @next/next/no-img-element */}
++      <img src="/brand/jk-monograma-provisorio.svg" width="800" height="500" alt="JK" loading="lazy" />
++      <p>Mármores e Granitos</p>
++    </div>
+   </div>;
+ }
+diff --git a/src/components/HomeHero.module.css b/src/components/HomeHero.module.css
+index fb163d4..de9e7d3 100644
+--- a/src/components/HomeHero.module.css
++++ b/src/components/HomeHero.module.css
+@@ -1,11 +1,11 @@
+ .hero { background:#0b0a09; color:#f3ece2; }
+ .track { position:relative; }
+-.track[data-motion] { height:180svh; }
+-.stage { position:sticky; top:0; height:100svh; min-height:640px; overflow:hidden; isolation:isolate; contain:layout paint; }
++
++.stage { position:relative; top:0; height:100svh; min-height:640px; overflow:hidden; isolation:isolate; contain:layout paint; }
+ .figure { position:absolute; inset:0; margin:0; z-index:0; background:#0b0a09; overflow:hidden; }
+ .figure picture,.figure img,.video { display:block; width:100%; height:100%; }
+ .figure img,.video { object-fit:cover; object-position:70% center; }
+-.figure picture,.video { clip-path:polygon(44% 0,100% 0,100% 100%,44% 100%); }
++.figure picture { position:absolute; inset:0 0 0 44%; width:auto; height:auto; }
+ .figure picture { animation:stone-arrives var(--dur-focal) var(--ease-arrive) both; }
+ .video { position:absolute; inset:0; opacity:0; z-index:1; }
+ .figure::after { content:""; position:absolute; inset:-30%; z-index:2; pointer-events:none; background:linear-gradient(135deg,transparent 44%,rgb(255 255 255 / 12%) 50%,transparent 56%); mix-blend-mode:soft-light; animation:stone-light var(--dur-focal) var(--ease-arrive) both; }
+@@ -24,10 +24,10 @@
+ @keyframes stone-light { from { transform:translateX(-65%); } to { transform:translateX(65%); } }
+ @keyframes type-arrives { from { transform:translateY(.35em); } to { transform:translateY(0); } }
+ @media(max-width:700px) {
+- .track[data-motion] { height:160svh; }
++
+  .intro { top:96px; left:24px; width:calc(100% - 48px); max-width:none; padding:0; }
+  .intro h1 { font-size:50px; }
+- .figure picture,.video { clip-path:polygon(0 56%,100% 56%,100% 100%,0 100%); }
++ .figure picture { inset:56% 0 0; }
+  .description { font-size:16px; }
+  .figure figcaption { right:24px; left:24px; bottom:24px; }
+ }
+diff --git a/src/components/StoneJourney.tsx b/src/components/StoneJourney.tsx
+index de546c3..1356170 100644
+--- a/src/components/StoneJourney.tsx
++++ b/src/components/StoneJourney.tsx
+@@ -28,9 +28,7 @@ export function StoneJourney() {
+           </figure>)}
+         </div>
+         <div className="journey-progress" aria-hidden="true"><span /></div>
+-        <div className="journey-mask" aria-hidden="true">
+-          <span className="journey-word">PEDRA</span>
+-        </div>
++
+       </div>
+     </StoneJourneyMotion></Suspense>
+   </section>;
+diff --git a/src/components/StoneJourneyMotion.tsx b/src/components/StoneJourneyMotion.tsx
+index f20be4c..9620246 100644
+--- a/src/components/StoneJourneyMotion.tsx
++++ b/src/components/StoneJourneyMotion.tsx
+@@ -83,7 +83,7 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
+           media[index] = null;
+           motions[index] = gestureMedia(frames[index], frames[index].querySelector("img")!, () => media[index]);
+         }
+-        if (media[index]) return;
++        if (index === 0 || media[index]) return;
+         const totalBytes = video.clips.reduce((sum, item) => sum + (mobile ? item.mobile.bytes : item.desktop.bytes), 0);
+         if (totalBytes > (mobile ? 3_000_000 : 8_000_000) || source.bytes <= 0 || clip.durationSeconds <= 0) return;
+         const item = document.createElement("video");
+@@ -109,8 +109,8 @@ export function StoneJourneyMotion({ children, video }: { children: ReactNode; v
+         const rect = el!.getBoundingClientRect();
+         const travel = Math.max(1, rect.height - stickyHeight);
+         // Preserva o trajeto da máscara aprovada; encurta somente os quatro quadros.
+-        const maskTravel = (innerHeight * 6.2 - stickyHeight) * .22;
+-        const reveal = clamp(-rect.top / maskTravel);
++        const maskTravel = 0;
++        const reveal = 1;
+         const story = clamp((-rect.top - maskTravel) / Math.max(1, travel - maskTravel));
+         el!.style.setProperty("--mask-scale", String(1 + Math.pow(reveal, 2.4) * 13));
+         el!.style.setProperty("--mask-opacity", String(1 - clamp((reveal - .58) / .42)));
+diff --git a/src/content/stone-journey.ts b/src/content/stone-journey.ts
+index 70de76f..363b59a 100644
+--- a/src/content/stone-journey.ts
++++ b/src/content/stone-journey.ts
+@@ -1,6 +1,6 @@
+ // Estudos ilustrativos. Nao descrevem materiais ou etapas executadas pela JK.
+ export const stoneJourney = [
+-  { id: "sequencia-01-chapa", title: "Chapa", detail: "O desenho natural, visto por inteiro.", alt: "Imagem ilustrativa de uma chapa clara com veios cinza, apoiada em um suporte numa sala escura." },
++  { id: "jornada-rosada-01", title: "Chapa", detail: "O desenho natural, visto por inteiro.", alt: "Imagem ilustrativa da superfície de uma pedra rosada com veios caramelo." },
+   { id: "sequencia-02-borda", title: "Borda", detail: "O encontro entre superfície e espessura.", alt: "Imagem ilustrativa de uma borda de pedra clara e um pequeno recorte sobre uma bancada." },
+   { id: "sequencia-03-acabamento", title: "Acabamento", detail: "A luz revela outra escala da matéria.", alt: "Imagem ilustrativa em close da textura mineral de uma superfície clara sob luz lateral." },
+   { id: "sequencia-04-aplicada", title: "Peça aplicada", detail: "A matéria passa a fazer parte do espaço.", alt: "Imagem ilustrativa de uma ilha de pedra clara em um ambiente arquitetônico fictício." },
+diff --git a/src/lib/motion-network.ts b/src/lib/motion-network.ts
+index 561411a..7fd18de 100644
+--- a/src/lib/motion-network.ts
++++ b/src/lib/motion-network.ts
+@@ -3,10 +3,11 @@ export type MotionConnection = EventTarget & { saveData?: boolean; effectiveType
+ // Usa apenas requisições críticas já concluídas. Nunca baixa um vídeo para testar a rede.
+ // Os timings também cobrem navegadores sem Network Information API e um "4g" otimista.
+ export function motionNetworkPolicy(connection?: MotionConnection) {
++  if (((navigator as Navigator & { deviceMemory?: number }).deviceMemory ?? 8) <= 2) return "low-memory";
+   if (connection?.saveData || /(^|-)2g|3g/.test(connection?.effectiveType ?? "") ||
+       (connection?.downlink !== undefined && connection.downlink < 1.6)) return "slow-connection";
+   const navigation = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming | undefined;
+-  const poster = performance.getEntriesByType("resource").find(entry => entry.name.includes("/img/capa-poster-")) as PerformanceResourceTiming | undefined;
++  const poster = performance.getEntriesByType("resource").find(entry => /\/img\/capa-(poster|close)-/.test(entry.name)) as PerformanceResourceTiming | undefined;
+   let measured = false;
+   for (const entry of [navigation, poster]) {
+     if (!entry || entry.transferSize === 0) continue; // Cache não mede a conexão atual.
