@@ -19,11 +19,11 @@ export const stoneJourneyVideo: JourneyVideo | null = {
       "durationSeconds": 1.458333,
       "desktop": {
         "src": "/video/jornada-1-desktop-editorial.mp4",
-        "bytes": 309779
+        "bytes": 314064
       },
       "mobile": {
         "src": "/video/jornada-1-mobile-editorial.mp4",
-        "bytes": 268763,
+        "bytes": 272922,
         "height": 720
       }
     },
@@ -31,11 +31,11 @@ export const stoneJourneyVideo: JourneyVideo | null = {
       "durationSeconds": 1.458333,
       "desktop": {
         "src": "/video/jornada-2-desktop-editorial.mp4",
-        "bytes": 215566
+        "bytes": 227937
       },
       "mobile": {
         "src": "/video/jornada-2-mobile-editorial.mp4",
-        "bytes": 98224,
+        "bytes": 104477,
         "height": 720
       }
     },
@@ -43,11 +43,11 @@ export const stoneJourneyVideo: JourneyVideo | null = {
       "durationSeconds": 1.458333,
       "desktop": {
         "src": "/video/jornada-3-desktop-editorial.mp4",
-        "bytes": 318011
+        "bytes": 316552
       },
       "mobile": {
         "src": "/video/jornada-3-mobile-editorial.mp4",
-        "bytes": 279216,
+        "bytes": 278808,
         "height": 720
       }
     },
@@ -55,11 +55,11 @@ export const stoneJourneyVideo: JourneyVideo | null = {
       "durationSeconds": 1.458333,
       "desktop": {
         "src": "/video/jornada-4-desktop-editorial.mp4",
-        "bytes": 327070
+        "bytes": 328278
       },
       "mobile": {
         "src": "/video/jornada-4-mobile-editorial.mp4",
-        "bytes": 282543,
+        "bytes": 284631,
         "height": 720
       }
     }

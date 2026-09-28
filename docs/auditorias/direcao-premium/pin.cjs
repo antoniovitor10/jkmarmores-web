@@ -3,7 +3,7 @@ const {chromium}=require('playwright'),fs=require('fs'),path=require('path'),zli
 (async()=>{const b=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});try{
  const ctx=await b.newContext({viewport:{width:393,height:873},isMobile:true,hasTouch:true});const p=await ctx.newPage(),c=await ctx.newCDPSession(p);
  await c.send('Emulation.setCPUThrottlingRate',{rate:4});
- await p.addInitScript(()=>{window.__events=[];new PerformanceObserver(l=>window.__events.push(...l.getEntries().map(e=>({name:e.name,duration:e.duration,interactionId:e.interactionId})))).observe({type:'event',buffered:true,durationThreshold:16});});
+ await p.addInitScript(()=>{Object.defineProperty(navigator,'connection',{configurable:true,value:{effectiveType:'4g',downlink:10,saveData:false,addEventListener(){},removeEventListener(){}}});window.__events=[];new PerformanceObserver(l=>window.__events.push(...l.getEntries().map(e=>({name:e.name,duration:e.duration,interactionId:e.interactionId})))).observe({type:'event',buffered:true,durationThreshold:16});});
  await p.goto('http://127.0.0.1:3105/',{waitUntil:'networkidle'});await p.locator('summary').first().tap();await p.waitForTimeout(100);await p.keyboard.press('Escape');
  await c.send('Tracing.start',{categories:'devtools.timeline,disabled-by-default-devtools.timeline',transferMode:'ReturnAsStream'});
  for(let i=0;i<100;i++){await p.evaluate(()=>scrollBy(0,45));await p.waitForTimeout(17);}

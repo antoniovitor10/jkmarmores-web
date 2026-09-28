@@ -15,18 +15,14 @@ for (const { nome, arquivo } of sources) {
   if (!/\.(jpe?g|png|webp|avif)$/i.test(nome)) continue;
   const id = path.parse(nome).name;
   // Fontes históricas ficam no acervo, sem derivados sem uso no site exportado.
-  if (["a1-mobile", "capa-aberto-01"].includes(id)) continue;
-  if (id === "a1-prova-01") {
-    await (await editorialImage(arquivo, 1200)).avif({ quality: 50 }).toFile(path.join(destino, "a1-prova-01-1200.avif"));
-    continue;
-  }
+  if (["a1-mobile", "capa-aberto-01", "a1-prova-01", "capa-close", "capa-poster", "capa-poster-mobile"].includes(id)) continue;
   const dados = await sharp(arquivo).metadata();
   if (!dados.width || !dados.height) continue;
   const variantes = [];
   for (const width of [390, 768, 1200, 1600].filter((valor) => valor <= dados.width)) {
     const avif = `/img/${id}-${width}.avif`;
     const webp = `/img/${id}-${width}.webp`;
-    const treated = await editorialImage(arquivo, width);
+    const treated = await editorialImage(arquivo, width, id.startsWith("sequencia-"));
     await treated.clone().avif({ quality: 50 }).toFile(path.join(destino, path.basename(avif)));
     await treated.clone().webp({ quality: 72 }).toFile(path.join(destino, path.basename(webp)));
     variantes.push({ width, avif, webp });
@@ -35,7 +31,7 @@ for (const { nome, arquivo } of sources) {
     const width = dados.width;
     const avif = `/img/${id}-${width}.avif`;
     const webp = `/img/${id}-${width}.webp`;
-    const treated = await editorialImage(arquivo, width);
+    const treated = await editorialImage(arquivo, width, id.startsWith("sequencia-"));
     await treated.clone().avif({ quality: 50 }).toFile(path.join(destino, path.basename(avif)));
     await treated.clone().webp({ quality: 72 }).toFile(path.join(destino, path.basename(webp)));
     variantes.push({ width, avif, webp });

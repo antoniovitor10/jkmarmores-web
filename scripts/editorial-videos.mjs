@@ -11,7 +11,7 @@ for (let i = 1; i <= 4; i++) {
     const original = `public/video/jornada-${i}-${device}.mp4`;
     const output = `public/video/jornada-${i}-${device}-editorial.mp4`;
     execFileSync(ffmpeg, ['-hide_banner', '-loglevel', 'error', '-nostdin', '-y', '-i', original,
-      '-vf', 'eq=saturation=0.86:contrast=0.91:brightness=0.035,colorchannelmixer=rr=1.01:bb=0.99',
+      '-vf', 'eq=saturation=0.86,lutrgb=r=val*0.94+11:g=val*0.89+10:b=val*0.83+9',
       '-an', '-c:v', 'libx264', '-preset', 'slow', '-crf', '20', '-g', '6', '-keyint_min', '6', '-sc_threshold', '0', '-movflags', '+faststart', output]);
     clip[device] = { src: `/video/${path.basename(output)}`, bytes: fs.statSync(output).size, ...(device === 'mobile' ? { height: 720 } : {}) };
   }

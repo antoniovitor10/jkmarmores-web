@@ -92,4 +92,3 @@ export function mountJourney(root: HTMLElement) {
     delete root.dataset.enhanced;
   };
 }
-

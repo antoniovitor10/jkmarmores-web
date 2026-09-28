@@ -1,0 +1,56 @@
+[
+  {
+    "mode": "touch-4g",
+    "run": 1,
+    "responseMs": 78.5,
+    "scrollY": 185
+  },
+  {
+    "mode": "touch-4g",
+    "run": 2,
+    "responseMs": 80.2999999821186,
+    "scrollY": 185
+  },
+  {
+    "mode": "touch-4g",
+    "run": 3,
+    "responseMs": 65.59999999403954,
+    "scrollY": 185
+  },
+  {
+    "mode": "touch-slow",
+    "run": 1,
+    "responseMs": 36.19999998807907,
+    "scrollY": 185
+  },
+  {
+    "mode": "touch-slow",
+    "run": 2,
+    "responseMs": 32.79999998211861,
+    "scrollY": 185
+  },
+  {
+    "mode": "touch-slow",
+    "run": 3,
+    "responseMs": 37.400000005960464,
+    "scrollY": 420
+  },
+  {
+    "mode": "wheel",
+    "run": 1,
+    "responseMs": 41.099999994039536,
+    "scrollY": 200
+  },
+  {
+    "mode": "wheel",
+    "run": 2,
+    "responseMs": 24.799999982118607,
+    "scrollY": 200
+  },
+  {
+    "mode": "wheel",
+    "run": 3,
+    "responseMs": 34.900000005960464,
+    "scrollY": 200
+  }
+]

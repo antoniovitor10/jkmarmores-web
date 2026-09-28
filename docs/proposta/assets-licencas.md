@@ -197,3 +197,7 @@ Sem geração ou request_id novo. Fontes pagas e direitos permanecem os registra
 ## 28/09: monograma provisório e jornada editorial
 JK vetorizado manualmente do JPEG fornecido pela cliente, coordenadas relativas x385/y280. Arquivo public/brand/jk-monograma-provisorio.svg, textura do JPEG e traçado src/content/monogram.ts; PROVISÓRIO, substituir pelo vetor oficial (V1 parcial). scripts/build-monogram.mjs remove só o preto do fundo nas bordas, sem redesenhar a marca. Nenhum modelo, request_id ou custo novo.
 Vídeos da jornada já pagos, tratados localmente por scripts/editorial-videos.mjs: saturação0,86, contraste0,91, brilho0,035 e leve calor de canais. H.264 CRF20, GOP6, faststart,1,458333s, sem áudio. Desktop somado1.170.426B; mobile928.746B/720p. Fontes originais preservadas. Aviso de IA único e alt ilustrativo; nenhuma afirmação de que a JK executa os processos ilustrados. Custo US$0.
+
+
+## 28/09: unidade quente da jornada, entrega final
+Sem geração, request_id ou custo novo (US$ 0). Os quatro quadros e o recorte móvel 02 recebem Sharp editorial com saturação 0,86, ganho RGB 0,94/0,89/0,83 e offset 11/10/9; grão fino determinista já descrito. Apenas derivados, originais preservados. Os oito vídeos existentes recebem o mesmo balanço em FFmpeg (eq saturation + lutrgb), H.264 CRF20, GOP6, faststart, sem áudio. Desktop total 1.186.831 B; celular 940.838 B/720p. Scripts editorial-image.mjs, build-images.mjs e editorial-videos.mjs. Capa permanece fotografia editorial estática, sem vídeo na entrada. Aviso IA único preservado.

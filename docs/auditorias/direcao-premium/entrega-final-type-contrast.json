@@ -1,0 +1,38 @@
+{
+  "h1": {
+    "font": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif",
+    "weight": "400",
+    "loaded": true
+  },
+  "h2": [
+    {
+      "text": "Da chapa à sua bancada.",
+      "font": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "text": "Veja como a escolha muda o ambiente.",
+      "font": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "text": "Sua ideia começa aqui.",
+      "font": "homeDisplay, \"homeDisplay Fallback\", Georgia, serif"
+    },
+    {
+      "text": "A empresa",
+      "font": "homeBody, \"homeBody Fallback\", Arial, sans-serif"
+    },
+    {
+      "text": "Em Barueri",
+      "font": "homeBody, \"homeBody Fallback\", Arial, sans-serif"
+    },
+    {
+      "text": "Contato",
+      "font": "homeBody, \"homeBody Fallback\", Arial, sans-serif"
+    }
+  ],
+  "navColor": "rgb(43, 38, 34)",
+  "paper": "rgb(244, 239, 233)",
+  "contrast": 13.092690153610247,
+  "navBottom": 54,
+  "imageTop": 394.359375
+}

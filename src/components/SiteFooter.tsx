@@ -17,9 +17,9 @@ const pending = [...new Set(pendingDescriptions([conteudo, institucional]))];
 export function SiteFooter() {
   return <footer className="site-footer"><div className="container footer-grid">
     <div><Link href="/" className="brand"><Brand footer /></Link><p>JK Marmores e Granitos<br />Barueri, São Paulo</p></div>
-    <nav aria-label="Navegação do rodapé"><p className="eyebrow">CONHEÇA A JK</p><Link href="/sobre/">A empresa</Link><Link href="/materiais/">Materiais</Link><Link href="/aplicacoes/">Aplicações</Link><Link href="/galeria/">Galeria</Link></nav>
-    <div><p className="eyebrow">ENDEREÇO</p><address><PendenteTexto valor={conteudo.empresa.endereco} /></address><p>Antes de visitar, confirme o atendimento por telefone.</p></div>
-    <div><p className="eyebrow">FALE COM A JK</p><a className="footer-phone" href={telefoneUrl}><PendenteTexto valor={conteudo.empresa.telefone} /></a><a href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a><Link href="/contato/">Todos os contatos</Link></div>
+    <nav aria-label="Navegação do rodapé"><h2>A empresa</h2><Link href="/sobre/">A empresa</Link><Link href="/materiais/">Materiais</Link><Link href="/aplicacoes/">Aplicações</Link><Link href="/galeria/">Galeria</Link></nav>
+    <div><h2>Em Barueri</h2><address><PendenteTexto valor={conteudo.empresa.endereco} /></address><p>Antes de visitar, confirme o atendimento por telefone.</p></div>
+    <div><h2>Contato</h2><a className="footer-phone" href={telefoneUrl}><PendenteTexto valor={conteudo.empresa.telefone} /></a><a href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a><Link href="/contato/">Todos os contatos</Link></div>
   </div><div hidden>{pending.map(description => <span key={description} data-pendente={description} />)}</div><div className="container footer-bottom"><span>JK Marmores e Granitos</span><span>{illustrationNotice}</span></div></footer>;
 }
 export function MobileQuoteDock() {

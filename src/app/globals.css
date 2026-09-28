@@ -21,7 +21,7 @@ address { font-style:normal; }
 .eyebrow { font-size:11px; font-weight:400; letter-spacing:.14em; line-height:1.6; margin:0 0 20px; }
 .eyebrow > span { margin-right:20px; }
 .lead { font-size:22px; line-height:1.55; }
-.section-space { padding-block:100px; }
+.section-space { padding-block:var(--espaco-secao); }
 .warm-section { background:var(--cor-superficie); }
 .section-heading { max-width:700px; margin-bottom:48px; }
 .section-heading h2 { margin-bottom:0; }
@@ -42,8 +42,6 @@ body:has(.home-page) .header-inner { min-height:64px; }
 body:has(.home-page) .header-cta { display:none; }
 body:has(.home-page) .desktop-nav { padding:0; }
 
-.request-story { padding-block:80px; background:var(--cor-papel); color:var(--cor-texto); }
-.request-story .actions { border-top:1px solid #b3a28e; padding-top:24px; }
 .brand { display:inline-flex; align-items:center; flex-shrink:0; }
 .brand-image { width:144px; height:auto; display:block; }
 .desktop-nav { display:flex; gap:28px; }
@@ -93,10 +91,10 @@ body:has(.home-page) .desktop-nav { padding:0; }
 .address-panel { border-top:1px solid var(--cor-borda); padding-top:28px; align-self:center; }
 .address-panel address { font-size:23px; line-height:1.5; max-width:26ch; margin-bottom:24px; }
 .address-panel > p { font-size:14px; max-width:42ch; }
-.institutional-intro { background:var(--cor-grafite); color:var(--cor-papel); padding:72px 0 80px; }
+.institutional-intro { background:var(--cor-papel); color:var(--cor-texto); padding:96px 0; }
 .institutional-intro .eyebrow { color:var(--cor-caramelo); }
 .institutional-intro h1 { max-width:15ch; }
-.intro-description { max-width:60ch; font-size:18px; color:#d8cec3; margin-top:32px; margin-bottom:0; }
+.intro-description { max-width:60ch; font-size:18px; color:var(--cor-muted); margin-top:32px; margin-bottom:0; }
 .about-editorial { display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center; }
 .about-editorial .editorial-image img { aspect-ratio:5/4; }
 .catalog-status { display:grid; grid-template-columns:1fr 1fr; gap:80px; }
@@ -142,7 +140,7 @@ body:has(.home-page) .desktop-nav { padding:0; }
 @media(max-width:700px) {
   .container { width:calc(100% - 48px); }
   h2 { font-size:40px; }
-  .section-space { padding-block:64px; }
+  .section-space { padding-block:80px; }
   .eyebrow { font-size:10px; }
   .lead { font-size:19px; }
   .actions { gap:12px 20px; }
@@ -178,24 +176,22 @@ body:has(.home-page) .desktop-nav { padding:0; }
 .editorial-motion :is(.eyebrow,.step-number,figcaption),.material-criteria article > span { font-variant-numeric:tabular-nums; }
 .editorial-motion .editorial-image picture { overflow:hidden; }
 .editorial-motion .editorial-image img { aspect-ratio:4/5; }
-.home-page > #orcamento { background:#0b0a09; color:#f3ece2; }
+.home-page > #orcamento { background:var(--cor-papel); color:var(--cor-texto); }
 .home-page > #orcamento :is(.eyebrow,.step-number) { color:#cea57e; }
-.home-page > #orcamento .button { background:#cea57e; color:#0b0a09; border-color:#cea57e; }
-.home-page > #orcamento .button:is(:hover,:focus-visible) { background:#e3bd96; }
+.home-page > #orcamento .button { background:var(--botao-fundo); color:var(--botao-texto); border-color:var(--botao-borda); }
+.home-page > #orcamento .button:is(:hover,:focus-visible) { background:var(--cor-destaque); }
 @media(max-width:700px) { .editorial-motion h2 { font-size:44px; } .editorial-motion .editorial-image img { aspect-ratio:5/4; } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; } .editorial-motion,.editorial-motion *,.editorial-motion *::before { animation:none !important; } }
 
-.home-contact-grid { display:grid; grid-template-columns:1fr 1fr; align-items:center; gap:clamp(40px,8vw,112px); }
-.home-contact-grid h2 { max-width:9ch; }
-.home-contact-grid p:not(.eyebrow) { max-width:34ch; color:#d8cec3; }
-.home-contact-grid address { max-width:30ch; font-size:13px; padding-top:24px; margin:32px 0; border-top:1px solid #927254; }
-.home-contact .editorial-image figcaption { color:#d8cec3; }
+.home-contact-grid { display:block; padding-block:24px; }
+.home-contact-grid h2 { max-width:12ch; }
+.home-contact-grid p:not(.eyebrow) { max-width:42ch; color:var(--cor-muted); margin:28px 0 36px; font-size:18px; }
 @media(max-width:700px) { .home-contact-grid { grid-template-columns:1fr; } }
 @media(max-width:800px) { body:has(.home-page) .header-inner { min-height:64px; } .brand-monogram { width:48px; } }
 
 .footer-bottom { font-size:13px; }
 .footer-bottom > span:last-child { max-width:64ch; }
-.home-contact-grid h2 { max-width:16ch; text-wrap:balance; }
+.home-contact-grid h2 { max-width:14ch; text-wrap:balance; }
 body:has(.home-page) { --page-bg:var(--cor-papel); --page-ink:var(--cor-texto); background:var(--page-bg); }
 .home-page > #configurador { color:var(--page-ink); }
 @media(prefers-reduced-motion:no-preference) {
@@ -219,16 +215,18 @@ body:has(.home-page) { --page-bg:var(--cor-papel); --page-ink:var(--cor-texto); 
 }
 
 /* Reserva o espaço abaixo da dobra sem calcular todos os descendentes na entrada. */
-.home-page > :is(#configurador,.home-contact,.request-story),body:has(.home-page) > .site-footer { content-visibility:auto; }
+.home-page > :is(#configurador,.home-contact),body:has(.home-page) > .site-footer { content-visibility:auto; }
 .home-page > #configurador { contain-intrinsic-block-size:auto calc(100svh + 210px); width:100%; max-width:none; padding-inline:max(40px,calc((100% - 1280px)/2)); }
-.home-page > .home-contact { contain-intrinsic-block-size:auto calc((min(100vw - 80px,1280px) - clamp(40px,8vw,112px))*0.625 + 27px); }
+.home-page > .home-contact { contain-intrinsic-block-size:auto 650px; }
 body:has(.home-page) > .site-footer { contain-intrinsic-block-size:auto 409px; }
 /* O fallback de tela cheia da Orbita precisa continuar relativo ao viewport. */
 .home-page > #configurador:has([data-fullscreen="true"]) { content-visibility:visible; contain:none; }
 @media(max-width:700px) {
   .home-page > #configurador { padding-inline:24px; contain-intrinsic-block-size:auto calc(100svh + 280px); }
-  .home-page > .home-contact { contain-intrinsic-block-size:auto 773px; }
+  .home-page > .home-contact { contain-intrinsic-block-size:auto 480px; }
   body:has(.home-page) > .site-footer { contain-intrinsic-block-size:auto 1035px; }
 }
 
-.home-page > .request-story { contain-intrinsic-block-size:auto 600px; }
+
+.site-footer h2 { font-family:var(--fonte-corpo); font-size:15px; font-weight:400; margin:0 0 24px; letter-spacing:0; }
+.home-contact { border-top:1px solid var(--cor-borda); }
