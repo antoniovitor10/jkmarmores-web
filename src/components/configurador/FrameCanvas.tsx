@@ -1,9 +1,14 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { quadroUrl, quantidadeQuadros } from "@/content/configurador";
+import {
+  quadroUrl,
+  quantidadeQuadros,
+  materiaisConfigurador,
+} from "@/content/configurador";
 import type { Camera } from "./useCamera";
 import styles from "./Configurador.module.css";
 import { loadFrame } from "./initialFrames";
+import { motionDuration, motionEase } from "./motion";
 
 type Props = {
   combo: string;
@@ -11,6 +16,7 @@ type Props = {
   staticMode: boolean;
   onReady: () => void;
   label: string;
+  onLoadState: (state: "loading" | "ready" | "error") => void;
 };
 export function FrameCanvas({
   combo,
@@ -18,6 +24,7 @@ export function FrameCanvas({
   staticMode,
   onReady,
   label,
+  onLoadState,
 }: Props) {
   const canvas = useRef<HTMLCanvasElement>(null),
     cache = useRef(new Map<string, Promise<HTMLImageElement>>());
@@ -28,8 +35,40 @@ export function FrameCanvas({
   const [size, setSize] = useState({ width: 0, height: 0 }),
     [high, setHigh] = useState(false),
     [error, setError] = useState(false),
-    [settled, setSettled] = useState(0);
+    [settled, setSettled] = useState(0),
+    [inView, setInView] = useState(false), [painted,setPainted] = useState('');
   const ready = useRef(false);
+  useEffect(() => {
+    if (!canvas.current) return;
+    const observer = new IntersectionObserver((entries) =>
+      setInView(entries.some((e) => e.isIntersecting)),
+    );
+    observer.observe(canvas.current);
+    return () => observer.disconnect();
+  }, []);
+  useEffect(() => {
+    if (!inView || staticMode || !size.width || painted !== combo) return;
+    const timer = setTimeout(() => {
+      const environment = combo.split("-")[0];
+      for (const material of materiaisConfigurador) {
+        const candidate = `${environment}-${material.id}`;
+        const frame = Math.round(
+          view.position * (quantidadeQuadros(candidate) - 1),
+        );
+        const variant = high
+          ? 2560
+          : size.width < 768 && size.height > size.width
+            ? "retrato"
+            : size.width < 768
+              ? 720
+              : 1280;
+        void loadFrame(quadroUrl(candidate, frame, variant), "low").catch(
+          () => {},
+        );
+      }
+    }, 180);
+    return () => clearTimeout(timer);
+  }, [combo, view.position, high, inView, size, staticMode, painted]);
   useEffect(() => {
     const node = canvas.current;
     if (!node) return;
@@ -56,6 +95,12 @@ export function FrameCanvas({
     if (!ctx) return;
     let disposed = false,
       raf = 0;
+    const pending = lastCombo.current !== combo;
+    const loadingTimer = pending
+      ? setTimeout(() => onLoadState("loading"), 150)
+      : undefined;
+    const duration = staticMode ? 120 : motionDuration(node, "--dur-swap", 240);
+    const ease = motionEase(node);
     const count = quantidadeQuadros(combo),
       rawPosition = view.position * (count - 1),
       position = staticMode
@@ -89,25 +134,25 @@ export function FrameCanvas({
       }
       return entry;
     }
-    const portrait =
-      combo === "cozinha-rosado" &&
-      size.width < 768 &&
-      size.height > size.width &&
-      !high;
+    const portrait = size.width < 768 && size.height > size.width && !high;
     const frameUrl = (index: number) =>
       portrait
-        ? `/configurador/orbita-rosado/retrato/${String(index).padStart(2, "0")}.avif`
+        ? quadroUrl(combo, index, "retrato")
         : quadroUrl(combo, index, width);
     const url = frameUrl(first),
       nextUrl = frameUrl(second);
     const key = `${combo}:${first}:${width}`;
     Promise.all([
       load(url),
-      staticMode || blend <= 0.001 || first === second ? load(url) : load(nextUrl),
+      staticMode || blend <= 0.001 || first === second
+        ? load(url)
+        : load(nextUrl),
     ])
       .then(([a, b]) => {
         if (disposed) return;
-        if (lastCombo.current && lastCombo.current !== combo && !staticMode) {
+        clearTimeout(loadingTimer);
+        onLoadState("ready");
+        if (lastCombo.current && lastCombo.current !== combo) {
           const old = document.createElement("canvas");
           old.width = w;
           old.height = h;
@@ -116,6 +161,7 @@ export function FrameCanvas({
           fadeStart.current = performance.now();
         }
         lastCombo.current = combo;
+        setPainted(combo);
         const paintImage = (img: HTMLImageElement, alpha: number) => {
           const base = Math.max(w / img.naturalWidth, h / img.naturalHeight),
             scale = base * view.zoom;
@@ -136,7 +182,10 @@ export function FrameCanvas({
           paintImage(a, 1);
           if (a !== b && blend > 0.001) paintImage(b, blend);
           const opacity = snapshot.current
-            ? Math.max(0, 1 - (time - fadeStart.current) / 260)
+            ? 1 -
+              ease(
+                Math.min(1, Math.max(0, (time - fadeStart.current) / duration)),
+              )
             : 0;
           if (opacity > 0) {
             ctx!.globalAlpha = opacity;
@@ -159,18 +208,26 @@ export function FrameCanvas({
         }
         if (!staticMode && !high && key !== previousKey.current) {
           previousKey.current = key;
-          const neighbor = Math.min(count - 1, blend > 0.001 ? second + 1 : second);
+          const neighbor = Math.min(
+            count - 1,
+            blend > 0.001 ? second + 1 : second,
+          );
           void load(frameUrl(neighbor)).catch(() => {});
         }
       })
       .catch(() => {
-        if (!disposed) setError(true);
+        if (!disposed) {
+          clearTimeout(loadingTimer);
+          setError(true);
+          onLoadState("error");
+        }
       });
     return () => {
       disposed = true;
+      clearTimeout(loadingTimer);
       cancelAnimationFrame(raf);
     };
-  }, [combo, view, size, high, staticMode, onReady, settled]);
+  }, [combo, view, size, high, staticMode, onReady, settled, onLoadState]);
   return (
     <>
       <canvas

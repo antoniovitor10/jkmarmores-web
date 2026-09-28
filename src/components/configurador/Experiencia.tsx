@@ -34,6 +34,13 @@ export default function Experiencia({
     [fallback, setFallback] = useState(false),
     [ready, setReady] = useState(false),
     [staticMode, setStaticMode] = useState(true);
+  const [loadState, setLoadState] = useState<"loading" | "ready" | "error">(
+    "ready",
+  );
+  const handleLoadState = useCallback(
+    (state: "loading" | "ready" | "error") => setLoadState(state),
+    [],
+  );
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null),
     keyboard = useRef(false),
     interrupted = useRef(false),
@@ -288,6 +295,7 @@ export default function Experiencia({
         view={view}
         staticMode={staticMode}
         onReady={markReady}
+        onLoadState={handleLoadState}
         label={`${envName}, referência de ${matName.toLowerCase()}. Visualização ilustrativa gerada por IA.`}
       />
       {!ready && (
@@ -341,6 +349,9 @@ export default function Experiencia({
                   key={item.id}
                   type="button"
                   aria-pressed={material === item.id}
+                  aria-busy={material === item.id && loadState === "loading"}
+                  data-material={item.id}
+                  className={styles.sample}
                   onClick={() => changeSelection(() => setMaterial(item.id))}
                 >
                   <img
@@ -350,6 +361,9 @@ export default function Experiencia({
                     alt=""
                   />
                   {item.nome}
+                  {material === item.id && loadState === "loading" && (
+                    <span className={styles.loadingRing} aria-hidden="true" />
+                  )}
                 </button>
               ))}
             {tab === "Acabamento" &&
@@ -486,6 +500,7 @@ export default function Experiencia({
         </button>
       )}
       <span className={styles.srOnly} role="status" aria-live="polite">
+        {loadState === "loading" ? "Carregando a pedra escolhida. " : ""}
         {envName}, {matName}, {finishItem.nome}. Zoom {view.zoom.toFixed(1)}{" "}
         vezes.{" "}
         {compact

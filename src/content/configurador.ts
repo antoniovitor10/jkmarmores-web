@@ -4,9 +4,9 @@ export const ambientesConfigurador = [
   { id: "lavatorio", nome: "Lavatório" },
 ] as const;
 export const materiaisConfigurador = [
-  { id: "rosado", nome: "Mármore rosado", tom: "#cfa491" },
-  { id: "bege", nome: "Pedra bege", tom: "#c5b18d" },
-  { id: "escuro", nome: "Pedra escura", tom: "#37322f" },
+  { id: "rosado", nome: "Rosado", tom: "#cfa491" },
+  { id: "bege", nome: "Bege", tom: "#c5b18d" },
+  { id: "escuro", nome: "Escuro", tom: "#37322f" },
 ] as const;
 export const acabamentosConfigurador = [
   {
@@ -36,12 +36,9 @@ export function quantidadeQuadros(combinacao: string) {
 export function quadroUrl(
   combinacao: string,
   quadro: number,
-  largura: 720 | 1280 | 2048 | 2560,
+  largura: 720 | 1280 | 2048 | 2560 | "retrato",
 ) {
-  if (combinacao === "cozinha-rosado")
-    return `/configurador/orbita-rosado/${largura === 2048 ? 2560 : largura}/${String(quadro).padStart(2, "0")}.avif`;
-  if (largura === 2560) largura = 1280;
-  return `/configurador/${combinacao}/${largura}/${String(quadro).padStart(2, "0")}.avif`;
+  return `/configurador/uniforme/${combinacao}/${largura === 2048 ? 2560 : largura}/${String(quadro).padStart(2, "0")}.avif`;
 }
 export function orcamentoConfigurador(
   ambiente: string,

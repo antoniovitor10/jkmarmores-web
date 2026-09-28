@@ -1,6 +1,6 @@
 import { quadroUrl } from "@/content/configurador";
 
-// Only the initial pair is retained here; the viewer owns the bounded orbit cache.
+// Small shared decode cache for the initial pair and current material previews.
 const prepared = new Map<string, Promise<HTMLImageElement>>();
 
 function decode(url: string, priority: "low" | "auto") {
@@ -10,8 +10,18 @@ function decode(url: string, priority: "low" | "auto") {
   return image.decode().then(() => image);
 }
 
-export function loadFrame(url: string) {
-  return prepared.get(url) ?? decode(url, "auto");
+export function loadFrame(url: string, priority: "low" | "auto" = "auto") {
+  let promise = prepared.get(url);
+  if (!promise) {
+    promise = decode(url, priority).catch((error) => {
+      prepared.delete(url);
+      throw error;
+    });
+    prepared.set(url, promise);
+    while (prepared.size > (url.includes("/2560/") ? 4 : 12))
+      prepared.delete(prepared.keys().next().value!);
+  }
+  return promise;
 }
 
 export function preloadInitialFrames(width: number, height: number) {
@@ -24,15 +34,8 @@ export function preloadInitialFrames(width: number, height: number) {
   for (let frame = 0; frame < (staticMode ? 1 : 2); frame++) {
     const url =
       width < 768 && height > width
-        ? `/configurador/orbita-rosado/retrato/${String(frame).padStart(2, "0")}.avif`
+        ? quadroUrl("cozinha-rosado", frame, "retrato")
         : quadroUrl("cozinha-rosado", frame, width < 768 ? 720 : 1280);
-    if (prepared.has(url)) continue;
-    const promise = decode(url, "low").catch((error) => {
-      prepared.delete(url);
-      throw error;
-    });
-    prepared.set(url, promise);
-    while (prepared.size > 2) prepared.delete(prepared.keys().next().value!);
-    void promise.catch(() => {}); // A failed warm-up must not prevent a normal load.
+    void loadFrame(url, "low").catch(() => {});
   }
 }

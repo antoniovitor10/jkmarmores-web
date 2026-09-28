@@ -28,7 +28,7 @@ export function Configurador({
           className={styles.quote}
           href={orcamentoConfigurador(
             "Cozinha com ilha",
-            "Mármore rosado",
+            "Rosado",
             "Polido",
             materialContext,
           )}
@@ -45,7 +45,7 @@ export function Configurador({
             style={{ width: "100%", height: "auto" }}
           />
           <p>
-            Prévia: cozinha com ilha, referência de mármore rosado e acabamento
+            Prévia: cozinha com ilha, referência rosada e acabamento
             polido. Ative JavaScript para trocar a combinação e explorar os
             ângulos.
           </p>

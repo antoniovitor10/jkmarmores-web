@@ -1,0 +1,210 @@
+{
+  "apiCostUsd": 0,
+  "method": "Recorte central e resize Lanczos3 dos quadros extraídos dos vídeos pagos; AVIF quality64 effort4 em todas as variantes.",
+  "assets": [
+    {
+      "combo": "cozinha-rosado",
+      "count": 48,
+      "native": [
+        3840,
+        2160
+      ],
+      "quality": 64,
+      "dimensions": {
+        "720": [
+          720,
+          405
+        ],
+        "1280": [
+          1280,
+          720
+        ],
+        "2560": [
+          2560,
+          1440
+        ],
+        "retrato": [
+          720,
+          1558
+        ]
+      },
+      "bytes": {
+        "720": 833511,
+        "1280": 1672628,
+        "2560": 3710427,
+        "retrato": 1328899
+      },
+      "note": "Fonte 4K existente"
+    },
+    {
+      "combo": "cozinha-bege",
+      "count": 24,
+      "native": [
+        1280,
+        720
+      ],
+      "quality": 64,
+      "dimensions": {
+        "720": [
+          720,
+          405
+        ],
+        "1280": [
+          1280,
+          720
+        ],
+        "2560": [
+          2560,
+          1440
+        ],
+        "retrato": [
+          720,
+          1558
+        ]
+      },
+      "bytes": {
+        "720": 337803,
+        "1280": 661198,
+        "2560": 1356862,
+        "retrato": 443976
+      },
+      "note": "Fonte 720p existente: redimensionamento não cria detalhe óptico"
+    },
+    {
+      "combo": "cozinha-escuro",
+      "count": 24,
+      "native": [
+        1280,
+        720
+      ],
+      "quality": 64,
+      "dimensions": {
+        "720": [
+          720,
+          405
+        ],
+        "1280": [
+          1280,
+          720
+        ],
+        "2560": [
+          2560,
+          1440
+        ],
+        "retrato": [
+          720,
+          1558
+        ]
+      },
+      "bytes": {
+        "720": 326616,
+        "1280": 646936,
+        "2560": 1328382,
+        "retrato": 462385
+      },
+      "note": "Fonte 720p existente: redimensionamento não cria detalhe óptico"
+    },
+    {
+      "combo": "lavatorio-rosado",
+      "count": 24,
+      "native": [
+        1280,
+        720
+      ],
+      "quality": 64,
+      "dimensions": {
+        "720": [
+          720,
+          405
+        ],
+        "1280": [
+          1280,
+          720
+        ],
+        "2560": [
+          2560,
+          1440
+        ],
+        "retrato": [
+          720,
+          1558
+        ]
+      },
+      "bytes": {
+        "720": 173809,
+        "1280": 372735,
+        "2560": 879718,
+        "retrato": 399640
+      },
+      "note": "Fonte 720p existente: redimensionamento não cria detalhe óptico"
+    },
+    {
+      "combo": "lavatorio-bege",
+      "count": 24,
+      "native": [
+        1280,
+        720
+      ],
+      "quality": 64,
+      "dimensions": {
+        "720": [
+          720,
+          405
+        ],
+        "1280": [
+          1280,
+          720
+        ],
+        "2560": [
+          2560,
+          1440
+        ],
+        "retrato": [
+          720,
+          1558
+        ]
+      },
+      "bytes": {
+        "720": 208922,
+        "1280": 433302,
+        "2560": 998988,
+        "retrato": 396219
+      },
+      "note": "Fonte 720p existente: redimensionamento não cria detalhe óptico"
+    },
+    {
+      "combo": "lavatorio-escuro",
+      "count": 24,
+      "native": [
+        1280,
+        720
+      ],
+      "quality": 64,
+      "dimensions": {
+        "720": [
+          720,
+          405
+        ],
+        "1280": [
+          1280,
+          720
+        ],
+        "2560": [
+          2560,
+          1440
+        ],
+        "retrato": [
+          720,
+          1558
+        ]
+      },
+      "bytes": {
+        "720": 198745,
+        "1280": 429421,
+        "2560": 1005448,
+        "retrato": 450253
+      },
+      "note": "Fonte 720p existente: redimensionamento não cria detalhe óptico"
+    }
+  ]
+}

@@ -414,3 +414,8 @@
     animation: none !important;
   }
 }
+.sample { position:relative; transition:transform var(--dur-press,120ms) var(--ease-press,cubic-bezier(.2,0,0,1)); }
+.sample:active { transform:scale(.96); }
+.loadingRing { position:absolute; left:8px; top:50%; width:30px; height:30px; margin-top:-15px; border:2px solid var(--cor-papel); border-right-color:transparent; border-radius:50%; animation:loading .8s linear infinite; }
+@keyframes loading { to { transform:rotate(360deg); } }
+@media(prefers-reduced-motion:reduce) { .loadingRing { animation:none; border-style:dotted; } }

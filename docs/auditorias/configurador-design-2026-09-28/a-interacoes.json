@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "name": "Mantém quadro anterior e anel após150ms",
+      "pass": true
+    },
+    {
+      "name": "Troca após decode e termina carregamento",
+      "pass": true
+    },
+    {
+      "name": "Event Timing do toque",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "Nomes padronizados",
+      "pass": true
+    },
+    {
+      "name": "Prefetch só vista atual por material",
+      "evidence": [
+        "/configurador/uniforme/cozinha-rosado/retrato/00.avif",
+        "/configurador/uniforme/cozinha-rosado/retrato/01.avif",
+        "/configurador/uniforme/cozinha-escuro/retrato/00.avif",
+        "/configurador/uniforme/cozinha-bege/retrato/00.avif",
+        "/configurador/uniforme/cozinha-bege/retrato/01.avif"
+      ],
+      "pass": true
+    }
+  ],
+  "errors": []
+}
