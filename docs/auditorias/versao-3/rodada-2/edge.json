@@ -1,0 +1,63 @@
+{
+  "sizes": [
+    {
+      "width": 320,
+      "height": 740,
+      "overflow": false,
+      "pinned": false,
+      "noteVisible": false,
+      "windowScroll": 0
+    },
+    {
+      "width": 390,
+      "height": 740,
+      "overflow": false,
+      "pinned": true,
+      "noteVisible": true,
+      "windowScroll": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "pinned": true,
+      "noteVisible": true,
+      "windowScroll": 0
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "pinned": true,
+      "noteVisible": true,
+      "windowScroll": 0
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "pinned": false,
+      "noteVisible": false,
+      "windowScroll": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "pinned": true,
+      "noteVisible": true,
+      "windowScroll": 0
+    }
+  ],
+  "retry": {
+    "message": "Esta imagem não carregou. Toque na escolha para tentar novamente.",
+    "choice": "cozinha-rosado"
+  },
+  "rapid": "cozinha-bege",
+  "menu": {
+    "trapped": true,
+    "closed": true,
+    "restored": true,
+    "focus": "SUMMARY"
+  }
+}

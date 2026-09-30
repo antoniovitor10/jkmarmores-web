@@ -1,0 +1,728 @@
+{
+  "errors": [],
+  "viewports": [
+    {
+      "width": 390,
+      "overflow": false,
+      "initialMaxTask": 156,
+      "initialCls": 0,
+      "badAssets": [],
+      "noOrbit": true,
+      "videoCount": 0,
+      "journey": [
+        {
+          "active": 0,
+          "loaded": true
+        },
+        {
+          "active": 1,
+          "loaded": true
+        },
+        {
+          "active": 2,
+          "loaded": true
+        },
+        {
+          "active": 3,
+          "loaded": true
+        }
+      ],
+      "gallery": [
+        {
+          "name": "Mármores",
+          "left": 24,
+          "right": 366,
+          "linkTop": 628.71875,
+          "linkBottom": 672.71875,
+          "imageLoaded": true,
+          "overflow": false
+        },
+        {
+          "name": "Granitos",
+          "left": 24.7886962890625,
+          "right": 366.7886962890625,
+          "linkTop": 583.71875,
+          "linkBottom": 627.71875,
+          "imageLoaded": true,
+          "overflow": false
+        },
+        {
+          "name": "Mármores Dolomíticos",
+          "left": 24.26348876953125,
+          "right": 366.26348876953125,
+          "linkTop": 583.71875,
+          "linkBottom": 627.71875,
+          "imageLoaded": true,
+          "overflow": false
+        },
+        {
+          "name": "Quartzitos Naturais",
+          "left": 25.0504150390625,
+          "right": 367.0504150390625,
+          "linkTop": 606.21875,
+          "linkBottom": 650.21875,
+          "imageLoaded": true,
+          "overflow": false
+        },
+        {
+          "name": "Quartzos",
+          "left": 24.525146484375,
+          "right": 366.525146484375,
+          "linkTop": 583.71875,
+          "linkBottom": 627.71875,
+          "imageLoaded": true,
+          "overflow": false
+        },
+        {
+          "name": "Lâminas Ultracompactas Sinterizadas",
+          "left": 24,
+          "right": 366,
+          "linkTop": 583.71875,
+          "linkBottom": 627.71875,
+          "imageLoaded": true,
+          "overflow": false
+        }
+      ],
+      "galleryTravel": 1393,
+      "focusedMaterial": {
+        "text": "Conhecer esta categoria",
+        "left": 24.26348876953125
+      },
+      "combinations": [
+        {
+          "choice": "cozinha-rosado",
+          "loaded": true
+        },
+        {
+          "choice": "cozinha-bege",
+          "loaded": true
+        },
+        {
+          "choice": "cozinha-escuro",
+          "loaded": true
+        },
+        {
+          "choice": "lavatorio-rosado",
+          "loaded": true
+        },
+        {
+          "choice": "lavatorio-bege",
+          "loaded": true
+        },
+        {
+          "choice": "lavatorio-escuro",
+          "loaded": true
+        }
+      ],
+      "nativeVerticalGesture": true,
+      "eventMax": 32,
+      "cls": 0
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "initialMaxTask": 176,
+      "initialCls": 0,
+      "badAssets": [],
+      "noOrbit": true,
+      "videoCount": 0,
+      "journey": [
+        {
+          "active": 0,
+          "loaded": true
+        },
+        {
+          "active": 1,
+          "loaded": true
+        },
+        {
+          "active": 2,
+          "loaded": true
+        },
+        {
+          "active": 3,
+          "loaded": true
+        }
+      ],
+      "gallery": [
+        {
+          "name": "Mármores",
+          "left": 80,
+          "right": 1000,
+          "linkTop": 774.453125,
+          "linkBottom": 818.453125,
+          "imageLoaded": true,
+          "overflow": false
+        },
+        {
+          "name": "Granitos",
+          "left": 152,
+          "right": 1072,
+          "linkTop": 726.453125,
+          "linkBottom": 770.453125,
+          "imageLoaded": true,
+          "overflow": false
+        },
+        {
+          "name": "Mármores Dolomíticos",
+          "left": 224,
+          "right": 1144,
+          "linkTop": 726.453125,
+          "linkBottom": 770.453125,
+          "imageLoaded": true,
+          "overflow": false
+        },
+        {
+          "name": "Quartzitos Naturais",
+          "left": 296,
+          "right": 1216,
+          "linkTop": 750.453125,
+          "linkBottom": 794.453125,
+          "imageLoaded": true,
+          "overflow": false
+        },
+        {
+          "name": "Quartzos",
+          "left": 368,
+          "right": 1288,
+          "linkTop": 750.453125,
+          "linkBottom": 794.453125,
+          "imageLoaded": true,
+          "overflow": false
+        },
+        {
+          "name": "Lâminas Ultracompactas Sinterizadas",
+          "left": 440,
+          "right": 1360,
+          "linkTop": 750.453125,
+          "linkBottom": 794.453125,
+          "imageLoaded": true,
+          "overflow": false
+        }
+      ],
+      "galleryTravel": 2340,
+      "focusedMaterial": {
+        "text": "Conhecer esta categoria",
+        "left": 655.59375
+      },
+      "combinations": [
+        {
+          "choice": "cozinha-rosado",
+          "loaded": true
+        },
+        {
+          "choice": "cozinha-bege",
+          "loaded": true
+        },
+        {
+          "choice": "cozinha-escuro",
+          "loaded": true
+        },
+        {
+          "choice": "lavatorio-rosado",
+          "loaded": true
+        },
+        {
+          "choice": "lavatorio-bege",
+          "loaded": true
+        },
+        {
+          "choice": "lavatorio-escuro",
+          "loaded": true
+        }
+      ],
+      "eventMax": 32,
+      "cls": 0
+    }
+  ],
+  "fallbacks": [
+    {
+      "mode": "no-js",
+      "heroMotion": false,
+      "galleryMotion": false,
+      "categories": 6,
+      "overflow": false,
+      "video": 0,
+      "whatsapp": true
+    },
+    {
+      "mode": "reduced",
+      "heroMotion": false,
+      "galleryMotion": false,
+      "categories": 6,
+      "overflow": false,
+      "video": 0,
+      "whatsapp": true
+    },
+    {
+      "mode": "save-data",
+      "heroMotion": false,
+      "galleryMotion": false,
+      "categories": 6,
+      "overflow": false,
+      "video": 0,
+      "whatsapp": true
+    },
+    {
+      "mode": "slow",
+      "heroMotion": false,
+      "galleryMotion": false,
+      "categories": 6,
+      "overflow": false,
+      "video": 0,
+      "whatsapp": true
+    },
+    {
+      "mode": "landscape",
+      "heroMotion": true,
+      "galleryMotion": false,
+      "categories": 6,
+      "overflow": false,
+      "video": 0,
+      "whatsapp": true
+    }
+  ],
+  "pages": [
+    {
+      "route": "sobre/",
+      "h1": "O bruto vira arte.",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/sobre/",
+      "noindex": "noindex, nofollow",
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br",
+        "telephone": "+5511967976902",
+        "foundingDate": "2010",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "Grande São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "ABC"
+          },
+          {
+            "@type": "Place",
+            "name": "interior"
+          },
+          {
+            "@type": "Place",
+            "name": "litoral norte"
+          },
+          {
+            "@type": "Place",
+            "name": "Baixada Santista"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    },
+    {
+      "route": "materiais/",
+      "h1": "Materiais que traduzem exclusividade",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/materiais/",
+      "noindex": "noindex, nofollow",
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br",
+        "telephone": "+5511967976902",
+        "foundingDate": "2010",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "Grande São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "ABC"
+          },
+          {
+            "@type": "Place",
+            "name": "interior"
+          },
+          {
+            "@type": "Place",
+            "name": "litoral norte"
+          },
+          {
+            "@type": "Place",
+            "name": "Baixada Santista"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    },
+    {
+      "route": "materiais/marmore/",
+      "h1": "Mármores Nacionais e Importados",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/materiais/marmore/",
+      "noindex": "noindex, nofollow",
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br",
+        "telephone": "+5511967976902",
+        "foundingDate": "2010",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "Grande São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "ABC"
+          },
+          {
+            "@type": "Place",
+            "name": "interior"
+          },
+          {
+            "@type": "Place",
+            "name": "litoral norte"
+          },
+          {
+            "@type": "Place",
+            "name": "Baixada Santista"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    },
+    {
+      "route": "materiais/granito/",
+      "h1": "Granitos",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/materiais/granito/",
+      "noindex": "noindex, nofollow",
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br",
+        "telephone": "+5511967976902",
+        "foundingDate": "2010",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "Grande São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "ABC"
+          },
+          {
+            "@type": "Place",
+            "name": "interior"
+          },
+          {
+            "@type": "Place",
+            "name": "litoral norte"
+          },
+          {
+            "@type": "Place",
+            "name": "Baixada Santista"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    },
+    {
+      "route": "materiais/marmore-dolomitico/",
+      "h1": "Mármores Dolomíticos",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/materiais/marmore-dolomitico/",
+      "noindex": "noindex, nofollow",
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br",
+        "telephone": "+5511967976902",
+        "foundingDate": "2010",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "Grande São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "ABC"
+          },
+          {
+            "@type": "Place",
+            "name": "interior"
+          },
+          {
+            "@type": "Place",
+            "name": "litoral norte"
+          },
+          {
+            "@type": "Place",
+            "name": "Baixada Santista"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    },
+    {
+      "route": "materiais/quartzito/",
+      "h1": "Quartzitos Naturais",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/materiais/quartzito/",
+      "noindex": "noindex, nofollow",
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br",
+        "telephone": "+5511967976902",
+        "foundingDate": "2010",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "Grande São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "ABC"
+          },
+          {
+            "@type": "Place",
+            "name": "interior"
+          },
+          {
+            "@type": "Place",
+            "name": "litoral norte"
+          },
+          {
+            "@type": "Place",
+            "name": "Baixada Santista"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    },
+    {
+      "route": "materiais/quartzo/",
+      "h1": "Quartzos",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/materiais/quartzo/",
+      "noindex": "noindex, nofollow",
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br",
+        "telephone": "+5511967976902",
+        "foundingDate": "2010",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "Grande São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "ABC"
+          },
+          {
+            "@type": "Place",
+            "name": "interior"
+          },
+          {
+            "@type": "Place",
+            "name": "litoral norte"
+          },
+          {
+            "@type": "Place",
+            "name": "Baixada Santista"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    },
+    {
+      "route": "materiais/ultracompacto/",
+      "h1": "Lâminas Ultracompactas Sinterizadas",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/materiais/ultracompacto/",
+      "noindex": "noindex, nofollow",
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br",
+        "telephone": "+5511967976902",
+        "foundingDate": "2010",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "Grande São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "ABC"
+          },
+          {
+            "@type": "Place",
+            "name": "interior"
+          },
+          {
+            "@type": "Place",
+            "name": "litoral norte"
+          },
+          {
+            "@type": "Place",
+            "name": "Baixada Santista"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    },
+    {
+      "route": "contato/",
+      "h1": "Vamos falar do seu projeto.",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/contato/",
+      "noindex": "noindex, nofollow",
+      "ld": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br",
+        "telephone": "+5511967976902",
+        "foundingDate": "2010",
+        "areaServed": [
+          {
+            "@type": "Place",
+            "name": "São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "Grande São Paulo"
+          },
+          {
+            "@type": "Place",
+            "name": "ABC"
+          },
+          {
+            "@type": "Place",
+            "name": "interior"
+          },
+          {
+            "@type": "Place",
+            "name": "litoral norte"
+          },
+          {
+            "@type": "Place",
+            "name": "Baixada Santista"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    }
+  ]
+}

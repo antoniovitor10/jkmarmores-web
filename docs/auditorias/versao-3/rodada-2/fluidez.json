@@ -1,0 +1,49 @@
+[
+  {
+    "width": 390,
+    "scenes": [
+      {
+        "selector": ".cinema-hero",
+        "p95FrameMs": 9.900000000372529,
+        "maxFrameMs": 15.799999998882413,
+        "maxTaskMs": 0
+      },
+      {
+        "selector": ".journey-track",
+        "p95FrameMs": 10.699999999254942,
+        "maxFrameMs": 11.5,
+        "maxTaskMs": 0
+      },
+      {
+        "selector": ".material-gallery",
+        "p95FrameMs": 13,
+        "maxFrameMs": 26.299999998882413,
+        "maxTaskMs": 0
+      }
+    ],
+    "galleryTouchExited": true
+  },
+  {
+    "width": 1440,
+    "scenes": [
+      {
+        "selector": ".cinema-hero",
+        "p95FrameMs": 10.799999998882413,
+        "maxFrameMs": 11.900000000372529,
+        "maxTaskMs": 0
+      },
+      {
+        "selector": ".journey-track",
+        "p95FrameMs": 13.199999999254942,
+        "maxFrameMs": 18.5,
+        "maxTaskMs": 0
+      },
+      {
+        "selector": ".material-gallery",
+        "p95FrameMs": 11.199999999254942,
+        "maxFrameMs": 44.5,
+        "maxTaskMs": 0
+      }
+    ]
+  }
+]

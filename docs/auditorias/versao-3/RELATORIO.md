@@ -1,3 +1,5 @@
+Rodada vigente: [cinema pela rolagem e textos da cliente](rodada-2/RELATORIO.md). O relatório abaixo descreve a entrega anterior, preservada como histórico.
+
 # Versão 3 — cinematográfica
 Entrega em 30/09/2026. Base 3f27ffa, branch versao-3, homologação https://jkmarmores.com.br/3/.
 

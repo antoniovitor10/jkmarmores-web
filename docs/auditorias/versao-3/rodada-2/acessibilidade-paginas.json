@@ -1,0 +1,72 @@
+[
+  {
+    "route": "/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "sobre/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "materiais/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "contato/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "materiais/marmore/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "materiais/granito/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "materiais/marmore-dolomitico/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "materiais/quartzito/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "materiais/quartzo/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "materiais/ultracompacto/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "desktop": "sobre/",
+    "overflow": false
+  },
+  {
+    "desktop": "materiais/",
+    "overflow": false
+  },
+  {
+    "desktop": "aplicacoes/",
+    "overflow": false
+  },
+  {
+    "desktop": "galeria/",
+    "overflow": false
+  },
+  {
+    "desktop": "contato/",
+    "overflow": false
+  }
+]
