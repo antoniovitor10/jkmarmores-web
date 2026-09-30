@@ -11,7 +11,7 @@ Prioridade: **P0** bloqueia a publicação | **P1** bloqueia uma página ou seç
 
 | Prioridade | Itens abertos ou parciais | Efeito |
 |---|---|---|
-| P0 | D3 (cobertura), D4 (CEP/visita), D9, O1, O2, V1 (vetor), V3, V6, V7 | Sem esses dados ou aprovações, o lançamento permanece bloqueado. D1, D5, T1 e T2 resolvidos. |
+| P0 | D4 (CEP/visita), D9, O1 (serviços específicos), O2 (pedras específicas), V1 (vetor), V3, V6, V7 | Sem esses dados ou aprovações, o lançamento permanece bloqueado. D1, D5, T1 e T2 resolvidos. |
 | P1 | D2, D6, D10, O3, O4, O6, V2, V4, T3 | Segurar a página, seção ou funcionalidade que dependa de cada item. |
 | P2 | D7, D8, O5, V5 | Melhorias condicionadas à confirmação. |
 
@@ -23,21 +23,21 @@ Os registros detalhados seguem agrupados por assunto abaixo. Um item com status 
 |---|---|---|---|---|
 | D1 | Nome comercial exato | P0 | resolvido | Cliente, grupo do projeto, 26/09/2026, encaminhado por Vitor/Planejador: "JK Marmores e Granitos". Logo recebida no mesmo dia. |
 | D2 | Razão social e CNPJ (rodapé e dados estruturados) | P1 | aberto | O CNPJ do Vitor encontrado no histórico não pertence à JK e não pode ser usado. |
-| D3 | Cidade, bairro e região atendida (cidades vizinhas) | P0 | parcial | Cliente confirmou Parque Viana, Barueri/SP em 26/09/2026. Cobertura além de Barueri permanece pendente; nenhuma cidade vizinha foi adicionada. |
+| D3 | Cidade, bairro e região atendida | P0 | resolvido | Sede em Parque Viana, Barueri/SP (26/09). Região atendida informada pela cliente no texto "Sobre Nós" (28/09): São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista. Texto integral em jk-marmores-refs/cliente/textos-cliente-2026-09-28.txt |
 | D4 | Endereço completo com CEP, ou confirmação de que não atende no local | P0 | parcial | Cliente confirmou Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP em 26/09/2026. CEP e atendimento a visitantes pendentes. Sem mapa ou promessa de showroom. |
 | D5 | Telefone e número de WhatsApp (e se são o mesmo) | P0 | resolvido | Vitor confirmou em 27/09/2026 que (11) 96797-6902 também é o WhatsApp da JK. CTAs e formulário usam wa.me/5511967976902. Telefones históricos não usados. |
 | D6 | Horário de funcionamento | P1 | aberto | |
 | D7 | E-mail comercial | P2 | pista | jkmarmores@uol.com.br no site 2016. Confirmar se ainda usa |
 | D8 | Instagram e outras redes | P2 | pista | @jkmarmoresoficial e facebook.com/jkmarmores ligados ao Perfil Google. Confirmar posse |
 | D9 | Link e acesso ao Perfil da Empresa no Google (existe? quem administra?) | P0 | pista | Existe perfil em Barueri; botão Site aponta para o Facebook. Confirmar quem administra; trocar o link para jkmarmores.com.br no lançamento |
-| D10 | Anos de atuação / história da empresa / quem é a responsável | P1 | aberto | só com confirmação |
+| D10 | Anos de atuação / história da empresa | P1 | resolvido | "Desde 2010", texto "Sobre Nós" enviado pela cliente em 28/09/2026 (usar o texto dela, sem acrescentar fatos). Responsável e equipe continuam sem informação |
 
 ## Oferta
 
 | # | Item | Prioridade | Status | Fonte / observação |
 |---|---|---|---|---|
-| O1 | Lista de serviços (bancadas, lavatórios, escadas, pisos, soleiras, fachadas, lareiras, instalação, polimento, restauração...) | P0 | aberto | Cliente informou em 26/09 que vai providenciar a lista. Sem oferta presumida. |
-| O2 | Lista de materiais trabalhados, com nome comercial, tipo (granito, mármore, quartzo, porcelanato, ultracompacto) e acabamentos | P0 | aberto | Cliente informou em 26/09 que vai providenciar a lista. Nome da empresa não confirma catálogo nem estoque. |
+| O1 | Lista de serviços | P0 | parcial | Cliente informou atendimento a projetos residenciais, comerciais e industriais, "da concepção à execução" (28/09). Lista de serviços específicos (bancadas, escadas etc.) ainda não enviada: não listar peças como serviço confirmado |
+| O2 | Materiais trabalhados | P0 | parcial | Categorias confirmadas em 28/09, nacionais e importados: mármores, granitos, mármores dolomíticos, quartzitos naturais, quartzos e lâminas ultracompactas sinterizadas, com textos da cliente. Nomes comerciais de pedras específicas e acabamentos ainda pendentes |
 | O3 | Tem estoque/showroom para visita? | P1 | aberto | |
 | O4 | Faz orçamento por foto/medida pelo WhatsApp? Faz visita técnica para medição? | P1 | aberto | |
 | O5 | Prazo médio de entrega e garantia | P2 | aberto | só se o cliente afirmar |
