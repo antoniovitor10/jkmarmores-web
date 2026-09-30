@@ -1,11 +1,12 @@
 import type { ImgHTMLAttributes } from "react";
 import { preload } from "react-dom";
 import manifest from "@/generated/images.json";
+import { asset } from "@/lib/base-path";
 
 type FotoProps = { id: string; mobileId?: string; alt: string; sizes: string; prioridade?: boolean; className?: string };
 type Variante = { width: number; avif: string; webp: string };
 type ImagemGerada = { width: number; height: number; placeholder: string; variantes: Variante[] };
-const imagens = manifest as Record<string, ImagemGerada>;
+const imagens = Object.fromEntries(Object.entries(manifest as Record<string, ImagemGerada>).map(([id, img]) => [id, { ...img, placeholder: asset(img.placeholder), variantes: img.variantes.map((v) => ({ ...v, avif: asset(v.avif), webp: asset(v.webp) })) }])) as Record<string, ImagemGerada>;
 
 export function Foto({ id, mobileId, alt, sizes, prioridade = false, className }: FotoProps) {
   const imagem = imagens[id];

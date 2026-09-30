@@ -1,3 +1,4 @@
+import { asset } from "@/lib/base-path";
 // Estudos ilustrativos. Nao descrevem materiais ou etapas executadas pela JK.
 export const stoneJourney = [
   { id: "sequencia-01-chapa", title: "Chapa", detail: "O desenho natural, visto por inteiro.", alt: "Imagem ilustrativa de uma chapa clara com veios cinza, apoiada em um suporte numa sala escura." },
@@ -18,11 +19,11 @@ export const stoneJourneyVideo: JourneyVideo | null = {
     {
       "durationSeconds": 1.458333,
       "desktop": {
-        "src": "/video/jornada-1-desktop-editorial.mp4",
+        "src": asset("/video/jornada-1-desktop-editorial.mp4"),
         "bytes": 314064
       },
       "mobile": {
-        "src": "/video/jornada-1-mobile-editorial.mp4",
+        "src": asset("/video/jornada-1-mobile-editorial.mp4"),
         "bytes": 272922,
         "height": 720
       }
@@ -30,11 +31,11 @@ export const stoneJourneyVideo: JourneyVideo | null = {
     {
       "durationSeconds": 1.458333,
       "desktop": {
-        "src": "/video/jornada-2-desktop-editorial.mp4",
+        "src": asset("/video/jornada-2-desktop-editorial.mp4"),
         "bytes": 227937
       },
       "mobile": {
-        "src": "/video/jornada-2-mobile-editorial.mp4",
+        "src": asset("/video/jornada-2-mobile-editorial.mp4"),
         "bytes": 104477,
         "height": 720
       }
@@ -42,11 +43,11 @@ export const stoneJourneyVideo: JourneyVideo | null = {
     {
       "durationSeconds": 1.458333,
       "desktop": {
-        "src": "/video/jornada-3-desktop-editorial.mp4",
+        "src": asset("/video/jornada-3-desktop-editorial.mp4"),
         "bytes": 316552
       },
       "mobile": {
-        "src": "/video/jornada-3-mobile-editorial.mp4",
+        "src": asset("/video/jornada-3-mobile-editorial.mp4"),
         "bytes": 278808,
         "height": 720
       }
@@ -54,11 +55,11 @@ export const stoneJourneyVideo: JourneyVideo | null = {
     {
       "durationSeconds": 1.458333,
       "desktop": {
-        "src": "/video/jornada-4-desktop-editorial.mp4",
+        "src": asset("/video/jornada-4-desktop-editorial.mp4"),
         "bytes": 328278
       },
       "mobile": {
-        "src": "/video/jornada-4-mobile-editorial.mp4",
+        "src": asset("/video/jornada-4-mobile-editorial.mp4"),
         "bytes": 284631,
         "height": 720
       }

@@ -1,3 +1,4 @@
+import { asset, assetSrcSet } from "@/lib/base-path";
 import { Foto } from "./Foto";
 import manifest from "@/generated/images.json";
 import { JourneyImage } from "./JourneyImage";
@@ -39,7 +40,7 @@ function DeferredImage({ id, alt }: { id: string; alt: string }) {
   const sizes = "(max-width: 700px) 960px, 100vw";
   const mobileId = id === "sequencia-02-borda" ? "sequencia-02-borda-mobile" : undefined;
   const mobile = mobileId ? (manifest as typeof manifest & Record<string, typeof image>)[mobileId] : undefined;
-  return <JourneyImage alt={alt} width={image.width} height={image.height} sizes={sizes} src={image.variantes.at(-1)!.webp} avif={image.variantes.map(v => `${v.avif} ${v.width}w`).join(", ")} webp={image.variantes.map(v => `${v.webp} ${v.width}w`).join(", ")} mobileAvif={mobile?.variantes.map(v => `${v.avif} ${v.width}w`).join(", ")} mobileWebp={mobile?.variantes.map(v => `${v.webp} ${v.width}w`).join(", ")}>
+  return <JourneyImage alt={alt} width={image.width} height={image.height} sizes={sizes} src={asset(image.variantes.at(-1)!.webp)} avif={assetSrcSet(image.variantes.map(v => `${v.avif} ${v.width}w`).join(", "))} webp={assetSrcSet(image.variantes.map(v => `${v.webp} ${v.width}w`).join(", "))} mobileAvif={mobile ? assetSrcSet(mobile.variantes.map(v => `${v.avif} ${v.width}w`).join(", ")) : undefined} mobileWebp={mobile ? assetSrcSet(mobile.variantes.map(v => `${v.webp} ${v.width}w`).join(", ")) : undefined}>
     <Foto id={id} mobileId={mobileId} alt={alt} sizes={sizes} />
   </JourneyImage>;
 }

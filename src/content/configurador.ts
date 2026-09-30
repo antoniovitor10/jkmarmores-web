@@ -1,3 +1,4 @@
+import { asset } from "@/lib/base-path";
 ﻿// Referências ilustrativas; a JK ainda confirmará seu catálogo comercial.
 export const ambientesConfigurador = [
   { id: "cozinha", nome: "Cozinha com ilha" },
@@ -20,7 +21,7 @@ export const escolhaInicial: Escolha = {
 };
 export const tamanhosImagem = "(max-width: 1280px) 100vw, 1280px";
 export function imagemEscolha(escolha: Escolha, largura: 720 | 1280) {
-  return `/configurador/estatico/${escolha.ambiente}-${escolha.material}-${largura}.avif`;
+  return asset(`/configurador/estatico/${escolha.ambiente}-${escolha.material}-${largura}.avif`);
 }
 export function fontesImagem(escolha: Escolha) {
   return `${imagemEscolha(escolha, 720)} 720w, ${imagemEscolha(escolha, 1280)} 1280w`;

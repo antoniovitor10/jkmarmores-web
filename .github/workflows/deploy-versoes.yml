@@ -1,16 +1,18 @@
-name: Deploy JK Marmores
+name: Deploy versoes para escolha (jkmarmores.com.br/1, /2, /3)
 
+# Cada branch versao-N publica em jkmarmores.com.br/N/, com o site
+# compilado para essa subpasta (NEXT_PUBLIC_BASE_PATH=/N). A raiz nao e tocada.
 on:
   push:
-    branches: [main]
+    branches: [versao-1, versao-2, versao-3]
     paths-ignore:
       - "docs/**"
       - "**/*.md"
   workflow_dispatch:
 
 concurrency:
-  group: deploy-producao
-  cancel-in-progress: false
+  group: deploy-${{ github.ref_name }}
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:
@@ -19,6 +21,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Definir subpasta pela branch
+        run: |
+          N="${GITHUB_REF_NAME#versao-}"
+          case "$N" in 1|2|3) ;; *) echo "Branch fora do padrao versao-1..3: $GITHUB_REF_NAME"; exit 1 ;; esac
+          echo "VERSAO=$N" >> "$GITHUB_ENV"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -32,12 +40,11 @@ jobs:
       - name: Lint
         run: npm run lint
 
-      - name: Build estatico
+      - name: Build estatico na subpasta
         run: npm run build
         env:
-          # homolog: noindex + robots Disallow. Trocar a variavel do repositorio
-          # para "producao" so no lancamento (o build falha se houver pendencia).
-          SITE_MODE: ${{ vars.SITE_MODE || 'homolog' }}
+          SITE_MODE: homolog
+          NEXT_PUBLIC_BASE_PATH: /${{ env.VERSAO }}
 
       - name: Configurar SSH
         env:
@@ -50,16 +57,16 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -p "$SSH_PORT" "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
 
-      - name: Deploy via rsync
+      - name: Deploy via rsync na subpasta
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_PORT: ${{ secrets.SSH_PORT }}
           SSH_USER: ${{ secrets.SSH_USER }}
           DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
         run: |
-          rsync -rlptzv --delete --exclude '.well-known/' --exclude '/1/' --exclude '/2/' --exclude '/3/' \
+          rsync -rlptzv --delete \
             -e "ssh -p $SSH_PORT -i ~/.ssh/deploy_key -o IdentitiesOnly=yes" \
-            out/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
+            out/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/$VERSAO/"
 
       - name: Limpar chave
         if: always()
