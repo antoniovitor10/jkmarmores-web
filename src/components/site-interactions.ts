@@ -18,7 +18,7 @@ export function mountSiteInteractions() {
         if (!disposed) motion = mountPageMotion();
       });
     }, { rootMargin: '300px 0px' });
-    document.querySelectorAll('.journey-heading,.editorial-image').forEach(el => nearby!.observe(el));
+    document.querySelectorAll('.journey-track,.editorial-image').forEach(el => nearby!.observe(el));
   });
   const dock = document.querySelector<HTMLElement>(".mobile-quote-dock");
   const hero = document.querySelector(".prologo, .home-hero");
@@ -31,12 +31,12 @@ export function mountSiteInteractions() {
   if (hero) cover.observe(hero);
   const zones = new IntersectionObserver(entries => {
     for (const entry of entries) {
-      if (entry.target.matches('.home-contact .button') ? entry.intersectionRatio >= .5 : entry.intersectionRect.height >= innerHeight * .5) occupied.add(entry.target);
+      if (entry.target.matches('.home-contact .button,.journey-quote') ? entry.intersectionRatio >= .5 : entry.intersectionRect.height >= innerHeight * .5) occupied.add(entry.target);
       else occupied.delete(entry.target);
     }
     update();
   }, { threshold: Array.from({ length: 101 }, (_, i) => i / 100) });
-  document.querySelectorAll("#configurador, .home-contact .button, .contact-panel, .contact-details, .form-layout").forEach(el => zones.observe(el));
+  document.querySelectorAll("#configurador, .journey-quote, .home-contact .button, .contact-panel, .contact-details, .form-layout").forEach(el => zones.observe(el));
   const targets = [...document.querySelectorAll<HTMLElement>("main, .site-footer, .site-header .brand, .desktop-nav, .header-cta")];
   const previous = targets.map(el => el.inert);
   const toggle = () => { targets.forEach((el, i) => { el.inert = !!menu?.open || previous[i]; }); update(); };

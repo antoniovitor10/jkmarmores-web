@@ -100,7 +100,7 @@ export function Vista({
         <figcaption className={styles.caption}>
           <span role="status" aria-live="polite">
             {carregando
-              ? `Carregando ${nomeEscolha(escolha)}...`
+              ? `Carregando ${nomeEscolha(escolha)}…`
               : erro
                 ? "Esta imagem não carregou. Toque na escolha para tentar novamente."
                 : nomeEscolha(exibida)}

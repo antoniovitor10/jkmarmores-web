@@ -16,7 +16,7 @@ export function StoneJourney() {
       <div className="journey-sticky">
         <StoneMonogram />
         <div className="journey-heading">
-          <h2 id="jornada-titulo">Da chapa à sua bancada.</h2>
+          <h2 id="jornada-titulo">Da matéria à forma.</h2>
         </div>
         <div className="journey-frames">
           {stoneJourney.map((step, index) => <figure className="journey-frame" key={step.id} data-frame={index}>

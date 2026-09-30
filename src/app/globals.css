@@ -230,3 +230,23 @@ body:has(.home-page) > .site-footer { contain-intrinsic-block-size:auto 409px; }
 
 .site-footer h2 { font-family:var(--fonte-corpo); font-size:15px; font-weight:400; margin:0 0 24px; letter-spacing:0; }
 .home-contact { border-top:1px solid var(--cor-borda); }
+/* A versão clara mantém o papel como fio entre as seções. */
+.home-request { background:var(--cor-superficie); }
+.home-paths { display:flex; flex-wrap:wrap; gap:16px 40px; margin-top:48px; }
+.home-paths a { display:inline-flex; align-items:center; font-size:16px; }
+.home-contact { background:var(--cor-papel); border:0; }
+.home-contact-grid { padding-block:0; }
+.home-contact-grid h2 { max-width:18ch; }
+.home-contact-grid p:not(.eyebrow) { color:var(--cor-muted); }
+.home-page > #configurador { content-visibility:visible; contain-intrinsic-size:none; }
+a,button,summary { touch-action:manipulation; }
+.mobile-nav[open] nav { overscroll-behavior:contain; }
+.editorial-image { overflow:clip; }
+@media(min-width:801px) {
+ .mobile-quote-dock { display:flex; position:fixed; inset:auto 28px 28px auto; z-index:20; visibility:hidden; transform:translateY(140%); transition:transform 220ms var(--ease-leave),visibility 0s 220ms; }
+ .mobile-quote-dock[data-visible="true"] { visibility:visible; transform:translateY(0); transition:transform 320ms var(--ease-arrive); }
+ .mobile-whatsapp { display:inline-flex; align-items:center; justify-content:center; min-height:52px; padding:12px 24px; border-radius:28px; background:var(--cor-texto); color:var(--cor-papel); text-decoration:none; font-size:14px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .mobile-quote-dock,.mobile-whatsapp { transition:none !important; }
+}

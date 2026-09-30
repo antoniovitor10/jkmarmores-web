@@ -1,0 +1,358 @@
+[
+  {
+    "width": 390,
+    "mode": "normal",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 362.21875,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": true,
+    "stages": [
+      {
+        "step": "0",
+        "title": "Chapa",
+        "clip": "none"
+      },
+      {
+        "step": "1",
+        "title": "Borda",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "2",
+        "title": "Acabamento",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "3",
+        "title": "Peça aplicada",
+        "clip": "inset(0%)"
+      }
+    ],
+    "lcp": 220,
+    "cls": 0,
+    "long": [
+      {
+        "at": 107.59999999962747,
+        "ms": 62
+      },
+      {
+        "at": 329.3999999985099,
+        "ms": 143
+      },
+      {
+        "at": 727.5999999996275,
+        "ms": 95
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 48
+      },
+      {
+        "name": "click",
+        "ms": 48
+      },
+      {
+        "name": "pointerdown",
+        "ms": 32
+      },
+      {
+        "name": "pointerup",
+        "ms": 32
+      },
+      {
+        "name": "click",
+        "ms": 32
+      },
+      {
+        "name": "pointerdown",
+        "ms": 32
+      },
+      {
+        "name": "pointerup",
+        "ms": 32
+      },
+      {
+        "name": "click",
+        "ms": 32
+      },
+      {
+        "name": "keydown",
+        "ms": 24
+      },
+      {
+        "name": "keyup",
+        "ms": 24
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 1440,
+    "mode": "normal",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 395.140625,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": true,
+    "stages": [
+      {
+        "step": "0",
+        "title": "Chapa",
+        "clip": "none"
+      },
+      {
+        "step": "1",
+        "title": "Borda",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "2",
+        "title": "Acabamento",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "3",
+        "title": "Peça aplicada",
+        "clip": "inset(0%)"
+      }
+    ],
+    "lcp": 1208,
+    "cls": 0.4978298611111111,
+    "long": [
+      {
+        "at": 66.5,
+        "ms": 61
+      },
+      {
+        "at": 148.59999999962747,
+        "ms": 141
+      },
+      {
+        "at": 1089.9000000003725,
+        "ms": 91
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 48
+      },
+      {
+        "name": "pointerup",
+        "ms": 48
+      },
+      {
+        "name": "click",
+        "ms": 48
+      },
+      {
+        "name": "pointerdown",
+        "ms": 32
+      },
+      {
+        "name": "pointerup",
+        "ms": 32
+      },
+      {
+        "name": "click",
+        "ms": 32
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "reduced",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 362.21875,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": false,
+    "stages": [],
+    "lcp": 140,
+    "cls": 0,
+    "long": [
+      {
+        "at": 71.09999999962747,
+        "ms": 59
+      },
+      {
+        "at": 149.09999999962747,
+        "ms": 126
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      },
+      {
+        "name": "pointerdown",
+        "ms": 16
+      },
+      {
+        "name": "pointerup",
+        "ms": 16
+      },
+      {
+        "name": "click",
+        "ms": 16
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "save-data",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 362.21875,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": false,
+    "stages": [],
+    "lcp": 144,
+    "cls": 0,
+    "long": [
+      {
+        "at": 138.40000000037253,
+        "ms": 137
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 40
+      },
+      {
+        "name": "pointerup",
+        "ms": 40
+      },
+      {
+        "name": "click",
+        "ms": 40
+      },
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "slow",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 362.21875,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": false,
+    "stages": [],
+    "lcp": 596,
+    "cls": 0,
+    "long": [
+      {
+        "at": 326.7000000011176,
+        "ms": 247
+      },
+      {
+        "at": 1270.7000000011176,
+        "ms": 170
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 56
+      },
+      {
+        "name": "pointerup",
+        "ms": 56
+      },
+      {
+        "name": "click",
+        "ms": 56
+      },
+      {
+        "name": "pointerdown",
+        "ms": 40
+      },
+      {
+        "name": "pointerup",
+        "ms": 40
+      },
+      {
+        "name": "click",
+        "ms": 40
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "no-js",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 362.21875,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": false,
+    "stages": [],
+    "errors": [],
+    "badAssetRequests": []
+  }
+]

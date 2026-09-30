@@ -5,12 +5,15 @@ import { gzipSync } from "node:zlib";
 
 const root = path.resolve("out");
 const port = Number(process.env.PORT ?? 3105);
+const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/$/, "");
 const mediaTypes = { ".mp4": "video/mp4", ".webm": "video/webm" };
 const types = { ".html": "text/html; charset=utf-8", ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".txt": "text/plain", ".xml": "application/xml", ".avif": "image/avif", ".webp": "image/webp", ".png": "image/png", ".woff2": "font/woff2", ".svg": "image/svg+xml" };
 http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, `http://127.0.0.1:${port}`);
-    const requested = decodeURIComponent(url.pathname);
+    const pathname = decodeURIComponent(url.pathname);
+    if (basePath && !pathname.startsWith(`${basePath}/`)) { res.writeHead(404).end(); return; }
+    const requested = basePath ? pathname.slice(basePath.length) : pathname;
     const file = path.resolve(root, `.${requested.endsWith("/") ? `${requested}index.html` : requested}`);
     if (!file.startsWith(`${root}${path.sep}`)) { res.writeHead(403).end(); return; }
     const raw = await fs.readFile(file);
