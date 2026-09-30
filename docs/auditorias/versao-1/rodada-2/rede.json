@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Chrome público: downlink 1.45, transferência rápida",
+    "expected": "allowed",
+    "actual": "allowed",
+    "passed": true
+  },
+  {
+    "name": "Save-Data prevalece sobre transferência rápida",
+    "expected": "slow-connection",
+    "actual": "slow-connection",
+    "passed": true
+  },
+  {
+    "name": "3g explícito permanece estático",
+    "expected": "slow-connection",
+    "actual": "slow-connection",
+    "passed": true
+  },
+  {
+    "name": "Resposta lenta com estimativa otimista",
+    "expected": "slow-response",
+    "actual": "slow-response",
+    "passed": true
+  },
+  {
+    "name": "Transferência efetivamente lenta",
+    "expected": "slow-response",
+    "actual": "slow-response",
+    "passed": true
+  },
+  {
+    "name": "Estimativa baixa sem amostra suficiente",
+    "expected": "slow-connection",
+    "actual": "slow-connection",
+    "passed": true
+  },
+  {
+    "name": "Sem API de rede, amostra rápida",
+    "expected": "allowed",
+    "actual": "allowed",
+    "passed": true
+  },
+  {
+    "name": "Sem API nem medição",
+    "expected": "unmeasured",
+    "actual": "unmeasured",
+    "passed": true
+  }
+]

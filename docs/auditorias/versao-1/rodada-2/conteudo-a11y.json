@@ -1,0 +1,737 @@
+{
+  "origin": "http://127.0.0.1:3111",
+  "environment": "Chrome headless; 390 px touch e 1440 px; CPU 4x; axe WCAG A/AA",
+  "routes": [
+    {
+      "width": 390,
+      "route": "/1/",
+      "h1": "Pedra que dá forma ao seu espaço.",
+      "overflow": false,
+      "title": "JK Mármores e Granitos | Barueri e São Paulo, desde 2010",
+      "description": "Desde 2010, projetos residenciais, comerciais e industriais. Barueri, São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista. Fale com a JK.",
+      "canonical": "https://jkmarmores.com.br/1/",
+      "categories": 6,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 141,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/1/sobre/",
+      "h1": "O bruto vira arte.",
+      "overflow": false,
+      "title": "A empresa | JK Marmores e Granitos em Barueri",
+      "description": "Desde 2010, a JK transforma pedras naturais em expressões de personalidade, sofisticação e design. Conheça nossa história e a região atendida.",
+      "canonical": "https://jkmarmores.com.br/1/sobre/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 51,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/1/materiais/",
+      "h1": "Materiais que traduzem exclusividade.",
+      "overflow": false,
+      "title": "Materiais e acabamentos | JK Marmores e Granitos",
+      "description": "Mármores, granitos, mármores dolomíticos, quartzitos naturais, quartzos e lâminas ultracompactas sinterizadas. Conheça os materiais da JK.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/",
+      "categories": 6,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/1/materiais/marmore/",
+      "h1": "Mármores nacionais e importados",
+      "overflow": false,
+      "title": "Mármores nacionais e importados | JK Mármores e Granitos",
+      "description": "A atemporalidade do mármore em suas mais diversas expressões. Selecionamos pedras nacionais e importadas que se destacam pela riqueza de seus veios, tonalidades e movimentos naturais, proporcionando elegância e exclusividade a cada ambiente.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/marmore/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/1/materiais/granito/",
+      "h1": "Granitos",
+      "overflow": false,
+      "title": "Granitos | JK Mármores e Granitos",
+      "description": "Resistência e personalidade aliadas à beleza da pedra natural. Uma seleção de granitos para projetos que valorizam durabilidade, versatilidade e acabamento impecável.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/granito/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/1/materiais/marmore-dolomitico/",
+      "h1": "Mármores dolomíticos",
+      "overflow": false,
+      "title": "Mármores dolomíticos | JK Mármores e Granitos",
+      "description": "A delicadeza visual dos mármores aliada a características de maior resistência. Os dolomíticos apresentam veios marcantes e uma estética sofisticada, tornando cada superfície singular.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/marmore-dolomitico/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/1/materiais/quartzito/",
+      "h1": "Quartzitos naturais",
+      "overflow": false,
+      "title": "Quartzitos naturais | JK Mármores e Granitos",
+      "description": "Pedras de rara beleza, formadas pela própria natureza. Reconhecidos por sua resistência e exuberância, seus veios, cores e movimentos naturais fazem de cada chapa uma verdadeira obra exclusiva.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/quartzito/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/1/materiais/quartzo/",
+      "h1": "Quartzos",
+      "overflow": false,
+      "title": "Quartzos | JK Mármores e Granitos",
+      "description": "Tecnologia e sofisticação em superfícies industrializadas. Os quartzos oferecem uniformidade, variedade estética e praticidade, atendendo a projetos contemporâneos que valorizam precisão e elegância.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/quartzo/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/1/materiais/ultracompacto/",
+      "h1": "Lâminas ultracompactas sinterizadas",
+      "overflow": false,
+      "title": "Lâminas ultracompactas sinterizadas | JK Mármores e Granitos",
+      "description": "Alta tecnologia aplicada à arquitetura. As lâminas ultracompactas sinterizadas combinam resistência, versatilidade e sofisticação, permitindo soluções de alto desempenho para diferentes aplicações.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/ultracompacto/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "/1/contato/",
+      "h1": "Vamos falar do seu projeto.",
+      "overflow": false,
+      "title": "Contato e orçamento em Barueri | JK Marmores e Granitos",
+      "description": "Fale com a JK Marmores e Granitos pelo telefone (11) 96797-6902. Endereço: Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP.",
+      "canonical": "https://jkmarmores.com.br/1/contato/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 60,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/1/",
+      "h1": "Pedra que dá forma ao seu espaço.",
+      "overflow": false,
+      "title": "JK Mármores e Granitos | Barueri e São Paulo, desde 2010",
+      "description": "Desde 2010, projetos residenciais, comerciais e industriais. Barueri, São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista. Fale com a JK.",
+      "canonical": "https://jkmarmores.com.br/1/",
+      "categories": 6,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 68,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/1/sobre/",
+      "h1": "O bruto vira arte.",
+      "overflow": false,
+      "title": "A empresa | JK Marmores e Granitos em Barueri",
+      "description": "Desde 2010, a JK transforma pedras naturais em expressões de personalidade, sofisticação e design. Conheça nossa história e a região atendida.",
+      "canonical": "https://jkmarmores.com.br/1/sobre/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/1/materiais/",
+      "h1": "Materiais que traduzem exclusividade.",
+      "overflow": false,
+      "title": "Materiais e acabamentos | JK Marmores e Granitos",
+      "description": "Mármores, granitos, mármores dolomíticos, quartzitos naturais, quartzos e lâminas ultracompactas sinterizadas. Conheça os materiais da JK.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/",
+      "categories": 6,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/1/materiais/marmore/",
+      "h1": "Mármores nacionais e importados",
+      "overflow": false,
+      "title": "Mármores nacionais e importados | JK Mármores e Granitos",
+      "description": "A atemporalidade do mármore em suas mais diversas expressões. Selecionamos pedras nacionais e importadas que se destacam pela riqueza de seus veios, tonalidades e movimentos naturais, proporcionando elegância e exclusividade a cada ambiente.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/marmore/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/1/materiais/granito/",
+      "h1": "Granitos",
+      "overflow": false,
+      "title": "Granitos | JK Mármores e Granitos",
+      "description": "Resistência e personalidade aliadas à beleza da pedra natural. Uma seleção de granitos para projetos que valorizam durabilidade, versatilidade e acabamento impecável.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/granito/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/1/materiais/marmore-dolomitico/",
+      "h1": "Mármores dolomíticos",
+      "overflow": false,
+      "title": "Mármores dolomíticos | JK Mármores e Granitos",
+      "description": "A delicadeza visual dos mármores aliada a características de maior resistência. Os dolomíticos apresentam veios marcantes e uma estética sofisticada, tornando cada superfície singular.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/marmore-dolomitico/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/1/materiais/quartzito/",
+      "h1": "Quartzitos naturais",
+      "overflow": false,
+      "title": "Quartzitos naturais | JK Mármores e Granitos",
+      "description": "Pedras de rara beleza, formadas pela própria natureza. Reconhecidos por sua resistência e exuberância, seus veios, cores e movimentos naturais fazem de cada chapa uma verdadeira obra exclusiva.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/quartzito/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/1/materiais/quartzo/",
+      "h1": "Quartzos",
+      "overflow": false,
+      "title": "Quartzos | JK Mármores e Granitos",
+      "description": "Tecnologia e sofisticação em superfícies industrializadas. Os quartzos oferecem uniformidade, variedade estética e praticidade, atendendo a projetos contemporâneos que valorizam precisão e elegância.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/quartzo/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/1/materiais/ultracompacto/",
+      "h1": "Lâminas ultracompactas sinterizadas",
+      "overflow": false,
+      "title": "Lâminas ultracompactas sinterizadas | JK Mármores e Granitos",
+      "description": "Alta tecnologia aplicada à arquitetura. As lâminas ultracompactas sinterizadas combinam resistência, versatilidade e sofisticação, permitindo soluções de alto desempenho para diferentes aplicações.",
+      "canonical": "https://jkmarmores.com.br/1/materiais/ultracompacto/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "/1/contato/",
+      "h1": "Vamos falar do seu projeto.",
+      "overflow": false,
+      "title": "Contato e orçamento em Barueri | JK Marmores e Granitos",
+      "description": "Fale com a JK Marmores e Granitos pelo telefone (11) 96797-6902. Endereço: Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP.",
+      "canonical": "https://jkmarmores.com.br/1/contato/",
+      "categories": 0,
+      "company": {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://jkmarmores.com.br/1/#empresa",
+        "name": "JK Marmores e Granitos",
+        "url": "https://jkmarmores.com.br/1/",
+        "foundingDate": "2010",
+        "areaServed": [
+          "São Paulo",
+          "Grande São Paulo",
+          "ABC",
+          "interior",
+          "litoral norte",
+          "Baixada Santista"
+        ],
+        "telephone": "+5511967976902",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Estrada dos Pinheiros, 379, Parque Viana",
+          "addressLocality": "Barueri",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      },
+      "maxEntryTask": 63,
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "touchShine": {
+    "active": true,
+    "animation": "grazing-light"
+  },
+  "shineCleaned": true,
+  "quote": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20um%20or%C3%A7amento%20para%20Ambiente%20de%20teste.%20Material%3A%20Quartzos.%20Medidas%20aproximadas%3A%20120%20cm.%20Cidade%3A%20Barueri.",
+  "noJsMaterials": {
+    "count": 6,
+    "text": "Materiais que traduzem exclusividade.\n\nSelecionamos materiais que unem beleza, personalidade, tecnologia e desempenho para transformar cada projeto em uma expressão única de sofisticação.\n\nEstudo ilustrativo de matéria. Imagem gerada por IA.\n\n01\nMármores nacionais e importados\n\nA atemporalidade do mármore em suas mais diversas expressões.\n\nSelecionamos pedras nacionais e importadas que se destacam pela riqueza de seus veios, tonalidades e movimentos naturais, proporcionando elegância e exclusividade a cada ambiente.\n\nConhecer mármores nacionais e importados\n02\nGranitos\n\nResistência e personalidade aliadas à beleza da pedra natural.\n\nUma seleção de granitos para projetos que valorizam durabilidade, versatilidade e acabamento impecável.\n\nConhecer granitos\n03\nMármores dolomíticos\n\nA delicadeza visual dos mármores aliada a características de maior resistência.\n\nOs dolomíticos apresentam veios marcantes e uma estética sofisticada, tornando cada superfície singular.\n\nConhecer mármores dolomíticos\n04\nQuartzitos naturais\n\nPedras de rara beleza, formadas pela própria natureza.\n\nReconhecidos por sua resistência e exuberância, seus veios, cores e movimentos naturais fazem de cada chapa uma verdadeira obra exclusiva.\n\nConhecer quartzitos naturais\n05\nQuartzos\n\nTecnologia e sofisticação em superfícies industrializadas.\n\nOs quartzos oferecem uniformidade, variedade estética e praticidade, atendendo a projetos contemporâneos que valorizam precisão e elegância.\n\nConhecer quartzos\n06\nLâminas ultracompactas sinterizadas\n\nAlta tecnologia aplicada à arquitetura.\n\nAs lâminas ultracompactas sinterizadas combinam resistência, versatilidade e sofisticação, permitindo soluções de alto desempenho para diferentes aplicações.\n\nConhecer lâminas ultracompactas sinterizadas\n\nA confirmar\n\nA matéria-prima de um projeto extraordinário.\n\nDa seleção da pedra ao acabamento final, cada detalhe é pensado para valorizar a arquitetura, a estética e a identidade de cada projeto.\n\nPedras naturais e superfícies de alta tecnologia para projetos que transcendem tendências.\n\nExplorar combinações ilustrativas\nVamos conversar\nsobre seu projeto?\n\nComece pelo WhatsApp ou telefone. Conte sua ideia e consulte as possibilidades com a JK.\n\n(11) 96797-6902\nChamar no WhatsApp\nEstrada dos Pinheiros, 379, Parque Viana, Barueri/SP\n\nPara consultar a possibilidade de visita, fale com a JK antes de se deslocar.\n\nAtendemos São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista."
+  }
+}

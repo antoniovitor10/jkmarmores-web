@@ -1,0 +1,159 @@
+{
+  "url": "https://jkmarmores.com.br/1/",
+  "routes": [
+    {
+      "url": "https://jkmarmores.com.br/1/",
+      "width": 390,
+      "title": "JK Mármores e Granitos | Barueri e São Paulo, desde 2010",
+      "overflow": false,
+      "categories": 6,
+      "foundingDate": "2010",
+      "motion": "true",
+      "network": {
+        "downlink": 1.5,
+        "effectiveType": "4g",
+        "saveData": false
+      },
+      "robots": "noindex, nofollow",
+      "status": 200
+    },
+    {
+      "url": "https://jkmarmores.com.br/1/sobre/",
+      "width": 390,
+      "title": "A empresa | JK Marmores e Granitos em Barueri",
+      "overflow": false,
+      "categories": 0,
+      "foundingDate": "2010",
+      "network": {
+        "downlink": 3.15,
+        "effectiveType": "4g",
+        "saveData": false
+      },
+      "robots": "noindex, nofollow",
+      "status": 200
+    },
+    {
+      "url": "https://jkmarmores.com.br/1/materiais/",
+      "width": 390,
+      "title": "Materiais e acabamentos | JK Marmores e Granitos",
+      "overflow": false,
+      "categories": 6,
+      "foundingDate": "2010",
+      "network": {
+        "downlink": 1.5,
+        "effectiveType": "4g",
+        "saveData": false
+      },
+      "robots": "noindex, nofollow",
+      "status": 200
+    },
+    {
+      "url": "https://jkmarmores.com.br/1/materiais/marmore-dolomitico/",
+      "width": 390,
+      "title": "Mármores dolomíticos | JK Mármores e Granitos",
+      "overflow": false,
+      "categories": 0,
+      "foundingDate": "2010",
+      "network": {
+        "downlink": 3.15,
+        "effectiveType": "4g",
+        "saveData": false
+      },
+      "robots": "noindex, nofollow",
+      "status": 200
+    },
+    {
+      "url": "https://jkmarmores.com.br/1/contato/",
+      "width": 390,
+      "title": "Contato e orçamento em Barueri | JK Marmores e Granitos",
+      "overflow": false,
+      "categories": 0,
+      "foundingDate": "2010",
+      "network": {
+        "downlink": 1.5,
+        "effectiveType": "4g",
+        "saveData": false
+      },
+      "robots": "noindex, nofollow",
+      "status": 200
+    },
+    {
+      "url": "https://jkmarmores.com.br/1/",
+      "width": 1440,
+      "title": "JK Mármores e Granitos | Barueri e São Paulo, desde 2010",
+      "overflow": false,
+      "categories": 6,
+      "foundingDate": "2010",
+      "motion": "true",
+      "network": {
+        "downlink": 1.5,
+        "effectiveType": "4g",
+        "saveData": false
+      },
+      "robots": "noindex, nofollow",
+      "status": 200
+    },
+    {
+      "url": "https://jkmarmores.com.br/1/sobre/",
+      "width": 1440,
+      "title": "A empresa | JK Marmores e Granitos em Barueri",
+      "overflow": false,
+      "categories": 0,
+      "foundingDate": "2010",
+      "network": {
+        "downlink": 1.5,
+        "effectiveType": "4g",
+        "saveData": false
+      },
+      "robots": "noindex, nofollow",
+      "status": 200
+    },
+    {
+      "url": "https://jkmarmores.com.br/1/materiais/",
+      "width": 1440,
+      "title": "Materiais e acabamentos | JK Marmores e Granitos",
+      "overflow": false,
+      "categories": 6,
+      "foundingDate": "2010",
+      "network": {
+        "downlink": 1.5,
+        "effectiveType": "4g",
+        "saveData": false
+      },
+      "robots": "noindex, nofollow",
+      "status": 200
+    },
+    {
+      "url": "https://jkmarmores.com.br/1/materiais/marmore-dolomitico/",
+      "width": 1440,
+      "title": "Mármores dolomíticos | JK Mármores e Granitos",
+      "overflow": false,
+      "categories": 0,
+      "foundingDate": "2010",
+      "network": {
+        "downlink": 3.15,
+        "effectiveType": "4g",
+        "saveData": false
+      },
+      "robots": "noindex, nofollow",
+      "status": 200
+    },
+    {
+      "url": "https://jkmarmores.com.br/1/contato/",
+      "width": 1440,
+      "title": "Contato e orçamento em Barueri | JK Marmores e Granitos",
+      "overflow": false,
+      "categories": 0,
+      "foundingDate": "2010",
+      "network": {
+        "downlink": 1.5,
+        "effectiveType": "4g",
+        "saveData": false
+      },
+      "robots": "noindex, nofollow",
+      "status": 200
+    }
+  ],
+  "errors": [],
+  "badPaths": []
+}

@@ -1,0 +1,453 @@
+{
+  "stage": "depois",
+  "environment": "Emulacao Chrome headless; Lighthouse mobile, throttling devtools; servidor local gzip; cache frio",
+  "lighthouseVersion": "13.5.0",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "fetchTime": "2026-09-30T15:51:47.270Z",
+  "settings": {
+    "output": "json",
+    "maxWaitForFcp": 30000,
+    "maxWaitForLoad": 45000,
+    "pauseAfterFcpMs": 5250,
+    "pauseAfterLoadMs": 5250,
+    "networkQuietThresholdMs": 5250,
+    "cpuQuietThresholdMs": 5250,
+    "formFactor": "mobile",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "throttlingMethod": "devtools",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 2,
+      "disabled": false
+    },
+    "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+    "auditMode": false,
+    "gatherMode": false,
+    "clearStorageTypes": [
+      "file_systems",
+      "shader_cache",
+      "service_workers",
+      "cache_storage"
+    ],
+    "disableStorageReset": false,
+    "debugNavigation": false,
+    "channel": "node",
+    "usePassiveGathering": false,
+    "disableFullPageScreenshot": false,
+    "skipAboutBlank": false,
+    "blankPage": "about:blank",
+    "ignoreStatusCode": false,
+    "locale": "en-US",
+    "blockedUrlPatterns": null,
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "precomputedLanternData": null,
+    "onlyAudits": null,
+    "onlyCategories": [
+      "performance",
+      "accessibility",
+      "best-practices",
+      "seo"
+    ],
+    "skipAudits": null
+  },
+  "scores": {
+    "performance": 100,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
+  },
+  "lcpMs": 1105.672,
+  "fcpMs": 1105.672,
+  "tbtMs": 80.37599999999998,
+  "cls": 0,
+  "totalBytes": 244845,
+  "failures": [
+    {
+      "id": "unused-javascript",
+      "title": "Reduce unused JavaScript",
+      "displayValue": "Est savings of 54 KiB"
+    },
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing"
+    },
+    {
+      "id": "forced-reflow-insight",
+      "title": "Forced reflow"
+    },
+    {
+      "id": "image-delivery-insight",
+      "title": "Improve image delivery",
+      "displayValue": "Est savings of 5 KiB"
+    },
+    {
+      "id": "legacy-javascript-insight",
+      "title": "Legacy JavaScript",
+      "displayValue": "Est savings of 13 KiB"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "h1Count": 1,
+      "h1": {
+        "x": 24,
+        "y": 439.390625,
+        "width": 342,
+        "height": 168.46875,
+        "top": 439.390625,
+        "right": 366,
+        "bottom": 607.859375,
+        "left": 24
+      },
+      "cta": {
+        "x": 24,
+        "y": 710.40625,
+        "width": 176.125,
+        "height": 49.59375,
+        "top": 710.40625,
+        "right": 200.125,
+        "bottom": 760,
+        "left": 24
+      },
+      "resourcesAtLoad": [
+        {
+          "name": "/1/_next/static/media/bodoni_latin_400-s.p.2aby03jc8bj_i.woff2",
+          "type": "link",
+          "bytes": 13320
+        },
+        {
+          "name": "/1/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+          "type": "link",
+          "bytes": 12136
+        },
+        {
+          "name": "/1/img/capa-editorial-mobile-390.avif",
+          "type": "link",
+          "bytes": 5335
+        },
+        {
+          "name": "/1/brand/jk-monograma-240.webp",
+          "type": "link",
+          "bytes": 5830
+        },
+        {
+          "name": "/1/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/1/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/1/_next/static/chunks/turbopack-0owlzhzoiu92b.js",
+          "type": "script",
+          "bytes": 4154
+        },
+        {
+          "name": "/1/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/1/_next/static/chunks/3x55vlw4_jwcc.js",
+          "type": "script",
+          "bytes": 45428
+        },
+        {
+          "name": "/1/_next/static/chunks/42nmbwzc17m64.js",
+          "type": "script",
+          "bytes": 4180
+        },
+        {
+          "name": "/1/_next/static/chunks/22i43cg4l4-dq.js",
+          "type": "script",
+          "bytes": 3908
+        },
+        {
+          "name": "/1/_next/static/chunks/231f52np8xm73.js",
+          "type": "script",
+          "bytes": 1540
+        },
+        {
+          "name": "/1/img/sequencia-01-chapa-390.avif",
+          "type": "img",
+          "bytes": 2203
+        }
+      ],
+      "resourcesAfterIdle": [
+        {
+          "name": "/1/_next/static/media/bodoni_latin_400-s.p.2aby03jc8bj_i.woff2",
+          "type": "link",
+          "bytes": 13320
+        },
+        {
+          "name": "/1/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+          "type": "link",
+          "bytes": 12136
+        },
+        {
+          "name": "/1/img/capa-editorial-mobile-390.avif",
+          "type": "link",
+          "bytes": 5335
+        },
+        {
+          "name": "/1/brand/jk-monograma-240.webp",
+          "type": "link",
+          "bytes": 5830
+        },
+        {
+          "name": "/1/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/1/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/1/_next/static/chunks/turbopack-0owlzhzoiu92b.js",
+          "type": "script",
+          "bytes": 4154
+        },
+        {
+          "name": "/1/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/1/_next/static/chunks/3x55vlw4_jwcc.js",
+          "type": "script",
+          "bytes": 45428
+        },
+        {
+          "name": "/1/_next/static/chunks/42nmbwzc17m64.js",
+          "type": "script",
+          "bytes": 4180
+        },
+        {
+          "name": "/1/_next/static/chunks/22i43cg4l4-dq.js",
+          "type": "script",
+          "bytes": 3908
+        },
+        {
+          "name": "/1/_next/static/chunks/231f52np8xm73.js",
+          "type": "script",
+          "bytes": 1540
+        },
+        {
+          "name": "/1/img/sequencia-01-chapa-390.avif",
+          "type": "img",
+          "bytes": 2203
+        },
+        {
+          "name": "/1/_next/static/chunks/35nfxkrd0rzci.js",
+          "type": "script",
+          "bytes": 2279
+        },
+        {
+          "name": "/1/_next/static/chunks/26101bsj44vbo.js",
+          "type": "script",
+          "bytes": 45557
+        }
+      ],
+      "navigation": [
+        {
+          "bytes": 39380,
+          "loadMs": 62.29999999701977
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "h1Count": 1,
+      "h1": {
+        "x": 80,
+        "y": 484.28125,
+        "width": 1280,
+        "height": 234.40625,
+        "top": 484.28125,
+        "right": 1360,
+        "bottom": 718.6875,
+        "left": 80
+      },
+      "cta": {
+        "x": 409.1875,
+        "y": 747.15625,
+        "width": 176.125,
+        "height": 49.59375,
+        "top": 747.15625,
+        "right": 585.3125,
+        "bottom": 796.75,
+        "left": 409.1875
+      },
+      "resourcesAtLoad": [
+        {
+          "name": "/1/_next/static/media/bodoni_latin_400-s.p.2aby03jc8bj_i.woff2",
+          "type": "link",
+          "bytes": 13320
+        },
+        {
+          "name": "/1/img/material-detalhe-quente-1600.avif",
+          "type": "link",
+          "bytes": 19848
+        },
+        {
+          "name": "/1/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+          "type": "link",
+          "bytes": 12136
+        },
+        {
+          "name": "/1/brand/jk-monograma-240.webp",
+          "type": "link",
+          "bytes": 5830
+        },
+        {
+          "name": "/1/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/1/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/1/_next/static/chunks/turbopack-0owlzhzoiu92b.js",
+          "type": "script",
+          "bytes": 4154
+        },
+        {
+          "name": "/1/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/1/_next/static/chunks/42nmbwzc17m64.js",
+          "type": "script",
+          "bytes": 4180
+        },
+        {
+          "name": "/1/_next/static/chunks/231f52np8xm73.js",
+          "type": "script",
+          "bytes": 1540
+        },
+        {
+          "name": "/1/_next/static/chunks/22i43cg4l4-dq.js",
+          "type": "script",
+          "bytes": 3908
+        },
+        {
+          "name": "/1/_next/static/chunks/3x55vlw4_jwcc.js",
+          "type": "script",
+          "bytes": 45428
+        },
+        {
+          "name": "/1/img/sequencia-01-chapa-1600.avif",
+          "type": "img",
+          "bytes": 12411
+        }
+      ],
+      "resourcesAfterIdle": [
+        {
+          "name": "/1/_next/static/media/bodoni_latin_400-s.p.2aby03jc8bj_i.woff2",
+          "type": "link",
+          "bytes": 13320
+        },
+        {
+          "name": "/1/img/material-detalhe-quente-1600.avif",
+          "type": "link",
+          "bytes": 19848
+        },
+        {
+          "name": "/1/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+          "type": "link",
+          "bytes": 12136
+        },
+        {
+          "name": "/1/brand/jk-monograma-240.webp",
+          "type": "link",
+          "bytes": 5830
+        },
+        {
+          "name": "/1/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/1/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/1/_next/static/chunks/turbopack-0owlzhzoiu92b.js",
+          "type": "script",
+          "bytes": 4154
+        },
+        {
+          "name": "/1/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/1/_next/static/chunks/42nmbwzc17m64.js",
+          "type": "script",
+          "bytes": 4180
+        },
+        {
+          "name": "/1/_next/static/chunks/231f52np8xm73.js",
+          "type": "script",
+          "bytes": 1540
+        },
+        {
+          "name": "/1/_next/static/chunks/22i43cg4l4-dq.js",
+          "type": "script",
+          "bytes": 3908
+        },
+        {
+          "name": "/1/_next/static/chunks/3x55vlw4_jwcc.js",
+          "type": "script",
+          "bytes": 45428
+        },
+        {
+          "name": "/1/img/sequencia-01-chapa-1600.avif",
+          "type": "img",
+          "bytes": 12411
+        },
+        {
+          "name": "/1/_next/static/chunks/35nfxkrd0rzci.js",
+          "type": "script",
+          "bytes": 2279
+        },
+        {
+          "name": "/1/_next/static/chunks/26101bsj44vbo.js",
+          "type": "script",
+          "bytes": 45557
+        }
+      ],
+      "navigation": [
+        {
+          "bytes": 39380,
+          "loadMs": 44.599999997764826
+        }
+      ]
+    }
+  ]
+}

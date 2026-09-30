@@ -1,0 +1,272 @@
+{
+  "screens": [
+    {
+      "width": 390,
+      "progress": 0,
+      "scrollY": 0,
+      "mask": "matrix(4.9833333333333325 0 0 4.9833333333333325 -1020.9333333333332 -375.33333333333326)",
+      "introOpacity": "1",
+      "signatureOpacity": "0",
+      "dock": "false",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "progress": 0.2,
+      "scrollY": 143,
+      "mask": "matrix(4.9833333333333325 0 0 4.9833333333333325 -1020.9333333333332 -375.33333333333326)",
+      "introOpacity": "1",
+      "signatureOpacity": "0",
+      "dock": "false",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "progress": 0.5,
+      "scrollY": 359,
+      "mask": "matrix(3.6431 0 0 3.6431 -712.1605 -171.4222)",
+      "introOpacity": "0",
+      "signatureOpacity": "0",
+      "dock": "true",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "progress": 0.8,
+      "scrollY": 574,
+      "mask": "matrix(0.39974999999999994 0 0 0.39974999999999994 35.10000000000002 322.0625)",
+      "introOpacity": "0",
+      "signatureOpacity": "0.1371",
+      "dock": "true",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "progress": 1,
+      "scrollY": 717,
+      "mask": "matrix(0.39974999999999994 0 0 0.39974999999999994 35.10000000000002 322.0625)",
+      "introOpacity": "0",
+      "signatureOpacity": "1",
+      "dock": "true",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "hold": true,
+      "reverseMatrix": "matrix(3.6431 0 0 3.6431 -712.1605 -171.4222)"
+    },
+    {
+      "width": 390,
+      "section": "jornada",
+      "progress": 0.15,
+      "cut": "inset(0px 0px 0px 13.53%)",
+      "title": "matrix(1, 0, 0, 1, 0, 53.1234)",
+      "descriptionOpacity": "0.15"
+    },
+    {
+      "width": 390,
+      "section": "jornada",
+      "progress": 0.38,
+      "cut": "inset(0px 0px 0px 0%)",
+      "title": "matrix(1, 0, 0, 1, 0, 8.58667)",
+      "descriptionOpacity": "0.3207"
+    },
+    {
+      "width": 390,
+      "section": "jornada",
+      "progress": 0.55,
+      "cut": "inset(0px 0px 0px 0%)",
+      "title": "matrix(1, 0, 0, 1, 0, 0)",
+      "descriptionOpacity": "1"
+    },
+    {
+      "width": 1440,
+      "progress": 0,
+      "scrollY": 0,
+      "mask": "matrix(18.4 0 0 18.4 -3769.5999999999995 -2494)",
+      "introOpacity": "1",
+      "signatureOpacity": "0",
+      "dock": "false",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "progress": 0.2,
+      "scrollY": 216,
+      "mask": "matrix(18.4 0 0 18.4 -3769.5999999999995 -2494)",
+      "introOpacity": "1",
+      "signatureOpacity": "0",
+      "dock": "false",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "progress": 0.5,
+      "scrollY": 540,
+      "mask": "matrix(13.2785 0 0 13.2785 -2551.5444 -1692.7847)",
+      "introOpacity": "0",
+      "signatureOpacity": "0",
+      "dock": "true",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "progress": 0.8,
+      "scrollY": 864,
+      "mask": "matrix(0.7 0 0 0.7 440 275)",
+      "introOpacity": "0",
+      "signatureOpacity": "0.1333",
+      "dock": "true",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "progress": 1,
+      "scrollY": 1080,
+      "mask": "matrix(0.7 0 0 0.7 440 275)",
+      "introOpacity": "0",
+      "signatureOpacity": "1",
+      "dock": "true",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "hold": true,
+      "reverseMatrix": "matrix(13.2785 0 0 13.2785 -2551.5444 -1692.7847)"
+    },
+    {
+      "width": 1440,
+      "section": "jornada",
+      "progress": 0.15,
+      "cut": "inset(0px 0px 0px 13.5709%)",
+      "title": "matrix(1, 0, 0, 1, 0, 83.1469)",
+      "descriptionOpacity": "0.15"
+    },
+    {
+      "width": 1440,
+      "section": "jornada",
+      "progress": 0.38,
+      "cut": "inset(0px 0px 0px 0%)",
+      "title": "matrix(1, 0, 0, 1, 0, 26.3419)",
+      "descriptionOpacity": "0.1926"
+    },
+    {
+      "width": 1440,
+      "section": "jornada",
+      "progress": 0.55,
+      "cut": "inset(0px 0px 0px 0%)",
+      "title": "matrix(1, 0, 0, 1, 0, 0)",
+      "descriptionOpacity": "0.9135"
+    }
+  ],
+  "frames": [
+    {
+      "width": 390,
+      "samples": 437,
+      "maxGapMs": 16.799999999999272,
+      "gapsAbove34ms": 0,
+      "maxPaintMs": 0.035,
+      "maxTaskMs": 11.892
+    },
+    {
+      "width": 390,
+      "section": "jornada",
+      "samples": 1061,
+      "maxGapMs": 25.200000000000728,
+      "gapsAbove34ms": 0,
+      "maxPaintMs": 1.644,
+      "maxTaskMs": 9.537
+    },
+    {
+      "width": 1440,
+      "samples": 495,
+      "maxGapMs": 25.5,
+      "gapsAbove34ms": 0,
+      "maxPaintMs": 3.468,
+      "maxTaskMs": 20.258
+    },
+    {
+      "width": 1440,
+      "section": "jornada",
+      "samples": 801,
+      "maxGapMs": 33.29999999999927,
+      "gapsAbove34ms": 0,
+      "maxPaintMs": 4.261,
+      "maxTaskMs": 24.216
+    }
+  ],
+  "errors": [],
+  "routes": [
+    {
+      "width": 390,
+      "route": "/1/sobre/",
+      "overflow": false,
+      "h1": 1,
+      "background": "rgb(16, 16, 15)"
+    },
+    {
+      "width": 390,
+      "route": "/1/materiais/",
+      "overflow": false,
+      "h1": 1,
+      "background": "rgb(16, 16, 15)"
+    },
+    {
+      "width": 390,
+      "route": "/1/contato/",
+      "overflow": false,
+      "h1": 1,
+      "background": "rgb(16, 16, 15)"
+    },
+    {
+      "width": 390,
+      "route": "/1/galeria/",
+      "overflow": false,
+      "h1": 1,
+      "background": "rgb(16, 16, 15)"
+    },
+    {
+      "width": 390,
+      "route": "/1/aplicacoes/",
+      "overflow": false,
+      "h1": 1,
+      "background": "rgb(16, 16, 15)"
+    },
+    {
+      "width": 1440,
+      "route": "/1/sobre/",
+      "overflow": false,
+      "h1": 1,
+      "background": "rgb(16, 16, 15)"
+    },
+    {
+      "width": 1440,
+      "route": "/1/materiais/",
+      "overflow": false,
+      "h1": 1,
+      "background": "rgb(16, 16, 15)"
+    },
+    {
+      "width": 1440,
+      "route": "/1/contato/",
+      "overflow": false,
+      "h1": 1,
+      "background": "rgb(16, 16, 15)"
+    },
+    {
+      "width": 1440,
+      "route": "/1/galeria/",
+      "overflow": false,
+      "h1": 1,
+      "background": "rgb(16, 16, 15)"
+    },
+    {
+      "width": 1440,
+      "route": "/1/aplicacoes/",
+      "overflow": false,
+      "h1": 1,
+      "background": "rgb(16, 16, 15)"
+    }
+  ],
+  "preferenceChanged": true
+}
