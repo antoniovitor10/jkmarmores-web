@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { isPendente } from "@/content/pendente";
 import type { SeoPagina, Texto } from "@/lib/types";
+import { asset } from "@/lib/base-path";
 
 export const siteUrl = "https://jkmarmores.com.br";
 export const siteMode = process.env.SITE_MODE === "producao" ? "producao" : "homolog";
@@ -11,7 +12,7 @@ export function texto(valor: Texto): string {
 }
 
 export function urlPagina(caminho: string): string {
-  return new URL(caminho.endsWith("/") ? caminho : `${caminho}/`, siteUrl).toString();
+  return new URL(asset(caminho.endsWith("/") ? caminho : `${caminho}/`), siteUrl).toString();
 }
 
 export function metadataPagina(seo: SeoPagina, caminho: string): Metadata {

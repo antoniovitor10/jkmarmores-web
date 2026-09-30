@@ -4,7 +4,7 @@ export type MotionConnection = EventTarget & { saveData?: boolean; effectiveType
 // Os timings também cobrem navegadores sem Network Information API e um "4g" otimista.
 export function motionNetworkPolicy(connection?: MotionConnection) {
   if (connection?.saveData || /(^|-)2g|3g/.test(connection?.effectiveType ?? "") ||
-      (connection?.downlink !== undefined && connection.downlink < 1.6)) return "slow-connection";
+      (connection?.downlink !== undefined && connection.downlink < 1)) return "slow-connection";
   const navigation = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming | undefined;
   const poster = performance.getEntriesByType("resource").find(entry => /\/img\/(capa-|material-detalhe-quente-)/.test(entry.name)) as PerformanceResourceTiming | undefined;
   let measured = false;

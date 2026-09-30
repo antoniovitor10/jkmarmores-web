@@ -48,16 +48,16 @@ export function mountJourney(root: HTMLElement) {
   addEventListener('touchstart', beginTouch, { passive: true });
 
   const ctx = gsap.context(() => {
-    const mask = root.querySelector<HTMLElement>('.journey-mask')!;
+
     const tl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
-      trigger: root, start: 'top top', end: 'bottom bottom', scrub: .6,
+      trigger: root, start: 'top top', end: 'bottom bottom', scrub: .18,
       onToggle: self => {
         visible = self.isActive;
         pictures.forEach(picture => { picture.style.willChange = visible ? 'transform' : 'auto'; });
         if (visible) prepare(Math.max(0, active));
       },
     } });
-    tl.to(mask, { opacity: 0, y: -16, duration: .6 }, .2);
+
     tl.to(playhead, { position: 4, duration: 4, onUpdate: () => {
       const position = Math.min(3.999, playhead.position);
       const index = Math.floor(position);
@@ -72,14 +72,14 @@ export function mountJourney(root: HTMLElement) {
       if (visible) { prepare(active); prepare(active + 1); }
       targetTime = Math.round(local * Math.max(0, (media[active]?.duration || 0) - .05) * 24) / 24;
       schedule();
-    } }, .6);
+    } }, 0);
     frames.forEach((frame, index) => {
-      if (index) tl.fromTo(frame, { opacity: 0 }, { opacity: 1, duration: .28 }, .6 + index);
-      tl.fromTo(pictures[index], { scale: 1, yPercent: 0 }, { scale: 1.025, yPercent: -.5, duration: 1.2 }, .6 + index);
-      tl.to(segments[index], { scaleX: 1, duration: 1 }, .6 + index);
+      if (index) tl.fromTo(frame, { clipPath: 'polygon(100% 0,100% 0,0 100%,0 100%)' }, { clipPath: 'polygon(0 0,100% 0,100% 100%,0 100%)', duration: .22 }, index);
+      tl.fromTo(pictures[index], { scale: 1, yPercent: 0 }, { scale: 1.025, yPercent: -.5, duration: 1.2 }, index);
+      tl.to(segments[index], { scaleX: 1, duration: 1 }, index);
     });
     // HTML permanece acessível sem movimento; durante o scrub só a legenda ativa recebe foco.
-    frames.forEach((frame, i) => { frame.inert = i !== 0; });
+    frames.forEach((frame, i) => { frame.inert = i !== 0; frame.dataset.current = String(i === 0); });
   }, root);
 
   return () => {

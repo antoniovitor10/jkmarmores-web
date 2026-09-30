@@ -1,44 +1,46 @@
-.stone-journey { background:var(--cor-papel); color:var(--cor-texto); }
+.stone-journey { background:#171715; color:#f1ece3; }
 .journey-track { position:relative; }
-.journey-mask { min-height:100svh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:32px; padding:80px 24px; background:var(--cor-papel); pointer-events:none; }
-.journey-monogram { display:block; width:min(48vw,600px); height:auto; overflow:visible; }
-.journey-mask p { font-size:15px; letter-spacing:.12em; margin:0; }
-.journey-heading { padding:40px max(40px,calc((100% - 1280px)/2)); }
-.journey-heading h2 { margin:0; font-size:clamp(36px,4vw,56px); font-weight:400; }
-.journey-frame { margin:0; content-visibility:auto; contain-intrinsic-block-size:auto 800px; }
-.journey-media { position:relative; overflow:hidden; min-height:0; }
-.journey-frame noscript { display:none; }
-.journey-frame picture,.journey-frame img { display:block; width:100%; }
-.journey-frame img { aspect-ratio:16/9; object-fit:cover; }
-.journey-frame figcaption { padding:32px max(40px,calc((100% - 1280px)/2)) 48px; display:flex; align-items:center; gap:28px; background:var(--cor-papel); }
-.journey-count { font-size:13px; font-variant-numeric:tabular-nums; white-space:nowrap; color:var(--cor-muted); }
-.journey-frame h3 { font-size:34px; line-height:1.15; margin:0 0 8px; font-weight:400; }
-.journey-frame figcaption p { font-size:14px; margin:0; color:var(--cor-muted); }
+.journey-mask { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; min-height:100svh; padding:80px 24px; background:#171715; color:#d6c4af; }
+.journey-monogram { display:block; width:min(48vw,570px); height:auto; }
+.journey-mask p { margin:0; font-size:15px; letter-spacing:.08em; }
+.journey-heading { padding:64px 40px 32px; }
+.journey-heading h2 { margin:0; font-size:clamp(32px,4vw,60px); font-weight:400; }
+.journey-frame { margin:0; }
+.journey-media { position:relative; overflow:hidden; }
+.journey-media picture,.journey-media img { display:block; width:100%; }
+.journey-media img { aspect-ratio:16/9; object-fit:cover; }
+.journey-frame figcaption { padding:32px 40px 48px; display:flex; align-items:center; gap:28px; }
+.journey-count { font-size:14px; font-variant-numeric:tabular-nums; }
+.journey-count > span { color:#c3b9ab; }
+.journey-frame h3 { font-size:32px; margin:0 0 8px; }
+.journey-frame figcaption p { margin:0; font-size:15px; color:#e5ded3; }
 .journey-progress { display:none; }
 .journey-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none; opacity:0; }
-.journey-track[data-enhanced] { height:360svh; }
-[data-enhanced] .journey-sticky { position:sticky; top:0; height:100svh; display:grid; grid-template-rows:auto 1fr 2px; overflow:hidden; contain:layout paint; }
-[data-enhanced] .journey-mask { position:absolute; inset:0; z-index:5; min-height:0; }
-[data-enhanced] .journey-frames { position:relative; min-height:0; }
-[data-enhanced] .journey-frame { position:absolute; inset:0; display:grid; grid-template-rows:minmax(0,1fr) auto; content-visibility:visible; contain-intrinsic-size:none; }
-[data-enhanced] .journey-frame:not(:first-child) { opacity:0; }
-[data-enhanced] .journey-frame picture { height:100%; }
-[data-enhanced] .journey-frame img { height:100%; aspect-ratio:auto; }
-[data-enhanced] .journey-progress { display:flex; gap:8px; margin-inline:40px; }
-.journey-progress > span { flex:1; background:var(--cor-borda); }
-.journey-progress i { display:block; height:100%; background:var(--cor-texto); transform:scaleX(0); transform-origin:left; }
+.journey-frame noscript { display:none; }
+.journey-track[data-enhanced] { height:380svh; }
+[data-enhanced] .journey-sticky { position:sticky; top:0; height:100svh; overflow:hidden; }
+[data-enhanced] .journey-heading { position:absolute; left:0; top:0; z-index:6; padding:48px; pointer-events:none; text-shadow:0 2px 20px #000; }
+[data-enhanced] .journey-frames { position:absolute; inset:0; }
+[data-enhanced] .journey-frame { position:absolute; inset:0; isolation:isolate; }
+[data-enhanced] .journey-frame:not([data-current="true"]) figcaption { visibility:hidden; }
+[data-enhanced] .journey-frame:not(:first-child) { clip-path:polygon(100% 0,100% 0,0 100%,0 100%); }
+[data-enhanced] .journey-media,[data-enhanced] .journey-media picture,[data-enhanced] .journey-media img { height:100%; }
+[data-enhanced] .journey-frame figcaption { position:absolute; bottom:0; left:0; right:0; padding:100px 48px 60px; background:linear-gradient(transparent,#111e); z-index:2; }
+[data-enhanced] .journey-progress { position:absolute; bottom:24px; left:48px; right:48px; display:flex; gap:12px; height:2px; z-index:6; }
+.journey-progress > span { flex:1; background:#ffffff45; }
+.journey-progress i { display:block; height:100%; background:#dfc2a0; transform:scaleX(0); transform-origin:left; }
+.journey-quote { margin-left:auto; }
 @media(max-width:700px) {
- .journey-mask { min-height:calc(100svh - 76px - env(safe-area-inset-bottom,0px)); padding-block:80px; gap:28px; }
- .journey-monogram { width:72vw; }
- .journey-mask p { font-size:13px; }
- .journey-heading { padding:28px 24px; }
- .journey-heading h2 { font-size:34px; }
+ .journey-monogram { width:76vw; }
+ .journey-heading { padding:40px 24px 24px; }
  .journey-frame img { aspect-ratio:4/5; }
- .journey-frame figcaption { padding:24px 24px 40px; gap:20px; min-height:142px; flex-wrap:wrap; }
- .journey-frame h3 { font-size:28px; }
- .journey-frame figcaption p { font-size:13px; max-width:27ch; }
- .journey-quote { margin:0 0 0 48px; }
- .journey-track[data-enhanced] { height:320svh; }
- [data-enhanced] .journey-sticky { height:calc(100svh - 76px - env(safe-area-inset-bottom,0px)); }
- [data-enhanced] .journey-progress { margin-inline:24px; }
+ .journey-frame figcaption { padding:24px; gap:18px; flex-wrap:wrap; }
+ .journey-frame figcaption p { font-size:14px; max-width:26ch; }
+ .journey-frame h3 { font-size:30px; }
+ .journey-track[data-enhanced] { height:300svh; }
+ [data-enhanced] .journey-heading { padding:32px 24px; }
+ [data-enhanced] .journey-heading h2 { font-size:32px; max-width:10ch; }
+ [data-enhanced] .journey-frame figcaption { padding:100px 24px 54px; }
+ [data-enhanced] .journey-progress { left:24px; right:24px; bottom:24px; }
+ .journey-quote { margin-left:45px; }
 }
