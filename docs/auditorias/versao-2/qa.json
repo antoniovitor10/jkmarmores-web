@@ -32,37 +32,26 @@
         "clip": "inset(0%)"
       }
     ],
-    "lcp": 220,
+    "lcp": 192,
     "cls": 0,
+    "clsSources": [],
     "long": [
       {
-        "at": 107.59999999962747,
-        "ms": 62
+        "at": 79.80000000074506,
+        "ms": 59
       },
       {
-        "at": 329.3999999985099,
-        "ms": 143
+        "at": 275.80000000074506,
+        "ms": 142
       },
       {
-        "at": 727.5999999996275,
-        "ms": 95
+        "at": 631.1000000014901,
+        "ms": 94
       }
     ],
     "events": [
       {
         "name": "pointerdown",
-        "ms": 24
-      },
-      {
-        "name": "pointerup",
-        "ms": 48
-      },
-      {
-        "name": "click",
-        "ms": 48
-      },
-      {
-        "name": "pointerdown",
         "ms": 32
       },
       {
@@ -75,23 +64,35 @@
       },
       {
         "name": "pointerdown",
-        "ms": 32
+        "ms": 16
       },
       {
         "name": "pointerup",
-        "ms": 32
+        "ms": 16
       },
       {
         "name": "click",
-        "ms": 32
+        "ms": 16
+      },
+      {
+        "name": "pointerdown",
+        "ms": 16
+      },
+      {
+        "name": "pointerup",
+        "ms": 16
+      },
+      {
+        "name": "click",
+        "ms": 16
       },
       {
         "name": "keydown",
-        "ms": 24
+        "ms": 16
       },
       {
         "name": "keyup",
-        "ms": 24
+        "ms": 16
       }
     ],
     "frames": [],
@@ -132,20 +133,21 @@
         "clip": "inset(0%)"
       }
     ],
-    "lcp": 1208,
-    "cls": 0.4978298611111111,
+    "lcp": 1136,
+    "cls": 0,
+    "clsSources": [],
     "long": [
       {
-        "at": 66.5,
-        "ms": 61
+        "at": 69.59999999962747,
+        "ms": 59
       },
       {
-        "at": 148.59999999962747,
-        "ms": 141
+        "at": 148.40000000037253,
+        "ms": 161
       },
       {
-        "at": 1089.9000000003725,
-        "ms": 91
+        "at": 430,
+        "ms": 93
       }
     ],
     "events": [
@@ -163,15 +165,15 @@
       },
       {
         "name": "pointerdown",
-        "ms": 32
+        "ms": 24
       },
       {
         "name": "pointerup",
-        "ms": 32
+        "ms": 24
       },
       {
         "name": "click",
-        "ms": 32
+        "ms": 24
       }
     ],
     "frames": [],
@@ -191,16 +193,17 @@
     },
     "enhanced": false,
     "stages": [],
-    "lcp": 140,
+    "lcp": 172,
     "cls": 0,
+    "clsSources": [],
     "long": [
       {
-        "at": 71.09999999962747,
-        "ms": 59
+        "at": 90.59999999962747,
+        "ms": 65
       },
       {
-        "at": 149.09999999962747,
-        "ms": 126
+        "at": 185.5,
+        "ms": 189
       }
     ],
     "events": [
@@ -218,15 +221,15 @@
       },
       {
         "name": "pointerdown",
-        "ms": 16
+        "ms": 48
       },
       {
         "name": "pointerup",
-        "ms": 16
+        "ms": 48
       },
       {
         "name": "click",
-        "ms": 16
+        "ms": 48
       }
     ],
     "frames": [],
@@ -246,26 +249,27 @@
     },
     "enhanced": false,
     "stages": [],
-    "lcp": 144,
+    "lcp": 156,
     "cls": 0,
+    "clsSources": [],
     "long": [
       {
-        "at": 138.40000000037253,
-        "ms": 137
+        "at": 181.69999999925494,
+        "ms": 157
       }
     ],
     "events": [
       {
         "name": "pointerdown",
-        "ms": 40
+        "ms": 32
       },
       {
         "name": "pointerup",
-        "ms": 40
+        "ms": 32
       },
       {
         "name": "click",
-        "ms": 40
+        "ms": 32
       },
       {
         "name": "pointerdown",
@@ -297,30 +301,39 @@
     },
     "enhanced": false,
     "stages": [],
-    "lcp": 596,
+    "lcp": 576,
     "cls": 0,
+    "clsSources": [],
     "long": [
       {
-        "at": 326.7000000011176,
-        "ms": 247
+        "at": 331,
+        "ms": 60
       },
       {
-        "at": 1270.7000000011176,
-        "ms": 170
+        "at": 392.1000000014901,
+        "ms": 162
+      },
+      {
+        "at": 1279.1000000014901,
+        "ms": 146
+      },
+      {
+        "at": 4058.5,
+        "ms": 57
       }
     ],
     "events": [
       {
         "name": "pointerdown",
-        "ms": 56
+        "ms": 72
       },
       {
         "name": "pointerup",
-        "ms": 56
+        "ms": 72
       },
       {
         "name": "click",
-        "ms": 56
+        "ms": 72
       },
       {
         "name": "pointerdown",

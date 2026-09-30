@@ -13,9 +13,9 @@ const base = process.env.QA_URL || 'http://127.0.0.1:3102/2/';
    if(mode==='slow') {await cdp.send('Network.enable'); await cdp.send('Network.emulateNetworkConditions',{offline:false,latency:150,downloadThroughput:200*1024,uploadThroughput:75*1024,connectionType:'cellular3g'});}
    await page.addInitScript(mode=>{
     Object.defineProperty(navigator,'connection',{configurable:true,value:{effectiveType:mode==='slow'?'3g':'4g',downlink:mode==='slow'?1:10,saveData:mode==='save-data',addEventListener(){},removeEventListener(){}}});
-    window.__qa={lcp:0,cls:0,long:[],events:[],frames:[],scrollResponse:0};
+    window.__qa={lcp:0,cls:0,clsSources:[],long:[],events:[],frames:[],scrollResponse:0};
     new PerformanceObserver(l=>window.__qa.lcp=l.getEntries().at(-1).startTime).observe({type:'largest-contentful-paint',buffered:true});
-    new PerformanceObserver(l=>l.getEntries().forEach(e=>{if(!e.hadRecentInput)window.__qa.cls+=e.value})).observe({type:'layout-shift',buffered:true});
+    new PerformanceObserver(l=>l.getEntries().forEach(e=>{if(!e.hadRecentInput){window.__qa.cls+=e.value; window.__qa.clsSources.push({at:e.startTime,scroll:scrollY,value:e.value,sources:e.sources.map(s=>({name:s.node?.className,prev:s.previousRect,next:s.currentRect}))})}})).observe({type:'layout-shift',buffered:true});
     new PerformanceObserver(l=>l.getEntries().forEach(e=>window.__qa.long.push({at:e.startTime,ms:e.duration}))).observe({type:'longtask',buffered:true});
     new PerformanceObserver(l=>l.getEntries().filter(e=>e.interactionId).forEach(e=>window.__qa.events.push({name:e.name,ms:e.duration}))).observe({type:'event',buffered:true,durationThreshold:16});
    },mode);

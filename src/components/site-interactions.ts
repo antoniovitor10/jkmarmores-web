@@ -17,7 +17,7 @@ export function mountSiteInteractions() {
       void import('./motion-runtime').then(({ mountPageMotion }) => {
         if (!disposed) motion = mountPageMotion();
       });
-    }, { rootMargin: '300px 0px' });
+    }, { rootMargin: `${Math.max(600, innerHeight)}px 0px` });
     document.querySelectorAll('.journey-track,.editorial-image').forEach(el => nearby!.observe(el));
   });
   const dock = document.querySelector<HTMLElement>(".mobile-quote-dock");
