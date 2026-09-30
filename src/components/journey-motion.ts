@@ -6,24 +6,27 @@ export function mountJourney(root: HTMLElement) {
   const pictures = frames.map(frame => frame.querySelector<HTMLImageElement>('img')!);
   const segments = [...root.querySelectorAll<HTMLElement>('.journey-progress i')];
   const mask = root.querySelector<HTMLElement>('.journey-mask')!;
-  let active = -1;
+  let active = -1, visible = false;
+  const promote = () => pictures.forEach((picture, i) => { picture.style.willChange = visible && (i === active || i === active + 1) ? 'transform' : 'auto'; });
   root.dataset.enhanced = 'true';
   frames.forEach((frame, i) => { frame.inert = i !== 0; });
   const ctx = gsap.context(() => {
     const tl = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: {
       trigger: root, start: 'top top', end: 'bottom bottom', scrub: .35,
       onToggle: self => {
-        pictures.forEach(picture => { picture.style.willChange = self.isActive ? 'transform' : 'auto'; });
+        visible = self.isActive;
+        promote();
       },
       onUpdate: self => {
         const index = Math.min(3, Math.max(0, Math.floor((self.progress * 5.8 - 1) / 1.2)));
         if (index === active) return;
         active = index;
+        promote();
         frames.forEach((frame, i) => { frame.inert = i !== index; frame.dataset.current = String(i === index); });
       },
     } });
     tl.fromTo(mask.querySelector('svg'), { scale: .92, y: 24 }, { scale: 1, y: 0, duration: .65 }, 0)
-      .to(mask, { clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)', duration: .65 }, .35);
+      .to(mask, { clipPath: 'polygon(-100% 0%, -100% 0%, 0% 100%, -100% 100%)', duration: .65 }, .35);
     frames.forEach((frame, index) => {
       const at = 1 + index * 1.2;
       if (index) tl.fromTo(frame, { clipPath: 'inset(100% 0% 0% 0%)' }, { clipPath: 'inset(0% 0% 0% 0%)', duration: .6 }, at - .3);

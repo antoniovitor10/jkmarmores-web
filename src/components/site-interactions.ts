@@ -6,6 +6,11 @@ export function mountSiteInteractions() {
   let disposed = false;
   let motion = () => {};
   let nearby: IntersectionObserver | undefined;
+  const connection = (navigator as Navigator & { connection?: MotionConnection }).connection;
+  const heroMotion = document.querySelector<HTMLElement>('.home-hero');
+  const updateNetworkMotion = () => { if (heroMotion) heroMotion.dataset.lite = String(motionNetworkPolicy(connection) !== 'allowed'); };
+  updateNetworkMotion();
+  connection?.addEventListener('change', updateNetworkMotion);
   const journey = document.querySelector<HTMLElement>('.journey-track');
   let stopImages = () => {};
   const cancelMotion = afterPoster(() => {
@@ -53,5 +58,5 @@ export function mountSiteInteractions() {
   menu?.addEventListener("toggle", toggle);
   document.addEventListener("keydown", key);
   toggle();
-  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
+  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); connection?.removeEventListener('change', updateNetworkMotion); if (heroMotion) delete heroMotion.dataset.lite; menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
 }

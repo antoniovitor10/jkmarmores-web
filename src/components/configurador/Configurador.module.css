@@ -108,6 +108,9 @@
 .footer { align-items:flex-start; gap:16px; }
 .footer p { text-align:left; font-size:14px; color:var(--cor-muted); }
 .images { overflow:clip; }
+@media(prefers-reduced-motion:reduce) {
+ .root .choice:active { transform:none; }
+}
 @media(max-width:700px) {
  .strip { gap:20px; }
  .group { flex-basis:100%; }

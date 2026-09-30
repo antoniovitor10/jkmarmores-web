@@ -4,6 +4,8 @@
 @theme inline { --color-background:var(--cor-fundo); --color-foreground:var(--cor-texto); --font-sans:var(--fonte-corpo); }
 * { box-sizing:border-box; }
 html { scroll-behavior:auto; }
+::selection { background:var(--cor-caramelo); color:var(--cor-texto); }
+input,textarea { caret-color:var(--cor-destaque); }
 body { --fonte-titulo:var(--fonte-display-a1),Georgia,serif; --fonte-corpo:var(--fonte-corpo-a1),Arial,sans-serif; margin:0; background:var(--cor-fundo); color:var(--cor-texto); font-family:var(--fonte-corpo); line-height:1.65; }
 a { color:inherit; text-underline-offset:5px; }
 a:hover { text-decoration-thickness:2px; }

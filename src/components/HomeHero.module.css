@@ -17,6 +17,7 @@
 }
 @keyframes arrive { from { transform:translateY(.24em); } to { transform:translateY(0); } }
 @keyframes settle { from { transform:scale(1.035); } to { transform:scale(1); } }
+.hero[data-lite="true"] .line > span,.hero[data-lite="true"] .figure img { animation:none; }
 @media(max-width:700px) {
  .hero { padding:104px 0 0; }
  .intro { margin:0 24px 40px; display:block; }

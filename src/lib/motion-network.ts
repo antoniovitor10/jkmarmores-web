@@ -3,6 +3,8 @@ export type MotionConnection = EventTarget & { saveData?: boolean; effectiveType
 // Usa apenas requisições críticas já concluídas. Nunca baixa um vídeo para testar a rede.
 // Os timings também cobrem navegadores sem Network Information API e um "4g" otimista.
 export function motionNetworkPolicy(connection?: MotionConnection) {
+  const memory = typeof navigator === 'undefined' ? undefined : (navigator as Navigator & { deviceMemory?: number }).deviceMemory;
+  if (memory !== undefined && memory <= 2) return "limited-device";
   if (connection?.saveData || /(^|-)2g|3g/.test(connection?.effectiveType ?? "") ||
       (connection?.downlink !== undefined && connection.downlink < 1.6)) return "slow-connection";
   const navigation = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming | undefined;
