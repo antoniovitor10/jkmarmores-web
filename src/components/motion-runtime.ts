@@ -17,13 +17,20 @@ export function mountPageMotion() {
       const hero = document.querySelector<HTMLElement>('.cinema-hero');
       const journey = document.querySelector<HTMLElement>('.journey-track');
       const cleanHero = hero ? mountCinemaHero(hero) : () => {};
-      const cleanJourney = journey ? mountJourney(journey) : () => {};
+      let cleanJourney = () => {};
+      const nearby = new IntersectionObserver(entries => {
+        if (!journey || !entries.some(entry => entry.isIntersecting)) return;
+        nearby.disconnect();
+        cleanJourney = mountJourney(journey);
+        ScrollTrigger.refresh();
+      }, { rootMargin: '300px 0px' });
+      if (journey) nearby.observe(journey);
       const ctx = gsap.context(() => {
         document.querySelectorAll<HTMLElement>('.editorial-image').forEach(el => {
           gsap.fromTo(el, { clipPath: 'polygon(0 0,100% 0,100% 0,0 12%)' }, { clipPath: 'polygon(0 0,100% 0,100% 100%,0 100%)', duration: .64, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 92%', once: true } });
         });
       });
-      dispose = () => { ctx.revert(); cleanJourney(); cleanHero(); };
+      dispose = () => { nearby.disconnect(); ctx.revert(); cleanJourney(); cleanHero(); };
       ScrollTrigger.refresh();
     };
     configure();

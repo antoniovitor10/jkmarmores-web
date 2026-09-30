@@ -10,7 +10,8 @@ const types = { ".html": "text/html; charset=utf-8", ".js": "text/javascript", "
 http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url, `http://127.0.0.1:${port}`);
-    const requested = decodeURIComponent(url.pathname);
+    const base = process.env.NEXT_PUBLIC_BASE_PATH || '';
+    const requested = decodeURIComponent(base && url.pathname.startsWith(base + '/') ? url.pathname.slice(base.length) : url.pathname);
     const file = path.resolve(root, `.${requested.endsWith("/") ? `${requested}index.html` : requested}`);
     if (!file.startsWith(`${root}${path.sep}`)) { res.writeHead(403).end(); return; }
     const raw = await fs.readFile(file);
