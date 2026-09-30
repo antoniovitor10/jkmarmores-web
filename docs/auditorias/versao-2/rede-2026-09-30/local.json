@@ -1,0 +1,148 @@
+[
+  {
+    "mode": "native",
+    "url": "http://127.0.0.1:3102/2/",
+    "viewport": "390x844",
+    "networkThrottling": false,
+    "enhanced": true,
+    "heroLite": "false",
+    "stages": [
+      "0",
+      "1"
+    ],
+    "samples": [
+      {
+        "name": "http://127.0.0.1:3102/2/",
+        "transferSize": 37583,
+        "bytes": 37283,
+        "ttfbMs": 6.5,
+        "bodyMs": 0.8000000007450581,
+        "KBps": 45511.474566989134
+      },
+      {
+        "name": "http://127.0.0.1:3102/2/img/capa-editorial-mobile-390.avif",
+        "transferSize": 5335,
+        "bytes": 5035,
+        "ttfbMs": 6.900000002235174,
+        "bodyMs": 0.5999999977648258,
+        "KBps": 8194.987009695373
+      }
+    ],
+    "errors": []
+  },
+  {
+    "mode": "low-estimate",
+    "url": "http://127.0.0.1:3102/2/",
+    "viewport": "390x844",
+    "networkThrottling": false,
+    "enhanced": true,
+    "heroLite": "false",
+    "stages": [
+      "0",
+      "1"
+    ],
+    "samples": [
+      {
+        "name": "http://127.0.0.1:3102/2/",
+        "transferSize": 37583,
+        "bytes": 37283,
+        "ttfbMs": 5.199999999254942,
+        "bodyMs": 0.5,
+        "KBps": 72818.359375
+      },
+      {
+        "name": "http://127.0.0.1:3102/2/img/capa-editorial-mobile-390.avif",
+        "transferSize": 5335,
+        "bytes": 5035,
+        "ttfbMs": 3.099999997764826,
+        "bodyMs": 0.19999999925494194,
+        "KBps": 24584.961029086116
+      }
+    ],
+    "errors": []
+  },
+  {
+    "mode": "save-data",
+    "url": "http://127.0.0.1:3102/2/",
+    "viewport": "390x844",
+    "networkThrottling": false,
+    "enhanced": false,
+    "heroLite": "true",
+    "stages": [],
+    "samples": [
+      {
+        "name": "http://127.0.0.1:3102/2/",
+        "transferSize": 37583,
+        "bytes": 37283,
+        "ttfbMs": 5.099999997764826,
+        "bodyMs": 0.6999999992549419,
+        "KBps": 52013.11389464684
+      },
+      {
+        "name": "http://127.0.0.1:3102/2/img/capa-editorial-mobile-390.avif",
+        "transferSize": 5335,
+        "bytes": 5035,
+        "ttfbMs": 2.800000000745058,
+        "bodyMs": 0.29999999701976776,
+        "KBps": 16389.9741211531
+      }
+    ],
+    "errors": []
+  },
+  {
+    "mode": "3g",
+    "url": "http://127.0.0.1:3102/2/",
+    "viewport": "390x844",
+    "networkThrottling": false,
+    "enhanced": false,
+    "heroLite": "true",
+    "stages": [],
+    "samples": [
+      {
+        "name": "http://127.0.0.1:3102/2/",
+        "transferSize": 37583,
+        "bytes": 37283,
+        "ttfbMs": 4.5,
+        "bodyMs": 0.4000000022351742,
+        "KBps": 91022.94871011964
+      },
+      {
+        "name": "http://127.0.0.1:3102/2/img/capa-editorial-mobile-390.avif",
+        "transferSize": 5335,
+        "bytes": 5035,
+        "ttfbMs": 5.899999998509884,
+        "bodyMs": 0.5,
+        "KBps": 9833.984375
+      }
+    ],
+    "errors": []
+  },
+  {
+    "mode": "reduced",
+    "url": "http://127.0.0.1:3102/2/",
+    "viewport": "390x844",
+    "networkThrottling": false,
+    "enhanced": false,
+    "heroLite": "false",
+    "stages": [],
+    "samples": [
+      {
+        "name": "http://127.0.0.1:3102/2/",
+        "transferSize": 37583,
+        "bytes": 37283,
+        "ttfbMs": 5.799999997019768,
+        "bodyMs": 0.5,
+        "KBps": 72818.359375
+      },
+      {
+        "name": "http://127.0.0.1:3102/2/img/capa-editorial-mobile-390.avif",
+        "transferSize": 5335,
+        "bytes": 5035,
+        "ttfbMs": 6.5,
+        "bodyMs": 0.6999999992549419,
+        "KBps": 7024.274561047847
+      }
+    ],
+    "errors": []
+  }
+]
