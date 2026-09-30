@@ -11,6 +11,7 @@ export function mountSiteInteractions() {
   const cancelMotion = afterPoster(() => {
     stopImages = journey ? mountJourneyImages(journey) : () => {};
     if (matchMedia('(prefers-reduced-motion: reduce)').matches || motionNetworkPolicy((navigator as Navigator & { connection?: MotionConnection }).connection) !== 'allowed') return;
+    document.querySelector<HTMLElement>('.home-hero')?.setAttribute('data-motion-ready', 'true');
     nearby = new IntersectionObserver(entries => {
       if (!entries.some(entry => entry.isIntersecting)) return;
       nearby?.disconnect();
@@ -18,7 +19,7 @@ export function mountSiteInteractions() {
         if (!disposed) motion = mountPageMotion();
       });
     }, { rootMargin: '300px 0px' });
-    document.querySelectorAll('.stone-signature,.journey-heading,.editorial-image').forEach(el => nearby!.observe(el));
+    document.querySelectorAll('.prologo,.stone-signature,.journey-heading,.editorial-image').forEach(el => nearby!.observe(el));
   });
   const dock = document.querySelector<HTMLElement>(".mobile-quote-dock");
   const hero = document.querySelector(".prologo, .home-hero");
@@ -27,6 +28,8 @@ export function mountSiteInteractions() {
   let pastHero = !hero;
   const occupied = new Set<Element>();
   const update = () => { if (dock) { const visible = pastHero && !occupied.size && !menu?.open; dock.dataset.visible = String(visible); dock.inert = !visible; } };
+  const heroContact = (event: Event) => { pastHero = (event as CustomEvent<{ show:boolean }>).detail.show; update(); };
+  document.addEventListener('jk:hero-contact', heroContact);
   const cover = new IntersectionObserver(([entry]) => { pastHero = entry.boundingClientRect.bottom <= 0; document.querySelector<HTMLElement>(".site-header")?.setAttribute("data-past-hero", String(pastHero)); update(); });
   if (hero) cover.observe(hero);
   const zones = new IntersectionObserver(entries => {
@@ -53,5 +56,5 @@ export function mountSiteInteractions() {
   menu?.addEventListener("toggle", toggle);
   document.addEventListener("keydown", key);
   toggle();
-  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
+  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); document.removeEventListener('jk:hero-contact', heroContact); targets.forEach((el, i) => { el.inert = previous[i]; }); };
 }

@@ -1,17 +1,13 @@
 import { Foto } from './Foto';
-import { asset } from '@/lib/base-path';
 import { stoneJourney } from '@/content/stone-journey';
+import { SiteLink } from './SiteLink';
 
 export function StoneEditorial() {
   return <>
     <section className="stone-signature" aria-label="JK Mármores e Granitos">
       <div className="signature-stage container">
-        <div className="signature-brand">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={asset('/brand/jk-monograma-240.webp')} alt="JK, monograma com textura de pedra da marca" width={240} height={146} loading="lazy" />
-          <p>MÁRMORES E GRANITOS</p>
-        </div>
-        <div className="signature-copy"><h2>O desenho.<br />A luz.<br />A matéria.</h2><p>Um olhar de perto sobre os detalhes que fazem parte da escolha de uma pedra.</p><a className="text-link" href="#configurador">Explore as referências</a></div>
+        <h2>Seu espaço,<br />sua escolha.</h2>
+        <div className="signature-copy"><p>A JK Marmores e Granitos está no Parque Viana, em Barueri. Conte sua ideia e converse sobre as possibilidades para seu projeto.</p><SiteLink className="text-link" href="/sobre/">Conheça a JK</SiteLink></div>
       </div>
     </section>
     <section className="stone-editorial" aria-labelledby="stone-title">

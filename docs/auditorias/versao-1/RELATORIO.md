@@ -1,4 +1,6 @@
-﻿# Versão 1: pedra e luz sobre grafite
+# Versão 1: pedra e luz sobre grafite
+
+Este relatório registra a primeira entrega e seu refinamento. Estado mais recente e pausa: [PAUSA-2026-09-30.md](PAUSA-2026-09-30.md). As medições Lighthouse abaixo antecedem a nova máscara da capa.
 
 Base conferida: worktree jk-v1, branch versao-1, árvore limpa em 3f27ffa. Implementação publicada pelo push 7fe3c64. Nenhuma alteração em main, workflows, .htaccess, secrets ou configuração de produção.
 
@@ -27,5 +29,3 @@ Referências lidas: revisão, prioridades, sistema de movimento de 28/09, tutori
 A primeira medição simulada marcou LCP 2,64 s (Performance 97). A animação de escala saiu da imagem crítica; somente a luz de entrada permanece. Medição DevTools acima usa método diferente, portanto não é uma comparação direta de melhoria. Medição simulada final: Performance 96, A11y 100, boas práticas 100, LCP 2,64 s, CLS 0 e TBT 73,5 ms. A meta de LCP até 2,0 s ainda não foi atingida no método simulado, embora tenha passado no throttling DevTools. Ambos os resultados estão preservados; não se declara uma meta universal atingida.
 
 Logo vetorial, fotos reais, catálogo, serviços, história e detalhes de atendimento continuam pendentes. Cliente compara as versões; depois, o Planejador pode ajustar a escolhida. Nenhuma proposta ilustrativa deve virar catálogo comercial sem confirmação. O portal Maestri não conseguiu capturar tela por estar minimizado; as capturas foram feitas em Chrome headless. Portal encerrado e todas as instâncias headless encerradas em finally. Deploy 7fe3c64 confirmado por Actions success e HTTP 200 em https://jkmarmores.com.br/1/, com novo seletor e noindex.
-
-

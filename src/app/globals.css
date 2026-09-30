@@ -294,3 +294,11 @@ body:has(.home-page) .site-header { color:#eee5dc; }
 @media(max-width:800px) { body:has(.home-page) .header-inner,.header-inner { min-height:64px; } .signature-stage { gap:48px; } .stone-selector { grid-template-columns:1fr; gap:24px; } .selector-controls { display:grid; grid-template-columns:1fr 1fr; column-gap:16px; } .selector-controls fieldset { margin-bottom:20px; } .selector-controls .button { align-self:center; } .stone-panel { min-height:480px; } }
 @media(max-width:700px) { .signature-stage { grid-template-columns:1fr; gap:64px; } .signature-brand img { width:230px; } .signature-copy h2 { font-size:52px; } .signature-copy p { max-width:36ch; } .stone-heading { display:block; } .stone-heading h2 { font-size:42px; } .stone-heading p { margin:20px 0 0; } .stone-panel { height:78svh; min-height:480px; } .stone-panel figcaption { bottom:44px; gap:20px; } .stone-panel h3 { font-size:46px; } .stone-panel figcaption p { font-size:14px; max-width:24ch; } .stone-index { min-width:48px; font-size:10px; } .selector-image img { aspect-ratio:4/3; } .selector-controls { display:block; } .selector-controls fieldset { margin:0 0 24px; } .selector-controls p { max-width:none; } .selector-controls .button { width:auto; } .split-heading { gap:24px; } .home-contact-grid h2 { font-size:48px; } .signature-brand p { font-size:10px; } }
 @media(prefers-reduced-motion:reduce) { .selector-image img { animation:none; } }
+
+/* A capa se fecha no monograma sem trocar a imagem ou sobrepor duas cenas. */
+.prologo[data-enhanced="true"] { height:220svh; }
+.prologo[data-enhanced="true"] .home-hero { position:sticky; top:0; height:100svh; }
+.prologo[data-enhanced="true"] .hero-mask,.prologo[data-enhanced="true"] .hero-signature { display:block; }
+.signature-stage > h2 { font-size:clamp(52px,5.5vw,80px); margin:0; color:#dfc5ad; }
+.signature-copy p { max-width:42ch; font-size:18px; }
+@media(max-width:700px) { .prologo[data-enhanced="true"] { height:185svh; } .signature-stage { gap:32px; } .signature-stage > h2 { font-size:52px; } .signature-copy p { font-size:16px; } }

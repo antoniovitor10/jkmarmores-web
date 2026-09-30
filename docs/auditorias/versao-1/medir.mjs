@@ -52,21 +52,21 @@ try {
  result.dockWithSelectorCta=await page.$eval('.mobile-quote-dock',e=>e.dataset.visible);
  await page.evaluate(()=>window.scrollTo(0,0));
  await session.send('Input.synthesizeScrollGesture',{x:190,y:650,yDistance:-700,speed:650});
- await page.waitForFunction(()=>document.querySelector('.signature-brand').style.transform !== '');
- result.motion=await page.evaluate(()=>({panelTransform:document.querySelector('.stone-panel-image').style.transform,signatureTransform:document.querySelector('.signature-brand').style.transform,videoCount:document.querySelectorAll('video,canvas').length,tasks:window.tasks,events:window.events}));
+ await page.waitForFunction(()=>document.querySelector('.prologo').dataset.enhanced === 'true');
+ result.motion=await page.evaluate(()=>({panelTransform:document.querySelector('.stone-panel-image').style.transform,signatureTransform:document.querySelector('.hero-monogram-path').getAttribute('transform'),videoCount:document.querySelectorAll('video,canvas').length,tasks:window.tasks,events:window.events}));
  for(const route of ['sobre','materiais','contato','galeria','aplicacoes']) {
    await page.goto(origin+'/1/'+route+'/',{waitUntil:'networkidle0'});
    result.pages.push(await page.evaluate(()=>({route:location.pathname,overflow:document.documentElement.scrollWidth>innerWidth,h1:document.querySelectorAll('h1').length,canonical:document.querySelector('link[rel=canonical]')?.href})));
  }
  await page.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'reduce'}]);
  await page.goto(origin+'/1/',{waitUntil:'networkidle0'});
- result.reduced=await page.evaluate(()=>({transform:document.querySelector('.signature-brand').style.transform,animation:getComputedStyle(document.querySelector('.home-hero img')).animationName}));
+ result.reduced=await page.evaluate(()=>({enhanced:document.querySelector('.prologo').dataset.enhanced,animation:getComputedStyle(document.querySelector('.home-hero img')).animationName,lightAnimation:getComputedStyle(document.querySelector('.home-hero > div[aria-hidden]')).animationName}));
  await page.emulateMediaFeatures([{name:'prefers-reduced-motion',value:'no-preference'}]);
  const lite=await browser.newPage();
  await lite.evaluateOnNewDocument(()=>Object.defineProperty(navigator,'connection',{value:{saveData:true,effectiveType:'3g'}}));
  await lite.goto(origin+'/1/',{waitUntil:'networkidle0'});
  await lite.evaluate(()=>document.querySelector('.stone-signature').scrollIntoView());
- result.saveData=await lite.evaluate(()=>({transform:document.querySelector('.signature-brand').style.transform,videoCount:document.querySelectorAll('video').length}));
+ result.saveData=await lite.evaluate(()=>({enhanced:document.querySelector('.prologo').dataset.enhanced,lightEnabled:document.querySelector('.home-hero').dataset.motionReady,videoCount:document.querySelectorAll('video').length}));
  const staticPage=await browser.newPage();
  await staticPage.setJavaScriptEnabled(false);
  await staticPage.setViewport({width:390,height:844});

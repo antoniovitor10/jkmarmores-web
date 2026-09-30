@@ -58,102 +58,106 @@
   "dockWithSelectorCta": "false",
   "motion": {
     "panelTransform": "translate(0%, -4%) scale(1.08, 1.08)",
-    "signatureTransform": "translate3d(0px, 0.5675px, 0px) scale(0.9989, 0.9989)",
+    "signatureTransform": "matrix(0.39974999999999994 0 0 0.39974999999999994 35.10000000000002 322.0625)",
     "videoCount": 0,
     "tasks": [
       {
-        "start": 117.39999999850988,
-        "duration": 69
+        "start": 142.40000000037253,
+        "duration": 75
+      },
+      {
+        "start": 337,
+        "duration": 66
       }
     ],
     "events": [
       {
         "name": "pointerover",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerenter",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerenter",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerenter",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerenter",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerenter",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerenter",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerenter",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerenter",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerenter",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "mouseover",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerdown",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "mousedown",
-        "duration": 16
+        "duration": 48
       },
       {
         "name": "pointerup",
-        "duration": 40
+        "duration": 48
       },
       {
         "name": "mouseup",
-        "duration": 40
+        "duration": 48
       },
       {
         "name": "click",
-        "duration": 40
+        "duration": 48
       },
       {
         "name": "pointerout",
-        "duration": 16
+        "duration": 24
       },
       {
         "name": "pointerleave",
-        "duration": 16
+        "duration": 24
       },
       {
         "name": "pointerover",
-        "duration": 16
+        "duration": 24
       },
       {
         "name": "pointerenter",
-        "duration": 16
+        "duration": 24
       },
       {
         "name": "mouseout",
-        "duration": 16
+        "duration": 24
       },
       {
         "name": "mouseover",
-        "duration": 16
+        "duration": 24
       },
       {
         "name": "keydown",
@@ -237,27 +241,27 @@
       },
       {
         "name": "pointerout",
-        "duration": 24
+        "duration": 16
       },
       {
         "name": "pointerover",
-        "duration": 24
+        "duration": 16
       },
       {
         "name": "pointerenter",
-        "duration": 24
+        "duration": 16
       },
       {
         "name": "pointerenter",
-        "duration": 24
+        "duration": 16
       },
       {
         "name": "mouseout",
-        "duration": 24
+        "duration": 16
       },
       {
         "name": "mouseover",
-        "duration": 24
+        "duration": 16
       },
       {
         "name": "pointerout",
@@ -280,15 +284,19 @@
         "duration": 16
       },
       {
-        "name": "pointerleave",
-        "duration": 16
-      },
-      {
-        "name": "pointerleave",
-        "duration": 16
-      },
-      {
         "name": "pointerover",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
         "duration": 16
       },
       {
@@ -310,15 +318,78 @@
       {
         "name": "mouseover",
         "duration": 16
+      },
+      {
+        "name": "pointerout",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerover",
+        "duration": 24
+      },
+      {
+        "name": "pointerenter",
+        "duration": 24
+      },
+      {
+        "name": "pointerenter",
+        "duration": 24
+      },
+      {
+        "name": "pointerenter",
+        "duration": 24
+      },
+      {
+        "name": "pointerenter",
+        "duration": 24
+      },
+      {
+        "name": "pointerenter",
+        "duration": 24
+      },
+      {
+        "name": "pointerenter",
+        "duration": 24
+      },
+      {
+        "name": "mouseout",
+        "duration": 24
+      },
+      {
+        "name": "mouseover",
+        "duration": 24
       }
     ]
   },
   "reduced": {
-    "transform": "",
-    "animation": "none"
+    "animation": "none",
+    "lightAnimation": "none"
   },
   "saveData": {
-    "transform": "",
     "videoCount": 0
   },
   "noJavaScript": {
