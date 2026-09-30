@@ -2,13 +2,15 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { mountJourney } from './journey-motion';
 import { mountCinemaHero } from './cinema-motion';
+import { mountMaterialGallery } from './gallery-motion';
 import { motionNetworkPolicy, type MotionConnection } from '@/lib/motion-network';
 export { gsap, ScrollTrigger };
 gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.config({ ignoreMobileResize: true });
 export function mountPageMotion() {
   const mm = gsap.matchMedia();
-  mm.add('(prefers-reduced-motion: no-preference)', () => {
+  mm.add({ desktop: '(min-width: 701px)', mobile: '(max-width: 700px)', tall: '(min-height: 650px)', motion: '(prefers-reduced-motion: no-preference)' }, context => {
+    if (!context.conditions?.motion) return;
     const connection = (navigator as Navigator & { connection?: MotionConnection }).connection;
     let dispose = () => {};
     const configure = () => {
@@ -16,22 +18,19 @@ export function mountPageMotion() {
       if (motionNetworkPolicy(connection) !== 'allowed') return;
       const hero = document.querySelector<HTMLElement>('.cinema-hero');
       const journey = document.querySelector<HTMLElement>('.journey-track');
+      const gallery = document.querySelector<HTMLElement>('.material-gallery');
       const cleanHero = hero ? mountCinemaHero(hero) : () => {};
       let cleanJourney = () => {};
-      const nearby = new IntersectionObserver(entries => {
-        if (!journey || !entries.some(entry => entry.isIntersecting)) return;
-        nearby.disconnect();
-        cleanJourney = mountJourney(journey);
-        ScrollTrigger.refresh();
-      }, { rootMargin: '300px 0px' });
-      if (journey) nearby.observe(journey);
-      const ctx = gsap.context(() => {
-        document.querySelectorAll<HTMLElement>('.editorial-image').forEach(el => {
-          gsap.fromTo(el, { clipPath: 'polygon(0 0,100% 0,100% 0,0 12%)' }, { clipPath: 'polygon(0 0,100% 0,100% 100%,0 100%)', duration: .64, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 92%', once: true } });
+      let cleanGallery = () => {};
+      // Give the browser a paint between each section's layout work.
+      let frame = requestAnimationFrame(() => {
+        cleanJourney = journey ? mountJourney(journey) : () => {};
+        frame = requestAnimationFrame(() => {
+          cleanGallery = gallery ? mountMaterialGallery(gallery) : () => {};
+          ScrollTrigger.refresh();
         });
       });
-      dispose = () => { nearby.disconnect(); ctx.revert(); cleanJourney(); cleanHero(); };
-      ScrollTrigger.refresh();
+      dispose = () => { cancelAnimationFrame(frame); cleanGallery(); cleanJourney(); cleanHero(); };
     };
     configure();
     connection?.addEventListener('change', configure);

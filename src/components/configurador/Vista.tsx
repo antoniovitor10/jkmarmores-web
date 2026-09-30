@@ -49,7 +49,7 @@ export function Vista({
             </div>
           </fieldset>
           <fieldset className={styles.group}>
-            <legend>Pedra</legend>
+            <legend>Tom da pedra</legend>
             <div>
               {materiaisConfigurador.map((item) => (
                 <button
@@ -112,7 +112,7 @@ export function Vista({
           className="button"
           href={orcamentoConfigurador(exibida, materialContext)}
         >
-          Pedir orçamento desta pedra
+          Chamar no WhatsApp
         </a>
         <p>Materiais e acabamentos a confirmar com a JK.</p>
       </div>

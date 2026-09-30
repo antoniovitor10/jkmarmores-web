@@ -10,12 +10,11 @@ export function HomeHero() {
       <div className="cinema-signature"><StoneMonogram /></div>
       <figure className="cinema-cover"><Foto id="sequencia-01-chapa" alt="Chapa clara com veios minerais sob luz lateral. Imagem ilustrativa gerada por IA." sizes="(max-width: 700px) 1600px, 100vw" prioridade /></figure>
       <div className="cinema-intro" data-hero-intro>
-        <h1>O espaço começa<br />na pedra.</h1>
-        <p>Uma escolha que muda o seu olhar.<br />Encontre uma referência para o seu projeto.</p>
+        <h1>O bruto<br />vira arte.</h1>
+        <p>JK Mármores e Granitos.<br />Precisão em cada detalhe, desde 2010.</p>
         <a className="button" href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a>
       </div>
-      <div className="cinema-foot"><div><p className="cinema-location">JK Mármores e Granitos · Barueri</p><a href="#jornada-pedra">Conheça a matéria</a></div><p>{illustrationNotice}</p></div>
-      <div className="cinema-next" aria-hidden="true"><Foto id="sequencia-01-chapa" alt="" sizes="(max-width: 700px) 1600px, 100vw" /></div>
+      <div className="cinema-foot"><p className="cinema-location">Barueri, São Paulo</p><p>{illustrationNotice}</p></div>
     </div>
   </header>;
 }

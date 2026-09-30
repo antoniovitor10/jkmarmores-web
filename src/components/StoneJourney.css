@@ -1,8 +1,8 @@
-.stone-journey { background:#171715; color:#f1ece3; }
+.stone-journey { background:var(--cor-grafite); color:var(--cor-papel); }
 .journey-track { position:relative; }
-.journey-mask { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; min-height:100svh; padding:80px 24px; background:#171715; color:#d6c4af; }
+.journey-mask { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:28px; min-height:100svh; padding:80px 24px; background:var(--cor-grafite); color:#d6c4af; }
 .journey-monogram { display:block; width:min(48vw,570px); height:auto; }
-.journey-mask p { margin:0; font-size:15px; letter-spacing:.08em; }
+.journey-mask p { margin:0; font-size:16px; }
 .journey-heading { padding:64px 40px 32px; }
 .journey-heading h2 { margin:0; font-size:clamp(32px,4vw,60px); font-weight:400; }
 .journey-frame { margin:0; content-visibility:auto; contain-intrinsic-block-size:auto 800px; }
@@ -12,23 +12,20 @@
 .journey-frame figcaption { padding:32px 40px 48px; display:flex; align-items:center; gap:28px; }
 .journey-count { font-size:14px; font-variant-numeric:tabular-nums; }
 .journey-count > span { color:#c3b9ab; }
-.journey-frame h3 { font-size:32px; margin:0 0 8px; }
-.journey-frame figcaption p { margin:0; font-size:15px; color:#e5ded3; }
+.journey-frame h3 { font-size:44px; margin:0 0 8px; }
+.journey-frame figcaption p { margin:0; font-size:16px; color:#e5ded3; }
 .journey-progress { display:none; }
-.journey-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none; opacity:0; }
 .journey-frame noscript { display:none; }
-.journey-exit { display:none; }
-.journey-track[data-enhanced] { height:380svh; }
+.journey-track[data-enhanced] { height:270svh; }
 [data-enhanced] .journey-sticky { position:sticky; top:0; height:100svh; overflow:hidden; }
 [data-enhanced] .journey-heading { position:absolute; left:0; top:0; z-index:6; padding:48px; pointer-events:none; text-shadow:0 2px 20px #000; }
 [data-enhanced] .journey-frames { position:absolute; inset:0; }
 [data-enhanced] .journey-frame { position:absolute; inset:0; isolation:isolate; content-visibility:visible; contain-intrinsic-size:none; }
 [data-enhanced] .journey-frame:not([data-current="true"]) figcaption { visibility:hidden; }
-[data-enhanced] .journey-frame:not(:first-child) { clip-path:polygon(100% 0,100% 0,0 100%,0 100%); }
+[data-enhanced] .journey-frame:not(:first-child) { clip-path:inset(100% 0% 0% 0%); }
 [data-enhanced] .journey-media,[data-enhanced] .journey-media picture,[data-enhanced] .journey-media img { height:100%; }
 [data-enhanced] .journey-frame figcaption { position:absolute; bottom:0; left:0; right:0; padding:100px 48px 60px; background:linear-gradient(transparent,#111e); z-index:2; }
 [data-enhanced] .journey-progress { position:absolute; bottom:24px; left:48px; right:48px; display:flex; gap:12px; height:2px; z-index:6; }
-[data-enhanced] .journey-exit { display:block; position:absolute; inset:0; z-index:8; background:var(--cor-papel); pointer-events:none; clip-path:polygon(100% 0,100% 0,0 100%,0 100%); }
 .journey-progress > span { flex:1; background:#ffffff45; }
 .journey-progress i { display:block; height:100%; background:#dfc2a0; transform:scaleX(0); transform-origin:left; }
 .journey-quote { margin-left:auto; }
@@ -37,12 +34,12 @@
  .journey-heading { padding:40px 24px 24px; }
  .journey-frame img { aspect-ratio:4/5; }
  .journey-frame figcaption { padding:24px; gap:18px; flex-wrap:wrap; }
- .journey-frame figcaption p { font-size:14px; max-width:26ch; }
- .journey-frame h3 { font-size:30px; }
- .journey-track[data-enhanced] { height:300svh; }
+ .journey-frame figcaption p { font-size:15px; max-width:28ch; }
+ .journey-frame h3 { font-size:36px; }
+ .journey-track[data-enhanced] { height:225svh; }
  [data-enhanced] .journey-heading { padding:32px 24px; }
- [data-enhanced] .journey-heading h2 { font-size:32px; max-width:10ch; }
- [data-enhanced] .journey-frame figcaption { padding:100px 24px 54px; }
+ [data-enhanced] .journey-heading h2 { font-size:32px; max-width:12ch; }
+ [data-enhanced] .journey-frame figcaption { padding:100px 24px 60px; }
  [data-enhanced] .journey-progress { left:24px; right:24px; bottom:24px; }
  .journey-quote { margin-left:45px; }
 }
