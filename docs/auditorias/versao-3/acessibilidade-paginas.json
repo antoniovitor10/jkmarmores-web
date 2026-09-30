@@ -1,0 +1,52 @@
+[
+  {
+    "route": "/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "sobre/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "materiais/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "aplicacoes/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "galeria/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "route": "contato/",
+    "accessibility": 100,
+    "failures": []
+  },
+  {
+    "desktop": "sobre/",
+    "overflow": false
+  },
+  {
+    "desktop": "materiais/",
+    "overflow": false
+  },
+  {
+    "desktop": "aplicacoes/",
+    "overflow": false
+  },
+  {
+    "desktop": "galeria/",
+    "overflow": false
+  },
+  {
+    "desktop": "contato/",
+    "overflow": false
+  }
+]

@@ -14,6 +14,7 @@ export function OrbitRoom() {
   const node = useRef<HTMLImageElement>(null);
   const root = useRef<HTMLDivElement>(null);
   const generation = useRef(0);
+  const previousImage = useRef<HTMLImageElement | null>(null);
   const sequence = useRef<HTMLImageElement[]>([]);
   const current = useRef(0);
   const drag = useRef<{ x: number; angle: number } | null>(null);
@@ -28,26 +29,37 @@ export function OrbitRoom() {
       setCanOrbit(allowed);
     };
     const prepare = () => {
-    update();
-    reduced.addEventListener('change', update);
-    connection?.addEventListener('change', update);
-    const width = innerWidth <= 700 ? 720 : 1280;
-    const image = new Image();
-    image.src = src(choice, 0, width);
-    image.decode().then(() => {
+      update();
+      reduced.addEventListener('change', update);
+      connection?.addEventListener('change', update);
+      const width = innerWidth <= 700 ? 720 : 1280;
+      const image = new Image();
+      image.src = src(choice, 0, width);
+      image.decode().then(() => {
       if (cancelled) return;
       setShown(choice); setAngle(0); current.current = 0;
-      if (node.current) node.current.src = image.src;
+      if (node.current) {
+        previousImage.current?.remove();
+        if (node.current.src !== image.src && !reduced.matches && motionNetworkPolicy(connection) === 'allowed') {
+          const previous = node.current.cloneNode(true) as HTMLImageElement;
+          previous.className = 'orbit-previous'; previous.alt = ''; previous.setAttribute('aria-hidden', 'true');
+          node.current.parentElement!.append(previous);
+          previousImage.current = previous;
+          previous.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 240, easing: 'cubic-bezier(.65,0,.35,1)', fill: 'forwards' }).finished.then(() => previous.remove()).catch(() => previous.remove());
+        }
+        node.current.src = image.src;
+      }
       setStatus('');
       const allowed = !reduced.matches && motionNetworkPolicy(connection) === 'allowed';
       sequence.current = [image];
       if (!allowed) return;
-      // Decode only the first view now; neighbour frames load on demand.
+      // Decode the initial view; warm two adjacent views without loading the whole orbit.
+      for (const frame of [1, 23]) { const neighbour = new Image(); neighbour.src = src(choice, frame, width); sequence.current[frame] = neighbour; }
     }).catch(() => { if (!cancelled) setStatus('A imagem não carregou. Escolha outro tom para tentar novamente.'); });
     };
     const observer = new IntersectionObserver(entries => { if(entries.some(entry => entry.isIntersecting)) { observer.disconnect(); prepare(); } }, { rootMargin: '200px 0px' });
     if(root.current) observer.observe(root.current);
-    return () => { observer.disconnect(); cancelled = true; reduced.removeEventListener('change', update); connection?.removeEventListener('change', update); sequence.current = []; };
+    return () => { observer.disconnect(); cancelled = true; previousImage.current?.remove(); reduced.removeEventListener('change', update); connection?.removeEventListener('change', update); sequence.current = []; };
   }, [choice]);
   const rotate = (frame: number) => {
     if (!canOrbit) return;
@@ -70,6 +82,7 @@ export function OrbitRoom() {
   const select = (value: Escolha) => { setStatus('Carregando referência…'); setChoice(value); };
   return <div ref={root} className="orbit-room">
     <div className="orbit-view" onPointerDown={event => {
+      if ((event.target as HTMLElement).closest('button,a')) return;
       if (!canOrbit || (event.pointerType === 'mouse' && event.button !== 0)) return;
       drag.current = { x: event.clientX, angle: current.current }; event.currentTarget.setPointerCapture(event.pointerId);
     }} onPointerMove={event => {

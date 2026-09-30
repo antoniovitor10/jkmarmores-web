@@ -27,3 +27,16 @@ A primeira instrumentação encontrou texto mal codificado pelo pipe do PowerShe
 A jornada passa a ser montada somente quando se aproxima da tela. Fontes usam optional, com Arial ajustada em conexão lenta. Export e medidor de bundle aceitam /3/. Canonical de cada página respeita o prefixo.
 
 Próxima revisão: aprovação visual da cliente, teste em aparelho físico e reduzir LCP abaixo de 2 s. Não houve nova geração de imagens, mudança em main, secrets, workflow, .htaccess ou acesso de produção.
+
+## Fechamento da rodada e pausa solicitada
+Vitor pediu pausa em 30/09/2026 após a auditoria das páginas terminar. Não houve nova mudança de implementação depois dessa instrução.
+
+A rodada adicional corrigiu o clique dos botões de giro, a duplicação do WhatsApp na etapa 04, o contraste/nitidez da capa móvel e a recuperação de imagens. Incluiu crossfade de 240 ms apenas na troca de referência, corte diagonal para o papel, campos opcionais no primeiro contato e retirada do Suspense desnecessário do rodapé.
+
+Verificação completa: 320/390/768/1440/1920 px sem overflow; 12 combinações verificadas (seis em cada tamanho principal); quatro etapas com uma única legenda ativa; CTA fixo oculto na etapa 04; giro por clique/teclado/toque real via CDP; rolagem vertical sobre a imagem preservada (274 px); menu móvel com foco contido e Escape; cinco rotas secundárias e mensagem do formulário verificadas, sem abrir janela externa; falha de imagem simulada e recuperação aprovadas. Capturas móveis e desktop das cinco páginas foram gravadas. Lighthouse de acessibilidade: 100 nas seis páginas, sem falhas. Detector Impeccable sem apontamentos.
+
+Última medição com rede/CPU aplicadas pelo DevTools, cache frio e CPU 4x: desempenho 99, acessibilidade 100, boas práticas 100, LCP 0,965 s, CLS 0, TBT 95,856 ms e 209.339 bytes. A maior tarefa desse ensaio foi 174,972 ms, acima da meta de 150 ms; isso permanece registrado, apesar de o ensaio funcional com movimento ativo ter marcado 126 ms no celular e 169 ms no desktop, com gesto até pintura em 13,2/13,4 ms. O resultado simulado anterior (LCP 2,344 s) foi preservado; são métodos distintos, não medições de campo.
+
+Depois dessa medição, foi restaurado content-visibility nas figuras estáticas da jornada para reduzir o layout inicial. O último build/check e a auditoria de acessibilidade já incluem esse ajuste; não houve nova rodada de performance após ele, respeitando a pausa. Lint passou sem erros, com três avisos documentados no log, incluindo uma variável sem uso no script de auditoria.
+
+Próximo passo: aguardar as informações novas da cliente e a instrução do Vitor. Não iniciar novos refinamentos nem alterar o escopo comercial.

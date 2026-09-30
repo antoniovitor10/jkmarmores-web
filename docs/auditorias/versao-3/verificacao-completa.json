@@ -1,0 +1,310 @@
+{
+  "geometry": [
+    {
+      "width": 320,
+      "overflow": false,
+      "h1Count": 1,
+      "hero": "true",
+      "cta": {
+        "x": 24,
+        "y": 543.25,
+        "width": 176.125,
+        "height": 53.59375,
+        "top": 543.25,
+        "right": 200.125,
+        "bottom": 596.84375,
+        "left": 24
+      },
+      "poster": "http://127.0.0.1:3108/3/img/sequencia-01-chapa-1600.avif"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "h1Count": 1,
+      "hero": "true",
+      "cta": {
+        "x": 24,
+        "y": 519.25,
+        "width": 176.125,
+        "height": 53.59375,
+        "top": 519.25,
+        "right": 200.125,
+        "bottom": 572.84375,
+        "left": 24
+      },
+      "poster": "http://127.0.0.1:3108/3/img/sequencia-01-chapa-1600.avif"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "h1Count": 1,
+      "hero": "true",
+      "cta": {
+        "x": 48,
+        "y": 520.59375,
+        "width": 187.671875,
+        "height": 55.59375,
+        "top": 520.59375,
+        "right": 235.671875,
+        "bottom": 576.1875,
+        "left": 48
+      },
+      "poster": "http://127.0.0.1:3108/3/img/sequencia-01-chapa-768.avif"
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "h1Count": 1,
+      "hero": "true",
+      "cta": {
+        "x": 48,
+        "y": 623.125,
+        "width": 184.125,
+        "height": 55.59375,
+        "top": 623.125,
+        "right": 232.125,
+        "bottom": 678.71875,
+        "left": 48
+      },
+      "poster": "http://127.0.0.1:3108/3/img/sequencia-01-chapa-1600.avif"
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "h1Count": 1,
+      "hero": "true",
+      "cta": {
+        "x": 288,
+        "y": 630.34375,
+        "width": 187.671875,
+        "height": 55.59375,
+        "top": 630.34375,
+        "right": 475.671875,
+        "bottom": 685.9375,
+        "left": 288
+      },
+      "poster": "http://127.0.0.1:3108/3/img/sequencia-01-chapa-1600.avif"
+    }
+  ],
+  "journey": [
+    {
+      "width": 390,
+      "step": 0,
+      "current": [
+        "0"
+      ],
+      "visibleCaptions": 1,
+      "dock": "true"
+    },
+    {
+      "width": 390,
+      "step": 1,
+      "current": [
+        "1"
+      ],
+      "visibleCaptions": 1,
+      "dock": "true"
+    },
+    {
+      "width": 390,
+      "step": 2,
+      "current": [
+        "2"
+      ],
+      "visibleCaptions": 1,
+      "dock": "true"
+    },
+    {
+      "width": 390,
+      "step": 3,
+      "current": [
+        "3"
+      ],
+      "visibleCaptions": 1,
+      "dock": "false"
+    },
+    {
+      "width": 390,
+      "exit": "polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%)"
+    },
+    {
+      "width": 1440,
+      "step": 0,
+      "current": [
+        "0"
+      ],
+      "visibleCaptions": 1,
+      "dock": "true"
+    },
+    {
+      "width": 1440,
+      "step": 1,
+      "current": [
+        "1"
+      ],
+      "visibleCaptions": 1,
+      "dock": "true"
+    },
+    {
+      "width": 1440,
+      "step": 2,
+      "current": [
+        "2"
+      ],
+      "visibleCaptions": 1,
+      "dock": "true"
+    },
+    {
+      "width": 1440,
+      "step": 3,
+      "current": [
+        "3"
+      ],
+      "visibleCaptions": 1,
+      "dock": "false"
+    },
+    {
+      "width": 1440,
+      "exit": "polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%)"
+    }
+  ],
+  "combinations": [
+    {
+      "width": 390,
+      "room": "cozinha",
+      "tone": "rosado",
+      "source": "http://127.0.0.1:3108/3/configurador/cozinha-rosado/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Cozinha com ilha / Rosado. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 390,
+      "room": "cozinha",
+      "tone": "bege",
+      "source": "http://127.0.0.1:3108/3/configurador/cozinha-bege/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Cozinha com ilha / Bege. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 390,
+      "room": "cozinha",
+      "tone": "escuro",
+      "source": "http://127.0.0.1:3108/3/configurador/cozinha-escuro/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Cozinha com ilha / Escuro. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 390,
+      "room": "lavatorio",
+      "tone": "rosado",
+      "source": "http://127.0.0.1:3108/3/configurador/lavatorio-rosado/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Lavatório / Rosado. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 390,
+      "room": "lavatorio",
+      "tone": "bege",
+      "source": "http://127.0.0.1:3108/3/configurador/lavatorio-bege/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Lavatório / Bege. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 390,
+      "room": "lavatorio",
+      "tone": "escuro",
+      "source": "http://127.0.0.1:3108/3/configurador/lavatorio-escuro/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Lavatório / Escuro. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 1440,
+      "room": "cozinha",
+      "tone": "rosado",
+      "source": "http://127.0.0.1:3108/3/configurador/cozinha-rosado/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Cozinha com ilha / Rosado. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 1440,
+      "room": "cozinha",
+      "tone": "bege",
+      "source": "http://127.0.0.1:3108/3/configurador/cozinha-bege/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Cozinha com ilha / Bege. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 1440,
+      "room": "cozinha",
+      "tone": "escuro",
+      "source": "http://127.0.0.1:3108/3/configurador/cozinha-escuro/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Cozinha com ilha / Escuro. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 1440,
+      "room": "lavatorio",
+      "tone": "rosado",
+      "source": "http://127.0.0.1:3108/3/configurador/lavatorio-rosado/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Lavatório / Rosado. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 1440,
+      "room": "lavatorio",
+      "tone": "bege",
+      "source": "http://127.0.0.1:3108/3/configurador/lavatorio-bege/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Lavatório / Bege. Podemos conversar sobre um orçamento?"
+    },
+    {
+      "width": 1440,
+      "room": "lavatorio",
+      "tone": "escuro",
+      "source": "http://127.0.0.1:3108/3/configurador/lavatorio-escuro/720/00.avif",
+      "quoteMessage": "Olá, JK! Gostei desta referência: Lavatório / Escuro. Podemos conversar sobre um orçamento?"
+    }
+  ],
+  "routes": [
+    {
+      "route": "sobre/",
+      "h1": "JK Marmores e Granitos.",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/sobre/",
+      "noindex": "noindex, nofollow",
+      "whatsapp": true
+    },
+    {
+      "route": "materiais/",
+      "h1": "A pedra certa começa pelo seu projeto.",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/materiais/",
+      "noindex": "noindex, nofollow",
+      "whatsapp": true
+    },
+    {
+      "route": "aplicacoes/",
+      "h1": "Escolha pela aplicação",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/aplicacoes/",
+      "noindex": "noindex, nofollow",
+      "whatsapp": true
+    },
+    {
+      "route": "galeria/",
+      "h1": "Trabalhos realizados",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/galeria/",
+      "noindex": "noindex, nofollow",
+      "whatsapp": true
+    },
+    {
+      "route": "contato/",
+      "h1": "Vamos falar do seu projeto.",
+      "overflow": false,
+      "canonical": "https://jkmarmores.com.br/3/contato/",
+      "noindex": "noindex, nofollow",
+      "whatsapp": true
+    }
+  ],
+  "errors": [],
+  "touch": true,
+  "verticalTouchScroll": 274,
+  "menuTrap": true,
+  "buttons": true,
+  "form": {
+    "url": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Quero%20conversar%20sobre%20um%20or%C3%A7amento%20para%20Cozinha.%20Cidade%3A%20Barueri.",
+    "optionalMaterial": true,
+    "externalWindowOpened": false
+  },
+  "errorRecovery": true
+}

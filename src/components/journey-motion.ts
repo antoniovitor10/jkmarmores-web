@@ -65,6 +65,7 @@ export function mountJourney(root: HTMLElement) {
       if (active !== index) {
         active = index; choose = true;
         frames.forEach((frame, i) => { frame.inert = i !== active; frame.dataset.current = String(i === active); });
+        root.dispatchEvent(new Event('jk-step-change'));
       }
       if (choose) { selected = hasCompleteClip(media[active]); choose = false; }
       frames[active].dataset.mediaMode = selected ? 'video' : 'poster';
@@ -78,6 +79,7 @@ export function mountJourney(root: HTMLElement) {
       tl.fromTo(pictures[index], { scale: 1, yPercent: 0 }, { scale: 1.025, yPercent: -.5, duration: 1.2 }, index);
       tl.to(segments[index], { scaleX: 1, duration: 1 }, index);
     });
+    tl.to(root.querySelector('.journey-exit'), { clipPath: 'polygon(0 0,100% 0,100% 100%,0 100%)', duration: .3 }, 3.9);
     // HTML permanece acessível sem movimento; durante o scrub só a legenda ativa recebe foco.
     frames.forEach((frame, i) => { frame.inert = i !== 0; frame.dataset.current = String(i === 0); });
   }, root);

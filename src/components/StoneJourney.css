@@ -5,7 +5,7 @@
 .journey-mask p { margin:0; font-size:15px; letter-spacing:.08em; }
 .journey-heading { padding:64px 40px 32px; }
 .journey-heading h2 { margin:0; font-size:clamp(32px,4vw,60px); font-weight:400; }
-.journey-frame { margin:0; }
+.journey-frame { margin:0; content-visibility:auto; contain-intrinsic-block-size:auto 800px; }
 .journey-media { position:relative; overflow:hidden; }
 .journey-media picture,.journey-media img { display:block; width:100%; }
 .journey-media img { aspect-ratio:16/9; object-fit:cover; }
@@ -17,16 +17,18 @@
 .journey-progress { display:none; }
 .journey-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none; opacity:0; }
 .journey-frame noscript { display:none; }
+.journey-exit { display:none; }
 .journey-track[data-enhanced] { height:380svh; }
 [data-enhanced] .journey-sticky { position:sticky; top:0; height:100svh; overflow:hidden; }
 [data-enhanced] .journey-heading { position:absolute; left:0; top:0; z-index:6; padding:48px; pointer-events:none; text-shadow:0 2px 20px #000; }
 [data-enhanced] .journey-frames { position:absolute; inset:0; }
-[data-enhanced] .journey-frame { position:absolute; inset:0; isolation:isolate; }
+[data-enhanced] .journey-frame { position:absolute; inset:0; isolation:isolate; content-visibility:visible; contain-intrinsic-size:none; }
 [data-enhanced] .journey-frame:not([data-current="true"]) figcaption { visibility:hidden; }
 [data-enhanced] .journey-frame:not(:first-child) { clip-path:polygon(100% 0,100% 0,0 100%,0 100%); }
 [data-enhanced] .journey-media,[data-enhanced] .journey-media picture,[data-enhanced] .journey-media img { height:100%; }
 [data-enhanced] .journey-frame figcaption { position:absolute; bottom:0; left:0; right:0; padding:100px 48px 60px; background:linear-gradient(transparent,#111e); z-index:2; }
 [data-enhanced] .journey-progress { position:absolute; bottom:24px; left:48px; right:48px; display:flex; gap:12px; height:2px; z-index:6; }
+[data-enhanced] .journey-exit { display:block; position:absolute; inset:0; z-index:8; background:var(--cor-papel); pointer-events:none; clip-path:polygon(100% 0,100% 0,0 100%,0 100%); }
 .journey-progress > span { flex:1; background:#ffffff45; }
 .journey-progress i { display:block; height:100%; background:#dfc2a0; transform:scaleX(0); transform-origin:left; }
 .journey-quote { margin-left:auto; }

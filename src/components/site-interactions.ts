@@ -26,17 +26,27 @@ export function mountSiteInteractions() {
   const summary = menu?.querySelector("summary");
   let pastHero = !hero;
   const occupied = new Set<Element>();
-  const update = () => { if (dock) { const visible = pastHero && !occupied.size && !menu?.open; dock.dataset.visible = String(visible); dock.inert = !visible; } };
+  const update = () => {
+    if (!dock) return;
+    const quote = journey?.querySelector<HTMLElement>('.journey-frame:not([data-current="false"]) .journey-quote');
+    const rect = quote?.getBoundingClientRect();
+    const quoteInView = rect && rect.bottom > 0 && rect.top < innerHeight;
+    const visible = pastHero && !occupied.size && !menu?.open && !quoteInView;
+    dock.dataset.visible = String(visible); dock.inert = !visible;
+  };
+  journey?.addEventListener('jk-step-change', update);
   const cover = new IntersectionObserver(([entry]) => { pastHero = entry.boundingClientRect.bottom <= 0; document.querySelector<HTMLElement>(".site-header")?.setAttribute("data-past-hero", String(pastHero)); update(); });
   if (hero) cover.observe(hero);
   const zones = new IntersectionObserver(entries => {
     for (const entry of entries) {
-      if (entry.target.matches('.home-contact .button') ? entry.intersectionRatio >= .5 : entry.intersectionRect.height >= innerHeight * .5) occupied.add(entry.target);
+      const directCta = entry.target.matches('.home-contact .button,.journey-quote');
+      const activeCta = !entry.target.matches('.journey-quote') || entry.target.closest<HTMLElement>('.journey-frame')?.dataset.current !== 'false';
+      if (directCta ? activeCta && entry.intersectionRatio >= .5 : entry.intersectionRect.height >= innerHeight * .5) occupied.add(entry.target);
       else occupied.delete(entry.target);
     }
     update();
   }, { threshold: Array.from({ length: 101 }, (_, i) => i / 100) });
-  document.querySelectorAll("#configurador, .home-contact .button, .contact-panel, .contact-details, .form-layout").forEach(el => zones.observe(el));
+  document.querySelectorAll("#configurador, .home-contact .button, .journey-quote, .contact-panel, .contact-details, .form-layout").forEach(el => zones.observe(el));
   const targets = [...document.querySelectorAll<HTMLElement>("main, .site-footer, .site-header .brand, .desktop-nav, .header-cta")];
   const previous = targets.map(el => el.inert);
   const toggle = () => { targets.forEach((el, i) => { el.inert = !!menu?.open || previous[i]; }); update(); };
@@ -53,5 +63,5 @@ export function mountSiteInteractions() {
   menu?.addEventListener("toggle", toggle);
   document.addEventListener("keydown", key);
   toggle();
-  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
+  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); journey?.removeEventListener('jk-step-change', update); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
 }

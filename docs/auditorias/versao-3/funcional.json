@@ -5,28 +5,28 @@
       "width": 390,
       "overflow": false,
       "heroMotion": true,
-      "initialLongestTask": 124,
+      "initialLongestTask": 126,
       "cls": 0,
       "badAssets": [],
       "orbitChanged": true,
       "selected": "Lavatório / BegeArraste para mudar o olhar",
       "interactionMaxDuration": 24,
       "gestureToPaintMs": [
-        37.40000000037253
+        13.200000001117587
       ]
     },
     {
       "width": 1440,
       "overflow": false,
       "heroMotion": true,
-      "initialLongestTask": 242,
+      "initialLongestTask": 169,
       "cls": 0,
       "badAssets": [],
       "orbitChanged": true,
       "selected": "Lavatório / BegeArraste para mudar o olhar",
-      "interactionMaxDuration": 24,
+      "interactionMaxDuration": 32,
       "gestureToPaintMs": [
-        21.59999999962747
+        13.400000000372529
       ]
     }
   ],

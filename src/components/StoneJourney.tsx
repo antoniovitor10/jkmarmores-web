@@ -27,6 +27,7 @@ export function StoneJourney() {
           </figure>)}
         </div>
         <div className="journey-progress" aria-hidden="true">{stoneJourney.map(step => <span key={step.id}><i /></span>)}</div>
+        <div className="journey-exit" aria-hidden="true" />
       </div>
     </div>
   </section>;
