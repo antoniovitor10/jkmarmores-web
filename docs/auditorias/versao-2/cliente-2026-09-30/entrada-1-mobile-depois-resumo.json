@@ -1,0 +1,454 @@
+{
+  "stage": "depois",
+  "environment": "Emulacao Chrome headless; Lighthouse mobile, throttling simulate; servidor local gzip; cache frio",
+  "lighthouseVersion": "13.5.0",
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "fetchTime": "2026-09-30T15:25:35.370Z",
+  "settings": {
+    "output": "json",
+    "maxWaitForFcp": 30000,
+    "maxWaitForLoad": 45000,
+    "pauseAfterFcpMs": 1000,
+    "pauseAfterLoadMs": 1000,
+    "networkQuietThresholdMs": 1000,
+    "cpuQuietThresholdMs": 1000,
+    "formFactor": "mobile",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "throttlingMethod": "simulate",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 390,
+      "height": 844,
+      "deviceScaleFactor": 2,
+      "disabled": false
+    },
+    "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+    "auditMode": false,
+    "gatherMode": false,
+    "clearStorageTypes": [
+      "file_systems",
+      "shader_cache",
+      "service_workers",
+      "cache_storage"
+    ],
+    "disableStorageReset": false,
+    "debugNavigation": false,
+    "channel": "node",
+    "usePassiveGathering": false,
+    "disableFullPageScreenshot": false,
+    "skipAboutBlank": false,
+    "blankPage": "about:blank",
+    "ignoreStatusCode": false,
+    "locale": "en-US",
+    "blockedUrlPatterns": null,
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "precomputedLanternData": null,
+    "onlyAudits": null,
+    "onlyCategories": [
+      "performance",
+      "accessibility",
+      "best-practices",
+      "seo"
+    ],
+    "skipAudits": null
+  },
+  "scores": {
+    "performance": 97,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 66
+  },
+  "lcpMs": 2406.1547499999997,
+  "fcpMs": 842.7585,
+  "tbtMs": 90,
+  "cls": 0,
+  "totalBytes": 248815,
+  "failures": [
+    {
+      "id": "unused-javascript",
+      "title": "Reduce unused JavaScript",
+      "displayValue": "Est savings of 54 KiB"
+    },
+    {
+      "id": "is-crawlable",
+      "title": "Page is blocked from indexing"
+    },
+    {
+      "id": "image-delivery-insight",
+      "title": "Improve image delivery",
+      "displayValue": "Est savings of 5 KiB"
+    },
+    {
+      "id": "legacy-javascript-insight",
+      "title": "Legacy JavaScript",
+      "displayValue": "Est savings of 13 KiB"
+    }
+  ],
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "h1Count": 1,
+      "h1": {
+        "x": 24,
+        "y": 104,
+        "width": 342,
+        "height": 80.6875,
+        "top": 104,
+        "right": 366,
+        "bottom": 184.6875,
+        "left": 24
+      },
+      "cta": {
+        "x": 24,
+        "y": 304.84375,
+        "width": 176.125,
+        "height": 49.59375,
+        "top": 304.84375,
+        "right": 200.125,
+        "bottom": 354.4375,
+        "left": 24
+      },
+      "resourcesAtLoad": [
+        {
+          "name": "/2/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+          "type": "link",
+          "bytes": 12136
+        },
+        {
+          "name": "/2/_next/static/media/work_sans_latin_300-s.p.35h9aksd24y8n.woff2",
+          "type": "link",
+          "bytes": 17224
+        },
+        {
+          "name": "/2/img/capa-editorial-mobile-390.avif",
+          "type": "link",
+          "bytes": 5335
+        },
+        {
+          "name": "/2/brand/jk-monograma-240.webp",
+          "type": "link",
+          "bytes": 5830
+        },
+        {
+          "name": "/2/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/2/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/2/_next/static/chunks/0hfc4g00wvfx1.js",
+          "type": "script",
+          "bytes": 45428
+        },
+        {
+          "name": "/2/_next/static/chunks/1_zyvh9gfci6v.js",
+          "type": "script",
+          "bytes": 1258
+        },
+        {
+          "name": "/2/_next/static/chunks/turbopack-1t-wo-rcwu_wk.js",
+          "type": "script",
+          "bytes": 4153
+        },
+        {
+          "name": "/2/_next/static/chunks/246rn6d01ymy4.js",
+          "type": "script",
+          "bytes": 4181
+        },
+        {
+          "name": "/2/_next/static/chunks/22i43cg4l4-dq.js",
+          "type": "script",
+          "bytes": 3908
+        },
+        {
+          "name": "/2/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        }
+      ],
+      "resourcesAfterIdle": [
+        {
+          "name": "/2/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+          "type": "link",
+          "bytes": 12136
+        },
+        {
+          "name": "/2/_next/static/media/work_sans_latin_300-s.p.35h9aksd24y8n.woff2",
+          "type": "link",
+          "bytes": 17224
+        },
+        {
+          "name": "/2/img/capa-editorial-mobile-390.avif",
+          "type": "link",
+          "bytes": 5335
+        },
+        {
+          "name": "/2/brand/jk-monograma-240.webp",
+          "type": "link",
+          "bytes": 5830
+        },
+        {
+          "name": "/2/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/2/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/2/_next/static/chunks/0hfc4g00wvfx1.js",
+          "type": "script",
+          "bytes": 45428
+        },
+        {
+          "name": "/2/_next/static/chunks/1_zyvh9gfci6v.js",
+          "type": "script",
+          "bytes": 1258
+        },
+        {
+          "name": "/2/_next/static/chunks/turbopack-1t-wo-rcwu_wk.js",
+          "type": "script",
+          "bytes": 4153
+        },
+        {
+          "name": "/2/_next/static/chunks/246rn6d01ymy4.js",
+          "type": "script",
+          "bytes": 4181
+        },
+        {
+          "name": "/2/_next/static/chunks/22i43cg4l4-dq.js",
+          "type": "script",
+          "bytes": 3908
+        },
+        {
+          "name": "/2/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/2/_next/static/chunks/2kh_5iu72ww7_.js",
+          "type": "script",
+          "bytes": 2174
+        },
+        {
+          "name": "/2/brand/jk-textura-transparente.webp",
+          "type": "image",
+          "bytes": 22938
+        },
+        {
+          "name": "/2/_next/static/chunks/3l51yadlc27m0.js",
+          "type": "script",
+          "bytes": 45292
+        },
+        {
+          "name": "/2/img/sequencia-01-chapa-1200.avif",
+          "type": "img",
+          "bytes": 8641
+        },
+        {
+          "name": "/2/img/sequencia-02-borda-mobile-390.avif",
+          "type": "img",
+          "bytes": 2412
+        },
+        {
+          "name": "/2/img/sequencia-04-aplicada-1200.avif",
+          "type": "img",
+          "bytes": 10138
+        },
+        {
+          "name": "/2/img/sequencia-03-acabamento-1200.avif",
+          "type": "img",
+          "bytes": 7688
+        }
+      ],
+      "navigation": [
+        {
+          "bytes": 37583,
+          "loadMs": 59.80000000074506
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "h1Count": 1,
+      "h1": {
+        "x": 80,
+        "y": 128,
+        "width": 606.171875,
+        "height": 165.5625,
+        "top": 128,
+        "right": 686.171875,
+        "bottom": 293.5625,
+        "left": 80
+      },
+      "cta": {
+        "x": 1183.875,
+        "y": 338.828125,
+        "width": 176.125,
+        "height": 49.59375,
+        "top": 338.828125,
+        "right": 1360,
+        "bottom": 388.421875,
+        "left": 1183.875
+      },
+      "resourcesAtLoad": [
+        {
+          "name": "/2/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+          "type": "link",
+          "bytes": 12136
+        },
+        {
+          "name": "/2/img/material-detalhe-quente-1600.avif",
+          "type": "link",
+          "bytes": 19848
+        },
+        {
+          "name": "/2/_next/static/media/work_sans_latin_300-s.p.35h9aksd24y8n.woff2",
+          "type": "link",
+          "bytes": 17224
+        },
+        {
+          "name": "/2/brand/jk-monograma-240.webp",
+          "type": "link",
+          "bytes": 5830
+        },
+        {
+          "name": "/2/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/2/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/2/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/2/_next/static/chunks/turbopack-1t-wo-rcwu_wk.js",
+          "type": "script",
+          "bytes": 4153
+        },
+        {
+          "name": "/2/_next/static/chunks/0hfc4g00wvfx1.js",
+          "type": "script",
+          "bytes": 45428
+        },
+        {
+          "name": "/2/_next/static/chunks/22i43cg4l4-dq.js",
+          "type": "script",
+          "bytes": 3908
+        },
+        {
+          "name": "/2/_next/static/chunks/1_zyvh9gfci6v.js",
+          "type": "script",
+          "bytes": 1258
+        },
+        {
+          "name": "/2/_next/static/chunks/246rn6d01ymy4.js",
+          "type": "script",
+          "bytes": 4181
+        }
+      ],
+      "resourcesAfterIdle": [
+        {
+          "name": "/2/_next/static/media/source_latin_400-s.p.13kyc8slf6rj0.woff2",
+          "type": "link",
+          "bytes": 12136
+        },
+        {
+          "name": "/2/img/material-detalhe-quente-1600.avif",
+          "type": "link",
+          "bytes": 19848
+        },
+        {
+          "name": "/2/_next/static/media/work_sans_latin_300-s.p.35h9aksd24y8n.woff2",
+          "type": "link",
+          "bytes": 17224
+        },
+        {
+          "name": "/2/brand/jk-monograma-240.webp",
+          "type": "link",
+          "bytes": 5830
+        },
+        {
+          "name": "/2/_next/static/chunks/310vm2bl3xxpt.js",
+          "type": "link",
+          "bytes": 2270
+        },
+        {
+          "name": "/2/_next/static/chunks/19mx3mg6lkumu.js",
+          "type": "script",
+          "bytes": 7914
+        },
+        {
+          "name": "/2/_next/static/chunks/0bma92pht_c97.js",
+          "type": "script",
+          "bytes": 71928
+        },
+        {
+          "name": "/2/_next/static/chunks/turbopack-1t-wo-rcwu_wk.js",
+          "type": "script",
+          "bytes": 4153
+        },
+        {
+          "name": "/2/_next/static/chunks/0hfc4g00wvfx1.js",
+          "type": "script",
+          "bytes": 45428
+        },
+        {
+          "name": "/2/_next/static/chunks/22i43cg4l4-dq.js",
+          "type": "script",
+          "bytes": 3908
+        },
+        {
+          "name": "/2/_next/static/chunks/1_zyvh9gfci6v.js",
+          "type": "script",
+          "bytes": 1258
+        },
+        {
+          "name": "/2/_next/static/chunks/246rn6d01ymy4.js",
+          "type": "script",
+          "bytes": 4181
+        },
+        {
+          "name": "/2/_next/static/chunks/2kh_5iu72ww7_.js",
+          "type": "script",
+          "bytes": 2174
+        },
+        {
+          "name": "/2/_next/static/chunks/3l51yadlc27m0.js",
+          "type": "script",
+          "bytes": 45292
+        }
+      ],
+      "navigation": [
+        {
+          "bytes": 37583,
+          "loadMs": 37.69999999925494
+        }
+      ]
+    }
+  ]
+}

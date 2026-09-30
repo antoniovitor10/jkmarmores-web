@@ -22,7 +22,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   const address = endereco && [endereco.logradouro, endereco.numero, endereco.bairro, endereco.cidade, endereco.uf].every(item => typeof item === "string")
     ? { "@type": "PostalAddress", streetAddress: `${endereco.logradouro}, ${endereco.numero}, ${endereco.bairro}`, addressLocality: endereco.cidade, addressRegion: endereco.uf, addressCountry: "BR" } : undefined;
   const dadosEmpresa = !isPendente(empresa.nome) && !isPendente(empresa.telefone) && !isPendente(empresa.endereco) && !isPendente(empresa.cidade)
-    ? { "@context": "https://schema.org", "@type": "LocalBusiness", "@id": `${siteUrl}/#empresa`, name: empresa.nome, url: siteUrl, telephone: `+55${empresa.telefone.replace(/\D/g, "")}`, address }
+    ? { "@context": "https://schema.org", "@type": "LocalBusiness", "@id": `${siteUrl}/#empresa`, name: empresa.nome, url: siteUrl, telephone: `+55${empresa.telefone.replace(/\D/g, "")}`, address, foundingDate: empresa.fundacao, areaServed: empresa.areaAtendida?.filter(item => typeof item === 'string') }
     : null;
   return <html lang="pt-BR"><body className={`${homeDisplay.variable} ${homeBody.variable}`}>
     <a className="skip-link" href="#conteudo">Ir para o conteúdo</a>

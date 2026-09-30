@@ -1,0 +1,351 @@
+[
+  {
+    "width": 390,
+    "mode": "normal",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 354.4375,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": true,
+    "stages": [
+      {
+        "step": "0",
+        "title": "Chapa",
+        "clip": "none"
+      },
+      {
+        "step": "1",
+        "title": "Borda",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "2",
+        "title": "Acabamento",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "3",
+        "title": "Peça aplicada",
+        "clip": "inset(0%)"
+      }
+    ],
+    "lcp": 2916,
+    "cls": 0,
+    "clsSources": [],
+    "long": [
+      {
+        "at": 84.79999999888241,
+        "ms": 65
+      },
+      {
+        "at": 176.2999999988824,
+        "ms": 165
+      },
+      {
+        "at": 477.09999999962747,
+        "ms": 101
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 56
+      },
+      {
+        "name": "pointerup",
+        "ms": 56
+      },
+      {
+        "name": "click",
+        "ms": 56
+      },
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      },
+      {
+        "name": "pointerdown",
+        "ms": 32
+      },
+      {
+        "name": "pointerup",
+        "ms": 32
+      },
+      {
+        "name": "click",
+        "ms": 32
+      },
+      {
+        "name": "keydown",
+        "ms": 24
+      },
+      {
+        "name": "keyup",
+        "ms": 16
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 1440,
+    "mode": "normal",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 388.421875,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": true,
+    "stages": [
+      {
+        "step": "0",
+        "title": "Chapa",
+        "clip": "none"
+      },
+      {
+        "step": "1",
+        "title": "Borda",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "2",
+        "title": "Acabamento",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "3",
+        "title": "Peça aplicada",
+        "clip": "inset(0%)"
+      }
+    ],
+    "lcp": 1156,
+    "cls": 0,
+    "clsSources": [],
+    "long": [
+      {
+        "at": 77.29999999888241,
+        "ms": 55
+      },
+      {
+        "at": 152.7999999988824,
+        "ms": 136
+      },
+      {
+        "at": 408.59999999962747,
+        "ms": 99
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 32
+      },
+      {
+        "name": "pointerup",
+        "ms": 32
+      },
+      {
+        "name": "click",
+        "ms": 32
+      },
+      {
+        "name": "pointerdown",
+        "ms": 16
+      },
+      {
+        "name": "pointerup",
+        "ms": 16
+      },
+      {
+        "name": "click",
+        "ms": 16
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "reduced",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 354.4375,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": false,
+    "stages": [],
+    "lcp": 168,
+    "cls": 0,
+    "clsSources": [],
+    "long": [
+      {
+        "at": 84.09999999962747,
+        "ms": 64
+      },
+      {
+        "at": 167.19999999925494,
+        "ms": 124
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "save-data",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 354.4375,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": false,
+    "stages": [],
+    "lcp": 144,
+    "cls": 0,
+    "clsSources": [],
+    "long": [
+      {
+        "at": 139.40000000037253,
+        "ms": 137
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      },
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "slow",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 354.4375,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": false,
+    "stages": [],
+    "lcp": 588,
+    "cls": 0,
+    "clsSources": [],
+    "long": [
+      {
+        "at": 328.59999999962747,
+        "ms": 226
+      },
+      {
+        "at": 1285.7000000011176,
+        "ms": 124
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 32
+      },
+      {
+        "name": "pointerup",
+        "ms": 32
+      },
+      {
+        "name": "click",
+        "ms": 32
+      },
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "no-js",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 354.4375,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": false,
+    "stages": [],
+    "errors": [],
+    "badAssetRequests": []
+  }
+]

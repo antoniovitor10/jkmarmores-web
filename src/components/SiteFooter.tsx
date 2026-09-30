@@ -23,5 +23,5 @@ export function SiteFooter() {
   </div><div hidden>{pending.map(description => <span key={description} data-pendente={description} />)}</div><div className="container footer-bottom"><span>JK Marmores e Granitos</span><span>{illustrationNotice}</span></div></footer>;
 }
 export function MobileQuoteDock() {
-  return <div className="mobile-quote-dock" data-visible="false" inert><a className="mobile-whatsapp" href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a></div>;
+  return <aside className="mobile-quote-dock" aria-label="Atendimento pelo WhatsApp" data-visible="false" inert><a className="mobile-whatsapp" href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a></aside>;
 }

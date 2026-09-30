@@ -2,6 +2,8 @@
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'C:/Users/Vitor/AppData/Roaming/npm/node_modules/@playwright/cli/node_modules/playwright');
 const fs = require('node:fs'), path = require('node:path'), assert = require('node:assert/strict');
 const base = process.env.QA_URL || 'http://127.0.0.1:3102/2/';
+const output = process.env.QA_OUTPUT_DIR || __dirname;
+fs.mkdirSync(output, { recursive: true });
 (async () => {
  const browser = await chromium.launch({headless:true, executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
  const results=[];
@@ -21,7 +23,7 @@ const base = process.env.QA_URL || 'http://127.0.0.1:3102/2/';
    },mode);
    const errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url())});page.on('request',r=>requests.push(r.url()));
    await page.goto(base,{waitUntil:'networkidle'});
-   await page.screenshot({path:path.join(__dirname,width+'-'+mode+'-capa.png')});
+   await page.screenshot({path:path.join(output,width+'-'+mode+'-capa.png')});
    const initial=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth,h1:document.querySelectorAll('h1').length,ctaBottom:document.querySelector('.home-hero .button').getBoundingClientRect().bottom,noindex:document.querySelector('meta[name=robots]').content.includes('noindex'),badLinks:[...document.querySelectorAll('a[href]')].filter(a=>a.origin===location.origin&&!a.pathname.startsWith('/2/')).map(a=>a.href)}));
    assert.equal(initial.overflow,false);assert.equal(initial.h1,1);assert.equal(initial.noindex,true);assert.equal(initial.badLinks.length,0);assert.ok(initial.ctaBottom<844);
    let enhanced=false,stages=[];
@@ -31,14 +33,14 @@ const base = process.env.QA_URL || 'http://127.0.0.1:3102/2/';
     enhanced=await page.locator('.journey-track').evaluate(r=>r.hasAttribute('data-enhanced'));
     if(mode==='normal'){
      assert.ok(enhanced,'jornada ativa');
-     await page.screenshot({path:path.join(__dirname,width+'-monograma.png')});
+     await page.screenshot({path:path.join(output,width+'-monograma.png')});
      for(const fraction of [.29,.50,.70,.93]){
       await page.evaluate(f=>{const r=document.querySelector('.journey-track');scrollTo(0,r.getBoundingClientRect().top+scrollY+(r.offsetHeight-innerHeight)*f)},fraction);
       await page.waitForTimeout(700);
       stages.push(await page.locator('[data-current="true"]').evaluate(f=>({step:f.dataset.frame,title:f.querySelector('h3').textContent,clip:getComputedStyle(f).clipPath})));
      }
      assert.deepEqual(stages.map(s=>s.step),['0','1','2','3']);
-     await page.screenshot({path:path.join(__dirname,width+'-jornada.png')});
+     await page.screenshot({path:path.join(output,width+'-jornada.png')});
     }else assert.equal(enhanced,false,mode);
     await page.locator('#configurador').scrollIntoViewIfNeeded();await page.waitForTimeout(500);
     await page.getByRole('button',{name:'Bege',exact:true}).click();
@@ -47,7 +49,8 @@ const base = process.env.QA_URL || 'http://127.0.0.1:3102/2/';
     await page.waitForFunction(()=>document.querySelector('[data-escolha]')?.getAttribute('data-escolha')==='lavatorio-bege',null,{timeout:10000});
     assert.equal(await page.locator('[data-escolha]').getAttribute('data-escolha'),'lavatorio-bege');
     assert.ok(decodeURIComponent(await page.getByRole('link',{name:'Pedir orçamento desta pedra'}).getAttribute('href')).includes('Lavatório / Bege'));
-    if(mode==='normal')await page.screenshot({path:path.join(__dirname,width+'-configurador.png')});
+    await page.locator('[data-escolha]').evaluate(async el => { await Promise.all(el.getAnimations({subtree:true}).map(animation => animation.finished)); });
+    if(mode==='normal')await page.screenshot({path:path.join(output,width+'-configurador.png')});
     if(width===390&&mode==='normal'){
      await page.evaluate(()=>scrollTo(0,0)); await page.locator('.mobile-nav summary').click();await page.waitForTimeout(200);assert.equal(await page.locator('main').evaluate(e=>e.inert),true);
      await page.keyboard.press('Escape');await page.waitForTimeout(200);assert.equal(await page.locator('main').evaluate(e=>e.inert),false);
@@ -62,6 +65,6 @@ const base = process.env.QA_URL || 'http://127.0.0.1:3102/2/';
    assert.equal(errors.length,0,JSON.stringify(errors));
    await ctx.close();
   }
- }finally{await browser.close();fs.writeFileSync(path.join(__dirname,'qa.json'),JSON.stringify(results,null,2));}
+ }finally{await browser.close();fs.writeFileSync(path.join(output,'qa.json'),JSON.stringify(results,null,2));}
 })().catch(e=>{console.error(e);process.exitCode=1;});
 

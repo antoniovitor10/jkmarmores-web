@@ -201,3 +201,12 @@ Vídeos da jornada já pagos, tratados localmente por scripts/editorial-videos.m
 
 ## 28/09: unidade quente da jornada, entrega final
 Sem geração, request_id ou custo novo (US$ 0). Os quatro quadros e o recorte móvel 02 recebem Sharp editorial com saturação 0,86, ganho RGB 0,94/0,89/0,83 e offset 11/10/9; grão fino determinista já descrito. Apenas derivados, originais preservados. Os oito vídeos existentes recebem o mesmo balanço em FFmpeg (eq saturation + lutrgb), H.264 CRF20, GOP6, faststart, sem áudio. Desktop total 1.186.831 B; celular 940.838 B/720p. Scripts editorial-image.mjs, build-images.mjs e editorial-videos.mjs. Capa permanece fotografia editorial estática, sem vídeo na entrada. Aviso IA único preservado.
+
+## 30/09: tipografia da versão 2, após feedback do Vitor
+
+Work Sans Light 300, The Work Sans Project Authors (Wei Huang): [fonte no Google Fonts](https://github.com/google/fonts/tree/main/ofl/worksans), [licença SIL OFL 1.1](https://raw.githubusercontent.com/google/fonts/main/ofl/worksans/OFL.txt), cópia integral em `public/fonts/WorkSans-OFL.txt`. Instância estática do eixo wght=300, subset Latin-1 com português e pontuação U+2000–206F, sem hinting, WOFF2 de 16.924 bytes. Reprodução em `scripts/subset-work-sans.py` a partir de `WorkSans[wght].ttf`. Source Sans 3 400 continua como corpo, subset de 11.836 bytes e licença já registrada acima. Total das duas fontes: 28.760 bytes, carregadas localmente por next/font/local, preload e fallback Arial com métricas ajustadas; nenhum pedido a Google Fonts em runtime. Bodoni Moda permanece apenas no acervo histórico, sem ser carregada. Custo US$ 0.
+
+Justificativa em três linhas:
+Work Sans Light traz títulos leves e um desenho sóbrio, próximo da clareza das referências de pedra e arquitetura.
+Caixa alta com espaçamento amplo marca a assinatura da JK; títulos longos usam leitura natural e menos espaço entre letras.
+Source Sans 3 mantém o texto confortável, enquanto os subsets locais preservam a entrega rápida e os acentos portugueses.

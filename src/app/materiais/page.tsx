@@ -1,18 +1,24 @@
-import { conteudo, telefoneUrl } from '@/content';
-import { institucional } from '@/content/institucional';
+import { conteudo } from '@/content';
+import { cliente } from '@/content/cliente';
 import { ContactPanel, Illustration, PageIntro } from '@/components/Institutional';
-import { PendenteTexto } from '@/components/PendenteTexto';
 import { SiteLink } from '@/components/SiteLink';
 import { metadataPagina, texto } from '@/lib/site';
 export const metadata = metadataPagina(conteudo.paginas.materiais.seo, '/materiais/');
 export default function Materiais() {
-  const materiais = conteudo.materiais.filter(item => item.confirmado);
-  return <main id="conteudo"><PageIntro label="MATERIAIS / CRITÉRIOS DE ESCOLHA" title="A pedra certa começa pelo seu projeto." description={texto(conteudo.paginas.materiais.introducao)} />
-    <section className="container section-space material-editorial"><Illustration id="sequencia-01-chapa" /><div className="material-criteria">{institucional.materiais.map((item,i) => <article key={item.titulo}><span>0{i+1}</span><div><h2>{item.titulo}</h2><p>{item.texto}</p></div></article>)}</div></section>
-    <section className="warm-section section-space"><div className="container catalog-status"><div><h2>Consulte os materiais<br />com a JK.</h2></div><div><p>O catálogo está sendo preparado com as informações da empresa. Enquanto isso, fale por telefone sobre o que você procura, sem presumir disponibilidade pelo nome ou pela imagem de uma pedra.</p><p className="editorial-note"><PendenteTexto valor={institucional.catalogo} /></p><a className="button" href={telefoneUrl}>Consultar por telefone</a></div></div>
-      {materiais.length > 0 && <div className="container card-grid">{materiais.map(item => <article className="card" key={item.slug}><h3><PendenteTexto valor={item.nome} /></h3><p><PendenteTexto valor={item.resumo} /></p><SiteLink href={`/materiais/${item.slug}/`}>Conhecer material</SiteLink></article>)}</div>}
+  return <main id="conteudo">
+    <PageIntro label="MATERIAIS" title={cliente.materiais.titulo} description={cliente.materiais.introducao} />
+    <div className="container materials-opening"><Illustration id="sequencia-01-chapa" /></div>
+    <section className="container section-space" aria-label="Categorias de materiais">
+      <ol className="material-categories">{conteudo.materiais.filter(item => item.confirmado).map((item, i) => <li key={item.slug} id={item.slug}>
+        <span className="category-number" aria-hidden="true">0{i + 1}</span>
+        <h2><SiteLink href={`/materiais/${item.slug}/`}>{texto(item.nome)}</SiteLink></h2>
+        <div><p>{texto(item.resumo)} {texto(item.descricao)}</p><SiteLink className="text-link" href={`/materiais/${item.slug}/`}>Conhecer esta categoria</SiteLink></div>
+      </li>)}</ol>
     </section>
-    <section className="container section-space about-editorial"><div><h2>Olhe de perto.<br />Confira a amostra.</h2><p>Uma tela ajuda a explorar referências. A escolha final pede a verificação da chapa, da superfície e do acabamento real.</p><p>Consulte as orientações do fornecedor sobre uso e cuidados, além dos acabamentos disponíveis para o material escolhido.</p><SiteLink className="text-link" href="/#configurador">Explorar a maquete em 3D</SiteLink></div><Illustration id="sequencia-02-borda" /></section>
+    <section className="warm-section section-space"><div className="container about-editorial">
+      <div><h2>{cliente.materiais.fechamento}</h2><p>{cliente.materiais.detalhes}</p><p>{cliente.materiais.assinatura}</p><SiteLink className="text-link" href="/#configurador">Veja referências no ambiente</SiteLink></div>
+      <Illustration id="sequencia-02-borda" />
+    </div></section>
     <ContactPanel />
   </main>;
 }

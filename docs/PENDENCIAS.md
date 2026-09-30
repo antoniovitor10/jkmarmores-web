@@ -48,7 +48,7 @@ Os registros detalhados seguem agrupados por assunto abaixo. Um item com status 
 | # | Item | Prioridade | Status | Fonte / observação |
 |---|---|---|---|---|
 | V1 | Logo em vetor (SVG, AI, PDF) | P0 | parcial | JPEG 1600×1200 recebido da cliente em 26/09/2026. Original em assets/brand/; recorte WebP sem redesenho no header e rodapé, resolução suficiente para 2x. Vetor oficial ainda pendente. Monograma SVG traçado manualmente do JPEG na rodada premium é PROVISÓRIO, a substituir pelo original; textura vem da própria logo. |
-| V2 | Cores e fontes da marca, se existirem | P1 | parcial | Paleta derivada do JPEG: preto/grafite, pedra quente e caramelo. Direção editorial Bodoni Moda/Source Sans 3 e papel quente aplicada por decisão do Vitor em 28/09; não são fontes oficiais da marca. Manual ou fontes oficiais da marca não recebidos. |
+| V2 | Cores e fontes da marca, se existirem | P1 | parcial | Paleta derivada do JPEG: preto/grafite, pedra quente e caramelo. Na versão 2, Bodoni Moda substituída por Work Sans Light/Source Sans 3 em 30/09, a pedido do Vitor; papel quente preservado. Licenças livres OFL e subsets locais em public/fonts/, registro em docs/proposta/assets-licencas.md. Não são fontes oficiais da marca. Manual ou fontes oficiais da marca não recebidos. |
 | V3 | Fotos de trabalhos reais, com autorização de uso e, se possível, local e material de cada uma | P0 | aberto | Cliente informou em 26/09 que vai providenciar; nenhuma imagem ilustrativa apresentada como obra. |
 | V4 | Fotos das chapas/amostras dos materiais (para catálogo e texturas do 3D) | P1 | aberto | |
 | V5 | Fotos da equipe, da oficina ou da fachada | P2 | aberto | |

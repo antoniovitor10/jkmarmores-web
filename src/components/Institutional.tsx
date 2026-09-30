@@ -18,6 +18,6 @@ export function RequestSteps() {
 export function ContactPanel() {
   return <section className="contact-panel"><div className="container contact-grid"><div><h2>Vamos conversar<br />sobre seu projeto?</h2><p>Comece pelo WhatsApp ou telefone. Conte sua ideia e consulte as possibilidades com a JK.</p><a className="contact-phone" href={telefoneUrl}><PendenteTexto valor={conteudo.empresa.telefone} /></a><a className="text-link" href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a></div><div className="address-panel"><address><PendenteTexto valor={conteudo.empresa.endereco} /></address><p>Para visitar ou consultar atendimento em outra cidade, fale com a JK antes de se deslocar.</p><p className="editorial-note"><PendenteTexto valor={conteudo.empresa.regiaoAtendida} /></p></div></div></section>;
 }
-export function PageIntro({ title, description }: { label: string; title: string; description: string }) {
-  return <header className="institutional-intro"><div className="container"><h1>{title}</h1><p className="intro-description">{description}</p></div></header>;
+export function PageIntro({ title, description, titleClassName }: { label: string; title: string; description: string; titleClassName?: string }) {
+  return <header className="institutional-intro"><div className="container"><h1 className={titleClassName}>{title}</h1><p className="intro-description">{description}</p></div></header>;
 }
