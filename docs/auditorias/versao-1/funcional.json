@@ -1,0 +1,330 @@
+{
+  "environment": "Chrome headless, CPU 4x, viewport 390x844; gestos por CDP, sem dispositivo físico",
+  "pages": [
+    {
+      "width": 390,
+      "overflow": false,
+      "h1": 1,
+      "robots": "noindex, nofollow",
+      "background": "rgb(16, 16, 15)",
+      "brokenImages": []
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "h1": 1,
+      "robots": "noindex, nofollow",
+      "background": "rgb(16, 16, 15)",
+      "brokenImages": []
+    },
+    {
+      "route": "/1/sobre/",
+      "overflow": false,
+      "h1": 1,
+      "canonical": "https://jkmarmores.com.br/1/sobre/"
+    },
+    {
+      "route": "/1/materiais/",
+      "overflow": false,
+      "h1": 1,
+      "canonical": "https://jkmarmores.com.br/1/materiais/"
+    },
+    {
+      "route": "/1/contato/",
+      "overflow": false,
+      "h1": 1,
+      "canonical": "https://jkmarmores.com.br/1/contato/"
+    },
+    {
+      "route": "/1/galeria/",
+      "overflow": false,
+      "h1": 1,
+      "canonical": "https://jkmarmores.com.br/1/galeria/"
+    },
+    {
+      "route": "/1/aplicacoes/",
+      "overflow": false,
+      "h1": 1,
+      "canonical": "https://jkmarmores.com.br/1/aplicacoes/"
+    }
+  ],
+  "errors": [],
+  "badPaths": [],
+  "menuOpen": true,
+  "menuEscClosed": true,
+  "selected": "Lavatório / Rosado",
+  "whatsapp": "https://wa.me/5511967976902?text=Ol%C3%A1%2C%20JK!%20Gostei%20desta%20refer%C3%AAncia%3A%20Lavat%C3%B3rio%20%2F%20Rosado.%20Podemos%20conversar%20sobre%20um%20or%C3%A7amento%3F",
+  "dockBeforeSelectorCta": "true",
+  "dockWithSelectorCta": "false",
+  "motion": {
+    "panelTransform": "translate(0%, -4%) scale(1.08, 1.08)",
+    "signatureTransform": "translate3d(0px, 0.5675px, 0px) scale(0.9989, 0.9989)",
+    "videoCount": 0,
+    "tasks": [
+      {
+        "start": 117.39999999850988,
+        "duration": 69
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerover",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "mouseover",
+        "duration": 16
+      },
+      {
+        "name": "pointerdown",
+        "duration": 16
+      },
+      {
+        "name": "mousedown",
+        "duration": 16
+      },
+      {
+        "name": "pointerup",
+        "duration": 40
+      },
+      {
+        "name": "mouseup",
+        "duration": 40
+      },
+      {
+        "name": "click",
+        "duration": 40
+      },
+      {
+        "name": "pointerout",
+        "duration": 16
+      },
+      {
+        "name": "pointerleave",
+        "duration": 16
+      },
+      {
+        "name": "pointerover",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "mouseout",
+        "duration": 16
+      },
+      {
+        "name": "mouseover",
+        "duration": 16
+      },
+      {
+        "name": "keydown",
+        "duration": 24
+      },
+      {
+        "name": "keyup",
+        "duration": 24
+      },
+      {
+        "name": "pointerout",
+        "duration": 16
+      },
+      {
+        "name": "pointerleave",
+        "duration": 16
+      },
+      {
+        "name": "pointerover",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "mouseout",
+        "duration": 16
+      },
+      {
+        "name": "mouseover",
+        "duration": 16
+      },
+      {
+        "name": "pointerout",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerleave",
+        "duration": 24
+      },
+      {
+        "name": "pointerover",
+        "duration": 24
+      },
+      {
+        "name": "pointerenter",
+        "duration": 24
+      },
+      {
+        "name": "pointerenter",
+        "duration": 24
+      },
+      {
+        "name": "mouseout",
+        "duration": 24
+      },
+      {
+        "name": "mouseover",
+        "duration": 24
+      },
+      {
+        "name": "pointerout",
+        "duration": 24
+      },
+      {
+        "name": "pointerover",
+        "duration": 24
+      },
+      {
+        "name": "pointerenter",
+        "duration": 24
+      },
+      {
+        "name": "pointerenter",
+        "duration": 24
+      },
+      {
+        "name": "mouseout",
+        "duration": 24
+      },
+      {
+        "name": "mouseover",
+        "duration": 24
+      },
+      {
+        "name": "pointerout",
+        "duration": 16
+      },
+      {
+        "name": "pointerleave",
+        "duration": 16
+      },
+      {
+        "name": "pointerleave",
+        "duration": 16
+      },
+      {
+        "name": "pointerleave",
+        "duration": 16
+      },
+      {
+        "name": "pointerleave",
+        "duration": 16
+      },
+      {
+        "name": "pointerleave",
+        "duration": 16
+      },
+      {
+        "name": "pointerleave",
+        "duration": 16
+      },
+      {
+        "name": "pointerover",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "pointerenter",
+        "duration": 16
+      },
+      {
+        "name": "mouseout",
+        "duration": 16
+      },
+      {
+        "name": "mouseover",
+        "duration": 16
+      }
+    ]
+  },
+  "reduced": {
+    "transform": "",
+    "animation": "none"
+  },
+  "saveData": {
+    "transform": "",
+    "videoCount": 0
+  },
+  "noJavaScript": {
+    "h1": "Pedra que dá formaao seu espaço.",
+    "panels": 4,
+    "whatsapp": "https://wa.me/5511967976902?text=Oi%2C%20vi%20o%20site%20da%20JK%20e%20quero%20conversar%20sobre%20um%20or%C3%A7amento.",
+    "selectorImage": "/1/configurador/estatico/cozinha-rosado-1280.avif"
+  }
+}

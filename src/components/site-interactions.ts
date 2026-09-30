@@ -31,12 +31,12 @@ export function mountSiteInteractions() {
   if (hero) cover.observe(hero);
   const zones = new IntersectionObserver(entries => {
     for (const entry of entries) {
-      if (entry.target.matches('.home-contact .button') ? entry.intersectionRatio >= .5 : entry.intersectionRect.height >= innerHeight * .5) occupied.add(entry.target);
+      if (entry.target.matches('.home-contact .button,.selector-controls .button') ? entry.intersectionRatio >= .5 : entry.intersectionRect.height >= innerHeight * .5) occupied.add(entry.target);
       else occupied.delete(entry.target);
     }
     update();
   }, { threshold: Array.from({ length: 101 }, (_, i) => i / 100) });
-  document.querySelectorAll("#configurador, .home-contact .button, .contact-panel, .contact-details, .form-layout").forEach(el => zones.observe(el));
+  document.querySelectorAll(".selector-controls .button, .home-contact .button, .contact-panel, .contact-details, .form-layout").forEach(el => zones.observe(el));
   const targets = [...document.querySelectorAll<HTMLElement>("main, .site-footer, .site-header .brand, .desktop-nav, .header-cta")];
   const previous = targets.map(el => el.inert);
   const toggle = () => { targets.forEach((el, i) => { el.inert = !!menu?.open || previous[i]; }); update(); };
