@@ -230,3 +230,67 @@ body:has(.home-page) > .site-footer { contain-intrinsic-block-size:auto 409px; }
 
 .site-footer h2 { font-family:var(--fonte-corpo); font-size:15px; font-weight:400; margin:0 0 24px; letter-spacing:0; }
 .home-contact { border-top:1px solid var(--cor-borda); }
+
+/* Versão 1: grafite, pedra quente e composição editorial contínua. */
+:root { --cor-fundo:#10100f; --cor-texto:#eee5dc; --cor-superficie:#1a1917; --cor-borda:#62564b; --cor-destaque:#d4b699; --cor-grafite:#10100f; --cor-papel:#10100f; --cor-caramelo:#c9ab91; --cor-muted:#b9aaa0; --botao-fundo:#c9ab91; --botao-texto:#151310; --botao-borda:#c9ab91; }
+html { color-scheme:dark; }
+body { background:#10100f; }
+h1,h2,h3 { text-wrap:balance; }
+button,a,summary { touch-action:manipulation; }
+.button:hover { background:#dfc5ad; color:#151310; }
+.site-header { background:#10100f; }
+.header-inner { min-height:80px; }
+body:has(.home-page) .header-inner { min-height:80px; }
+body:has(.home-page) .site-header { color:#eee5dc; }
+.site-footer { background:#080807; border-top:1px solid #3a332d; }
+.footer-grid h2 { font-family:var(--fonte-corpo); font-size:14px; letter-spacing:.05em; }
+.skip-link { background:#c9ab91; color:#151310; }
+.institutional-intro { padding-block:88px; }
+.institutional-intro h1 { color:#dfc5ad; }
+.editorial-image { overflow:clip; }
+.stone-signature { padding-block:clamp(88px,12vw,180px); }
+.signature-stage { display:grid; grid-template-columns:1.2fr 1fr; gap:120px; align-items:center; }
+.signature-brand { text-align:center; }
+.signature-brand img { width:min(100%,400px); height:auto; margin:auto; display:block; }
+.signature-brand p { margin:30px 0 0; font-size:12px; letter-spacing:.32em; color:#c9ab91; }
+.signature-copy h2 { font-size:clamp(52px,5.5vw,80px); margin:0 0 28px; color:#dfc5ad; }
+.signature-copy p { max-width:32ch; color:var(--cor-muted); }
+.stone-heading { display:flex; gap:40px; align-items:baseline; justify-content:space-between; padding-bottom:40px; }
+.stone-heading h2 { margin:0; }
+.stone-heading p { color:var(--cor-muted); font-size:14px; }
+.stone-panel { position:relative; margin:0; height:88svh; min-height:540px; overflow:clip; background:#151310; }
+.stone-panel-image { position:absolute; inset:0; }
+.stone-panel picture,.stone-panel img { display:block; height:100%; width:100%; }
+.stone-panel img { object-fit:cover; }
+.stone-panel::after { content:""; position:absolute; inset:0; background:linear-gradient(0deg,rgba(9,8,7,.94),rgba(9,8,7,.15) 40%,transparent 65%); pointer-events:none; }
+.stone-panel figcaption { position:absolute; bottom:56px; inset-inline:0; z-index:1; display:flex; gap:40px; align-items:flex-start; }
+.stone-panel h3 { font-size:clamp(48px,5vw,74px); margin:0 0 14px; }
+.stone-panel figcaption p { margin:0; color:#e4d8ce; }
+.stone-index { padding-top:13px; font-size:11px; letter-spacing:.18em; color:#ddc1a8; min-width:64px; }
+.stone-selector { display:grid; grid-template-columns:minmax(0,2.7fr) minmax(240px,1fr); gap:40px; align-items:center; margin-top:32px; }
+.selector-image { position:relative; background:#1a1917; overflow:clip; }
+.selector-image img { width:100%; height:auto; aspect-ratio:16/10; object-fit:cover; display:block; animation:stone-swap 240ms ease-out; }
+.selector-caption { position:absolute; inset:auto 0 0; padding:32px 24px 20px; background:linear-gradient(transparent,rgba(8,8,7,.85)); font-size:13px; color:#eee5dc; }
+.selector-controls fieldset { border:0; padding:0; margin:0 0 32px; display:flex; flex-wrap:wrap; gap:8px; }
+.selector-controls legend { padding:0 0 16px; font-size:12px; letter-spacing:.1em; color:#d4b699; }
+.selector-controls button { background:transparent; color:#ddd0c4; border:1px solid #62564b; font-size:13px; padding:12px 14px; }
+.selector-controls button[aria-pressed="true"] { border-color:#dfc5ad; background:#30281f; color:#f4e9dc; }
+.selector-controls button:hover { border-color:#dfc5ad; }
+.selector-controls p { font-size:12px; color:var(--cor-muted); max-width:30ch; }
+.selector-controls .button { width:100%; }
+.stone-swatch { gap:8px; }
+.stone-swatch span { display:block; width:16px; height:16px; border-radius:50%; border:1px solid #b6a79a; }
+.stone-swatch [data-tone="rosado"] { background:#bd8b75; }
+.stone-swatch [data-tone="bege"] { background:#dcccb1; }
+.stone-swatch [data-tone="escuro"] { background:#393531; }
+.request-story { border-top:1px solid #3a332d; }
+.home-page > #orcamento { background:#1a1714; }
+.home-contact-grid { text-align:center; padding-block:24px; }
+.home-contact-grid h2,.home-contact-grid p:not(.eyebrow) { margin-inline:auto; }
+.home-contact-grid h2 { color:#dfc5ad; }
+.contact-panel { border-top:1px solid #3a332d; }
+@keyframes stone-swap { from { opacity:.65; } to { opacity:1; } }
+@media(min-width:801px) { .mobile-quote-dock { display:block; position:fixed; right:24px; bottom:24px; z-index:30; opacity:0; visibility:hidden; transition:opacity 200ms; } .mobile-quote-dock[data-visible="true"] { opacity:1; visibility:visible; } .mobile-whatsapp { background:#c9ab91; color:#151310; border-radius:28px; padding:16px 24px; text-decoration:none; display:block; font-size:14px; } }
+@media(max-width:800px) { body:has(.home-page) .header-inner,.header-inner { min-height:64px; } .signature-stage { gap:48px; } .stone-selector { grid-template-columns:1fr; gap:24px; } .selector-controls { display:grid; grid-template-columns:1fr 1fr; column-gap:16px; } .selector-controls fieldset { margin-bottom:20px; } .selector-controls .button { align-self:center; } .stone-panel { min-height:480px; } }
+@media(max-width:700px) { .signature-stage { grid-template-columns:1fr; gap:64px; } .signature-brand img { width:230px; } .signature-copy h2 { font-size:52px; } .signature-copy p { max-width:36ch; } .stone-heading { display:block; } .stone-heading h2 { font-size:42px; } .stone-heading p { margin:20px 0 0; } .stone-panel { height:78svh; min-height:480px; } .stone-panel figcaption { bottom:44px; gap:20px; } .stone-panel h3 { font-size:46px; } .stone-panel figcaption p { font-size:14px; max-width:24ch; } .stone-index { min-width:48px; font-size:10px; } .selector-image img { aspect-ratio:4/3; } .selector-controls { display:block; } .selector-controls fieldset { margin:0 0 24px; } .selector-controls p { max-width:none; } .selector-controls .button { width:auto; } .split-heading { gap:24px; } .home-contact-grid h2 { font-size:48px; } .signature-brand p { font-size:10px; } }
+@media(prefers-reduced-motion:reduce) { .selector-image img { animation:none; } }

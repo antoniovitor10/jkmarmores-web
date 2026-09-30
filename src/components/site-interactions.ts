@@ -18,7 +18,7 @@ export function mountSiteInteractions() {
         if (!disposed) motion = mountPageMotion();
       });
     }, { rootMargin: '300px 0px' });
-    document.querySelectorAll('.journey-heading,.editorial-image').forEach(el => nearby!.observe(el));
+    document.querySelectorAll('.stone-signature,.journey-heading,.editorial-image').forEach(el => nearby!.observe(el));
   });
   const dock = document.querySelector<HTMLElement>(".mobile-quote-dock");
   const hero = document.querySelector(".prologo, .home-hero");

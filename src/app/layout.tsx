@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter, MobileQuoteDock } from "@/components/SiteFooter";
 import { JsonLd } from "@/components/JsonLd";
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   icons: { icon: "data:," },
   robots: isHomolog ? { index: false, follow: false } : { index: true, follow: true },
 };
+export const viewport: Viewport = { themeColor: '#10100f' };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const empresa = conteudo.empresa;

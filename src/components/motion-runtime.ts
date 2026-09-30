@@ -1,7 +1,5 @@
-import { gsap } from 'gsap';
+﻿import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { mountJourney } from './journey-motion';
-import { motionNetworkPolicy, type MotionConnection } from '@/lib/motion-network';
 
 export { gsap, ScrollTrigger };
 gsap.registerPlugin(ScrollTrigger);
@@ -9,36 +7,28 @@ ScrollTrigger.config({ ignoreMobileResize: true });
 
 export function mountPageMotion() {
   const mm = gsap.matchMedia();
-  const journey = document.querySelector<HTMLElement>('.journey-track');
-  mm.add('(prefers-reduced-motion: no-preference)', () => {
-    const connection = (navigator as Navigator & { connection?: MotionConnection }).connection;
-    let stopJourney = () => {};
-    const configure = () => {
-      stopJourney();
-      stopJourney = journey && motionNetworkPolicy(connection) === 'allowed' ? mountJourney(journey) : () => {};
-    };
-    configure();
-    connection?.addEventListener('change', configure);
-    const ctx = gsap.context(() => {});
-    const observer = new IntersectionObserver(entries => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue;
-        observer.unobserve(entry.target);
-        ctx.add(() => {
-          const el = entry.target as HTMLElement;
-          if (el.matches('.editorial-image')) {
-            if (entry.boundingClientRect.top < innerHeight) return;
-            const tl = gsap.timeline({ scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
-            tl.fromTo(el, { opacity: .8, y: 12 }, { opacity: 1, y: 0, duration: 1.2, ease: 'power1.out' })
-              .fromTo(el.querySelector('img'), { scale: 1.015 }, { scale: 1, duration: 1.2, ease: 'power1.out' }, 0);
-          }
-        });
-      }
-    }, { rootMargin: '50% 0px' });
-    document.querySelectorAll('.editorial-image').forEach(el => {
-      if (!el.matches('.editorial-image') || !el.closest('#configurador')) observer.observe(el);
+  mm.add({ full: '(prefers-reduced-motion: no-preference)', mobile: '(max-width: 700px)' }, context => {
+    if (!context.conditions?.full) return;
+    const mobile = context.conditions.mobile;
+    const signature = document.querySelector('.stone-signature');
+    if (signature) {
+      const timeline = gsap.timeline({ scrollTrigger: { trigger: signature, start: 'top bottom', end: 'center center', scrub: true } });
+      timeline.fromTo('.signature-brand', { y: 50, scale: .9 }, { y: 0, scale: 1, ease: 'none', duration: 1 }, 0)
+        .fromTo('.signature-copy h2', { y: 28 }, { y: 0, ease: 'none', duration: 1 }, 0);
+    }
+    document.querySelectorAll<HTMLElement>('.stone-panel').forEach(panel => {
+      const media = panel.querySelector('.stone-panel-image');
+      const caption = panel.querySelector('figcaption');
+      const timeline = gsap.timeline({ scrollTrigger: { trigger: panel, start: 'top bottom', end: 'bottom top', scrub: true,
+        onToggle: self => { if (media instanceof HTMLElement) media.style.willChange = self.isActive ? 'transform' : 'auto'; }
+      }});
+      timeline.fromTo(media, { yPercent: -4, scale: 1.08 }, { yPercent: 4, scale: 1.08, ease: 'none', duration: 1 }, 0)
+        .fromTo(caption, { y: mobile ? 24 : 40 }, { y: mobile ? -12 : -24, ease: 'none', duration: 1 }, 0);
     });
-    return () => { stopJourney(); connection?.removeEventListener('change', configure); observer.disconnect(); ctx.revert(); };
+    document.querySelectorAll<HTMLElement>('.editorial-image,.selector-image').forEach(el => {
+      if (el.getBoundingClientRect().top < innerHeight) return;
+      gsap.fromTo(el, { clipPath: 'inset(0 0 12% 0)' }, { clipPath: 'inset(0 0 0% 0)', duration: .9, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
+    });
   });
   return () => mm.revert();
 }
