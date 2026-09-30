@@ -1,8 +1,9 @@
 import { pendente } from './pendente';
+import { cliente } from './cliente';
 
 export const institucional = {
   contatoHome: { titulo: 'Sua ideia começa aqui.', texto: 'Mande uma foto ou a medida aproximada e converse com a JK sobre o seu espaço.' },
-  apresentacao: 'A JK Marmores e Granitos é uma marmoraria em Barueri, no bairro Parque Viana. Conheça nosso endereço e fale por telefone sobre o seu projeto.',
+  apresentacao: cliente.apresentacao,
   hero: { titulo: 'Pedra que dá forma ao seu espaço.', local: 'Barueri, São Paulo', texto: 'Mande uma foto ou a medida do seu espaço e converse com a JK.' },
   jornadaCta: { texto: 'Chamar no WhatsApp', mensagem: 'Oi, vi as referências no site da JK e quero conversar sobre uma pedra para meu espaço.' },
   materiais: [
@@ -16,8 +17,8 @@ export const institucional = {
     { titulo: 'Chame a JK', texto: 'Envie sua ideia pelo WhatsApp e consulte materiais, serviços e próximos passos antes de definir o projeto.' },
   ],
   oferta: pendente('confirmar lista de serviços e aplicações executados pela JK'),
-  catalogo: pendente('receber lista de materiais, nomes comerciais e acabamentos trabalhados pela JK'),
-  historia: pendente('receber história, trajetória e apresentação da equipe da JK'),
+  catalogo: pendente('confirmar nomes comerciais de pedras e acabamentos trabalhados pela JK'),
+  historia: cliente.apresentacao,
   processo: pendente('confirmar etapas de atendimento, medição, produção e instalação da JK'),
   obras: pendente('receber fotos de obras reais e autorização de uso'),
 };

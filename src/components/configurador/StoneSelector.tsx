@@ -26,7 +26,7 @@ export function StoneSelector() {
     <div className="selector-controls">
       <fieldset><legend>Ambiente</legend>{ambientesConfigurador.map(item => <button key={item.id} type="button" aria-pressed={choice.ambiente === item.id} onClick={() => void select({...choice, ambiente:item.id})}>{item.nome}</button>)}</fieldset>
       <fieldset><legend>Tom da pedra</legend>{materiaisConfigurador.map(item => <button className="stone-swatch" key={item.id} type="button" aria-pressed={choice.material === item.id} onClick={() => void select({...choice, material:item.id})}><span data-tone={item.id} aria-hidden="true" />{item.nome}</button>)}</fieldset>
-      <p>Materiais e acabamentos a confirmar com a JK.</p>
+      <p>Composição ilustrativa. Consulte pedras específicas, disponibilidade e acabamentos com a JK.</p>
       <a className="button" href={orcamentoConfigurador(choice)}>Chamar no WhatsApp</a>
     </div>
   </div>;

@@ -302,3 +302,42 @@ body:has(.home-page) .site-header { color:#eee5dc; }
 .signature-stage > h2 { font-size:clamp(52px,5.5vw,80px); margin:0; color:#dfc5ad; }
 .signature-copy p { max-width:42ch; font-size:18px; }
 @media(max-width:700px) { .prologo[data-enhanced="true"] { height:185svh; } .signature-stage { gap:32px; } .signature-stage > h2 { font-size:52px; } .signature-copy p { font-size:16px; } }
+
+/* Rodada 2: a mesma pedra, com cortes, luz e movimento de profundidade. */
+.contact-panel { color:var(--cor-texto); }
+.address-panel p { color:var(--cor-muted); }
+.signature-stage { grid-template-columns:1.45fr 1fr; gap:80px; }
+.signature-stage > h2 { font-size:clamp(44px,4.3vw,64px); line-height:1.15; }
+.signature-stage > h2 em { font-style:normal; color:#eee5dc; }
+.signature-copy .signature-date { font-size:11px; color:var(--cor-destaque); letter-spacing:.2em; margin-bottom:24px; }
+.light-transition { position:relative; overflow:clip; }
+.section-light { display:block; position:absolute; top:0; left:-10%; width:120%; height:180px; background:radial-gradient(ellipse at 50% 0,rgba(214,172,135,.2),transparent 70%); opacity:0; pointer-events:none; }
+.stone-panel-cut { position:absolute; inset:0; overflow:clip; }
+.stone-panel h3 { overflow:clip; padding-bottom:.12em; margin-bottom:calc(14px - .12em); }
+.stone-panel h3 > span { display:block; }
+.stone-index::after { content:""; display:block; height:1px; margin-top:18px; background:currentColor; transform-origin:left; }
+.home-materials > .text-link { margin-top:32px; }
+.material-collection { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0 32px; margin-top:32px; }
+.material-card { position:relative; isolation:isolate; overflow:clip; border-top:1px solid var(--cor-borda); padding:36px 12px 32px 0; }
+.material-number { display:block; color:var(--cor-destaque); font-size:11px; letter-spacing:.15em; margin-bottom:28px; }
+.material-card h3 { font-size:32px; line-height:1.15; max-width:22ch; min-height:2.3em; }
+.material-card p { color:var(--cor-muted); font-size:16px; max-width:36ch; }
+.material-card .text-link { font-size:14px; min-height:44px; padding:8px 0; display:inline-flex; align-items:center; }
+.materials-cover .editorial-image { margin:0; }
+.materials-cover .editorial-image img { width:100%; max-height:60svh; aspect-ratio:2/1; object-fit:cover; }
+.material-detail { display:grid; grid-template-columns:1fr 1fr; gap:100px; }
+.material-detail .lead { font-size:clamp(26px,2.4vw,36px); color:var(--cor-destaque); }
+.material-detail .text-link { display:block; width:fit-content; margin-top:24px; }
+.brand-statement p { font-family:var(--fonte-titulo); font-size:clamp(36px,4.5vw,66px); text-align:center; max-width:25ch; margin:auto; line-height:1.15; color:var(--cor-destaque); }
+.button,.selector-controls button,.material-card { position:relative; overflow:clip; }
+.button::before,.selector-controls button::before,.material-card::before { content:""; position:absolute; top:-40%; left:0; width:50%; height:180%; background:linear-gradient(100deg,transparent,rgba(255,224,193,.2),transparent); transform:translateX(-220%) rotate(12deg); opacity:0; pointer-events:none; }
+@keyframes grazing-light { 0% { transform:translateX(-220%) rotate(12deg); opacity:0; } 20% { opacity:1; } 100% { transform:translateX(280%) rotate(12deg); opacity:0; } }
+@media(prefers-reduced-motion:no-preference) {
+  .button:active::before,.button:focus-visible::before,.selector-controls button:active::before,.selector-controls button:focus-visible::before,.material-card:active::before,.material-card:focus-within::before { animation:grazing-light 750ms cubic-bezier(.22,.61,.36,1); }
+  @media(hover:hover) { .button:hover::before,.selector-controls button:hover::before,.material-card:hover::before { animation:grazing-light 900ms cubic-bezier(.22,.61,.36,1); } }
+}
+@media(max-width:1000px) { .material-collection { grid-template-columns:repeat(2,minmax(0,1fr)); } .signature-stage { gap:48px; } }
+@media(max-width:700px) { .signature-stage { grid-template-columns:1fr; gap:32px; } .signature-stage > h2 { font-size:42px; } .material-collection { grid-template-columns:1fr; margin-top:16px; } .material-card { padding:28px 8px 24px 0; } .material-number { margin-bottom:20px; } .material-card h3 { min-height:0; font-size:32px; } .material-detail { grid-template-columns:1fr; gap:40px; } .materials-cover .editorial-image img { aspect-ratio:4/3; } .institutional-intro { padding-block:64px; } }
+
+@media(prefers-reduced-motion:no-preference) { .button[data-gleam="true"]::before,.selector-controls button[data-gleam="true"]::before,.material-card[data-gleam="true"]::before { animation:grazing-light 750ms cubic-bezier(.22,.61,.36,1); } }
+body[data-motion-static="true"] *,body[data-motion-static="true"] *::before,body[data-motion-static="true"] *::after { animation:none !important; transition:none !important; }

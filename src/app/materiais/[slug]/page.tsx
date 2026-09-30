@@ -1,21 +1,25 @@
-import { notFound } from "next/navigation";
-import { conteudo } from "@/content";
-import { PageView } from "@/components/PageView";
-import { Configurador } from "@/components/configurador/Configurador";
-import { PendenteTexto } from "@/components/PendenteTexto";
-import { pendente } from "@/content/pendente";
-import { metadataPagina } from "@/lib/site";
+import { notFound } from 'next/navigation';
+import { conteudo } from '@/content';
+import { institucional } from '@/content/institucional';
+import { PageIntro, ContactPanel } from '@/components/Institutional';
+import { SiteLink } from '@/components/SiteLink';
+import { PendenteTexto } from '@/components/PendenteTexto';
+import { metadataPagina, texto } from '@/lib/site';
+import { linkWhatsApp } from '@/lib/whatsapp';
 
-export function generateStaticParams() { const publicados = conteudo.materiais.filter((item) => item.confirmado).map((item) => ({ slug: item.slug })); return publicados.length ? publicados : [{ slug: "pendente" }]; }
+export function generateStaticParams() { return conteudo.materiais.filter(item => item.confirmado).map(item => ({ slug: item.slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const item = conteudo.materiais.find((material) => material.slug === slug && material.confirmado);
-  return item ? metadataPagina(item.seo, `/materiais/${slug}/`) : metadataPagina({ titulo: pendente("material confirmado"), descricao: pendente("descrição de material confirmado") }, `/materiais/${slug}/`);
+  const item = conteudo.materiais.find(material => material.slug === slug && material.confirmado);
+  if (!item) notFound();
+  return metadataPagina(item.seo, `/materiais/${slug}/`);
 }
 export default async function MaterialPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const item = conteudo.materiais.find((material) => material.slug === slug && material.confirmado);
-  if (slug === "pendente" && !item) return <PageView pagina={{ titulo: pendente("material confirmado pela JK"), introducao: "Esta página será preenchida quando houver um material confirmado.", seo: { titulo: pendente("material confirmado"), descricao: pendente("descrição do material") }, secoes: [], cta: conteudo.paginas.materiais.cta }} />;
+  const item = conteudo.materiais.find(material => material.slug === slug && material.confirmado);
   if (!item) notFound();
-  return <PageView pagina={{ titulo: item.nome, introducao: item.resumo, seo: item.seo, secoes: [{ id: "detalhes", titulo: "Sobre o material", texto: item.descricao }], cta: item.cta }}><section><h2>Acabamentos</h2>{item.acabamentos.map((acabamento) => <p key={acabamento.slug}><PendenteTexto valor={acabamento.nome} /></p>)}</section><section><h2>Explore a chapa</h2><Configurador compact materialContext={typeof item.nome === "string" ? item.nome : undefined} /></section></PageView>;
+  return <main id="conteudo"><PageIntro label="MATERIAIS" title={texto(item.nome)} description={texto(item.resumo)} />
+    <section className="container section-space material-detail"><p className="lead">{texto(item.descricao)}</p><div><h2>A escolha começa pelo seu projeto.</h2><p>Converse com a JK sobre a pedra específica, a aplicação, a disponibilidade e os acabamentos. Confira a amostra real antes de decidir.</p><p className="editorial-note"><PendenteTexto valor={institucional.catalogo} /></p><a className="button" href={linkWhatsApp(item.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a><SiteLink className="text-link" href="/materiais/">Ver todos os materiais</SiteLink></div></section>
+    <ContactPanel />
+  </main>;
 }

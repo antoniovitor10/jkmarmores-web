@@ -19,7 +19,7 @@ export type Acabamento = { slug: string; nome: Texto; descricao?: Texto };
 export type Material = {
   slug: string;
   nome: Texto;
-  tipo: "granito" | "marmore" | "quartzito" | "quartzo" | "ultracompacto";
+  tipo: "granito" | "marmore" | "marmore-dolomitico" | "quartzito" | "quartzo" | "ultracompacto";
   confirmado: boolean;
   resumo: Texto;
   descricao: Texto;
@@ -69,6 +69,7 @@ export type Empresa = {
   enderecoDetalhado?: { logradouro?: Texto; numero?: Texto; complemento?: Texto; bairro?: Texto; cidade?: Texto; uf?: Texto; cep?: Texto; atendeNoLocal?: FatoBooleano };
   cidade: Texto;
   regiaoAtendida: Texto;
+  foundingDate?: string;
   areaAtendida?: Texto[];
   horario?: Texto;
   horarios?: { dia: Texto; abre?: Texto; fecha?: Texto; fechado?: FatoBooleano }[];

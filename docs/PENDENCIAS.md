@@ -12,7 +12,7 @@ Prioridade: **P0** bloqueia a publicação | **P1** bloqueia uma página ou seç
 | Prioridade | Itens abertos ou parciais | Efeito |
 |---|---|---|
 | P0 | D4 (CEP/visita), D9, O1 (serviços específicos), O2 (pedras específicas), V1 (vetor), V3, V6, V7 | Sem esses dados ou aprovações, o lançamento permanece bloqueado. D1, D5, T1 e T2 resolvidos. |
-| P1 | D2, D6, D10, O3, O4, O6, V2, V4, T3 | Segurar a página, seção ou funcionalidade que dependa de cada item. |
+| P1 | D2, D6, O3, O4, O6, V2, V4, T3 | Segurar a página, seção ou funcionalidade que dependa de cada item. |
 | P2 | D7, D8, O5, V5 | Melhorias condicionadas à confirmação. |
 
 Os registros detalhados seguem agrupados por assunto abaixo. Um item com status `pista` continua pendente até confirmação do Lucas.
@@ -73,3 +73,7 @@ Site anterior: existiu um WordPress de uma página em 2016 (Wayback). Não há U
 | T1 | Domínio e SSL | P0 | resolvido | DNS apontado e Let's Encrypt emitido (*.jkmarmores.com.br + apex, vence 25/12/2026). https ativo com 301 de http e www (26/09) |
 | T2 | Hospedagem e deploy | P0 | resolvido | Domínio criado no DirectAdmin; deploy automático via GitHub Actions funcionando desde 26/09 (docs/deploy.md) |
 | T3 | Acesso ao Google Search Console / Analytics, se existirem | P1 | aberto | |
+
+## Integração do texto da cliente — versão 1, 30/09/2026
+
+Texto de 28/09 integrado à home, Sobre Nós, Materiais e às seis páginas de categoria. Fundação em 2010 e área atendida também no SEO e JSON-LD. D3/D10 não geram mais marcadores. O2 mantém apenas pedras específicas e acabamentos pendentes; O1, fotos reais, CEP, visita e horário seguem sem confirmação. Nenhum serviço específico, obra ou foto real foi acrescentado.

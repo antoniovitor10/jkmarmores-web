@@ -1,5 +1,6 @@
 import type { ConteudoSite, Material, Aplicacao, PaginaInstitucional } from "@/lib/types";
 import { pendente } from "./pendente";
+import { cliente, materiaisCliente } from "./cliente";
 
 const ctaOrcamento = (origem: string) => ({
   texto: "Chamar no WhatsApp",
@@ -11,8 +12,8 @@ const paginas: ConteudoSite["paginas"] = {
     titulo: "Mármores e granitos em Barueri.",
     introducao: "A JK Marmores e Granitos está no Parque Viana, em Barueri/SP. Fale por telefone sobre o seu projeto.",
     seo: {
-      titulo: "Marmoraria em Barueri/SP | JK Marmores e Granitos",
-      descricao: "Conheça a JK Marmores e Granitos em Barueri/SP. Estrada dos Pinheiros, 379, Parque Viana. Ligue para (11) 96797-6902 e converse sobre seu projeto.",
+      titulo: "JK Mármores e Granitos | Barueri e São Paulo, desde 2010",
+      descricao: "Desde 2010, projetos residenciais, comerciais e industriais. Barueri, São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista. Fale com a JK.",
       canonicalPath: "/",
     },
     secoes: [
@@ -55,30 +56,30 @@ const paginas: ConteudoSite["paginas"] = {
     introducao: "A JK Marmores e Granitos é uma marmoraria localizada no Parque Viana, em Barueri/SP. Conheça os dados da empresa e os canais de contato.",
     seo: {
       titulo: "A empresa | JK Marmores e Granitos em Barueri",
-      descricao: "Conheça a JK Marmores e Granitos, marmoraria no Parque Viana, em Barueri/SP. Consulte endereço e telefone para conversar sobre seu projeto.",
+      descricao: "Desde 2010, a JK transforma pedras naturais em expressões de personalidade, sofisticação e design. Conheça nossa história e a região atendida.",
       canonicalPath: "/sobre/",
     },
     secoes: [
-      { id: "historia", titulo: "Quem somos", texto: pendente("receber história da empresa sem inventar anos de atuação ou equipe") },
+      { id: "historia", titulo: "Quem somos", texto: cliente.apresentacao },
       { id: "processo", titulo: "Como funciona o atendimento", texto: pendente("confirmar etapas de orçamento, medição, produção e instalação executadas pela empresa") },
       { id: "equipe", titulo: "Pessoas e oficina", texto: pendente("receber descrição ou fotos autorizadas da equipe, oficina ou fachada") },
-      { id: "regiao", titulo: "Área atendida", texto: pendente("confirmar cidades atendidas e se há atendimento presencial no endereço") },
+      { id: "regiao", titulo: "Área atendida", texto: cliente.regiao },
     ],
     cta: ctaOrcamento("sobre"),
   },
   materiais: {
     titulo: "Materiais para escolher com critério",
-    introducao: "A escolha passa pelo desenho da chapa, pelo uso e pelo acabamento. Reúna suas referências e consulte a JK sobre as opções para o seu projeto.",
+    introducao: cliente.materiaisIntro,
     seo: {
       titulo: "Materiais e acabamentos | JK Marmores e Granitos",
-      descricao: "Entenda diferenças gerais entre materiais, acabamento e cuidados. Consulte as opções confirmadas para o seu projeto.",
+      descricao: "Mármores, granitos, mármores dolomíticos, quartzitos naturais, quartzos e lâminas ultracompactas sinterizadas. Conheça os materiais da JK.",
       canonicalPath: "/materiais/",
     },
     secoes: [
-      { id: "catalogo", titulo: "Materiais disponíveis", texto: pendente("confirmar lista de materiais e nomes comerciais trabalhados pela empresa") },
+      { id: "catalogo", titulo: "Materiais disponíveis", texto: cliente.materiaisIntro },
       { id: "criterios", titulo: "O que observar", texto: "Pergunte sobre uso interno ou externo, incidência de calor, contato com alimentos, agentes de limpeza, variação de cor e veio e manutenção recomendada. A resposta depende da chapa e do fabricante." },
       { id: "acabamentos", titulo: "Acabamento muda a experiência de uso", texto: "Brilho, textura e tratamento de borda alteram aparência, toque e rotina de limpeza. Confirme quais acabamentos podem ser feitos no material escolhido." },
-      { id: "amostra", titulo: "Veja a amostra real", texto: "Imagens de tela e visualização 3D servem para explorar possibilidades. A cor e o desenho da chapa real devem ser conferidos antes da aprovação." },
+      { id: "amostra", titulo: "Veja a amostra real", texto: "Imagens de tela e composições ilustrativas servem para explorar possibilidades. A cor e o desenho da chapa real devem ser conferidos antes da aprovação." },
     ],
     cta: ctaOrcamento("materiais"),
   },
@@ -138,58 +139,11 @@ export const aberturaHome = {
   alt: "Estudo ilustrativo de uma bancada de pedra clara: veios delicados e borda em meia-esquadria sob luz lateral de manhã. Imagem gerada por IA, não representa obra da JK.",
 };
 
-const materiais: Material[] = [
-  {
-    slug: "granito", nome: "Granito", tipo: "granito", confirmado: false,
-    resumo: "Rocha natural que pode apresentar variação de cor e desenho entre chapas.",
-    descricao: "Granitos são rochas naturais com composições e aparências variadas. A escolha para uma bancada ou revestimento deve considerar a chapa específica, sua porosidade, o acabamento e as orientações de manutenção.",
-    seo: { titulo: "Granito: aparência, uso e cuidados", descricao: "Entenda pontos de escolha do granito e confira amostra, acabamento e cuidados da chapa antes do orçamento.", canonicalPath: "/materiais/granito/" },
-    acabamentos: [], aplicacoes: [],
-    caracteristicas: ["Desenho e tonalidade variam entre chapas.", pendente("confirmar nomes comerciais, chapas e acabamentos de granito oferecidos")],
-    cuidados: ["Limpe com produto recomendado para a pedra e evite assumir que todas as chapas têm a mesma absorção."],
-    cta: ctaOrcamento("material granito"),
-  },
-  {
-    slug: "marmore", nome: "Mármore", tipo: "marmore", confirmado: false,
-    resumo: "Rocha natural com veios e variação própria de cada chapa.",
-    descricao: "Mármores costumam conter minerais carbonáticos e podem reagir a ácidos. A indicação de uso depende da peça, do acabamento e da tolerância à manutenção; confirme a ficha da chapa antes de decidir.",
-    seo: { titulo: "Mármore: aparência, uso e cuidados", descricao: "Veja o que considerar ao escolher mármore: chapa real, sensibilidade a ácidos, acabamento e manutenção.", canonicalPath: "/materiais/marmore/" },
-    acabamentos: [], aplicacoes: [],
-    caracteristicas: ["Cada chapa tem veios próprios.", pendente("confirmar nomes comerciais, chapas e acabamentos de mármore oferecidos")],
-    cuidados: ["Evite contato prolongado com produtos ácidos e siga as instruções específicas do fornecedor."],
-    cta: ctaOrcamento("material mármore"),
-  },
-  {
-    slug: "quartzito", nome: "Quartzito", tipo: "quartzito", confirmado: false,
-    resumo: "Rocha natural cuja resistência e absorção devem ser verificadas por variedade e chapa.",
-    descricao: "Quartzitos apresentam desenhos naturais diversos. A composição, a absorção e a indicação para calor ou área externa variam; não basta o nome da categoria para escolher a aplicação.",
-    seo: { titulo: "Quartzito: aparência, uso e cuidados", descricao: "Conheça critérios para avaliar quartzito, acabamento e aplicação com base na chapa e na ficha técnica.", canonicalPath: "/materiais/quartzito/" },
-    acabamentos: [], aplicacoes: [],
-    caracteristicas: ["Variação natural de veios e cor.", pendente("confirmar nomes comerciais, chapas e acabamentos de quartzito oferecidos")],
-    cuidados: ["Confirme limpeza, impermeabilização e restrições com o fornecedor da chapa escolhida."],
-    cta: ctaOrcamento("material quartzito"),
-  },
-  {
-    slug: "quartzo", nome: "Quartzo industrializado", tipo: "quartzo", confirmado: false,
-    resumo: "Superfície industrializada com propriedades definidas pelo fabricante.",
-    descricao: "Superfícies de quartzo industrializado combinam minerais e ligantes. A tolerância a calor, luz solar e produtos de limpeza depende da marca e da linha; consulte a documentação do fabricante.",
-    seo: { titulo: "Quartzo industrializado: uso e cuidados", descricao: "Entenda critérios para escolher uma superfície de quartzo industrializado e confirme a ficha do fabricante.", canonicalPath: "/materiais/quartzo/" },
-    acabamentos: [], aplicacoes: [],
-    caracteristicas: ["Cores e padrões dependem da linha e do fabricante.", pendente("confirmar marcas, linhas e acabamentos de quartzo oferecidos")],
-    cuidados: ["Não apoie recipientes muito quentes sem proteção e siga a orientação da marca sobre exposição externa."],
-    cta: ctaOrcamento("material quartzo industrializado"),
-  },
-  {
-    slug: "ultracompacto", nome: "Ultracompacto", tipo: "ultracompacto", confirmado: false,
-    resumo: "Categoria de superfícies industrializadas com linhas e especificações distintas.",
-    descricao: "Materiais ultracompactos são fabricados por processos industriais e variam por marca, espessura e linha. Resistência, bordas, recortes e indicação de uso devem ser conferidos na ficha técnica do produto exato.",
-    seo: { titulo: "Ultracompacto: especificação e cuidados", descricao: "Compare as especificações da linha ultracompacta antes de definir uso, acabamento e manutenção.", canonicalPath: "/materiais/ultracompacto/" },
-    acabamentos: [], aplicacoes: [],
-    caracteristicas: ["Espessura e padrões variam por fabricante.", pendente("confirmar marcas, linhas e acabamentos de ultracompacto oferecidos")],
-    cuidados: ["Siga as recomendações de corte, instalação e limpeza da linha selecionada."],
-    cta: ctaOrcamento("material ultracompacto"),
-  },
-];
+const materiais: Material[] = materiaisCliente.map(item => ({
+  ...item, confirmado: true, acabamentos: [], aplicacoes: [],
+  seo: { titulo: item.nome + " | JK Mármores e Granitos", descricao: item.resumo + " " + item.descricao, canonicalPath: `/materiais/${item.slug}/` },
+  cta: ctaOrcamento(item.nome.toLowerCase()),
+}));
 
 const aplicacoes: Aplicacao[] = [
   {
@@ -237,7 +191,9 @@ export const conteudo: ConteudoSite = {
       atendeNoLocal: pendente("confirmar se recebe visitantes no endereço"),
     },
     cidade: "Barueri",
-    regiaoAtendida: pendente("confirmar região atendida além de Barueri"),
+    regiaoAtendida: cliente.regiao,
+    areaAtendida: cliente.areas,
+    foundingDate: cliente.fundacao,
     horario: pendente("confirmar dias e horários de atendimento"),
     perfilGoogleUrl: pendente("confirmar posse e URL do Perfil da Empresa no Google"),
   },

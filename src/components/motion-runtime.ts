@@ -44,17 +44,36 @@ export function mountPageMotion() {
       timeline.fromTo('.signature-stage > h2', { y: 28 }, { y: 0, ease: 'none', duration: 1 }, 0);
     }
     document.querySelectorAll<HTMLElement>('.stone-panel').forEach(panel => {
+      const cut = panel.querySelector('.stone-panel-cut');
       const media = panel.querySelector('.stone-panel-image');
       const caption = panel.querySelector('figcaption');
+      const title = caption?.querySelector('h3 > span');
+      const description = caption?.querySelector('p');
+      const index = caption?.querySelector('.stone-index');
       const timeline = gsap.timeline({ scrollTrigger: { trigger: panel, start: 'top bottom', end: 'bottom top', scrub: true,
         onToggle: self => { if (media instanceof HTMLElement) media.style.willChange = self.isActive ? 'transform' : 'auto'; }
       }});
-      timeline.fromTo(media, { yPercent: -4, scale: 1.08 }, { yPercent: 4, scale: 1.08, ease: 'none', duration: 1 }, 0)
-        .fromTo(caption, { y: mobile ? 24 : 40 }, { y: mobile ? -12 : -24, ease: 'none', duration: 1 }, 0);
+      timeline.fromTo(media, { yPercent: -5, scale: 1.12 }, { yPercent: 5, scale: 1.12, ease: 'none', duration: 1 }, 0)
+        .fromTo(cut, { clipPath: 'inset(0 0 0 36%)' }, { clipPath: 'inset(0 0 0 0%)', ease: 'none', duration: .24 }, 0)
+        .fromTo(caption, { y: mobile ? 24 : 40 }, { y: mobile ? -12 : -24, ease: 'none', duration: 1 }, 0)
+        .fromTo(title!, { yPercent: 105 }, { yPercent: 0, ease: 'power2.out', duration: .22 }, mobile ? .28 : .31)
+        .fromTo(index!, { opacity: .25, y: 10 }, { opacity: 1, y: 0, ease: 'none', duration: .2 }, mobile ? .30 : .33)
+        .fromTo(description!, { y: 20, opacity: .15 }, { y: 0, opacity: 1, ease: 'none', duration: .2 }, mobile ? .34 : .37);
     });
-    document.querySelectorAll<HTMLElement>('.editorial-image,.selector-image,.stone-panel-image').forEach(el => {
-      if (el.getBoundingClientRect().top < innerHeight) return;
-      gsap.fromTo(el, { clipPath: 'inset(0 0 12% 0)' }, { clipPath: 'inset(0 0 0% 0)', duration: .9, ease: 'power2.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
+    document.querySelectorAll<HTMLElement>('.light-transition').forEach(section => {
+      const light = section.querySelector('.section-light');
+      if (!light) return;
+      gsap.timeline({ scrollTrigger: { trigger:section, start:'top bottom', end:'top 15%', scrub:true } })
+        .fromTo(light, { opacity:0, xPercent:-20, scaleX:.7 }, { opacity:.9, xPercent:0, scaleX:1, ease:'none', duration:.55 })
+        .to(light, { opacity:0, xPercent:20, ease:'none', duration:.45 });
+    });
+    document.querySelectorAll<HTMLElement>('.editorial-image,.selector-image').forEach(el => {
+      if (el.getBoundingClientRect().top >= innerHeight) gsap.fromTo(el, { clipPath:'inset(0 0 0 24%)' }, { clipPath:'inset(0 0 0 0%)', duration:1.2, ease:'power3.out', scrollTrigger:{ trigger:el, start:'top 88%', once:true } });
+      if (el.matches('.editorial-image')) gsap.fromTo(el.querySelector('img'), { yPercent:-3, scale:1.08 }, { yPercent:3, scale:1.08, ease:'none', scrollTrigger:{ trigger:el, start:'top bottom', end:'bottom top', scrub:true } });
+    });
+    document.querySelectorAll<HTMLElement>('.material-collection').forEach(collection => {
+      if (collection.getBoundingClientRect().top < innerHeight) return;
+      gsap.fromTo(collection.querySelectorAll('.material-card'), { y:24 }, { y:0, duration:.85, stagger:mobile ? .08 : .12, ease:'power2.out', scrollTrigger:{ trigger:collection, start:'top 90%', once:true } });
     });
     return () => { prologo?.removeAttribute('data-enhanced'); };
   });

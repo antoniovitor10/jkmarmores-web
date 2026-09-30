@@ -10,7 +10,11 @@ export function mountSiteInteractions() {
   let stopImages = () => {};
   const cancelMotion = afterPoster(() => {
     stopImages = journey ? mountJourneyImages(journey) : () => {};
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches || motionNetworkPolicy((navigator as Navigator & { connection?: MotionConnection }).connection) !== 'allowed') return;
+    if (motionNetworkPolicy((navigator as Navigator & { connection?: MotionConnection }).connection) !== 'allowed') {
+      document.body.dataset.motionStatic = 'true';
+      return;
+    }
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     document.querySelector<HTMLElement>('.home-hero')?.setAttribute('data-motion-ready', 'true');
     nearby = new IntersectionObserver(entries => {
       if (!entries.some(entry => entry.isIntersecting)) return;
@@ -22,6 +26,16 @@ export function mountSiteInteractions() {
     document.querySelectorAll('.prologo,.stone-signature,.journey-heading,.editorial-image').forEach(el => nearby!.observe(el));
   });
   const dock = document.querySelector<HTMLElement>(".mobile-quote-dock");
+  const shine = (event: PointerEvent) => {
+    if (event.pointerType === 'mouse' || document.body.dataset.motionStatic || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const target = event.target instanceof Element ? event.target.closest<HTMLElement>('.button,.selector-controls button,.material-card') : null;
+    target?.setAttribute('data-gleam', 'true');
+  };
+  const finishShine = (event: AnimationEvent) => {
+    if (event.animationName === 'grazing-light' && event.target instanceof Element) event.target.removeAttribute('data-gleam');
+  };
+  document.addEventListener('pointerdown', shine, { passive:true });
+  document.addEventListener('animationend', finishShine);
   const hero = document.querySelector(".prologo, .home-hero");
   const menu = document.querySelector<HTMLDetailsElement>(".mobile-nav");
   const summary = menu?.querySelector("summary");
@@ -56,5 +70,5 @@ export function mountSiteInteractions() {
   menu?.addEventListener("toggle", toggle);
   document.addEventListener("keydown", key);
   toggle();
-  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); document.removeEventListener('jk:hero-contact', heroContact); targets.forEach((el, i) => { el.inert = previous[i]; }); };
+  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); document.removeEventListener('jk:hero-contact', heroContact); document.removeEventListener('pointerdown', shine); document.removeEventListener('animationend', finishShine); delete document.body.dataset.motionStatic; document.querySelectorAll('[data-gleam]').forEach(el => el.removeAttribute('data-gleam')); targets.forEach((el, i) => { el.inert = previous[i]; }); };
 }
