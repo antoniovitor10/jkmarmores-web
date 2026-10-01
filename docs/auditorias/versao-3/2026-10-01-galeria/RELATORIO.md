@@ -21,7 +21,7 @@ O percurso curto anterior permanece: 1.393 px em 390 × 844, com entrada e saíd
 
 A política de rede deixou de decidir sobre CSS, GSAP ou o fade do seletor. Apenas `prefers-reduced-motion:reduce` desliga esses efeitos. Save-Data, 3G, ausência de `navigator.connection`, transferência zero em cache e TTFB alto mantêm pôsteres e transições. Esta versão utiliza imagens; nenhum elemento ou pedido de vídeo foi criado.
 
-O teste de ausência de Connection API e cache quente emula o caso Firefox/Safari no Chromium; não é uma execução nesses navegadores. A navegação atrasada em 1 s foi medida acima de 1.060 ms na URL pública, mantendo capa, jornada e galeria em movimento. Os sete cenários de rede passaram em 390 e 1440 px, com movimento estático apenas no cenário reduced-motion.
+O teste de ausência de Connection API e cache quente emula o caso Firefox/Safari no Chromium; não é uma execução nesses navegadores. A navegação atrasada em 1 s foi medida entre 1.046 e 1.064 ms na URL pública, mantendo capa, jornada e galeria em movimento. Os sete cenários de rede passaram em 390 e 1440 px, com movimento estático apenas no cenário reduced-motion.
 
 ## Medição local do gesto
 
