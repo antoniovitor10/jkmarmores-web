@@ -84,7 +84,8 @@ try {
   await page.goto(base,{waitUntil:'networkidle0'});
   const result=await page.evaluate(()=>({heroMotion:!!document.querySelector('.cinema-hero')?.dataset.motion,galleryMotion:!!document.querySelector('.material-gallery')?.dataset.motion,categories:document.querySelectorAll('.gallery-material').length,overflow:document.documentElement.scrollWidth>innerWidth,video:document.querySelectorAll('video').length,whatsapp:!!document.querySelector('a[href*="wa.me/5511967976902"]')}));
   assert.equal(result.categories,6);assert.equal(result.overflow,false);assert.equal(result.video,0);assert(result.whatsapp);
-  if(mode==='landscape')assert.equal(result.galleryMotion,false);else {assert.equal(result.heroMotion,false);assert.equal(result.galleryMotion,false);}
+  if(['no-js','reduced'].includes(mode)){assert.equal(result.heroMotion,false);assert.equal(result.galleryMotion,false);}
+  else {assert.equal(result.heroMotion,true);assert.equal(result.galleryMotion,mode!=='landscape');}
   report.fallbacks.push({mode,...result});await page.close();
  }
  for(const route of ['sobre/','materiais/','materiais/marmore/','materiais/granito/','materiais/marmore-dolomitico/','materiais/quartzito/','materiais/quartzo/','materiais/ultracompacto/','contato/']){

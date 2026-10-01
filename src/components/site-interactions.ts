@@ -1,6 +1,5 @@
 import { afterPoster } from '@/lib/after-poster';
 import { mountJourneyImages } from './journey-images';
-import { motionNetworkPolicy, type MotionConnection } from '@/lib/motion-network';
 
 export function mountSiteInteractions() {
   let disposed = false;
@@ -10,7 +9,7 @@ export function mountSiteInteractions() {
   let stopImages = () => {};
   const cancelMotion = afterPoster(() => {
     stopImages = journey ? mountJourneyImages(journey) : () => {};
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches || motionNetworkPolicy((navigator as Navigator & { connection?: MotionConnection }).connection) !== 'allowed') return;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     nearby = new IntersectionObserver(entries => {
       if (!entries.some(entry => entry.isIntersecting)) return;
       nearby?.disconnect();

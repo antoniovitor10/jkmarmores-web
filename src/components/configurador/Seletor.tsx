@@ -48,10 +48,7 @@ export default function Seletor({
     try {
       await image.decode();
       if (request.current !== id) return;
-      const saveData = (
-        navigator as Navigator & { connection?: { saveData?: boolean } }
-      ).connection?.saveData;
-      if (!matchMedia("(prefers-reduced-motion: reduce)").matches && !saveData)
+      if (!matchMedia("(prefers-reduced-motion: reduce)").matches)
         setAnterior(current.current);
       current.current = next;
       setExibida(next);

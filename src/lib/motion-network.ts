@@ -1,5 +1,6 @@
 export type MotionConnection = EventTarget & { saveData?: boolean; effectiveType?: string; downlink?: number };
 
+// Decide somente o download de vídeo/mídia pesada; nunca desliga transições.
 // Usa apenas requisições críticas já concluídas. Nunca baixa um vídeo para testar a rede.
 // Os timings também cobrem navegadores sem Network Information API e um "4g" otimista.
 export function motionNetworkPolicy(connection?: MotionConnection) {
