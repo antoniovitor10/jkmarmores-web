@@ -1,4 +1,6 @@
 # Versão 3, rodada 2: cinema pela rolagem
+Atualização de 01/10/2026: as capturas e `funcional.json` foram refeitos após a correção de rede e da galeria. O texto abaixo registra a implementação de 30/09; as decisões sobre pin e Save-Data foram substituídas pelo [relatório de correção](../2026-10-01-galeria/RELATORIO.md).
+
 30/09/2026. Implementação auditada: `2dca9f8`. Branch `versao-3`, https://jkmarmores.com.br/3/.
 A main foi incorporada por merge normal em `7ab31e4`, trazendo os documentos da cliente. Esta rodada substitui a interação anterior.
 

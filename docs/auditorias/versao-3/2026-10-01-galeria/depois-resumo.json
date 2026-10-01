@@ -1,0 +1,78 @@
+{
+  "url": "http://127.0.0.1:3108/3/",
+  "label": "depois",
+  "cpu": 4,
+  "touch": "CDP dispatchTouchEvent",
+  "heightChanges": [
+    844,
+    760,
+    844
+  ],
+  "frames": 1024,
+  "activeFrames": 825,
+  "frameIntervalP95Ms": 13.799999999999272,
+  "stageErrorMaxPx": 0,
+  "stageErrorP95Px": 0,
+  "entryExitErrorMaxPx": 0,
+  "rootPositionRangePx": 0,
+  "horizontalReversals": [],
+  "longTasks": [],
+  "cls": 0,
+  "errors": [],
+  "state": {
+    "stagePosition": "sticky",
+    "pinSpacers": 0,
+    "images": [
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      }
+    ],
+    "overflow": false
+  },
+  "responsive": {
+    "landscape": {
+      "gallery": false,
+      "overflow": false
+    },
+    "reduced": {
+      "hero": false,
+      "gallery": false,
+      "journey": false,
+      "viewportVariable": ""
+    },
+    "restored": true
+  }
+}

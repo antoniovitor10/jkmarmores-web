@@ -1,0 +1,63 @@
+{
+  "url": "http://127.0.0.1:3108/3/",
+  "label": "antes",
+  "cpu": 4,
+  "touch": "CDP dispatchTouchEvent",
+  "heightChanges": [
+    844,
+    760,
+    844
+  ],
+  "frames": 578,
+  "activeFrames": 536,
+  "frameIntervalP95Ms": 13.900000000000091,
+  "stageErrorMaxPx": 323.890625,
+  "stageErrorP95Px": 323.890625,
+  "rootPositionRangePx": 323.390625,
+  "horizontalReversals": [],
+  "longTasks": [],
+  "errors": [],
+  "state": {
+    "stagePosition": "static",
+    "pinSpacers": 1,
+    "images": [
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "lazy",
+        "decoded": false
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "lazy",
+        "decoded": false
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "lazy",
+        "decoded": false
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "lazy",
+        "decoded": false
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "lazy",
+        "decoded": false
+      },
+      {
+        "loaded": false,
+        "width": 351,
+        "loading": "lazy",
+        "decoded": false
+      }
+    ],
+    "overflow": false
+  }
+}

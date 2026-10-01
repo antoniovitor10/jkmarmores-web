@@ -1,0 +1,84 @@
+{
+  "url": "https://jkmarmores.com.br/3/",
+  "label": "publico",
+  "cpu": 4,
+  "touch": "CDP dispatchTouchEvent",
+  "heightChanges": [
+    844,
+    760,
+    844
+  ],
+  "frames": 1005,
+  "activeFrames": 815,
+  "frameIntervalP95Ms": 13.900000000000091,
+  "stageErrorMaxPx": 0,
+  "stageErrorP95Px": 0,
+  "entryExitErrorMaxPx": 0,
+  "rootPositionRangePx": 0,
+  "horizontalReversals": [],
+  "longTasks": [
+    {
+      "name": "longtask",
+      "t": 8559.5,
+      "duration": 71
+    }
+  ],
+  "cls": 0,
+  "errors": [],
+  "state": {
+    "stagePosition": "sticky",
+    "pinSpacers": 0,
+    "images": [
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      },
+      {
+        "loaded": true,
+        "width": 351,
+        "loading": "eager",
+        "decoded": true
+      }
+    ],
+    "overflow": false
+  },
+  "responsive": {
+    "landscape": {
+      "gallery": false,
+      "overflow": false
+    },
+    "reduced": {
+      "hero": false,
+      "gallery": false,
+      "journey": false,
+      "viewportVariable": ""
+    },
+    "restored": true
+  }
+}

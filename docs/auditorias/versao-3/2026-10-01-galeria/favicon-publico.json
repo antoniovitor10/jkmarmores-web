@@ -1,0 +1,20 @@
+{
+  "url": "https://jkmarmores.com.br/3/",
+  "status": 200,
+  "links": [
+    "<link rel=\"icon\" href=\"/3/icon.png?icon.2ndbqcj82s9k4.png\" sizes=\"512x512\" type=\"image/png\"/>",
+    "<link rel=\"apple-touch-icon\" href=\"/3/apple-icon.png?apple-icon.0bqrf_q30immg.png\" sizes=\"180x180\" type=\"image/png\"/>"
+  ],
+  "assets": [
+    {
+      "path": "/3/icon.png?icon.2ndbqcj82s9k4.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "path": "/3/apple-icon.png?apple-icon.0bqrf_q30immg.png",
+      "status": 200,
+      "type": "image/png"
+    }
+  ]
+}

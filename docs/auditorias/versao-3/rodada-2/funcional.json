@@ -4,7 +4,7 @@
     {
       "width": 390,
       "overflow": false,
-      "initialMaxTask": 156,
+      "initialMaxTask": 249,
       "initialCls": 0,
       "badAssets": [],
       "noOrbit": true,
@@ -32,8 +32,8 @@
           "name": "Mármores",
           "left": 24,
           "right": 366,
-          "linkTop": 628.71875,
-          "linkBottom": 672.71875,
+          "linkTop": 629.21875,
+          "linkBottom": 673.21875,
           "imageLoaded": true,
           "overflow": false
         },
@@ -41,8 +41,8 @@
           "name": "Granitos",
           "left": 24.7886962890625,
           "right": 366.7886962890625,
-          "linkTop": 583.71875,
-          "linkBottom": 627.71875,
+          "linkTop": 584.21875,
+          "linkBottom": 628.21875,
           "imageLoaded": true,
           "overflow": false
         },
@@ -50,8 +50,8 @@
           "name": "Mármores Dolomíticos",
           "left": 24.26348876953125,
           "right": 366.26348876953125,
-          "linkTop": 583.71875,
-          "linkBottom": 627.71875,
+          "linkTop": 584.21875,
+          "linkBottom": 628.21875,
           "imageLoaded": true,
           "overflow": false
         },
@@ -59,8 +59,8 @@
           "name": "Quartzitos Naturais",
           "left": 25.0504150390625,
           "right": 367.0504150390625,
-          "linkTop": 606.21875,
-          "linkBottom": 650.21875,
+          "linkTop": 584.21875,
+          "linkBottom": 628.21875,
           "imageLoaded": true,
           "overflow": false
         },
@@ -68,8 +68,8 @@
           "name": "Quartzos",
           "left": 24.525146484375,
           "right": 366.525146484375,
-          "linkTop": 583.71875,
-          "linkBottom": 627.71875,
+          "linkTop": 584.21875,
+          "linkBottom": 628.21875,
           "imageLoaded": true,
           "overflow": false
         },
@@ -121,7 +121,7 @@
     {
       "width": 1440,
       "overflow": false,
-      "initialMaxTask": 176,
+      "initialMaxTask": 276,
       "initialCls": 0,
       "badAssets": [],
       "noOrbit": true,
@@ -158,8 +158,8 @@
           "name": "Granitos",
           "left": 152,
           "right": 1072,
-          "linkTop": 726.453125,
-          "linkBottom": 770.453125,
+          "linkTop": 726,
+          "linkBottom": 770,
           "imageLoaded": true,
           "overflow": false
         },
@@ -167,8 +167,8 @@
           "name": "Mármores Dolomíticos",
           "left": 224,
           "right": 1144,
-          "linkTop": 726.453125,
-          "linkBottom": 770.453125,
+          "linkTop": 726,
+          "linkBottom": 770,
           "imageLoaded": true,
           "overflow": false
         },
@@ -176,8 +176,8 @@
           "name": "Quartzitos Naturais",
           "left": 296,
           "right": 1216,
-          "linkTop": 750.453125,
-          "linkBottom": 794.453125,
+          "linkTop": 750,
+          "linkBottom": 794,
           "imageLoaded": true,
           "overflow": false
         },
@@ -185,8 +185,8 @@
           "name": "Quartzos",
           "left": 368,
           "right": 1288,
-          "linkTop": 750.453125,
-          "linkBottom": 794.453125,
+          "linkTop": 750,
+          "linkBottom": 794,
           "imageLoaded": true,
           "overflow": false
         },
@@ -194,8 +194,8 @@
           "name": "Lâminas Ultracompactas Sinterizadas",
           "left": 440,
           "right": 1360,
-          "linkTop": 750.453125,
-          "linkBottom": 794.453125,
+          "linkTop": 750,
+          "linkBottom": 794,
           "imageLoaded": true,
           "overflow": false
         }
@@ -231,7 +231,7 @@
           "loaded": true
         }
       ],
-      "eventMax": 32,
+      "eventMax": 40,
       "cls": 0
     }
   ],
@@ -256,8 +256,8 @@
     },
     {
       "mode": "save-data",
-      "heroMotion": false,
-      "galleryMotion": false,
+      "heroMotion": true,
+      "galleryMotion": true,
       "categories": 6,
       "overflow": false,
       "video": 0,
@@ -265,8 +265,8 @@
     },
     {
       "mode": "slow",
-      "heroMotion": false,
-      "galleryMotion": false,
+      "heroMotion": true,
+      "galleryMotion": true,
       "categories": 6,
       "overflow": false,
       "video": 0,
