@@ -16,8 +16,8 @@
 .journey-frame figcaption p { margin:0; font-size:16px; color:#e5ded3; }
 .journey-progress { display:none; }
 .journey-frame noscript { display:none; }
-.journey-track[data-enhanced] { height:270svh; }
-[data-enhanced] .journey-sticky { position:sticky; top:0; height:100svh; overflow:hidden; }
+.journey-track[data-enhanced] { height:calc(var(--motion-viewport,100svh) * 2.7); }
+[data-enhanced] .journey-sticky { position:sticky; top:0; height:var(--motion-viewport,100svh); overflow:hidden; }
 [data-enhanced] .journey-heading { position:absolute; left:0; top:0; z-index:6; padding:48px; pointer-events:none; text-shadow:0 2px 20px #000; }
 [data-enhanced] .journey-frames { position:absolute; inset:0; }
 [data-enhanced] .journey-frame { position:absolute; inset:0; isolation:isolate; content-visibility:visible; contain-intrinsic-size:none; }
@@ -36,7 +36,7 @@
  .journey-frame figcaption { padding:24px; gap:18px; flex-wrap:wrap; }
  .journey-frame figcaption p { font-size:15px; max-width:28ch; }
  .journey-frame h3 { font-size:36px; }
- .journey-track[data-enhanced] { height:225svh; }
+ .journey-track[data-enhanced] { height:calc(var(--motion-viewport,100svh) * 2.25); }
  [data-enhanced] .journey-heading { padding:32px 24px; }
  [data-enhanced] .journey-heading h2 { font-size:32px; max-width:12ch; }
  [data-enhanced] .journey-frame figcaption { padding:100px 24px 60px; }

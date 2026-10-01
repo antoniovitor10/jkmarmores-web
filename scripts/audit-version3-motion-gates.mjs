@@ -11,7 +11,7 @@ try {
  for(const [width,mode] of [[390,'warm-no-connection'],[1440,'warm-no-connection'],[390,'high-ttfb'],[1440,'high-ttfb'],[390,'save-data'],[390,'3g'],[390,'reduced-motion']]){
   const context=await browser.createBrowserContext(),page=await context.newPage(),errors=[],videoRequests=[];
   page.on('pageerror',e=>errors.push(e.message));
-  page.on('request',r=>{if(/\\.(mp4|webm)(\\?|$)/.test(r.url()))videoRequests.push(r.url());});
+  page.on('request',r=>{if(/\.(mp4|webm)(\?|$)/.test(r.url()))videoRequests.push(r.url());});
   await page.setViewport({width,height:width===390?844:900,deviceScaleFactor:1,isMobile:width===390,hasTouch:width===390});
   const cdp=await page.createCDPSession();await cdp.send('Network.enable');
   await cdp.send('Network.setCacheDisabled',{cacheDisabled:mode!=='warm-no-connection'});

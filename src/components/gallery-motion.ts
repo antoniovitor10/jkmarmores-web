@@ -6,7 +6,8 @@ export function mountMaterialGallery(root: HTMLElement) {
   const rail = root.querySelector<HTMLElement>('.gallery-rail')!;
   const items = [...root.querySelectorAll<HTMLElement>('.gallery-material')];
   // Short viewports keep the complete native flow so copy never gets clipped.
-  if (innerHeight < 650) return () => {};
+  const viewportHeight = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--motion-viewport')) || innerHeight;
+  if (viewportHeight < 650) return () => {};
   root.dataset.motion = 'true';
   const note = root.querySelector<HTMLElement>('.gallery-note')!;
   const safeBottom = stage.getBoundingClientRect().bottom - note.offsetHeight - 44;
@@ -15,13 +16,31 @@ export function mountMaterialGallery(root: HTMLElement) {
     return () => {};
   }
   const distance = () => rail.scrollWidth - root.clientWidth;
+  // Native sticky stays on the browser's scroll thread. Only the rail moves in GSAP.
+  const travel = Math.round(innerWidth <= 700 ? stage.offsetHeight * 1.65 : Math.min(distance(), stage.offsetHeight * 2.6));
+  root.style.setProperty('--gallery-travel', `${travel}px`);
+  // Decode the small responsive pictures shortly before entry, never block motion.
+  let disposed = false;
+  const images = [...rail.querySelectorAll<HTMLImageElement>('img')];
+  const prepare = new IntersectionObserver(entries => {
+    if (!entries.some(entry => entry.isIntersecting)) return;
+    prepare.disconnect();
+    images.forEach(image => {
+      image.loading = 'eager';
+      image.decoding = 'async';
+      void image.decode().then(() => { if (!disposed) image.dataset.decoded = 'true'; }).catch(() => {});
+    });
+  }, { rootMargin: '120% 0px' });
+  prepare.observe(root);
   let trigger: ScrollTrigger | undefined;
   const ctx = gsap.context(() => {
-    const tween = gsap.to(rail, { x: () => -distance(), ease: 'none', scrollTrigger: {
-      trigger: root, pin: stage, pinType: 'transform', start: 'top top',
-      end: () => '+=' + Math.round(innerWidth <= 700 ? innerHeight * 1.65 : Math.min(distance(), innerHeight * 2.6)),
-      scrub: .15, invalidateOnRefresh: true, anticipatePin: 0,
-      onToggle: self => { rail.style.willChange = self.isActive ? 'transform' : 'auto'; },
+    const tween = gsap.to(rail, { x: () => -distance(), force3D: true, ease: 'none', scrollTrigger: {
+      trigger: root, start: 'top top', end: '+=' + travel,
+      scrub: .35, invalidateOnRefresh: true,
+      onToggle: self => {
+        if (self.isActive) rail.style.willChange = 'transform';
+        else rail.style.removeProperty('will-change');
+      },
     } });
     trigger = tween.scrollTrigger;
   }, root);
@@ -35,5 +54,14 @@ export function mountMaterialGallery(root: HTMLElement) {
     trigger.animation?.progress(progress);
   };
   rail.addEventListener('focusin', focus);
-  return () => { rail.removeEventListener('focusin', focus); ctx.revert(); rail.style.removeProperty('will-change'); delete root.dataset.motion; };
+  return () => {
+    disposed = true;
+    prepare.disconnect();
+    images.forEach(image => { delete image.dataset.decoded; image.loading = 'lazy'; });
+    rail.removeEventListener('focusin', focus);
+    ctx.revert();
+    rail.style.removeProperty('will-change');
+    root.style.removeProperty('--gallery-travel');
+    delete root.dataset.motion;
+  };
 }
