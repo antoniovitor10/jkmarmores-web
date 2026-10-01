@@ -12,7 +12,6 @@ import { homeDisplay, homeBody } from "@/components/home-fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  icons: { icon: "data:," },
   robots: isHomolog ? { index: false, follow: false } : { index: true, follow: true },
 };
 export const viewport: Viewport = { themeColor: '#10100f' };
