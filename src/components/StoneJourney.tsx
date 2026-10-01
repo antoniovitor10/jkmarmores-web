@@ -37,8 +37,8 @@ export function StoneJourney() {
 function DeferredImage({ id, alt }: { id: string; alt: string }) {
   const image = (manifest as Record<string, { width: number; height: number; variantes: { width: number; avif: string; webp: string }[] }>)[id];
   if (!image) return null;
-  const sizes = "(max-width: 700px) 960px, 100vw";
-  const mobileId = id === "sequencia-02-borda" ? "sequencia-02-borda-mobile" : undefined;
+  const sizes = "(max-width: 700px) 960px, 62vw";
+  const mobileId = undefined;
   const mobile = mobileId ? (manifest as typeof manifest & Record<string, typeof image>)[mobileId] : undefined;
   return <JourneyImage alt={alt} width={image.width} height={image.height} sizes={sizes} src={asset(image.variantes.at(-1)!.webp)} avif={assetSrcSet(image.variantes.map(v => `${v.avif} ${v.width}w`).join(", "))} webp={assetSrcSet(image.variantes.map(v => `${v.webp} ${v.width}w`).join(", "))} mobileAvif={mobile ? assetSrcSet(mobile.variantes.map(v => `${v.avif} ${v.width}w`).join(", ")) : undefined} mobileWebp={mobile ? assetSrcSet(mobile.variantes.map(v => `${v.webp} ${v.width}w`).join(", ")) : undefined}>
     <Foto id={id} mobileId={mobileId} alt={alt} sizes={sizes} />

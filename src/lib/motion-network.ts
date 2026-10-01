@@ -1,5 +1,6 @@
 export type MotionConnection = EventTarget & { saveData?: boolean; effectiveType?: string; downlink?: number };
 
+// Política exclusiva para vídeo ou mídia pesada; CSS e GSAP não consultam a rede.
 // Usa apenas requisições críticas já concluídas. Nunca baixa um vídeo para testar a rede.
 // Os timings também cobrem navegadores sem Network Information API e um "4g" otimista.
 export function motionNetworkPolicy(connection?: MotionConnection) {

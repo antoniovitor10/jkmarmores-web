@@ -4,8 +4,8 @@ import { texto } from '@/lib/site';
 
 export function Brand({ footer = false }: { footer?: boolean }) {
   // eslint-disable-next-line @next/next/no-img-element
-  if (!footer) return <img src={asset("/brand/jk-monograma-240.webp")} width={240} height={146} alt={texto(conteudo.empresa.nome)} className="brand-monogram" />;
-  // JPEG da cliente recortado e convertido em WebP 480 px; suficiente para 2x.
+  if (!footer) return <img src={asset("/brand/jk-monograma-alfa-320.webp")} srcSet={assetSrcSet("/brand/jk-monograma-alfa-160.webp 160w, /brand/jk-monograma-alfa-320.webp 320w, /brand/jk-monograma-alfa-640.webp 640w")} sizes="72px" width={780} height={472} alt={texto(conteudo.empresa.nome)} className="brand-monogram" />;
+  // Alfa derivado do JPEG original, preservando textura e contorno.
   // eslint-disable-next-line @next/next/no-img-element
-  return <img src={asset("/brand/jk-logo-480.webp")} srcSet={assetSrcSet("/brand/jk-logo-288.webp 288w, /brand/jk-logo-480.webp 480w")} sizes={footer ? '(max-width: 700px) 180px, 210px' : '(max-width: 800px) 120px, 144px'} width={480} height={296} alt={texto(conteudo.empresa.nome)} className="brand-image" loading={footer ? 'lazy' : 'eager'} />;
+  return <img src={asset("/brand/jk-logo-alfa-640.webp")} srcSet={assetSrcSet("/brand/jk-logo-alfa-320.webp 320w, /brand/jk-logo-alfa-640.webp 640w, /brand/jk-logo-alfa-1036.webp 1036w")} sizes="210px" width={1036} height={637} alt={texto(conteudo.empresa.nome)} className="brand-image" loading="lazy" />;
 }

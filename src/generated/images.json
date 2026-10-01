@@ -23,6 +23,11 @@
         "width": 1600,
         "avif": "/img/material-detalhe-quente-1600.avif",
         "webp": "/img/material-detalhe-quente-1600.webp"
+      },
+      {
+        "width": 2048,
+        "avif": "/img/material-detalhe-quente-2048.avif",
+        "webp": "/img/material-detalhe-quente-2048.webp"
       }
     ]
   },
@@ -50,6 +55,16 @@
         "width": 1600,
         "avif": "/img/sequencia-01-chapa-1600.avif",
         "webp": "/img/sequencia-01-chapa-1600.webp"
+      },
+      {
+        "width": 2048,
+        "avif": "/img/sequencia-01-chapa-2048.avif",
+        "webp": "/img/sequencia-01-chapa-2048.webp"
+      },
+      {
+        "width": 2752,
+        "avif": "/img/sequencia-01-chapa-2752.avif",
+        "webp": "/img/sequencia-01-chapa-2752.webp"
       }
     ]
   },
@@ -67,6 +82,11 @@
         "width": 768,
         "avif": "/img/sequencia-02-borda-mobile-768.avif",
         "webp": "/img/sequencia-02-borda-mobile-768.webp"
+      },
+      {
+        "width": 850,
+        "avif": "/img/sequencia-02-borda-mobile-850.avif",
+        "webp": "/img/sequencia-02-borda-mobile-850.webp"
       }
     ]
   },
@@ -94,6 +114,16 @@
         "width": 1600,
         "avif": "/img/sequencia-02-borda-1600.avif",
         "webp": "/img/sequencia-02-borda-1600.webp"
+      },
+      {
+        "width": 2048,
+        "avif": "/img/sequencia-02-borda-2048.avif",
+        "webp": "/img/sequencia-02-borda-2048.webp"
+      },
+      {
+        "width": 2752,
+        "avif": "/img/sequencia-02-borda-2752.avif",
+        "webp": "/img/sequencia-02-borda-2752.webp"
       }
     ]
   },
@@ -121,6 +151,16 @@
         "width": 1600,
         "avif": "/img/sequencia-03-acabamento-1600.avif",
         "webp": "/img/sequencia-03-acabamento-1600.webp"
+      },
+      {
+        "width": 2048,
+        "avif": "/img/sequencia-03-acabamento-2048.avif",
+        "webp": "/img/sequencia-03-acabamento-2048.webp"
+      },
+      {
+        "width": 2752,
+        "avif": "/img/sequencia-03-acabamento-2752.avif",
+        "webp": "/img/sequencia-03-acabamento-2752.webp"
       }
     ]
   },
@@ -148,6 +188,16 @@
         "width": 1600,
         "avif": "/img/sequencia-04-aplicada-1600.avif",
         "webp": "/img/sequencia-04-aplicada-1600.webp"
+      },
+      {
+        "width": 2048,
+        "avif": "/img/sequencia-04-aplicada-2048.avif",
+        "webp": "/img/sequencia-04-aplicada-2048.webp"
+      },
+      {
+        "width": 2752,
+        "avif": "/img/sequencia-04-aplicada-2752.avif",
+        "webp": "/img/sequencia-04-aplicada-2752.webp"
       }
     ]
   },
@@ -165,6 +215,65 @@
         "width": 768,
         "avif": "/img/capa-editorial-mobile-768.avif",
         "webp": "/img/capa-editorial-mobile-768.webp"
+      },
+      {
+        "width": 900,
+        "avif": "/img/capa-editorial-mobile-900.avif",
+        "webp": "/img/capa-editorial-mobile-900.webp"
+      }
+    ]
+  },
+  "capa-galeria": {
+    "width": 2752,
+    "height": 1536,
+    "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAADQAwCdASoYAA0APwFsrU8rJiQiMAgBYCAJZQCsABjM6QsNAaoNeAAA+KYFA3k+aMeMFdsg0QEm60QPiy+Y588BxBZ9eWjt71TGYriEPvDeIdAkdzOYUrbjTiBvEAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/capa-galeria-390.avif",
+        "webp": "/img/capa-galeria-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/capa-galeria-768.avif",
+        "webp": "/img/capa-galeria-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/capa-galeria-1200.avif",
+        "webp": "/img/capa-galeria-1200.webp"
+      },
+      {
+        "width": 1600,
+        "avif": "/img/capa-galeria-1600.avif",
+        "webp": "/img/capa-galeria-1600.webp"
+      },
+      {
+        "width": 2048,
+        "avif": "/img/capa-galeria-2048.avif",
+        "webp": "/img/capa-galeria-2048.webp"
+      },
+      {
+        "width": 2752,
+        "avif": "/img/capa-galeria-2752.avif",
+        "webp": "/img/capa-galeria-2752.webp"
+      }
+    ]
+  },
+  "capa-galeria-mobile": {
+    "width": 710,
+    "height": 1536,
+    "placeholder": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACwBQCdASoYADQAPwFyrlCrJyQqsBgIAWAgCWcAyFwQtgT8LcIG5PrxDzoovvG10c1lWMowlBAA/u6TjWPdl1EJuX3kquTI4Ej/vWwRLUhhpRSgD062DO4GZRKfBm1xPIXPMZAwezX3GmiDpp4f3vjfOguRaKadjm99bmMaW0/x+cj4Qv8R2wAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/capa-galeria-mobile-390.avif",
+        "webp": "/img/capa-galeria-mobile-390.webp"
+      },
+      {
+        "width": 710,
+        "avif": "/img/capa-galeria-mobile-710.avif",
+        "webp": "/img/capa-galeria-mobile-710.webp"
       }
     ]
   }

@@ -2,6 +2,8 @@
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'C:/Users/Vitor/AppData/Roaming/npm/node_modules/@playwright/cli/node_modules/playwright');
 const fs = require('node:fs'), path = require('node:path'), assert = require('node:assert/strict');
 const base = process.env.QA_URL || 'http://127.0.0.1:3102/2/';
+const output = process.env.QA_OUTPUT_DIR || __dirname;
+fs.mkdirSync(output, { recursive: true });
 const axePath = path.join(process.cwd(), '.maestri/audit-tools/node_modules/axe-core/axe.min.js');
 const categories = ['marmore', 'granito', 'marmore-dolomitico', 'quartzito', 'quartzo', 'ultracompacto'];
 
@@ -45,7 +47,7 @@ const categories = ['marmore', 'granito', 'marmore-dolomitico', 'quartzito', 'qu
      // Materializa imagens lazy e revelações antes da captura integral.
      await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += innerHeight * .7) { scrollTo(0, y); await new Promise(r => setTimeout(r, 100)); } });
      await page.waitForTimeout(1100); await page.evaluate(() => scrollTo(0, 0));
-     await page.screenshot({ path: path.join(__dirname, `${width}-${route.replace('/', '')}.png`), fullPage: true });
+     await page.screenshot({ path: path.join(output, `${width}-${route.replace('/', '')}.png`), fullPage: true });
     }
     results.push({ width, route, ...data });
    }
@@ -56,6 +58,7 @@ const categories = ['marmore', 'granito', 'marmore-dolomitico', 'quartzito', 'qu
    const page = await context.newPage();
    for (const route of ['sobre/', 'materiais/', 'materiais/ultracompacto/']) {
     await page.goto(base + route);
+    await page.evaluate(() => document.fonts.ready);
     assert.equal(await page.locator('h1').count(), 1);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
     if (route === 'materiais/') assert.equal(await page.locator('.material-categories > li').count(), 6);
@@ -65,5 +68,5 @@ const categories = ['marmore', 'granito', 'marmore-dolomitico', 'quartzito', 'qu
   }
   assert.deepEqual(results.filter(item => item.violations?.length), []);
   console.log('Conteúdo, fontes, SEO, navegação e axe: ' + results.length + ' cenários aprovados.');
- } finally { await browser.close(); fs.writeFileSync(path.join(__dirname, 'conteudo.json'), JSON.stringify(results, null, 2)); }
+ } finally { await browser.close(); fs.writeFileSync(path.join(output, 'conteudo.json'), JSON.stringify(results, null, 2)); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

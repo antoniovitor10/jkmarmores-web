@@ -5,6 +5,7 @@ export type ConfiguradorProps = { compact?: boolean; materialContext?: string };
 export function Configurador(props: ConfiguradorProps) {
   return (
     <ConfiguradorLoader {...props} initialChoice={escolhaInicial}>
+      <div data-selector-layout>
       <Vista
         escolha={escolhaInicial}
         exibida={escolhaInicial}
@@ -16,6 +17,7 @@ export function Configurador(props: ConfiguradorProps) {
           escolhas.
         </p>
       </noscript>
+      </div>
     </ConfiguradorLoader>
   );
 }

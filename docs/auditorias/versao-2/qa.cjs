@@ -31,7 +31,7 @@ fs.mkdirSync(output, { recursive: true });
     await page.evaluate(()=>{const r=document.querySelector('.journey-track');scrollTo(0,r.getBoundingClientRect().top+scrollY)});
     await page.waitForTimeout(800);
     enhanced=await page.locator('.journey-track').evaluate(r=>r.hasAttribute('data-enhanced'));
-    if(mode==='normal'){
+    if(mode!=='reduced'){
      assert.ok(enhanced,'jornada ativa');
      await page.screenshot({path:path.join(output,width+'-monograma.png')});
      for(const fraction of [.29,.50,.70,.93]){

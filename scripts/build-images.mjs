@@ -11,6 +11,10 @@ await fs.mkdir(destino, { recursive: true });
 const sources = (await fs.readdir(fonte)).map(nome => ({ nome, arquivo: path.join(fonte, nome) }));
 sources.push({ nome: 'capa-editorial-mobile.png', arquivo: await sharp(path.join(fonte, 'material-detalhe-quente.png'))
   .extract({ left: 160, top: 0, width: 900, height: 1152 }).png().toBuffer() });
+// Enquadramento de ambiente: preserva as duas extremidades da bancada no desktop.
+sources.push({ nome: 'capa-galeria.png', arquivo: path.join(fonte, 'sequencia-04-aplicada.png') });
+sources.push({ nome: 'capa-galeria-mobile.png', arquivo: await sharp(path.join(fonte, 'sequencia-04-aplicada.png'))
+  .extract({ left: 1730, top: 0, width: 710, height: 1536 }).png().toBuffer() });
 for (const { nome, arquivo } of sources) {
   if (!/\.(jpe?g|png|webp|avif)$/i.test(nome)) continue;
   const id = path.parse(nome).name;
@@ -19,12 +23,15 @@ for (const { nome, arquivo } of sources) {
   const dados = await sharp(arquivo).metadata();
   if (!dados.width || !dados.height) continue;
   const variantes = [];
-  for (const width of [390, 768, 1200, 1600].filter((valor) => valor <= dados.width)) {
+  const widths = [...new Set([390, 768, 1200, 1600, 2048, dados.width].filter(valor => valor <= dados.width))].sort((a,b) => a-b);
+  for (const width of widths) {
     const avif = `/img/${id}-${width}.avif`;
     const webp = `/img/${id}-${width}.webp`;
-    const treated = await editorialImage(arquivo, width, id.startsWith("sequencia-"));
-    await treated.clone().avif({ quality: 50 }).toFile(path.join(destino, path.basename(avif)));
-    await treated.clone().webp({ quality: 72 }).toFile(path.join(destino, path.basename(webp)));
+    const treated = id.startsWith('capa-galeria')
+      ? sharp(arquivo).rotate().resize({ width, withoutEnlargement: true })
+      : await editorialImage(arquivo, width, id.startsWith("sequencia-"));
+    await treated.clone().avif({ quality: id.startsWith('capa-galeria') ? 68 : 58 }).toFile(path.join(destino, path.basename(avif)));
+    await treated.clone().webp({ quality: id.startsWith('capa-galeria') ? 90 : 84 }).toFile(path.join(destino, path.basename(webp)));
     variantes.push({ width, avif, webp });
   }
   if (!variantes.length) {

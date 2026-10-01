@@ -1,0 +1,521 @@
+[
+  {
+    "width": 390,
+    "hero": {
+      "width": 390,
+      "height": 844,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844,
+        "top": 0,
+        "right": 390,
+        "bottom": 844,
+        "left": 0
+      },
+      "cta": {
+        "x": 24,
+        "y": 743.609375,
+        "width": 194.140625,
+        "height": 52.390625,
+        "top": 743.609375,
+        "right": 218.140625,
+        "bottom": 796,
+        "left": 24
+      },
+      "image": "http://127.0.0.1:3102/2/img/capa-galeria-mobile-710.avif",
+      "overflow": false,
+      "rects": [
+        {
+          "x": 24,
+          "y": 593.515625,
+          "width": 342,
+          "height": 87.359375,
+          "top": 593.515625,
+          "right": 366,
+          "bottom": 680.875,
+          "left": 24
+        },
+        {
+          "x": 24,
+          "y": 694.609375,
+          "width": 342,
+          "height": 27,
+          "top": 694.609375,
+          "right": 366,
+          "bottom": 721.609375,
+          "left": 24
+        }
+      ],
+      "icons": [
+        {
+          "rel": "icon",
+          "href": "/2/icon.png?icon.2ndbqcj82s9k4.png"
+        },
+        {
+          "rel": "apple-touch-icon",
+          "href": "/2/apple-icon.png?apple-icon.0bqrf_q30immg.png"
+        }
+      ]
+    },
+    "contrasts": [
+      {
+        "element": "titulo",
+        "minimum": 11.223803817533279,
+        "sampledPixels": 3521
+      },
+      {
+        "element": "apoio",
+        "minimum": 12.74132573264146,
+        "sampledPixels": 2116
+      }
+    ],
+    "stages": [
+      {
+        "frame": "0",
+        "title": "Chapa",
+        "clip": "none",
+        "background": "rgb(244, 239, 233)"
+      },
+      {
+        "frame": "1",
+        "title": "Borda",
+        "clip": "inset(0%)",
+        "background": "rgb(244, 239, 233)"
+      },
+      {
+        "frame": "2",
+        "title": "Acabamento",
+        "clip": "inset(0%)",
+        "background": "rgb(244, 239, 233)"
+      },
+      {
+        "frame": "3",
+        "title": "Peça aplicada",
+        "clip": "inset(0%)",
+        "background": "rgb(244, 239, 233)"
+      }
+    ],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "hero": {
+      "width": 1440,
+      "height": 900,
+      "hero": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900,
+        "top": 0,
+        "right": 1440,
+        "bottom": 900,
+        "left": 0
+      },
+      "cta": {
+        "x": 80,
+        "y": 775.609375,
+        "width": 194.140625,
+        "height": 52.390625,
+        "top": 775.609375,
+        "right": 274.140625,
+        "bottom": 828,
+        "left": 80
+      },
+      "image": "http://127.0.0.1:3102/2/img/capa-galeria-2752.avif",
+      "overflow": false,
+      "rects": [
+        {
+          "x": 80,
+          "y": 579.046875,
+          "width": 271,
+          "height": 125.84375,
+          "top": 579.046875,
+          "right": 351,
+          "bottom": 704.890625,
+          "left": 80
+        },
+        {
+          "x": 80,
+          "y": 721.609375,
+          "width": 271,
+          "height": 30,
+          "top": 721.609375,
+          "right": 351,
+          "bottom": 751.609375,
+          "left": 80
+        }
+      ],
+      "icons": [
+        {
+          "rel": "icon",
+          "href": "/2/icon.png?icon.2ndbqcj82s9k4.png"
+        },
+        {
+          "rel": "apple-touch-icon",
+          "href": "/2/apple-icon.png?apple-icon.0bqrf_q30immg.png"
+        }
+      ]
+    },
+    "contrasts": [
+      {
+        "element": "titulo",
+        "minimum": 4.666009398686028,
+        "sampledPixels": 8807
+      },
+      {
+        "element": "apoio",
+        "minimum": 6.730406419067638,
+        "sampledPixels": 2878
+      }
+    ],
+    "stages": [
+      {
+        "frame": "0",
+        "title": "Chapa",
+        "clip": "none",
+        "background": "rgb(244, 239, 233)"
+      },
+      {
+        "frame": "1",
+        "title": "Borda",
+        "clip": "inset(0%)",
+        "background": "rgb(244, 239, 233)"
+      },
+      {
+        "frame": "2",
+        "title": "Acabamento",
+        "clip": "inset(0%)",
+        "background": "rgb(244, 239, 233)"
+      },
+      {
+        "frame": "3",
+        "title": "Peça aplicada",
+        "clip": "inset(0%)",
+        "background": "rgb(244, 239, 233)"
+      }
+    ],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "mode": "sem-connection-cache",
+    "enhanced": true,
+    "condition": {
+      "connection": null,
+      "navigation": {
+        "name": "http://127.0.0.1:3102/2/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 79.5,
+        "navigationId": 8559,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.5,
+        "domainLookupStart": 0.5,
+        "domainLookupEnd": 0.5,
+        "connectStart": 0.5,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.5,
+        "requestStart": 1.300000011920929,
+        "responseStart": 6.600000008940697,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 6.600000008940697,
+        "responseEnd": 7.300000011920929,
+        "transferSize": 0,
+        "encodedBodySize": 40379,
+        "decodedBodySize": 183456,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 21.80000001192093,
+        "domContentLoadedEventStart": 21.80000001192093,
+        "domContentLoadedEventEnd": 21.900000005960464,
+        "domComplete": 79.40000000596046,
+        "loadEventStart": 79.5,
+        "loadEventEnd": 79.5,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      }
+    },
+    "heavyRequests": []
+  },
+  {
+    "mode": "ttfb-alto",
+    "enhanced": true,
+    "condition": {
+      "connection": {
+        "saveData": false,
+        "effectiveType": "4g"
+      },
+      "navigation": {
+        "name": "http://127.0.0.1:3102/2/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 74.59999999403954,
+        "navigationId": 8964,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.5999999940395355,
+        "domainLookupStart": 0.5999999940395355,
+        "domainLookupEnd": 0.5999999940395355,
+        "connectStart": 0.5999999940395355,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.5999999940395355,
+        "requestStart": 1.2999999970197678,
+        "responseStart": 850,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 6.200000002980232,
+        "responseEnd": 950,
+        "transferSize": 40679,
+        "encodedBodySize": 40379,
+        "decodedBodySize": 183456,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 22.599999994039536,
+        "domContentLoadedEventStart": 22.599999994039536,
+        "domContentLoadedEventEnd": 22.599999994039536,
+        "domComplete": 74.59999999403954,
+        "loadEventStart": 74.59999999403954,
+        "loadEventEnd": 74.59999999403954,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      }
+    },
+    "heavyRequests": []
+  },
+  {
+    "mode": "save-data",
+    "enhanced": true,
+    "condition": {
+      "connection": {
+        "saveData": true,
+        "effectiveType": "4g"
+      },
+      "navigation": {
+        "name": "http://127.0.0.1:3102/2/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 80.1000000089407,
+        "navigationId": 5038,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.29999999701976776,
+        "domainLookupStart": 0.29999999701976776,
+        "domainLookupEnd": 0.29999999701976776,
+        "connectStart": 0.29999999701976776,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.29999999701976776,
+        "requestStart": 0.9000000059604645,
+        "responseStart": 6,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 6,
+        "responseEnd": 6.799999997019768,
+        "transferSize": 40679,
+        "encodedBodySize": 40379,
+        "decodedBodySize": 183456,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 19.900000005960464,
+        "domContentLoadedEventStart": 19.900000005960464,
+        "domContentLoadedEventEnd": 19.900000005960464,
+        "domComplete": 79.90000000596046,
+        "loadEventStart": 80.1000000089407,
+        "loadEventEnd": 80.1000000089407,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      }
+    },
+    "heavyRequests": []
+  },
+  {
+    "mode": "3g",
+    "enhanced": true,
+    "condition": {
+      "connection": {
+        "saveData": false,
+        "effectiveType": "3g"
+      },
+      "navigation": {
+        "name": "http://127.0.0.1:3102/2/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 80.80000001192093,
+        "navigationId": 5933,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.4000000059604645,
+        "domainLookupStart": 0.4000000059604645,
+        "domainLookupEnd": 0.4000000059604645,
+        "connectStart": 0.4000000059604645,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.4000000059604645,
+        "requestStart": 1.2000000029802322,
+        "responseStart": 6.700000002980232,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 6.700000002980232,
+        "responseEnd": 7.4000000059604645,
+        "transferSize": 40679,
+        "encodedBodySize": 40379,
+        "decodedBodySize": 183456,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 25.600000008940697,
+        "domContentLoadedEventStart": 25.600000008940697,
+        "domContentLoadedEventEnd": 25.700000002980232,
+        "domComplete": 80.70000000298023,
+        "loadEventStart": 80.80000001192093,
+        "loadEventEnd": 80.80000001192093,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      }
+    },
+    "heavyRequests": []
+  },
+  {
+    "mode": "reduced",
+    "enhanced": false,
+    "condition": {
+      "connection": {
+        "saveData": false,
+        "effectiveType": "4g"
+      },
+      "navigation": {
+        "name": "http://127.0.0.1:3102/2/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 86.3999999910593,
+        "navigationId": 4596,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.5999999940395355,
+        "domainLookupStart": 0.5999999940395355,
+        "domainLookupEnd": 0.5999999940395355,
+        "connectStart": 0.5999999940395355,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.5999999940395355,
+        "requestStart": 1.8999999910593033,
+        "responseStart": 7.0999999940395355,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 7.0999999940395355,
+        "responseEnd": 8,
+        "transferSize": 40679,
+        "encodedBodySize": 40379,
+        "decodedBodySize": 183456,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 26.5,
+        "domContentLoadedEventStart": 26.599999994039536,
+        "domContentLoadedEventEnd": 26.599999994039536,
+        "domComplete": 86.3999999910593,
+        "loadEventStart": 86.3999999910593,
+        "loadEventEnd": 86.3999999910593,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      }
+    },
+    "heavyRequests": []
+  }
+]

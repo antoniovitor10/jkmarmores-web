@@ -210,3 +210,9 @@ Justificativa em três linhas:
 Work Sans Light traz títulos leves e um desenho sóbrio, próximo da clareza das referências de pedra e arquitetura.
 Caixa alta com espaçamento amplo marca a assinatura da JK; títulos longos usam leitura natural e menos espaço entre letras.
 Source Sans 3 mantém o texto confortável, enquanto os subsets locais preservam a entrega rápida e os acentos portugueses.
+
+## 01/10: capa e logo da versão 2
+
+Sem geração, request_id ou custo novo. A capa reaproveita `assets/images/sequencia-04-aplicada.png`, render ilustrativo já registrado, nativo 2752×1536. `scripts/build-images.mjs` gera `capa-galeria-*` sem o tratamento escuro anterior e com `withoutEnlargement`; recorte móvel x1730/y0, 710×1536. AVIF 68 e WebP 90 na capa, AVIF 58/WebP 84 na jornada; variantes até a largura nativa. O original do close (`a1-prova-01.png`, 3168×1344) foi examinado, mas o quadro de ambiente foi escolhido para preservar as extremidades da bancada. As fontes disponíveis não são 4K: em DPR 2 o navegador usa a maior variante nativa, sem prometer detalhe óptico ausente. As imagens continuam ilustrativas, não obras da JK.
+
+`scripts/build-brand-transparent.mjs` deriva os arquivos `public/brand/jk-*-alfa-*` do JPEG fornecido pela cliente, `assets/brand/logo-jk-cliente-2026-09-26.jpg`. Preto convertido em alfa e bordas desmultiplicadas para não carregar halo preto; textura e desenho originais preservados. Recortes nativos: monograma 780×472, logo completa 1036×637. PNG com alfa e WebP lossless, sem ampliação. Uso da marca fornecida pelo próprio cliente; vetor oficial ainda pendente. Favicon, icon.png e apple-icon.png vieram da main, commit 068146d. Custo desta rodada US$ 0.

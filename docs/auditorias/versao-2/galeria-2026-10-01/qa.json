@@ -1,0 +1,417 @@
+[
+  {
+    "width": 390,
+    "mode": "normal",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 796,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": true,
+    "stages": [
+      {
+        "step": "0",
+        "title": "Chapa",
+        "clip": "none"
+      },
+      {
+        "step": "1",
+        "title": "Borda",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "2",
+        "title": "Acabamento",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "3",
+        "title": "Peça aplicada",
+        "clip": "inset(0%)"
+      }
+    ],
+    "lcp": 1224,
+    "cls": 0,
+    "clsSources": [],
+    "long": [
+      {
+        "at": 130.90000000596046,
+        "ms": 63
+      },
+      {
+        "at": 288.80000001192093,
+        "ms": 158
+      },
+      {
+        "at": 1287.1000000089407,
+        "ms": 90
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 56
+      },
+      {
+        "name": "pointerup",
+        "ms": 56
+      },
+      {
+        "name": "click",
+        "ms": 56
+      },
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      },
+      {
+        "name": "pointerdown",
+        "ms": 32
+      },
+      {
+        "name": "pointerup",
+        "ms": 32
+      },
+      {
+        "name": "click",
+        "ms": 32
+      },
+      {
+        "name": "keydown",
+        "ms": 16
+      },
+      {
+        "name": "keyup",
+        "ms": 16
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 1440,
+    "mode": "normal",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 828,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": true,
+    "stages": [
+      {
+        "step": "0",
+        "title": "Chapa",
+        "clip": "none"
+      },
+      {
+        "step": "1",
+        "title": "Borda",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "2",
+        "title": "Acabamento",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "3",
+        "title": "Peça aplicada",
+        "clip": "inset(0%)"
+      }
+    ],
+    "lcp": 4364,
+    "cls": 0,
+    "clsSources": [],
+    "long": [
+      {
+        "at": 86.70000000298023,
+        "ms": 82
+      },
+      {
+        "at": 194.70000000298023,
+        "ms": 147
+      },
+      {
+        "at": 1229.7000000029802,
+        "ms": 78
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 32
+      },
+      {
+        "name": "pointerup",
+        "ms": 32
+      },
+      {
+        "name": "click",
+        "ms": 32
+      },
+      {
+        "name": "pointerdown",
+        "ms": 32
+      },
+      {
+        "name": "pointerup",
+        "ms": 32
+      },
+      {
+        "name": "click",
+        "ms": 32
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "reduced",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 796,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": false,
+    "stages": [],
+    "lcp": 1052,
+    "cls": 0,
+    "clsSources": [],
+    "long": [
+      {
+        "at": 80.09999999403954,
+        "ms": 77
+      },
+      {
+        "at": 180,
+        "ms": 147
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      },
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "save-data",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 796,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": true,
+    "stages": [
+      {
+        "step": "0",
+        "title": "Chapa",
+        "clip": "none"
+      },
+      {
+        "step": "1",
+        "title": "Borda",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "2",
+        "title": "Acabamento",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "3",
+        "title": "Peça aplicada",
+        "clip": "inset(0%)"
+      }
+    ],
+    "lcp": 1044,
+    "cls": 0,
+    "clsSources": [],
+    "long": [
+      {
+        "at": 74,
+        "ms": 84
+      },
+      {
+        "at": 180.29999999701977,
+        "ms": 146
+      },
+      {
+        "at": 1033.7999999970198,
+        "ms": 84
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 48
+      },
+      {
+        "name": "pointerup",
+        "ms": 48
+      },
+      {
+        "name": "click",
+        "ms": 48
+      },
+      {
+        "name": "pointerdown",
+        "ms": 24
+      },
+      {
+        "name": "pointerup",
+        "ms": 24
+      },
+      {
+        "name": "click",
+        "ms": 24
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "slow",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 796,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": true,
+    "stages": [
+      {
+        "step": "0",
+        "title": "Chapa",
+        "clip": "none"
+      },
+      {
+        "step": "1",
+        "title": "Borda",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "2",
+        "title": "Acabamento",
+        "clip": "inset(0%)"
+      },
+      {
+        "step": "3",
+        "title": "Peça aplicada",
+        "clip": "inset(0%)"
+      }
+    ],
+    "lcp": 3132,
+    "cls": 0,
+    "clsSources": [],
+    "long": [
+      {
+        "at": 332.59999999403954,
+        "ms": 303
+      },
+      {
+        "at": 1371.5,
+        "ms": 152
+      },
+      {
+        "at": 3348.5,
+        "ms": 106
+      }
+    ],
+    "events": [
+      {
+        "name": "pointerdown",
+        "ms": 40
+      },
+      {
+        "name": "pointerup",
+        "ms": 40
+      },
+      {
+        "name": "click",
+        "ms": 40
+      },
+      {
+        "name": "pointerdown",
+        "ms": 32
+      },
+      {
+        "name": "pointerup",
+        "ms": 32
+      },
+      {
+        "name": "click",
+        "ms": 32
+      }
+    ],
+    "frames": [],
+    "scrollResponse": 0,
+    "errors": [],
+    "badAssetRequests": []
+  },
+  {
+    "width": 390,
+    "mode": "no-js",
+    "initial": {
+      "overflow": false,
+      "h1": 1,
+      "ctaBottom": 796,
+      "noindex": true,
+      "badLinks": []
+    },
+    "enhanced": false,
+    "stages": [],
+    "errors": [],
+    "badAssetRequests": []
+  }
+]

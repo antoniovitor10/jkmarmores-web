@@ -1,7 +1,6 @@
 ﻿import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { mountJourney } from './journey-motion';
-import { motionNetworkPolicy, type MotionConnection } from '@/lib/motion-network';
 
 export { gsap, ScrollTrigger };
 gsap.registerPlugin(ScrollTrigger);
@@ -9,10 +8,6 @@ ScrollTrigger.config({ ignoreMobileResize: true });
 
 export function mountPageMotion() {
   const mm = gsap.matchMedia();
-  const connection = (navigator as Navigator & { connection?: MotionConnection }).connection;
-  const configure = () => {
-    mm.revert();
-    if (motionNetworkPolicy(connection) !== 'allowed') return;
     mm.add({ full: '(prefers-reduced-motion: no-preference)', mobile: '(max-width: 700px)' }, context => {
       if (!context.conditions?.full) return;
       const journey = document.querySelector<HTMLElement>('.journey-track');
@@ -31,8 +26,5 @@ export function mountPageMotion() {
       return stopJourney;
     });
     void document.fonts.ready.then(() => ScrollTrigger.refresh());
-  };
-  configure();
-  connection?.addEventListener('change', configure);
-  return () => { connection?.removeEventListener('change', configure); mm.revert(); };
+  return () => mm.revert();
 }

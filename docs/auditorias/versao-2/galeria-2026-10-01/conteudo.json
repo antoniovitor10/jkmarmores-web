@@ -1,0 +1,416 @@
+[
+  {
+    "width": 390,
+    "route": "sobre/",
+    "h1": "JK Mármores e Granitos",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "materiais/",
+    "h1": "Materiais que traduzem exclusividade",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "materiais/marmore/",
+    "h1": "Mármores Nacionais e Importados",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "materiais/granito/",
+    "h1": "Granitos",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "materiais/marmore-dolomitico/",
+    "h1": "Mármores Dolomíticos",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "materiais/quartzito/",
+    "h1": "Quartzitos Naturais",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "materiais/quartzo/",
+    "h1": "Quartzos",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "materiais/ultracompacto/",
+    "h1": "Lâminas Ultracompactas Sinterizadas",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 390,
+    "route": "contato/",
+    "h1": "Vamos falar do seu projeto.",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "sobre/",
+    "h1": "JK Mármores e Granitos",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "materiais/",
+    "h1": "Materiais que traduzem exclusividade",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "materiais/marmore/",
+    "h1": "Mármores Nacionais e Importados",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "materiais/granito/",
+    "h1": "Granitos",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "materiais/marmore-dolomitico/",
+    "h1": "Mármores Dolomíticos",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "materiais/quartzito/",
+    "h1": "Quartzitos Naturais",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "materiais/quartzo/",
+    "h1": "Quartzos",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "materiais/ultracompacto/",
+    "h1": "Lâminas Ultracompactas Sinterizadas",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 1440,
+    "route": "contato/",
+    "h1": "Vamos falar do seu projeto.",
+    "h1Count": 1,
+    "font": "homeDisplay, \"homeDisplay Fallback\", Arial, sans-serif",
+    "weight": "300",
+    "overflow": false,
+    "noindex": true,
+    "foundingDate": "2010",
+    "areas": [
+      "São Paulo",
+      "Grande São Paulo",
+      "ABC",
+      "interior",
+      "litoral norte",
+      "Baixada Santista"
+    ],
+    "badLinks": [],
+    "violations": []
+  },
+  {
+    "width": 320,
+    "route": "sobre/",
+    "javaScript": false,
+    "overflow": false
+  },
+  {
+    "width": 320,
+    "route": "materiais/",
+    "javaScript": false,
+    "overflow": false
+  },
+  {
+    "width": 320,
+    "route": "materiais/ultracompacto/",
+    "javaScript": false,
+    "overflow": false
+  },
+  {
+    "width": 720,
+    "route": "sobre/",
+    "javaScript": false,
+    "overflow": false
+  },
+  {
+    "width": 720,
+    "route": "materiais/",
+    "javaScript": false,
+    "overflow": false
+  },
+  {
+    "width": 720,
+    "route": "materiais/ultracompacto/",
+    "javaScript": false,
+    "overflow": false
+  }
+]

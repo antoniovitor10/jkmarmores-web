@@ -115,5 +115,15 @@
  .strip { gap:20px; }
  .group { flex-basis:100%; }
  .choice { padding:12px 14px; }
- .image { aspect-ratio:4/5; object-fit:cover; }
+ .image { aspect-ratio:16/10; object-fit:cover; }
 }
+@media(min-width:701px) {
+ .root > div { display:grid; grid-template-columns:minmax(250px,1fr) minmax(0,640px); column-gap:80px; align-items:start; }
+ .choices { grid-column:1; grid-row:1; border:0; padding:0; margin:0 0 32px; }
+ .strip { flex-direction:column; gap:32px; }
+ .figure { grid-column:2; grid-row:1/3; }
+ .footer { grid-column:1; grid-row:2; }
+ .group legend,.caption,.footer p { font-size:16px; }
+ .image { aspect-ratio:16/10; object-fit:cover; }
+}
+@media(max-width:1000px) and (min-width:701px) { .root > div { column-gap:32px; } .choice { padding-inline:10px; } }

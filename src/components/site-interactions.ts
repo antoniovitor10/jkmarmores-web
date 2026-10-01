@@ -1,28 +1,34 @@
 import { afterPoster } from '@/lib/after-poster';
 import { mountJourneyImages } from './journey-images';
-import { motionNetworkPolicy, type MotionConnection } from '@/lib/motion-network';
 
 export function mountSiteInteractions() {
   let disposed = false;
   let motion = () => {};
   let nearby: IntersectionObserver | undefined;
-  const connection = (navigator as Navigator & { connection?: MotionConnection }).connection;
-  const heroMotion = document.querySelector<HTMLElement>('.home-hero');
-  const updateNetworkMotion = () => { if (heroMotion) heroMotion.dataset.lite = String(motionNetworkPolicy(connection) !== 'allowed'); };
-  updateNetworkMotion();
-  connection?.addEventListener('change', updateNetworkMotion);
   const journey = document.querySelector<HTMLElement>('.journey-track');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  // Reserva a composição antes de adiar o GSAP: ativá-la dentro do viewport causa CLS.
+  const updateJourneyLayout = () => {
+    if (!journey) return;
+    if (reducedMotion.matches) delete journey.dataset.motionLayout;
+    else journey.dataset.motionLayout = 'true';
+    journey.querySelectorAll<HTMLElement>('.journey-frame').forEach((frame, index) => {
+      frame.inert = !reducedMotion.matches && index !== 0;
+    });
+  };
+  updateJourneyLayout();
+  reducedMotion.addEventListener('change', updateJourneyLayout);
   let stopImages = () => {};
   const cancelMotion = afterPoster(() => {
     stopImages = journey ? mountJourneyImages(journey) : () => {};
-    if (matchMedia('(prefers-reduced-motion: reduce)').matches || motionNetworkPolicy((navigator as Navigator & { connection?: MotionConnection }).connection) !== 'allowed') return;
+    // A rede limita mídia pesada, nunca as transições com imagens já disponíveis.
     nearby = new IntersectionObserver(entries => {
       if (!entries.some(entry => entry.isIntersecting)) return;
       nearby?.disconnect();
       void import('./motion-runtime').then(({ mountPageMotion }) => {
         if (!disposed) motion = mountPageMotion();
       });
-    }, { rootMargin: `${Math.max(600, innerHeight)}px 0px` });
+    }, { rootMargin: '300px 0px' });
     document.querySelectorAll('.journey-track,.editorial-image').forEach(el => nearby!.observe(el));
   });
   const dock = document.querySelector<HTMLElement>(".mobile-quote-dock");
@@ -58,5 +64,5 @@ export function mountSiteInteractions() {
   menu?.addEventListener("toggle", toggle);
   document.addEventListener("keydown", key);
   toggle();
-  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); connection?.removeEventListener('change', updateNetworkMotion); if (heroMotion) delete heroMotion.dataset.lite; menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
+  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); reducedMotion.removeEventListener('change', updateJourneyLayout); if (journey) { delete journey.dataset.motionLayout; journey.querySelectorAll<HTMLElement>('.journey-frame').forEach(frame => { frame.inert = false; }); } menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); targets.forEach((el, i) => { el.inert = previous[i]; }); };
 }
