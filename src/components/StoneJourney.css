@@ -4,7 +4,7 @@
 .journey-monogram { display:block; width:min(38vw,480px); height:auto; overflow:visible; }
 .journey-mask p { font-size:15px; letter-spacing:.06em; margin:0; }
 .journey-heading { padding:40px max(40px,calc((100% - 1280px)/2)); }
-.journey-heading h2 { margin:0; min-inline-size:12ch; max-inline-size:100%; font-size:clamp(36px,4vw,56px); font-weight:var(--peso-titulo); word-break:normal; overflow-wrap:normal; white-space:normal; hyphens:none; }
+.journey-heading h2 { margin:0; min-inline-size:12ch; max-inline-size:100%; font-size:clamp(36px,4vw,56px); font-weight:var(--peso-titulo); word-break:normal; overflow-wrap:normal; white-space:normal; hyphens:manual; }
 .journey-frame { margin:0 auto; width:min(100% - 80px,1280px); padding-block:48px; display:grid; grid-template-columns:1fr 1.65fr; gap:64px; align-items:center; }
 .journey-media { position:relative; overflow:hidden; min-height:0; }
 .journey-frame noscript { display:none; }
@@ -30,7 +30,7 @@
 [data-motion-layout] .journey-progress { display:flex; position:absolute; inset:auto max(40px,calc((100% - 1280px)/2)) 24px; gap:8px; z-index:4; height:2px; }
 .journey-progress > span { flex:1; background:var(--cor-borda); }
 .journey-progress i { display:block; height:100%; background:var(--cor-texto); transform:scaleX(0); transform-origin:left; }
-@media(max-width:900px) {
+@media(max-width:1024px) {
  .journey-mask { min-height:280px; padding-block:48px; gap:24px; }
  .journey-monogram { width:62vw; }
  .journey-mask p { font-size:14px; }
@@ -50,4 +50,4 @@
  [data-motion-layout] .journey-frame figcaption { position:static; inset:auto; grid-row:2; width:auto; }
  [data-motion-layout] .journey-progress { inset-inline:24px; bottom:calc(80px + env(safe-area-inset-bottom,0px)); }
 }
-@media(max-height:650px) and (min-width:901px) { [data-motion-layout] .journey-heading { padding-block:32px; } .journey-heading h2 { font-size:32px; } .journey-frame h3 { font-size:28px; } }
+@media(max-height:650px) and (min-width:1025px) { [data-motion-layout] .journey-heading { padding-block:32px; } .journey-heading h2 { font-size:32px; } .journey-frame h3 { font-size:28px; } }
