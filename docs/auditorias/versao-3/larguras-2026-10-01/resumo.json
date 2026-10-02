@@ -1,0 +1,33 @@
+{
+  "url": "https://jkmarmores.com.br/3/",
+  "source": "1b10ac8",
+  "viewports": 18,
+  "captures": 654,
+  "issues": [
+    {
+      "width": 1280,
+      "height": 1000,
+      "state": "materiais-quartzo",
+      "type": "text-overlap",
+      "a": "Chamar no WhatsApp",
+      "b": "Pedras naturais e superfícies de alta tecnologia para projetos que transcendem tendências."
+    },
+    {
+      "width": 1440,
+      "height": 800,
+      "state": "materiais-ultracompacto",
+      "type": "text-overlap",
+      "a": "Chamar no WhatsApp",
+      "b": "Pedras naturais e superfícies de alta tecnologia para projetos que transcendem tendências."
+    },
+    {
+      "width": 1440,
+      "height": 1300,
+      "state": "materiais-quartzito",
+      "type": "text-overlap",
+      "a": "Chamar no WhatsApp",
+      "b": "Pedras naturais e superfícies de alta tecnologia para projetos que transcendem tendências."
+    }
+  ],
+  "errors": []
+}
