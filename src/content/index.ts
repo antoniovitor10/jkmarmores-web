@@ -10,7 +10,7 @@ const ctaOrcamento = (origem: string) => ({
 const paginas: ConteudoSite["paginas"] = {
   inicio: {
     titulo: "Mármores e granitos em Barueri.",
-    introducao: "A JK Marmores e Granitos está no Parque Viana, em Barueri/SP. Fale por telefone sobre o seu projeto.",
+    introducao: "A JK Mármores e Granitos está no Parque Viana, em Barueri/SP. Fale por telefone sobre o seu projeto.",
     seo: {
       titulo: "JK Mármores e Granitos | Barueri e São Paulo, desde 2010",
       descricao: "Desde 2010, projetos residenciais, comerciais e industriais. Barueri, São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista. Fale com a JK.",
@@ -53,9 +53,9 @@ const paginas: ConteudoSite["paginas"] = {
   },
   sobre: {
     titulo: "Conheça a empresa",
-    introducao: "A JK Marmores e Granitos é uma marmoraria localizada no Parque Viana, em Barueri/SP. Conheça os dados da empresa e os canais de contato.",
+    introducao: "A JK Mármores e Granitos é uma marmoraria localizada no Parque Viana, em Barueri/SP. Conheça os dados da empresa e os canais de contato.",
     seo: {
-      titulo: "A empresa | JK Marmores e Granitos em Barueri",
+      titulo: "A empresa | JK Mármores e Granitos em Barueri",
       descricao: "Desde 2010, a JK transforma pedras naturais em expressões de personalidade, sofisticação e design. Conheça nossa história e a região atendida.",
       canonicalPath: "/sobre/",
     },
@@ -71,7 +71,7 @@ const paginas: ConteudoSite["paginas"] = {
     titulo: "Materiais para escolher com critério",
     introducao: cliente.materiaisIntro,
     seo: {
-      titulo: "Materiais e acabamentos | JK Marmores e Granitos",
+      titulo: "Materiais e acabamentos | JK Mármores e Granitos",
       descricao: "Mármores, granitos, mármores dolomíticos, quartzitos naturais, quartzos e lâminas ultracompactas sinterizadas. Conheça os materiais da JK.",
       canonicalPath: "/materiais/",
     },
@@ -116,8 +116,8 @@ const paginas: ConteudoSite["paginas"] = {
     titulo: "Converse sobre o seu projeto",
     introducao: "Você pode começar com uma descrição curta. Ambiente, material desejado, medidas aproximadas e cidade ajudam a organizar o pedido.",
     seo: {
-      titulo: "Contato e orçamento em Barueri | JK Marmores e Granitos",
-      descricao: "Fale com a JK Marmores e Granitos pelo telefone (11) 96797-6902. Endereço: Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP.",
+      titulo: "Contato e orçamento em Barueri | JK Mármores e Granitos",
+      descricao: "Fale com a JK Mármores e Granitos pelo telefone (11) 96797-6902. Endereço: Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP.",
       canonicalPath: "/contato/",
     },
     secoes: [
@@ -174,7 +174,7 @@ const aplicacoes: Aplicacao[] = [
 
 export const conteudo: ConteudoSite = {
   empresa: {
-    nome: "JK Marmores e Granitos",
+    nome: "JK Mármores e Granitos",
     razaoSocial: pendente("confirmar razão social"),
     cnpj: pendente("confirmar CNPJ"),
     telefone: "(11) 96797-6902",
