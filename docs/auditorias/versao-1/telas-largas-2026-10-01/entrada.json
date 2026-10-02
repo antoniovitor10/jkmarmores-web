@@ -1,0 +1,1206 @@
+[
+  {
+    "attempt": 1,
+    "tasks": [
+      {
+        "durationMs": 204.858,
+        "events": [
+          {
+            "name": "EvaluateScript",
+            "durationMs": 198.619,
+            "data": {
+              "columnNumber": 1,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/0bma92pht_c97.js"
+            }
+          },
+          {
+            "name": "RunMicrotasks",
+            "durationMs": 197.717
+          },
+          {
+            "name": "EventDispatch",
+            "durationMs": 5.964,
+            "data": {
+              "type": "load"
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 5.064,
+            "data": {
+              "columnNumber": 216942,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "fF",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859641583,
+              "scriptId": "9",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/0bma92pht_c97.js"
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 2.976,
+            "data": {
+              "columnNumber": 174189,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859641571,
+              "scriptId": "9",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/0bma92pht_c97.js"
+            }
+          },
+          {
+            "name": "V8.StackGuard",
+            "durationMs": 0.18
+          },
+          {
+            "name": "V8.HandleInterrupts",
+            "durationMs": 0.171
+          },
+          {
+            "name": "V8.BytecodeBudgetInterrupt",
+            "durationMs": 0.169
+          }
+        ]
+      },
+      {
+        "durationMs": 200.178,
+        "events": [
+          {
+            "name": "EvaluateScript",
+            "durationMs": 199.559,
+            "data": {
+              "columnNumber": 1,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/26101bsj44vbo.js"
+            }
+          },
+          {
+            "name": "RunMicrotasks",
+            "durationMs": 198.739
+          },
+          {
+            "name": "Layout",
+            "durationMs": 9.02
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 5.254
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 5.001
+          },
+          {
+            "name": "Layout",
+            "durationMs": 2.808
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 1.196
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 1.194
+          }
+        ]
+      },
+      {
+        "durationMs": 107.586,
+        "events": [
+          {
+            "name": "Layout",
+            "durationMs": 78.211
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 18.922
+          },
+          {
+            "name": "Paint",
+            "durationMs": 2.593,
+            "data": {
+              "clip": [
+                0,
+                0,
+                390,
+                0,
+                390,
+                4844,
+                0,
+                4844
+              ],
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "layerId": 0,
+              "nodeId": 3,
+              "nodeName": "#document"
+            }
+          },
+          {
+            "name": "PrePaint",
+            "durationMs": 1.596,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "FireAnimationFrame",
+            "durationMs": 1.444,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "id": 2
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 1.423,
+            "data": {
+              "columnNumber": 23304,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "$RV",
+              "isolate": "3256058227808961486",
+              "lineNumber": 5,
+              "sampleTraceId": 1641682859641490,
+              "scriptId": "14",
+              "url": "http://127.0.0.1:3111/1/"
+            }
+          },
+          {
+            "name": "FireAnimationFrame",
+            "durationMs": 1.061,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "id": 1
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 0.861,
+            "data": {
+              "columnNumber": 19401,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "",
+              "isolate": "3256058227808961486",
+              "lineNumber": 5,
+              "sampleTraceId": 1641682859641489,
+              "scriptId": "13",
+              "url": "http://127.0.0.1:3111/1/"
+            }
+          }
+        ]
+      },
+      {
+        "durationMs": 46.535,
+        "events": [
+          {
+            "name": "Receive mojo message",
+            "durationMs": 45.494
+          },
+          {
+            "name": "HTMLDocumentParser::MaybeFetchQueuedPreloads",
+            "durationMs": 11.051
+          },
+          {
+            "name": "CommitLoad",
+            "durationMs": 0.213,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "name": "",
+              "page": "8D18B64EF371A0CFE251849A5D3058BF",
+              "url": "http://127.0.0.1:3111/1/"
+            }
+          },
+          {
+            "name": "V8.StackGuard",
+            "durationMs": 0.177
+          },
+          {
+            "name": "V8.HandleInterrupts",
+            "durationMs": 0.172
+          },
+          {
+            "name": "EventDispatch",
+            "durationMs": 0.162,
+            "data": {
+              "type": "pagehide"
+            }
+          },
+          {
+            "name": "EventDispatch",
+            "durationMs": 0.004,
+            "data": {
+              "type": "pagehide"
+            }
+          },
+          {
+            "name": "V8.InvokeApiInterruptCallbacks",
+            "durationMs": 0.004
+          }
+        ]
+      },
+      {
+        "durationMs": 35.307,
+        "events": [
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 17.156
+          },
+          {
+            "name": "Layout",
+            "durationMs": 7.913
+          },
+          {
+            "name": "Paint",
+            "durationMs": 3.73,
+            "data": {
+              "clip": [
+                0,
+                0,
+                390,
+                0,
+                390,
+                844,
+                0,
+                844
+              ],
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "layerId": 0,
+              "nodeId": 3,
+              "nodeName": "#document"
+            }
+          },
+          {
+            "name": "PrePaint",
+            "durationMs": 1.22,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "PaintImage",
+            "durationMs": 0.754,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "height": 844,
+              "isCSS": true,
+              "nodeId": 8,
+              "nodeName": "IMG",
+              "srcHeight": 14,
+              "srcWidth": 24,
+              "url": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASoYAA4APwForE6rJaQiMAgBYCAJZQCdACIj09WByzVKILfS7oAA/sthK0jAC1FRkhohXw5hjNtshoxo0zkJhzYPP1YVlCTuxanb3OgK6MlGeVamG1TDWBuzGFJ1i02j8A7jF7hUxZOhzSAA",
+              "width": 390,
+              "x": 0,
+              "y": 0
+            }
+          },
+          {
+            "name": "Commit",
+            "durationMs": 0.601
+          },
+          {
+            "name": "Layerize",
+            "durationMs": 0.429,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "PaintImage",
+            "durationMs": 0.391,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "height": 844,
+              "isCSS": false,
+              "isPicture": true,
+              "loadingAttribute": "eager",
+              "nodeId": 8,
+              "nodeName": "IMG",
+              "srcHeight": 499,
+              "srcWidth": 230.4545288085938,
+              "srcsetAttribute": "",
+              "url": "http://127.0.0.1:3111/1/img/capa-editorial-mobile-390.avif",
+              "width": 659.625,
+              "x": -124.015625,
+              "y": 0
+            }
+          }
+        ]
+      },
+      {
+        "durationMs": 31.418,
+        "events": [
+          {
+            "name": "Commit",
+            "durationMs": 29.385
+          },
+          {
+            "name": "HitTest",
+            "durationMs": 27.974
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 0.594
+          },
+          {
+            "name": "HitTest",
+            "durationMs": 0.396
+          },
+          {
+            "name": "FireAnimationFrame",
+            "durationMs": 0.394,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "id": 167
+            }
+          },
+          {
+            "name": "IntersectionObserverController::computeIntersections",
+            "durationMs": 0.39
+          },
+          {
+            "name": "PrePaint",
+            "durationMs": 0.383,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 0.368,
+            "data": {
+              "columnNumber": 14016,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "t",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859642661,
+              "scriptId": "21",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/26101bsj44vbo.js"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attempt": 2,
+    "tasks": [
+      {
+        "durationMs": 152.288,
+        "events": [
+          {
+            "name": "Layout",
+            "durationMs": 98.946
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 36.077
+          },
+          {
+            "name": "Paint",
+            "durationMs": 7.479,
+            "data": {
+              "clip": [
+                0,
+                0,
+                390,
+                0,
+                390,
+                4844,
+                0,
+                4844
+              ],
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "layerId": 0,
+              "nodeId": 34,
+              "nodeName": "#document"
+            }
+          },
+          {
+            "name": "PrePaint",
+            "durationMs": 3.642,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "Layerize",
+            "durationMs": 1.459,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "Commit",
+            "durationMs": 1.02
+          },
+          {
+            "name": "Layout",
+            "durationMs": 0.581
+          },
+          {
+            "name": "PaintImage",
+            "durationMs": 0.39,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "height": 658.3125,
+              "isCSS": true,
+              "nodeId": 41,
+              "nodeName": "IMG",
+              "srcHeight": 13,
+              "srcWidth": 24,
+              "url": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADwAwCdASoYAA0APwFurU6rJqQiMAgBYCAJYwCnFB6u6wbokBpVNCUAAP7unZG8sezyJh0c4UCS58+4XGqcs1hBsgVTsN9n5F6oylVjlkqrxgyewZsSWNTJhcx9BNhIK8zFIjAA",
+              "width": 390,
+              "x": 0,
+              "y": 1700.65625
+            }
+          }
+        ]
+      },
+      {
+        "durationMs": 149.652,
+        "events": [
+          {
+            "name": "EvaluateScript",
+            "durationMs": 149.022,
+            "data": {
+              "columnNumber": 1,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/26101bsj44vbo.js"
+            }
+          },
+          {
+            "name": "RunMicrotasks",
+            "durationMs": 148.416
+          },
+          {
+            "name": "Layout",
+            "durationMs": 9.108
+          },
+          {
+            "name": "Layout",
+            "durationMs": 4.114
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 4.047
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 1.594
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 1.289
+          },
+          {
+            "name": "Layout",
+            "durationMs": 1.251
+          }
+        ]
+      },
+      {
+        "durationMs": 78.139,
+        "events": [
+          {
+            "name": "Receive mojo message",
+            "durationMs": 77.601
+          },
+          {
+            "name": "EventDispatch",
+            "durationMs": 43.356,
+            "data": {
+              "type": "visibilitychange"
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 43.153,
+            "data": {
+              "columnNumber": 105705,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "iR",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859645041,
+              "scriptId": "21",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/26101bsj44vbo.js"
+            }
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 23.248
+          },
+          {
+            "name": "Layout",
+            "durationMs": 18.692
+          },
+          {
+            "name": "HTMLDocumentParser::MaybeFetchQueuedPreloads",
+            "durationMs": 8
+          },
+          {
+            "name": "EventDispatch",
+            "durationMs": 0.601,
+            "data": {
+              "type": "pagehide"
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 0.391,
+            "data": {
+              "columnNumber": 23268,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859645040,
+              "scriptId": "8",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/3x55vlw4_jwcc.js"
+            }
+          }
+        ]
+      },
+      {
+        "durationMs": 29.392,
+        "events": [
+          {
+            "name": "EvaluateScript",
+            "durationMs": 28.147,
+            "data": {
+              "columnNumber": 1,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/3x55vlw4_jwcc.js"
+            }
+          },
+          {
+            "name": "RunMicrotasks",
+            "durationMs": 26.894
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 0.824,
+            "data": {
+              "columnNumber": 174189,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859645467,
+              "scriptId": "9",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/0bma92pht_c97.js"
+            }
+          },
+          {
+            "name": "EventDispatch",
+            "durationMs": 0.602,
+            "data": {
+              "type": "load"
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 0.391,
+            "data": {
+              "columnNumber": 216942,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "fF",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859645446,
+              "scriptId": "9",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/0bma92pht_c97.js"
+            }
+          },
+          {
+            "name": "v8.compile",
+            "durationMs": 0.22,
+            "data": {
+              "columnNumber": 1,
+              "lineNumber": 1,
+              "scriptId": 8,
+              "streamed": true,
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/3x55vlw4_jwcc.js"
+            }
+          },
+          {
+            "name": "BlinkScheduler_PerformMicrotaskCheckpoint",
+            "durationMs": 0.002
+          }
+        ]
+      },
+      {
+        "durationMs": 22.219,
+        "events": [
+          {
+            "name": "ParseHTML",
+            "durationMs": 21.811
+          },
+          {
+            "name": "BlinkScheduler_PerformMicrotaskCheckpoint",
+            "durationMs": 0.003
+          }
+        ]
+      },
+      {
+        "durationMs": 11.896,
+        "events": [
+          {
+            "name": "PrePaint",
+            "durationMs": 3.111,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "FireAnimationFrame",
+            "durationMs": 2.638,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "id": 5
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 2.428,
+            "data": {
+              "columnNumber": 14016,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "t",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859645786,
+              "scriptId": "21",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/26101bsj44vbo.js"
+            }
+          },
+          {
+            "name": "Paint",
+            "durationMs": 2.213,
+            "data": {
+              "clip": [
+                0,
+                0,
+                390,
+                0,
+                390,
+                4844,
+                0,
+                4844
+              ],
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "layerId": 0,
+              "nodeId": 34,
+              "nodeName": "#document"
+            }
+          },
+          {
+            "name": "Commit",
+            "durationMs": 0.981
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 0.812
+          },
+          {
+            "name": "Paint",
+            "durationMs": 0.618,
+            "data": {
+              "clip": [
+                0,
+                0,
+                390,
+                0,
+                390,
+                844,
+                0,
+                844
+              ],
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "layerId": 0,
+              "nodeId": 62,
+              "nodeName": "HEADER class='home-hero HomeHero-module__ZWTPJG__hero'"
+            }
+          },
+          {
+            "name": "FireAnimationFrame",
+            "durationMs": 0.237,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "id": 6
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attempt": 3,
+    "tasks": [
+      {
+        "durationMs": 145.509,
+        "events": [
+          {
+            "name": "EvaluateScript",
+            "durationMs": 144.712,
+            "data": {
+              "columnNumber": 1,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/26101bsj44vbo.js"
+            }
+          },
+          {
+            "name": "RunMicrotasks",
+            "durationMs": 144.085
+          },
+          {
+            "name": "Layout",
+            "durationMs": 8.687
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 5.115
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 4.118
+          },
+          {
+            "name": "Layout",
+            "durationMs": 3.227
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 1.903
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 1.648
+          }
+        ]
+      },
+      {
+        "durationMs": 118.931,
+        "events": [
+          {
+            "name": "Layout",
+            "durationMs": 80.652
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 26.295
+          },
+          {
+            "name": "Paint",
+            "durationMs": 3.103,
+            "data": {
+              "clip": [
+                0,
+                0,
+                390,
+                0,
+                390,
+                4844,
+                0,
+                4844
+              ],
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "layerId": 0,
+              "nodeId": 63,
+              "nodeName": "#document"
+            }
+          },
+          {
+            "name": "PrePaint",
+            "durationMs": 3.043,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "FireAnimationFrame",
+            "durationMs": 0.786,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "id": 1
+            }
+          },
+          {
+            "name": "BlinkScheduler_PerformMicrotaskCheckpoint",
+            "durationMs": 0.642
+          },
+          {
+            "name": "RunMicrotasks",
+            "durationMs": 0.636
+          },
+          {
+            "name": "FireAnimationFrame",
+            "durationMs": 0.625,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "id": 2
+            }
+          }
+        ]
+      },
+      {
+        "durationMs": 68.07,
+        "events": [
+          {
+            "name": "Receive mojo message",
+            "durationMs": 67.076
+          },
+          {
+            "name": "EventDispatch",
+            "durationMs": 33.623,
+            "data": {
+              "type": "visibilitychange"
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 33.593,
+            "data": {
+              "columnNumber": 105705,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "iR",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859644785,
+              "scriptId": "21",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/26101bsj44vbo.js"
+            }
+          },
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 21.411
+          },
+          {
+            "name": "Layout",
+            "durationMs": 11.598
+          },
+          {
+            "name": "HTMLDocumentParser::MaybeFetchQueuedPreloads",
+            "durationMs": 6.645
+          },
+          {
+            "name": "EventDispatch",
+            "durationMs": 0.402,
+            "data": {
+              "type": "pagehide"
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 0.208,
+            "data": {
+              "columnNumber": 23268,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859644784,
+              "scriptId": "8",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/3x55vlw4_jwcc.js"
+            }
+          }
+        ]
+      },
+      {
+        "durationMs": 34.78,
+        "events": [
+          {
+            "name": "EvaluateScript",
+            "durationMs": 34.071,
+            "data": {
+              "columnNumber": 1,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "lineNumber": 1,
+              "scriptId": 0,
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/0bma92pht_c97.js"
+            }
+          },
+          {
+            "name": "RunMicrotasks",
+            "durationMs": 33.432
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 1.046,
+            "data": {
+              "columnNumber": 174189,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859649292,
+              "scriptId": "9",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/0bma92pht_c97.js"
+            }
+          },
+          {
+            "name": "EventDispatch",
+            "durationMs": 0.672,
+            "data": {
+              "type": "load"
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 0.259,
+            "data": {
+              "columnNumber": 216942,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "fF",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859649288,
+              "scriptId": "9",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/0bma92pht_c97.js"
+            }
+          },
+          {
+            "name": "v8.compile",
+            "durationMs": 0.21,
+            "data": {
+              "columnNumber": 1,
+              "lineNumber": 1,
+              "scriptId": 9,
+              "streamed": true,
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/0bma92pht_c97.js"
+            }
+          },
+          {
+            "name": "BlinkScheduler_PerformMicrotaskCheckpoint",
+            "durationMs": 0.003
+          }
+        ]
+      },
+      {
+        "durationMs": 15.739,
+        "events": [
+          {
+            "name": "PrePaint",
+            "durationMs": 3.768,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "Paint",
+            "durationMs": 3.197,
+            "data": {
+              "clip": [
+                0,
+                0,
+                390,
+                0,
+                390,
+                4844,
+                0,
+                4844
+              ],
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "layerId": 0,
+              "nodeId": 63,
+              "nodeName": "#document"
+            }
+          },
+          {
+            "name": "Commit",
+            "durationMs": 1.837
+          },
+          {
+            "name": "FireAnimationFrame",
+            "durationMs": 1.612,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "id": 5
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 1.413,
+            "data": {
+              "columnNumber": 14016,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "t",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859649661,
+              "scriptId": "21",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/26101bsj44vbo.js"
+            }
+          },
+          {
+            "name": "Layerize",
+            "durationMs": 1.098,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "IntersectionObserverController::computeIntersections",
+            "durationMs": 1.043
+          },
+          {
+            "name": "Paint",
+            "durationMs": 0.869,
+            "data": {
+              "clip": [
+                0,
+                0,
+                390,
+                0,
+                390,
+                844,
+                0,
+                844
+              ],
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "layerId": 0,
+              "nodeId": 92,
+              "nodeName": "HEADER class='home-hero HomeHero-module__ZWTPJG__hero'"
+            }
+          }
+        ]
+      },
+      {
+        "durationMs": 12.803,
+        "events": [
+          {
+            "name": "UpdateLayoutTree",
+            "durationMs": 4.461
+          },
+          {
+            "name": "FireAnimationFrame",
+            "durationMs": 1.552,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "id": 4
+            }
+          },
+          {
+            "name": "Layout",
+            "durationMs": 1.235
+          },
+          {
+            "name": "Layerize",
+            "durationMs": 1.235,
+            "data": {
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "isMainFrame": true,
+              "isOutermostMainFrame": true,
+              "page": "8D18B64EF371A0CFE251849A5D3058BF"
+            }
+          },
+          {
+            "name": "FunctionCall",
+            "durationMs": 1.2,
+            "data": {
+              "columnNumber": 2213,
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "functionName": "",
+              "isolate": "3256058227808961486",
+              "lineNumber": 1,
+              "sampleTraceId": 1641682859649411,
+              "scriptId": "20",
+              "url": "http://127.0.0.1:3111/1/_next/static/chunks/0iacko_fx1oh3.js"
+            }
+          },
+          {
+            "name": "Commit",
+            "durationMs": 0.997
+          },
+          {
+            "name": "Paint",
+            "durationMs": 0.803,
+            "data": {
+              "clip": [
+                0,
+                0,
+                390,
+                0,
+                390,
+                4844,
+                0,
+                4844
+              ],
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "layerId": 0,
+              "nodeId": 63,
+              "nodeName": "#document"
+            }
+          },
+          {
+            "name": "Paint",
+            "durationMs": 0.788,
+            "data": {
+              "clip": [
+                0,
+                0,
+                390,
+                0,
+                390,
+                4844,
+                0,
+                4844
+              ],
+              "frame": "8D18B64EF371A0CFE251849A5D3058BF",
+              "layerId": 0,
+              "nodeId": 65,
+              "nodeName": "HTML"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

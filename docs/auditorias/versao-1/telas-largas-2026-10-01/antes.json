@@ -1,0 +1,6765 @@
+{
+  "source": "4e1feecebe9aaa9542106353477bbc00a8bdf5fe",
+  "cases": [
+    {
+      "width": 1280,
+      "height": 800,
+      "samples": [
+        {
+          "route": "/1/",
+          "state": "capa",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "capa-saida",
+          "scrollY": 192,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma-transicao",
+          "scrollY": 480,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma",
+          "scrollY": 768,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma-final",
+          "scrollY": 960,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "assinatura",
+          "scrollY": 1680,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-titulo",
+          "scrollY": 2112,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-15",
+          "scrollY": 1853,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-31",
+          "scrollY": 2093,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-38",
+          "scrollY": 2199,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-55",
+          "scrollY": 2454,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-80",
+          "scrollY": 2830,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-15",
+          "scrollY": 2557,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-31",
+          "scrollY": 2797,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-38",
+          "scrollY": 2903,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-55",
+          "scrollY": 3158,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-80",
+          "scrollY": 3534,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-15",
+          "scrollY": 3261,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-31",
+          "scrollY": 3501,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-38",
+          "scrollY": 3607,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-55",
+          "scrollY": 3862,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-80",
+          "scrollY": 4238,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-15",
+          "scrollY": 3965,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-31",
+          "scrollY": 4205,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-38",
+          "scrollY": 4311,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-55",
+          "scrollY": 4566,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-80",
+          "scrollY": 4942,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "Mármores dolomíticos",
+              "elements": [
+                "a.mobile-whatsapp",
+                "h3"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "Mármores dolomíticos",
+              "element": "h3"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "materiais-home",
+          "scrollY": 5147,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "configurador",
+          "scrollY": 6299,
+          "findings": [
+            {
+              "type": "dock-covers-text",
+              "text": "Composição ilustrativa. Consulte pedras específicas, disponibilidade e acabamentos com a J",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "pedido",
+          "scrollY": 7269,
+          "findings": [],
+          "grids": [
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "orcamento",
+          "scrollY": 7994,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "contato-home",
+          "scrollY": 8594,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "rodape",
+          "scrollY": 8842,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-0",
+          "scrollY": 6395,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-1",
+          "scrollY": 6395,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-2",
+          "scrollY": 6395,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-3",
+          "scrollY": 6395,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-4",
+          "scrollY": 6395,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 8842,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 8506,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 8170,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 7834,
+          "findings": [],
+          "grids": [
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 7498,
+          "findings": [],
+          "grids": [
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 7162,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            },
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 6826,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            },
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 6490,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 6154,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            },
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 5818,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            },
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 5482,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 5146,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 4810,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 4474,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 4138,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 3802,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 3466,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 3130,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 2794,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 2458,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 2122,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 1786,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 1450,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 1114,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 778,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 442,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 106,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma-apos-redimensionar",
+          "scrollY": 960,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "varredura-galeria",
+          "scrollY": 0,
+          "findings": [
+            {
+              "type": "dock-covers-text",
+              "text": "Ao observar um trabalho, considere o ambiente, a dimensão e o acabamento. Uma foto não sub",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "varredura-galeria",
+          "scrollY": 336,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "varredura-galeria",
+          "scrollY": 672,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "varredura-galeria",
+          "scrollY": 732,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "galeria-inicio",
+          "scrollY": 0,
+          "findings": [
+            {
+              "type": "dock-covers-text",
+              "text": "Ao observar um trabalho, considere o ambiente, a dimensão e o acabamento. Uma foto não sub",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "galeria-meio",
+          "scrollY": 329,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "galeria-final",
+          "scrollY": 732,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 336,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 672,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 1008,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 1344,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As lâminas ultracompactas sinterizadas combinam resistência, versatilidade e sofisticação,",
+              "elements": [
+                "a.mobile-whatsapp",
+                "p"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "As lâminas ultracompactas sinterizadas combinam resistência, versatilidade e sofisticação,",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 1680,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 2016,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            },
+            {
+              "element": "div.container.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 2352,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 2688,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 3024,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 3060,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "materiais-inicio",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "materiais-meio",
+          "scrollY": 1261,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "Alta tecnologia aplicada à arquitetura.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "p"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "Alta tecnologia aplicada à arquitetura.",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "materiais-final",
+          "scrollY": 3060,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 0,
+          "findings": [
+            {
+              "type": "dock-covers-text",
+              "text": "Nascemos com o propósito de transformar sonhos em realidade, materializando projetos com p",
+              "element": "p"
+            }
+          ],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 336,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 672,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista",
+              "elements": [
+                "a.mobile-whatsapp",
+                "p"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista",
+              "element": "p"
+            }
+          ],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 1008,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 1344,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 1680,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 2016,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 2262,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 336,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 672,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 1008,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 1344,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 1526,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/aplicacoes/",
+          "state": "varredura-aplicacoes",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#lista.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#escolha.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/aplicacoes/",
+          "state": "varredura-aplicacoes",
+          "scrollY": 336,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#lista.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#escolha.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#orcamento.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/aplicacoes/",
+          "state": "varredura-aplicacoes",
+          "scrollY": 672,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#lista.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#escolha.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#orcamento.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/aplicacoes/",
+          "state": "varredura-aplicacoes",
+          "scrollY": 986,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#orcamento.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        }
+      ],
+      "captures": [
+        "1280x800-capa.jpg",
+        "1280x800-capa-saida.jpg",
+        "1280x800-monograma-transicao.jpg",
+        "1280x800-monograma.jpg",
+        "1280x800-monograma-final.jpg",
+        "1280x800-assinatura.jpg",
+        "1280x800-jornada-titulo.jpg",
+        "1280x800-jornada-1-31.jpg",
+        "1280x800-jornada-1-55.jpg",
+        "1280x800-jornada-2-55.jpg",
+        "1280x800-jornada-3-55.jpg",
+        "1280x800-jornada-4-55.jpg",
+        "1280x800-materiais-home.jpg",
+        "1280x800-configurador.jpg",
+        "1280x800-pedido.jpg",
+        "1280x800-orcamento.jpg",
+        "1280x800-contato-home.jpg",
+        "1280x800-rodape.jpg",
+        "1280x800-galeria-inicio.jpg",
+        "1280x800-galeria-meio.jpg",
+        "1280x800-galeria-final.jpg",
+        "1280x800-materiais-inicio.jpg",
+        "1280x800-materiais-meio.jpg",
+        "1280x800-materiais-final.jpg"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 1000,
+      "samples": [
+        {
+          "route": "/1/",
+          "state": "capa",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "capa-saida",
+          "scrollY": 240,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma-transicao",
+          "scrollY": 600,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma",
+          "scrollY": 960,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma-final",
+          "scrollY": 1200,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "assinatura",
+          "scrollY": 2100,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-titulo",
+          "scrollY": 2502,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-15",
+          "scrollY": 2149,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-31",
+          "scrollY": 2450,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-38",
+          "scrollY": 2582,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-55",
+          "scrollY": 2901,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-80",
+          "scrollY": 3371,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-15",
+          "scrollY": 3029,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-31",
+          "scrollY": 3330,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-38",
+          "scrollY": 3462,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-55",
+          "scrollY": 3781,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-80",
+          "scrollY": 4251,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-15",
+          "scrollY": 3909,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-31",
+          "scrollY": 4210,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-38",
+          "scrollY": 4342,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-55",
+          "scrollY": 4661,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-80",
+          "scrollY": 5131,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-15",
+          "scrollY": 4789,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-31",
+          "scrollY": 5090,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-38",
+          "scrollY": 5222,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-55",
+          "scrollY": 5541,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-80",
+          "scrollY": 6011,
+          "findings": [
+            {
+              "type": "dock-covers-text",
+              "text": "A delicadeza visual dos mármores aliada a características de maior resistência.",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "materiais-home",
+          "scrollY": 6267,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "Alta tecnologia aplicada à arquitetura.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "p"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "Alta tecnologia aplicada à arquitetura.",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "configurador",
+          "scrollY": 7419,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "pedido",
+          "scrollY": 8389,
+          "findings": [],
+          "grids": [
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "orcamento",
+          "scrollY": 9114,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "contato-home",
+          "scrollY": 9714,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "rodape",
+          "scrollY": 9786,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-0",
+          "scrollY": 7539,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-1",
+          "scrollY": 7539,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-2",
+          "scrollY": 7539,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-3",
+          "scrollY": 7539,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-4",
+          "scrollY": 7539,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 9786,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 9366,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 8946,
+          "findings": [],
+          "grids": [
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            },
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 8526,
+          "findings": [],
+          "grids": [
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 8106,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            },
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 7686,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 7266,
+          "findings": [
+            {
+              "type": "dock-covers-text",
+              "text": "Composição ilustrativa. Consulte pedras específicas, disponibilidade e acabamentos com a J",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            },
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 6846,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            },
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 6426,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 6006,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 5586,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 5166,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 4746,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 4326,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 3906,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 3486,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 3066,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 2646,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 2226,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 1806,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 1386,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 966,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 546,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 126,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma-apos-redimensionar",
+          "scrollY": 1200,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "varredura-galeria",
+          "scrollY": 0,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "Ver outras formas de contato",
+              "elements": [
+                "a.mobile-whatsapp",
+                "a"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "Ver outras formas de contato",
+              "element": "a"
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "varredura-galeria",
+          "scrollY": 420,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "varredura-galeria",
+          "scrollY": 532,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "galeria-inicio",
+          "scrollY": 0,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "Ver outras formas de contato",
+              "elements": [
+                "a.mobile-whatsapp",
+                "a"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "Ver outras formas de contato",
+              "element": "a"
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "galeria-meio",
+          "scrollY": 239,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "galeria-final",
+          "scrollY": 532,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 420,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 840,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "Os dolomíticos apresentam veios marcantes e uma estética sofisticada, tornando cada superf",
+              "elements": [
+                "a.mobile-whatsapp",
+                "p"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "Os dolomíticos apresentam veios marcantes e uma estética sofisticada, tornando cada superf",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 1260,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As lâminas ultracompactas sinterizadas combinam resistência, versatilidade e sofisticação,",
+              "elements": [
+                "a.mobile-whatsapp",
+                "p"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "As lâminas ultracompactas sinterizadas combinam resistência, versatilidade e sofisticação,",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 1680,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 2100,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            },
+            {
+              "element": "div.container.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 2520,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 2940,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 2980,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "materiais-inicio",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "materiais-meio",
+          "scrollY": 1357,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "lâminas ultracompactas sinterizadas",
+              "elements": [
+                "a.mobile-whatsapp",
+                "a.text-link"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "lâminas ultracompactas sinterizadas",
+              "element": "a.text-link"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "materiais-final",
+          "scrollY": 2980,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 0,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "Acreditamos que a excelência está nos detalhes. Unimos rigor técnico, tecnologia, mão de o",
+              "elements": [
+                "a.mobile-whatsapp",
+                "p"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "Acreditamos que a excelência está nos detalhes. Unimos rigor técnico, tecnologia, mão de o",
+              "element": "p"
+            }
+          ],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 420,
+          "findings": [
+            {
+              "type": "dock-covers-text",
+              "text": "Projetos residenciais, comerciais e industriais.",
+              "element": "p.lead"
+            }
+          ],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 840,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 1260,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 1680,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 2062,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 0,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista",
+              "elements": [
+                "a.mobile-whatsapp",
+                "dd"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista",
+              "element": "dd"
+            }
+          ],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 420,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 840,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 1260,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 1326,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/aplicacoes/",
+          "state": "varredura-aplicacoes",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#lista.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#escolha.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#orcamento.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/aplicacoes/",
+          "state": "varredura-aplicacoes",
+          "scrollY": 420,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#lista.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#escolha.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#orcamento.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/aplicacoes/",
+          "state": "varredura-aplicacoes",
+          "scrollY": 786,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#escolha.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#orcamento.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        }
+      ],
+      "captures": [
+        "1280x1000-capa.jpg",
+        "1280x1000-capa-saida.jpg",
+        "1280x1000-monograma-transicao.jpg",
+        "1280x1000-monograma.jpg",
+        "1280x1000-monograma-final.jpg",
+        "1280x1000-assinatura.jpg",
+        "1280x1000-jornada-titulo.jpg",
+        "1280x1000-jornada-1-31.jpg",
+        "1280x1000-jornada-1-55.jpg",
+        "1280x1000-jornada-2-55.jpg",
+        "1280x1000-jornada-3-55.jpg",
+        "1280x1000-jornada-4-55.jpg",
+        "1280x1000-materiais-home.jpg",
+        "1280x1000-configurador.jpg",
+        "1280x1000-pedido.jpg",
+        "1280x1000-orcamento.jpg",
+        "1280x1000-contato-home.jpg",
+        "1280x1000-rodape.jpg",
+        "1280x1000-galeria-inicio.jpg",
+        "1280x1000-galeria-meio.jpg",
+        "1280x1000-galeria-final.jpg",
+        "1280x1000-materiais-inicio.jpg",
+        "1280x1000-materiais-meio.jpg",
+        "1280x1000-materiais-final.jpg"
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 1300,
+      "samples": [
+        {
+          "route": "/1/",
+          "state": "capa",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "capa-saida",
+          "scrollY": 312,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma-transicao",
+          "scrollY": 780,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma",
+          "scrollY": 1248,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma-final",
+          "scrollY": 1560,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "assinatura",
+          "scrollY": 2730,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-titulo",
+          "scrollY": 3087,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-15",
+          "scrollY": 2594,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-31",
+          "scrollY": 2985,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-38",
+          "scrollY": 3156,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-55",
+          "scrollY": 3571,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-1-80",
+          "scrollY": 4182,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-15",
+          "scrollY": 3738,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-31",
+          "scrollY": 4129,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-38",
+          "scrollY": 4300,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-55",
+          "scrollY": 4715,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-2-80",
+          "scrollY": 5326,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-15",
+          "scrollY": 4882,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-31",
+          "scrollY": 5273,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-38",
+          "scrollY": 5444,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-55",
+          "scrollY": 5859,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-3-80",
+          "scrollY": 6470,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-15",
+          "scrollY": 6026,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-31",
+          "scrollY": 6417,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-38",
+          "scrollY": 6588,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-55",
+          "scrollY": 7003,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "jornada-4-80",
+          "scrollY": 7614,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "Lâminas ultracompactas sinterizadas",
+              "elements": [
+                "a.mobile-whatsapp",
+                "h3"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "Lâminas ultracompactas sinterizadas",
+              "element": "h3"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "materiais-home",
+          "scrollY": 7947,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "configurador",
+          "scrollY": 9099,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "pedido",
+          "scrollY": 10069,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            },
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "orcamento",
+          "scrollY": 10794,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "contato-home",
+          "scrollY": 11202,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "rodape",
+          "scrollY": 11202,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-0",
+          "scrollY": 9255,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            },
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-1",
+          "scrollY": 9255,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            },
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-2",
+          "scrollY": 9255,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            },
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-3",
+          "scrollY": 9255,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            },
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "seletor-4",
+          "scrollY": 9255,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            },
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 11202,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 10656,
+          "findings": [],
+          "grids": [
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            },
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 10110,
+          "findings": [],
+          "grids": [
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 9564,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            },
+            {
+              "element": "ol.request-steps",
+              "columns": "368px 368px 368px",
+              "children": [
+                368,
+                368,
+                368
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 9018,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            },
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 8472,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "Lavatório",
+              "elements": [
+                "a.mobile-whatsapp",
+                "button"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "Lavatório",
+              "element": "button"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            },
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.stone-selector",
+              "columns": "846.484px 313.516px",
+              "children": [
+                846,
+                314
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 7926,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 7380,
+          "findings": [
+            {
+              "type": "dock-covers-text",
+              "text": "A delicadeza visual dos mármores aliada a características de maior resistência.",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                334
+              ]
+            },
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 6834,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 6288,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 5742,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 5196,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 4650,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 4104,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 3558,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 3012,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 2466,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 1920,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.signature-stage.container",
+              "columns": "662.844px 457.156px",
+              "children": [
+                663,
+                457
+              ]
+            }
+          ],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 1374,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 828,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "varredura-home-reversa",
+          "scrollY": 282,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/",
+          "state": "monograma-apos-redimensionar",
+          "scrollY": 1560,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": {
+            "width": 478,
+            "height": 56,
+            "text": "Da matéria ao espaço."
+          }
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "varredura-galeria",
+          "scrollY": 0,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "(11) 96797-6902",
+              "elements": [
+                "a.mobile-whatsapp",
+                "a.footer-phone"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "varredura-galeria",
+          "scrollY": 232,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "galeria-inicio",
+          "scrollY": 0,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "(11) 96797-6902",
+              "elements": [
+                "a.mobile-whatsapp",
+                "a.footer-phone"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "galeria-meio",
+          "scrollY": 104,
+          "findings": [],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/galeria/",
+          "state": "galeria-final",
+          "scrollY": 232,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#obras.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#contexto.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 546,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "Os dolomíticos apresentam veios marcantes e uma estética sofisticada, tornando cada superf",
+              "elements": [
+                "a.mobile-whatsapp",
+                "p"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "Os dolomíticos apresentam veios marcantes e uma estética sofisticada, tornando cada superf",
+              "element": "p"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 1092,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "lâminas ultracompactas sinterizadas",
+              "elements": [
+                "a.mobile-whatsapp",
+                "a.text-link"
+              ]
+            },
+            {
+              "type": "dock-covers-text",
+              "text": "lâminas ultracompactas sinterizadas",
+              "element": "a.text-link"
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 1638,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            },
+            {
+              "element": "div.container.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 2184,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            },
+            {
+              "element": "div.container.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "varredura-materiais",
+          "scrollY": 2680,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "materiais-inicio",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "materiais-meio",
+          "scrollY": 1321,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.material-collection",
+              "columns": "378.656px 378.672px 378.656px",
+              "children": [
+                379,
+                379,
+                379,
+                379,
+                379,
+                379
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/materiais/",
+          "state": "materiais-final",
+          "scrollY": 2680,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.split-heading",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 546,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 1092,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 1638,
+          "findings": [],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/sobre/",
+          "state": "varredura-sobre",
+          "scrollY": 1762,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.contact-grid",
+              "columns": "600px 500px",
+              "children": [
+                600,
+                500
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 0,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 546,
+          "findings": [],
+          "grids": [],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/contato/",
+          "state": "varredura-contato",
+          "scrollY": 1026,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/aplicacoes/",
+          "state": "varredura-aplicacoes",
+          "scrollY": 0,
+          "findings": [
+            {
+              "type": "dock-covers-text",
+              "text": "Ver outras formas de contato",
+              "element": "a"
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#lista.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#escolha.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#orcamento.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            }
+          ],
+          "journeyTitle": null
+        },
+        {
+          "route": "/1/aplicacoes/",
+          "state": "varredura-aplicacoes",
+          "scrollY": 486,
+          "findings": [
+            {
+              "type": "text-overlap",
+              "a": "Chamar no WhatsApp",
+              "b": "As imagens desta página são ilustrativas, geradas por IA, e não mostram obras da JK.",
+              "elements": [
+                "a.mobile-whatsapp",
+                "span"
+              ]
+            }
+          ],
+          "grids": [
+            {
+              "element": "section#lista.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#escolha.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "section#orcamento.content-section",
+              "columns": "560px 560px",
+              "children": [
+                560,
+                560
+              ]
+            },
+            {
+              "element": "div.container.footer-grid",
+              "columns": "288px 192px 336px 240px",
+              "children": [
+                288,
+                192,
+                336,
+                240
+              ]
+            }
+          ],
+          "journeyTitle": null
+        }
+      ],
+      "captures": [
+        "1280x1300-capa.jpg",
+        "1280x1300-capa-saida.jpg",
+        "1280x1300-monograma-transicao.jpg",
+        "1280x1300-monograma.jpg",
+        "1280x1300-monograma-final.jpg",
+        "1280x1300-assinatura.jpg",
+        "1280x1300-jornada-titulo.jpg",
+        "1280x1300-jornada-1-31.jpg",
+        "1280x1300-jornada-1-55.jpg",
+        "1280x1300-jornada-2-55.jpg",
+        "1280x1300-jornada-3-55.jpg",
+        "1280x1300-jornada-4-55.jpg",
+        "1280x1300-materiais-home.jpg",
+        "1280x1300-configurador.jpg",
+        "1280x1300-pedido.jpg",
+        "1280x1300-orcamento.jpg",
+        "1280x1300-contato-home.jpg",
+        "1280x1300-rodape.jpg",
+        "1280x1300-galeria-inicio.jpg",
+        "1280x1300-galeria-meio.jpg",
+        "1280x1300-galeria-final.jpg",
+        "1280x1300-materiais-inicio.jpg",
+        "1280x1300-materiais-meio.jpg",
+        "1280x1300-materiais-final.jpg"
+      ]
+    }
+  ],
+  "errors": [],
+  "captures": [
+    {
+      "dimensions": "1280x800",
+      "state": "capa",
+      "file": "1280x800-capa.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "capa-saida",
+      "file": "1280x800-capa-saida.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "monograma-transicao",
+      "file": "1280x800-monograma-transicao.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "monograma",
+      "file": "1280x800-monograma.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "monograma-final",
+      "file": "1280x800-monograma-final.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "assinatura",
+      "file": "1280x800-assinatura.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "jornada-titulo",
+      "file": "1280x800-jornada-titulo.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "jornada-1-31",
+      "file": "1280x800-jornada-1-31.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "jornada-1-55",
+      "file": "1280x800-jornada-1-55.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "jornada-2-55",
+      "file": "1280x800-jornada-2-55.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "jornada-3-55",
+      "file": "1280x800-jornada-3-55.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "jornada-4-55",
+      "file": "1280x800-jornada-4-55.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "materiais-home",
+      "file": "1280x800-materiais-home.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "configurador",
+      "file": "1280x800-configurador.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "pedido",
+      "file": "1280x800-pedido.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "orcamento",
+      "file": "1280x800-orcamento.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "contato-home",
+      "file": "1280x800-contato-home.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "rodape",
+      "file": "1280x800-rodape.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "galeria-inicio",
+      "file": "1280x800-galeria-inicio.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "galeria-meio",
+      "file": "1280x800-galeria-meio.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "galeria-final",
+      "file": "1280x800-galeria-final.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "materiais-inicio",
+      "file": "1280x800-materiais-inicio.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "materiais-meio",
+      "file": "1280x800-materiais-meio.jpg"
+    },
+    {
+      "dimensions": "1280x800",
+      "state": "materiais-final",
+      "file": "1280x800-materiais-final.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "capa",
+      "file": "1280x1000-capa.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "capa-saida",
+      "file": "1280x1000-capa-saida.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "monograma-transicao",
+      "file": "1280x1000-monograma-transicao.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "monograma",
+      "file": "1280x1000-monograma.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "monograma-final",
+      "file": "1280x1000-monograma-final.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "assinatura",
+      "file": "1280x1000-assinatura.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "jornada-titulo",
+      "file": "1280x1000-jornada-titulo.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "jornada-1-31",
+      "file": "1280x1000-jornada-1-31.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "jornada-1-55",
+      "file": "1280x1000-jornada-1-55.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "jornada-2-55",
+      "file": "1280x1000-jornada-2-55.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "jornada-3-55",
+      "file": "1280x1000-jornada-3-55.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "jornada-4-55",
+      "file": "1280x1000-jornada-4-55.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "materiais-home",
+      "file": "1280x1000-materiais-home.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "configurador",
+      "file": "1280x1000-configurador.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "pedido",
+      "file": "1280x1000-pedido.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "orcamento",
+      "file": "1280x1000-orcamento.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "contato-home",
+      "file": "1280x1000-contato-home.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "rodape",
+      "file": "1280x1000-rodape.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "galeria-inicio",
+      "file": "1280x1000-galeria-inicio.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "galeria-meio",
+      "file": "1280x1000-galeria-meio.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "galeria-final",
+      "file": "1280x1000-galeria-final.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "materiais-inicio",
+      "file": "1280x1000-materiais-inicio.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "materiais-meio",
+      "file": "1280x1000-materiais-meio.jpg"
+    },
+    {
+      "dimensions": "1280x1000",
+      "state": "materiais-final",
+      "file": "1280x1000-materiais-final.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "capa",
+      "file": "1280x1300-capa.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "capa-saida",
+      "file": "1280x1300-capa-saida.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "monograma-transicao",
+      "file": "1280x1300-monograma-transicao.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "monograma",
+      "file": "1280x1300-monograma.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "monograma-final",
+      "file": "1280x1300-monograma-final.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "assinatura",
+      "file": "1280x1300-assinatura.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "jornada-titulo",
+      "file": "1280x1300-jornada-titulo.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "jornada-1-31",
+      "file": "1280x1300-jornada-1-31.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "jornada-1-55",
+      "file": "1280x1300-jornada-1-55.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "jornada-2-55",
+      "file": "1280x1300-jornada-2-55.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "jornada-3-55",
+      "file": "1280x1300-jornada-3-55.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "jornada-4-55",
+      "file": "1280x1300-jornada-4-55.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "materiais-home",
+      "file": "1280x1300-materiais-home.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "configurador",
+      "file": "1280x1300-configurador.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "pedido",
+      "file": "1280x1300-pedido.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "orcamento",
+      "file": "1280x1300-orcamento.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "contato-home",
+      "file": "1280x1300-contato-home.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "rodape",
+      "file": "1280x1300-rodape.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "galeria-inicio",
+      "file": "1280x1300-galeria-inicio.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "galeria-meio",
+      "file": "1280x1300-galeria-meio.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "galeria-final",
+      "file": "1280x1300-galeria-final.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "materiais-inicio",
+      "file": "1280x1300-materiais-inicio.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "materiais-meio",
+      "file": "1280x1300-materiais-meio.jpg"
+    },
+    {
+      "dimensions": "1280x1300",
+      "state": "materiais-final",
+      "file": "1280x1300-materiais-final.jpg"
+    }
+  ]
+}

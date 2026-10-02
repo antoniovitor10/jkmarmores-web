@@ -1,0 +1,127 @@
+{
+  "cases": [
+    {
+      "width": 390,
+      "height": 844,
+      "maxEntryTask": 313,
+      "dockChecks": [
+        {
+          "state": ".stone-panel-0",
+          "visible": true,
+          "inert": false,
+          "covered": [],
+          "overflow": false
+        },
+        {
+          "state": ".home-materials",
+          "visible": false,
+          "inert": true,
+          "covered": [],
+          "overflow": false
+        },
+        {
+          "state": "#configurador",
+          "visible": false,
+          "inert": true,
+          "covered": [],
+          "overflow": false
+        },
+        {
+          "state": ".request-story",
+          "visible": false,
+          "inert": true,
+          "covered": [],
+          "overflow": false
+        },
+        {
+          "state": ".contact-panel",
+          "visible": false,
+          "inert": true,
+          "covered": [],
+          "overflow": false
+        },
+        {
+          "state": ".site-footer",
+          "visible": false,
+          "inert": true,
+          "covered": [],
+          "overflow": false
+        }
+      ],
+      "scroll": {
+        "frames": 665,
+        "maxGapMs": 13.700000000000273,
+        "gapsAbove50ms": 0,
+        "maxLongTaskMs": 0
+      },
+      "dockFocusable": true,
+      "shine": true,
+      "selectorChanged": true,
+      "shineCleaned": true,
+      "violations": [],
+      "reducedMotion": true
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "maxEntryTask": 99,
+      "dockChecks": [
+        {
+          "state": ".stone-panel-0",
+          "visible": true,
+          "inert": false,
+          "covered": [],
+          "overflow": false
+        },
+        {
+          "state": ".home-materials",
+          "visible": false,
+          "inert": true,
+          "covered": [],
+          "overflow": false
+        },
+        {
+          "state": "#configurador",
+          "visible": false,
+          "inert": true,
+          "covered": [],
+          "overflow": false
+        },
+        {
+          "state": ".request-story",
+          "visible": true,
+          "inert": false,
+          "covered": [],
+          "overflow": false
+        },
+        {
+          "state": ".contact-panel",
+          "visible": false,
+          "inert": true,
+          "covered": [],
+          "overflow": false
+        },
+        {
+          "state": ".site-footer",
+          "visible": false,
+          "inert": true,
+          "covered": [],
+          "overflow": false
+        }
+      ],
+      "scroll": {
+        "frames": 604,
+        "maxGapMs": 27.800000000000182,
+        "gapsAbove50ms": 0,
+        "maxLongTaskMs": 0
+      },
+      "dockFocusable": true,
+      "shine": false,
+      "selectorChanged": true,
+      "shineCleaned": true,
+      "violations": [],
+      "reducedMotion": true
+    }
+  ],
+  "errors": []
+}
