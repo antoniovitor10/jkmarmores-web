@@ -301,6 +301,10 @@ body:has(.home-page) .desktop-nav a { font-size:15px; }
 .material-list article { display:grid; grid-template-columns:1fr 1fr; gap:80px; padding:48px 0; border-top:1px solid var(--cor-borda); }
 .material-list article h2 { font-size:clamp(32px,3.2vw,48px); margin:0; max-width:20ch; }
 .material-list article p { max-width:58ch; }
+/* Reserve only the missing desktop gutter beside the persistent WhatsApp. */
+@media(min-width:1101px) {
+ .materials-closing-copy { padding-inline-end:clamp(0px,calc(208px - max(40px,(100vw - 1280px)/2)),168px); }
+}
 .home-page > .home-contact { background:var(--cor-superficie); color:var(--cor-texto); padding-block:100px; content-visibility:auto; }
 .home-contact-grid { display:grid; grid-template-columns:1fr .8fr; gap:100px; }
 .home-contact h2 { font-size:clamp(48px,5.5vw,80px); max-width:12ch; }

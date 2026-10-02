@@ -14,7 +14,7 @@ export default function Materiais() {
     <section className="container material-list section-space" aria-label="Categorias de materiais">
       {categoriasCliente.map(item => <article id={item.slug} key={item.slug}><h2>{item.nome}</h2><div><p>{item.descricao}</p><SiteLink className="text-link" href={`/materiais/${item.slug}/`}>Conhecer esta categoria</SiteLink></div></article>)}
     </section>
-    <section className="warm-section section-space"><div className="container company-introduction"><h2>{cliente.fechamentoMateriais}</h2><div><p className="lead">{cliente.detalheMateriais}</p><p>Pedras naturais e superfícies de alta tecnologia para projetos que transcendem tendências.</p><p className="editorial-note"><PendenteTexto valor={institucional.catalogo} /></p><SiteLink className="text-link" href="/#configurador">Ver a pedra no ambiente</SiteLink></div></div></section>
+    <section className="warm-section section-space"><div className="container company-introduction"><h2>{cliente.fechamentoMateriais}</h2><div className="materials-closing-copy"><p className="lead">{cliente.detalheMateriais}</p><p>Pedras naturais e superfícies de alta tecnologia para projetos que transcendem tendências.</p><p className="editorial-note"><PendenteTexto valor={institucional.catalogo} /></p><SiteLink className="text-link" href="/#configurador">Ver a pedra no ambiente</SiteLink></div></div></section>
     <ContactPanel />
   </main>;
 }
