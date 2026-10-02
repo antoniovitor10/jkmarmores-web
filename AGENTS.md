@@ -18,7 +18,7 @@ Se algo aqui conflitar com o escopo, vale o escopo. Se o escopo não responder, 
 1. Não inventar informação da empresa: nome, telefone, endereço, cidade, serviços, materiais, projetos, fotos, depoimentos, números, anos de mercado, prêmios. Nada.
 2. Dado que falta vira pendência explícita:
    - no conteúdo, use o helper `pendente("descrição do que falta")` de `src/content/pendente.ts`;
-   - em desenvolvimento ele renderiza um marcador visível; no build de produção o script `npm run check:pendencias` falha se restar algum;
+   - em homologação ele renderiza um marcador visível; em produção (`SITE_MODE=producao`) o conteúdo pendente é omitido do HTML, e `npm run check:pendencias` falha se algum marcador de pendência chegar ao HTML publicado;
    - registre a pendência também em `docs/PENDENCIAS.md`.
 3. Não copiar texto, layout, fotos ou identidade das referências (attarevestimento.com, vgrmarmoresegranitos.com.br). Elas servem só como parâmetro de escopo e qualidade.
 4. Nenhum emoji ou ícone decorativo em texto, código, commit ou copy.
