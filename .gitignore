@@ -6,3 +6,12 @@ out/
 .maestri/
 *.pem
 *.key
+
+# --- método ---
+# Insumos brutos do cliente: dados pessoais de terceiros e mídia original. O índice (docs/insumos/INDICE.md) é versionado.
+docs/insumos/brutos/
+# Capturas e relatórios gerados pelas skills de verificação
+qa/
+# Playwright
+test-results/
+playwright-report/

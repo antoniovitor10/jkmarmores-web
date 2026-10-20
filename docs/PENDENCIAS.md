@@ -23,7 +23,7 @@ Os registros detalhados seguem agrupados por assunto abaixo. Um item com status 
 |---|---|---|---|---|
 | D1 | Nome comercial exato | P0 | resolvido | Cliente, grupo do projeto, 26/09/2026, encaminhado por Vitor/Planejador: "JK Marmores e Granitos". Logo recebida no mesmo dia. |
 | D2 | Razão social e CNPJ (rodapé e dados estruturados) | P1 | aberto | O CNPJ do Vitor encontrado no histórico não pertence à JK e não pode ser usado. |
-| D3 | Cidade, bairro e região atendida | P0 | resolvido | Sede em Parque Viana, Barueri/SP (26/09). Região atendida informada pela cliente no texto "Sobre Nós" (28/09): São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista. Texto integral em jk-marmores-refs/cliente/textos-cliente-2026-09-28.txt |
+| D3 | Cidade, bairro e região atendida | P0 | resolvido | Sede em Parque Viana, Barueri/SP (26/09). Região atendida informada pela cliente no texto "Sobre Nós" (28/09): São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista. Texto integral em docs/insumos/brutos/cliente/textos-cliente-2026-09-28.txt (fora do git; ver docs/insumos/INDICE.md) |
 | D4 | Endereço completo com CEP, ou confirmação de que não atende no local | P0 | parcial | Cliente confirmou Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP em 26/09/2026. CEP e atendimento a visitantes pendentes. Sem mapa ou promessa de showroom. |
 | D5 | Telefone e número de WhatsApp (e se são o mesmo) | P0 | resolvido | Vitor confirmou em 27/09/2026 que (11) 96797-6902 também é o WhatsApp da JK. CTAs e formulário usam wa.me/5511967976902. Telefones históricos não usados. |
 | D6 | Horário de funcionamento | P1 | aberto | |
