@@ -3,7 +3,7 @@ id: T-0006
 titulo: "Configurador com Calacatta, Travertino e Preto São Gabriel"
 hu: HU-0001
 trilha: funcionalidade
-status: backlog
+status: em-desenvolvimento
 depende_de: [T-0001]
 cobre: [CA-7, CA-11]
 complexidade: 4
@@ -108,3 +108,4 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 
 - 2026-10-21 · criada (backlog) · planejador
 - 2026-10-21 · escolha das imagens delegada ao Claude, com segunda opinião do agy, em vez da aprovação por prancha · desenvolvedor (pedido na conversa da T-0001)
+- 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "T-0003 a T-0006")
