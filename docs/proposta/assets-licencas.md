@@ -201,3 +201,16 @@ Vídeos da jornada já pagos, tratados localmente por scripts/editorial-videos.m
 
 ## 28/09: unidade quente da jornada, entrega final
 Sem geração, request_id ou custo novo (US$ 0). Os quatro quadros e o recorte móvel 02 recebem Sharp editorial com saturação 0,86, ganho RGB 0,94/0,89/0,83 e offset 11/10/9; grão fino determinista já descrito. Apenas derivados, originais preservados. Os oito vídeos existentes recebem o mesmo balanço em FFmpeg (eq saturation + lutrgb), H.264 CRF20, GOP6, faststart, sem áudio. Desktop total 1.186.831 B; celular 940.838 B/720p. Scripts editorial-image.mjs, build-images.mjs e editorial-videos.mjs. Capa permanece fotografia editorial estática, sem vídeo na entrada. Aviso IA único preservado.
+
+## HU-0001: imagens geradas pelo Codex (Astra)
+
+Geradas com o Codex CLI 0.163.0 (`image_generation`, agente Astra), no plano do Vitor, sem cobrança por imagem e sem chave no projeto. Fotos de terceiros (fornecedores e Wikimedia Commons) entraram só como referência de cor e veio, ficam fora do git e não têm URL registrada; nenhuma imagem gerada é cópia delas (ADR-0001). Nenhuma logo, foto da cliente ou dado da empresa foi enviado ao gerador. Entram no site sem aviso de IA (princípio 6). Prompt completo, tentativas e avaliação de cada uma em [hu-0001-prompts.json](hu-0001-prompts.json). Escolha da candidata delegada pelo Vitor em 21/10/2026: a mais próxima da pedra real, pela medida de cor e textura, pela revisão do Claude e pela segunda opinião do agy.
+
+| Arquivo | Ferramenta | Data | Chave do prompt | Tamanho |
+|---|---|---|---|---|
+| assets/images/pedra-granito-preto-sao-gabriel.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-preto-sao-gabriel` | 1122×1402 |
+| assets/images/pedra-marmore-calacatta.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-marmore-calacatta` | 1122×1402 |
+| assets/images/pedra-granito-branco-itaunas.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-branco-itaunas` | 1122×1402 |
+| assets/images/capa-calacatta.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `capa-calacatta` | 1672×941 |
+
+Custo: US$ 0 por imagem (cota do plano). Tentativas: 12 imagens geradas para 4 aprovadas.

@@ -1,0 +1,62 @@
+{
+  "_modelos": {
+    "close_pedra": {
+      "prompt": "Editorial photograph of a polished slab of <origem e nome da pedra>: <descrição de fundo, veio ou pinta e granulação, com a densidade das pintas em porcentagem quando a pedra é granulada>. Look and composition: straight-on close-up of the polished slab surface filling the entire frame edge to edge, portrait orientation 4:5 (for example 1024x1280 or larger), no background, no objects, no edges, no text, no logo, no watermark, no people. Soft warm raking light from the upper left at a low angle reveals the polished surface with a subtle natural reflection and a gentle falloff toward the lower right. True natural scale of the pattern as seen from about 60 cm away. Realistic photographic stone texture, natural slightly warm color, slightly desaturated, high detail, sharp focus. Editorial product photography.",
+      "licoes": "Granitos: dizer a densidade de pintas (ex.: well under 2 percent) e proibir o aspecto salpicado; sem isso o gerador põe 3 a 10 vezes mais pintas que a pedra real. Mármores: pedir áreas brancas amplas entre os veios."
+    },
+    "ambiente_aplicado": {
+      "prompt": "Wide landscape 16:9 editorial interior photograph (for example 1824x1026 or larger): a kitchen island and a back counter in Italian Calacatta marble (bright warm-white with bold grey veins and soft gold accents), seen at eye level from slightly to the right; the marble island is the protagonist in the right two thirds of the frame, with its edge and veining clearly visible. The left third is darker and calm (a deep shadowed wall in warm graphite) to leave clean space for a headline. Dark, warm, moody architectural space, late-afternoon raking light grazing the marble from the right, soft long shadows. Minimal: no people, no text, no logo, no brand names, no readable appliances, no clutter, at most one plain ceramic bowl. Realistic photographic image, natural color, slightly desaturated, high detail.",
+      "licoes": "Deixar o terço esquerdo escuro e calmo para o título. Pedir veio contínuo na quina da ilha (meia-esquadria), que o gerador não fez sozinho."
+    },
+    "saida": "O Codex grava em ~/.codex/generated_images/<sessão>/; o sandbox dele não escreve nas pastas ignoradas pelo git, então o maestro copia para geradas/. Tamanhos obtidos: 1122x1402 (4:5) nos closes e 1672x941 (16:9) na capa.",
+    "recorte": "Nenhum recorte foi necessário: as saídas já vêm em 4:5 (0,800) e 16:9 (1,777). Para o recorte mobile da capa, a largura de 941 px da altura é pouca; gerar uma composição em retrato própria (T-0005).",
+    "avaliacao": "Para cada imagem: 2 a 4 candidatas; medida de cor (ΔE em Lab), contraste e porcentagem de pintas e veios contra a área de pedra das fotos reais (scripts/comparar-imagens-geradas.mjs); revisão visual do Claude e segunda opinião cega do agy (Antigravity CLI 1.4.2). Escolha delegada pelo Vitor em 21/10/2026: usar sempre a mais próxima da pedra real. Medida com scripts/comparar-imagens-geradas.mjs; para a média, prefira fotos de chapa em close: fotos de bancada no ambiente puxam a claridade e o contraste (no Preto São Gabriel, a média com bancadas dá L 16 contra L 6 a 7 nas chapas).",
+    "modelo": "A saída do Codex não informa qual modelo de imagem o image_generation usou; a documentação da skill de imagem do Codex cita gpt-image-2. Registrado como não confirmado."
+  },
+  "pedra-granito-preto-sao-gabriel": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Editorial photograph of a polished slab of Brazilian Preto Sao Gabriel granite: an almost uniform deep black surface, close to jet black, with a subtle medium-grain crystalline texture visible mainly in the reflection; only very sparse, tiny, dim grey-silver flecks (well under 2 percent of the surface), no bright white specks, no veins, no speckled starry look. Look and composition: straight-on close-up of the polished slab surface filling the entire frame edge to edge, portrait orientation 4:5 (for example 1024x1280 or larger), no background, no objects, no edges, no text, no logo, no watermark, no people. Soft warm raking light from the upper left at a low angle reveals the polished surface with a subtle natural reflection and a gentle falloff toward the lower right. True natural scale of the pattern as seen from about 60 cm away. Realistic photographic stone texture, natural slightly warm color, slightly desaturated, high detail, sharp focus. Editorial product photography.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "fotos de fornecedores e do Wikimedia Commons, só como cor e veio, guardadas fora do git; URLs não registradas (ADR-0001)",
+    "data": "2026-10-21",
+    "tentativas": 4,
+    "escolhida": "candidata-3 (rodada 2)",
+    "arquivo": "assets/images/pedra-granito-preto-sao-gabriel.png",
+    "avaliacao": "Rodada 1 teve 10,8% de pintas claras contra 3,0% na foto real; rodada 2: candidata 3 com 4,0% e grão uniforme; agy 7/10 (candidata 4: 6/10, linhas que parecem rachadura).",
+    "prompt_rodada_1": "Editorial photograph of a polished slab of Brazilian Preto Sao Gabriel granite: deep black base with medium, irregular grains, scattered small silvery-grey and white flecks and faint mica glints, no veins. Look and composition: straight-on close-up of the polished slab surface filling the entire frame edge to edge, portrait orientation 4:5 (for example 1024x1280 or larger), no background, no objects, no edges, no text, no logo, no watermark, no people. Soft warm raking light from the upper left at a low angle reveals the polished surface with a subtle natural reflection and a gentle falloff toward the lower right. True natural scale of the pattern as seen from about 60 cm away. Realistic photographic stone texture, natural slightly warm color, slightly desaturated, high detail, sharp focus. Editorial product photography."
+  },
+  "pedra-marmore-calacatta": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Editorial photograph of a polished slab of Italian Calacatta marble: bright warm-white base with bold, irregular grey veins with soft gold and beige accents, wide calm white areas between the veins. Look and composition: straight-on close-up of the polished slab surface filling the entire frame edge to edge, portrait orientation 4:5 (for example 1024x1280 or larger), no background, no objects, no edges, no text, no logo, no watermark, no people. Soft warm raking light from the upper left at a low angle reveals the polished surface with a subtle natural reflection and a gentle falloff toward the lower right. True natural scale of the pattern as seen from about 60 cm away. Realistic photographic stone texture, natural slightly warm color, slightly desaturated, high detail, sharp focus. Editorial product photography.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "fotos de fornecedores e do Wikimedia Commons, só como cor e veio, guardadas fora do git; URLs não registradas (ADR-0001)",
+    "data": "2026-10-21",
+    "tentativas": 2,
+    "escolhida": "candidata-2",
+    "arquivo": "assets/images/pedra-marmore-calacatta.png",
+    "avaliacao": "Veios escuros 3,7% contra 2,9% nas chapas reais (candidata 1: 4,5%); agy 7/10, mais áreas brancas."
+  },
+  "pedra-granito-branco-itaunas": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Editorial photograph of a polished slab of Brazilian Branco Itaunas granite: soft light grey to greige base (not bright white) with a very fine, even, low-contrast granular texture that reads almost uniform from a distance; faint pale-grey mottling, only sparse tiny dark grey specks (about 1 percent of the surface) and very rare tiny reddish-brown garnet dots, no veins, no busy salt-and-pepper look. Look and composition: straight-on close-up of the polished slab surface filling the entire frame edge to edge, portrait orientation 4:5 (for example 1024x1280 or larger), no background, no objects, no edges, no text, no logo, no watermark, no people. Soft warm raking light from the upper left at a low angle reveals the polished surface with a subtle natural reflection and a gentle falloff toward the lower right. True natural scale of the pattern as seen from about 60 cm away. Realistic photographic stone texture, natural slightly warm color, slightly desaturated, high detail, sharp focus. Editorial product photography.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "fotos de fornecedores e do Wikimedia Commons, só como cor e veio, guardadas fora do git; URLs não registradas (ADR-0001)",
+    "data": "2026-10-21",
+    "tentativas": 4,
+    "escolhida": "candidata-4 (rodada 2)",
+    "arquivo": "assets/images/pedra-granito-branco-itaunas.png",
+    "avaliacao": "Rodada 1 com 7,5 a 8,2% de pintas escuras; rodada 2 com 5,4 a 5,7%. Não há foto de chapa em close na web, só bancadas; agy 7/10. Pedra com menos certeza: pedir a revisão da cliente.",
+    "prompt_rodada_1": "Editorial photograph of a polished slab of Brazilian Branco Itaunas granite: off-white to light grey base with a fine, even granular texture, small grey and black specks and very sparse tiny reddish-brown garnet dots, no veins. Look and composition: straight-on close-up of the polished slab surface filling the entire frame edge to edge, portrait orientation 4:5 (for example 1024x1280 or larger), no background, no objects, no edges, no text, no logo, no watermark, no people. Soft warm raking light from the upper left at a low angle reveals the polished surface with a subtle natural reflection and a gentle falloff toward the lower right. True natural scale of the pattern as seen from about 60 cm away. Realistic photographic stone texture, natural slightly warm color, slightly desaturated, high detail, sharp focus. Editorial product photography."
+  },
+  "capa-calacatta": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Wide landscape 16:9 editorial interior photograph (for example 1824x1026 or larger): a kitchen island and a back counter in Italian Calacatta marble (bright warm-white with bold grey veins and soft gold accents), seen at eye level from slightly to the right; the marble island is the protagonist in the right two thirds of the frame, with its edge and veining clearly visible. The left third is darker and calm (a deep shadowed wall in warm graphite) to leave clean space for a headline. Dark, warm, moody architectural space, late-afternoon raking light grazing the marble from the right, soft long shadows. Minimal: no people, no text, no logo, no brand names, no readable appliances, no clutter, at most one plain ceramic bowl. Realistic photographic image, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "fotos de fornecedores e do Wikimedia Commons, só como cor e veio, guardadas fora do git; URLs não registradas (ADR-0001)",
+    "data": "2026-10-21",
+    "tentativas": 2,
+    "escolhida": "candidata-2",
+    "arquivo": "assets/images/capa-calacatta.png",
+    "avaliacao": "Mármore com 3,7% de veios escuros contra 2,9% nas chapas reais (candidata 1: 5,5%); cena mais limpa; agy 7/10. Veio não continua na quina da ilha."
+  }
+}

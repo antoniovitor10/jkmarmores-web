@@ -15,7 +15,7 @@
 | [T-0006](HU-0001-imagens-novas-catalogo/tasks/T-0006-configurador-tres-pedras.md) | Configurador com Calacatta, Travertino e Preto São Gabriel | HU-0001 | CA-7, CA-11 | T-0001 | normal |
 | [T-0007](HU-0001-imagens-novas-catalogo/tasks/T-0007-remover-avisos-ia.md) | Remover os avisos de IA e de imagem ilustrativa do site | HU-0001 | CA-8 | — | normal |
 
-### em-desenvolvimento (1)
+### em-revisao (1)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|

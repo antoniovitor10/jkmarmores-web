@@ -15,3 +15,6 @@ qa/
 # Playwright
 test-results/
 playwright-report/
+# HU-0001: referências da web e candidatas geradas ficam fora do git (ADR-0001)
+docs/trabalho/HU-0001-imagens-novas-catalogo/referencias/
+docs/trabalho/HU-0001-imagens-novas-catalogo/geradas/

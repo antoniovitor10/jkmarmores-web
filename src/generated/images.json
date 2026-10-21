@@ -1,4 +1,31 @@
 {
+  "capa-calacatta": {
+    "width": 1672,
+    "height": 941,
+    "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAQBACdASoYAA4APwFsrU8rJiQiMAgBYCAJYwC7AB6vFvi/LKJ7Z/R1UAD+6/9FJd2PAtzut6/SP1rxuT3lsF1q1YDxvR+a9vNKYlKUvG21jw+Zuvy8NJd8dTaEwFV2LEm9ZEe+4TegEwhDLybXur6kuxsT7QAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/capa-calacatta-390.avif",
+        "webp": "/img/capa-calacatta-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/capa-calacatta-768.avif",
+        "webp": "/img/capa-calacatta-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/capa-calacatta-1200.avif",
+        "webp": "/img/capa-calacatta-1200.webp"
+      },
+      {
+        "width": 1600,
+        "avif": "/img/capa-calacatta-1600.avif",
+        "webp": "/img/capa-calacatta-1600.webp"
+      }
+    ]
+  },
   "material-detalhe-quente": {
     "width": 2048,
     "height": 1152,
@@ -23,6 +50,57 @@
         "width": 1600,
         "avif": "/img/material-detalhe-quente-1600.avif",
         "webp": "/img/material-detalhe-quente-1600.webp"
+      }
+    ]
+  },
+  "pedra-granito-branco-itaunas": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAwCdASoYAB4APwF4tFQrJySkKAgBYCAJaQDKtBmJuoAA/uncPvudMKCom0spCT4r0uDrj+XxHPFQsKeAAAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-branco-itaunas-390.avif",
+        "webp": "/img/pedra-granito-branco-itaunas-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-branco-itaunas-768.avif",
+        "webp": "/img/pedra-granito-branco-itaunas-768.webp"
+      }
+    ]
+  },
+  "pedra-granito-preto-sao-gabriel": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAABwAwCdASoYAB4APwF4s1QrJySkKAgBYCAJaQAAKduu2TIuRAAA/qXcvZxpULKvkcbqcZTgAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-preto-sao-gabriel-390.avif",
+        "webp": "/img/pedra-granito-preto-sao-gabriel-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-preto-sao-gabriel-768.avif",
+        "webp": "/img/pedra-granito-preto-sao-gabriel-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-calacatta": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQBACdASoYAB4APwF4tFQrJySjKAgBYCAJZwDDrBDN0jOn5EJ0xI55S5/kZZZUAAD+5zZRpALrgi/wm72L47zpscDxR2e4yaKSGBkttGhrkhOzuIFp7WCV5JqAqPwrVF9VHDCdxU5LuqP1p3yEDKAAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-calacatta-390.avif",
+        "webp": "/img/pedra-marmore-calacatta-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-calacatta-768.avif",
+        "webp": "/img/pedra-marmore-calacatta-768.webp"
       }
     ]
   },
