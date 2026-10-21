@@ -101,6 +101,48 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 
 ## Handoff
 
+### Handoff · 2026-10-21 ~14h10 · claude-code/opus (maestro)
+
+**Feito:**
+- **Referências reais:** prontas para as 31 pedras, em `referencias/<id>/`, montadas por 4 subagentes, um por leva. Fotos que distorcem a pedra (tom desviado, grão diferente, luz azulada) ficam em `referencias/<id>/extra/`. Elas não são anexadas ao Codex nem entram na medida.
+- **Candidatas:** de 2 a 4 por pedra, em `geradas/<id>/candidata-N.png`, todas em 1122×1402 (4:5). O prompt atual de cada pedra está em `geradas/<id>/prompt.txt`, e o da primeira rodada, quando houve, em `prompt-rodada-1.txt`.
+- **Segunda rodada em 17 pedras:**
+  - quartzos: Calacatta, Cinza Stellar e Preto Stellar;
+  - mármores: Travertino Nacional, Pinta Cinza, Branco Paraná, Matarazzo, Travertino Romano bruto, Carrara e Crema Marfil;
+  - granitos: Café Imperial, Branco Pitaya, Cinza Corumbá, Siena e Cinza Andorinha;
+  - no piloto (T-0001): Preto São Gabriel e Branco Itaúnas.
+- **Escolha:** feita para as 31 pelo Claude, com a medida de `node scripts/comparar-imagens-geradas.mjs <id>` e a comparação visual. A lista "id candidata | motivo" está em `geradas/_trabalho-t0003/escolhas-t0003.txt`, fora do git.
+- **Scripts de lote** em `geradas/_trabalho-t0003/`, rodando da raiz do repositório:
+  - `gerar.sh <id> [n]`: roda o Codex com as referências e copia as candidatas;
+  - `lote.sh <paralelo> <n> <ids...>`: roda o `gerar.sh` em paralelo;
+  - `folha.cjs <saida.png> <ids...>`: monta a folha de comparação.
+- **Pedidos ao agy** prontos em `geradas/_trabalho-t0003/agy-1.txt` (15 pedras) e `agy-2.txt` (16 pedras).
+
+**Falta, na ordem:**
+1. Segunda opinião cega do agy. Rode `agy -p "$(cat .../agy-1.txt)"` e depois o `agy-2.txt`, uma parte de cada vez, em primeiro plano (o modo de permissão é decisão do Vitor). Compare o "mais_fiel" de cada pedra com a escolha da lista e, onde divergir, olhe as duas de perto antes de decidir.
+2. Copie cada escolhida para `assets/images/<id>.png`.
+3. Acrescente cada uma em `docs/proposta/hu-0001-prompts.json`: ferramenta, prompt (o do `prompt.txt`), `prompt_rodada_1` quando houver, data, tentativas, escolhida, arquivo, avaliação com o motivo da lista e o parecer do agy. Inclua também uma linha por arquivo na seção HU-0001 de `docs/proposta/assets-licencas.md`.
+4. Rode `node scripts/check-imagens-geradas.mjs`, `npm run build` e `npm run lint`. Se a T-0002 já estiver na branch, abra as páginas de categoria.
+5. Preencha a seção Execução (CA-1, CA-11, CA-14, CA-15) e mova para `em-revisao`.
+
+**Branch e último commit:** task/T-0003-imagens-pedras-restantes · c512235. Nada da T-0003 foi commitado ainda: imagens e registros não entraram no repositório. Só este Handoff e o histórico estão alterados.
+
+**Comandos que rodei e resultado:**
+- O Codex gerou 108 imagens no total, sem falha de geração.
+- A comparação rodou para todas as pedras.
+- Build e lint não foram rodados nesta task, porque nada entrou no repositório.
+
+**Decisões tomadas nesta sessão:**
+- **Densidade nos prompts:** todos dizem a densidade de pintas ou veios em porcentagem e pedem "neutral natural color balance (not orange, not oversaturated)". Sem isso, o gerador deixou os travertinos, o Café Imperial e o Branco Paraná laranja demais.
+- **Branco Pitaya:** escolhida a candidata 3, contra a medida. A medida favorece a 1 por causa da sombra nas fotos reais, mas a 1 tem veio de mármore, e a pedra real tem só pintas pretas.
+- **Matarazzo e Branco Paraná:** separados de propósito. O Matarazzo não tem laranja e tem mais nuvem; o Branco Paraná tem pouco ocre.
+
+**Dúvidas em aberto:** nenhuma que bloqueie. As pedras com menos certeza são Capuccino (o tom exato que a JK chama assim), Branco Paraná (muita variação entre lotes) e Siena. Vale a cliente olhar depois de no ar.
+
+**Armadilhas:**
+- **Memória da máquina.** A trava do Claude Code parou três vezes os comandos em segundo plano: dois lotes do Codex e o agy. Rode o Codex com no máximo 2 em paralelo e o agy em primeiro plano. Processos parados pela trava podem continuar vivos e gravar em `~/.codex/generated_images/<sessão>/`. O `gerar.sh` já copia as candidatas sozinho, então, antes de copiar de novo, confira com `cmp` para não duplicar.
+- **Comparação com fotos de bancada:** a média com essas fotos fica mais escura e com menos detalhe, então a distância de cor engana nos brancos e pretos. Decida pela medida e pelo olho juntos.
+
 ## Execução
 
 ## Roteiro de homologação
@@ -110,3 +152,5 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 - 2026-10-21 · criada (backlog) · planejador
 - 2026-10-21 · escolha das imagens delegada ao Claude, com segunda opinião do agy, em vez da aprovação por prancha · desenvolvedor (pedido na conversa da T-0001)
 - 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "T-0003 a T-0006")
+- 2026-10-21 · execução iniciada na branch task/T-0003-imagens-pedras-restantes (a partir de task/T-0001-piloto-geracao-codex, dependência em revisão) · claude-code/opus (maestro), codex (Astra), agy (segunda opinião)
+- 2026-10-21 · handoff (parado a pedido do Vitor para liberar memória; 31 escolhas feitas, falta o parecer do agy e a entrada no repositório) · claude-code/opus
