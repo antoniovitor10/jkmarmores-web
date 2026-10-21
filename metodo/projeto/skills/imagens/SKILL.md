@@ -3,7 +3,7 @@ name: imagens
 description: Como entram, são tratadas e publicadas as imagens e vídeos do site da JK Mármores - originais em assets/, derivados AVIF/WebP gerados em public/img pelo build, geração paga no Higgsfield com orçamento aprovado, licenças em assets-licencas.md e a fronteira entre imagem ilustrativa e foto real da JK. Use em qualquer task que troque, acrescente, gere ou trate imagem, vídeo, logo ou textura.
 metadata:
   origem: projeto
-  versao: "1"
+  versao: "2"
   revisar_em: "2027-01-20"
 ---
 
@@ -29,8 +29,12 @@ metadata:
 
 ## Codex (agente Astra)
 
-- A partir da HU-0001 as imagens são geradas pelo Codex (`image_generation`, nativo no Codex CLI 0.163), rodando como agente Astra. Consome o plano do Vitor, sem cobrança por imagem na API; mesmo assim, o tamanho de cada leva é aprovado pelo Vitor na task (piloto antes do volume).
-- Cada imagem gerada ganha entrada em `docs/proposta/assets-licencas.md`: ferramenta, prompt completo, data e arquivo final em `assets/images/`.
+- A partir da HU-0001 as imagens são geradas pelo Codex (`image_generation`, nativo no Codex CLI 0.163), rodando como agente Astra. Consome o plano do Vitor, sem cobrança por imagem na API.
+- **Registro (PRD D6 da HU-0001):** o prompt completo, as tentativas, a candidata escolhida e a avaliação vão em `docs/proposta/hu-0001-prompts.json`, uma chave por id. `assets-licencas.md` ganha uma linha por arquivo (arquivo, ferramenta, data, chave do prompt). A chave `_modelos` do JSON guarda os modelos de prompt de close de pedra e de ambiente aplicado. `node scripts/check-imagens-geradas.mjs` confere tudo isso, e também se as pastas de trabalho continuam fora do git (T-0001).
+- **Escolha da candidata (decisão do Vitor em 21/10/2026):** gere de 2 a 4 candidatas e escolha a mais próxima da pedra real. A medida é `node scripts/comparar-imagens-geradas.mjs <id>`: cor em Lab, contraste e porcentagem de pintas e veios contra as fotos reais. Some a isso a revisão visual lado a lado e uma segunda opinião cega do agy (`agy -p`, pedido só de leitura). Não é preciso esperar a aprovação do Vitor. Registre o parecer no relatório da task (T-0001).
+- **Fotos reais para comparar:** prefira chapa em close. Foto de bancada no ambiente puxa a claridade e o contraste da média. O Wikimedia Commons tem chapas de Calacatta com licença aberta (T-0001).
+- **Granitos:** diga no prompt a densidade de pintas (ex.: "well under 2 percent of the surface") e proíba o aspecto salpicado. Sem isso o gerador põe de 3 a 10 vezes mais pintas que a pedra real (Preto São Gabriel e Branco Itaúnas, T-0001).
+- **Saída:** o Codex grava em `~/.codex/generated_images/<sessão>/`. O sandbox dele no Windows não escreve nas pastas ignoradas pelo git, então quem orquestra copia o arquivo para `geradas/`. Os tamanhos vêm por volta de 1122×1402 (4:5) e 1672×941 (16:9). Para um retrato a partir de um 16:9, gere outra composição em vez de recortar (T-0001).
 
 ## Vídeos
 
@@ -49,5 +53,6 @@ metadata:
 
 ## Origem das regras
 
-- `scripts/build-images.mjs`, `scripts/editorial-image.mjs`, `scripts/editorial-videos.mjs`, `src/components/Foto.tsx`, `tools/higgsfield/`
+- `scripts/build-images.mjs`, `scripts/editorial-image.mjs`, `scripts/editorial-videos.mjs`, `src/components/Foto.tsx`, `tools/higgsfield/`, `scripts/check-imagens-geradas.mjs`, `scripts/comparar-imagens-geradas.mjs`
+- T-0001 (piloto do Codex) e decisões do Vitor de 21/10/2026
 - `docs/proposta/assets-licencas.md`, `docs/PENDENCIAS.md` (V1, V3, V4, V6, V7), decisões de 25/09 e 26/09 em `docs/ESCOPO.md`
