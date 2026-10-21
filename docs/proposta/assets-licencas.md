@@ -214,3 +214,41 @@ Geradas com o Codex CLI 0.163.0 (`image_generation`, agente Astra), no plano do 
 | assets/images/capa-calacatta.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `capa-calacatta` | 1672×941 |
 
 Custo: US$ 0 por imagem (cota do plano). Tentativas: 12 imagens geradas para 4 aprovadas.
+
+### T-0003: as 31 pedras restantes do catálogo, 21/10/2026
+
+Fotos reais de 2 a 4 por pedra (fornecedores, marmorarias, Biblioteca das Rochas e Wikimedia Commons), só como cor e veio, fora do git e sem URL registrada. De 2 a 6 candidatas por pedra, com segunda rodada em 16 pedras e terceira no Cinza Andorinha. Escolha da mais próxima da pedra real pela medida de `scripts/comparar-imagens-geradas.mjs` e pela revisão visual do Claude, com parecer cego do agy para as 31, incluindo a rodada final de cada uma. Prompt, tentativas, motivo da escolha e parecer do agy em [hu-0001-prompts.json](hu-0001-prompts.json). Custo: US$ 0 por imagem (cota do plano).
+
+| Arquivo | Ferramenta | Data | Chave do prompt | Tamanho |
+|---|---|---|---|---|
+| assets/images/pedra-lamina-branca.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-lamina-branca` | 1122×1402 |
+| assets/images/pedra-lamina-bege.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-lamina-bege` | 1122×1402 |
+| assets/images/pedra-lamina-cinza.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-lamina-cinza` | 1122×1402 |
+| assets/images/pedra-lamina-travertino.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-lamina-travertino` | 1122×1402 |
+| assets/images/pedra-lamina-calacatta.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-lamina-calacatta` | 1122×1402 |
+| assets/images/pedra-lamina-taj-mahal.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-lamina-taj-mahal` | 1122×1402 |
+| assets/images/pedra-quartzo-branco-super-white.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-quartzo-branco-super-white` | 1122×1402 |
+| assets/images/pedra-quartzo-bege-capuccino.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-quartzo-bege-capuccino` | 1122×1402 |
+| assets/images/pedra-quartzo-cinza-light-grey.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-quartzo-cinza-light-grey` | 1122×1402 |
+| assets/images/pedra-quartzo-branco-stellar.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-quartzo-branco-stellar` | 1122×1402 |
+| assets/images/pedra-quartzo-calacatta.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-quartzo-calacatta` | 1122×1402 |
+| assets/images/pedra-quartzo-cinza-stellar.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-quartzo-cinza-stellar` | 1122×1402 |
+| assets/images/pedra-quartzo-preto-stellar.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-quartzo-preto-stellar` | 1122×1402 |
+| assets/images/pedra-marmore-branco-rajado.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-marmore-branco-rajado` | 1122×1402 |
+| assets/images/pedra-marmore-nero-marquina.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-marmore-nero-marquina` | 1122×1402 |
+| assets/images/pedra-marmore-travertino-nacional.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-marmore-travertino-nacional` | 1122×1402 |
+| assets/images/pedra-marmore-branco-pinta-cinza.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-marmore-branco-pinta-cinza` | 1122×1402 |
+| assets/images/pedra-marmore-branco-parana.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-marmore-branco-parana` | 1122×1402 |
+| assets/images/pedra-marmore-parana-matarazzo.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-marmore-parana-matarazzo` | 1122×1402 |
+| assets/images/pedra-marmore-travertino-romano-bruto.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-marmore-travertino-romano-bruto` | 1122×1402 |
+| assets/images/pedra-marmore-carrara.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-marmore-carrara` | 1122×1402 |
+| assets/images/pedra-marmore-crema-marfil.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-marmore-crema-marfil` | 1122×1402 |
+| assets/images/pedra-granito-preto-absoluto.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-preto-absoluto` | 1122×1402 |
+| assets/images/pedra-granito-dallas.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-dallas` | 1122×1402 |
+| assets/images/pedra-granito-verde-ubatuba.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-verde-ubatuba` | 1122×1402 |
+| assets/images/pedra-granito-branco-fortaleza.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-branco-fortaleza` | 1122×1402 |
+| assets/images/pedra-granito-cafe-imperial.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-cafe-imperial` | 1122×1402 |
+| assets/images/pedra-granito-branco-pitaya.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-branco-pitaya` | 1122×1402 |
+| assets/images/pedra-granito-cinza-corumba.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-cinza-corumba` | 1122×1402 |
+| assets/images/pedra-granito-siena.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-siena` | 1122×1402 |
+| assets/images/pedra-granito-cinza-andorinha.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-cinza-andorinha` | 1122×1402 |

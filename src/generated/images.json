@@ -53,6 +53,23 @@
       }
     ]
   },
+  "pedra-granito-branco-fortaleza": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACwBACdASoYAB4APwFysVIrJqSiqAqpYCAJaWHgWUNgtILPafIKBF2q+eMZe7/gAP7k6Hl3UDW82vWXVbwo/flNBYZyk/QEfOEyk1fAO3e4y7x55JtryBEhEfG72ziMmhiiHQxRvRGE8SsCR0ZhOWOsI6o5+PAX0X8oBHJUjgmWGmaa0ozNPcn4VlRlAdmw3pZs131BWXV0ZoYv0kyAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-branco-fortaleza-390.avif",
+        "webp": "/img/pedra-granito-branco-fortaleza-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-branco-fortaleza-768.avif",
+        "webp": "/img/pedra-granito-branco-fortaleza-768.webp"
+      }
+    ]
+  },
   "pedra-granito-branco-itaunas": {
     "width": 1122,
     "height": 1402,
@@ -67,6 +84,108 @@
         "width": 768,
         "avif": "/img/pedra-granito-branco-itaunas-768.avif",
         "webp": "/img/pedra-granito-branco-itaunas-768.webp"
+      }
+    ]
+  },
+  "pedra-granito-branco-pitaya": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADwAgCdASoYAB4APwF4tFOrJyUkKAgBYCAJaQAAPaaKAAD+7ry6dNAAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-branco-pitaya-390.avif",
+        "webp": "/img/pedra-granito-branco-pitaya-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-branco-pitaya-768.avif",
+        "webp": "/img/pedra-granito-branco-pitaya-768.webp"
+      }
+    ]
+  },
+  "pedra-granito-cafe-imperial": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwBACdASoYAB4APwF4tFOrJySiqAgBYCAJaVefVYcHZzBQoMdSt0R8h5V5UFjAAP6kxmYpDLb8wISwiOX+8Q7EXYY7FTU6IUBAZvwyv+EkLhNYAO8ia+ppINJ28AAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-cafe-imperial-390.avif",
+        "webp": "/img/pedra-granito-cafe-imperial-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-cafe-imperial-768.avif",
+        "webp": "/img/pedra-granito-cafe-imperial-768.webp"
+      }
+    ]
+  },
+  "pedra-granito-cinza-andorinha": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAwCdASoYAB4APwF2r1MrJyQkKAqpYCAJaQDPZBX9fYAA/o6TUh9AgfNwExN875X/whWgAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-cinza-andorinha-390.avif",
+        "webp": "/img/pedra-granito-cinza-andorinha-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-cinza-andorinha-768.avif",
+        "webp": "/img/pedra-granito-cinza-andorinha-768.webp"
+      }
+    ]
+  },
+  "pedra-granito-cinza-corumba": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwAwCdASoYAB4APwFur1ArJiQiqA1RYCAJaWScABxA57eQPrp0AAD+uLhva3NrkfjE8SsQkisMKMw7VVSWSwLGIwB/DPxA7pAWOuFeKgzunKeg1/myumG6Ud4aW+IL2+uvLwlBMXqCCpkKVz2aPWCOV92MwAgA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-cinza-corumba-390.avif",
+        "webp": "/img/pedra-granito-cinza-corumba-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-cinza-corumba-768.avif",
+        "webp": "/img/pedra-granito-cinza-corumba-768.webp"
+      }
+    ]
+  },
+  "pedra-granito-dallas": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAADwAwCdASoYAB4APwF2s1OrJySiqAgBYCAJaQAMKgCddYD3nmTTNTQAAP7n6rwixJ7quTBthZjVDAYSpf+2SAD10EywrMZJ813SojjgzlvtgBx78ZuZjxAARE3BwVuLwkwarp0MAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-dallas-390.avif",
+        "webp": "/img/pedra-granito-dallas-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-dallas-768.avif",
+        "webp": "/img/pedra-granito-dallas-768.webp"
+      }
+    ]
+  },
+  "pedra-granito-preto-absoluto": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAABQAwCdASoYAB4APwF4tFQrJySjKAgBYCAJaQAAMX/6t+tLiAD+zwapMQfp3eCC3Z39GgAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-preto-absoluto-390.avif",
+        "webp": "/img/pedra-granito-preto-absoluto-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-preto-absoluto-768.avif",
+        "webp": "/img/pedra-granito-preto-absoluto-768.webp"
       }
     ]
   },
@@ -87,6 +206,193 @@
       }
     ]
   },
+  "pedra-granito-siena": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABQAwCdASoYAB4APwF2s1QrJySjKAgBYCAJaWtPWn8JzEf/AAD+7NtSq4KMXeeglRVSV/UWhFtbD7SCMFDfaZsyAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-siena-390.avif",
+        "webp": "/img/pedra-granito-siena-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-siena-768.avif",
+        "webp": "/img/pedra-granito-siena-768.webp"
+      }
+    ]
+  },
+  "pedra-granito-verde-ubatuba": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4IG4AAACQAwCdASoYAB4APwFwslGrJiSiqAqpYCAJaQDNhBI/Y+ouWrdQAP69+AWSnl6YeUIdIViq7Hb6oc85amd8pob04dgBS5KXPl7+aEwHUNJ53eF0+HgOWrBiEyi9u/A8xuogTz5syACgMcNPZdQAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-granito-verde-ubatuba-390.avif",
+        "webp": "/img/pedra-granito-verde-ubatuba-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-granito-verde-ubatuba-768.avif",
+        "webp": "/img/pedra-granito-verde-ubatuba-768.webp"
+      }
+    ]
+  },
+  "pedra-lamina-bege": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAwCdASoYAB4APwF4tFQ+JySoqAgDwCAJZwDM0BhwwEAA/uyzgbjXH2Z2V9FJlC3G214Sx0AcQnwAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-lamina-bege-390.avif",
+        "webp": "/img/pedra-lamina-bege-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-lamina-bege-768.avif",
+        "webp": "/img/pedra-lamina-bege-768.webp"
+      }
+    ]
+  },
+  "pedra-lamina-branca": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAwCdASoYAB4APwF2s1OvJySiqAgB4CAJaQDGQBaoJQAA/u74CdHTTsbzp8shnT6dekAAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-lamina-branca-390.avif",
+        "webp": "/img/pedra-lamina-branca-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-lamina-branca-768.avif",
+        "webp": "/img/pedra-lamina-branca-768.webp"
+      }
+    ]
+  },
+  "pedra-lamina-calacatta": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAwCdASoYAB4APwF4tFOrJyUiqAgBYCAJaQAAQjtILBAs4m2xQAD+7veywnvjn+R+RMfk/4TfikZDAZNrY62DvohySz5sy5s9LgAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-lamina-calacatta-390.avif",
+        "webp": "/img/pedra-lamina-calacatta-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-lamina-calacatta-768.avif",
+        "webp": "/img/pedra-lamina-calacatta-768.webp"
+      }
+    ]
+  },
+  "pedra-lamina-cinza": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAQAwCdASoYAB4APwF2slQ/pyQxKAgD8CAJaQDA3Bml8iAA/twOluv2jxBZ+5fq/XmwPXHYNvrVwV+onjEnrwAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-lamina-cinza-390.avif",
+        "webp": "/img/pedra-lamina-cinza-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-lamina-cinza-768.avif",
+        "webp": "/img/pedra-lamina-cinza-768.webp"
+      }
+    ]
+  },
+  "pedra-lamina-taj-mahal": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAwAwCdASoYAB4APwF0rlK2pq4iqAqq0CAJZwC7ABcTFLQAAP7uOv1f4iRzuMblEqw+I6WsORLee2F+Q16wAAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-lamina-taj-mahal-390.avif",
+        "webp": "/img/pedra-lamina-taj-mahal-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-lamina-taj-mahal-768.avif",
+        "webp": "/img/pedra-lamina-taj-mahal-768.webp"
+      }
+    ]
+  },
+  "pedra-lamina-travertino": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAwAwCdASoYAB4APwF0r1KvJqQiqAqp4CAJZ2eeV5kJ540AAP7rJkUipuOtxNF62lDImKZFmk77Lnf+bJQ+Xs1xRiVYqYVRAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-lamina-travertino-390.avif",
+        "webp": "/img/pedra-lamina-travertino-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-lamina-travertino-768.avif",
+        "webp": "/img/pedra-lamina-travertino-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-branco-parana": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAQBQCdASoYAB4APwFsr1ArJiQiqA1RYCAJZwDLaA9ottYBCbZ2AzYiQwb2+a6VuIjAAP7qluA4OLKl32Z1ZzEf8Y+VwHxW4AAEYDhg09i/bY7Adn7DdiUAcMAEdHQAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-branco-parana-390.avif",
+        "webp": "/img/pedra-marmore-branco-parana-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-branco-parana-768.avif",
+        "webp": "/img/pedra-marmore-branco-parana-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-branco-pinta-cinza": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAwCdASoYAB4APwFurVCvJiQiqA1R4CAJaQAAPw7/eg43qeSlHAAA/u45LnCAQCOba2DpwXn0Fl5iOXEGpsoPNwxIdk1h3jqLfRMAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-branco-pinta-cinza-390.avif",
+        "webp": "/img/pedra-marmore-branco-pinta-cinza-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-branco-pinta-cinza-768.avif",
+        "webp": "/img/pedra-marmore-branco-pinta-cinza-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-branco-rajado": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAACwBACdASoYAB4APwFysFIrJqSiqAqpYCAJaWR5Ay/wkNW8/M8YI1g904EpNwoAAP7sZXYRZAp+y9rFqWRef0jDCRPmioAHpKFvzXyZiYi/IRVs2WEJwBJRH9oTNpU+wdYmxzGhl4GGOREZpppAz3+ps0gAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-branco-rajado-390.avif",
+        "webp": "/img/pedra-marmore-branco-rajado-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-branco-rajado-768.avif",
+        "webp": "/img/pedra-marmore-branco-rajado-768.webp"
+      }
+    ]
+  },
   "pedra-marmore-calacatta": {
     "width": 1122,
     "height": 1402,
@@ -101,6 +407,227 @@
         "width": 768,
         "avif": "/img/pedra-marmore-calacatta-768.avif",
         "webp": "/img/pedra-marmore-calacatta-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-carrara": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAABwAwCdASoYAB4APwFurVCrJiQiqA1RYCAJaQAAPB2c0ddPwoAA/u2Ew04ieFP8SqV6/uoyM3Qlj6af1uwy1yqSAZ1Eey8zZOMRwAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-carrara-390.avif",
+        "webp": "/img/pedra-marmore-carrara-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-carrara-768.avif",
+        "webp": "/img/pedra-marmore-carrara-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-crema-marfil": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABQAwCdASoYAB4APwF0rVKrJqOnqAqpYCAJZwDGfBd1AYA4mgD+7B1KxgYabDk/SnPf1P56rw5QuIcep0iGAAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-crema-marfil-390.avif",
+        "webp": "/img/pedra-marmore-crema-marfil-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-crema-marfil-768.avif",
+        "webp": "/img/pedra-marmore-crema-marfil-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-nero-marquina": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASoYAB4APwFysVIrJqSiqAqpYCAJaQDO7A9HwBGTgt0aXdMYAAD+oNehwsYUmF9dFt/904Vauv+GhaP+Ah1hcbDjCiRBtOTY2AMzE4zp3XKrrRS4GPQJGThhYbZRZgAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-nero-marquina-390.avif",
+        "webp": "/img/pedra-marmore-nero-marquina-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-nero-marquina-768.avif",
+        "webp": "/img/pedra-marmore-nero-marquina-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-parana-matarazzo": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAABwBACdASoYAB4APwFurVErJiQisBgIAWAgCWkAxvQZVFzSbZQ3dRc7zPtMgAD+7gAPzn1ZBbstUTO79EH/uu0qKsi3zEfqBp1XYJnHp1McDEnMr3cu3gC8CPBqnOIPgO2b8gW12YAAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-parana-matarazzo-390.avif",
+        "webp": "/img/pedra-marmore-parana-matarazzo-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-parana-matarazzo-768.avif",
+        "webp": "/img/pedra-marmore-parana-matarazzo-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-travertino-nacional": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAAAwBACdASoYAB4APwF2slOrJySiqAgBYCAJZwDGfBYs9jhNubSK7jVxPAAA/uuCeJ0W/5mrWnh3o13RVAA0k8r5MaaPtOX8XvtTyPcMQy0aiKzqcJgOzNjGCxRiKgAAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-travertino-nacional-390.avif",
+        "webp": "/img/pedra-marmore-travertino-nacional-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-travertino-nacional-768.avif",
+        "webp": "/img/pedra-marmore-travertino-nacional-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-travertino-romano-bruto": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAADwAwCdASoYAB4APwFor1GrJSQisBgIAWAgCWdgX1Vsia+r05eyk2ygAP7l2FMI23Bq38iC4yIwxDGoCoDtpPpYGyZEeQH9a+7g8wDjSLmVB41onW7ciMDCdjDDdQ/3Y1Aj7jh8caAfsAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-travertino-romano-bruto-390.avif",
+        "webp": "/img/pedra-marmore-travertino-romano-bruto-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-travertino-romano-bruto-768.avif",
+        "webp": "/img/pedra-marmore-travertino-romano-bruto-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzo-bege-capuccino": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAgCdASoYAB4APwF4tFOrJyUsKAgBgCAJZwAAPbY4AAD+6sZVk8lhvDdN5JuespsQ2VA4TafdaW/YAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzo-bege-capuccino-390.avif",
+        "webp": "/img/pedra-quartzo-bege-capuccino-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzo-bege-capuccino-768.avif",
+        "webp": "/img/pedra-quartzo-bege-capuccino-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzo-branco-stellar": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAwCdASoYAB4APwF2s1O2pySkKAgC0CAJaQDJEBaoJQAA/u4CESPuHITtroYAUFpbG+HgAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzo-branco-stellar-390.avif",
+        "webp": "/img/pedra-quartzo-branco-stellar-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzo-branco-stellar-768.avif",
+        "webp": "/img/pedra-quartzo-branco-stellar-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzo-branco-super-white": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAgCdASoYAB4APwF0rVKvJqkiqAqp4CAJaQAAPqVPcAD+70o3ih8WDn9w9kwAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzo-branco-super-white-390.avif",
+        "webp": "/img/pedra-quartzo-branco-super-white-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzo-branco-super-white-768.avif",
+        "webp": "/img/pedra-quartzo-branco-super-white-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzo-calacatta": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQBACdASoYAB4APwF2s1OrJySiqAgBYCAJaQDO7BZl3cIUuH7nqBz7tDtAAP7vRij3xDx+MvAOFpW0oDEHOPx+8alGdgGAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzo-calacatta-390.avif",
+        "webp": "/img/pedra-quartzo-calacatta-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzo-calacatta-768.avif",
+        "webp": "/img/pedra-quartzo-calacatta-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzo-cinza-light-grey": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAwCdASoYAB4APwF4s1QrJySjKAgBYCAJaQDO7Bat8gAA/urGXLh1JDK7fxE03eoSRmqLH5EgAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzo-cinza-light-grey-390.avif",
+        "webp": "/img/pedra-quartzo-cinza-light-grey-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzo-cinza-light-grey-768.avif",
+        "webp": "/img/pedra-quartzo-cinza-light-grey-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzo-cinza-stellar": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAABQAwCdASoYAB4APwF4s1QrJySsqAgBkCAJaQDO7Au8JphgIAD8mEzS1k7S7+WwWoO8MB9pE54gAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzo-cinza-stellar-390.avif",
+        "webp": "/img/pedra-quartzo-cinza-stellar-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzo-cinza-stellar-768.avif",
+        "webp": "/img/pedra-quartzo-cinza-stellar-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzo-preto-stellar": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAgCdASoYAB4APwF4tFOvJyUkKAgB4CAJaQAAPbSQAAD+74KmJZ+DUQM4AA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzo-preto-stellar-390.avif",
+        "webp": "/img/pedra-quartzo-preto-stellar-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzo-preto-stellar-768.avif",
+        "webp": "/img/pedra-quartzo-preto-stellar-768.webp"
       }
     ]
   },
