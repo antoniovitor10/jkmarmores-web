@@ -47,7 +47,7 @@ Lista da cliente (19/10), fonte dos nomes: `docs/insumos/brutos/cliente/atualiza
 | Fidelidade | o agente busca fotos de referência na web e passa ao gerador; elas não entram no site |
 | Registro das referências | não registrar as URLs (ADR-0001) |
 | Avisos | nenhum aviso de IA ou de imagem ilustrativa em lugar nenhum; princípio 6 reescrito (ADR-0001) |
-| Aprovação | o Vitor aprova e publica; pergunta à cliente depois de no ar |
+| Aprovação | o Vitor publica e pergunta à cliente depois de no ar. Em 21/10/2026 ele delegou ao Claude a escolha de cada imagem: a candidata mais próxima da pedra real, com segunda opinião do agy |
 | Pedra reprovada pela cliente | sai do catálogo até ter imagem nova aprovada |
 | Cartão | foto, nome e WhatsApp da pedra, na página da categoria; sem página própria por pedra |
 | Categorias sem nomes | Dolomíticos e Quartzitos só com imagem de topo; Lâminas com um cartão por cor; pedido dos nomes em O2 |

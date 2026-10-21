@@ -48,7 +48,7 @@ A home abre com a capa nova (ambiente aplicado em Calacatta) e a jornada da pedr
 
   O site é escuro (`#10100f`) e quente; os painéis da jornada têm 88svh com legenda sobre gradiente (deixar área calma embaixo). Proporção diferente da atual muda o `width/height` no manifesto e pode gerar CLS: manter as proporções da tabela e conferir as 5 larguras.
 - **Regras (ADR-0001, princípio 6, skill `imagens`):** sem aviso de IA; sem logo, nome de cliente, pessoas, texto ou obra identificada como da JK; referências da web só como cor e veio, fora do git, sem URL registrada e sem cópia próxima; nada da empresa vai ao gerador. `alt` descreve sem dizer que é obra da JK e sem "ilustrativa", ex.: "Ilha de cozinha em mármore Calacatta, branco com veios dourados, sob luz lateral."
-- **Ferramenta e protocolo:** Codex CLI 0.163 (`image_generation`, agente Astra); referências em `docs/trabalho/HU-0001-imagens-novas-catalogo/referencias/<id>/` e saídas em `.../geradas/<id>/` (ambas no `.gitignore`); modelo de prompt de ambiente aplicado em `docs/proposta/hu-0001-prompts.json`, chave `_modelos`; o Claude revisa; o Vitor aprova a prancha; aprovada entra em `assets/images/` com linha em `docs/proposta/assets-licencas.md` (seção "HU-0001") e prompt completo no JSON. Para os 4 quadros parecerem a mesma pedra, gere a partir de uma imagem-base (`-i`) do Calacatta aprovado.
+- **Ferramenta e protocolo:** Codex CLI 0.163 (`image_generation`, agente Astra); referências em `docs/trabalho/HU-0001-imagens-novas-catalogo/referencias/<id>/` e saídas em `.../geradas/<id>/` (ambas no `.gitignore`); modelo de prompt de ambiente aplicado em `docs/proposta/hu-0001-prompts.json`, chave `_modelos`; o Claude revisa; o Claude escolhe a mais próxima da pedra real, com segunda opinião do agy (decisão do Vitor, 21/10/2026); aprovada entra em `assets/images/` com linha em `docs/proposta/assets-licencas.md` (seção "HU-0001") e prompt completo no JSON. Para os 4 quadros parecerem a mesma pedra, gere a partir de uma imagem-base (`-i`) do Calacatta aprovado.
 - **Desempenho (princípio 10, HU CA-10):** home no celular (Pixel 7, 4G simulado do Lighthouse) com LCP até 2,0 s, CLS até 0,05 e até 1 MB no primeiro carregamento. **Medir antes e depois** da troca e pôr os dois números no relatório. A capa é o LCP (`prioridade`). Se o gerador entregou a capa com menos de 1600 px, documentar a largura usada e a nitidez no 1440.
 - `src/lib/motion-network.ts` procura o pôster por `/\/img\/(capa-|material-detalhe-quente-)/`; `capa-calacatta` casa com `capa-`. Tirar o trecho de `material-detalhe-quente-`.
 - Scripts que falam de vídeo: `scripts/check-motion-network.mjs` testa um `.home-hero video` que já não existe; `check-short-motion.mjs`, `shorten-motion-videos.mjs`, `editorial-videos.mjs`, `report-home-light.mjs`, `capture-institutional.mjs` e `check-home.mjs` citam vídeo. Ajuste ou aposente os que testam vídeo na home e diga no relatório o que fez com cada um. Ferramentas que só produzem vídeo podem ficar.
@@ -72,7 +72,7 @@ nenhum
 ## Passos sugeridos
 
 1. Medir a home atual (Lighthouse mobile, peso do primeiro carregamento) e guardar o número.
-2. Gerar o recorte mobile da capa e os 5 quadros; prancha com a capa do piloto; "sim" do Vitor. **Parar até a aprovação.**
+2. Gerar o recorte mobile da capa e os 5 quadros; prancha com a capa do piloto; escolha da mais próxima (Claude e agy).
 3. Entrar com os arquivos e os registros; ajustar `build-images.mjs`.
 4. Trocar a capa e desligar o vídeo; remover os mp4; ajustar `motion-network.ts` e os scripts.
 5. `npm run build`, testes, capturas nas 5 larguras (skill `responsivo-desktop-mobile`), Lighthouse, varredura `anti-cara-de-ia` da home.
@@ -85,7 +85,7 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 - **CA-6:** Dada a home, quando carrega, então a capa mostra `capa-calacatta` no desktop e `capa-calacatta-mobile` no celular (≤ 700 px), sem `<video>` na página. (HU CA-6)
 - **CA-10:** Dado o celular (Pixel 7, 4G simulado do Lighthouse), então a home tem LCP até 2,0 s, CLS até 0,05 e até 1 MB no primeiro carregamento, com os números de antes e depois no relatório. (HU CA-10, parte da home)
 - **CA-11:** Dada cada imagem nova, então tem linha em `assets-licencas.md` e entrada no JSON com ferramenta, prompt completo, data e arquivo; nada de `referencias/` ou `geradas/` versionado; `public/video/` sem mp4. (HU CA-11)
-- **CA-14:** Dado o Vitor vendo a prancha, então ele aprova a capa (desktop e mobile) e os 5 quadros (ou o relatório registra o que foi refeito).
+- **CA-14:** Dadas as candidatas da capa mobile e dos 5 quadros, então a escolhida é a mais próxima da pedra real pela medida de cor e textura (scripts/comparar-imagens-geradas.mjs) e pela revisão visual do Claude, com o parecer cego do agy registrado no relatório (decisão do Vitor em 21/10/2026).
 - **CA-15:** Dada a jornada, quando o visitante rola por ela, então os 4 quadros novos aparecem como imagens, com as transições de rolagem atuais, e nenhum vídeo é baixado (nenhuma requisição `.mp4`). (HU CA-6)
 - **CA-16:** Dadas `/sobre/` e `/materiais/`, então mostram os quadros novos `sequencia-04-aplicada` e `sequencia-01-chapa`.
 - **CA-17:** Dados os `alt` da capa e da jornada, então descrevem a imagem nova sem "gerada por IA", "ilustrativa" ou "não representa obra".
@@ -97,7 +97,7 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 | CA-6 | interacao | Playwright abre a home em 1440×900 e em 390×844, confere o `currentSrc` da imagem da capa (id certo) e `document.querySelectorAll('video').length === 0` |
 | CA-10 | integracao | Lighthouse mobile da home antes e depois, com a saída real no relatório |
 | CA-11 | integracao | script confere as entradas no JSON e no `assets-licencas.md`; `git ls-files public/video` vazio |
-| CA-14 | manual | motivo: aprovação visual do Vitor; fidelidade e gosto não se automatizam |
+| CA-14 | manual | motivo: fidelidade é julgamento visual; a medida de cor e textura orienta e o parecer cego do agy fica no relatório |
 | CA-15 | interacao | rola a página pela jornada inteira registrando as requisições; confere os 4 quadros com os ids novos visíveis um a um e nenhuma requisição `.mp4` |
 | CA-16 | interacao | abre `/sobre/` e `/materiais/` e confere o `currentSrc` das imagens |
 | CA-17 | interacao | lê os `alt` na página e confere a ausência das palavras |
@@ -123,3 +123,4 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 ## Histórico
 
 - 2026-10-21 · criada (backlog) · planejador
+- 2026-10-21 · escolha das imagens delegada ao Claude, com segunda opinião do agy, em vez da aprovação por prancha · desenvolvedor (pedido na conversa da T-0001)
