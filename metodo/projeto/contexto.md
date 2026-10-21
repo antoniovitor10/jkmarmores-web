@@ -18,7 +18,7 @@ Fonte da verdade do escopo: `docs/ESCOPO.md` (arquitetura de páginas, metas té
 
 ## Estado em 2026-10-20
 
-- Produção na raiz desde 02/10/2026 com a **versão 1** (escura), aprovada pela cliente. Ela pediu **imagens novas**; o pedido ainda vai virar HU e tasks (ler a conversa no ZapMind antes).
+- Produção na raiz desde 02/10/2026 com a **versão 1** (escura), aprovada pela cliente em 07/10. Em 13/10 e 19/10 ela pediu **imagens profissionais dos materiais** e mandou a lista de pedras (registrada em `docs/insumos/brutos/cliente/atualizacoes.md`); o pedido vai virar HU e tasks.
 - `/1/`, `/2/` e `/3/` são as três versões que a cliente comparou, publicadas pelas branches `versao-1/2/3` em homologação (noindex).
 - A `main` remota já estava em `694cd01`, igual à `producao`; só a `main` local deste worktree estava 12 commits atrás e foi avançada no onboarding. As tasks saem da `main`; a branch `producao` fica como histórico do lançamento.
 - Pendências P0 abertas no lançamento (ver `docs/PENDENCIAS.md`): CEP e atendimento no local, Perfil da Empresa no Google, serviços e pedras específicos, logo em vetor, fotos de obras reais. Em produção o conteúdo pendente é omitido, não inventado.

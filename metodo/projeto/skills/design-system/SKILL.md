@@ -67,7 +67,7 @@ Hex novo só com motivo no relatório da task; prefira um token existente. Contr
 
 ## Imagens
 
-- Todas as atuais são ilustrativas (geradas por IA ou CC0) e a página avisa isso (`illustrationNotice` em `src/content/illustration.ts`, `avisoImagem` e `alt` em `src/content/index.ts`). Nenhuma pode parecer obra da JK (princípio 6). Tratamento uniforme por `scripts/editorial-image.mjs` (saturação 0,86, tom levemente quente nas `sequencia-*`, grão determinístico). Regras de produção na skill `imagens`.
+- Todas as atuais são geradas por IA ou CC0. Desde o ADR-0001 elas entram sem aviso de IA; a HU-0001 remove `illustrationNotice` (`src/content/illustration.ts`), `avisoImagem` e os avisos nos `alt` (`src/content/index.ts`). Nenhuma mostra logo, nome de cliente ou obra identificada como da JK (princípio 6). Tratamento uniforme por `scripts/editorial-image.mjs` (saturação 0,86, tom levemente quente nas `sequencia-*`, grão determinístico). Regras de produção na skill `imagens`.
 
 ## Voz
 

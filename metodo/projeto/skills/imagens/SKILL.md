@@ -14,7 +14,8 @@ metadata:
 - **Original em `assets/images/`, derivado gerado.** `npm run images:build` (`scripts/build-images.mjs`, roda dentro do `npm run build`) lê cada `png/jpg/webp/avif` de `assets/images/`, aplica `scripts/editorial-image.mjs` e grava `public/img/<id>-<largura>.avif|webp` em 390, 768, 1200 e 1600 px (só larguras até a do original), mais o placeholder no manifesto `src/generated/images.json`. Nunca coloque imagem direto em `public/img/` nem edite o manifesto.
 - **O id é o nome do arquivo sem extensão** (`assets/images/sequencia-02-borda.png` → `id="sequencia-02-borda"`). Recorte mobile é outro arquivo com sufixo `-mobile` e entra por `mobileId`. Originais históricos sem uso são pulados por uma lista no próprio script: ao aposentar uma imagem, acrescente o id ali em vez de apagar o original.
 - **Usar no código** só por `<Foto>` (skill `padroes-codigo`), com `alt` descritivo e honesto. Imagem do LCP com `prioridade`; as outras com `loading="lazy"` (padrão).
-- **Ilustrativa x real.** Imagem gerada por IA, de banco ou CC0 é ilustrativa: legenda ou aviso dizendo isso (`illustrationNotice` em `src/content/illustration.ts`, `avisoImagem` em `src/content/index.ts`) e `alt` sem afirmar que é obra, material ou processo da JK (princípio 6). Foto real da JK só com autorização registrada no `docs/insumos/INDICE.md` e, se possível, local, material e aplicação (pendência V3).
+- **Gerada x real (ADR-0001).** Imagem gerada por IA, de banco ou CC0 entra sem aviso de IA ou de imagem ilustrativa (nem legenda, nem rodapé, nem `alt`), desde que não mostre logo, nome de cliente nem obra identificada como da JK. O `alt` descreve o que se vê ("bancada de Preto São Gabriel numa cozinha com ilha") sem dizer que é obra da JK. Foto real da JK só com autorização registrada no `docs/insumos/INDICE.md` e, se possível, local, material e aplicação (pendência V3).
+- **Referências da web.** Para acertar o desenho de uma pedra com nome, a geração pode usar fotos de terceiros como entrada de cor e veio. Elas nunca vão para `assets/` nem para o site, e a imagem gerada não pode ser cópia próxima delas (mesmo enquadramento, mesma chapa reconhecível). Guarde-as fora do git, na pasta de trabalho da task.
 - **Licença antes de entrar.** Toda imagem de terceiro ou gerada ganha uma entrada em `docs/proposta/assets-licencas.md`: fonte, modelo, prompt, request ID, custo e arquivo.
 - **Geração paga só com orçamento aprovado** (princípio 7). Antes de enviar: estimativa por asset (`POST /estimate/{modelo}` ou o equivalente do MCP), total com reserva de 20 % e o "sim" do Vitor com o teto. Registre o que foi gasto, mesmo quando a API não devolver o custo.
 - **Peso.** A página inicial fica abaixo de 1 MB no primeiro carregamento no celular e o LCP abaixo de 2,0 s (princípio 10). Meça antes e depois de trocar a imagem da capa.
@@ -25,6 +26,11 @@ metadata:
 - A credencial fica em `tools/higgsfield/.env.local` (variável `HF_CREDENTIALS`), lida só por `node --env-file`. Esse arquivo está em `seguranca.arquivos_proibidos`: nunca abra, imprima ou copie.
 - Prompts e parâmetros de cada rodada ficam em JSON em `docs/proposta/` (ex.: `quarta-prova-api.json`, `sequencia-clipes-api.json`). Siga o padrão: prompt completo, modelo, seed, proporção, resultado.
 - Nunca envie a logo, fotos da cliente ou dados da empresa para a API sem autorização explícita.
+
+## Codex (agente Astra)
+
+- A partir da HU-0001 as imagens são geradas pelo Codex (`image_generation`, nativo no Codex CLI 0.163), rodando como agente Astra. Consome o plano do Vitor, sem cobrança por imagem na API; mesmo assim, o tamanho de cada leva é aprovado pelo Vitor na task (piloto antes do volume).
+- Cada imagem gerada ganha entrada em `docs/proposta/assets-licencas.md`: ferramenta, prompt completo, data e arquivo final em `assets/images/`.
 
 ## Vídeos
 

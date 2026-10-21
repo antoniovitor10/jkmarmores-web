@@ -1,0 +1,165 @@
+---
+id: T-0002
+titulo: "Catálogo por pedra nas páginas de categoria"
+hu: HU-0001
+trilha: funcionalidade
+status: backlog
+depende_de: [T-0001]
+cobre: [CA-1, CA-2, CA-4, CA-5, CA-9, CA-10, CA-13]
+complexidade: 5
+risco: normal
+sensivel: false
+skills: [stack, padroes-codigo, conteudo, design-system, imagens, responsivo-desktop-mobile, testes, anti-cara-de-ia]
+criada_em: 2026-10-21
+ferramenta: ""
+voltas: null
+bloqueios: null
+ca_nao_verificados: null
+testes_criados: null
+testes_pegam: null
+revisao_humana: ""
+homologacao: ""
+---
+
+# T-0002 · Catálogo por pedra nas páginas de categoria
+
+## Objetivo
+
+As páginas de granito, mármore, quartzo e lâminas passam a listar as pedras da cliente em cartões com imagem, nome e botão de WhatsApp da pedra, no HTML estático.
+
+## Contexto
+
+- Site estático (Next.js 16, React 19, export em `out/`), conteúdo em `src/content/`. Hoje `/materiais/<slug>/` (`src/app/materiais/[slug]/page.tsx`) mostra só o texto da categoria e um `pendente(...)` de catálogo; as 6 categorias vêm de `materiaisCliente` em `src/content/cliente.ts` (slugs `marmore`, `granito`, `marmore-dolomitico`, `quartzito`, `quartzo`, `ultracompacto`).
+- **Lista de pedras da cliente (19/10/2026), única fonte dos nomes.** Grafia corrigida sem mudar os nomes (Branco Itaúnas, Mármore, Calacatta, Café Imperial). Nenhum nome fora desta lista:
+
+| Categoria (slug) | Grupo | Nome | slug da pedra |
+|---|---|---|---|
+| granito | | Branco Itaúnas | granito-branco-itaunas |
+| granito | | Preto São Gabriel | granito-preto-sao-gabriel |
+| granito | | Preto Absoluto | granito-preto-absoluto |
+| granito | | Café Imperial | granito-cafe-imperial |
+| granito | | Branco Pitaya | granito-branco-pitaya |
+| granito | | Dallas | granito-dallas |
+| granito | | Cinza Corumbá | granito-cinza-corumba |
+| granito | | Verde Ubatuba | granito-verde-ubatuba |
+| granito | | Siena | granito-siena |
+| granito | | Branco Fortaleza | granito-branco-fortaleza |
+| granito | | Cinza Andorinha | granito-cinza-andorinha |
+| marmore | Mármores nacionais | Travertino Nacional | marmore-travertino-nacional |
+| marmore | Mármores nacionais | Mármore Branco Rajado | marmore-branco-rajado |
+| marmore | Mármores nacionais | Mármore Branco Pinta Cinza | marmore-branco-pinta-cinza |
+| marmore | Mármores nacionais | Branco Paraná | marmore-branco-parana |
+| marmore | Mármores nacionais | Paraná Matarazzo | marmore-parana-matarazzo |
+| marmore | Mármores importados | Nero Marquina | marmore-nero-marquina |
+| marmore | Mármores importados | Travertino Romano bruto | marmore-travertino-romano-bruto |
+| marmore | Mármores importados | Carrara | marmore-carrara |
+| marmore | Mármores importados | Crema Marfil | marmore-crema-marfil |
+| marmore | Mármores importados | Calacatta | marmore-calacatta |
+| quartzo | | Branco Super White | quartzo-branco-super-white |
+| quartzo | | Bege (Capuccino) | quartzo-bege-capuccino |
+| quartzo | | Cinza (Light Grey) | quartzo-cinza-light-grey |
+| quartzo | | Branco Stellar | quartzo-branco-stellar |
+| quartzo | | Cinza Stellar | quartzo-cinza-stellar |
+| quartzo | | Preto Stellar | quartzo-preto-stellar |
+| quartzo | | Calacatta | quartzo-calacatta |
+| ultracompacto | | Lâmina branca | lamina-branca |
+| ultracompacto | | Lâmina bege | lamina-bege |
+| ultracompacto | | Lâmina cinza | lamina-cinza |
+| ultracompacto | | Travertino | lamina-travertino |
+| ultracompacto | | Calacatta | lamina-calacatta |
+| ultracompacto | | Taj Mahal | lamina-taj-mahal |
+
+  A imagem de cada pedra tem id `pedra-<slug da pedra>` (arquivo `assets/images/pedra-<slug>.png`). O piloto T-0001 entrega 3: `pedra-granito-preto-sao-gabriel`, `pedra-marmore-calacatta`, `pedra-granito-branco-itaunas`. As outras chegam pela T-0003.
+- **Decisões do PRD copiadas:**
+  - **D1:** pedras num arquivo próprio, ligado à categoria pelo slug; `cliente.ts` continua só com o texto da cliente. Sugestão: dados em `src/content/pedras.json` (para o script de checagem ler sem TypeScript) e tipo/funções em `src/content/pedras.ts`. Tipo: `{ slug, nome, categoria, grupo?, imagem, oculta? }`.
+  - **D2:** pedra com `oculta: true` **ou** sem imagem no manifesto (`src/generated/images.json`) não renderiza. A checagem do build lista as pedras sem imagem como aviso (não falha).
+  - **D7:** slug único com a categoria; cada cartão leva `data-pedra="<slug>"`. A checagem de oculta procura o slug, não o nome (há três "Calacatta").
+- **Cartão:** imagem 4:5 (close da chapa polida), nome, botão/link "Chamar no WhatsApp". Sem página própria por pedra, sem texto descritivo por pedra (a cliente não mandou). `alt` descreve o que se vê sem dizer que é obra da JK, ex.: "Chapa polida de granito Preto São Gabriel, fundo preto com pintas claras."
+- **WhatsApp:** `https://wa.me/5511967976902` com a mensagem "Olá, JK! Tenho interesse no(a) {nome}. Vi no site." Use `linkWhatsApp(mensagem, conteudo.empresa.whatsapp)` de `src/lib/whatsapp.ts`. **Nome repetido em mais de uma categoria** (hoje só "Calacatta") leva a categoria entre parênteses **só na mensagem**: "Olá, JK! Tenho interesse no(a) Calacatta (quartzo). Vi no site." Rótulos: mármore, quartzo, lâmina. O cartão mostra só o nome. Calcule a repetição a partir dos dados, não à mão.
+- **Mármores:** um só bloco na página `/materiais/marmore/`, com dois grupos titulados "Mármores nacionais" e "Mármores importados".
+- **Lâminas (`/materiais/ultracompacto/`):** acima dos 6 cartões, a linha "Acabamentos polido e acetinado."
+- **Fim de cada lista:** a linha "Trabalhamos com outras pedras; pergunte pelo WhatsApp." com link de WhatsApp usando a mensagem de orçamento que a categoria já tem (`item.cta.mensagem`). Não criar mensagem nova.
+- **Dolomíticos e quartzitos** não têm nomes na lista: nenhum cartão e nenhuma linha final nessas páginas (a imagem de topo vem na T-0004).
+- **Pendência de catálogo:** hoje toda página de categoria mostra `institucional.catalogo` = `pendente('confirmar nomes comerciais de pedras e acabamentos trabalhados pela JK')`. Nas categorias com pedras, troque por um `pendente` só de acabamentos (ex.: "confirmar acabamentos trabalhados em granitos"); nas lâminas, nenhum (acabamentos vieram da cliente); em dolomíticos e quartzitos, `pendente` de nomes das pedras e acabamentos (pendência O2). Em produção `pendente` some do HTML (`npm run check:pendencias`).
+- **Design system (versão 1, aprovada):** fundo escuro `#10100f`, títulos Bodoni Moda 400, corpo Source Sans 3, filetes de 1 px em vez de caixas, nada arredondado (`--raio: 0`), alvos de toque de 44 px, sem rolagem horizontal. Use só tokens de `src/app/globals.css`. Comece pela seção de design (abaixo) e compare com as capturas de `docs/auditorias/versao-1/materiais-*`.
+- **Imagens:** só por `<Foto>` (`src/components/Foto.tsx`), `loading="lazy"` (padrão; nenhum cartão tem `prioridade`), `sizes` coerente com a grade.
+- **Sitemap:** não muda (não há página por pedra). A checagem confere que nenhum slug de pedra vira URL no `out/sitemap.xml`.
+
+### Seção de design (proposta; o implementador pode melhorar e descreve no relatório)
+
+- Desktop (1440): grade de 4 colunas dentro de `.container`, imagem 4:5 no topo, nome abaixo (Bodoni Moda, tamanho de H3 já existente), link de texto "Chamar no WhatsApp" (`text-link`); filete de 1 px `--cor-borda` entre linhas. Mármores: título de grupo como H3/eyebrow acima de cada grade.
+- 1000 e 800: 3 colunas. 700 e abaixo (390): 2 colunas, nome e link com alvo de 44 px.
+- Linha final e linha de acabamentos em `--cor-muted`, corpo 16 px.
+
+## Arquivos / áreas prováveis
+
+- `src/content/pedras.json` e `src/content/pedras.ts` (novos) — dados, tipo, `pedrasVisiveis(categoria)`, mensagem do WhatsApp
+- `src/components/PedraCatalogo.tsx` (novo) — componente de servidor dos cartões, grupos e linhas
+- `src/app/materiais/[slug]/page.tsx` — usa o catálogo e a pendência ajustada
+- `src/content/institucional.ts` — pendências de catálogo por categoria
+- `src/app/globals.css` — estilos dos cartões, só com tokens
+- `scripts/check-pedras.mjs` (novo) e `package.json` — checagem no fim do `build`
+- `e2e/materiais.spec.ts` (novo)
+
+## Insumos
+
+- `cliente/zapmind-43286-desde-2026-09-28.txt` (fonte de texto, autorização sim): de onde veio a lista de 19/10. **Não precisa abrir**: a lista está copiada acima. O resto do arquivo é conversa pessoal e não vai para o código.
+
+## Passos sugeridos
+
+1. Ler as skills listadas e as capturas de `docs/auditorias/versao-1/materiais-*`.
+2. Criar os dados e as funções (visíveis = não ocultas e com imagem no manifesto; mensagem com categoria só nos nomes repetidos).
+3. Criar `PedraCatalogo` e ligar na página de categoria; ajustar as pendências.
+4. Estilos na grade da seção de design.
+5. `scripts/check-pedras.mjs`: para cada pedra oculta, falha se `data-pedra="<slug>"` aparecer em qualquer HTML de `out/`; para cada visível com imagem, falha se não aparecer em `out/materiais/<categoria>/index.html`; falha se algum slug de pedra aparecer no `out/sitemap.xml`; avisa as pedras sem imagem. Acrescentar ao fim do script `build`.
+6. Escrever e rodar os testes; capturas nas 5 larguras e Lighthouse (skill `responsivo-desktop-mobile`); varredura `anti-cara-de-ia`.
+7. Evidência do CA-4: marcar uma pedra com imagem como `oculta: true`, rodar `npm run build` e a checagem, mostrar a saída, desfazer.
+
+## Critérios de aceite
+
+Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA-14 em diante existem só nesta task.
+
+- **CA-1:** Dada `/materiais/granito/`, `/materiais/marmore/`, `/materiais/quartzo/` ou `/materiais/ultracompacto/`, quando carrega, então mostra um cartão para cada pedra da tabela acima que tem imagem e não está oculta, com imagem, nome e botão de WhatsApp, e nenhum nome fora da tabela. (HU CA-1; com só as 3 imagens do piloto, aparecem 2 cartões em granito e 1 em mármore.)
+- **CA-2:** Dado o cartão do Preto São Gabriel, quando o visitante toca em "Chamar no WhatsApp", então o link é `https://wa.me/5511967976902?text=` + "Olá, JK! Tenho interesse no(a) Preto São Gabriel. Vi no site." codificado; e no cartão do Calacatta de mármore a mensagem diz "Calacatta (mármore)". (HU CA-2)
+- **CA-4:** Dada uma pedra com `oculta: true`, quando o site é gerado, então ela não aparece no HTML nem no sitemap, as outras continuam, e `npm run build` falha se ela aparecer. (HU CA-4)
+- **CA-5:** Dado o fim de cada lista de pedras, então aparece "Trabalhamos com outras pedras; pergunte pelo WhatsApp." com link de WhatsApp. (HU CA-5)
+- **CA-9:** Dado o JavaScript desligado, quando abro `/materiais/granito/`, então cartões, nomes, imagens e links de WhatsApp estão no HTML. (HU CA-9)
+- **CA-10:** Dado o celular, então `/materiais/granito/` tem Lighthouse mobile 100 em Acessibilidade e SEO, sem rolagem horizontal em nenhuma das 5 larguras. (HU CA-10, parte do catálogo)
+- **CA-13:** Dada `/materiais/ultracompacto/`, então "Acabamentos polido e acetinado." aparece acima dos cartões. (HU CA-13; os cartões das lâminas aparecem quando as imagens da T-0003 chegarem.)
+- **CA-14:** Dada `/materiais/marmore/`, então os cartões ficam em dois grupos titulados "Mármores nacionais" e "Mármores importados", cada um só com as pedras do seu grupo.
+
+## Testes
+
+| CA | Tipo | O que o teste simula e confere |
+|---|---|---|
+| CA-1 | interacao | Playwright abre as 4 páginas; conta os `[data-pedra]` e compara com os dados (visíveis com imagem); confere que cada nome exibido está na lista |
+| CA-2 | interacao | toca no link do cartão do Preto São Gabriel e do Calacatta de mármore (interceptando a navegação) e confere o `href` decodificado |
+| CA-4 | integracao | a checagem roda no build; evidência: ocultar uma pedra temporariamente, build e checagem mostrando que ela sumiu e que o build falha se o HTML for adulterado para conter o slug; desfazer |
+| CA-5 | interacao | em cada página com pedras, rola até o fim da lista, vê a linha e confere o link de WhatsApp |
+| CA-9 | interacao | contexto Playwright com `javaScriptEnabled: false` abre `/materiais/granito/` e encontra cartões, `img` com `alt` e `href` de WhatsApp |
+| CA-10 | integracao | Lighthouse mobile em `/materiais/granito/` (skill `responsivo-desktop-mobile`) e capturas nas 5 larguras, com a saída no relatório |
+| CA-13 | interacao | abre a página das lâminas e confere a linha antes do primeiro cartão (ou antes da linha final, enquanto não houver cartões) |
+| CA-14 | interacao | abre `/materiais/marmore/` e confere que os slugs de cada grupo batem com os dados |
+
+**Dados e ambiente:** `npm run build` antes; o Playwright sobe `scripts/preview-local.mjs` na porta 3105 (`playwright.config.ts`). Imagens disponíveis: as 3 do piloto. Testes leem os dados de `src/content/pedras.json` para não fixar a contagem.
+
+## Fora do escopo
+
+- Gerar imagens (T-0001, T-0003) e imagem de categoria e de topo (T-0004).
+- Página própria por pedra, texto descritivo por pedra, filtro ou busca.
+- Nomes de dolomíticos e quartzitos.
+- Mudar o texto institucional da cliente.
+
+## Diagnóstico
+
+## Bloqueios
+
+## Handoff
+
+## Execução
+
+## Roteiro de homologação
+
+## Histórico
+
+- 2026-10-21 · criada (backlog) · planejador

@@ -37,7 +37,7 @@ Os registros detalhados seguem agrupados por assunto abaixo. Um item com status 
 | # | Item | Prioridade | Status | Fonte / observação |
 |---|---|---|---|---|
 | O1 | Lista de serviços | P0 | parcial | Cliente informou atendimento a projetos residenciais, comerciais e industriais, "da concepção à execução" (28/09). Lista de serviços específicos (bancadas, escadas etc.) ainda não enviada: não listar peças como serviço confirmado |
-| O2 | Materiais trabalhados | P0 | parcial | Categorias confirmadas em 28/09, nacionais e importados: mármores, granitos, mármores dolomíticos, quartzitos naturais, quartzos e lâminas ultracompactas sinterizadas, com textos da cliente. Nomes comerciais de pedras específicas e acabamentos ainda pendentes |
+| O2 | Materiais trabalhados | P0 | parcial | Categorias confirmadas em 28/09, nacionais e importados: mármores, granitos, mármores dolomíticos, quartzitos naturais, quartzos e lâminas ultracompactas sinterizadas, com textos da cliente. Em 19/10 a cliente mandou os nomes de granitos, mármores nacionais e importados, quartzos e as cores das lâminas (lista em `docs/insumos/brutos/cliente/atualizacoes.md`; entra no catálogo pela HU-0001). Ainda pendentes: nomes de mármores dolomíticos e quartzitos naturais, e acabamentos |
 | O3 | Tem estoque/showroom para visita? | P1 | aberto | |
 | O4 | Faz orçamento por foto/medida pelo WhatsApp? Faz visita técnica para medição? | P1 | aberto | |
 | O5 | Prazo médio de entrega e garantia | P2 | aberto | só se o cliente afirmar |

@@ -7,7 +7,7 @@
      Dados pessoais: sim | não. Com "sim", o agente só lê pelo metodo/nucleo/scripts/mascarar.mjs, salvo autorização do desenvolvedor na conversa.
      Caminhos relativos a docs/insumos/brutos/. -->
 
-Atualizado em: 2026-10-20. Origem: conteúdo de `../jk-marmores-refs`, movido para `brutos/` no onboarding do método.
+Atualizado em: 2026-10-20. Origem: conteúdo de `../jk-marmores-refs`, movido para `brutos/` no onboarding do método, mais a leitura do ZapMind de 2026-10-20.
 
 ## Da cliente
 
@@ -16,8 +16,9 @@ Atualizado em: 2026-10-20. Origem: conteúdo de `../jk-marmores-refs`, movido pa
 | `cliente/textos-cliente-2026-09-28.txt` | texto "Sobre Nós" e descrição das categorias de materiais | cliente, grupo do projeto, 2026-09-28 | fonte de texto | sim | sim | nome da remetente no cabeçalho de cada mensagem; o texto institucional já está em `src/content/cliente.ts`, sem acréscimos |
 | `cliente/logo-jk-whatsapp-2026-09-26.jpg` | logo enviada pelo WhatsApp | cliente, 2026-09-26 | asset final | sim | não | versão oficial: `assets/brand/logo-jk-cliente-2026-09-26.jpg` (mesma logo, arquivo versionado). Vetor ainda pendente (V1) |
 | `cliente/2026-09-28-1406-audio-atualizacao-site.ogg` | áudio do Vitor no grupo, aviso de andamento | Vitor, 2026-09-28 | só contexto | não se aplica | sim | transcrição resumida em `cliente/atualizacoes.md`; não abrir |
-| `cliente/atualizacoes.md` | registro das mensagens do grupo até 28/09 | Planejador, 2026-09-27 a 30 | só contexto | não se aplica | sim | contém nome e telefone; ler só mascarado. Mensagens depois de 28/09 ainda não registradas (ler a conversa 43286 no ZapMind) |
-| `cliente/radar-estado.json` | marcador da última mensagem lida da conversa 43286 | Planejador, 2026-09-30 | só contexto | não se aplica | não | última leitura: 2026-09-28 14:44 |
+| `cliente/atualizacoes.md` | registro das mensagens do grupo até 19/10 | Planejador, 2026-09-27 a 2026-10-20 | só contexto | não se aplica | sim | contém nome e telefone; ler só mascarado. Resumo de 01/10 a 19/10: aprovação da versão 1 e pedido de imagens dos materiais |
+| `cliente/zapmind-43286-desde-2026-09-28.txt` | exportação das mensagens da conversa 43286 de 01/10 a 19/10 | ZapMind, lida em 2026-10-20 | fonte de texto | sim | sim | traz a lista de materiais da cliente (19/10), que vira fonte para os nomes das pedras no site; o resto é conversa pessoal e não vai para o código |
+| `cliente/radar-estado.json` | marcador da última mensagem lida da conversa 43286 | Planejador, 2026-10-20 | só contexto | não se aplica | não | última leitura: 2026-10-19 17:15 |
 
 ## Referências visuais (terceiros)
 
@@ -45,4 +46,4 @@ As pendências de dados, oferta e material visual estão em `docs/PENDENCIAS.md`
 
 - Fotos de obras reais com autorização (V3) e fotos das chapas (V4): nenhuma recebida.
 - Logo em vetor (V1): só o JPEG.
-- Pedido de imagens novas depois da aprovação da versão 1: ler a conversa 43286 no ZapMind e registrar aqui o que chegar.
+- Pedido de imagens novas (13/10 e 19/10): a cliente aprovou a versão 1 (07/10) e quer imagens profissionais dos materiais. Mandou a lista de pedras em 19/10 (ver `cliente/atualizacoes.md`). Do nosso lado alguém respondeu "dá pra gente fazer" e "vou pensar em como conseguir essas imagens". Nenhuma imagem recebida. Origem das imagens (fornecedor, banco licenciado, geração ou fotos dela) a decidir na HU.
