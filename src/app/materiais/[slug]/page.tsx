@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { conteudo } from '@/content';
 import { institucional } from '@/content/institucional';
+import { imagensCategorias } from '@/content/categorias';
 import { PageIntro, ContactPanel } from '@/components/Institutional';
 import { SiteLink } from '@/components/SiteLink';
 import { PendenteTexto } from '@/components/PendenteTexto';
@@ -18,7 +19,7 @@ export default async function MaterialPage({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const item = conteudo.materiais.find(material => material.slug === slug && material.confirmado);
   if (!item) notFound();
-  return <main id="conteudo"><PageIntro label="MATERIAIS" title={texto(item.nome)} description={texto(item.resumo)} />
+  return <main id="conteudo"><PageIntro label="MATERIAIS" title={texto(item.nome)} description={texto(item.resumo)} imagem={imagensCategorias[item.slug]} />
     <section className="container section-space material-detail"><p className="lead">{texto(item.descricao)}</p><div><h2>A escolha começa pelo seu projeto.</h2><p>Converse com a JK sobre a pedra específica, a aplicação, a disponibilidade e os acabamentos. Confira a amostra real antes de decidir.</p><p className="editorial-note"><PendenteTexto valor={institucional.catalogo} /></p><a className="button" href={linkWhatsApp(item.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a><SiteLink className="text-link" href="/materiais/">Ver todos os materiais</SiteLink></div></section>
     <ContactPanel />
   </main>;

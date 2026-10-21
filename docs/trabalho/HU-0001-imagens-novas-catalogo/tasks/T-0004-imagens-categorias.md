@@ -3,7 +3,7 @@ id: T-0004
 titulo: "Imagem própria para as 6 categorias de material"
 hu: HU-0001
 trilha: funcionalidade
-status: em-desenvolvimento
+status: em-revisao
 depende_de: [T-0001]
 cobre: [CA-3, CA-11, CA-12]
 complexidade: 4
@@ -11,12 +11,12 @@ risco: normal
 sensivel: false
 skills: [imagens, stack, padroes-codigo, conteudo, design-system, responsivo-desktop-mobile, testes]
 criada_em: 2026-10-21
-ferramenta: ""
-voltas: null
-bloqueios: null
-ca_nao_verificados: null
-testes_criados: null
-testes_pegam: null
+ferramenta: "claude-code/opus (maestro e implementação) + codex (Astra, geração) + agy (segunda opinião)"
+voltas: 1
+bloqueios: 0
+ca_nao_verificados: 0
+testes_criados: 4
+testes_pegam: 2
 revisao_humana: ""
 homologacao: ""
 ---
@@ -100,10 +100,84 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 
 ## Execução
 
+### Execução · 2026-10-21
+
+**Branch:** task/T-0004-imagens-categorias (a partir de task/T-0003-imagens-pedras-restantes) · **PR:** não aberto (nível 0, sem push)
+
+**O que mudou:**
+- `assets/images/categoria-*.png`: 6 cenas em 1200×1500 (4:5).
+- `src/content/categorias.ts` (novo): id e `alt` da imagem de cada categoria. O `cliente.ts`, com o texto da cliente, não mudou.
+- `src/components/MaterialCollection.tsx`: imagem no cartão só com a prop `comImagem`, que apenas `/materiais/` passa. A home mantém os cartões da versão aprovada. O cartão ganhou `data-categoria`.
+- `src/components/Institutional.tsx`: `PageIntro` aceita `imagem` opcional e então monta duas colunas, com a imagem em `prioridade`. Sem `imagem`, a marcação não muda.
+- `src/app/materiais/[slug]/page.tsx` passa a imagem da categoria; `src/app/materiais/page.tsx` passa `comImagem`.
+- `src/app/globals.css`: bloco no fim (`.material-image`, `.intro-grid`, `.intro-image`), sem hex novo e nada arredondado. No mobile o topo recorta em 4:3 para não empurrar o conteúdo.
+- `e2e/materiais-categorias.spec.ts` (novo).
+- O registro foi feito em `docs/proposta/hu-0001-prompts.json` e `assets-licencas.md`.
+
+**Imagens:**
+- **Pedras usadas:** Carrara, Cinza Corumbá, Branco Stellar e lâmina Taj Mahal, com a foto real e o close já escolhido no catálogo como referência. Dolomíticos e quartzitos mostram uma pedra genérica do tipo, sem nome comercial.
+- **Geração e escolha:** 2 candidatas por categoria. Usei a comparação relativa, porque a luz da cena muda a medida absoluta, mais a revisão visual e o parecer cego do agy.
+- **Escolhidas:** mármore 2, granito 1, dolomítico 2, quartzito 2, quartzo 2 e lâminas 1.
+- **Com o agy:** concordamos de cara em 3 categorias. Nas outras 3, fiquei com a escolha dele depois de olhar lado a lado: no granito, a 2 puxava para bege; no quartzito, a ponta do banco se fundia ao pilar na 1; na lâmina, a 2 tinha veios ramificados demais.
+
+**Decisões tomadas:**
+- As imagens foram ampliadas em 7% (de 1122×1402 para 1200×1500, lanczos3) para cumprir a largura mínima de 1200 px do topo. Não há detalhe novo, e isso está registrado no campo `tratamento` do JSON.
+- Testei um recorte mobile em arquivo próprio para baixar o LCP. Não mudou nada (2,8 s), então desfiz o teste.
+
+**Verificação (testador):**
+
+| CA | Tipo | Teste / como verifiquei | Pega? | Resultado |
+|---|---|---|---|---|
+| CA-3 | interacao | `e2e/materiais-categorias.spec.ts` "CA-3": nas páginas de dolomíticos e quartzitos, imagem de topo carregada (id certo), zero `[data-pedra]` e o `data-pendente` dos nomes presente | sim: imagem do topo do quartzito tirada do HTML → falha; pendência trocada → falha | passa (mobile e desktop) |
+| CA-11 | integracao | `node scripts/check-imagens-geradas.mjs` → "OK: 41 imagem(ns) gerada(s) com registro completo." | sim (provado na T-0001) | passa |
+| CA-12 | interacao | "CA-12": abre `/materiais/`, lê o `currentSrc` de cada cartão, toca em "Conhecer…", chega na categoria e confere o mesmo id no topo. Sem JavaScript as imagens estão no HTML, e a home segue sem elas | sim: troca da imagem do topo do granito no HTML → falha ("Expected categoria-granito, Received categoria-marmore") | passa (mobile e desktop) |
+| CA-14 | manual | motivo: fidelidade é julgamento visual. Comparação, revisão lado a lado e parecer do agy estão no JSON | não se aplica | passa |
+| CA-15 | integracao | capturas em 5 larguras de `/materiais/granito/` e `/materiais/`, sem rolagem horizontal; Lighthouse mobile em produção em granito e quartzito: Acessibilidade 100, SEO 100, Boas práticas 100, CLS 0 | não se aplica | passa |
+
+**LCP:**
+- Medido em produção, no celular: 2,6 s nas duas páginas de categoria, estável em 3 rodadas; a imagem do topo é o LCP.
+- Na mesma máquina e na mesma hora, a home mediu 2,6 s e `/contato/`, só texto, 2,4 s.
+- **Conclusão:** a imagem acrescenta cerca de 0,2 s em relação a uma página só de texto. Os números absolutos estão inflados pela máquina, que estava com 0,1 GB de memória livre.
+- A meta de 2,0 s (princípio 10) precisa ser medida de novo com a máquina livre, antes de publicar.
+
+**Testes criados ou alterados:** `e2e/materiais-categorias.spec.ts`, com 4 testes por projeto e 8 no total.
+
+**Linha de base:**
+
+| | Antes | Depois |
+|---|---|---|
+| lint | 0 erros, 2 avisos | igual |
+| build | passa | passa |
+| e2e | 5 passaram, 1 pulado | 13 passaram, 1 pulado |
+
+**Revisões:**
+- **Código:** ajustes na volta 1, todos aplicados:
+  - imagem fora da home, com a prop `comImagem`;
+  - CA no nome dos testes;
+  - tipo importado em vez de duplicado;
+  - classe sem uso removida;
+  - espaço entre colunas mais perto dos 80 px.
+- **Segurança:** não aplicável.
+
+**Pendências / sugestões fora do escopo:**
+- Os avisos das capturas são anteriores à task: alvos de 44 px (padrão do projeto) contra os 48 px do script, "Contato" e "Galeria" com 43 px no menu, e a imagem lazy da capa de `/materiais/`. Esta última é trocada na T-0005.
+- Rodar o CA-3 de novo depois que a T-0002 entrar: hoje o `[data-pedra]` ainda não existe no site.
+
+**Proposta para skills do projeto:** nenhuma.
+
 ## Roteiro de homologação
+
+1. `npm run build`, depois `node scripts/preview-local.mjs`, e abrir `http://127.0.0.1:3105/materiais/`: cada um dos 6 cartões tem foto.
+2. Tocar em "Conhecer granitos": o topo mostra a mesma foto ao lado do título no desktop, e abaixo dele no celular.
+3. Abrir `/materiais/marmore-dolomitico/` e `/materiais/quartzito/`: há foto no topo e nenhum cartão de pedra.
+4. Abrir a home: os cartões de materiais continuam sem foto, como na versão aprovada.
+
+Resultado: <a marcar por quem homologa>
 
 ## Histórico
 
 - 2026-10-21 · criada (backlog) · planejador
 - 2026-10-21 · escolha das imagens delegada ao Claude, com segunda opinião do agy, em vez da aprovação por prancha · desenvolvedor (pedido na conversa da T-0001)
 - 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "T-0003 a T-0006")
+- 2026-10-21 · execução na branch task/T-0004-imagens-categorias (a partir de task/T-0003) · claude-code/opus
+- 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)

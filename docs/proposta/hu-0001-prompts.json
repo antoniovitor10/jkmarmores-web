@@ -416,5 +416,77 @@
     "avaliacao": "rodada 3, grão fino e tom azulado como o real, ΔE 2.6 (rodadas 1 e 2 com grão grosso; o agy preferiu a candidata 4 entre elas). agy na rodada 3: mais fiel candidata-6, nota 8, defeito: grãos parecem pontinhos redondos em vez de cristais encaixados, canto superior esquerdo um pouco mais claro",
     "prompt_rodada_1": "Editorial photograph of a polished slab of Brazilian Cinza Andorinha granite: medium grey fine-grained stone with a very uniform salt-and-pepper texture of tiny black, grey and white crystals under 2 mm, with no larger spots or veins; dark grains are roughly 40 to 50 percent of the surface, blending into an even mid-grey from a distance. Keep the stated density exactly; do not add extra specks, glitter or a starry look. Look and composition: straight-on close-up of the polished slab surface filling the entire frame edge to edge, portrait orientation 4:5 (for example 1024x1280 or larger), no background, no objects, no edges, no text, no logo, no watermark, no people. Soft warm raking light from the upper left at a low angle reveals the polished surface with a subtle natural reflection and a gentle falloff toward the lower right. True natural scale of the pattern as seen from about 60 cm away. Realistic photographic stone texture, natural slightly warm color, slightly desaturated, high detail, sharp focus. Editorial product photography.",
     "prompt_rodada_2": "Editorial photograph of a polished slab of Brazilian Cinza Andorinha granite: medium-light neutral grey stone with a very fine, very uniform salt-and-pepper texture of tiny black, grey and white crystals under 1.5 mm, low contrast, reading as an even mid-grey from a distance like fine sand; no larger spots, no direction, no woven or fabric-like pattern, no veins. Keep the stated density and contrast exactly. Look and composition: straight-on close-up of the polished slab surface filling the entire frame edge to edge, portrait orientation 4:5 (for example 1024x1280 or larger), no background, no objects, no edges, no text, no logo, no watermark, no people. Soft even raking light from the upper left with only a subtle reflection, no strong glare. True natural scale of the pattern as seen from about 60 cm away. Realistic photographic stone texture, neutral natural color balance (not orange, not oversaturated), high detail, sharp focus. Editorial product photography."
+  },
+  "categoria-marmore": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Editorial interior photograph: a bathroom vanity countertop and wall cladding in Italian Bianco Carrara marble (soft white with feathery grey veins), seen at a low three-quarter angle, the countertop edge and the wall slab both visible. Portrait orientation 4:5 (for example 1024x1280 or larger). Dark, warm, quiet architectural interior in warm graphite and dark walnut tones, late-afternoon raking light grazing the stone surface from the left, soft long shadows; the stone surface is the protagonist and fills most of the frame, its pattern clearly readable. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter, at most one plain ceramic object. Realistic editorial architectural photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "foto real da pedra (só cor e veio, fora do git, sem URL) e o close já escolhido no catálogo, para manter a mesma pedra",
+    "data": "2026-10-21",
+    "tentativas": 2,
+    "escolhida": "candidata-2",
+    "arquivo": "assets/images/categoria-marmore.png",
+    "avaliacao": "mármore Carrara; comparação relativa favoreceu a 2 (ΔE 40.8 nas duas por causa da luz da cena, textura 20.7 contra 23.9); agy concorda. agy: melhor candidata-2, nota 6, defeito: Os veios formam uma rede craquelada, escura e contrastada. O Carrara real tem veios cinza finos, difusos e na diagonal.",
+    "tratamento": "ampliada de 1122x1402 para 1200x1500 (7%, lanczos3) para cumprir a largura mínima de 1200 px da imagem de topo; sem detalhe novo"
+  },
+  "categoria-granito": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Editorial interior photograph: a kitchen countertop in Brazilian Cinza Corumba granite (light grey with an even salt-and-pepper of black and grey grains), seen at a low three-quarter angle along the countertop with a thick polished edge and an undermount sink barely visible. Portrait orientation 4:5 (for example 1024x1280 or larger). Dark, warm, quiet architectural interior in warm graphite and dark walnut tones, late-afternoon raking light grazing the stone surface from the left, soft long shadows; the stone surface is the protagonist and fills most of the frame, its pattern clearly readable. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter, at most one plain ceramic object. Realistic editorial architectural photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "foto real da pedra (só cor e veio, fora do git, sem URL) e o close já escolhido no catálogo, para manter a mesma pedra",
+    "data": "2026-10-21",
+    "tentativas": 2,
+    "escolhida": "candidata-1",
+    "arquivo": "assets/images/categoria-granito.png",
+    "avaliacao": "granito Cinza Corumbá; a 1 é mais cinza, a 2 puxa para bege (escolha do agy, conferida lado a lado). agy: melhor candidata-1, nota 7, defeito: Os grãos pretos são mais graúdos e espaçados que no Cinza Corumbá real, e a torneira aparece cortada na borda direita. A candidata 2 tem o fundo bege demais para esse granito.",
+    "tratamento": "ampliada de 1122x1402 para 1200x1500 (7%, lanczos3) para cumprir a largura mínima de 1200 px da imagem de topo; sem detalhe novo"
+  },
+  "categoria-marmore-dolomitico": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Editorial interior photograph: the edge and top of a kitchen island in a white dolomitic marble (milky white with soft, diffuse light-grey veins and gentle clouds, no gold), seen at a low three-quarter angle showing a mitered waterfall edge. Portrait orientation 4:5 (for example 1024x1280 or larger). Dark, warm, quiet architectural interior in warm graphite and dark walnut tones, late-afternoon raking light grazing the stone surface from the left, soft long shadows; the stone surface is the protagonist and fills most of the frame, its pattern clearly readable. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter, at most one plain ceramic object. Realistic editorial architectural photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "sem referência: pedra genérica do tipo, sem nome comercial",
+    "data": "2026-10-21",
+    "tentativas": 2,
+    "escolhida": "candidata-2",
+    "arquivo": "assets/images/categoria-marmore-dolomitico.png",
+    "avaliacao": "dolomítico genérico, sem nome na lista; a 2 é mais limpa; agy concorda. agy: melhor candidata-2, nota 7, defeito: Os veios não continuam com precisão na quina em meia-esquadria da ilha. A luz quente deixa o branco bege.",
+    "tratamento": "ampliada de 1122x1402 para 1200x1500 (7%, lanczos3) para cumprir a largura mínima de 1200 px da imagem de topo; sem detalhe novo"
+  },
+  "categoria-quartzito": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Editorial interior photograph: a feature wall and a floating shelf in a natural quartzite with broad, sweeping, slightly translucent veins in soft grey, white and pale honey over a light background, crystalline depth visible in the raking light, seen at a low three-quarter angle. Portrait orientation 4:5 (for example 1024x1280 or larger). Dark, warm, quiet architectural interior in warm graphite and dark walnut tones, late-afternoon raking light grazing the stone surface from the left, soft long shadows; the stone surface is the protagonist and fills most of the frame, its pattern clearly readable. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter, at most one plain ceramic object. Realistic editorial architectural photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "sem referência: pedra genérica do tipo, sem nome comercial",
+    "data": "2026-10-21",
+    "tentativas": 2,
+    "escolhida": "candidata-2",
+    "arquivo": "assets/images/categoria-quartzito.png",
+    "avaliacao": "quartzito genérico, sem nome na lista; na 1 a ponta do banco se funde ao pilar (defeito apontado pelo agy, conferido). agy: melhor candidata-2, nota 7, defeito: A textura dos veios é craquelada e com cara de pintura, com o dourado e o cinza saturados. Na candidata 1, a ponta esquerda do banco se confunde com o pilar de madeira.",
+    "tratamento": "ampliada de 1122x1402 para 1200x1500 (7%, lanczos3) para cumprir a largura mínima de 1200 px da imagem de topo; sem detalhe novo"
+  },
+  "categoria-quartzo": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Editorial interior photograph: a kitchen countertop in white engineered quartz with small translucent grey chips and rare tiny mirror flecks (Branco Stellar type), very even and uniform, seen at a low three-quarter angle along the countertop with a crisp straight edge. Portrait orientation 4:5 (for example 1024x1280 or larger). Dark, warm, quiet architectural interior in warm graphite and dark walnut tones, late-afternoon raking light grazing the stone surface from the left, soft long shadows; the stone surface is the protagonist and fills most of the frame, its pattern clearly readable. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter, at most one plain ceramic object. Realistic editorial architectural photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "foto real da pedra (só cor e veio, fora do git, sem URL) e o close já escolhido no catálogo, para manter a mesma pedra",
+    "data": "2026-10-21",
+    "tentativas": 2,
+    "escolhida": "candidata-2",
+    "arquivo": "assets/images/categoria-quartzo.png",
+    "avaliacao": "quartzo Branco Stellar; textura 6.6 contra 7.9; agy concorda. agy: melhor candidata-2, nota 8, defeito: A granulação é um pouco mais acinzentada e esparsa que a do Branco Stellar real. Na candidata 1, os grãos parecem furos em relevo, como uma superfície porosa.",
+    "tratamento": "ampliada de 1122x1402 para 1200x1500 (7%, lanczos3) para cumprir a largura mínima de 1200 px da imagem de topo; sem detalhe novo"
+  },
+  "categoria-ultracompacto": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Editorial interior photograph: a large-format ultra-compact sintered slab covering a wall and a thin countertop, imitating Taj Mahal quartzite (warm cream with soft wispy honey and pale gold veins), very thin crisp edge, seamless large panels, seen at a low three-quarter angle. Portrait orientation 4:5 (for example 1024x1280 or larger). Dark, warm, quiet architectural interior in warm graphite and dark walnut tones, late-afternoon raking light grazing the stone surface from the left, soft long shadows; the stone surface is the protagonist and fills most of the frame, its pattern clearly readable. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter, at most one plain ceramic object. Realistic editorial architectural photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "foto real da pedra (só cor e veio, fora do git, sem URL) e o close já escolhido no catálogo, para manter a mesma pedra",
+    "data": "2026-10-21",
+    "tentativas": 2,
+    "escolhida": "candidata-1",
+    "arquivo": "assets/images/categoria-ultracompacto.png",
+    "avaliacao": "lâmina imitando Taj Mahal; a 1 tem veio mais suave, como a lâmina real; a 2 ramifica demais (escolha do agy, conferida). agy: melhor candidata-1, nota 7, defeito: Os veios dourados estão mais saturados e marcados que na lâmina real, que é mais clara e suave. Na candidata 2, os veios se ramificam demais e o tom fica mais escuro.",
+    "tratamento": "ampliada de 1122x1402 para 1200x1500 (7%, lanczos3) para cumprir a largura mínima de 1200 px da imagem de topo; sem detalhe novo"
   }
 }

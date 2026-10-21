@@ -252,3 +252,16 @@ Fotos reais de 2 a 4 por pedra (fornecedores, marmorarias, Biblioteca das Rochas
 | assets/images/pedra-granito-cinza-corumba.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-cinza-corumba` | 1122×1402 |
 | assets/images/pedra-granito-siena.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-siena` | 1122×1402 |
 | assets/images/pedra-granito-cinza-andorinha.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `pedra-granito-cinza-andorinha` | 1122×1402 |
+
+### T-0004: imagens das 6 categorias, 21/10/2026
+
+Cenas de ambiente em 4:5, uma por categoria, com a mesma luz e o mesmo ambiente escuro. Mármore, granito, quartzo e lâminas usam pedras da lista da cliente (Carrara, Cinza Corumbá, Branco Stellar e Taj Mahal), com a foto real e o close do catálogo como referência; dolomíticos e quartzitos mostram uma pedra genérica do tipo, sem nome comercial. Duas candidatas por categoria; escolha pela comparação relativa, revisão visual e parecer cego do agy. Ampliadas em 7% para 1200 px de largura. Prompt, escolha e parecer em [hu-0001-prompts.json](hu-0001-prompts.json). Custo: US$ 0 por imagem.
+
+| Arquivo | Ferramenta | Data | Chave do prompt | Tamanho |
+|---|---|---|---|---|
+| assets/images/categoria-marmore.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `categoria-marmore` | 1200×1500 (ampliada de 1122×1402) |
+| assets/images/categoria-granito.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `categoria-granito` | 1200×1500 (ampliada de 1122×1402) |
+| assets/images/categoria-marmore-dolomitico.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `categoria-marmore-dolomitico` | 1200×1500 (ampliada de 1122×1402) |
+| assets/images/categoria-quartzito.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `categoria-quartzito` | 1200×1500 (ampliada de 1122×1402) |
+| assets/images/categoria-quartzo.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `categoria-quartzo` | 1200×1500 (ampliada de 1122×1402) |
+| assets/images/categoria-ultracompacto.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `categoria-ultracompacto` | 1200×1500 (ampliada de 1122×1402) |

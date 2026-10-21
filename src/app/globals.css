@@ -341,3 +341,11 @@ body:has(.home-page) .site-header { color:#eee5dc; }
 
 @media(prefers-reduced-motion:no-preference) { .button[data-gleam="true"]::before,.selector-controls button[data-gleam="true"]::before,.material-card[data-gleam="true"]::before { animation:grazing-light 750ms cubic-bezier(.22,.61,.36,1); } }
 body[data-motion-static="true"] *,body[data-motion-static="true"] *::before,body[data-motion-static="true"] *::after { animation:none !important; transition:none !important; }
+
+/* HU-0001 · T-0004: imagem da categoria no cartão de /materiais/ e no topo da página da categoria (mesmo arquivo, 4:5). */
+.material-image,.material-image img,.intro-image,.intro-image img { display:block; width:100%; }
+.material-image { margin:0 0 28px; }
+.material-image img,.intro-image img { height:auto; aspect-ratio:4/5; object-fit:cover; background-size:cover; }
+.intro-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.82fr); gap:clamp(64px,7vw,112px); align-items:center; }
+.intro-image img { max-height:74svh; }
+@media(max-width:700px) { .material-image { margin-bottom:20px; } .intro-grid { grid-template-columns:1fr; gap:32px; } .intro-image img { aspect-ratio:4/3; max-height:none; } }

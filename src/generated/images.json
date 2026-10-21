@@ -26,6 +26,138 @@
       }
     ]
   },
+  "categoria-granito": {
+    "width": 1200,
+    "height": 1500,
+    "placeholder": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBQCdASoYAB4APwFurE6rJqQiMAgBYCAJZQDA3B6WSacnc3Ewp9RtJSlclgepAXZM9AAA+xlPlrlJUy7LA7LDkADUgBzKdEEOYOXYEIyy9Qmaw3o/y2PC1gs4MG4Uad3zk5eYoegznjM0Y4bZu8dUdJA8TSFvBYlHZM6WPdJ71EtczGQTGMJrHnL6vkFUOAfOLyrvNrcCkFJgrneoIFdZ/F2VwveAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/categoria-granito-390.avif",
+        "webp": "/img/categoria-granito-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/categoria-granito-768.avif",
+        "webp": "/img/categoria-granito-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/categoria-granito-1200.avif",
+        "webp": "/img/categoria-granito-1200.webp"
+      }
+    ]
+  },
+  "categoria-marmore-dolomitico": {
+    "width": 1200,
+    "height": 1500,
+    "placeholder": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAADQBACdASoYAB4APvFirE6ppaSiMAwBMB4JZwDLLBuVg7RKTxuAo5/uyKARiqbvgAD8Mzr9fqSJ149TY9OAy/iyMXiMsQ/hhRV8urLSArWIFcHwD9zhys1VC6bmR/ZfTtbRCVQvYDMkM/utBhBP08byLmq35gxA+YH3+0UMrsOEAgAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/categoria-marmore-dolomitico-390.avif",
+        "webp": "/img/categoria-marmore-dolomitico-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/categoria-marmore-dolomitico-768.avif",
+        "webp": "/img/categoria-marmore-dolomitico-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/categoria-marmore-dolomitico-1200.avif",
+        "webp": "/img/categoria-marmore-dolomitico-1200.webp"
+      }
+    ]
+  },
+  "categoria-marmore": {
+    "width": 1200,
+    "height": 1500,
+    "placeholder": "data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAADwBACdASoYAB4APwFytFGrJqUiqAqpYCAJZQC9WA3x+eofuVnfknxrq6U55WOvXAAA/uzoHMzab+V5hqKVXvm674VJ8C/RPQ7OoTUIEpSoVtiAVPQBtu5wJEXZWcnYErbxe3Hjno+0J+teBRLbY/LiYZdQeAnZV5ONqhjYuAqbZb+Q/yh8hwd1Vdo06nwxYOOjONKdh7VxyUpb06Rt8+Gp/+OqHXXv9yPKR64a1DI2GZNaACXgAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/categoria-marmore-390.avif",
+        "webp": "/img/categoria-marmore-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/categoria-marmore-768.avif",
+        "webp": "/img/categoria-marmore-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/categoria-marmore-1200.avif",
+        "webp": "/img/categoria-marmore-1200.webp"
+      }
+    ]
+  },
+  "categoria-quartzito": {
+    "width": 1200,
+    "height": 1500,
+    "placeholder": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAABwBQCdASoYAB4APwFusFErJiSisBgIAWAgCWMAsOwv17PLtpiAumz6EvuHqLiHr4VgabJAAP7uoWcLzMRqot+jvPfSZjH9ndrInuLl8qIjA/+0QSvkUbHoo4W12w2D4Qsrp8UI0m3G4cNbA1OR2aU2EwDqYO64/i4gtuSG6o++EZRIHljlwX9I3OfIbcpGzJOoBodkbpjJMBjTH9+qCX84YPn3oOmf8Mr4AJagSxoIXNwYHQcd/4+nqtODHJNA2GJ675AEjxSoLvaISAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/categoria-quartzito-390.avif",
+        "webp": "/img/categoria-quartzito-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/categoria-quartzito-768.avif",
+        "webp": "/img/categoria-quartzito-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/categoria-quartzito-1200.avif",
+        "webp": "/img/categoria-quartzito-1200.webp"
+      }
+    ]
+  },
+  "categoria-quartzo": {
+    "width": 1200,
+    "height": 1500,
+    "placeholder": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBQCdASoYAB4APu1gp06ppaOjN/qoATAdiWUAvV9oADn/2uNGv1f5ReMgcJEe+7loAADieskNCxOXfMXQXo/ENVk/ibs556bicvEjffQSN2otXtw+SFugqnvQUy0O2CGrsYD21AwRPA2BbvFstwt8VeMh3QCjckafaE9FKEh+I5u1AMRnbItNgAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/categoria-quartzo-390.avif",
+        "webp": "/img/categoria-quartzo-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/categoria-quartzo-768.avif",
+        "webp": "/img/categoria-quartzo-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/categoria-quartzo-1200.avif",
+        "webp": "/img/categoria-quartzo-1200.webp"
+      }
+    ]
+  },
+  "categoria-ultracompacto": {
+    "width": 1200,
+    "height": 1500,
+    "placeholder": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAADwBACdASoYAB4APvlmpk6qpaMiMAwBUB8JQBOgAtPxcmQhZ5CgA3Ke3jk1X7qrriAA/ux7pBf2Nlg3vVp+XWPtgbrhhSS/aOeHQbsUNBPBwoutQWqlchElbniBwlX0+kA0rPT6w1Hmlrog1qsBlRN7jwTrlxj7HWgvOyhjFh/KD+XNgLbKBaWFpAJVwhFwulnlq3sos7pQAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/categoria-ultracompacto-390.avif",
+        "webp": "/img/categoria-ultracompacto-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/categoria-ultracompacto-768.avif",
+        "webp": "/img/categoria-ultracompacto-768.webp"
+      },
+      {
+        "width": 1200,
+        "avif": "/img/categoria-ultracompacto-1200.avif",
+        "webp": "/img/categoria-ultracompacto-1200.webp"
+      }
+    ]
+  },
   "material-detalhe-quente": {
     "width": 2048,
     "height": 1152,
