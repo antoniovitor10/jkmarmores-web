@@ -9,7 +9,7 @@
 2. Em produção (`SITE_MODE=producao`), nenhum marcador de pendência chega ao HTML publicado: `npm run check:pendencias` passa.
 3. O conteúdo é indexável e útil sem JavaScript. 3D, vídeo e animação são camada extra, nunca dependência.
 4. Não copiar texto, layout, fotos nem identidade das referências (attarevestimento.com, vgrmarmoresegranitos.com.br, sites premium em `docs/insumos/brutos/referencias-premium/`).
-5. Nenhum emoji ou ícone decorativo em texto, código, commit ou copy.
+5. Nenhum emoji ou ícone decorativo em texto, código, commit ou copy. Exceção: o ícone do WhatsApp nos botões que abrem o WhatsApp, para o visitante reconhecer o canal (ADR-0002, Vitor em 22/10/2026).
 6. Imagem de banco ou gerada por IA só entra com licença ou origem (modelo, prompt, arquivo) registrada em `docs/proposta/assets-licencas.md`. Imagem gerada pode entrar sem aviso, desde que não mostre logo, nome de cliente nem obra identificada como da JK. Fotos de terceiros achadas na web servem só de referência de cor e veio para a geração: nunca entram no site e a imagem gerada não pode ser cópia próxima delas (ADR-0001).
 7. Geração paga (Higgsfield ou outra API) só com orçamento em créditos ou dólares aprovado pelo Vitor antes do envio.
 8. Push em `main`, `producao` ou `versao-1/2/3`, rsync e SSH de produção só com aprovação explícita do Vitor: push nessas branches é deploy.

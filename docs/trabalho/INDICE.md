@@ -4,6 +4,12 @@
 
 ## Tasks por status
 
+### backlog (1)
+
+| Task | Título | HU | Cobre | Depende de | Risco |
+|---|---|---|---|---|---|
+| [T-0008](avulsas/tasks/T-0008-links-e-botoes.md) | Links e botões visíveis no site | avulsa | — | — | normal |
+
 ### em-teste (7)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
@@ -27,3 +33,4 @@
 | ADR | Título | Status | Data |
 |---|---|---|---|
 | [ADR-0001](../decisoes/ADR-0001-imagens-geradas-sem-aviso.md) | Imagens geradas sem aviso e referências da web só como entrada | aceita | 2026-10-20 |
+| [ADR-0002](../decisoes/ADR-0002-icone-whatsapp-nos-botoes.md) | Ícone do WhatsApp nos botões que abrem o WhatsApp | aceita | 2026-10-22 |
