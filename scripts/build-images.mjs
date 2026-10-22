@@ -5,9 +5,11 @@ import { editorialImage } from './editorial-image.mjs';
 
 const fonte = path.resolve("assets/images");
 const destino = path.resolve("public/img");
+const destinoConfigurador = path.resolve("public/configurador/estatico");
 const manifesto = {};
 await fs.mkdir(fonte, { recursive: true });
 await fs.mkdir(destino, { recursive: true });
+await fs.mkdir(destinoConfigurador, { recursive: true });
 // Recortes mobile são arquivos próprios com sufixo -mobile (ex.: capa-calacatta-mobile.png), não coordenadas fixas aqui.
 const sources = (await fs.readdir(fonte)).map(nome => ({ nome, arquivo: path.join(fonte, nome) }));
 for (const { nome, arquivo } of sources) {
@@ -15,6 +17,16 @@ for (const { nome, arquivo } of sources) {
   const id = path.parse(nome).name;
   // Fontes históricas ficam no acervo, sem derivados sem uso no site exportado.
   if (["a1-mobile", "capa-aberto-01", "a1-prova-01", "capa-close", "capa-poster", "capa-poster-mobile", "material-detalhe-quente"].includes(id)) continue;
+  // Configurador (PRD D3 da HU-0001): o seletor troca a imagem por URL no cliente, então grava em
+  // public/configurador/estatico/<ambiente>-<material>-<720|1280>.avif e fica fora do manifesto,
+  // para não levar os placeholders base64 ao JS da home.
+  if (id.startsWith("configurador-")) {
+    for (const width of [720, 1280]) {
+      const treated = await editorialImage(arquivo, width);
+      await treated.avif({ quality: 50 }).toFile(path.join(destinoConfigurador, `${id.replace("configurador-", "")}-${width}.avif`));
+    }
+    continue;
+  }
   const dados = await sharp(arquivo).metadata();
   if (!dados.width || !dados.height) continue;
   const variantes = [];

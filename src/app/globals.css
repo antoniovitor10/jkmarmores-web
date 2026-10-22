@@ -280,9 +280,10 @@ body:has(.home-page) .site-header { color:#eee5dc; }
 .selector-controls .button { width:100%; }
 .stone-swatch { gap:8px; }
 .stone-swatch span { display:block; width:16px; height:16px; border-radius:50%; border:1px solid #b6a79a; }
-.stone-swatch [data-tone="rosado"] { background:#bd8b75; }
-.stone-swatch [data-tone="bege"] { background:#dcccb1; }
-.stone-swatch [data-tone="escuro"] { background:#393531; }
+/* Amostras do configurador: cor média do close de cada pedra no catálogo (T-0006). */
+.stone-swatch [data-tone="calacatta"] { background:#e1dcd4; }
+.stone-swatch [data-tone="travertino"] { background:#ccbca9; }
+.stone-swatch [data-tone="preto-sao-gabriel"] { background:#100f0d; }
 .request-story { border-top:1px solid #3a332d; }
 .home-page > #orcamento { background:#1a1714; }
 .home-contact-grid { text-align:center; padding-block:24px; }

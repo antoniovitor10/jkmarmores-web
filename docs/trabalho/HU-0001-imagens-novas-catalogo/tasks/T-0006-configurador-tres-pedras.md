@@ -3,7 +3,7 @@ id: T-0006
 titulo: "Configurador com Calacatta, Travertino e Preto São Gabriel"
 hu: HU-0001
 trilha: funcionalidade
-status: em-desenvolvimento
+status: em-revisao
 depende_de: [T-0001]
 cobre: [CA-7, CA-11]
 complexidade: 4
@@ -11,12 +11,12 @@ risco: normal
 sensivel: false
 skills: [imagens, stack, padroes-codigo, conteudo, design-system, responsivo-desktop-mobile, testes]
 criada_em: 2026-10-21
-ferramenta: ""
-voltas: null
-bloqueios: null
-ca_nao_verificados: null
-testes_criados: null
-testes_pegam: null
+ferramenta: "claude-code/opus (maestro e implementação) + codex (Astra, geração) + agy (segunda opinião)"
+voltas: 1
+bloqueios: 0
+ca_nao_verificados: 0
+testes_criados: 3
+testes_pegam: 3
 revisao_humana: ""
 homologacao: ""
 ---
@@ -102,10 +102,85 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 
 ## Execução
 
+### Execução · 2026-10-21
+
+**Branch:** task/T-0006-configurador-tres-pedras (a partir de task/T-0005-capa-jornada-sem-video) · **PR:** não aberto (nível 0, sem push)
+
+**O que mudou:**
+- **Imagens:** `assets/images/configurador-{cozinha,lavatorio}-{calacatta,travertino,preto-sao-gabriel}.png`, 6 originais em 1672×941.
+- **`scripts/build-images.mjs`:** os ids `configurador-*` viram `public/configurador/estatico/<ambiente>-<material>-<720|1280>.avif` (1280×720 e 720×405, AVIF q50, com o mesmo `editorialImage`). Ficam fora de `/img/` e do manifesto (PRD D3).
+- **AVIF antigas:** as 12 de Rosado, Bege e Escuro saíram, e continuam no histórico do git. O deploy usa `rsync --delete`, então também saem do servidor.
+- **`src/content/configurador.ts`:** ids e nomes Calacatta, Travertino e Preto São Gabriel, escolha inicial Cozinha com ilha / Calacatta, função nova `altEscolha()` e comentário do topo sem "ilustrativas".
+- **`src/components/configurador/StoneSelector.tsx`:** a legenda passa a ser "Pedra" e o `alt` vem de `altEscolha()` ("Cozinha com ilha em Calacatta."), sem aviso. O texto "Composição ilustrativa..." fica para a T-0007, como previsto.
+- **`src/app/globals.css`:** 3 hex novos de amostra. O motivo está nas decisões abaixo.
+- **Registro e teste:**
+  - `docs/proposta/hu-0001-prompts.json` e `assets-licencas.md` (subseção "T-0006");
+  - `e2e/configurador.spec.ts` (novo).
+
+**Imagens:**
+- **Ambientes base:** a cozinha e o lavatório foram gerados primeiro em Calacatta, com 2 candidatas cada. Escolhi a cozinha 2 e o lavatório 1, porque têm a peça centrada, e o agy concordou.
+- **Troca de pedra:** as 4 combinações restantes foram geradas a partir da cena escolhida (`-i`) com o close da pedra do catálogo, pedindo para trocar só a pedra. O ambiente ficou igual nas 3 versões.
+- **Travertino:** a candidata 1 nos dois ambientes, escolha também do agy.
+- **Preto São Gabriel:**
+  - a primeira rodada saiu granulada demais, com cara de outro granito, e o agy apontou isso;
+  - a segunda rodada saiu quase preta, com brilho esparso; escolhi a candidata 4 nos dois ambientes;
+  - esta rodada não passou pelo agy, porque a cota dele acabou (erro 429, volta em cerca de 1 hora). O fato está registrado no JSON.
+
+**Decisões tomadas:**
+- **Hex das amostras:**
+  - os valores: Calacatta `#e1dcd4`, Travertino `#ccbca9` e Preto São Gabriel `#100f0d`;
+  - a origem: a cor média do close de cada pedra no catálogo, e não a cena aprovada, que a task sugeria. A face da peça na cena está na sombra da luz de fim de tarde e dava tons escuros e marrons (`#796655`, `#7a6652`) que não representam a pedra;
+  - a visibilidade: o preto fica quase igual ao fundo, mas a amostra tem borda de 1 px (`#b6a79a`), então continua visível.
+- **Datas:** corrigi os registros da T-0005 que eu tinha datado como 22/10; o dia certo é 21/10. A correção da task T-0005 está no commit `0b8eee8`. A dos registros em `hu-0001-prompts.json` e `assets-licencas.md` vai junto com este commit, porque são os mesmos arquivos.
+
+**Verificação (testador):**
+
+| CA | Tipo | Teste / como verifiquei | Pega? | Resultado |
+|---|---|---|---|---|
+| CA-7 | interacao | `e2e/configurador.spec.ts` "CA-7": clica nos 2 ambientes e nas 3 pedras. Em cada combinação confere `src` (`<ambiente>-<pedra>-1280.avif`), legenda, `alt` sem aviso e `href` do WhatsApp decodificado com o nome da combinação. No fim, volta por clique a Cozinha com ilha / Calacatta | sim: com "Preto São Gabriel" renomeado no código e recompilado, falha | passa (mobile e desktop) |
+| CA-11 | integracao | `node scripts/check-imagens-geradas.mjs` → "OK: 53 imagem(ns) gerada(s) com registro completo." | sim (provado na T-0001) | passa |
+| CA-14 | manual | motivo: fidelidade é julgamento visual. Revisão lado a lado e parecer cego do agy na rodada 1; a rodada 2 do Preto São Gabriel ficou sem agy (cota) | não se aplica | passa, com a ressalva |
+| CA-15 | interacao | "CA-15": ao carregar, `aria-pressed="true"` em "Cozinha com ilha" e "Calacatta" e a `legend` das pedras com o texto "Pedra" | sim: com a escolha inicial trocada no código, falha | passa |
+| CA-16 | integracao | "CA-16": `out/configurador/estatico` tem exatamente as 12 AVIF novas, os originais em `assets/images/configurador-*` batem com as 6 combinações e o manifesto não tem ids `configurador-*` | sim: com um arquivo `cozinha-rosado-720.avif` a mais, falha | passa |
+| CA-17 | interacao | dentro do CA-7: o `alt` de cada combinação é "<ambiente> em <pedra>." e não tem aviso de IA | sim (o mesmo teste) | passa |
+
+**Capturas:** configurador em 1440 e 390, com Preto São Gabriel selecionado, sem rolagem horizontal. Na home completa, em 5 larguras (`qa/capturas/t0006-home`), só aparecem os mesmos avisos de antes da task (alvos de 44 px contra os 48 px do script).
+
+**Testes criados ou alterados:** `e2e/configurador.spec.ts`, com 3 testes por projeto e 6 no total.
+
+**Linha de base:**
+
+| | Antes | Depois |
+|---|---|---|
+| lint | 0 erros, 2 avisos | igual |
+| build | passa | passa |
+| e2e | 21 passaram, 1 pulado | 27 passaram, 1 pulado |
+
+**Revisões:**
+- **Código:** ajustes na volta 1, todos aplicados:
+  - datas corrigidas para 21/10;
+  - `alt` montado por `altEscolha()` no conteúdo;
+  - o teste do CA-7 alcança a combinação inicial por clique, e o do CA-16 confere os originais.
+- **Segurança:** não aplicável.
+
+**Pendências / sugestões fora do escopo:**
+- Rodar o agy na segunda rodada do Preto São Gabriel quando a cota voltar.
+- Para a retrospectiva da HU: a skill `imagens` só descreve a saída em `public/img`. Falta registrar a exceção do configurador (PRD D3).
+
+**Proposta para skills do projeto:** a mesma linha da retrospectiva acima, que depende do seu "sim".
+
 ## Roteiro de homologação
+
+1. `npm run build`, depois `node scripts/preview-local.mjs`, e abrir `http://127.0.0.1:3105/#configurador`: começa em Cozinha com ilha / Calacatta.
+2. Tocar em "Lavatório" e em cada pedra (Calacatta, Travertino, Preto São Gabriel): a imagem e a legenda trocam e o ambiente continua o mesmo.
+3. Tocar em "Chamar no WhatsApp": a mensagem traz a combinação escolhida.
+
+Resultado: <a marcar por quem homologa>
 
 ## Histórico
 
 - 2026-10-21 · criada (backlog) · planejador
 - 2026-10-21 · escolha das imagens delegada ao Claude, com segunda opinião do agy, em vez da aprovação por prancha · desenvolvedor (pedido na conversa da T-0001)
 - 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "T-0003 a T-0006")
+- 2026-10-21 · execução na branch task/T-0006-configurador-tres-pedras (a partir de task/T-0005) · claude-code/opus
+- 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
