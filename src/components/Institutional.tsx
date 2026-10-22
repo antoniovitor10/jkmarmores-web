@@ -4,6 +4,7 @@ import { institucional } from '@/content/institucional';
 import { stoneJourney } from '@/content/stone-journey';
 import { PendenteTexto } from './PendenteTexto';
 import { Foto } from './Foto';
+import { IconeWhatsApp } from './IconeWhatsApp';
 import type { ImagemCategoria } from '@/content/categorias';
 
 // O alt vem da jornada quando o id é um quadro dela; sem aviso de IA (ADR-0001).
@@ -18,7 +19,7 @@ export function RequestSteps() {
   return <ol className="request-steps">{institucional.pedido.map((step, i) => <li key={step.titulo}><span className="step-number">0{i+1}</span><h3>{step.titulo}</h3><p>{step.texto}</p></li>)}</ol>;
 }
 export function ContactPanel() {
-  return <section className="contact-panel"><div className="container contact-grid"><div><h2>Vamos conversar<br />sobre seu projeto?</h2><p>Comece pelo WhatsApp ou telefone. Conte sua ideia e consulte as possibilidades com a JK.</p><a className="contact-phone" href={telefoneUrl}><PendenteTexto valor={conteudo.empresa.telefone} /></a><a className="text-link" href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a></div><div className="address-panel"><address><PendenteTexto valor={conteudo.empresa.endereco} /></address><p>Para consultar a possibilidade de visita, fale com a JK antes de se deslocar.</p><p className="editorial-note">Atendemos {typeof conteudo.empresa.regiaoAtendida === "string" ? conteudo.empresa.regiaoAtendida : <PendenteTexto valor={conteudo.empresa.regiaoAtendida} />}.</p></div></div></section>;
+  return <section className="contact-panel"><div className="container contact-grid"><div><h2>Vamos conversar<br />sobre seu projeto?</h2><p>Comece pelo WhatsApp ou telefone. Conte sua ideia e consulte as possibilidades com a JK.</p><a className="contact-phone" href={telefoneUrl}><PendenteTexto valor={conteudo.empresa.telefone} /></a><a className="button button-outline botao-whatsapp" href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}><IconeWhatsApp />Chamar no WhatsApp</a></div><div className="address-panel"><address><PendenteTexto valor={conteudo.empresa.endereco} /></address><p>Para consultar a possibilidade de visita, fale com a JK antes de se deslocar.</p><p className="editorial-note">Atendemos {typeof conteudo.empresa.regiaoAtendida === "string" ? conteudo.empresa.regiaoAtendida : <PendenteTexto valor={conteudo.empresa.regiaoAtendida} />}.</p></div></div></section>;
 }
 // Com imagem (páginas de categoria), o topo vira duas colunas no desktop; a imagem é a maior da primeira tela, por isso tem prioridade.
 export function PageIntro({ title, description, imagem }: { label: string; title: string; description: string; imagem?: ImagemCategoria }) {

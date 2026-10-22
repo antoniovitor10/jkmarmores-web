@@ -2,6 +2,7 @@ import { conteudo } from '@/content';
 import { acabamentosCategoria, altPedra, gruposMarmore, imagemPedra, mensagemPedra, outrasPedras, pedrasVisiveis, tituloPedras, type CategoriaPedra, type Pedra } from '@/content/pedras';
 import { linkWhatsApp } from '@/lib/whatsapp';
 import { Foto } from './Foto';
+import { IconeWhatsApp } from './IconeWhatsApp';
 
 // Cartões das pedras de uma categoria (HU-0001, T-0002): imagem, nome e WhatsApp da pedra, sem página própria.
 export function PedraCatalogo({ categoria, mensagemCategoria }: { categoria: string; mensagemCategoria: string }) {
@@ -26,6 +27,6 @@ function CartaoPedra({ pedra }: { pedra: Pedra }) {
   return <li className="pedra-cartao" data-pedra={pedra.slug}>
     <Foto id={imagemPedra(pedra)} alt={altPedra(pedra)} className="pedra-imagem" sizes="(max-width: 700px) 50vw, (max-width: 1000px) 33vw, 300px" />
     <h3>{pedra.nome}</h3>
-    <a className="text-link" href={linkWhatsApp(mensagemPedra(pedra), conteudo.empresa.whatsapp)} aria-label={`Chamar no WhatsApp sobre ${pedra.nome}`}>Chamar no WhatsApp</a>
+    <a className="button button-outline botao-whatsapp" href={linkWhatsApp(mensagemPedra(pedra), conteudo.empresa.whatsapp)} aria-label={`Chamar no WhatsApp sobre ${pedra.nome}`}><IconeWhatsApp />Chamar no WhatsApp</a>
   </li>;
 }

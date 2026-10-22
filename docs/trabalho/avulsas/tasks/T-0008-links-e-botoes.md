@@ -3,7 +3,7 @@ id: T-0008
 titulo: "Links e botões visíveis no site"
 hu: avulsa
 trilha: micro
-status: backlog
+status: em-revisao
 depende_de: []
 cobre: []
 complexidade: 3
@@ -11,12 +11,12 @@ risco: normal
 sensivel: false
 skills: [design-system, padroes-codigo, responsivo-desktop-mobile, testes]
 criada_em: 2026-10-22
-ferramenta: ""
-voltas: null
-bloqueios: null
-ca_nao_verificados: null
-testes_criados: null
-testes_pegam: null
+ferramenta: "claude-code/opus"
+voltas: 1
+bloqueios: 0
+ca_nao_verificados: 0
+testes_criados: 6
+testes_pegam: 6
 revisao_humana: ""
 homologacao: ""
 ---
@@ -109,8 +109,72 @@ nenhum
 
 ## Execução
 
+### Execução · 2026-10-22
+
+**Branch:** task/T-0008-links-e-botoes (a partir de main, 34bda1b) · **PR:** não aberto (nível 0, sem push)
+
+**O que mudou:**
+- **`src/components/IconeWhatsApp.tsx` (novo):** símbolo do WhatsApp em SVG inline, `currentColor`, com `aria-hidden` e `focusable="false"` (ADR-0002).
+- **`src/components/PedraCatalogo.tsx`:** o "Chamar no WhatsApp" do cartão vira botão com contorno na largura do cartão, com o ícone à esquerda.
+- **`src/components/Institutional.tsx`:** o "Chamar no WhatsApp" do `ContactPanel` vira botão com contorno e ícone.
+- **`src/app/page.tsx`:** "Conheça os materiais" vira botão com contorno e seta; "Conheça a JK" fica como link.
+- **`src/app/globals.css`:**
+  - bloco novo no fim: `a.text-link` em caramelo, sublinhado, 16 px, alvo de 44 px e seta por `::after` com `content: "→" / ""`, que fica fora do nome acessível;
+  - `.button-outline` com borda caramelo de 1 px. Com mouse, o hover preenche de caramelo; com teclado, o foco também. No toque, o hover não gruda;
+  - o telefone (`a[href^="tel:"]`) fica sem seta;
+  - saíram 3 regras antigas que ficaram sem efeito.
+- **`e2e/links.spec.ts` (novo).**
+- **Fundo, fontes e textos:** não mudaram.
+
+**Verificação (testador):**
+
+| CA | Tipo | Teste / como verifiquei | Pega? | Resultado |
+|---|---|---|---|---|
+| CA-1 | interacao | `e2e/links.spec.ts` "CA-1": confere a borda caramelo de 1 px e a seta no botão, o link caramelo sublinhado com seta, e toca nos dois, chegando a `/materiais/` e `/sobre/` | sim: com a cor do link trocada no CSS e recompilado, falha | passa (mobile e desktop) |
+| CA-2 | interacao | "CA-2": "Explorar todos os materiais", "Conhecer granitos", "Explorar combinações", "Ver todos os materiais", "Trabalhamos com outras pedras…" e "Conheça a JK" da assinatura. Confere caramelo, sublinhado, 16 px, seta e altura ≥ 44 px | sim (mesma prova) | passa |
+| CA-3 | interacao | "CA-3": no cartão do Preto São Gabriel, o botão tem contorno caramelo e a largura do cartão, o ícone com `aria-hidden` é o primeiro filho e a mensagem é a da pedra | sim: sem o ícone no código, falha | passa |
+| CA-4 | interacao | "CA-4": no painel de contato de `/sobre/`, o botão tem contorno, ícone e link `wa.me` | sim (mesma classe da prova) | passa |
+| CA-5 | interacao + integracao | "CA-5": `toHaveAccessibleName` confirma que o nome é o texto, sem seta nem ícone, nos 5 elementos novos. Lighthouse mobile em produção: home e `/materiais/granito/` com Acessibilidade 100, SEO 100 e Boas práticas 100 | sim (nome exato) | passa |
+| CA-6 | interacao | "CA-6": navega com Tab até o botão com contorno, o link, o botão do cartão e o do painel. Confere o `outline` sólido de 3 px em todos, e o fundo caramelo no foco do botão com contorno | sim | passa |
+| CA-7 | manual | motivo: comparação visual. As capturas em 1440 e 390 mostram fundo, fontes e textos iguais; só links e botões mudam | não se aplica | passa |
+
+**Testes criados ou alterados:** `e2e/links.spec.ts`, com 6 testes por projeto e 12 no total.
+
+**Linha de base:**
+
+| | Antes | Depois |
+|---|---|---|
+| lint | 0 erros, 2 avisos | igual |
+| build | passa | passa |
+| e2e | 45 passaram, 1 pulado | 57 passaram, 1 pulado |
+
+**Revisões:**
+- **Código:** ajustes na volta 1, todos aplicados:
+  - hover só com mouse e foco equivalente;
+  - telefone sem seta;
+  - testes cobrindo a assinatura, a posição do ícone, o foco de todos os botões e o nome acessível;
+  - regras antigas removidas.
+- **Segurança:** não aplicável.
+
+**Pendências / sugestões fora do escopo:**
+- O peso visual do site (fundo preto e Bodoni) vai para a HU de direção visual.
+- A 360 px, o "Chamar no WhatsApp" do cartão quebra em duas linhas, sem transbordar e com alvo ≥ 44 px.
+
+**Proposta para skills do projeto:** registrar na skill `design-system` o padrão novo de link (caramelo, sublinhado, com seta) e o `.button-outline`. Depende do seu "sim".
+
 ## Roteiro de homologação
+
+1. `npm run build`, depois `node scripts/preview-local.mjs`, e abrir a home. Em "Conte o que você imagina", "Conheça os materiais" aparece com contorno e seta, e "Conheça a JK" como link sublinhado com seta.
+2. Abrir `/materiais/granito/`: cada pedra tem o botão "Chamar no WhatsApp" com o ícone, na largura do cartão.
+3. Rolar até "Vamos conversar sobre seu projeto?": o botão do WhatsApp com o ícone.
+4. No celular, tocar num botão com contorno: ele não fica preenchido depois do toque.
+
+Resultado: <a marcar por quem homologa>
 
 ## Histórico
 
 - 2026-10-22 · criada (backlog) · planejador (entrevista micro com o Vitor)
+- 2026-10-22 · backlog → em-desenvolvimento · desenvolvedor · movida no quadro do Batuta
+- 2026-10-22 · backlog → em-desenvolvimento · desenvolvedor ("sim" na conversa)
+- 2026-10-22 · execução iniciada na branch task/T-0008-links-e-botoes (a partir de main, 34bda1b) · claude-code/opus
+- 2026-10-22 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
