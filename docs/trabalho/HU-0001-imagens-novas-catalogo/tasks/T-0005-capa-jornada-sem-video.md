@@ -118,7 +118,7 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 
 ## Execução
 
-### Execução · 2026-10-22
+### Execução · 2026-10-21
 
 **Branch:** task/T-0005-capa-jornada-sem-video (a partir de task/T-0004-imagens-categorias) · **PR:** não aberto (nível 0, sem push)
 
@@ -223,5 +223,5 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-21 · criada (backlog) · planejador
 - 2026-10-21 · escolha das imagens delegada ao Claude, com segunda opinião do agy, em vez da aprovação por prancha · desenvolvedor (pedido na conversa da T-0001)
 - 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "T-0003 a T-0006")
-- 2026-10-22 · execução iniciada na branch task/T-0005-capa-jornada-sem-video (a partir de task/T-0004-imagens-categorias) · claude-code/opus (maestro), codex (Astra), agy (segunda opinião)
-- 2026-10-22 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
+- 2026-10-21 · execução iniciada na branch task/T-0005-capa-jornada-sem-video (a partir de task/T-0004-imagens-categorias) · claude-code/opus (maestro), codex (Astra), agy (segunda opinião)
+- 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
