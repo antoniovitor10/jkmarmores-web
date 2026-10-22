@@ -3,7 +3,7 @@ id: T-0007
 titulo: "Remover os avisos de IA e de imagem ilustrativa do site"
 hu: HU-0001
 trilha: funcionalidade
-status: em-desenvolvimento
+status: em-revisao
 depende_de: []
 cobre: [CA-8]
 complexidade: 3
@@ -11,12 +11,12 @@ risco: normal
 sensivel: false
 skills: [conteudo, padroes-codigo, stack, imagens, testes]
 criada_em: 2026-10-21
-ferramenta: ""
-voltas: null
-bloqueios: null
-ca_nao_verificados: null
-testes_criados: null
-testes_pegam: null
+ferramenta: "claude-code/opus"
+voltas: 0
+bloqueios: 0
+ca_nao_verificados: 1
+testes_criados: 4
+testes_pegam: 4
 revisao_humana: ""
 homologacao: ""
 ---
@@ -101,9 +101,65 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 
 ## Execução
 
+### Execução · 2026-10-21
+
+**Branch:** task/T-0007-remover-avisos-ia (a partir de task/T-0006-configurador-tres-pedras, porque as duas mexem no `StoneSelector.tsx`) · **PR:** não aberto (nível 0, sem push)
+
+**O que mudou:**
+- **Rodapé:** `src/components/SiteFooter.tsx` fica só com "JK Mármores e Granitos". O `src/content/illustration.ts`, sem mais uso, foi apagado.
+- **`src/components/Institutional.tsx`:** o `Illustration` perdeu a legenda padrão com aviso. O `alt` vem da jornada, e na falta dela fica vazio.
+- **`src/app/materiais/page.tsx`:** saiu a nota "Estudo ilustrativo de matéria. Imagem gerada por IA.", e "Explorar combinações ilustrativas" virou "Explorar combinações".
+- **`src/app/page.tsx`:** "Compare tons em ambientes ilustrativos." virou "Compare pedras em dois ambientes."
+- **`src/components/configurador/StoneSelector.tsx`:** "Composição ilustrativa. Consulte…" virou "Consulte pedras específicas, disponibilidade e acabamentos com a JK."
+- **`src/components/configurador/Vista.tsx`:** o `alt` usa `altEscolha()`. O componente não tem uso, mas foi limpo também.
+- **`src/content/index.ts`:**
+  - no bloco "amostra", "Imagens de tela e composições ilustrativas servem…" virou "Imagens de tela servem…";
+  - em `aberturaHome`, que não é usado, saiu `avisoImagem` e o `alt` ficou sem o aviso.
+- **Build:** `scripts/check-avisos.mjs` é novo e entra no fim do `build` em `package.json` (`check:avisos`). Ele varre os `.html` e `.txt` de `out/`.
+- **Teste:** `e2e/avisos.spec.ts` é novo.
+- **Já limpos antes desta task:** os `alt` da capa, da jornada e do configurador foram limpos na T-0005 e na T-0006.
+
+**Verificação (testador):**
+
+| CA | Tipo | Teste / como verifiquei | Pega? | Resultado |
+|---|---|---|---|---|
+| CA-8 | interacao | `e2e/avisos.spec.ts` "CA-8": percorre as 12 páginas do sitemap de homologação, rola até o fim e confere o texto e todos os `alt` | sim: com o aviso de volta no rodapé, no código e recompilado, falha | passa (mobile e desktop) |
+| CA-14 | interacao | "CA-14": o `.footer-bottom` da home e de `/materiais/` é exatamente "JK Mármores e Granitos" | sim (mesma prova) | passa |
+| CA-15 | interacao + leitura de fonte | "CA-15": as 3 frases novas estão na home e em `/materiais/`. A 4ª ("Imagens de tela servem…") vive na seção "amostra" do conteúdo, que nenhuma página exibe (nem antes desta task), então é conferida na fonte. O conselho de ver a amostra real continua nas páginas de categoria ("Confira a amostra real antes de decidir.") | sim: com a frase antiga no HTML da home, falha | **parcial**: a parte "continua em /materiais/" não se aplica, porque o texto nunca esteve em `/materiais/` |
+| CA-16 | integracao | Aviso reintroduzido no `SiteFooter.tsx` → `npm run build` falha: "check-avisos: 58 arquivo(s) com aviso…", apontando cada arquivo. Desfeito, o build passa em homologação e em `SITE_MODE=producao` ("nenhum aviso"). O script sai com 1 quando acha aviso e com 0 quando não acha | sim | passa |
+
+**Testes criados ou alterados:** `e2e/avisos.spec.ts`, com 3 testes por projeto e 6 no total, e `scripts/check-avisos.mjs`.
+
+**Linha de base:**
+
+| | Antes | Depois |
+|---|---|---|
+| lint | 0 erros, 2 avisos | igual |
+| build | passa | passa (com `check:avisos`) |
+| e2e | 27 passaram, 1 pulado | 33 passaram, 1 pulado |
+
+**Revisões:**
+- **Código:** aprovado.
+- **Observações aplicadas:** o regex do teste ficou igual ao do script, e entrou a conferência da frase da amostra real em `/materiais/marmore/`.
+- **Segurança:** não aplicável.
+
+**Pendências / decisões para o desenvolvedor:**
+- **CA-15, leitura parcial:** a seção "Veja a amostra real" do conteúdo de `/materiais/` não aparece em nenhuma página. Se você quiser que ela apareça em `/materiais/`, é uma mudança de layout de página, fora desta task.
+- **JavaScript do cliente:** o script lê só `.html` e `.txt`, como a task define. Um aviso que exista só no JavaScript do cliente passaria. Hoje nenhum `.js` de `out/` tem essas expressões. Dá para incluir `.js` se você quiser.
+
+**Proposta para skills do projeto:** nenhuma.
+
 ## Roteiro de homologação
+
+1. `npm run build`: o fim mostra "check-avisos: nenhum aviso de IA ou de imagem ilustrativa em out/."
+2. Abrir a home, `/materiais/` e `/sobre/` e rolar até o rodapé: a última linha mostra só "JK Mármores e Granitos", sem aviso sobre imagens.
+3. Na home, o configurador diz "Compare pedras em dois ambientes." e "Consulte pedras específicas, disponibilidade e acabamentos com a JK."
+
+Resultado: <a marcar por quem homologa>
 
 ## Histórico
 
 - 2026-10-21 · criada (backlog) · planejador
 - 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "pode seguir" com a T-0002 e a T-0007)
+- 2026-10-21 · execução iniciada na branch task/T-0007-remover-avisos-ia (a partir de task/T-0006) · claude-code/opus
+- 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução (CA-15 parcial, ver pendências); sem push (autonomia 0)

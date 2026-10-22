@@ -6,8 +6,9 @@ import { PendenteTexto } from './PendenteTexto';
 import { Foto } from './Foto';
 import type { ImagemCategoria } from '@/content/categorias';
 
-export function Illustration({ id, caption = 'Imagem ilustrativa, gerada por IA. Não representa obra da JK.', priority = false, alt: description }: { id: string; caption?: string; priority?: boolean; alt?: string }) {
-  const alt = description ?? stoneJourney.find(image => image.id === id)?.alt ?? caption;
+// O alt vem da jornada quando o id é um quadro dela; sem aviso de IA (ADR-0001).
+export function Illustration({ id, priority = false, alt: description }: { id: string; priority?: boolean; alt?: string }) {
+  const alt = description ?? stoneJourney.find(image => image.id === id)?.alt ?? '';
   return <figure className="editorial-image"><Foto id={id} alt={alt} sizes="(max-width: 700px) 100vw, 50vw" prioridade={priority} /></figure>;
 }
 export function SectionHeading({ title }: { number?: string; label?: string; title: string }) {

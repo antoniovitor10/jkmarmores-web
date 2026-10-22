@@ -6,6 +6,7 @@ import {
   fontesImagem,
   tamanhosImagem,
   nomeEscolha,
+  altEscolha,
   orcamentoConfigurador,
   type Escolha,
 } from "@/content/configurador";
@@ -93,7 +94,7 @@ export function Vista({
             loading="lazy"
             decoding="async"
             fetchPriority="low"
-            alt={`${nomeEscolha(exibida)}. Imagem ilustrativa gerada por IA.`}
+            alt={altEscolha(exibida)}
             onAnimationEnd={onFadeEnd}
           />
         </div>

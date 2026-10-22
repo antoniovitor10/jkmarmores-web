@@ -79,7 +79,7 @@ const paginas: ConteudoSite["paginas"] = {
       { id: "catalogo", titulo: "Materiais disponíveis", texto: cliente.materiaisIntro },
       { id: "criterios", titulo: "O que observar", texto: "Pergunte sobre uso interno ou externo, incidência de calor, contato com alimentos, agentes de limpeza, variação de cor e veio e manutenção recomendada. A resposta depende da chapa e do fabricante." },
       { id: "acabamentos", titulo: "Acabamento muda a experiência de uso", texto: "Brilho, textura e tratamento de borda alteram aparência, toque e rotina de limpeza. Confirme quais acabamentos podem ser feitos no material escolhido." },
-      { id: "amostra", titulo: "Veja a amostra real", texto: "Imagens de tela e composições ilustrativas servem para explorar possibilidades. A cor e o desenho da chapa real devem ser conferidos antes da aprovação." },
+      { id: "amostra", titulo: "Veja a amostra real", texto: "Imagens de tela servem para explorar possibilidades. A cor e o desenho da chapa real devem ser conferidos antes da aprovação." },
     ],
     cta: ctaOrcamento("materiais"),
   },
@@ -135,8 +135,7 @@ export const aberturaHome = {
   orientacao: "Veja a pedra de perto. Compare materiais e acabamentos antes de decidir.",
   ctaSecundario: "Ver materiais",
   legenda: "Estudo de matéria",
-  avisoImagem: "Imagem ilustrativa, gerada por IA",
-  alt: "Estudo ilustrativo de uma bancada de pedra clara: veios delicados e borda em meia-esquadria sob luz lateral de manhã. Imagem gerada por IA, não representa obra da JK.",
+  alt: "Bancada de pedra clara com veios delicados e borda em meia-esquadria, sob luz lateral de manhã.",
 };
 
 const materiais: Material[] = materiaisCliente.map(item => ({
