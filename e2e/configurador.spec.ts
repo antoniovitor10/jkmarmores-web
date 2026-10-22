@@ -13,11 +13,17 @@ test.describe("configurador", () => {
     const secao = page.locator("#configurador");
     await secao.scrollIntoViewIfNeeded();
     const img = secao.locator(".selector-image img");
+    // O clique só vale depois que o React hidrata o seletor; a troca espera a imagem decodificar (lenta sob carga).
+    const botao = secao.getByRole("button", { name: "Lavatório", exact: true });
+    await expect.poll(() => botao.evaluate((el) => Object.keys(el).some((k) => k.startsWith("__reactProps"))), { timeout: 15000 }).toBe(true);
+    const escolher = async (nome: string, src: RegExp) => {
+      await secao.getByRole("button", { name: nome, exact: true }).click();
+      await expect(img).toHaveAttribute("src", src, { timeout: 10000 });
+    };
     for (const [ambiente, nomeAmbiente] of AMBIENTES) {
-      await secao.getByRole("button", { name: nomeAmbiente, exact: true }).click();
+      await escolher(nomeAmbiente, new RegExp(`/configurador/estatico/${ambiente}-`));
       for (const [pedra, nomePedra] of PEDRAS) {
-        await secao.getByRole("button", { name: nomePedra, exact: true }).click();
-        await expect(img).toHaveAttribute("src", new RegExp(`/configurador/estatico/${ambiente}-${pedra}-1280\\.avif$`));
+        await escolher(nomePedra, new RegExp(`/configurador/estatico/${ambiente}-${pedra}-1280\\.avif$`));
         await expect(secao.locator(".selector-caption")).toHaveText(`${nomeAmbiente} / ${nomePedra}`);
         const alt = (await img.getAttribute("alt"))!;
         expect(alt).toBe(`${nomeAmbiente} em ${nomePedra}.`);

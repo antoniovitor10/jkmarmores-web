@@ -323,7 +323,7 @@ body:has(.home-page) .site-header { color:#eee5dc; }
 .material-number { display:block; color:var(--cor-destaque); font-size:11px; letter-spacing:.15em; margin-bottom:28px; }
 .material-card h3 { font-size:32px; line-height:1.15; max-width:22ch; min-height:2.3em; }
 .material-card p { color:var(--cor-muted); font-size:16px; max-width:36ch; }
-.material-card .text-link { font-size:14px; min-height:44px; padding:8px 0; display:inline-flex; align-items:center; }
+.material-card .text-link,.pedra-cartao .text-link,.pedra-outras .text-link { font-size:14px; min-height:44px; padding:8px 0; display:inline-flex; align-items:center; }
 .materials-cover .editorial-image { margin:0; }
 .materials-cover .editorial-image img { width:100%; max-height:60svh; aspect-ratio:2/1; object-fit:cover; }
 .material-detail { display:grid; grid-template-columns:1fr 1fr; gap:100px; }
@@ -350,3 +350,26 @@ body[data-motion-static="true"] *,body[data-motion-static="true"] *::before,body
 .intro-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.82fr); gap:clamp(64px,7vw,112px); align-items:center; }
 .intro-image img { max-height:74svh; }
 @media(max-width:700px) { .material-image { margin-bottom:20px; } .intro-grid { grid-template-columns:1fr; gap:32px; } .intro-image img { aspect-ratio:4/3; max-height:none; } }
+
+/* HU-0001 · T-0002: cartões das pedras na página da categoria. Filete de 1 px entre linhas, nada arredondado. */
+.pedra-catalogo { padding-top:0; }
+.pedra-nota { color:var(--cor-muted); font-size:16px; margin:0 0 32px; }
+.pedra-grupo { font-size:clamp(28px,3vw,40px); margin:48px 0 24px; }
+/* Só para leitores de tela: mantém a ordem H1 → H2 → H3 sem um rótulo visual que não informa. */
+.pedra-rotulo { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+.pedra-grade { list-style:none; margin:0 0 16px; padding:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:0 32px; }
+.pedra-cartao { border-top:1px solid var(--cor-borda); padding:24px 0 28px; }
+.pedra-imagem,.pedra-imagem img { display:block; width:100%; }
+.pedra-imagem img { height:auto; aspect-ratio:4/5; object-fit:cover; background-size:cover; outline:1px solid var(--cor-borda); outline-offset:-1px; }
+.pedra-cartao h3 { font-size:24px; line-height:1.2; margin:20px 0 4px; }
+.pedra-outras { margin:16px 0 0; padding-top:20px; border-top:1px solid var(--cor-borda); }
+.pedra-outras .text-link { color:var(--cor-caramelo); text-decoration:underline; text-underline-offset:4px; font-size:16px; }
+/* Grupos de 5 (mármores nacionais e importados) numa linha só, sem cartão órfão. */
+@media(min-width:1101px) { .pedra-grade[data-n="5"] { grid-template-columns:repeat(5,minmax(0,1fr)); } }
+@media(max-width:1000px) { .pedra-grade { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media(max-width:700px) {
+  .pedra-grade { grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 16px; } .pedra-cartao h3 { font-size:20px; margin-top:14px; } .pedra-grupo { margin-top:32px; }
+  /* Último cartão ímpar ocupa a linha inteira, em 16:9, para a grade não terminar em órfão. */
+  .pedra-cartao:last-child:nth-child(odd) { grid-column:1 / -1; }
+  .pedra-cartao:last-child:nth-child(odd) .pedra-imagem img { aspect-ratio:16/9; }
+}

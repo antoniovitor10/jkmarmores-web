@@ -4,17 +4,12 @@
 
 ## Tasks por status
 
-### em-desenvolvimento (1)
-
-| Task | Título | HU | Cobre | Depende de | Risco |
-|---|---|---|---|---|---|
-| [T-0002](HU-0001-imagens-novas-catalogo/tasks/T-0002-catalogo-por-pedra.md) | Catálogo por pedra nas páginas de categoria | HU-0001 | CA-1, CA-2, CA-4, CA-5, CA-9, CA-10, CA-13 | T-0001 | normal |
-
-### em-revisao (6)
+### em-revisao (7)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|
 | [T-0001](HU-0001-imagens-novas-catalogo/tasks/T-0001-piloto-geracao-codex.md) | Piloto de geração de imagens com o Codex (Astra) | HU-0001 | CA-11 | — | normal |
+| [T-0002](HU-0001-imagens-novas-catalogo/tasks/T-0002-catalogo-por-pedra.md) | Catálogo por pedra nas páginas de categoria | HU-0001 | CA-1, CA-2, CA-4, CA-5, CA-9, CA-10, CA-13 | T-0001 | normal |
 | [T-0003](HU-0001-imagens-novas-catalogo/tasks/T-0003-imagens-pedras-restantes.md) | Imagens das 31 pedras restantes do catálogo | HU-0001 | CA-1, CA-11 | T-0001 | normal |
 | [T-0004](HU-0001-imagens-novas-catalogo/tasks/T-0004-imagens-categorias.md) | Imagem própria para as 6 categorias de material | HU-0001 | CA-3, CA-11, CA-12 | T-0001 | normal |
 | [T-0005](HU-0001-imagens-novas-catalogo/tasks/T-0005-capa-jornada-sem-video.md) | Capa e jornada da pedra novas, em Calacatta e sem vídeo | HU-0001 | CA-6, CA-10, CA-11 | T-0001 | alto |

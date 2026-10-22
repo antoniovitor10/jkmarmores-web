@@ -3,7 +3,7 @@ id: T-0002
 titulo: "Catálogo por pedra nas páginas de categoria"
 hu: HU-0001
 trilha: funcionalidade
-status: em-desenvolvimento
+status: em-revisao
 depende_de: [T-0001]
 cobre: [CA-1, CA-2, CA-4, CA-5, CA-9, CA-10, CA-13]
 complexidade: 5
@@ -11,12 +11,12 @@ risco: normal
 sensivel: false
 skills: [stack, padroes-codigo, conteudo, design-system, imagens, responsivo-desktop-mobile, testes, anti-cara-de-ia]
 criada_em: 2026-10-21
-ferramenta: ""
-voltas: null
-bloqueios: null
-ca_nao_verificados: null
-testes_criados: null
-testes_pegam: null
+ferramenta: "claude-code/opus"
+voltas: 1
+bloqueios: 0
+ca_nao_verificados: 0
+testes_criados: 7
+testes_pegam: 7
 revisao_humana: ""
 homologacao: ""
 ---
@@ -158,9 +158,98 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 
 ## Execução
 
+### Execução · 2026-10-21
+
+**Branch:** task/T-0002-catalogo-por-pedra (a partir de task/T-0007-remover-avisos-ia) · **PR:** não aberto (nível 0, sem push)
+
+**O que mudou:**
+- **`src/content/pedras.json` (novo):** as 34 pedras da tabela, com slug, nome, categoria e grupo.
+- **`src/content/pedras.ts` (novo):**
+  - o tipo `Pedra`;
+  - `pedrasVisiveis()`, que mostra só a pedra não oculta e com imagem no manifesto (D2);
+  - `mensagemPedra()`, que põe a categoria só nos nomes repetidos (Calacatta em mármore, quartzo e lâmina);
+  - `altPedra()`, `acabamentosCategoria`, `outrasPedras` e `tituloPedras`.
+- **`src/components/PedraCatalogo.tsx` (novo):**
+  - componente de servidor com cartões de imagem 4:5, nome em H3 e "Chamar no WhatsApp";
+  - nos mármores, grupos com H2;
+  - nas outras categorias, um H2 "Pedras" só para leitores de tela, para manter a ordem H1, H2, H3 que o Lighthouse exige;
+  - a linha de acabamentos nas lâminas e a linha de outras pedras no fim.
+- **`src/app/materiais/[slug]/page.tsx`:** o catálogo entra logo depois do topo, antes do texto da categoria. A pendência é por categoria e só aparece em homologação, sem deixar `<p>` vazio em produção.
+- **`src/content/institucional.ts`:** `catalogoCategoria`, com pendência de acabamento em granitos, mármores e quartzos, nenhuma nas lâminas, e de nomes e acabamentos em dolomíticos e quartzitos (O2).
+- **`src/app/globals.css`:** um bloco novo do catálogo, só com tokens. A regra de `.text-link` foi unificada com a de `.material-card`.
+- **`src/components/site-interactions.ts`:** o botão fixo de WhatsApp no celular some enquanto o catálogo ocupa metade da tela, porque cada cartão já tem o seu. A varredura anti-cara-de-ia mostrou que ele cobria as amostras.
+- **`scripts/check-pedras.mjs` (novo):** entra no fim do `build` (`check:pedras`).
+- **Testes:** `e2e/materiais.spec.ts` é novo. O `e2e/configurador.spec.ts`, da T-0006 e fora da lista de arquivos desta task, recebeu um ajuste de estabilidade: espera a hidratação do seletor antes de clicar e dá 10 s para a troca da imagem. Sem isso, ele falhava de vez em quando com a suíte inteira em paralelo.
+
+**Seção de design (como ficou):**
+- **Grade:** 4 colunas no desktop; 5 nos grupos de mármore com 5 pedras, a partir de 1101 px, para não sobrar cartão sozinho; 3 colunas até 1000 px; 2 colunas até 700 px.
+- **Cartão órfão no celular:** o último cartão ímpar ocupa a linha inteira, em 16:9.
+- **Filetes e borda:** filete de 1 px (`--cor-borda`) em cima de cada cartão, e borda de 1 px na imagem, para as pedras pretas não sumirem no fundo.
+- **Tipografia:** nome em Bodoni de 24 px (20 px no celular) e links de 44 px de altura.
+- **Desvio da proposta:** a linha "Trabalhamos com outras pedras…" ficou como link inteiro em `--cor-caramelo`, sublinhado e com filete em cima, e não como texto em `--cor-muted`. É o único caminho para quem procura uma pedra fora da lista, e a varredura anti-cara-de-ia apontou que em cinza parecia nota de rodapé.
+
+**Verificação (testador):**
+
+| CA | Tipo | Teste / como verifiquei | Pega? | Resultado |
+|---|---|---|---|---|
+| CA-1 | interacao | `e2e/materiais.spec.ts` "CA-1": nas 4 páginas, o número de `[data-pedra]` bate com os dados (visíveis com imagem). Cada cartão tem H3 com o nome, `alt` e link `wa.me`, e nenhum nome fora da lista | sim: com o Verde Ubatuba oculto e recompilado, o granito cai para 10 cartões e o teste acompanha os dados | passa: 11 granitos, 10 mármores, 7 quartzos e 6 lâminas |
+| CA-2 | interacao | "CA-2": toque no WhatsApp do Preto São Gabriel, com a navegação para o wa.me interceptada. A mensagem é "Olá, JK! Tenho interesse no(a) Preto São Gabriel. Vi no site.". Calacatta sai com "(mármore)", "(quartzo)" e "(lâmina)" conforme a categoria | sim (mensagens exatas) | passa |
+| CA-4 | integracao | Verde Ubatuba com `oculta: true` → `npm run build` passa: "check-pedras: 33 pedra(s) no catálogo, 1 oculta(s)". Ele some de todo o `out/` (0 arquivos) e o granito fica com 10. Com o cartão dele recolocado no HTML, a checagem acusa "oculta, mas está em out\materiais\granito\index.html" e sai com 1. Com um slug de pedra no `sitemap.xml`, também sai com 1. Tudo desfeito, ela volta a 34 e sai com 0 | sim | passa |
+| CA-5 | interacao | "CA-5": nas 4 páginas, a linha de outras pedras aparece, abaixo do último cartão, com link `wa.me` | sim (posição e link) | passa |
+| CA-9 | interacao | "CA-9", sem JavaScript: o granito tem os cartões, `alt` com "granito" e o `href` do WhatsApp no HTML | sim | passa |
+| CA-10 | integracao | Lighthouse mobile em produção: granito com Acessibilidade 100, SEO 100, Boas práticas 100 e CLS 0; mármore igual. Capturas em 5 larguras sem rolagem horizontal. A primeira medição deu Acessibilidade 98 pela ordem dos títulos, o que foi corrigido com o H2 | não se aplica | passa |
+| CA-13 | interacao | "CA-13": "Acabamentos polido e acetinado." fica acima do primeiro cartão das lâminas, pela posição vertical | sim | passa |
+| CA-14 | interacao | "CA-14": os slugs de cada grupo ("Mármores nacionais" e "Mármores importados") batem com os dados, na ordem | sim | passa |
+
+**Regressão:** o CA-3 da T-0004 (dolomíticos e quartzitos sem cartão, com a pendência dos nomes) continua passando.
+
+**Testes criados ou alterados:**
+- `e2e/materiais.spec.ts`: 6 testes por projeto, 12 no total;
+- `scripts/check-pedras.mjs`;
+- `e2e/configurador.spec.ts`: o ajuste de estabilidade descrito acima.
+
+**Linha de base:**
+
+| | Antes | Depois |
+|---|---|---|
+| lint | 0 erros, 2 avisos | igual |
+| tsc | passa | passa |
+| build | passa | passa (com `check:pedras`) |
+| e2e | 33 passaram, 1 pulado | 45 passaram, 1 pulado (3 rodadas seguidas) |
+
+**Revisões:**
+- **Código:** ajustes na volta 1, todos aplicados:
+  - o CA-2 cobre a lâmina e intercepta a navegação;
+  - o CA-5 confere a posição da linha;
+  - o teste do configurador espera a hidratação, em vez de repetir o clique;
+  - grupo vazio não renderiza;
+  - a regra de CSS repetida foi unificada;
+  - o tipo `Partial<Record<string, Pendente>>` agora é verificado pela página.
+- **Anti-cara-de-ia:** aprovado com correções. Apliquei 4 das 5: o cartão órfão, a borda nas pedras escuras, o botão fixo que cobria o catálogo e o rótulo "PEDRAS" visível trocado pelo H2 só para leitores de tela.
+  - A 5ª, regerar o Preto Absoluto e uniformizar a luz das amostras, é de imagem e fica para depois.
+  - Notas mais baixas da varredura: identidade 5 e imagem 5. A seção é genérica por função; as amostras são geradas por IA (ADR-0001) e têm luz desigual entre si.
+- **Segurança:** não aplicável.
+
+**Pendências / decisões para o desenvolvedor:**
+- **Imagens:** o Preto Absoluto quase não mostra textura, e a luz das amostras varia (algumas com brilho no canto, outras chapadas). Uma rodada de imagem resolveria. A cliente também deve confirmar o Travertino Nacional, que parece uma brecha.
+- **Nomes da cliente:** "Mármore Branco Rajado" e "Mármore Branco Pinta Cinza" repetem "Mármore" dentro do grupo "Mármores nacionais", e "Travertino Romano bruto" tem minúscula. Mexer nisso precisa do seu "sim" (skill `conteudo`).
+
+**Proposta para skills do projeto:** nenhuma.
+
 ## Roteiro de homologação
+
+1. `npm run build`, depois `node scripts/preview-local.mjs`, e abrir `http://127.0.0.1:3105/materiais/granito/`: logo abaixo do topo aparecem os 11 granitos, com foto, nome e "Chamar no WhatsApp".
+2. Tocar em "Chamar no WhatsApp" no Preto São Gabriel: abre o WhatsApp da JK com "Olá, JK! Tenho interesse no(a) Preto São Gabriel. Vi no site."
+3. Abrir `/materiais/marmore/`: dois grupos, "Mármores nacionais" e "Mármores importados", com 5 pedras cada.
+4. Abrir `/materiais/ultracompacto/`: a linha "Acabamentos polido e acetinado." e as 6 lâminas.
+5. No fim de cada lista, o link "Trabalhamos com outras pedras; pergunte pelo WhatsApp."
+6. No celular, rolar o catálogo: o botão fixo de WhatsApp some enquanto os cartões ocupam a tela.
+
+Resultado: <a marcar por quem homologa>
 
 ## Histórico
 
 - 2026-10-21 · criada (backlog) · planejador
 - 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "pode seguir" com a T-0002 e a T-0007)
+- 2026-10-21 · execução iniciada na branch task/T-0002-catalogo-por-pedra (a partir de task/T-0007-remover-avisos-ia) · claude-code/opus
+- 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
