@@ -3,7 +3,7 @@ id: T-0007
 titulo: "Remover os avisos de IA e de imagem ilustrativa do site"
 hu: HU-0001
 trilha: funcionalidade
-status: backlog
+status: em-desenvolvimento
 depende_de: []
 cobre: [CA-8]
 complexidade: 3
@@ -106,3 +106,4 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 ## Histórico
 
 - 2026-10-21 · criada (backlog) · planejador
+- 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "pode seguir" com a T-0002 e a T-0007)

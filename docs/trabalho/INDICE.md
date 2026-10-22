@@ -4,7 +4,7 @@
 
 ## Tasks por status
 
-### backlog (2)
+### em-desenvolvimento (2)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|

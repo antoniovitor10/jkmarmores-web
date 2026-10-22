@@ -3,7 +3,7 @@ id: T-0002
 titulo: "Catálogo por pedra nas páginas de categoria"
 hu: HU-0001
 trilha: funcionalidade
-status: backlog
+status: em-desenvolvimento
 depende_de: [T-0001]
 cobre: [CA-1, CA-2, CA-4, CA-5, CA-9, CA-10, CA-13]
 complexidade: 5
@@ -163,3 +163,4 @@ Numeração: CA-1 a CA-13 são os critérios da HU-0001 que esta task cumpre; CA
 ## Histórico
 
 - 2026-10-21 · criada (backlog) · planejador
+- 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "pode seguir" com a T-0002 e a T-0007)
