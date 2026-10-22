@@ -31,5 +31,4 @@
 .veil { z-index:1; }
 .signature { display:none; position:absolute; top:73%; inset-inline:24px; z-index:4; text-align:center; }
 .signature p { font-family:var(--fonte-corpo); font-size:12px; letter-spacing:.2em; color:#d4b699; margin:0 0 24px; }
-.signature a { font-size:14px; display:inline-flex; align-items:center; }
 @media(max-width:700px) { .signature { top:66%; } .signature p { font-size:11px; letter-spacing:.12em; } }

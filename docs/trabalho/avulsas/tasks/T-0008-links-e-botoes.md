@@ -12,11 +12,11 @@ sensivel: false
 skills: [design-system, padroes-codigo, responsivo-desktop-mobile, testes]
 criada_em: 2026-10-22
 ferramenta: "claude-code/opus"
-voltas: 1
+voltas: 2
 bloqueios: 0
 ca_nao_verificados: 0
-testes_criados: 6
-testes_pegam: 6
+testes_criados: 10
+testes_pegam: 10
 revisao_humana: ""
 homologacao: ""
 ---
@@ -52,6 +52,18 @@ Os links e o "Chamar no WhatsApp" do site passam a parecer clicáveis: botão co
 | Fim da lista de pedras (`PedraCatalogo.tsx`): "Trabalhamos com outras pedras…" | link caramelo sublinhado | link com seta |
 | Painel de contato (`Institutional.tsx` `ContactPanel`): "Chamar no WhatsApp" | `.text-link` | botão com contorno e ícone do WhatsApp |
 
+**Volta 2 (Vitor, 22/10, depois da revisão):** "todos os links que estão soltos sem hover sem nada deve mudar". Um levantamento automático (hover em cada link de todas as páginas, em 1440 e 390) encontrou estes:
+
+| Lugar | Hoje | Vira |
+|---|---|---|
+| Abertura da home (`HomeHero.tsx`): "Explore as referências" | texto claro, 14 px, sem sublinhado nem hover | link com seta |
+| Fechamento de Aplicações e Galeria (`PageView.tsx`): "Ver outras formas de contato", ao lado do botão | solto, sem hover | link com seta (o par botão e link) |
+| Rodapé (`SiteFooter.tsx`): A empresa, Materiais, Aplicações, Galeria, telefone, Chamar no WhatsApp, Todos os contatos | mesma cor do texto, sem hover | caramelo, sublinhado no hover e no foco (numa lista de rodapé, sublinhar tudo pesa) |
+| Contato sem JavaScript (`contato/page.tsx`): "abra o WhatsApp diretamente", no meio da frase | sem estilo | caramelo e sublinhado, sem seta |
+| Cartão de aplicação (`aplicacoes/page.tsx`) e página 404 (`not-found.tsx`): "Conhecer aplicação" e "Voltar ao início" | sem estilo (o cartão só aparece quando houver aplicação confirmada) | link com seta |
+
+Ficam como estão: os logos (imagem que leva ao início), o menu (o do desktop já sublinha no hover; o do celular é a lista do menu aberto) e o telefone grande do painel de contato (sublinha no hover).
+
 ## Arquivos / áreas prováveis
 
 - `src/app/globals.css`: `.text-link` (caramelo, sublinhado, 16 px, seta por `::after`), classe nova de botão com contorno (`.button-outline`), regras de `.actions` no celular.
@@ -80,6 +92,10 @@ nenhum
 - **CA-5:** Dado o leitor de tela, então o nome dos links e botões continua igual ao texto (o ícone e a seta não entram no nome), e o Lighthouse mobile segue com 100 em Acessibilidade na home e em `/materiais/granito/`.
 - **CA-6:** Dado o teclado, então cada link e botão novo tem foco visível.
 - **CA-7:** Dado o resto do site, então fundo, fontes e textos não mudam.
+- **CA-8:** Dada a abertura da home, então "Explore as referências" é link caramelo, sublinhado e com seta, e leva ao configurador.
+- **CA-9:** Dado o fechamento de Aplicações e Galeria, então "Ver outras formas de contato" é link caramelo, sublinhado, com seta e alvo de 44 px, e leva ao contato.
+- **CA-10:** Dado o rodapé, então os links ficam caramelo e sublinham no hover e no foco.
+- **CA-11:** Dada qualquer página com mouse, então nenhum link de texto fica sem sublinhado, borda e fundo e, ao mesmo tempo, sem reação ao hover.
 
 ## Testes
 
@@ -92,6 +108,10 @@ nenhum
 | CA-5 | integracao | nome acessível pelo `getByRole` igual ao texto; Lighthouse mobile da home e do granito |
 | CA-6 | interacao | navega com Tab até os links novos e confere o `outline` de foco |
 | CA-7 | manual | motivo: comparação visual das capturas antes e depois; a mudança é só de estilo de link |
+| CA-8 | interacao | rola até o fim da abertura, confere caramelo, sublinhado, 16 px e seta, e clica, chegando a `#configurador` |
+| CA-9 | interacao | em `/galeria/`, confere o estilo e o alvo e clica, chegando a `/contato/` |
+| CA-10 | interacao | confere o caramelo nos links do rodapé, passa o mouse e espera o sublinhado, e clica em "Todos os contatos" |
+| CA-11 | interacao | em 6 páginas, passa o mouse em cada link de texto sem sublinhado, borda ou fundo e exige que o visual mude |
 
 **Dados e ambiente:** `npm run build` antes; Playwright com `scripts/preview-local.mjs` na porta 3105.
 
@@ -162,12 +182,47 @@ nenhum
 
 **Proposta para skills do projeto:** registrar na skill `design-system` o padrão novo de link (caramelo, sublinhado, com seta) e o `.button-outline`. Depende do seu "sim".
 
+### Execução · 2026-10-22 · volta 2
+
+**Motivo:** o Vitor pediu, na revisão, que todos os links soltos e sem hover mudassem (tabela "Volta 2" no Contexto).
+
+**O que mudou:**
+- **`src/components/HomeHero.tsx` e `HomeHero.module.css`:** "Explore as referências" ganha `text-link`; sai a regra de 14 px que o deixava menor.
+- **`src/components/PageView.tsx`:** "Ver outras formas de contato" ganha `text-link`.
+- **`src/app/aplicacoes/page.tsx` e `src/app/not-found.tsx`:** "Conhecer aplicação" e "Voltar ao início" ganham `text-link`.
+- **`src/app/contato/page.tsx`:** o link dentro da frase do `<noscript>` ganha `link-inline`.
+- **`src/app/globals.css`:** `a.link-inline` (caramelo e sublinhado) e os links do rodapé em caramelo, com sublinhado no hover (só com mouse) e no foco.
+- **`e2e/links.spec.ts`:** testes CA-8 a CA-11. O CA-6 passou a esperar o fim da transição do fundo, que falhou uma vez em 0,996 de opacidade.
+
+**Verificação (testador):**
+
+| CA | Tipo | Teste / como verifiquei | Pega? | Resultado |
+|---|---|---|---|---|
+| CA-8 | interacao | "CA-8": espera a animação entrar, rola até o fim da abertura, confere caramelo, sublinhado, 16 px e seta, e clica, chegando a `#configurador` | sim: sem a classe, recompilado, falha | passa (mobile e desktop) |
+| CA-9 | interacao | "CA-9": em `/galeria/`, estilo, seta e alvo ≥ 44 px, e o clique chega a `/contato/` | sim: sem a classe, falha | passa |
+| CA-10 | interacao | "CA-10": caramelo em A empresa, Materiais, Chamar no WhatsApp, Todos os contatos e telefone; no desktop, sem sublinhado antes e com sublinhado no hover; o clique chega a `/contato/` | sim: sem a regra do rodapé, falha | passa |
+| CA-11 | interacao | "CA-11": em `/`, `/materiais/`, `/materiais/granito/`, `/galeria/`, `/sobre/` e `/contato/`, passa o mouse em cada link de texto sem sublinhado, borda ou fundo e exige mudança visual. No celular, é pulado (não há hover) | sim: com o rodapé antigo, falha no telefone | passa (desktop) |
+
+**Linha de base:**
+
+| | Antes da volta 2 | Depois |
+|---|---|---|
+| lint | 0 erros, 2 avisos (`tools/higgsfield`) | igual |
+| tsc | passa | passa |
+| build | passa | passa |
+| e2e | 57 passaram, 1 pulado | 64 passaram, 2 pulados |
+
+**Capturas** em 1440 e 390: abertura da home, rodapé (com hover em "Materiais") e fechamento da galeria. Fundo, fontes e textos não mudaram.
+
 ## Roteiro de homologação
 
 1. `npm run build`, depois `node scripts/preview-local.mjs`, e abrir a home. Em "Conte o que você imagina", "Conheça os materiais" aparece com contorno e seta, e "Conheça a JK" como link sublinhado com seta.
 2. Abrir `/materiais/granito/`: cada pedra tem o botão "Chamar no WhatsApp" com o ícone, na largura do cartão.
 3. Rolar até "Vamos conversar sobre seu projeto?": o botão do WhatsApp com o ícone.
 4. No celular, tocar num botão com contorno: ele não fica preenchido depois do toque.
+5. Na home, rolar até o fim da abertura: "Explore as referências" aparece caramelo, sublinhado e com seta.
+6. No rodapé, os links ficam caramelo; com mouse, sublinham ao passar por cima.
+7. Em Galeria, no fim da página, "Ver outras formas de contato" aparece como link com seta ao lado do botão.
 
 Resultado: <a marcar por quem homologa>
 
@@ -178,3 +233,5 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-22 · backlog → em-desenvolvimento · desenvolvedor ("sim" na conversa)
 - 2026-10-22 · execução iniciada na branch task/T-0008-links-e-botoes (a partir de main, 34bda1b) · claude-code/opus
 - 2026-10-22 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
+- 2026-10-22 · em-revisao → em-desenvolvimento · desenvolvedor · na conversa: "todos os links que estão soltos sem hover sem nada deve mudar" (volta 2)
+- 2026-10-22 · em-desenvolvimento → em-revisao · claude-code/opus · volta 2 no relatório; sem push (autonomia 0)

@@ -390,3 +390,8 @@ a.text-link:focus-visible { text-decoration-thickness:2px; }
 .pedra-cartao .botao-whatsapp { width:100%; justify-content:center; margin-top:8px; }
 .contact-panel .botao-whatsapp { margin-top:12px; }
 @media(max-width:700px) { .actions .button-outline { font-size:14px; } .pedra-cartao .botao-whatsapp { padding:12px 8px; font-size:13px; gap:8px; } }
+/* T-0008, segunda volta: nenhum link solto sem sinal. Na frase, caramelo e sublinhado; no rodapé, caramelo e sublinhado no hover. */
+a.link-inline { color:var(--cor-caramelo); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:4px; }
+.footer-grid a:not(.brand) { color:var(--cor-caramelo); text-decoration:none; text-underline-offset:5px; }
+@media(hover:hover) { .footer-grid a:not(.brand):hover { text-decoration:underline; } }
+.footer-grid a:not(.brand):focus-visible { text-decoration:underline; }

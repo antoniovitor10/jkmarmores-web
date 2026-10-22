@@ -12,7 +12,7 @@ export function PageView({ pagina, children, abertura }: { pagina: PaginaInstitu
     <div className="container page-content">
     {pagina.secoes.filter((secao) => isHomolog || (!isPendente(secao.titulo) && !isPendente(secao.texto))).map((secao) => <section key={secao.id} id={secao.id} className="content-section"><h2><PendenteTexto valor={secao.titulo} /></h2><p><PendenteTexto valor={secao.texto} /></p></section>)}
     {children}
-    <div className="closing-cta"><p>Conte-nos o que você precisa para receber orientação sobre o próximo passo.</p><a className="button" href={linkWhatsApp(pagina.cta.mensagem, conteudo.empresa.whatsapp)}>{pagina.cta.texto}</a><Link href="/contato/">Ver outras formas de contato</Link></div>
+    <div className="closing-cta"><p>Conte-nos o que você precisa para receber orientação sobre o próximo passo.</p><a className="button" href={linkWhatsApp(pagina.cta.mensagem, conteudo.empresa.whatsapp)}>{pagina.cta.texto}</a><Link className="text-link" href="/contato/">Ver outras formas de contato</Link></div>
     </div>
   </main>;
 }

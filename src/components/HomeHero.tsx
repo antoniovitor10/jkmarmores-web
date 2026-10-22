@@ -24,6 +24,6 @@ export function HomeHero() {
       <h1><span className={styles.line}><span>Pedra que dá forma</span></span>{' '}<span className={styles.line}><span>ao seu espaço.</span></span></h1>
       <div className={styles.bottom}><p>Seu projeto começa com uma conversa.<br />Conte sua ideia à JK.</p><a className="button" href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a></div>
     </div>
-    <div className={`hero-signature ${styles.signature}`}><p>JK MÁRMORES E GRANITOS</p><a href="#configurador">Explore as referências</a></div>
+    <div className={`hero-signature ${styles.signature}`}><p>JK MÁRMORES E GRANITOS</p><a className="text-link" href="#configurador">Explore as referências</a></div>
   </header></section>;
 }
