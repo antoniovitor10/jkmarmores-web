@@ -3,7 +3,7 @@ id: T-0005
 titulo: "Capa e jornada da pedra novas, em Calacatta e sem vídeo"
 hu: HU-0001
 trilha: funcionalidade
-status: em-revisao
+status: em-teste
 depende_de: [T-0001]
 cobre: [CA-6, CA-10, CA-11]
 complexidade: 5
@@ -225,3 +225,4 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "T-0003 a T-0006")
 - 2026-10-21 · execução iniciada na branch task/T-0005-capa-jornada-sem-video (a partir de task/T-0004-imagens-categorias) · claude-code/opus (maestro), codex (Astra), agy (segunda opinião)
 - 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
+- 2026-10-21 · em-revisao → em-teste · desenvolvedor · movida no quadro do Batuta

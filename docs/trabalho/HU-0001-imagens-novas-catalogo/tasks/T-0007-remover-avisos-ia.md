@@ -3,7 +3,7 @@ id: T-0007
 titulo: "Remover os avisos de IA e de imagem ilustrativa do site"
 hu: HU-0001
 trilha: funcionalidade
-status: em-revisao
+status: em-teste
 depende_de: []
 cobre: [CA-8]
 complexidade: 3
@@ -163,3 +163,4 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "pode seguir" com a T-0002 e a T-0007)
 - 2026-10-21 · execução iniciada na branch task/T-0007-remover-avisos-ia (a partir de task/T-0006) · claude-code/opus
 - 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução (CA-15 parcial, ver pendências); sem push (autonomia 0)
+- 2026-10-21 · em-revisao → em-teste · desenvolvedor · movida no quadro do Batuta

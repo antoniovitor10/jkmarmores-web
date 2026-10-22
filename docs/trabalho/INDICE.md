@@ -4,7 +4,7 @@
 
 ## Tasks por status
 
-### em-revisao (7)
+### em-teste (7)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|

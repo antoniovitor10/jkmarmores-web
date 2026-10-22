@@ -3,7 +3,7 @@ id: T-0003
 titulo: "Imagens das 31 pedras restantes do catálogo"
 hu: HU-0001
 trilha: funcionalidade
-status: em-revisao
+status: em-teste
 depende_de: [T-0001]
 cobre: [CA-1, CA-11]
 complexidade: 4
@@ -231,3 +231,4 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-21 · execução iniciada na branch task/T-0003-imagens-pedras-restantes (a partir de task/T-0001-piloto-geracao-codex, dependência em revisão) · claude-code/opus (maestro), codex (Astra), agy (segunda opinião)
 - 2026-10-21 · handoff (parado a pedido do Vitor para liberar memória; 31 escolhas feitas, falta o parecer do agy e a entrada no repositório) · claude-code/opus
 - 2026-10-21 · retomada e concluída; em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
+- 2026-10-21 · em-revisao → em-teste · desenvolvedor · movida no quadro do Batuta

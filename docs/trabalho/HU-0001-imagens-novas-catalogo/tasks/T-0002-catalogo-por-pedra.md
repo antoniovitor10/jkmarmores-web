@@ -3,7 +3,7 @@ id: T-0002
 titulo: "Catálogo por pedra nas páginas de categoria"
 hu: HU-0001
 trilha: funcionalidade
-status: em-revisao
+status: em-teste
 depende_de: [T-0001]
 cobre: [CA-1, CA-2, CA-4, CA-5, CA-9, CA-10, CA-13]
 complexidade: 5
@@ -253,3 +253,4 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-21 · backlog → em-desenvolvimento · desenvolvedor (pedido na conversa: "pode seguir" com a T-0002 e a T-0007)
 - 2026-10-21 · execução iniciada na branch task/T-0002-catalogo-por-pedra (a partir de task/T-0007-remover-avisos-ia) · claude-code/opus
 - 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
+- 2026-10-21 · em-revisao → em-teste · desenvolvedor · movida no quadro do Batuta
