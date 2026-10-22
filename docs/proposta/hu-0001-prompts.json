@@ -488,5 +488,77 @@
     "arquivo": "assets/images/categoria-ultracompacto.png",
     "avaliacao": "lâmina imitando Taj Mahal; a 1 tem veio mais suave, como a lâmina real; a 2 ramifica demais (escolha do agy, conferida). agy: melhor candidata-1, nota 7, defeito: Os veios dourados estão mais saturados e marcados que na lâmina real, que é mais clara e suave. Na candidata 2, os veios se ramificam demais e o tom fica mais escuro.",
     "tratamento": "ampliada de 1122x1402 para 1200x1500 (7%, lanczos3) para cumprir a largura mínima de 1200 px da imagem de topo; sem detalhe novo"
+  },
+  "capa-calacatta-mobile": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Portrait 4:5 editorial interior photograph (for example 1024x1280 or larger), a vertical recomposition of the attached kitchen scene for a phone screen: the Calacatta marble kitchen island seen from the front-right, its top edge and front face filling the lower two thirds of the frame; the upper third darker and calm (shadowed wall) to leave space for a headline and a button over it. The same Italian Calacatta marble as in the attached images: bright warm-white base with bold irregular grey veins and soft gold accents, wide calm white areas. Same dark, warm, moody architectural mood as the attached kitchen: warm graphite walls, dark walnut, late-afternoon raking light, soft long shadows. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter. Realistic editorial photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "a capa capa-calacatta e o close pedra-marmore-calacatta já escolhidos, mais uma foto real de Calacatta (só cor e veio, fora do git, sem URL), para manter a mesma pedra em toda a sequência",
+    "data": "2026-10-22",
+    "tentativas": 2,
+    "escolhida": "candidata-2",
+    "arquivo": "assets/images/capa-calacatta-mobile.png",
+    "avaliacao": "recomposição em retrato da capa, a ilha de Calacatta no terço de baixo e o alto calmo para o título; escolha do agy. agy: melhor candidata-2, nota 8, defeito: Na quina vertical, os veios da face da frente não continuam com precisão na face lateral. A tábua e a planta no fundo puxam um pouco a atenção."
+  },
+  "sequencia-01-chapa": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Wide landscape 16:9 photograph (for example 1824x1026 or larger): a full polished slab of Calacatta marble standing upright on a simple metal A-frame stand in a dark, quiet stone showroom, the whole slab visible and slightly angled, its veining readable from edge to edge; dark warm background, raking light from the left. Keep the bottom quarter calm and dark for a caption. The same Italian Calacatta marble as in the attached images: bright warm-white base with bold irregular grey veins and soft gold accents, wide calm white areas. Same dark, warm, moody architectural mood as the attached kitchen: warm graphite walls, dark walnut, late-afternoon raking light, soft long shadows. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter. Realistic editorial photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "a capa capa-calacatta e o close pedra-marmore-calacatta já escolhidos, mais uma foto real de Calacatta (só cor e veio, fora do git, sem URL), para manter a mesma pedra em toda a sequência",
+    "data": "2026-10-22",
+    "tentativas": 2,
+    "escolhida": "candidata-2",
+    "arquivo": "assets/images/sequencia-01-chapa.png",
+    "avaliacao": "chapa inteira em pé num suporte; escolha do agy. agy: melhor candidata-2, nota 7, defeito: Os veios cinza são grossos e escuros demais. Comparada ao close de referência, mais rendado e dourado, a chapa parece outro Calacatta.",
+    "substitui": "original de setembro com o mesmo id (fica no histórico do git)"
+  },
+  "sequencia-02-borda": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Wide landscape 16:9 photograph (for example 1824x1026 or larger): a close view of the thick polished edge of a Calacatta marble countertop, with a small rectangular sample cut-out of the same marble resting on the countertop next to the edge; the edge profile and the continuation of the veins over the edge clearly visible, shallow depth of field. Keep the bottom quarter calm for a caption. The same Italian Calacatta marble as in the attached images: bright warm-white base with bold irregular grey veins and soft gold accents, wide calm white areas. Same dark, warm, moody architectural mood as the attached kitchen: warm graphite walls, dark walnut, late-afternoon raking light, soft long shadows. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter. Realistic editorial photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "a capa capa-calacatta e o close pedra-marmore-calacatta já escolhidos, mais uma foto real de Calacatta (só cor e veio, fora do git, sem URL), para manter a mesma pedra em toda a sequência",
+    "data": "2026-10-22",
+    "tentativas": 2,
+    "escolhida": "candidata-1",
+    "arquivo": "assets/images/sequencia-02-borda.png",
+    "avaliacao": "borda polida com amostra ao lado; escolha do agy. agy: melhor candidata-1, nota 7, defeito: Os veios cinza grossos na borda pesam mais que na referência. A amostra solta em cima da bancada não tem função clara e parece colocada ali.",
+    "substitui": "original de setembro com o mesmo id (fica no histórico do git)"
+  },
+  "sequencia-02-borda-mobile": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Portrait 4:5 photograph (for example 1024x1280 or larger): a close view of the thick polished edge of a Calacatta marble countertop with a small rectangular sample cut-out of the same marble resting next to it, the edge profile and veins continuing over the edge clearly visible, shallow depth of field. Keep the bottom quarter calm for a caption. The same Italian Calacatta marble as in the attached images: bright warm-white base with bold irregular grey veins and soft gold accents, wide calm white areas. Same dark, warm, moody architectural mood as the attached kitchen: warm graphite walls, dark walnut, late-afternoon raking light, soft long shadows. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter. Realistic editorial photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "a capa capa-calacatta e o close pedra-marmore-calacatta já escolhidos, mais uma foto real de Calacatta (só cor e veio, fora do git, sem URL), para manter a mesma pedra em toda a sequência",
+    "data": "2026-10-22",
+    "tentativas": 2,
+    "escolhida": "candidata-2",
+    "arquivo": "assets/images/sequencia-02-borda-mobile.png",
+    "avaliacao": "a mesma borda em retrato; escolha do agy (na 1 a amostra parece pousada direto na madeira). agy: melhor candidata-2, nota 7, defeito: O veio grafite da borda da frente está carregado demais. A amostra apoiada num degrau de madeira abaixo da bancada deixa a cena um pouco ambígua. Na candidata-1, a pedra parece pousada direto sobre a madeira.",
+    "substitui": "original de setembro com o mesmo id (fica no histórico do git)"
+  },
+  "sequencia-03-acabamento": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Wide landscape 16:9 macro photograph (for example 1824x1026 or larger): an extreme close-up of the polished surface of Calacatta marble under low raking light from the side, showing a perfectly smooth, flat, glassy polished surface with a soft mirror-like gloss and subtle crystalline depth below it, crossed by one grey and gold vein lying flat inside the stone; no wrinkles, no crinkled or crumpled texture, no raised relief, no gravel look. Keep the bottom quarter calm for a caption. The same Italian Calacatta marble as in the attached images: bright warm-white base with bold irregular grey veins and soft gold accents, wide calm white areas. Same dark, warm, moody architectural mood as the attached kitchen: warm graphite walls, dark walnut, late-afternoon raking light, soft long shadows. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter. Realistic editorial photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "a capa capa-calacatta e o close pedra-marmore-calacatta já escolhidos, mais uma foto real de Calacatta (só cor e veio, fora do git, sem URL), para manter a mesma pedra em toda a sequência",
+    "data": "2026-10-22",
+    "tentativas": 4,
+    "escolhida": "candidata-4",
+    "arquivo": "assets/images/sequencia-03-acabamento.png",
+    "avaliacao": "rodada 2: a rodada 1 tinha textura de papel amassado (apontado pelo agy, conferido); na 3 da rodada 2 havia uma faixa de luz vertical artificial; escolha do agy. agy: melhor candidata-4, nota 6, defeito: O veio central é cinza-escuro, mais grosso e mais carregado que o Calacatta da referência, que tem veios dourados finos e em rede. Nesse veio aparece um leve relevo, com textura pedregosa. Fora isso, o polimento está crível: o reflexo e o brilho da luz são coerentes, e a bancada combina com a cozinha da capa. A candidata-3 é pior: veios escuros mais pesados, com aspecto rachado e em relevo, e uma faixa de luz vertical artificial à direita.",
+    "prompt_rodada_1": "Wide landscape 16:9 macro photograph (for example 1824x1026 or larger): an extreme close-up of the polished surface of Calacatta marble under low raking light from the side, showing the fine crystalline depth, the soft gloss of the polish and the edges of a grey and gold vein crossing the frame. Keep the bottom quarter calm for a caption. The same Italian Calacatta marble as in the attached images: bright warm-white base with bold irregular grey veins and soft gold accents, wide calm white areas. Same dark, warm, moody architectural mood as the attached kitchen: warm graphite walls, dark walnut, late-afternoon raking light, soft long shadows. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter. Realistic editorial photograph, natural color, slightly desaturated, high detail.",
+    "substitui": "original de setembro com o mesmo id (fica no histórico do git)"
+  },
+  "sequencia-04-aplicada": {
+    "ferramenta": "Codex CLI 0.163.0, image_generation (agente Astra), plano do Vitor",
+    "prompt": "Wide landscape 16:9 editorial interior photograph (for example 1824x1026 or larger): a Calacatta marble kitchen island with a waterfall edge in a calm architectural space with high ceiling, seen from a lower, wider angle than the attached kitchen, the island as protagonist in the right half, warm graphite walls. Keep the bottom quarter calm for a caption. The same Italian Calacatta marble as in the attached images: bright warm-white base with bold irregular grey veins and soft gold accents, wide calm white areas. Same dark, warm, moody architectural mood as the attached kitchen: warm graphite walls, dark walnut, late-afternoon raking light, soft long shadows. Minimal: no people, no hands, no text, no logo, no brand names, no readable appliances, no clutter. Realistic editorial photograph, natural color, slightly desaturated, high detail.",
+    "instrucao": "Instrução ao Codex: gerar com image_generation, uma chamada por imagem; as imagens anexadas (-i) são só referência de cor, tipo de veio e granulação; não copiar enquadramento, luz, recorte nem chapa; não reproduzir marca d'água ou texto.",
+    "referencias": "a capa capa-calacatta e o close pedra-marmore-calacatta já escolhidos, mais uma foto real de Calacatta (só cor e veio, fora do git, sem URL), para manter a mesma pedra em toda a sequência",
+    "data": "2026-10-22",
+    "tentativas": 2,
+    "escolhida": "candidata-2",
+    "arquivo": "assets/images/sequencia-04-aplicada.png",
+    "avaliacao": "ilha de Calacatta em ambiente de pé-direito alto; escolha do agy. agy: melhor candidata-2, nota 7, defeito: Os veios correm em faixas longas, diagonais e limpas, menos rendadas que o Calacatta da referência, e parecem de outra chapa. Fora isso, a cena é crível e o piso deixa área calma para legenda.",
+    "substitui": "original de setembro com o mesmo id (fica no histórico do git)"
   }
 }

@@ -265,3 +265,16 @@ Cenas de ambiente em 4:5, uma por categoria, com a mesma luz e o mesmo ambiente 
 | assets/images/categoria-quartzito.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `categoria-quartzito` | 1200×1500 (ampliada de 1122×1402) |
 | assets/images/categoria-quartzo.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `categoria-quartzo` | 1200×1500 (ampliada de 1122×1402) |
 | assets/images/categoria-ultracompacto.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `categoria-ultracompacto` | 1200×1500 (ampliada de 1122×1402) |
+
+### T-0005: capa mobile e jornada em Calacatta, 22/10/2026
+
+Recomposição da capa para o celular e os 4 quadros da jornada (chapa, borda, acabamento, peça aplicada), mais o retrato da borda, todos gerados a partir da capa e do close de Calacatta já escolhidos, para a mesma pedra contar a sequência. Os quadros substituem os originais de setembro com o mesmo id (ficam no histórico do git); os vídeos da jornada saíram do site. Duas candidatas por imagem, quatro no acabamento; escolha pela revisão visual e pelo parecer cego do agy. Prompt, escolha e parecer em [hu-0001-prompts.json](hu-0001-prompts.json). Custo: US$ 0 por imagem.
+
+| Arquivo | Ferramenta | Data | Chave do prompt | Tamanho |
+|---|---|---|---|---|
+| assets/images/capa-calacatta-mobile.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-22 | `capa-calacatta-mobile` | 1122×1402 |
+| assets/images/sequencia-01-chapa.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-22 | `sequencia-01-chapa` | 1672×941 |
+| assets/images/sequencia-02-borda.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-22 | `sequencia-02-borda` | 1672×940 |
+| assets/images/sequencia-02-borda-mobile.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-22 | `sequencia-02-borda-mobile` | 1122×1402 |
+| assets/images/sequencia-03-acabamento.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-22 | `sequencia-03-acabamento` | 1672×941 |
+| assets/images/sequencia-04-aplicada.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-22 | `sequencia-04-aplicada` | 1672×941 |

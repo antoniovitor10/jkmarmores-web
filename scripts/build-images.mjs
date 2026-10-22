@@ -8,14 +8,13 @@ const destino = path.resolve("public/img");
 const manifesto = {};
 await fs.mkdir(fonte, { recursive: true });
 await fs.mkdir(destino, { recursive: true });
+// Recortes mobile são arquivos próprios com sufixo -mobile (ex.: capa-calacatta-mobile.png), não coordenadas fixas aqui.
 const sources = (await fs.readdir(fonte)).map(nome => ({ nome, arquivo: path.join(fonte, nome) }));
-sources.push({ nome: 'capa-editorial-mobile.png', arquivo: await sharp(path.join(fonte, 'material-detalhe-quente.png'))
-  .extract({ left: 160, top: 0, width: 900, height: 1152 }).png().toBuffer() });
 for (const { nome, arquivo } of sources) {
   if (!/\.(jpe?g|png|webp|avif)$/i.test(nome)) continue;
   const id = path.parse(nome).name;
   // Fontes históricas ficam no acervo, sem derivados sem uso no site exportado.
-  if (["a1-mobile", "capa-aberto-01", "a1-prova-01", "capa-close", "capa-poster", "capa-poster-mobile"].includes(id)) continue;
+  if (["a1-mobile", "capa-aberto-01", "a1-prova-01", "capa-close", "capa-poster", "capa-poster-mobile", "material-detalhe-quente"].includes(id)) continue;
   const dados = await sharp(arquivo).metadata();
   if (!dados.width || !dados.height) continue;
   const variantes = [];

@@ -5,7 +5,7 @@ export type MotionConnection = EventTarget & { saveData?: boolean; effectiveType
 export function motionNetworkPolicy(connection?: MotionConnection) {
   if (connection?.saveData || /(^|-)2g|3g/.test(connection?.effectiveType ?? "")) return "slow-connection";
   const navigation = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming | undefined;
-  const poster = performance.getEntriesByType("resource").find(entry => /\/img\/(capa-|material-detalhe-quente-)/.test(entry.name)) as PerformanceResourceTiming | undefined;
+  const poster = performance.getEntriesByType("resource").find(entry => /\/img\/capa-/.test(entry.name)) as PerformanceResourceTiming | undefined;
   let measured = false;
   let fastTransfer = false;
   for (const entry of [navigation, poster]) {
