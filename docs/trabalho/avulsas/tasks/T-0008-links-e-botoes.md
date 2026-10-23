@@ -235,3 +235,4 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-22 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
 - 2026-10-22 · em-revisao → em-desenvolvimento · desenvolvedor · na conversa: "todos os links que estão soltos sem hover sem nada deve mudar" (volta 2)
 - 2026-10-22 · em-desenvolvimento → em-revisao · claude-code/opus · volta 2 no relatório; sem push (autonomia 0)
+- 2026-10-22 · publicada em produção · claude-code/opus · Vitor na conversa: "Coloca no ar". Push na main em cf105f4; Actions 39883478066 com sucesso; páginas, robots, sitemap e /1/, /2/, /3/ com 200; sem noindex e sem pendências no HTML
