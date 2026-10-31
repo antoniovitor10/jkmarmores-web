@@ -566,6 +566,108 @@
       }
     ]
   },
+  "pedra-marmore-dolomitico-biancatto": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACwAwCdASoYAB4APwF0r1KrJqQiqAqpYCAJaWVuWAMLJTx72h6CAAD+7P2CTYNTcQyoq79zQUMbMl2SkJ6pX/GTm6psPOChJXfR6o73dVW9OAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-dolomitico-biancatto-390.avif",
+        "webp": "/img/pedra-marmore-dolomitico-biancatto-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-dolomitico-biancatto-768.avif",
+        "webp": "/img/pedra-marmore-dolomitico-biancatto-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-dolomitico-branco-michelangelo": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAACwBACdASoYAB4APwFur1ErJiQisBgIAWAgCWkAyRAQ3XImshdZ2StYtX+TLRUAAP7qjOywTE+HWu7MP7AHFDpkN13RvRissE0weHAs6NkJZBZyAet6KM4pTrtMXYWDBgy07RiGIg+G1TuKQEBKNH4AAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-dolomitico-branco-michelangelo-390.avif",
+        "webp": "/img/pedra-marmore-dolomitico-branco-michelangelo-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-dolomitico-branco-michelangelo-768.avif",
+        "webp": "/img/pedra-marmore-dolomitico-branco-michelangelo-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-dolomitico-donatello": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAwCdASoYAB4APvFoq06ppiQiMAwBMB4JaQDKAA9PRepjmNt0tCAA/G5P99+4FWndOVPEbxMskZbpXsOWfd9AlYsttUujdigHyfFTNxYPyAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-dolomitico-donatello-390.avif",
+        "webp": "/img/pedra-marmore-dolomitico-donatello-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-dolomitico-donatello-768.avif",
+        "webp": "/img/pedra-marmore-dolomitico-donatello-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-dolomitico-lunar": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRnIAAABXRUJQVlA4IGYAAABQBACdASoYAB4APu1kpk6ppiOiN/qoATAdiWkAACmRhXFt7XaEk+dZh5IAAP7UNxZA2vfYsKrpDDTT8lQSg6cbaVCKR1ECFFh2H9Am7ABrWTwaBv95eHU3ZhpZsdksYWKXoaBAAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-dolomitico-lunar-390.avif",
+        "webp": "/img/pedra-marmore-dolomitico-lunar-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-dolomitico-lunar-768.avif",
+        "webp": "/img/pedra-marmore-dolomitico-lunar-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-dolomitico-super-white": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAADwBACdASoYAB4APwFor1ErJSQisBgIAWAgCWlkeQAbiipDa/3s9C7q0b9V2ug3UAAA/uPZvjN6ZA3UzaTHaViq2O9Dd6DnvWm+Xpxz6Nu/E8zlwNeSgiPq9armGkeliRwurF+o80VksRWeoOtDmAGrN4hE9LUCjGA7VwCaAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-dolomitico-super-white-390.avif",
+        "webp": "/img/pedra-marmore-dolomitico-super-white-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-dolomitico-super-white-768.avif",
+        "webp": "/img/pedra-marmore-dolomitico-super-white-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-dolomitico-thassos": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAgCdASoYAB4APwF4tFQvJyUoqAgB4CAJaQAAPbY4AAD+70o3iaoc6deBngAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-dolomitico-thassos-390.avif",
+        "webp": "/img/pedra-marmore-dolomitico-thassos-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-dolomitico-thassos-768.avif",
+        "webp": "/img/pedra-marmore-dolomitico-thassos-768.webp"
+      }
+    ]
+  },
   "pedra-marmore-nero-marquina": {
     "width": 1122,
     "height": 1402,
@@ -631,6 +733,142 @@
         "width": 768,
         "avif": "/img/pedra-marmore-travertino-romano-bruto-768.avif",
         "webp": "/img/pedra-marmore-travertino-romano-bruto-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzito-azul-macaubas": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABwBQCdASoYAB4APwFqrE8rJiQiMAgBYCAJZQDDrBh1vNRatMuCtyyG7Pe/mDA9tb8WXYQAAP7HFliJJSPpjUgaGzS8uUaQo5JrHumsbmRAOpznVssQ5T5zq6BOBNlZl8vNhzFhrT+TDzklqy+PyptB6myiG5csL/73XerryXm+boIHAAA=",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzito-azul-macaubas-390.avif",
+        "webp": "/img/pedra-quartzito-azul-macaubas-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzito-azul-macaubas-768.avif",
+        "webp": "/img/pedra-quartzito-azul-macaubas-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzito-cristallo": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACQBACdASoYAB4APwF4s1QrJySjKAgBYCAJaQAAKc+z4QnH4f8xeo/QKAEvxIAA/uqWykaR+XWWowIVinQRV3u3GgP35d98Y8lC2kxx0K7IAAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzito-cristallo-390.avif",
+        "webp": "/img/pedra-quartzito-cristallo-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzito-cristallo-768.avif",
+        "webp": "/img/pedra-quartzito-cristallo-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzito-fusion": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAAAQBgCdASoYAB4APwFoqk6rJaOiMAgBYCAJZgCxG9TK53Jw/Pf+6H23SsixoPO+8PA+QBkaVt8I1gAA/lIfgKS94JQ4p+I1bquegMenU3Vc9AzZGSKze5m2lrwhjB3FScw0w9bVVCxstRIx4SbRQVz78RTOrqNGz7lQQrxuDyPRQFzGUejHGwXQK4iuT5bokAa330GN1j0syTQtIxm3sgnb3wigKOdkIeh3aVtLoM1sqBmLb+fjH8ofP7Rkc5QzYJbuZfrJjidC52AA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzito-fusion-390.avif",
+        "webp": "/img/pedra-quartzito-fusion-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzito-fusion-768.avif",
+        "webp": "/img/pedra-quartzito-fusion-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzito-mont-blanc": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAwCdASoYAB4APwF2slOvJySiqAgB4CAJaQAAPPV7/1hMVwhUgAD+7GKOpGs6fAqQTYlup1Eqx+OdzAAAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzito-mont-blanc-390.avif",
+        "webp": "/img/pedra-quartzito-mont-blanc-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzito-mont-blanc-768.avif",
+        "webp": "/img/pedra-quartzito-mont-blanc-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzito-perla-venata": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAADQBACdASoYAB4APwFysFKrJqQiqAqpYCAJZwDDcA9qh1AWaBlNUnTSniGF8UT+AAD+6pbFxK65erlWLnFYaxGHcPunYHQ4+IYyaxxAHTj5T8JTwwDmgi3HPCYgmuEYMrqAAAAA",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzito-perla-venata-390.avif",
+        "webp": "/img/pedra-quartzito-perla-venata-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzito-perla-venata-768.avif",
+        "webp": "/img/pedra-quartzito-perla-venata-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzito-sea-pearl": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAAAQBACdASoYAB4APwFsr0+rJiQiKA1RYCAJaWZAABxWtYJXAJL//1R9gAD+7FsMmAFDbGaepgKEDoK+Ak/OEwiU0CyuqhCehes5Ryqx6fE2kyFBk6M+VKkDYgSK3SLdcjIZ8BX6NQAAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzito-sea-pearl-390.avif",
+        "webp": "/img/pedra-quartzito-sea-pearl-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzito-sea-pearl-768.avif",
+        "webp": "/img/pedra-quartzito-sea-pearl-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzito-taj-mahal": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAACwAwCdASoYAB4APwFyslIrJqSiqAqpYCAJZ2ZAABpxFu9ZXlT7gAD+6lUYgAr2rQSCjXq7Dn8V6CDQpjlVgQWRsgs3hA/lXrbOT/0JWvizUfD2qZ75iFTNjzYAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzito-taj-mahal-390.avif",
+        "webp": "/img/pedra-quartzito-taj-mahal-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzito-taj-mahal-768.avif",
+        "webp": "/img/pedra-quartzito-taj-mahal-768.webp"
+      }
+    ]
+  },
+  "pedra-quartzito-verde-alexandrita": {
+    "width": 1024,
+    "height": 1280,
+    "placeholder": "data:image/webp;base64,UklGRv4AAABXRUJQVlA4IPIAAACwBQCdASoYAB4APwFyslGrJqSiqAqpYCAJZQDGRagcYFUWEw3ZqIDEoRAVOYgMsRLNQZcHvfQA/tb/gXMiTwOF26jWGrItxpX5qURBQhOpkk5oAhjchOmP8AqlRYQBm47/IztStO08TTgcwwylNl+cJzEivrbHlRTnCI9BCYrsvL9PenALsaYKOmFB4ypGeBehN5wJkJOAxZbHuAPOocGXq6r9HI0XT4AllFgjLcUlFKtC56tVV70LJmldRZzzlTAxt3JUWKi2FnL9XsUhX6/IrOA3JhezcwrS7owNGigo3yCSTghxgTitLPyq7ioKBaAAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-quartzito-verde-alexandrita-390.avif",
+        "webp": "/img/pedra-quartzito-verde-alexandrita-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-quartzito-verde-alexandrita-768.avif",
+        "webp": "/img/pedra-quartzito-verde-alexandrita-768.webp"
       }
     ]
   },

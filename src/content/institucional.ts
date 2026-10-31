@@ -18,13 +18,13 @@ export const institucional = {
   ],
   oferta: pendente('confirmar lista de serviços e aplicações executados pela JK'),
   catalogo: pendente('confirmar nomes comerciais de pedras e acabamentos trabalhados pela JK'),
-  // Por categoria (T-0002): com a lista de 19/10 falta só o acabamento; lâminas já têm acabamento; dolomíticos e quartzitos ainda não têm nomes (O2).
+  // Por categoria (T-0002): com a lista de 19/10 falta só o acabamento; lâminas já têm acabamento; dolomíticos e quartzitos têm nomes de pesquisa de mercado, a confirmar com a cliente (T-0010, O2).
   catalogoCategoria: <Partial<Record<string, Pendente>>>{
     granito: pendente('confirmar acabamentos trabalhados em granitos'),
     marmore: pendente('confirmar acabamentos trabalhados em mármores'),
     quartzo: pendente('confirmar acabamentos trabalhados em quartzos'),
-    'marmore-dolomitico': pendente('confirmar nomes comerciais de pedras e acabamentos de mármores dolomíticos'),
-    quartzito: pendente('confirmar nomes comerciais de pedras e acabamentos de quartzitos naturais'),
+    'marmore-dolomitico': pendente('confirmar com a cliente os mármores dolomíticos da pesquisa (T-0010) e os acabamentos'),
+    quartzito: pendente('confirmar com a cliente os quartzitos da pesquisa (T-0010) e os acabamentos'),
   },
   historia: cliente.apresentacao,
   processo: pendente('confirmar etapas de atendimento, medição, produção e instalação da JK'),

@@ -12,7 +12,7 @@ import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
-const base = "docs/trabalho/HU-0001-imagens-novas-catalogo";
+const base = process.env.BASE ?? "docs/trabalho/HU-0001-imagens-novas-catalogo"; // T-0010: BASE=docs/trabalho/avulsas/T-0010
 const ids = process.argv.slice(2);
 if (!ids.length) { console.error("Uso: node scripts/comparar-imagens-geradas.mjs <id> [<id> ...]"); process.exit(1); }
 

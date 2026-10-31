@@ -4,17 +4,12 @@
 
 ## Tasks por status
 
-### em-desenvolvimento (1)
-
-| Task | Título | HU | Cobre | Depende de | Risco |
-|---|---|---|---|---|---|
-| [T-0010](avulsas/tasks/T-0010-pedras-dolomiticos-quartzitos.md) | Pedras de Mármores dolomíticos e Quartzitos naturais no catálogo | avulsa | — | — | normal |
-
-### em-revisao (1)
+### em-revisao (2)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|
 | [T-0008](avulsas/tasks/T-0008-links-e-botoes.md) | Links e botões visíveis no site | avulsa | — | — | normal |
+| [T-0010](avulsas/tasks/T-0010-pedras-dolomiticos-quartzitos.md) | Pedras de Mármores dolomíticos e Quartzitos naturais no catálogo | avulsa | — | — | normal |
 
 ### em-teste (7)
 

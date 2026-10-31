@@ -291,3 +291,25 @@ Dois ambientes (cozinha com ilha e lavatório), cada um gerado primeiro em Calac
 | assets/images/configurador-lavatorio-calacatta.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `configurador-lavatorio-calacatta` | 1672×941 |
 | assets/images/configurador-lavatorio-travertino.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `configurador-lavatorio-travertino` | 1672×941 |
 | assets/images/configurador-lavatorio-preto-sao-gabriel.png | Codex CLI 0.163.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-21 | `configurador-lavatorio-preto-sao-gabriel` | 1672×941 |
+
+
+## T-0010: mármores dolomíticos e quartzitos naturais, gerados pelo Codex (Astra)
+
+Geradas em 2026-10-31 com o Codex CLI 0.166.0 (`image_generation`, agente Astra), no plano do Vitor, sem cobrança por imagem e sem chave no projeto. O Higgsfield estava previsto, mas a chave da API venceu em 26/10/2026 e o Vitor mandou usar o Codex. Mesmo protocolo da HU-0001: fotos de fornecedores só como referência de cor e veio, fora do git e sem URL registrada; nenhuma imagem é cópia delas (ADR-0001); nada da cliente foi enviado ao gerador; sem aviso de IA no site (princípio 6). Os nomes das pedras vêm de pesquisa de mercado (`docs/referencias/pesquisa-dolomiticos-quartzitos.md`), com exceção ao princípio 1 aprovada pelo Vitor em 31/10/2026. Prompt, tentativas e avaliação de cada uma em [hu-0001-prompts.json](hu-0001-prompts.json), com `"task": "T-0010"`.
+
+| Arquivo | Ferramenta | Data | Chave do prompt | Tamanho |
+|---|---|---|---|---|
+| assets/images/pedra-marmore-dolomitico-super-white.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-marmore-dolomitico-super-white` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-marmore-dolomitico-branco-michelangelo.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-marmore-dolomitico-branco-michelangelo` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-marmore-dolomitico-lunar.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-marmore-dolomitico-lunar` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-marmore-dolomitico-biancatto.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-marmore-dolomitico-biancatto` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-marmore-dolomitico-donatello.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-marmore-dolomitico-donatello` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-marmore-dolomitico-thassos.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-marmore-dolomitico-thassos` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-quartzito-taj-mahal.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-taj-mahal` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-quartzito-perla-venata.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-perla-venata` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-quartzito-mont-blanc.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-mont-blanc` | 1122×1402 |
+| assets/images/pedra-quartzito-cristallo.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-cristallo` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-quartzito-sea-pearl.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-sea-pearl` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-quartzito-fusion.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-fusion` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-quartzito-azul-macaubas.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-azul-macaubas` | 1024×1280 (recorte 4:5 de 1024×1536) |
+| assets/images/pedra-quartzito-verde-alexandrita.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-verde-alexandrita` | 1024×1280 (recorte 4:5 de 1024×1536) |
