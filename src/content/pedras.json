@@ -32,5 +32,19 @@
   { "slug": "lamina-cinza", "nome": "Lâmina cinza", "categoria": "ultracompacto" },
   { "slug": "lamina-travertino", "nome": "Travertino", "categoria": "ultracompacto" },
   { "slug": "lamina-calacatta", "nome": "Calacatta", "categoria": "ultracompacto" },
-  { "slug": "lamina-taj-mahal", "nome": "Taj Mahal", "categoria": "ultracompacto" }
+  { "slug": "lamina-taj-mahal", "nome": "Taj Mahal", "categoria": "ultracompacto" },
+  { "slug": "marmore-dolomitico-super-white", "nome": "Super White", "categoria": "marmore-dolomitico" },
+  { "slug": "marmore-dolomitico-branco-michelangelo", "nome": "Branco Michelangelo", "categoria": "marmore-dolomitico" },
+  { "slug": "marmore-dolomitico-lunar", "nome": "Lunar", "categoria": "marmore-dolomitico" },
+  { "slug": "marmore-dolomitico-biancatto", "nome": "Biancatto", "categoria": "marmore-dolomitico" },
+  { "slug": "marmore-dolomitico-donatello", "nome": "Donatello", "categoria": "marmore-dolomitico" },
+  { "slug": "marmore-dolomitico-thassos", "nome": "Thassos", "categoria": "marmore-dolomitico" },
+  { "slug": "quartzito-taj-mahal", "nome": "Taj Mahal", "categoria": "quartzito" },
+  { "slug": "quartzito-perla-venata", "nome": "Perla Venata", "categoria": "quartzito" },
+  { "slug": "quartzito-mont-blanc", "nome": "Mont Blanc", "categoria": "quartzito" },
+  { "slug": "quartzito-cristallo", "nome": "Cristallo", "categoria": "quartzito" },
+  { "slug": "quartzito-sea-pearl", "nome": "Sea Pearl", "categoria": "quartzito" },
+  { "slug": "quartzito-fusion", "nome": "Fusion", "categoria": "quartzito" },
+  { "slug": "quartzito-azul-macaubas", "nome": "Azul Macaúbas", "categoria": "quartzito" },
+  { "slug": "quartzito-verde-alexandrita", "nome": "Verde Alexandrita", "categoria": "quartzito" }
 ]

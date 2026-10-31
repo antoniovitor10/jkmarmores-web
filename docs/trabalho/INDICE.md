@@ -4,12 +4,13 @@
 
 ## Tasks por status
 
-### em-revisao (2)
+### em-revisao (3)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|
 | [T-0008](avulsas/tasks/T-0008-links-e-botoes.md) | Links e botões visíveis no site | avulsa | — | — | normal |
 | [T-0009](avulsas/tasks/T-0009-previa-fundo-branco.md) | Prévia do site com fundo branco em /1 | avulsa | — | — | normal |
+| [T-0010](avulsas/tasks/T-0010-pedras-dolomiticos-quartzitos.md) | Pedras de Mármores dolomíticos e Quartzitos naturais no catálogo | avulsa | — | — | normal |
 
 ### em-teste (7)
 

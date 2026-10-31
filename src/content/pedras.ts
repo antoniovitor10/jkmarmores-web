@@ -1,9 +1,10 @@
 // Pedras que a JK trabalha (lista enviada pela cliente em 19/10/2026; HU-0001, T-0002).
+// Dolomíticos e quartzitos vêm de pesquisa de mercado, a confirmar com a cliente (T-0010, exceção ao princípio 1).
 // Os dados ficam em pedras.json para o scripts/check-pedras.mjs ler sem TypeScript.
 import dados from './pedras.json';
 import manifesto from '@/generated/images.json';
 
-export type CategoriaPedra = 'granito' | 'marmore' | 'quartzo' | 'ultracompacto';
+export type CategoriaPedra = 'granito' | 'marmore' | 'marmore-dolomitico' | 'quartzito' | 'quartzo' | 'ultracompacto';
 export type Pedra = {
   slug: string;
   nome: string;
@@ -23,7 +24,7 @@ export const outrasPedras = 'Trabalhamos com outras pedras; pergunte pelo WhatsA
 // Título da lista nas categorias sem grupos (mantém a ordem H1 → H2 → H3 dos cartões).
 export const tituloPedras = 'Pedras';
 
-const rotuloCategoria: Record<CategoriaPedra, string> = { granito: 'granito', marmore: 'mármore', quartzo: 'quartzo', ultracompacto: 'lâmina' };
+const rotuloCategoria: Record<CategoriaPedra, string> = { granito: 'granito', marmore: 'mármore', 'marmore-dolomitico': 'mármore dolomítico', quartzito: 'quartzito', quartzo: 'quartzo', ultracompacto: 'lâmina' };
 
 export const imagemPedra = (pedra: Pedra) => `pedra-${pedra.slug}`;
 
@@ -33,7 +34,7 @@ export function pedrasVisiveis(categoria: string) {
   return pedras.filter((pedra) => pedra.categoria === categoria && !pedra.oculta && imagens[imagemPedra(pedra)]);
 }
 
-// Nome repetido em mais de uma categoria (hoje só Calacatta) leva a categoria na mensagem (PRD, P1).
+// Nome repetido em mais de uma categoria (hoje Calacatta e Taj Mahal) leva a categoria na mensagem (PRD, P1).
 export function mensagemPedra(pedra: Pedra) {
   const repetido = pedras.filter((outra) => outra.nome === pedra.nome).length > 1;
   const nome = repetido ? `${pedra.nome} (${rotuloCategoria[pedra.categoria]})` : pedra.nome;
