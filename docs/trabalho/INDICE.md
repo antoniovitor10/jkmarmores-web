@@ -4,6 +4,12 @@
 
 ## Tasks por status
 
+### em-desenvolvimento (1)
+
+| Task | Título | HU | Cobre | Depende de | Risco |
+|---|---|---|---|---|---|
+| [T-0009](avulsas/tasks/T-0009-previa-fundo-branco.md) | Prévia do site com fundo branco em /1 | avulsa | — | — | normal |
+
 ### em-revisao (1)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
