@@ -395,3 +395,45 @@ a.link-inline { color:var(--cor-caramelo); text-decoration:underline; text-decor
 .footer-grid a:not(.brand) { color:var(--cor-caramelo); text-decoration:none; text-underline-offset:5px; }
 @media(hover:hover) { .footer-grid a:not(.brand):hover { text-decoration:underline; } }
 .footer-grid a:not(.brand):focus-visible { text-decoration:underline; }
+
+/* T-0009: prévia com fundo branco (publicada só em /1; a raiz segue escura).
+   Branco puro no fundo; caramelo escuro #7a5c42 para texto e links (o caramelo #c9ab91 tem 2,16:1 no branco);
+   botão grafite com texto branco. Rodapé, fotos com texto por cima e o botão flutuante do WhatsApp continuam escuros/caramelo. */
+:root { --cor-fundo:#ffffff; --cor-papel:#ffffff; --cor-texto:#1f1b18; --cor-superficie:#f6f3ef; --cor-borda:#d8cfc5; --cor-borda-controle:#8c7a66; --cor-destaque:#7a5c42; --cor-titulo-destaque:#6b4f38; --cor-grafite:#2b2622; --cor-caramelo:#7a5c42; --cor-muted:#5e554c; --botao-fundo:#2b2622; --botao-texto:#ffffff; --botao-borda:#2b2622; }
+html { color-scheme:light; }
+body { background:#ffffff; }
+.site-header { background:#ffffff; }
+.button:hover,.button:focus-visible { background:#4a3f35; border-color:#4a3f35; color:#ffffff; }
+.contact-panel .button:not(.button-outline) { background:var(--botao-fundo); border-color:var(--botao-borda); color:var(--botao-texto); }
+.button-outline:hover,.contact-panel .button-outline:hover { background:transparent; color:var(--cor-texto); }
+@media(hover:hover) { .button-outline:hover,.contact-panel .button-outline:hover { background:var(--cor-grafite); border-color:var(--cor-grafite); color:#ffffff; } }
+.button-outline:focus-visible,.contact-panel .button-outline:focus-visible { background:var(--cor-grafite); border-color:var(--cor-grafite); color:#ffffff; }
+.institutional-intro h1,.signature-copy h2,.signature-stage > h2,.home-contact-grid h2 { color:var(--cor-titulo-destaque); }
+.signature-stage > h2 em { color:var(--cor-texto); }
+.signature-brand p { color:var(--cor-destaque); }
+.request-story,.contact-panel { border-top-color:var(--cor-borda); }
+.contact-panel { background:var(--cor-fundo); color:var(--cor-texto); }
+.home-page > #orcamento { background:var(--cor-superficie); color:var(--cor-texto); }
+.home-page > #orcamento :is(.eyebrow,.step-number) { color:var(--cor-destaque); }
+.contact-grid > div > p:not(.eyebrow) { color:var(--cor-muted); }
+.selector-image { background:var(--cor-superficie); }
+.selector-controls legend { color:var(--cor-destaque); }
+.selector-controls button { color:var(--cor-texto); border-color:var(--cor-borda-controle); }
+.selector-controls button[aria-pressed="true"] { border-color:var(--cor-grafite); background:var(--cor-grafite); color:#ffffff; }
+.selector-controls button:hover { border-color:var(--cor-grafite); }
+.mobile-nav nav { background:#ffffff; border-color:var(--cor-borda-controle); }
+@media(max-width:800px) { .mobile-whatsapp { background:#c9ab91; color:#151310; border-color:#c9ab91; } }
+
+/* Fotos com texto por cima: o texto continua claro sobre o escurecimento. */
+.stone-panel figcaption { color:#eee5dc; }
+.home-hero { --cor-caramelo:#c9ab91; --cor-texto:#eee5dc; }
+/* A capa fecha no monograma sobre o branco da página, e não mais sobre o grafite. */
+.hero-mask > rect { fill:#ffffff; }
+.home-hero .hero-signature p { color:var(--cor-titulo-destaque); }
+.home-hero .hero-signature a.text-link { color:#7a5c42; }
+
+/* Rodapé grafite, como fechamento da página, com os tokens da versão escura. */
+.site-footer { --cor-caramelo:#c9ab91; --cor-texto:#eee5dc; --cor-muted:#b9aaa0; --cor-borda:#62564b; --cor-destaque:#d4b699; background:#10100f; color:#d8cec3; border-top:0; }
+/* Sem o fecho da capa (movimento reduzido), a base da foto não pode terminar em grafite sólido antes do branco. */
+.home-hero [data-hero-veil] { background:linear-gradient(90deg,rgba(8,8,7,.87),rgba(8,8,7,.25) 65%,transparent),linear-gradient(0deg,rgba(8,8,7,.55),transparent 30%); }
+@media(max-width:700px) { .home-hero [data-hero-veil] { background:linear-gradient(0deg,rgba(8,8,7,.82),rgba(8,8,7,.6) 32%,rgba(8,8,7,.05) 85%); } }
