@@ -3,7 +3,7 @@ id: T-0012
 titulo: "Site principal com fundo branco"
 hu: avulsa
 trilha: micro
-status: backlog
+status: em-desenvolvimento
 depende_de: []
 cobre: []
 complexidade: 3
@@ -86,3 +86,5 @@ nenhum
 ## Histórico
 
 - 2026-10-31 · criada (backlog) · claude-code/opus (pedido do Vitor: "deixa o site em branco o principal")
+- 2026-10-31 · backlog → em-desenvolvimento · desenvolvedor ("Aprovo, pode começar" na conversa, incluindo a troca da regra do design system)
+- 2026-10-31 · execução iniciada na branch task/T-0012-site-principal-branco (a partir de main, b871a80) · claude-code/opus
