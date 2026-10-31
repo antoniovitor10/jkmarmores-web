@@ -4,6 +4,12 @@
 
 ## Tasks por status
 
+### backlog (1)
+
+| Task | Título | HU | Cobre | Depende de | Risco |
+|---|---|---|---|---|---|
+| [T-0012](avulsas/tasks/T-0012-site-principal-branco.md) | Site principal com fundo branco | avulsa | — | — | alto |
+
 ### em-revisao (2)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
