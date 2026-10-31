@@ -396,7 +396,7 @@ a.link-inline { color:var(--cor-caramelo); text-decoration:underline; text-decor
 @media(hover:hover) { .footer-grid a:not(.brand):hover { text-decoration:underline; } }
 .footer-grid a:not(.brand):focus-visible { text-decoration:underline; }
 
-/* T-0009: prévia com fundo branco (publicada só em /1; a raiz segue escura).
+/* T-0009 e T-0012: tema branco, o tema do site desde 31/10/2026 (design system versão 2, ADR-0004).
    Branco puro no fundo; caramelo escuro #7a5c42 para texto e links (o caramelo #c9ab91 tem 2,16:1 no branco);
    botão grafite com texto branco. Rodapé, fotos com texto por cima e o botão flutuante do WhatsApp continuam escuros/caramelo. */
 :root { --cor-fundo:#ffffff; --cor-papel:#ffffff; --cor-texto:#1f1b18; --cor-superficie:#f6f3ef; --cor-borda:#d8cfc5; --cor-borda-controle:#8c7a66; --cor-destaque:#7a5c42; --cor-titulo-destaque:#6b4f38; --cor-grafite:#2b2622; --cor-caramelo:#7a5c42; --cor-muted:#5e554c; --botao-fundo:#2b2622; --botao-texto:#ffffff; --botao-borda:#2b2622; }

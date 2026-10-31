@@ -3,7 +3,7 @@ id: T-0012
 titulo: "Site principal com fundo branco"
 hu: avulsa
 trilha: micro
-status: em-desenvolvimento
+status: em-revisao
 depende_de: []
 cobre: []
 complexidade: 3
@@ -12,10 +12,10 @@ sensivel: false
 skills: [design-system, padroes-codigo, responsivo-desktop-mobile, testes, deploy]
 criada_em: 2026-10-31
 ferramenta: "claude-code/opus"
-voltas: 0
+voltas: 1
 bloqueios: 0
 ca_nao_verificados: 0
-testes_criados: 0
+testes_criados: 1
 testes_pegam: 0
 revisao_humana: ""
 homologacao: ""
@@ -83,8 +83,39 @@ nenhum
 - A fonte (T-0011).
 - Mudanças de layout ou de texto.
 
+## Execução
+
+**Branch:** `task/T-0012-site-principal-branco`, no worktree `../jk-t0012`, a partir da `main` (b871a80, que já tem a T-0010). Sem push (autonomia 0). A `main` avança direto, sem conflito, com o push desta branch.
+
+**O que mudou**
+- **Mescla da `task/T-0009-previa-fundo-branco`:** traz o bloco do tema branco em `globals.css`, o monograma transparente, o `themeColor` branco, `e2e/tema-claro.spec.ts` e `e2e/links.spec.ts` com as cores novas. O único conflito foi o `INDICE.md`, resolvido regenerando o arquivo.
+- **`src/app/globals.css`:** o comentário do bloco não diz mais "publicada só em /1; a raiz segue escura".
+- **`e2e/tema-claro.spec.ts`:** o teste do `noindex` agora segue o modo do build. Ele lê o `robots.txt`: em homologação exige `noindex`, em produção exige `index, follow`.
+- **`metodo/projeto/skills/design-system/SKILL.md`:** versão 2, com a tabela de tokens do branco, as capturas de referência em `docs/auditorias/versao-2/` e a origem da decisão. Os adaptadores e a linha do `AGENTS.md` foram regerados pelo `gerar-adaptadores.mjs`; fora a skill de design, as outras diferenças eram só de fim de linha.
+- **`docs/decisoes/ADR-0004-site-branco.md`:** registra a troca (o ADR-0003 fica reservado para a fonte, na T-0011).
+- **`docs/auditorias/versao-2/`:** capturas da primeira tela em 1440 e 390 (home, materiais, granito, sobre e contato).
+
+**Verificação (31/10/2026)**
+- `npm run lint`: 0 erros e 2 avisos antigos em `tools/higgsfield/`.
+- `SITE_MODE=homolog npm run build` e `npx playwright test --workers=2`: 77 passaram e 3 foram pulados (testes só de celular ou só de desktop). Isso inclui os testes da T-0009 e da T-0010 juntos.
+- `MSYS_NO_PATHCONV=1 SITE_MODE=producao npm run build`: ok, com `check-pendencias`, `check-avisos` e `check-pedras` (48 pedras). `tema-claro` e `links` passaram no build de produção (30 passaram e 2 foram pulados), inclusive o `index, follow`.
+- Lighthouse no build de produção:
+  - Home: 97 no celular e 100 no desktop.
+  - `/materiais/granito/`: 94 no celular e 100 no desktop. O LCP de 3,12 s no celular vem da foto do topo, que não mudou.
+  - Acessibilidade 100 nas quatro medições.
+- Capturas em `qa/capturas/T-0012/`, olhadas no celular: home, granito, quartzito e contato.
+
+| CA | Resultado | Evidência |
+|---|---|---|
+| CA-1 | ok | `tema-claro` CA-1 nos builds de homologação e de produção |
+| CA-2 | ok | `tema-claro` CA-2 e Lighthouse Acessibilidade 100 |
+| CA-3 | ok | `tema-claro` CA-3 |
+| CA-4 | ok | build de produção com `check-pendencias`; teste de indexação com `index, follow`; conferir no ar depois do push |
+| CA-5 | ok | diff da skill `design-system` e o ADR-0004 |
+
 ## Histórico
 
 - 2026-10-31 · criada (backlog) · claude-code/opus (pedido do Vitor: "deixa o site em branco o principal")
 - 2026-10-31 · backlog → em-desenvolvimento · desenvolvedor ("Aprovo, pode começar" na conversa, incluindo a troca da regra do design system)
 - 2026-10-31 · execução iniciada na branch task/T-0012-site-principal-branco (a partir de main, b871a80) · claude-code/opus
+- 2026-10-31 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)

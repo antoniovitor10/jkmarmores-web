@@ -1,6 +1,6 @@
 import { test, expect, type Page } from "@playwright/test";
 
-// T-0009: prévia com fundo branco. Rode com o build de homolog (SITE_MODE=homolog npm run build).
+// T-0009: prévia com fundo branco; desde a T-0012 é o tema do site principal. Vale para os builds de homologação e de produção.
 const BRANCO = "rgb(255, 255, 255)";
 const TEXTO = "rgb(31, 27, 24)";
 const PAGINAS = ["/", "/materiais/", "/materiais/granito/", "/aplicacoes/", "/galeria/", "/sobre/", "/contato/"];
@@ -102,10 +102,14 @@ test.describe("T-0009 · prévia com fundo branco", () => {
     await botao.hover();
   });
 
-  test("CA-8: a prévia não é indexada (homolog)", async ({ page }) => {
+  // T-0012: o branco virou o site principal. A indexação segue o modo do build:
+  // homologação (robots.txt com Disallow: /) fica com noindex; produção fica indexável.
+  test("CA-8 (T-0009) / CA-4 (T-0012): a indexação segue o modo do build", async ({ page, request }) => {
+    const robots = await (await request.get("/robots.txt")).text();
+    const homolog = /Disallow: \/\s*$/m.test(robots);
     for (const caminho of ["/", "/materiais/granito/"]) {
       await page.goto(caminho);
-      await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
+      await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", homolog ? /noindex/ : /^index, follow$/);
     }
   });
 });
