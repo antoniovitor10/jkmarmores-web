@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   robots: isHomolog ? { index: false, follow: false } : { index: true, follow: true },
 };
-export const viewport: Viewport = { themeColor: '#10100f' };
+export const viewport: Viewport = { themeColor: '#ffffff' };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const empresa = conteudo.empresa;

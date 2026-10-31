@@ -1,7 +1,11 @@
 import { expect, test, type Locator } from "@playwright/test";
 
-// T-0008: links e botões que parecem clicáveis. Caramelo = #c9ab91 = rgb(201, 171, 145).
-const CARAMELO = "rgb(201, 171, 145)";
+// T-0008: links e botões que parecem clicáveis.
+// T-0009 (prévia com fundo branco): na página o caramelo de texto é #7a5c42 = rgb(122, 92, 66);
+// o rodapé continua grafite com o caramelo #c9ab91 = rgb(201, 171, 145); o foco do botão com contorno preenche de grafite.
+const CARAMELO = "rgb(122, 92, 66)";
+const CARAMELO_RODAPE = "rgb(201, 171, 145)";
+const GRAFITE = "rgb(43, 38, 34)";
 
 async function estiloLink(link: Locator) {
   return link.evaluate((el) => {
@@ -128,7 +132,7 @@ test.describe("links e botões", () => {
     for (const nome of ["A empresa", "Materiais", "Chamar no WhatsApp", "Todos os contatos"]) {
       const link = rodape.getByRole("link", { name: nome, exact: true });
       await link.scrollIntoViewIfNeeded();
-      expect(await link.evaluate((el) => getComputedStyle(el).color), nome).toBe(CARAMELO);
+      expect(await link.evaluate((el) => getComputedStyle(el).color), nome).toBe(CARAMELO_RODAPE);
       if (!isMobile) {
         expect(await link.evaluate((el) => getComputedStyle(el).textDecorationLine), nome).toBe("none");
         await link.hover();
@@ -136,7 +140,7 @@ test.describe("links e botões", () => {
       }
     }
     const telefone = rodape.locator(".footer-phone");
-    expect(await telefone.evaluate((el) => getComputedStyle(el).color)).toBe(CARAMELO);
+    expect(await telefone.evaluate((el) => getComputedStyle(el).color)).toBe(CARAMELO_RODAPE);
     await rodape.getByRole("link", { name: "Todos os contatos", exact: true }).click();
     await expect(page).toHaveURL(/\/contato\/$/);
   });
@@ -170,7 +174,7 @@ test.describe("links e botões", () => {
     await page.keyboard.press("Tab");
     await expect(botao).toBeFocused();
     expect(await botao.evaluate(contorno)).toBe("solid 3px");
-    await expect.poll(() => botao.evaluate((el) => getComputedStyle(el).backgroundColor)).toBe(CARAMELO);
+    await expect.poll(() => botao.evaluate((el) => getComputedStyle(el).backgroundColor)).toBe(GRAFITE);
     await page.keyboard.press("Tab");
     await expect(link).toBeFocused();
     expect(await link.evaluate(contorno)).toBe("solid 3px");
