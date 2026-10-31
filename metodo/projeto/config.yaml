@@ -1,0 +1,85 @@
+# Configuração do método neste projeto.
+# Preenchida pelo agente de onboarding (skill aplicar-metodo) em 2026-10-20 e revisada pelo desenvolvedor.
+# A versão do método instalada fica em metodo/nucleo/VERSAO.
+
+projeto: "JK Mármores e Granitos (jkmarmores-web)"
+
+# Caminho absoluto do repositório central do método (o que tem INSTALAR.md e template/).
+metodo_origem: 'C:\Users\Vitor\Desktop\claude-organization\metodo'
+
+# Onde ficam os status das tasks.
+#   local  → no frontmatter de cada task em docs/trabalho/ (padrão)
+#   prisma → no Prisma, via MCP; o frontmatter NÃO tem status (ver rastreadores/prisma.md)
+rastreador: local
+prisma:
+  url: ""
+  projeto_id: ""
+
+# Autonomia do agente (veja metodo/nucleo/fluxo.md, seção "Entrega e autonomia")
+#   0 supervisionado | 1 aprovar-merge | 2 autônomo
+# Neste projeto push é deploy: main publica a raiz, versao-1/2/3 publicam /1, /2 e /3.
+autonomia: 0
+autonomia_risco_alto: 0
+
+# true = existe homologação; no nível 2 a task termina em em-teste, não em concluida
+tem_homologacao: false
+
+status:
+  fluxo: [backlog, pronta, em-desenvolvimento, em-revisao, em-teste, concluida]
+  extras: [bloqueada]
+  agente_pode_iniciar: [em-desenvolvimento]
+  agente_pode_mover_para: [em-revisao, bloqueada]
+  agente_pode_mover_para_nivel2: [em-teste, concluida]
+
+git:
+  usa_git: true
+  # Decisão de 2026-10-20: as tasks saem da main (origin/main = producao = 694cd01 no onboarding).
+  branch_principal: main
+  padrao_branch: "task/{id}-{slug}"
+  padrao_commit: "{tipo}({id}): {resumo}"    # em português, sem emoji
+  padrao_titulo_pr: "[{id}] {titulo}"
+  plataforma: github
+  metodo_fora_do_git: false
+
+# Revisão de segurança/LGPD: sempre | quando-sensivel | nunca
+revisao_seguranca: quando-sensivel
+
+seguranca:
+  arquivos_proibidos: [".env", ".env.*", "*.pem", "*.key", "*.p12", "*.pfx", "*.jks", "*.keystore", "id_rsa", "id_ed25519", "tools/higgsfield/.env.local"]
+
+comandos:
+  instalar: "npm ci"
+  rodar: "npm run dev"                       # http://localhost:3000
+  testar: ""                                 # não há testes de unidade
+  e2e: "npx playwright test"                 # sobe o build estático com scripts/preview-local.mjs
+  lint: "npm run lint"
+  build: "npm run build"                     # images:build + next build + check:pendencias
+  deploy: "push na main (GitHub Actions + rsync); só com aprovação explícita do Vitor"
+
+testes:
+  interacao:
+    ferramenta: playwright
+    pasta: "e2e/"
+    rodar_um: "npx playwright test {arquivo}"
+    ambiente: "npm run build antes; o Playwright sobe scripts/preview-local.mjs na porta 3105 e usa o Chrome instalado"
+  roteiro_homologacao: true
+
+# Linha de base medida em 2026-10-20 na branch metodo/instalar (a partir de producao, 694cd01).
+linha_de_base:
+  data: "2026-10-20"
+  testes_falhando: []
+  e2e_falhando: []
+  lint_erros: null                 # 0 erros; 2 avisos em tools/higgsfield (variáveis sem uso)
+  lint_escopo: ""
+  build: "passa"
+
+adaptadores: [agents, claude]
+
+# Quem roda cada papel quando o time é montado no Maestri ou no Batuta.
+modelos_por_papel:
+  arquiteto: claude
+  planejador: claude
+  implementador: codex
+  testador: codex
+  revisor-codigo: claude
+  revisor-seguranca: claude

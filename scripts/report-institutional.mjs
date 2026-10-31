@@ -120,7 +120,7 @@ const lines=[
 '# AUDIT_LABEL=institucional-sobre, institucional-materiais, institucional-contato, institucional-materiais-pendente',
 'node scripts/check-home.mjs',
 'node scripts/check-quote-scene.mjs',
-'node scripts/audit-journey.mjs',
+'npx playwright test e2e/capa-jornada.spec.ts',
 'node scripts/capture-institutional.mjs',
 'node scripts/check-contrast.mjs',
 'npm run lint',

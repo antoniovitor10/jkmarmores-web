@@ -8,10 +8,12 @@
   "scripts": {
     "dev": "next dev",
     "lint": "eslint .",
-    "build": "npm run images:build && next build && npm run check:pendencias",
+    "build": "npm run images:build && next build && npm run check:pendencias && npm run check:avisos && npm run check:pedras",
     "images:build": "node scripts/build-images.mjs",
     "measure:bundle": "node scripts/measure-bundle.mjs",
-    "check:pendencias": "node scripts/check-pendencias.mjs"
+    "check:pendencias": "node scripts/check-pendencias.mjs",
+    "check:avisos": "node scripts/check-avisos.mjs",
+    "check:pedras": "node scripts/check-pedras.mjs"
   },
   "dependencies": {
     "gsap": "^3.15.0",
@@ -20,6 +22,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@tailwindcss/postcss": "4.3.3",
     "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",

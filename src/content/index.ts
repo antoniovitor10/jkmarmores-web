@@ -10,7 +10,7 @@ const ctaOrcamento = (origem: string) => ({
 const paginas: ConteudoSite["paginas"] = {
   inicio: {
     titulo: "Mármores e granitos em Barueri.",
-    introducao: "A JK Marmores e Granitos está no Parque Viana, em Barueri/SP. Fale por telefone sobre o seu projeto.",
+    introducao: "A JK Mármores e Granitos está no Parque Viana, em Barueri/SP. Fale por telefone sobre o seu projeto.",
     seo: {
       titulo: "JK Mármores e Granitos | Barueri e São Paulo, desde 2010",
       descricao: "Desde 2010, projetos residenciais, comerciais e industriais. Barueri, São Paulo, Grande São Paulo, ABC, interior, litoral norte e Baixada Santista. Fale com a JK.",
@@ -53,9 +53,9 @@ const paginas: ConteudoSite["paginas"] = {
   },
   sobre: {
     titulo: "Conheça a empresa",
-    introducao: "A JK Marmores e Granitos é uma marmoraria localizada no Parque Viana, em Barueri/SP. Conheça os dados da empresa e os canais de contato.",
+    introducao: "A JK Mármores e Granitos é uma marmoraria localizada no Parque Viana, em Barueri/SP. Conheça os dados da empresa e os canais de contato.",
     seo: {
-      titulo: "A empresa | JK Marmores e Granitos em Barueri",
+      titulo: "A empresa | JK Mármores e Granitos em Barueri",
       descricao: "Desde 2010, a JK transforma pedras naturais em expressões de personalidade, sofisticação e design. Conheça nossa história e a região atendida.",
       canonicalPath: "/sobre/",
     },
@@ -71,7 +71,7 @@ const paginas: ConteudoSite["paginas"] = {
     titulo: "Materiais para escolher com critério",
     introducao: cliente.materiaisIntro,
     seo: {
-      titulo: "Materiais e acabamentos | JK Marmores e Granitos",
+      titulo: "Materiais e acabamentos | JK Mármores e Granitos",
       descricao: "Mármores, granitos, mármores dolomíticos, quartzitos naturais, quartzos e lâminas ultracompactas sinterizadas. Conheça os materiais da JK.",
       canonicalPath: "/materiais/",
     },
@@ -79,7 +79,7 @@ const paginas: ConteudoSite["paginas"] = {
       { id: "catalogo", titulo: "Materiais disponíveis", texto: cliente.materiaisIntro },
       { id: "criterios", titulo: "O que observar", texto: "Pergunte sobre uso interno ou externo, incidência de calor, contato com alimentos, agentes de limpeza, variação de cor e veio e manutenção recomendada. A resposta depende da chapa e do fabricante." },
       { id: "acabamentos", titulo: "Acabamento muda a experiência de uso", texto: "Brilho, textura e tratamento de borda alteram aparência, toque e rotina de limpeza. Confirme quais acabamentos podem ser feitos no material escolhido." },
-      { id: "amostra", titulo: "Veja a amostra real", texto: "Imagens de tela e composições ilustrativas servem para explorar possibilidades. A cor e o desenho da chapa real devem ser conferidos antes da aprovação." },
+      { id: "amostra", titulo: "Veja a amostra real", texto: "Imagens de tela servem para explorar possibilidades. A cor e o desenho da chapa real devem ser conferidos antes da aprovação." },
     ],
     cta: ctaOrcamento("materiais"),
   },
@@ -116,8 +116,8 @@ const paginas: ConteudoSite["paginas"] = {
     titulo: "Converse sobre o seu projeto",
     introducao: "Você pode começar com uma descrição curta. Ambiente, material desejado, medidas aproximadas e cidade ajudam a organizar o pedido.",
     seo: {
-      titulo: "Contato e orçamento em Barueri | JK Marmores e Granitos",
-      descricao: "Fale com a JK Marmores e Granitos pelo telefone (11) 96797-6902. Endereço: Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP.",
+      titulo: "Contato e orçamento em Barueri | JK Mármores e Granitos",
+      descricao: "Fale com a JK Mármores e Granitos pelo telefone (11) 96797-6902. Endereço: Estrada dos Pinheiros, 379, Parque Viana, Barueri/SP.",
       canonicalPath: "/contato/",
     },
     secoes: [
@@ -135,8 +135,7 @@ export const aberturaHome = {
   orientacao: "Veja a pedra de perto. Compare materiais e acabamentos antes de decidir.",
   ctaSecundario: "Ver materiais",
   legenda: "Estudo de matéria",
-  avisoImagem: "Imagem ilustrativa, gerada por IA",
-  alt: "Estudo ilustrativo de uma bancada de pedra clara: veios delicados e borda em meia-esquadria sob luz lateral de manhã. Imagem gerada por IA, não representa obra da JK.",
+  alt: "Bancada de pedra clara com veios delicados e borda em meia-esquadria, sob luz lateral de manhã.",
 };
 
 const materiais: Material[] = materiaisCliente.map(item => ({
@@ -174,7 +173,7 @@ const aplicacoes: Aplicacao[] = [
 
 export const conteudo: ConteudoSite = {
   empresa: {
-    nome: "JK Marmores e Granitos",
+    nome: "JK Mármores e Granitos",
     razaoSocial: pendente("confirmar razão social"),
     cnpj: pendente("confirmar CNPJ"),
     telefone: "(11) 96797-6902",

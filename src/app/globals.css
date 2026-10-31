@@ -26,7 +26,7 @@ address { font-style:normal; }
 .section-heading { max-width:700px; margin-bottom:48px; }
 .section-heading h2 { margin-bottom:0; }
 .actions { display:flex; flex-wrap:wrap; gap:16px 28px; align-items:center; }
-.actions > a:not(.button),.text-link { display:inline-flex; align-items:center; font-size:14px; }
+.actions > a:not(.button) { display:inline-flex; align-items:center; font-size:14px; }
 .button,button,.header-cta { background:var(--botao-fundo); color:var(--botao-texto); border:1px solid var(--botao-borda); border-radius:0; padding:14px 24px; display:inline-flex; align-items:center; justify-content:center; text-decoration:none; font-size:14px; line-height:1.4; transition:background-color var(--dur-state) var(--ease-move); }
 .button:hover,button:hover { background:var(--cor-destaque); }
 .button:active,.header-cta:active,.mobile-whatsapp:active { transform:translateY(1px); transition:transform var(--dur-press) var(--ease-press); }
@@ -280,9 +280,10 @@ body:has(.home-page) .site-header { color:#eee5dc; }
 .selector-controls .button { width:100%; }
 .stone-swatch { gap:8px; }
 .stone-swatch span { display:block; width:16px; height:16px; border-radius:50%; border:1px solid #b6a79a; }
-.stone-swatch [data-tone="rosado"] { background:#bd8b75; }
-.stone-swatch [data-tone="bege"] { background:#dcccb1; }
-.stone-swatch [data-tone="escuro"] { background:#393531; }
+/* Amostras do configurador: cor média do close de cada pedra no catálogo (T-0006). */
+.stone-swatch [data-tone="calacatta"] { background:#e1dcd4; }
+.stone-swatch [data-tone="travertino"] { background:#ccbca9; }
+.stone-swatch [data-tone="preto-sao-gabriel"] { background:#100f0d; }
 .request-story { border-top:1px solid #3a332d; }
 .home-page > #orcamento { background:#1a1714; }
 .home-contact-grid { text-align:center; padding-block:24px; }
@@ -322,7 +323,6 @@ body:has(.home-page) .site-header { color:#eee5dc; }
 .material-number { display:block; color:var(--cor-destaque); font-size:11px; letter-spacing:.15em; margin-bottom:28px; }
 .material-card h3 { font-size:32px; line-height:1.15; max-width:22ch; min-height:2.3em; }
 .material-card p { color:var(--cor-muted); font-size:16px; max-width:36ch; }
-.material-card .text-link { font-size:14px; min-height:44px; padding:8px 0; display:inline-flex; align-items:center; }
 .materials-cover .editorial-image { margin:0; }
 .materials-cover .editorial-image img { width:100%; max-height:60svh; aspect-ratio:2/1; object-fit:cover; }
 .material-detail { display:grid; grid-template-columns:1fr 1fr; gap:100px; }
@@ -341,3 +341,99 @@ body:has(.home-page) .site-header { color:#eee5dc; }
 
 @media(prefers-reduced-motion:no-preference) { .button[data-gleam="true"]::before,.selector-controls button[data-gleam="true"]::before,.material-card[data-gleam="true"]::before { animation:grazing-light 750ms cubic-bezier(.22,.61,.36,1); } }
 body[data-motion-static="true"] *,body[data-motion-static="true"] *::before,body[data-motion-static="true"] *::after { animation:none !important; transition:none !important; }
+
+/* HU-0001 · T-0004: imagem da categoria no cartão de /materiais/ e no topo da página da categoria (mesmo arquivo, 4:5). */
+.material-image,.material-image img,.intro-image,.intro-image img { display:block; width:100%; }
+.material-image { margin:0 0 28px; }
+.material-image img,.intro-image img { height:auto; aspect-ratio:4/5; object-fit:cover; background-size:cover; }
+.intro-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,.82fr); gap:clamp(64px,7vw,112px); align-items:center; }
+.intro-image img { max-height:74svh; }
+@media(max-width:700px) { .material-image { margin-bottom:20px; } .intro-grid { grid-template-columns:1fr; gap:32px; } .intro-image img { aspect-ratio:4/3; max-height:none; } }
+
+/* HU-0001 · T-0002: cartões das pedras na página da categoria. Filete de 1 px entre linhas, nada arredondado. */
+.pedra-catalogo { padding-top:0; }
+.pedra-nota { color:var(--cor-muted); font-size:16px; margin:0 0 32px; }
+.pedra-grupo { font-size:clamp(28px,3vw,40px); margin:48px 0 24px; }
+/* Só para leitores de tela: mantém a ordem H1 → H2 → H3 sem um rótulo visual que não informa. */
+.pedra-rotulo { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0; }
+.pedra-grade { list-style:none; margin:0 0 16px; padding:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:0 32px; }
+.pedra-cartao { border-top:1px solid var(--cor-borda); padding:24px 0 28px; }
+.pedra-imagem,.pedra-imagem img { display:block; width:100%; }
+.pedra-imagem img { height:auto; aspect-ratio:4/5; object-fit:cover; background-size:cover; outline:1px solid var(--cor-borda); outline-offset:-1px; }
+.pedra-cartao h3 { font-size:24px; line-height:1.2; margin:20px 0 4px; }
+.pedra-outras { margin:16px 0 0; padding-top:20px; border-top:1px solid var(--cor-borda); }
+/* Grupos de 5 (mármores nacionais e importados) numa linha só, sem cartão órfão. */
+@media(min-width:1101px) { .pedra-grade[data-n="5"] { grid-template-columns:repeat(5,minmax(0,1fr)); } }
+@media(max-width:1000px) { .pedra-grade { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media(max-width:700px) {
+  .pedra-grade { grid-template-columns:repeat(2,minmax(0,1fr)); gap:0 16px; } .pedra-cartao h3 { font-size:20px; margin-top:14px; } .pedra-grupo { margin-top:32px; }
+  /* Último cartão ímpar ocupa a linha inteira, em 16:9, para a grade não terminar em órfão. */
+  .pedra-cartao:last-child:nth-child(odd) { grid-column:1 / -1; }
+  .pedra-cartao:last-child:nth-child(odd) .pedra-imagem img { aspect-ratio:16/9; }
+}
+
+/* T-0008: links e botões que parecem clicáveis. Link: caramelo, sublinhado e seta (fora do nome acessível).
+   Botão com contorno: borda caramelo de 1 px, sem fundo. Ícone só no WhatsApp (ADR-0002). */
+a.text-link,.material-card a.text-link,.pedra-outras a.text-link,.actions > a.text-link { display:inline-block; color:var(--cor-caramelo); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:5px; font-size:16px; line-height:20px; padding:12px 0; min-height:44px; }
+/* Telefone também é link, mas a seta é de navegação: fica sem ela. */
+a.text-link[href^="tel:"]::after { content:none; }
+a.text-link::after,a.com-seta::after { content:"→"; content:"→" / ""; display:inline-block; margin-left:.45em; text-decoration:none; transition:transform var(--dur-state) var(--ease-move); }
+@media(hover:hover) { a.text-link:hover { text-decoration-thickness:2px; } a.text-link:hover::after,a.com-seta:hover::after { transform:translateX(3px); } }
+a.text-link:focus-visible { text-decoration-thickness:2px; }
+.button-outline,.contact-panel .button-outline { background:transparent; color:var(--cor-texto); border:1px solid var(--cor-caramelo); gap:10px; }
+/* No toque o hover não pode grudar: anula o .button:hover global e só preenche com mouse ou foco de teclado. */
+.button-outline:hover,.contact-panel .button-outline:hover { background:transparent; color:var(--cor-texto); }
+@media(hover:hover) { .button-outline:hover,.contact-panel .button-outline:hover { background:var(--cor-caramelo); color:#151310; } }
+.button-outline:focus-visible,.contact-panel .button-outline:focus-visible { background:var(--cor-caramelo); color:#151310; }
+.botao-whatsapp { display:inline-flex; align-items:center; gap:10px; }
+.icone-whatsapp { flex:none; }
+.pedra-cartao .botao-whatsapp { width:100%; justify-content:center; margin-top:8px; }
+.contact-panel .botao-whatsapp { margin-top:12px; }
+@media(max-width:700px) { .actions .button-outline { font-size:14px; } .pedra-cartao .botao-whatsapp { padding:12px 8px; font-size:13px; gap:8px; } }
+/* T-0008, segunda volta: nenhum link solto sem sinal. Na frase, caramelo e sublinhado; no rodapé, caramelo e sublinhado no hover. */
+a.link-inline { color:var(--cor-caramelo); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:4px; }
+.footer-grid a:not(.brand) { color:var(--cor-caramelo); text-decoration:none; text-underline-offset:5px; }
+@media(hover:hover) { .footer-grid a:not(.brand):hover { text-decoration:underline; } }
+.footer-grid a:not(.brand):focus-visible { text-decoration:underline; }
+
+/* T-0009: prévia com fundo branco (publicada só em /1; a raiz segue escura).
+   Branco puro no fundo; caramelo escuro #7a5c42 para texto e links (o caramelo #c9ab91 tem 2,16:1 no branco);
+   botão grafite com texto branco. Rodapé, fotos com texto por cima e o botão flutuante do WhatsApp continuam escuros/caramelo. */
+:root { --cor-fundo:#ffffff; --cor-papel:#ffffff; --cor-texto:#1f1b18; --cor-superficie:#f6f3ef; --cor-borda:#d8cfc5; --cor-borda-controle:#8c7a66; --cor-destaque:#7a5c42; --cor-titulo-destaque:#6b4f38; --cor-grafite:#2b2622; --cor-caramelo:#7a5c42; --cor-muted:#5e554c; --botao-fundo:#2b2622; --botao-texto:#ffffff; --botao-borda:#2b2622; }
+html { color-scheme:light; }
+body { background:#ffffff; }
+.site-header { background:#ffffff; }
+.button:hover,.button:focus-visible { background:#4a3f35; border-color:#4a3f35; color:#ffffff; }
+.contact-panel .button:not(.button-outline) { background:var(--botao-fundo); border-color:var(--botao-borda); color:var(--botao-texto); }
+.button-outline:hover,.contact-panel .button-outline:hover { background:transparent; color:var(--cor-texto); }
+@media(hover:hover) { .button-outline:hover,.contact-panel .button-outline:hover { background:var(--cor-grafite); border-color:var(--cor-grafite); color:#ffffff; } }
+.button-outline:focus-visible,.contact-panel .button-outline:focus-visible { background:var(--cor-grafite); border-color:var(--cor-grafite); color:#ffffff; }
+.institutional-intro h1,.signature-copy h2,.signature-stage > h2,.home-contact-grid h2 { color:var(--cor-titulo-destaque); }
+.signature-stage > h2 em { color:var(--cor-texto); }
+.signature-brand p { color:var(--cor-destaque); }
+.request-story,.contact-panel { border-top-color:var(--cor-borda); }
+.contact-panel { background:var(--cor-fundo); color:var(--cor-texto); }
+.home-page > #orcamento { background:var(--cor-superficie); color:var(--cor-texto); }
+.home-page > #orcamento :is(.eyebrow,.step-number) { color:var(--cor-destaque); }
+.contact-grid > div > p:not(.eyebrow) { color:var(--cor-muted); }
+.selector-image { background:var(--cor-superficie); }
+.selector-controls legend { color:var(--cor-destaque); }
+.selector-controls button { color:var(--cor-texto); border-color:var(--cor-borda-controle); }
+.selector-controls button[aria-pressed="true"] { border-color:var(--cor-grafite); background:var(--cor-grafite); color:#ffffff; }
+.selector-controls button:hover { border-color:var(--cor-grafite); }
+.mobile-nav nav { background:#ffffff; border-color:var(--cor-borda-controle); }
+@media(max-width:800px) { .mobile-whatsapp { background:#c9ab91; color:#151310; border-color:#c9ab91; } }
+
+/* Fotos com texto por cima: o texto continua claro sobre o escurecimento. */
+.stone-panel figcaption { color:#eee5dc; }
+.home-hero { --cor-caramelo:#c9ab91; --cor-texto:#eee5dc; }
+/* A capa fecha no monograma sobre o branco da página, e não mais sobre o grafite. */
+.hero-mask > rect { fill:#ffffff; }
+.home-hero .hero-signature p { color:var(--cor-titulo-destaque); }
+.home-hero .hero-signature a.text-link { color:#7a5c42; }
+
+/* Rodapé grafite, como fechamento da página, com os tokens da versão escura. */
+.site-footer { --cor-caramelo:#c9ab91; --cor-texto:#eee5dc; --cor-muted:#b9aaa0; --cor-borda:#62564b; --cor-destaque:#d4b699; background:#10100f; color:#d8cec3; border-top:0; }
+/* Sem o fecho da capa (movimento reduzido), a base da foto não pode terminar em grafite sólido antes do branco. */
+.home-hero [data-hero-veil] { background:linear-gradient(90deg,rgba(8,8,7,.87),rgba(8,8,7,.25) 65%,transparent),linear-gradient(0deg,rgba(8,8,7,.55),transparent 30%); }
+@media(max-width:700px) { .home-hero [data-hero-veil] { background:linear-gradient(0deg,rgba(8,8,7,.82),rgba(8,8,7,.6) 32%,rgba(8,8,7,.05) 85%); } }

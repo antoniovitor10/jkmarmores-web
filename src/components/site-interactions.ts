@@ -81,7 +81,8 @@ export function mountSiteInteractions() {
     }
     update();
   }, { threshold: Array.from({ length: 101 }, (_, i) => i / 100) });
-  document.querySelectorAll(".selector-controls .button, .home-contact .button, .contact-panel, .contact-details, .form-layout").forEach(el => zones.observe(el));
+  // O catálogo de pedras já tem um WhatsApp por cartão: o dock some enquanto ele ocupa metade da tela (T-0002).
+  document.querySelectorAll(".selector-controls .button, .home-contact .button, .contact-panel, .contact-details, .form-layout, .pedra-catalogo").forEach(el => zones.observe(el));
   const targets = [...document.querySelectorAll<HTMLElement>("main, .site-footer, .site-header .brand, .desktop-nav, .header-cta")];
   const previous = targets.map(el => el.inert);
   const toggle = () => { targets.forEach((el, i) => { el.inert = !!menu?.open || previous[i]; }); update(); };

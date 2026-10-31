@@ -1,10 +1,9 @@
-import { asset } from "@/lib/base-path";
-// Estudos ilustrativos. Nao descrevem materiais ou etapas executadas pela JK.
+// Quadros da jornada em Calacatta (HU-0001, T-0005): a mesma pedra da capa, da chapa à peça aplicada.
 export const stoneJourney = [
-  { id: "sequencia-01-chapa", title: "Chapa", detail: "O desenho natural, visto por inteiro.", alt: "Imagem ilustrativa de uma chapa clara com veios cinza, apoiada em um suporte numa sala escura." },
-  { id: "sequencia-02-borda", title: "Borda", detail: "O encontro entre superfície e espessura.", alt: "Imagem ilustrativa de uma borda de pedra clara e um pequeno recorte sobre uma bancada." },
-  { id: "sequencia-03-acabamento", title: "Acabamento", detail: "A luz revela outra escala da matéria.", alt: "Imagem ilustrativa em close da textura mineral de uma superfície clara sob luz lateral." },
-  { id: "sequencia-04-aplicada", title: "Peça aplicada", detail: "A matéria passa a fazer parte do espaço.", alt: "Imagem ilustrativa de uma ilha de pedra clara em um ambiente arquitetônico fictício." },
+  { id: "sequencia-01-chapa", title: "Chapa", detail: "O desenho natural, visto por inteiro.", alt: "Chapa inteira de mármore Calacatta em pé num suporte, numa sala escura." },
+  { id: "sequencia-02-borda", title: "Borda", detail: "O encontro entre superfície e espessura.", alt: "Borda polida de uma bancada de mármore Calacatta, com uma pequena amostra da mesma pedra ao lado." },
+  { id: "sequencia-03-acabamento", title: "Acabamento", detail: "A luz revela outra escala da matéria.", alt: "Close do mármore Calacatta polido sob luz lateral, com um veio cinza e dourado." },
+  { id: "sequencia-04-aplicada", title: "Peça aplicada", detail: "A matéria passa a fazer parte do espaço.", alt: "Ilha de cozinha em mármore Calacatta num ambiente de pé-direito alto." },
 ] as const;
 
 export type JourneyClip = {
@@ -13,56 +12,5 @@ export type JourneyClip = {
   durationSeconds: number;
 };
 export type JourneyVideo = { clips: readonly JourneyClip[] };
-// Preencher somente com video aprovado, sem audio, GOP curto e faststart.
-export const stoneJourneyVideo: JourneyVideo | null = {
-  "clips": [
-    {
-      "durationSeconds": 1.458333,
-      "desktop": {
-        "src": asset("/video/jornada-1-desktop-editorial.mp4"),
-        "bytes": 314064
-      },
-      "mobile": {
-        "src": asset("/video/jornada-1-mobile-editorial.mp4"),
-        "bytes": 272922,
-        "height": 720
-      }
-    },
-    {
-      "durationSeconds": 1.458333,
-      "desktop": {
-        "src": asset("/video/jornada-2-desktop-editorial.mp4"),
-        "bytes": 227937
-      },
-      "mobile": {
-        "src": asset("/video/jornada-2-mobile-editorial.mp4"),
-        "bytes": 104477,
-        "height": 720
-      }
-    },
-    {
-      "durationSeconds": 1.458333,
-      "desktop": {
-        "src": asset("/video/jornada-3-desktop-editorial.mp4"),
-        "bytes": 316552
-      },
-      "mobile": {
-        "src": asset("/video/jornada-3-mobile-editorial.mp4"),
-        "bytes": 278808,
-        "height": 720
-      }
-    },
-    {
-      "durationSeconds": 1.458333,
-      "desktop": {
-        "src": asset("/video/jornada-4-desktop-editorial.mp4"),
-        "bytes": 328278
-      },
-      "mobile": {
-        "src": asset("/video/jornada-4-mobile-editorial.mp4"),
-        "bytes": 284631,
-        "height": 720
-      }
-    }
-  ]
-};
+// Sem vídeo desde a HU-0001 (D4): a jornada usa só os quadros, com as transições de rolagem. Preencher somente com vídeo aprovado, sem áudio, GOP curto e faststart.
+export const stoneJourneyVideo: JourneyVideo | null = null;

@@ -1,0 +1,58 @@
+---
+name: imagens
+description: Como entram, são tratadas e publicadas as imagens e vídeos do site da JK Mármores - originais em assets/, derivados AVIF/WebP gerados em public/img pelo build, geração paga no Higgsfield com orçamento aprovado, licenças em assets-licencas.md e a fronteira entre imagem ilustrativa e foto real da JK. Use em qualquer task que troque, acrescente, gere ou trate imagem, vídeo, logo ou textura.
+metadata:
+  origem: projeto
+  versao: "2"
+  revisar_em: "2027-01-20"
+---
+
+# Imagens e vídeos · JK Mármores
+
+## Regras
+
+- **Original em `assets/images/`, derivado gerado.** `npm run images:build` (`scripts/build-images.mjs`, roda dentro do `npm run build`) lê cada `png/jpg/webp/avif` de `assets/images/`, aplica `scripts/editorial-image.mjs` e grava `public/img/<id>-<largura>.avif|webp` em 390, 768, 1200 e 1600 px (só larguras até a do original), mais o placeholder no manifesto `src/generated/images.json`. Nunca coloque imagem direto em `public/img/` nem edite o manifesto.
+- **O id é o nome do arquivo sem extensão** (`assets/images/sequencia-02-borda.png` → `id="sequencia-02-borda"`). Recorte mobile é outro arquivo com sufixo `-mobile` e entra por `mobileId`. Originais históricos sem uso são pulados por uma lista no próprio script: ao aposentar uma imagem, acrescente o id ali em vez de apagar o original.
+- **Usar no código** só por `<Foto>` (skill `padroes-codigo`), com `alt` descritivo e honesto. Imagem do LCP com `prioridade`; as outras com `loading="lazy"` (padrão).
+- **Gerada x real (ADR-0001).** Imagem gerada por IA, de banco ou CC0 entra sem aviso de IA ou de imagem ilustrativa (nem legenda, nem rodapé, nem `alt`), desde que não mostre logo, nome de cliente nem obra identificada como da JK. O `alt` descreve o que se vê ("bancada de Preto São Gabriel numa cozinha com ilha") sem dizer que é obra da JK. Foto real da JK só com autorização registrada no `docs/insumos/INDICE.md` e, se possível, local, material e aplicação (pendência V3).
+- **Referências da web.** Para acertar o desenho de uma pedra com nome, a geração pode usar fotos de terceiros como entrada de cor e veio. Elas nunca vão para `assets/` nem para o site, e a imagem gerada não pode ser cópia próxima delas (mesmo enquadramento, mesma chapa reconhecível). Guarde-as fora do git, na pasta de trabalho da task.
+- **Licença antes de entrar.** Toda imagem de terceiro ou gerada ganha uma entrada em `docs/proposta/assets-licencas.md`: fonte, modelo, prompt, request ID, custo e arquivo.
+- **Geração paga só com orçamento aprovado** (princípio 7). Antes de enviar: estimativa por asset (`POST /estimate/{modelo}` ou o equivalente do MCP), total com reserva de 20 % e o "sim" do Vitor com o teto. Registre o que foi gasto, mesmo quando a API não devolver o custo.
+- **Peso.** A página inicial fica abaixo de 1 MB no primeiro carregamento no celular e o LCP abaixo de 2,0 s (princípio 10). Meça antes e depois de trocar a imagem da capa.
+
+## Higgsfield
+
+- Ferramenta local em `tools/higgsfield/` (pacote separado, SDK `@higgsfield/client`), fora do site. Exemplo: `npm run exemplo` dentro da pasta.
+- A credencial fica em `tools/higgsfield/.env.local` (variável `HF_CREDENTIALS`), lida só por `node --env-file`. Esse arquivo está em `seguranca.arquivos_proibidos`: nunca abra, imprima ou copie.
+- Prompts e parâmetros de cada rodada ficam em JSON em `docs/proposta/` (ex.: `quarta-prova-api.json`, `sequencia-clipes-api.json`). Siga o padrão: prompt completo, modelo, seed, proporção, resultado.
+- Nunca envie a logo, fotos da cliente ou dados da empresa para a API sem autorização explícita.
+
+## Codex (agente Astra)
+
+- A partir da HU-0001 as imagens são geradas pelo Codex (`image_generation`, nativo no Codex CLI 0.163), rodando como agente Astra. Consome o plano do Vitor, sem cobrança por imagem na API.
+- **Registro (PRD D6 da HU-0001):** o prompt completo, as tentativas, a candidata escolhida e a avaliação vão em `docs/proposta/hu-0001-prompts.json`, uma chave por id. `assets-licencas.md` ganha uma linha por arquivo (arquivo, ferramenta, data, chave do prompt). A chave `_modelos` do JSON guarda os modelos de prompt de close de pedra e de ambiente aplicado. `node scripts/check-imagens-geradas.mjs` confere tudo isso, e também se as pastas de trabalho continuam fora do git (T-0001).
+- **Escolha da candidata (decisão do Vitor em 21/10/2026):** gere de 2 a 4 candidatas e escolha a mais próxima da pedra real. A medida é `node scripts/comparar-imagens-geradas.mjs <id>`: cor em Lab, contraste e porcentagem de pintas e veios contra as fotos reais. Some a isso a revisão visual lado a lado e uma segunda opinião cega do agy (`agy -p`, pedido só de leitura). Não é preciso esperar a aprovação do Vitor. Registre o parecer no relatório da task (T-0001).
+- **Fotos reais para comparar:** prefira chapa em close. Foto de bancada no ambiente puxa a claridade e o contraste da média. O Wikimedia Commons tem chapas de Calacatta com licença aberta (T-0001).
+- **Granitos:** diga no prompt a densidade de pintas (ex.: "well under 2 percent of the surface") e proíba o aspecto salpicado. Sem isso o gerador põe de 3 a 10 vezes mais pintas que a pedra real (Preto São Gabriel e Branco Itaúnas, T-0001).
+- **Saída:** o Codex grava em `~/.codex/generated_images/<sessão>/`. O sandbox dele no Windows não escreve nas pastas ignoradas pelo git, então quem orquestra copia o arquivo para `geradas/`. Os tamanhos vêm por volta de 1122×1402 (4:5) e 1672×941 (16:9). Para um retrato a partir de um 16:9, gere outra composição em vez de recortar (T-0001).
+
+## Vídeos
+
+- Ficam em `public/video/` (originais de prova em `assets/provas/`). `scripts/editorial-videos.mjs` aplica o mesmo tratamento de cor com ffmpeg (variável `FFMPEG`), H.264, `+faststart`, sem áudio, versões desktop e mobile.
+- Vídeo nunca é requisito para entender a página: o pôster equivalente vem antes e o vídeo não carrega com Save-Data, rede lenta ou movimento reduzido (`src/lib/motion-network.ts`, `src/lib/after-poster.ts`).
+
+## Logo
+
+- Original da cliente: `assets/brand/logo-jk-cliente-2026-09-26.jpg` (JPEG 1600×1200). Recorte em WebP sem redesenho no cabeçalho e rodapé (`scripts/prepare-brand.mjs`). O monograma SVG (`src/content/monogram.ts`, `scripts/build-monogram.mjs`) foi traçado à mão do JPEG e é provisório até chegar o vetor oficial (pendência V1).
+
+## Armadilhas conhecidas
+
+- O build reescreve `src/generated/images.json`; se a diferença for só fim de linha, desfaça antes do commit.
+- Trocar uma imagem com outra proporção muda o `width/height` no manifesto e pode gerar CLS em layout com `aspect-ratio` fixo (`.editorial-image img` usa 4/5 ou 5/4). Confira as capturas nas 5 larguras.
+- O saldo de créditos do MCP não é o saldo da API: são contas diferentes.
+
+## Origem das regras
+
+- `scripts/build-images.mjs`, `scripts/editorial-image.mjs`, `scripts/editorial-videos.mjs`, `src/components/Foto.tsx`, `tools/higgsfield/`, `scripts/check-imagens-geradas.mjs`, `scripts/comparar-imagens-geradas.mjs`
+- T-0001 (piloto do Codex) e decisões do Vitor de 21/10/2026
+- `docs/proposta/assets-licencas.md`, `docs/PENDENCIAS.md` (V1, V3, V4, V6, V7), decisões de 25/09 e 26/09 em `docs/ESCOPO.md`
