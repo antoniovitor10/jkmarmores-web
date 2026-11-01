@@ -21,7 +21,8 @@ A versão 2 é a versão 1 (aprovada pela cliente em 07/10/2026) com fundo branc
 | Token | Valor | Uso |
 |---|---|---|
 | `--cor-fundo`, `--cor-papel` | `#ffffff` | fundo de tudo (o tema é claro; `color-scheme: light`; `themeColor` `#ffffff`) |
-| `--cor-superficie` | `#f6f3ef` | painéis, fundo do seletor, chamada final da home |
+| `--cor-superficie` | `#f6f3ef` | painéis e fundo do seletor |
+| `--cor-pedra` | `#efe7dd` | faixas de cor, uma ou duas por página, na largura total: `.warm-section`, a chamada final da home e o fecho das categorias (T-0013); texto 13,96:1, caramelo de texto 4,99:1 |
 | `--cor-texto` | `#1f1b18` | texto principal (17,1:1) |
 | `--cor-muted` | `#5e554c` | texto de apoio (7,3:1) |
 | `--cor-borda` | `#d8cfc5` | filetes de 1 px (não é texto) |
@@ -30,7 +31,8 @@ A versão 2 é a versão 1 (aprovada pela cliente em 07/10/2026) com fundo branc
 | `--cor-titulo-destaque` | `#6b4f38` | H1 institucional, H2 da assinatura e da chamada final (7,5:1) |
 | `--cor-grafite`, `--botao-fundo` / `--botao-texto` | `#2b2622` / `#ffffff` | botão principal (15:1); hover `#4a3f35` |
 | botão com contorno | borda `#7a5c42`; hover e foco preenchem de grafite com texto branco | |
-| rodapé | `#10100f`, com os tokens da versão 1 (texto `#eee5dc`, caramelo `#c9ab91`) e o logo original | fechamento grafite da página |
+| cabeçalho | `#10100f`, fixo ao rolar, menu em `#eee5dc` e botão do WhatsApp em caramelo `#c9ab91` com texto `#151310`; na home começa transparente sobre a foto e fica grafite ao rolar (T-0013) | |
+| "Vamos conversar" (`.contact-panel`) e rodapé | `#10100f`, com os tokens da versão 1 (texto `#eee5dc`, caramelo `#c9ab91`) e o logo original no rodapé | fechamento grafite de toda página (T-0013) |
 | botão flutuante do WhatsApp | `#c9ab91` com texto `#151310` | igual nas duas versões |
 | texto sobre foto | claro (`#eee5dc`, `#f1e8df`) sobre o escurecimento | capa da home e painéis da jornada |
 | logo do cabeçalho | `public/brand/jk-monograma-240-transparente.webp` | derivado do monograma da cliente sem o fundo preto (`scripts/logo-transparente.mjs`) |
@@ -61,7 +63,11 @@ Hex novo só com motivo no relatório da task; prefira um token existente. Contr
 ## Mobile obrigatório
 
 - Quebras: 1100, 1000, 800 (menu vira `details` "Menu"/"Fechar"), 700 (uma coluna).
-- Capa com H1 e CTA visíveis sem rolar a 390 px; dock fixo do WhatsApp (`.mobile-whatsapp`, caramelo) que some quando outro CTA está na tela ou o menu está aberto.
+- Capa com H1 e CTA visíveis sem rolar a 390 px.
+- Botão flutuante do WhatsApp (`.mobile-whatsapp`, caramelo, com ícone) sempre visível, no celular e no desktop; some só com o menu aberto ou o teclado do formulário (T-0013).
+- Topo do celular: grafite e fixo, monograma de 52 px com o nome "JK Mármores / e Granitos" em duas linhas na fonte dos títulos, e botão "Menu" com três linhas (exceção do princípio 5).
+- Menu aberto: painel grafite por baixo do topo, com links numerados na fonte dos títulos (30 px) e filetes, atalho para os 6 materiais em duas colunas, telefone, endereço e WhatsApp em caramelo.
+- Seta de voltar (`.seta-voltar`, caramelo, 15 px) acima do título de toda página interna: volta para a página anterior do site com o nome dela, ou vai para a página de cima (`src/lib/rotas.ts`).
 - Alvos de toque de no mínimo 44 px (`button, a, summary { min-height: 44px }`); campos de formulário 52 px.
 - Sem rolagem horizontal em nenhuma largura.
 

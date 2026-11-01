@@ -1,4 +1,5 @@
 import { linkWhatsApp } from '@/lib/whatsapp';
+import { IconeWhatsApp } from './IconeWhatsApp';
 import { SiteLink as Link } from './SiteLink';
 import { conteudo, telefoneUrl } from '@/content';
 import { PendenteTexto } from './PendenteTexto';
@@ -23,5 +24,6 @@ export function SiteFooter() {
   </div>{isHomolog && <div hidden>{pending.map(description => <span key={description} data-pendente={description} />)}</div>}<div className="container footer-bottom"><span>JK Mármores e Granitos</span></div></footer>;
 }
 export function MobileQuoteDock() {
-  return <div className="mobile-quote-dock" data-visible="false" inert><a className="mobile-whatsapp" href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}>Chamar no WhatsApp</a></div>;
+  // T-0013: sempre visível (some só com o menu do celular aberto ou o teclado do formulário).
+  return <div className="mobile-quote-dock" data-visible="true"><a className="mobile-whatsapp botao-whatsapp" href={linkWhatsApp(conteudo.paginas.inicio.cta.mensagem, conteudo.empresa.whatsapp)}><IconeWhatsApp />Chamar no WhatsApp</a></div>;
 }

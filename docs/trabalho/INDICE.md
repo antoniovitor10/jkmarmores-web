@@ -4,7 +4,7 @@
 
 ## Tasks por status
 
-### em-revisao (5)
+### em-revisao (6)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|
@@ -13,6 +13,7 @@
 | [T-0010](avulsas/tasks/T-0010-pedras-dolomiticos-quartzitos.md) | Pedras de Mármores dolomíticos e Quartzitos naturais no catálogo | avulsa | — | — | normal |
 | [T-0011](avulsas/tasks/T-0011-fonte-titulos-source-serif.md) | Fonte dos títulos: Source Serif 4 no lugar da Bodoni Moda | avulsa | — | — | normal |
 | [T-0012](avulsas/tasks/T-0012-site-principal-branco.md) | Site principal com fundo branco | avulsa | — | — | alto |
+| [T-0013](avulsas/tasks/T-0013-navegacao-celular.md) | Navegação e cor: cabeçalho grafite, menu do celular, WhatsApp fixo, seta de voltar e faixas de cor | avulsa | — | — | normal |
 
 ### em-teste (7)
 

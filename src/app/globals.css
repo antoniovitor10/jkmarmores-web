@@ -440,3 +440,60 @@ body { background:#ffffff; }
 
 /* T-0011: números, telefone e frase da marca usam a fonte dos títulos no mesmo peso (o arquivo só tem o 500). */
 .step-number,.contact-phone,.brand-statement p { font-weight:500; }
+
+/* T-0013: cabeçalho grafite e fixo, menu do celular grafite, WhatsApp sempre visível, seta de voltar
+   e faixas de cor (pedra quente e fechamento grafite). Tokens do grafite iguais aos do rodapé. */
+:root { --cor-pedra:#efe7dd; }
+.site-header { position:sticky; top:0; z-index:60; background:#10100f; color:#eee5dc; border-bottom:1px solid #2a2622; }
+.site-header :focus-visible { outline-color:#c9ab91; }
+.site-header .header-cta { background:#c9ab91; color:#151310; border-color:#c9ab91; }
+@media(hover:hover) { .site-header .header-cta:hover { background:#dfc5ad; border-color:#dfc5ad; } }
+.desktop-nav a { color:#eee5dc; }
+/* Home: começa transparente sobre a foto e fica grafite assim que a página rola (data-rolado) ou o menu abre. */
+body:has(.home-page) .site-header { position:fixed; inset:0 0 auto; background:transparent; border-bottom:1px solid transparent; transition:background-color var(--dur-state) var(--ease-move),border-color var(--dur-state) var(--ease-move); }
+body:has(.home-page) .site-header[data-rolado="true"],body:has(.home-page) .site-header:has(.mobile-nav[open]) { background:#10100f; border-bottom-color:#2a2622; }
+.brand { gap:12px; }
+.brand-nome { display:none; }
+.seta-voltar { display:inline-flex; align-items:center; gap:8px; min-height:44px; margin:0 0 4px; font-size:15px; color:var(--cor-caramelo); text-decoration:none; }
+.seta-voltar span { display:inline-block; transition:transform var(--dur-state) var(--ease-move); }
+@media(hover:hover) { .seta-voltar:hover { text-decoration:underline; text-underline-offset:5px; } .seta-voltar:hover span { transform:translateX(-3px); } }
+.seta-voltar:focus-visible { text-decoration:underline; }
+.mobile-quote-dock .mobile-whatsapp { display:inline-flex; align-items:center; gap:8px; }
+.site-footer { border-top:1px solid #2a2622; }
+.footer-bottom { padding-bottom:72px; }
+@media(max-width:800px) {
+  .brand-monogram { width:52px; }
+  .brand-nome { display:flex; flex-direction:column; font-family:var(--fonte-titulo); font-weight:500; font-size:16px; line-height:1.15; letter-spacing:-.01em; color:#eee5dc; white-space:nowrap; }
+  .mobile-nav summary { gap:8px; padding:8px 12px; border:1px solid #62564b; color:#eee5dc; font-size:14px; list-style:none; position:relative; z-index:2; }
+  .mobile-nav summary::-webkit-details-marker { display:none; }
+  .mobile-nav:not([open]) .menu-closed,.mobile-nav[open] .menu-open { display:inline-flex; align-items:center; gap:8px; }
+  .site-header .brand { position:relative; z-index:2; }
+  /* Menu aberto: o painel grafite ocupa a tela por baixo do topo (logo e "Fechar" continuam à vista). */
+  .mobile-nav[open] { position:static; inset:auto; z-index:auto; background:transparent; color:inherit; }
+  .mobile-nav[open] summary { position:relative; top:auto; right:auto; z-index:2; }
+  .mobile-nav[open] nav { position:fixed; inset:0; z-index:1; display:flex; flex-direction:column; gap:0; min-width:0; padding:80px 24px max(24px,env(safe-area-inset-bottom)); border:0; background:#10100f; color:#eee5dc; overflow-y:auto; animation:menu-entra 260ms var(--ease-arrive) both; }
+  .menu-lista { list-style:none; margin:0; padding:0; border-top:1px solid #3a332d; }
+  .menu-lista > li { border-bottom:1px solid #3a332d; }
+  .mobile-nav[open] .menu-lista > li > a { display:flex; align-items:baseline; gap:16px; padding:14px 0; font-family:var(--fonte-titulo); font-weight:500; font-size:30px; line-height:1.15; color:#eee5dc; text-decoration:none; }
+  .menu-numero { font-family:var(--fonte-corpo); font-size:12px; letter-spacing:.14em; color:#c9ab91; min-width:24px; }
+  .menu-materiais { list-style:none; margin:-6px 0 14px 40px; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:0 16px; }
+  .mobile-nav[open] .menu-materiais a { display:flex; align-items:center; min-height:44px; padding:0; font-size:16px; color:#d8cec3; text-decoration:none; }
+  .mobile-nav[open] .menu-materiais a:active,.mobile-nav[open] .menu-lista > li > a:active { color:#c9ab91; }
+  .menu-contato { margin-top:auto; padding-top:24px; display:grid; gap:4px; }
+  .mobile-nav[open] .menu-telefone { display:flex; align-items:center; min-height:44px; padding:0; font-family:var(--fonte-titulo); font-weight:500; font-size:26px; color:#eee5dc; text-decoration:none; }
+  .menu-contato address { font-size:14px; line-height:1.5; color:#b9aaa0; margin:0 0 16px; }
+  .mobile-nav[open] nav .menu-whatsapp { margin-top:0; padding:16px; font-size:16px; justify-content:center; background:#c9ab91; color:#151310; border-color:#c9ab91; }
+  .mobile-nav[open] nav :focus-visible { outline-color:#c9ab91; }
+}
+@keyframes menu-entra { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:none; } }
+/* Faixas pedra quente: uma ou duas por página, na largura total. */
+.warm-section,.home-page > #orcamento { background:var(--cor-pedra); }
+.material-detail { background:var(--cor-pedra); box-shadow:0 0 0 100vmax var(--cor-pedra); clip-path:inset(0 -100vmax); }
+/* Fechamento grafite: "Vamos conversar sobre seu projeto?" emenda no rodapé. */
+.contact-panel { background:#10100f; color:#eee5dc; border-top:0; --cor-texto:#eee5dc; --cor-muted:#b9aaa0; --cor-caramelo:#c9ab91; --cor-destaque:#d4b699; --cor-borda:#3a332d; --cor-titulo-destaque:#dfc5ad; }
+.contact-panel :focus-visible { outline-color:#c9ab91; }
+@media(hover:hover) { .contact-panel .button-outline:hover { background:#c9ab91; border-color:#c9ab91; color:#151310; } }
+.contact-panel .button-outline:focus-visible { background:#c9ab91; border-color:#c9ab91; color:#151310; }
+/* Cabeçalho fixo e WhatsApp sempre visível: âncoras e foco de teclado param longe dos dois. */
+html { scroll-padding-top:96px; }
+@media(min-width:801px) { :is(input,button,a,[tabindex]) { scroll-margin-block:96px 104px; } }

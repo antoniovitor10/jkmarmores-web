@@ -1,3 +1,4 @@
+import { SetaVoltar } from './SetaVoltar';
 import { linkWhatsApp } from '@/lib/whatsapp';
 import { conteudo, telefoneUrl } from '@/content';
 import { institucional } from '@/content/institucional';
@@ -23,6 +24,6 @@ export function ContactPanel() {
 }
 // Com imagem (páginas de categoria), o topo vira duas colunas no desktop; a imagem é a maior da primeira tela, por isso tem prioridade.
 export function PageIntro({ title, description, imagem }: { label: string; title: string; description: string; imagem?: ImagemCategoria }) {
-  if (!imagem) return <header className="institutional-intro"><div className="container"><h1>{title}</h1><p className="intro-description">{description}</p></div></header>;
-  return <header className="institutional-intro"><div className="container intro-grid"><div><h1>{title}</h1><p className="intro-description">{description}</p></div><Foto id={imagem.id} alt={imagem.alt} className="intro-image" sizes="(max-width: 700px) 100vw, 45vw" prioridade /></div></header>;
+  if (!imagem) return <header className="institutional-intro"><div className="container"><SetaVoltar /><h1>{title}</h1><p className="intro-description">{description}</p></div></header>;
+  return <header className="institutional-intro"><div className="container intro-grid"><div><SetaVoltar /><h1>{title}</h1><p className="intro-description">{description}</p></div><Foto id={imagem.id} alt={imagem.alt} className="intro-image" sizes="(max-width: 700px) 100vw, 45vw" prioridade /></div></header>;
 }
