@@ -137,3 +137,4 @@ nenhum
 - 2026-11-01 · backlog → em-desenvolvimento · desenvolvedor ("pode subir a fonte nova tambem" na conversa: aprova a task, a troca da regra, o download da fonte e a publicação)
 - 2026-11-01 · execução iniciada na branch task/T-0011-fonte-titulos-source-serif (a partir de origin/main, 9e2c77f), assumida pela sessão da T-0010/T-0012 · claude-code/opus
 - 2026-11-01 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução
+- 2026-11-01 · publicada na raiz e em /1 · claude-code/opus · Vitor na conversa: "pode subir a fonte nova tambem". Push na main (9e2c77f..690761e, Actions 41270959686 com sucesso) e merge na versao-1 (82a65b6, índice regenerado, Actions 41270962856 com sucesso). No ar: Source Serif 4 servida localmente (52.344 bytes), Bodoni fora, nenhuma chamada ao Google Fonts; raiz com index, follow e /1 com noindex
