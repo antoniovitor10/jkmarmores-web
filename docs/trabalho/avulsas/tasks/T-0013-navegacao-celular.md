@@ -214,3 +214,4 @@ nenhum
 - 2026-11-01 · backlog → em-desenvolvimento · desenvolvedor ("Aprovo, pode começar" na conversa, incluindo a exceção ao princípio 5 e as cores)
 - 2026-11-01 · execução iniciada na branch task/T-0013-seta-voltar (a partir de origin/main, 690761e) · claude-code/opus
 - 2026-11-01 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push
+- 2026-11-01 · publicada na raiz e em /1 · claude-code/opus · Vitor na conversa: "Pode publicar". Push na main (690761e..74535f2, Actions 41277511646 com sucesso) e merge na versao-1 (a3f1043, Actions 41277516656 com sucesso). No ar: 10 páginas com 200, botão do WhatsApp visível desde o HTML, menu com os materiais, seta nas páginas internas e nenhuma seta na home; raiz com index, follow e /1 com noindex
