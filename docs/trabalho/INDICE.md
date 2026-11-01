@@ -4,16 +4,12 @@
 
 ## Tasks por status
 
-### em-revisao (6)
+### em-revisao (2)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|
 | [T-0008](avulsas/tasks/T-0008-links-e-botoes.md) | Links e botões visíveis no site | avulsa | — | — | normal |
 | [T-0009](avulsas/tasks/T-0009-previa-fundo-branco.md) | Prévia do site com fundo branco em /1 | avulsa | — | — | normal |
-| [T-0010](avulsas/tasks/T-0010-pedras-dolomiticos-quartzitos.md) | Pedras de Mármores dolomíticos e Quartzitos naturais no catálogo | avulsa | — | — | normal |
-| [T-0011](avulsas/tasks/T-0011-fonte-titulos-source-serif.md) | Fonte dos títulos: Source Serif 4 no lugar da Bodoni Moda | avulsa | — | — | normal |
-| [T-0012](avulsas/tasks/T-0012-site-principal-branco.md) | Site principal com fundo branco | avulsa | — | — | alto |
-| [T-0013](avulsas/tasks/T-0013-navegacao-celular.md) | Navegação e cor: cabeçalho grafite, menu do celular, WhatsApp fixo, seta de voltar e faixas de cor | avulsa | — | — | normal |
 
 ### em-teste (7)
 
@@ -26,6 +22,15 @@
 | [T-0005](HU-0001-imagens-novas-catalogo/tasks/T-0005-capa-jornada-sem-video.md) | Capa e jornada da pedra novas, em Calacatta e sem vídeo | HU-0001 | CA-6, CA-10, CA-11 | T-0001 | alto |
 | [T-0006](HU-0001-imagens-novas-catalogo/tasks/T-0006-configurador-tres-pedras.md) | Configurador com Calacatta, Travertino e Preto São Gabriel | HU-0001 | CA-7, CA-11 | T-0001 | normal |
 | [T-0007](HU-0001-imagens-novas-catalogo/tasks/T-0007-remover-avisos-ia.md) | Remover os avisos de IA e de imagem ilustrativa do site | HU-0001 | CA-8 | — | normal |
+
+### concluida (4)
+
+| Task | Título | HU | Cobre | Depende de | Risco |
+|---|---|---|---|---|---|
+| [T-0010](avulsas/tasks/T-0010-pedras-dolomiticos-quartzitos.md) | Pedras de Mármores dolomíticos e Quartzitos naturais no catálogo | avulsa | — | — | normal |
+| [T-0011](avulsas/tasks/T-0011-fonte-titulos-source-serif.md) | Fonte dos títulos: Source Serif 4 no lugar da Bodoni Moda | avulsa | — | — | normal |
+| [T-0012](avulsas/tasks/T-0012-site-principal-branco.md) | Site principal com fundo branco | avulsa | — | — | alto |
+| [T-0013](avulsas/tasks/T-0013-navegacao-celular.md) | Navegação e cor: cabeçalho grafite, menu do celular, WhatsApp fixo, seta de voltar e faixas de cor | avulsa | — | — | normal |
 
 ## HUs
 

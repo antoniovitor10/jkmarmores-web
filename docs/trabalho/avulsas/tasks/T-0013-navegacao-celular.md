@@ -3,7 +3,7 @@ id: T-0013
 titulo: "Navegação e cor: cabeçalho grafite, menu do celular, WhatsApp fixo, seta de voltar e faixas de cor"
 hu: avulsa
 trilha: micro
-status: em-revisao
+status: concluida
 depende_de: []
 cobre: []
 complexidade: 5
@@ -17,7 +17,7 @@ bloqueios: 0
 ca_nao_verificados: 0
 testes_criados: 10
 testes_pegam: 2
-revisao_humana: ""
+revisao_humana: "aprovado"
 homologacao: ""
 ---
 
@@ -215,3 +215,4 @@ nenhum
 - 2026-11-01 · execução iniciada na branch task/T-0013-seta-voltar (a partir de origin/main, 690761e) · claude-code/opus
 - 2026-11-01 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push
 - 2026-11-01 · publicada na raiz e em /1 · claude-code/opus · Vitor na conversa: "Pode publicar". Push na main (690761e..74535f2, Actions 41277511646 com sucesso) e merge na versao-1 (a3f1043, Actions 41277516656 com sucesso). No ar: 10 páginas com 200, botão do WhatsApp visível desde o HTML, menu com os materiais, seta nas páginas internas e nenhuma seta na home; raiz com index, follow e /1 com noindex
+- 2026-11-01 · em-revisao → concluida · desenvolvedor ("Pode mover pra concluídas e publicar" na conversa); revisão humana: aprovado

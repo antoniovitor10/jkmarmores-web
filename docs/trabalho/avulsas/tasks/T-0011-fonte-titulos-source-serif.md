@@ -3,7 +3,7 @@ id: T-0011
 titulo: "Fonte dos títulos: Source Serif 4 no lugar da Bodoni Moda"
 hu: avulsa
 trilha: micro
-status: em-revisao
+status: concluida
 depende_de: []
 cobre: []
 complexidade: 3
@@ -17,7 +17,7 @@ bloqueios: 0
 ca_nao_verificados: 0
 testes_criados: 4
 testes_pegam: 0
-revisao_humana: ""
+revisao_humana: "aprovado"
 homologacao: ""
 ---
 
@@ -138,3 +138,4 @@ nenhum
 - 2026-11-01 · execução iniciada na branch task/T-0011-fonte-titulos-source-serif (a partir de origin/main, 9e2c77f), assumida pela sessão da T-0010/T-0012 · claude-code/opus
 - 2026-11-01 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução
 - 2026-11-01 · publicada na raiz e em /1 · claude-code/opus · Vitor na conversa: "pode subir a fonte nova tambem". Push na main (9e2c77f..690761e, Actions 41270959686 com sucesso) e merge na versao-1 (82a65b6, índice regenerado, Actions 41270962856 com sucesso). No ar: Source Serif 4 servida localmente (52.344 bytes), Bodoni fora, nenhuma chamada ao Google Fonts; raiz com index, follow e /1 com noindex
+- 2026-11-01 · em-revisao → concluida · desenvolvedor ("Pode mover pra concluídas e publicar" na conversa); revisão humana: aprovado

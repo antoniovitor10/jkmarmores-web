@@ -3,7 +3,7 @@ id: T-0012
 titulo: "Site principal com fundo branco"
 hu: avulsa
 trilha: micro
-status: em-revisao
+status: concluida
 depende_de: []
 cobre: []
 complexidade: 3
@@ -17,7 +17,7 @@ bloqueios: 0
 ca_nao_verificados: 0
 testes_criados: 1
 testes_pegam: 0
-revisao_humana: ""
+revisao_humana: "aprovado"
 homologacao: ""
 ---
 
@@ -120,3 +120,4 @@ nenhum
 - 2026-10-31 · execução iniciada na branch task/T-0012-site-principal-branco (a partir de main, b871a80) · claude-code/opus
 - 2026-10-31 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
 - 2026-10-31 · publicada no site principal · claude-code/opus · Vitor na conversa: "Sim, publica". Push na main (b871a80..9e2c77f), Actions 41266032451 com sucesso; 9 páginas com 200, theme-color #ffffff e monograma transparente; páginas indexáveis com index, follow; aplicações e galeria seguem noindex; robots.txt e sitemap ok
+- 2026-11-01 · em-revisao → concluida · desenvolvedor ("Pode mover pra concluídas e publicar" na conversa); revisão humana: aprovado

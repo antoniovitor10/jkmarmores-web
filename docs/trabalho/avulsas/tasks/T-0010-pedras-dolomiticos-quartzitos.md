@@ -3,7 +3,7 @@ id: T-0010
 titulo: "Pedras de Mármores dolomíticos e Quartzitos naturais no catálogo"
 hu: avulsa
 trilha: micro
-status: em-revisao
+status: concluida
 depende_de: []
 cobre: []
 complexidade: 5
@@ -17,7 +17,7 @@ bloqueios: 0
 ca_nao_verificados: 0
 testes_criados: 5
 testes_pegam: 1
-revisao_humana: ""
+revisao_humana: "aprovado"
 homologacao: ""
 ---
 
@@ -187,3 +187,4 @@ Nenhuma pedra ficou de fora.
 - 2026-10-31 · troca do Higgsfield (chave da API vencida) pelo Codex (agente Astra) · desenvolvedor ("usa o codex pra isso pode usar" na conversa)
 - 2026-10-31 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
 - 2026-10-31 · publicada na raiz e em /1 · claude-code/opus · Vitor na conversa: "Sim, publica". Push na main (cf105f4..b871a80, Actions 41248196945 com sucesso) e merge na versao-1 (586aa91, índice regenerado no conflito, Actions 41248223430 com sucesso). Raiz e /1 com 200 e as pedras nas duas categorias
+- 2026-11-01 · em-revisao → concluida · desenvolvedor ("Pode mover pra concluídas e publicar" na conversa); revisão humana: aprovado
