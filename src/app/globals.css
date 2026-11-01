@@ -1,6 +1,6 @@
 @import "tailwindcss" source("../");
 :root { --ease-arrive:cubic-bezier(.22,.61,.36,1); --ease-move:cubic-bezier(.65,0,.35,1); --ease-leave:cubic-bezier(.5,0,.75,0); --ease-press:cubic-bezier(.2,0,0,1); --dur-press:120ms; --dur-state:200ms; --dur-swap:240ms; --dur-sheet:320ms; --dur-reveal:900ms; --dur-focal:1200ms; --cut-angle:45deg; }
-:root { --cor-fundo:#f4efe9; --cor-texto:#2b2622; --cor-superficie:#e9e2d9; --cor-borda:#b7aa9b; --cor-destaque:#544c3f; --cor-grafite:#2b2622; --cor-papel:#f4efe9; --cor-caramelo:#c9ab91; --cor-muted:#665e54; --fonte-titulo:var(--fonte-display-a1),Georgia,serif; --peso-titulo:400; --espaco-secao:clamp(80px,10vw,144px); --botao-fundo:var(--cor-texto); --botao-texto:var(--cor-papel); --botao-borda:var(--cor-texto); --fonte-corpo:var(--fonte-corpo-a1),Arial,sans-serif; --espaco-4:2rem; --espaco-5:3rem; --raio:0; }
+:root { --cor-fundo:#f4efe9; --cor-texto:#2b2622; --cor-superficie:#e9e2d9; --cor-borda:#b7aa9b; --cor-destaque:#544c3f; --cor-grafite:#2b2622; --cor-papel:#f4efe9; --cor-caramelo:#c9ab91; --cor-muted:#665e54; --fonte-titulo:var(--fonte-display-a1),Georgia,serif; --peso-titulo:500; --espaco-secao:clamp(80px,10vw,144px); --botao-fundo:var(--cor-texto); --botao-texto:var(--cor-papel); --botao-borda:var(--cor-texto); --fonte-corpo:var(--fonte-corpo-a1),Arial,sans-serif; --espaco-4:2rem; --espaco-5:3rem; --raio:0; }
 @theme inline { --color-background:var(--cor-fundo); --color-foreground:var(--cor-texto); --font-sans:var(--fonte-corpo); }
 * { box-sizing:border-box; }
 html { scroll-behavior:auto; }
@@ -12,7 +12,7 @@ button,a,summary { min-height:44px; }
 button { cursor:pointer; }
 :focus-visible { outline:3px solid #98704d; outline-offset:5px; }
 .container { width:min(100% - 80px,1280px); margin-inline:auto; }
-h1,h2,h3 { font-family:var(--fonte-titulo); font-weight:400; letter-spacing:-.025em; line-height:1.1; }
+h1,h2,h3 { font-family:var(--fonte-titulo); font-weight:500; letter-spacing:-.01em; line-height:1.1; font-optical-sizing:auto; }
 h1 { font-size:clamp(48px,6vw,88px); margin:20px 0; }
 h2 { font-size:clamp(38px,4vw,60px); margin:12px 0 28px; }
 h3 { font-size:32px; margin:0 0 12px; }
@@ -437,3 +437,6 @@ body { background:#ffffff; }
 /* Sem o fecho da capa (movimento reduzido), a base da foto não pode terminar em grafite sólido antes do branco. */
 .home-hero [data-hero-veil] { background:linear-gradient(90deg,rgba(8,8,7,.87),rgba(8,8,7,.25) 65%,transparent),linear-gradient(0deg,rgba(8,8,7,.55),transparent 30%); }
 @media(max-width:700px) { .home-hero [data-hero-veil] { background:linear-gradient(0deg,rgba(8,8,7,.82),rgba(8,8,7,.6) 32%,rgba(8,8,7,.05) 85%); } }
+
+/* T-0011: números, telefone e frase da marca usam a fonte dos títulos no mesmo peso (o arquivo só tem o 500). */
+.step-number,.contact-phone,.brand-statement p { font-weight:500; }

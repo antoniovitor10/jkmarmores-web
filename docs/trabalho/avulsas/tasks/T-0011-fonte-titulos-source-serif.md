@@ -3,7 +3,7 @@ id: T-0011
 titulo: "Fonte dos títulos: Source Serif 4 no lugar da Bodoni Moda"
 hu: avulsa
 trilha: micro
-status: em-desenvolvimento
+status: em-revisao
 depende_de: []
 cobre: []
 complexidade: 3
@@ -12,10 +12,10 @@ sensivel: false
 skills: [design-system, padroes-codigo, responsivo-desktop-mobile, testes, deploy]
 criada_em: 2026-10-31
 ferramenta: "claude-code/opus"
-voltas: 0
+voltas: 1
 bloqueios: 0
 ca_nao_verificados: 0
-testes_criados: 0
+testes_criados: 4
 testes_pegam: 0
 revisao_humana: ""
 homologacao: ""
@@ -96,8 +96,44 @@ nenhum
 - Cores e fundo (bloco "T-0009 e T-0012" no fim de `src/app/globals.css`; só a fonte e o `letter-spacing` mudam). O `e2e/tema-claro.spec.ts` roda depois da troca para provar que as cores não mudaram.
 - Pedras de dolomíticos e quartzitos (T-0010, já publicada).
 
+## Execução
+
+**Branch:** `task/T-0011-fonte-titulos-source-serif`, no worktree `../jk-t0011`, a partir de `origin/main` (9e2c77f). A task foi assumida pela sessão da T-0010 e da T-0012, porque o Vitor pediu lá ("pode subir a fonte nova tambem"). A outra sessão foi avisada.
+
+**O que mudou**
+- **Fonte nova:** `public/fonts/source-serif-4-latin.woff2`, baixada do Google Fonts (`fonts.gstatic.com`; Source Serif 4, subconjunto latin, peso 500, eixo de tamanho óptico, 52.344 bytes), com `public/fonts/OFL-SourceSerif4.txt` ao lado, vindo do repositório google/fonts.
+- **`src/components/home-fonts.ts`:** `homeDisplay` aponta para a fonte nova, com peso 500 e fallback em Times New Roman.
+- **`src/app/globals.css`:**
+  - Títulos com `font-weight:500`, `letter-spacing:-.01em` (era `-.025em`) e `font-optical-sizing:auto`; `--peso-titulo` passou a 500.
+  - Números das etapas, telefone grande e frase da marca também no 500.
+  - As cores não mudaram.
+- **Ajustes de títulos fora do `globals.css`:**
+  - `HomeHero.module.css`: o h1 da capa passou de `-.035em` para `-.02em`.
+  - `StoneJourney.css`: títulos da jornada no peso 500.
+- **Regra e registro:** skill `design-system`, seção Tipografia, e `docs/decisoes/ADR-0003-fonte-titulos-source-serif.md`. Os adaptadores foram regerados; fora a skill de design, as diferenças eram só de fim de linha.
+- **`e2e/fonte.spec.ts` (novo):** CA-1, CA-2, CA-3 e CA-5. O CA-3 acusou de início o título "Pedras", que é escondido só para leitor de tela (1 px, recortado de propósito); o teste passou a ignorar elementos com 1 px de largura.
+
+**Verificação (01/11/2026)**
+- `npm run lint`: 0 erros e 2 avisos antigos em `tools/higgsfield/`.
+- `SITE_MODE=homolog npm run build` e `npx playwright test --workers=2`: 83 passaram e 3 foram pulados (testes só de celular ou só de desktop). Isso inclui `tema-claro`, que prova que as cores não mudaram.
+- `MSYS_NO_PATHCONV=1 SITE_MODE=producao npm run build`: ok, com `check-pendencias`, `check-avisos` e `check-pedras`.
+- Lighthouse no build de produção, comparado com a T-0012 (main 9e2c77f):
+  - Home: 100 no celular (antes 97), LCP de 0,83 s (antes 0,88 s), CLS 0. 100 no desktop.
+  - Granito: 93 no celular, LCP de 3,18 s (antes 3,12 s, +0,06 s, dentro do limite de 0,2 s), CLS 0. 100 no desktop.
+  - Acessibilidade 100 nas quatro medições.
+- Capturas em `qa/capturas/T-0011/`. Olhei a capa, materiais, quartzito, sobre e contato, no celular e no desktop: as quebras de linha estão boas e nenhum título estoura.
+
+| CA | Resultado | Evidência |
+|---|---|---|
+| CA-1 | ok | `fonte` CA-1 (menu, 4 páginas, celular e desktop; família, peso 500 e fonte carregada) |
+| CA-2 | ok | `fonte` CA-1/CA-2 (o parágrafo não usa a fonte dos títulos) |
+| CA-3 | ok | `fonte` CA-3 (7 páginas, celular e desktop, sem estouro nem rolagem lateral) |
+| CA-4 | ok | Lighthouse acima |
+| CA-5 | ok | `fonte` CA-5 (nenhuma requisição ao Google Fonts) |
+
 ## Histórico
 
 - 2026-10-31 · criada (backlog) · claude-code/opus (entrevista micro com o Vitor, 1 rodada, com comparação visual)
 - 2026-11-01 · backlog → em-desenvolvimento · desenvolvedor ("pode subir a fonte nova tambem" na conversa: aprova a task, a troca da regra, o download da fonte e a publicação)
 - 2026-11-01 · execução iniciada na branch task/T-0011-fonte-titulos-source-serif (a partir de origin/main, 9e2c77f), assumida pela sessão da T-0010/T-0012 · claude-code/opus
+- 2026-11-01 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução

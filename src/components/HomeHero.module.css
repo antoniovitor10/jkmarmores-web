@@ -7,7 +7,7 @@
 .hero[data-motion-ready="true"] .light { opacity:1; animation:light-pass 1400ms cubic-bezier(.22,.61,.36,1) both; }
 .intro { position:relative; z-index:4; padding-top:140px; padding-bottom:100px; }
 .location { font-size:11px; letter-spacing:.18em; color:#ddc1a8; margin-bottom:32px; }
-.intro h1 { font-size:clamp(56px,7.4vw,108px); line-height:1.04; letter-spacing:-.035em; margin:0 0 38px; }
+.intro h1 { font-size:clamp(56px,7.4vw,108px); line-height:1.04; letter-spacing:-.02em; margin:0 0 38px; }
 .bottom { display:flex; align-items:center; gap:48px; }
 .bottom p { font-size:17px; color:#e4d8ce; margin:0; }
 .bottom > a { background:transparent; border-color:#c9ab91; color:#f1e8df; }

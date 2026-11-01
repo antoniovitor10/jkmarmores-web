@@ -44,10 +44,10 @@ Hex novo só com motivo no relatório da task; prefira um token existente. Contr
 
 ## Tipografia
 
-- Títulos: **Bodoni Moda 400** (`--fonte-display-a1`, `public/fonts/bodoni-latin-400.woff2`), peso único, `letter-spacing: -.025em`, `text-wrap: balance`. H1 `clamp(48px, 6vw, 88px)`; na capa `clamp(56px, 7.4vw, 108px)`.
+- Títulos: **Source Serif 4 500** com tamanho óptico (`--fonte-display-a1`, `public/fonts/source-serif-4-latin.woff2`, licença OFL ao lado), peso único, `letter-spacing: -.01em` (capa `-.02em`), `text-wrap: balance`. H1 `clamp(48px, 6vw, 88px)`; na capa `clamp(56px, 7.4vw, 108px)`. Números das etapas, telefone grande e frase da marca usam a mesma fonte e peso. A Bodoni Moda saiu em 01/11/2026 por legibilidade (T-0011, ADR-0003).
 - Corpo e interface: **Source Sans 3 400** (`--fonte-corpo-a1`), `line-height: 1.65`.
 - Eyebrow: 11 px, `letter-spacing .14em`, caixa alta escrita no texto (ex.: "MÁRMORES E GRANITOS / BARUERI, SP").
-- Nenhum negrito em título, nenhuma outra família. As fontes Barlow e Instrument Sans em `public/fonts/` são de rodadas anteriores e não entram.
+- Nenhum negrito em título (só o 500), nenhuma outra família. As fontes Bodoni, Barlow e Instrument Sans em `public/fonts/` são de rodadas anteriores e não entram.
 - Carregadas por `next/font/local` em `src/components/home-fonts.ts`, com preload e fallback ajustado. Nada de Google Fonts em runtime.
 
 ## Composição
@@ -96,3 +96,4 @@ Não mude aqui. Uma mudança de identidade é uma HU de Direção visual (skill 
 - Vitor, 2026-10-20: a cliente aprovou a versão 1 em produção e pediu imagens novas
 - Juliana, 28/10/2026: pediu para ver o site com fundo branco; prévia em `/1` (T-0009)
 - Vitor, 2026-10-31: "deixa o site em branco o principal" (T-0012, ADR-0004)
+- Vitor, 2026-10-31: "essa fonte usada em todo o site tá pouco entendível, melhora ela usa outra"; escolheu a Source Serif 4 numa comparação de 5 fontes (T-0011, ADR-0003)
