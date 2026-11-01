@@ -3,7 +3,7 @@ id: T-0013
 titulo: "Navegação e cor: cabeçalho grafite, menu do celular, WhatsApp fixo, seta de voltar e faixas de cor"
 hu: avulsa
 trilha: micro
-status: backlog
+status: em-desenvolvimento
 depende_de: []
 cobre: []
 complexidade: 5
@@ -152,3 +152,5 @@ nenhum
 
 - 2026-11-01 · criada (backlog) · claude-code/opus (entrevista micro com o Vitor, 2 rodadas)
 - 2026-11-01 · escopo ampliado (3ª rodada): cabeçalho grafite no celular e no desktop, faixas pedra e fechamento grafite · claude-code/opus
+- 2026-11-01 · backlog → em-desenvolvimento · desenvolvedor ("Aprovo, pode começar" na conversa, incluindo a exceção ao princípio 5 e as cores)
+- 2026-11-01 · execução iniciada na branch task/T-0013-seta-voltar (a partir de origin/main, 690761e) · claude-code/opus
