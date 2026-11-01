@@ -4,6 +4,12 @@
 
 ## Tasks por status
 
+### em-desenvolvimento (1)
+
+| Task | Título | HU | Cobre | Depende de | Risco |
+|---|---|---|---|---|---|
+| [T-0011](avulsas/tasks/T-0011-fonte-titulos-source-serif.md) | Fonte dos títulos: Source Serif 4 no lugar da Bodoni Moda | avulsa | — | — | normal |
+
 ### em-revisao (4)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
