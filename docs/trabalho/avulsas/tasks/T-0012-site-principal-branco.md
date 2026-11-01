@@ -119,3 +119,4 @@ nenhum
 - 2026-10-31 · backlog → em-desenvolvimento · desenvolvedor ("Aprovo, pode começar" na conversa, incluindo a troca da regra do design system)
 - 2026-10-31 · execução iniciada na branch task/T-0012-site-principal-branco (a partir de main, b871a80) · claude-code/opus
 - 2026-10-31 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
+- 2026-10-31 · publicada no site principal · claude-code/opus · Vitor na conversa: "Sim, publica". Push na main (b871a80..9e2c77f), Actions 41266032451 com sucesso; 9 páginas com 200, theme-color #ffffff e monograma transparente; páginas indexáveis com index, follow; aplicações e galeria seguem noindex; robots.txt e sitemap ok
