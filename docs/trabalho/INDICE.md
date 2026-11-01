@@ -4,6 +4,12 @@
 
 ## Tasks por status
 
+### backlog (1)
+
+| Task | Título | HU | Cobre | Depende de | Risco |
+|---|---|---|---|---|---|
+| [T-0013](avulsas/tasks/T-0013-navegacao-celular.md) | Navegação: cabeçalho e menu do celular, WhatsApp fixo e seta de voltar | avulsa | — | — | normal |
+
 ### em-revisao (5)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
