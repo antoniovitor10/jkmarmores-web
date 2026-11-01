@@ -80,7 +80,8 @@ test.describe("links e botões", () => {
     const botao = page.locator(".contact-panel").getByRole("link", { name: "Chamar no WhatsApp", exact: true });
     await botao.scrollIntoViewIfNeeded();
     await expect(botao.locator('svg[aria-hidden="true"]')).toHaveCount(1);
-    expect(await botao.evaluate((el) => getComputedStyle(el).borderTopColor)).toBe(CARAMELO);
+    // T-0013: o painel "Vamos conversar" é grafite; a borda usa o caramelo claro do rodapé.
+    expect(await botao.evaluate((el) => getComputedStyle(el).borderTopColor)).toBe(CARAMELO_RODAPE);
     await expect(botao).toHaveAttribute("href", /^https:\/\/wa\.me\/5511967976902\?text=/);
   });
 
@@ -156,7 +157,8 @@ test.describe("links e botões", () => {
         const sinal = () => link.evaluate((el) => { const s = getComputedStyle(el); return { decorado: s.textDecorationLine.includes("underline") || parseFloat(s.borderBottomWidth) > 0 || s.backgroundColor !== "rgba(0, 0, 0, 0)", visual: [s.color, s.textDecorationLine, s.backgroundColor].join("|"), imagem: !!el.querySelector("img,picture,svg"), texto: (el as HTMLElement).innerText.trim() }; });
         const antes = await sinal();
         if (antes.decorado || antes.imagem || !antes.texto) continue;
-        await link.scrollIntoViewIfNeeded();
+        // T-0013: o botão do WhatsApp fica sempre no canto de baixo; o link é centralizado na tela, como a pessoa faria ao rolar.
+        await link.evaluate((el) => el.scrollIntoView({ block: "center" }));
         await link.hover({ force: true });
         await expect.poll(async () => (await sinal()).visual !== antes.visual, { message: `"${antes.texto}" em ${caminho}`, timeout: 1500 }).toBe(true);
         await page.mouse.move(0, 0);

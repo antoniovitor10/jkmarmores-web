@@ -73,16 +73,16 @@ test.describe("T-0009 · prévia com fundo branco", () => {
     expect(cantoTransparente).toBe(0);
   });
 
-  test("CA-4: no celular, o menu abre legível no fundo claro e fecha", async ({ page, isMobile }) => {
+  test("CA-4: no celular, o menu abre legível (grafite desde a T-0013) e fecha", async ({ page, isMobile }) => {
     test.skip(!isMobile, "menu do celular");
     await page.goto("/materiais/");
     const menu = page.locator(".mobile-nav");
     await menu.locator("summary").click();
     await expect(menu).toHaveAttribute("open", "");
-    const link = menu.locator("nav").getByRole("link", { name: "A empresa", exact: true });
+    const link = menu.locator("nav").getByRole("link", { name: /A empresa/ });
     await expect(link).toBeVisible();
-    const fundo = await menu.evaluate((el) => getComputedStyle(el).backgroundColor);
-    expect(fundo).toBe(BRANCO);
+    const fundo = await menu.locator("nav").evaluate((el) => getComputedStyle(el).backgroundColor);
+    expect(fundo).toBe("rgb(16, 16, 15)");
     expect(contraste(await link.evaluate((el) => getComputedStyle(el).color), fundo)).toBeGreaterThanOrEqual(4.5);
     await menu.locator("summary").click();
     await expect(menu).not.toHaveAttribute("open", "");

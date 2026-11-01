@@ -36,53 +36,17 @@ export function mountSiteInteractions() {
   };
   document.addEventListener('pointerdown', shine, { passive:true });
   document.addEventListener('animationend', finishShine);
-  const hero = document.querySelector(".prologo, .home-hero");
   const menu = document.querySelector<HTMLDetailsElement>(".mobile-nav");
   const summary = menu?.querySelector("summary");
-  let pastHero = !hero;
-  const occupied = new Set<Element>();
-  const covered = new Set<Element>();
-  let dockReady = !dock;
-  const update = () => { if (dock) { const visible = dockReady && pastHero && !occupied.size && !covered.size && !menu?.open; dock.dataset.visible = String(visible); dock.inert = !visible; } };
-  // Reserva o canto ocupado pelo botão, sem medir o layout a cada scroll.
-  // O mesmo cuidado vale para textos e controles no celular e no desktop.
-  let clearance: IntersectionObserver | undefined;
-  let resizeFrame = 0;
-  const observeClearance = () => {
-    if (!dock) return;
-    clearance?.disconnect();
-    covered.clear();
-    dockReady = false;
-    update();
-    clearance = new IntersectionObserver(entries => {
-      for (const entry of entries) {
-        if (entry.isIntersecting) covered.add(entry.target);
-        else covered.delete(entry.target);
-      }
-      dockReady = true;
-      update();
-    }, { rootMargin: `-${Math.max(0, innerHeight - 112)}px 0px 0px -${Math.max(0, innerWidth - 224)}px` });
-    document.querySelectorAll('main h1,main h2,main h3,main p,main a,main button,main label,main legend,main address,main dt,main dd,.site-footer a,.site-footer p,.site-footer span,.site-footer address').forEach(el => clearance!.observe(el));
-  };
-  const resizeClearance = () => {
-    cancelAnimationFrame(resizeFrame);
-    resizeFrame = requestAnimationFrame(observeClearance);
-  };
-  observeClearance();
-  window.addEventListener('resize', resizeClearance, { passive:true });
-  const heroContact = (event: Event) => { pastHero = (event as CustomEvent<{ show:boolean }>).detail.show; update(); };
-  document.addEventListener('jk:hero-contact', heroContact);
-  const cover = new IntersectionObserver(([entry]) => { pastHero = entry.boundingClientRect.bottom <= 0; document.querySelector<HTMLElement>(".site-header")?.setAttribute("data-past-hero", String(pastHero)); update(); });
-  if (hero) cover.observe(hero);
-  const zones = new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      if (entry.target.matches('.home-contact .button,.selector-controls .button') ? entry.intersectionRatio >= .5 : entry.intersectionRect.height >= innerHeight * .5) occupied.add(entry.target);
-      else occupied.delete(entry.target);
-    }
-    update();
-  }, { threshold: Array.from({ length: 101 }, (_, i) => i / 100) });
-  // O catálogo de pedras já tem um WhatsApp por cartão: o dock some enquanto ele ocupa metade da tela (T-0002).
-  document.querySelectorAll(".selector-controls .button, .home-contact .button, .contact-panel, .contact-details, .form-layout, .pedra-catalogo").forEach(el => zones.observe(el));
+  // T-0013: o botão flutuante do WhatsApp fica sempre visível; some só com o menu do celular aberto
+  // (o teclado do formulário continua escondendo pelo CSS).
+  const update = () => { if (dock) { const visible = !menu?.open; dock.dataset.visible = String(visible); dock.inert = !visible; } };
+  // Cabeçalho fixo: na home ele começa transparente sobre a foto e fica grafite assim que a página rola.
+  const header = document.querySelector<HTMLElement>(".site-header");
+  let scrollFrame = 0;
+  const marcarRolagem = () => { cancelAnimationFrame(scrollFrame); scrollFrame = requestAnimationFrame(() => header?.setAttribute("data-rolado", String(scrollY > 24))); };
+  marcarRolagem();
+  window.addEventListener("scroll", marcarRolagem, { passive:true });
   const targets = [...document.querySelectorAll<HTMLElement>("main, .site-footer, .site-header .brand, .desktop-nav, .header-cta")];
   const previous = targets.map(el => el.inert);
   const toggle = () => { targets.forEach((el, i) => { el.inert = !!menu?.open || previous[i]; }); update(); };
@@ -99,5 +63,5 @@ export function mountSiteInteractions() {
   menu?.addEventListener("toggle", toggle);
   document.addEventListener("keydown", key);
   toggle();
-  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cover.disconnect(); zones.disconnect(); clearance?.disconnect(); cancelAnimationFrame(resizeFrame); window.removeEventListener('resize', resizeClearance); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); document.removeEventListener('jk:hero-contact', heroContact); document.removeEventListener('pointerdown', shine); document.removeEventListener('animationend', finishShine); delete document.body.dataset.motionStatic; document.querySelectorAll('[data-gleam]').forEach(el => el.removeAttribute('data-gleam')); targets.forEach((el, i) => { el.inert = previous[i]; }); };
+  return () => { disposed = true; stopImages(); nearby?.disconnect(); cancelMotion(); motion(); cancelAnimationFrame(scrollFrame); window.removeEventListener('scroll', marcarRolagem); menu?.removeEventListener("toggle", toggle); document.removeEventListener("keydown", key); document.removeEventListener('pointerdown', shine); document.removeEventListener('animationend', finishShine); delete document.body.dataset.motionStatic; document.querySelectorAll('[data-gleam]').forEach(el => el.removeAttribute('data-gleam')); targets.forEach((el, i) => { el.inert = previous[i]; }); };
 }

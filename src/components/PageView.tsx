@@ -1,4 +1,5 @@
 import { SiteLink as Link } from "./SiteLink";
+import { SetaVoltar } from "./SetaVoltar";
 import { PendenteTexto } from "@/components/PendenteTexto";
 import { conteudo } from "@/content";
 import { linkWhatsApp } from "@/lib/whatsapp";
@@ -8,7 +9,7 @@ import { isHomolog } from "@/lib/site";
 
 export function PageView({ pagina, children, abertura }: { pagina: PaginaInstitucional; children?: React.ReactNode; abertura?: React.ReactNode }) {
   return <main id="conteudo" className={abertura ? "home-page" : undefined}>
-    {abertura ?? <header className="institutional-intro"><div className="container"><h1><PendenteTexto valor={pagina.titulo} /></h1><p className="intro-description"><PendenteTexto valor={pagina.introducao} /></p></div></header>}
+    {abertura ?? <header className="institutional-intro"><div className="container"><SetaVoltar /><h1><PendenteTexto valor={pagina.titulo} /></h1><p className="intro-description"><PendenteTexto valor={pagina.introducao} /></p></div></header>}
     <div className="container page-content">
     {pagina.secoes.filter((secao) => isHomolog || (!isPendente(secao.titulo) && !isPendente(secao.texto))).map((secao) => <section key={secao.id} id={secao.id} className="content-section"><h2><PendenteTexto valor={secao.titulo} /></h2><p><PendenteTexto valor={secao.texto} /></p></section>)}
     {children}

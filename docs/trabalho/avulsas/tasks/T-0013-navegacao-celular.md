@@ -3,7 +3,7 @@ id: T-0013
 titulo: "Navegação e cor: cabeçalho grafite, menu do celular, WhatsApp fixo, seta de voltar e faixas de cor"
 hu: avulsa
 trilha: micro
-status: em-desenvolvimento
+status: em-revisao
 depende_de: []
 cobre: []
 complexidade: 5
@@ -12,11 +12,11 @@ sensivel: false
 skills: [design-system, padroes-codigo, responsivo-desktop-mobile, testes, deploy]
 criada_em: 2026-11-01
 ferramenta: "claude-code/opus"
-voltas: 0
+voltas: 1
 bloqueios: 0
 ca_nao_verificados: 0
-testes_criados: 0
-testes_pegam: 0
+testes_criados: 10
+testes_pegam: 2
 revisao_humana: ""
 homologacao: ""
 ---
@@ -148,9 +148,69 @@ nenhum
 - A disposição do cabeçalho do desktop.
 - Textos e fonte.
 
+## Execução
+
+**Branch:** `task/T-0013-seta-voltar`, no worktree `../jk-t0013`, a partir de `origin/main` (690761e, com T-0010, T-0011 e T-0012). Sem push.
+
+**O que mudou**
+- `src/components/SiteHeader.tsx`:
+  - Nome "JK Mármores / e Granitos" ao lado do monograma (só no celular, `aria-hidden`, porque o `alt` do logo já dá o nome).
+  - Botão "Menu" e "Fechar" com ícone.
+  - Menu do celular com links numerados, os 6 materiais (nomes curtos), telefone, endereço e WhatsApp com ícone.
+- `src/components/IconeMenu.tsx` (novo): três linhas e ×, em SVG, com `currentColor` e `aria-hidden`.
+- `src/components/SetaVoltar.tsx` e `src/lib/rotas.ts` (novos):
+  - A seta lê a página anterior por `document.referrer`, com `useSyncExternalStore`, sem efeito nem diferença na hidratação. O `SiteLink` navega de forma nativa, então o `referrer` é sempre a página anterior.
+  - Página do site conhecida: volta com `history.back()` e mostra o nome dela.
+  - Senão, é um link para a página de cima.
+  - Entra em `PageIntro` (Materiais, categorias, A empresa, Contato) e no topo padrão do `PageView` (Aplicações e Galeria).
+- `src/components/SiteFooter.tsx`: o botão flutuante sai do servidor já visível, com o ícone, e funciona sem JavaScript.
+- `src/components/site-interactions.ts`:
+  - Saiu a lógica que escondia o botão flutuante (fora da capa, sobre textos, perto de outros botões). Agora ele some só com o menu aberto; o teclado do formulário continua escondendo pelo CSS.
+  - Entrou a marca `data-rolado` no cabeçalho, para a home.
+- `src/app/globals.css`, bloco "T-0013":
+  - Cabeçalho grafite e fixo (na home, transparente até rolar), botão caramelo e foco caramelo no escuro.
+  - Topo e menu do celular.
+  - Seta de voltar.
+  - Faixas `--cor-pedra` `#efe7dd`: `.warm-section`, `#orcamento` e `.material-detail` na largura total.
+  - "Vamos conversar" em grafite com os tokens do rodapé.
+  - `scroll-padding-top` e `scroll-margin`, para o cabeçalho fixo e o botão flutuante não cobrirem âncoras e foco.
+- `metodo/projeto/principios.md`: princípio 5 com a exceção dos ícones do menu.
+- Skill `design-system`: tokens `--cor-pedra`, cabeçalho e fechamento grafite, e a seção "Mobile obrigatório". Os adaptadores foram regerados.
+- Testes:
+  - `e2e/navegacao.spec.ts` (novo, 10 testes).
+  - `e2e/links.spec.ts`: borda caramelo-clara no painel grafite; no levantamento do CA-11, o link é centralizado na tela antes do hover, porque o botão flutuante agora fica sempre no canto.
+  - `e2e/tema-claro.spec.ts`: o CA-4 agora confere o menu grafite.
+
+**O que os testes pegaram**
+1. Com o menu aberto, o painel ficava por cima do "Fechar": uma regra antiga dava `z-index:1` ao botão aberto, e não dava para fechar tocando nele. Corrigido com `z-index:2`.
+2. O lint barrou `setState` dentro do efeito da seta. A seta foi refeita com `useSyncExternalStore`.
+
+**Verificação (01/11/2026)**
+- `npm run lint`: 0 erros e 2 avisos antigos em `tools/higgsfield/`.
+- `SITE_MODE=homolog npm run build` e `npx playwright test --workers=2`: 98 passaram e 6 foram pulados (testes só de celular ou só de desktop).
+- `MSYS_NO_PATHCONV=1 SITE_MODE=producao npm run build`: ok, com `check-pendencias`, `check-avisos` e `check-pedras`.
+- Lighthouse no build de produção:
+  - Home: 100 no celular (LCP 1,00 s) e 100 no desktop.
+  - Granito: entre 86 e 89 no celular (LCP de 3,54 a 3,78 s) e 100 no desktop.
+  - A `main` atual, medida na mesma hora e na mesma máquina, deu LCP de 3,45 a 3,55 s no granito. A diferença, de 0,1 a 0,2 s, vem de um script a mais (a seta) e de cerca de 24 KB a mais de HTML (o menu). Os 3,18 s da T-0011 foram medidos com a máquina mais livre.
+  - CLS 0 e Acessibilidade 100 nas medições.
+- Capturas em `qa/capturas/T-0013/`, olhadas: topo do granito com a seta, rolagem com o topo fixo, menu aberto, home, fim da página A empresa, e dolomíticos no desktop.
+
+| CA | Resultado | Evidência |
+|---|---|---|
+| CA-1 | ok | `navegacao` CA-1 |
+| CA-2 | ok | `navegacao` CA-2 (abre, confere o conteúdo, vai a Quartzitos, abre e fecha) |
+| CA-3 | ok | `navegacao` CA-3 (3 páginas sem rolar; o clique abre `wa.me`) |
+| CA-4 | ok | `navegacao` CA-4 e CA-4b |
+| CA-5 | ok | `navegacao` CA-5 |
+| CA-6 | ok | `navegacao` CA-6 |
+| CA-7 | ok | `navegacao` CA-7, a suíte inteira e o Lighthouse |
+| CA-8 | ok | `navegacao` CA-8 (5 páginas: cor, largura total, contraste e fim grafite) |
+
 ## Histórico
 
 - 2026-11-01 · criada (backlog) · claude-code/opus (entrevista micro com o Vitor, 2 rodadas)
 - 2026-11-01 · escopo ampliado (3ª rodada): cabeçalho grafite no celular e no desktop, faixas pedra e fechamento grafite · claude-code/opus
 - 2026-11-01 · backlog → em-desenvolvimento · desenvolvedor ("Aprovo, pode começar" na conversa, incluindo a exceção ao princípio 5 e as cores)
 - 2026-11-01 · execução iniciada na branch task/T-0013-seta-voltar (a partir de origin/main, 690761e) · claude-code/opus
+- 2026-11-01 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push
