@@ -8,7 +8,7 @@
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|
-| [T-0013](avulsas/tasks/T-0013-navegacao-celular.md) | Navegação: cabeçalho e menu do celular, WhatsApp fixo e seta de voltar | avulsa | — | — | normal |
+| [T-0013](avulsas/tasks/T-0013-navegacao-celular.md) | Navegação e cor: cabeçalho grafite, menu do celular, WhatsApp fixo, seta de voltar e faixas de cor | avulsa | — | — | normal |
 
 ### em-revisao (5)
 
