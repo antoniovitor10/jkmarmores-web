@@ -4,13 +4,15 @@
 
 ## Tasks por status
 
-### em-revisao (3)
+### em-revisao (5)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|
 | [T-0008](avulsas/tasks/T-0008-links-e-botoes.md) | Links e botões visíveis no site | avulsa | — | — | normal |
 | [T-0009](avulsas/tasks/T-0009-previa-fundo-branco.md) | Prévia do site com fundo branco em /1 | avulsa | — | — | normal |
 | [T-0010](avulsas/tasks/T-0010-pedras-dolomiticos-quartzitos.md) | Pedras de Mármores dolomíticos e Quartzitos naturais no catálogo | avulsa | — | — | normal |
+| [T-0011](avulsas/tasks/T-0011-fonte-titulos-source-serif.md) | Fonte dos títulos: Source Serif 4 no lugar da Bodoni Moda | avulsa | — | — | normal |
+| [T-0012](avulsas/tasks/T-0012-site-principal-branco.md) | Site principal com fundo branco | avulsa | — | — | alto |
 
 ### em-teste (7)
 
@@ -36,3 +38,5 @@
 |---|---|---|---|
 | [ADR-0001](../decisoes/ADR-0001-imagens-geradas-sem-aviso.md) | Imagens geradas sem aviso e referências da web só como entrada | aceita | 2026-10-20 |
 | [ADR-0002](../decisoes/ADR-0002-icone-whatsapp-nos-botoes.md) | Ícone do WhatsApp nos botões que abrem o WhatsApp | aceita | 2026-10-22 |
+| [ADR-0003](../decisoes/ADR-0003-fonte-titulos-source-serif.md) | Títulos em Source Serif 4 no lugar da Bodoni Moda | aceita | 2026-11-01 |
+| [ADR-0004](../decisoes/ADR-0004-site-branco.md) | Site com fundo branco (design system versão 2) | aceita | 2026-10-31 |

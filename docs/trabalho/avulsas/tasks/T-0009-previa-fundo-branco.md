@@ -131,3 +131,4 @@ nenhum
 - 2026-10-31 · backlog → em-desenvolvimento · desenvolvedor ("Aprovo, pode começar" na conversa)
 - 2026-10-31 · execução iniciada na branch task/T-0009-previa-fundo-branco (a partir de main, cf105f4) · claude-code/opus
 - 2026-10-31 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
+- 2026-10-31 · publicada em /1 · claude-code/opus · Vitor na conversa: "Sim, publica em /1". Merge na versao-1 (3e989d2) e push; Actions 41239485668 com sucesso; /1/ e 9 páginas com 200 e noindex; raiz intacta (index, monograma original)
