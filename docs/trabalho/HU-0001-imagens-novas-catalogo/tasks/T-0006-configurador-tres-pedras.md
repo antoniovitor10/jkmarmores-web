@@ -3,7 +3,7 @@ id: T-0006
 titulo: "Configurador com Calacatta, Travertino e Preto São Gabriel"
 hu: HU-0001
 trilha: funcionalidade
-status: em-teste
+status: concluida
 depende_de: [T-0001]
 cobre: [CA-7, CA-11]
 complexidade: 4
@@ -17,8 +17,8 @@ bloqueios: 0
 ca_nao_verificados: 0
 testes_criados: 3
 testes_pegam: 3
-revisao_humana: ""
-homologacao: ""
+revisao_humana: "aprovado"
+homologacao: "ok"
 ---
 
 # T-0006 · Configurador com Calacatta, Travertino e Preto São Gabriel
@@ -185,3 +185,4 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-21 · execução na branch task/T-0006-configurador-tres-pedras (a partir de task/T-0005) · claude-code/opus
 - 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
 - 2026-10-21 · em-revisao → em-teste · desenvolvedor · movida no quadro do Batuta
+- 2026-11-02 · em-teste → concluida · desenvolvedor ("Sim, fecha a HU-0001" na conversa); revisão humana: aprovado; homologação: ok

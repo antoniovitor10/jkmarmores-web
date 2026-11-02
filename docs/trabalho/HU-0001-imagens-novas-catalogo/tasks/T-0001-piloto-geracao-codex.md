@@ -3,7 +3,7 @@ id: T-0001
 titulo: "Piloto de geração de imagens com o Codex (Astra)"
 hu: HU-0001
 trilha: funcionalidade
-status: em-teste
+status: concluida
 depende_de: []
 cobre: [CA-11]
 complexidade: 4
@@ -17,8 +17,8 @@ bloqueios: 0
 ca_nao_verificados: 0
 testes_criados: 2
 testes_pegam: 2
-revisao_humana: ""
-homologacao: ""
+revisao_humana: "aprovado"
+homologacao: "ok"
 ---
 
 # T-0001 · Piloto de geração de imagens com o Codex (Astra)
@@ -200,3 +200,4 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-21 · execução iniciada na branch task/T-0001-piloto-geracao-codex (a partir de metodo/instalar, f4231e6) · claude-code/opus (maestro), codex (Astra, geração)
 - 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
 - 2026-10-21 · em-revisao → em-teste · desenvolvedor · movida no quadro do Batuta
+- 2026-11-02 · em-teste → concluida · desenvolvedor ("Sim, fecha a HU-0001" na conversa); revisão humana: aprovado; homologação: ok

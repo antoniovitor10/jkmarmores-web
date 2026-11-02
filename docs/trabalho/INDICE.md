@@ -4,7 +4,7 @@
 
 ## Tasks por status
 
-### em-teste (7)
+### concluida (13)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|
@@ -15,11 +15,6 @@
 | [T-0005](HU-0001-imagens-novas-catalogo/tasks/T-0005-capa-jornada-sem-video.md) | Capa e jornada da pedra novas, em Calacatta e sem vídeo | HU-0001 | CA-6, CA-10, CA-11 | T-0001 | alto |
 | [T-0006](HU-0001-imagens-novas-catalogo/tasks/T-0006-configurador-tres-pedras.md) | Configurador com Calacatta, Travertino e Preto São Gabriel | HU-0001 | CA-7, CA-11 | T-0001 | normal |
 | [T-0007](HU-0001-imagens-novas-catalogo/tasks/T-0007-remover-avisos-ia.md) | Remover os avisos de IA e de imagem ilustrativa do site | HU-0001 | CA-8 | — | normal |
-
-### concluida (6)
-
-| Task | Título | HU | Cobre | Depende de | Risco |
-|---|---|---|---|---|---|
 | [T-0008](avulsas/tasks/T-0008-links-e-botoes.md) | Links e botões visíveis no site | avulsa | — | — | normal |
 | [T-0009](avulsas/tasks/T-0009-previa-fundo-branco.md) | Prévia do site com fundo branco em /1 | avulsa | — | — | normal |
 | [T-0010](avulsas/tasks/T-0010-pedras-dolomiticos-quartzitos.md) | Pedras de Mármores dolomíticos e Quartzitos naturais no catálogo | avulsa | — | — | normal |
@@ -31,7 +26,7 @@
 
 | HU | Título | Trilha | Status | PRD | Tasks (concluídas/total) |
 |---|---|---|---|---|---|
-| [HU-0001](HU-0001-imagens-novas-catalogo/hu.md) | Imagens novas do site e catálogo por pedra | funcionalidade | planejada | sim | 0/7 |
+| [HU-0001](HU-0001-imagens-novas-catalogo/hu.md) | Imagens novas do site e catálogo por pedra | funcionalidade | concluida | sim | 7/7 |
 
 ## Decisões (ADR)
 

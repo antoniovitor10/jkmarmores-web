@@ -2,7 +2,7 @@
 id: HU-0001
 titulo: "Imagens novas do site e catálogo por pedra"
 trilha: funcionalidade
-status: planejada
+status: concluida
 prd: sim
 criada_em: 2026-10-20
 origem: "cliente, grupo do projeto no WhatsApp, 13/10 e 19/10/2026; entrevista com o Vitor em 20/10/2026"
@@ -104,4 +104,51 @@ Volume previsto de imagens: 34 cartões (11 granitos, 10 mármores, 7 quartzos, 
 
 ## Fechamento
 
-<Preenchido pela skill fechar-hu.>
+Fechada em 02/11/2026 pela skill `fechar-hu`. As 7 tasks estão concluídas, com revisão humana "aprovado" e homologação "ok" (Vitor).
+
+### Convergir
+
+A conferência foi feita sobre o código da `main` (c10fd20), com a suíte `e2e` rodada em 01/11 (98 passaram) e os scripts de checagem rodados agora.
+
+| CA | Situação | Onde está cumprido |
+|---|---|---|
+| CA-1 | ok | `e2e/materiais.spec.ts` CA-1; T-0002 e T-0003. Granitos, mármores, quartzos e lâminas só têm nomes da lista de 19/10. |
+| CA-2 | ok | `e2e/materiais.spec.ts` CA-2; `mensagemPedra` em `src/content/pedras.ts`. O Taj Mahal ganhou "(lâmina)" ou "(quartzito)" porque, desde a T-0010, existe nas duas categorias. Segue a regra P1. |
+| CA-3 | superado | Pela T-0010, aprovada pelo Vitor em 31/10, com exceção ao princípio 1: dolomíticos e quartzitos agora têm 14 pedras vindas de pesquisa de mercado, e a pendência O2 mudou para a confirmação da cliente. A imagem de topo das duas categorias continua. |
+| CA-4 | ok | `scripts/check-pedras.mjs` no build (48 pedras, nenhuma oculta, nenhuma no sitemap); prova de pedra oculta na T-0002. |
+| CA-5 | ok | `e2e/materiais.spec.ts` CA-5 |
+| CA-6 | ok | `e2e/capa-jornada.spec.ts`; capa e jornada em Calacatta, sem vídeo. Desde a T-0012, a capa fecha no monograma sobre o branco. |
+| CA-7 | ok | `e2e/configurador.spec.ts` CA-7 |
+| CA-8 | ok | `e2e/avisos.spec.ts` CA-8 e `scripts/check-avisos.mjs` ("nenhum aviso") |
+| CA-9 | ok | `e2e/materiais.spec.ts` CA-9 |
+| CA-10 | ok | Lighthouse mobile em 01/11, código da T-0013: home com LCP 1,0 s, CLS 0 e 395 KiB; `/materiais/granito/` com Acessibilidade 100 e SEO 100. |
+| CA-11 | ok | `scripts/check-imagens-geradas.mjs` (67 imagens com registro completo); referências da web fora do git. |
+| CA-12 | ok | `e2e/materiais-categorias.spec.ts` CA-12 |
+| CA-13 | ok | `e2e/materiais.spec.ts` CA-13 |
+
+**Não entregue:** nada do que a HU pede. O CA-15 da T-0007, que é só daquela task, ficou parcial: a frase "Imagens de tela servem…" nunca foi exibida em página nenhuma. Ele não volta para cá.
+
+**Além da HU (tasks avulsas depois do fechamento das tasks dela):**
+- T-0008: links e botões.
+- T-0009 e T-0012: fundo branco.
+- T-0010: dolomíticos e quartzitos.
+- T-0011: fonte.
+- T-0013: navegação e cor.
+
+Cada uma teve task e aprovação própria, e nenhuma pede ação aqui. A T-0010 contraria o item "nomes inventados para dolomíticos e quartzitos" do fora do escopo desta HU; foi decisão posterior do Vitor, registrada na própria task.
+
+### Retrospectiva
+
+- Métricas: 7 tasks, 100% aprovadas como vieram, nenhum ajuste ou refação, nenhum bloqueio, média de 0,9 volta interna, 24 testes criados (22 provados), homologação 100%.
+- A entrevista não pegou que a cliente acharia dolomíticos e quartzitos "os importantes que faltam". As duas páginas vazias viraram a T-0010 dez dias depois.
+- As voltas internas vieram da escolha de imagem: 2 a 6 candidatas por pedra, até 3 rodadas na T-0010.
+- A T-0003 (31 pedras) foi a maior. Em levas de 4 a 9 pedras com 2 Codex em paralelo, coube bem.
+- Regras descobertas:
+  - Foto de ambiente como referência atrapalha o gerador; só close de chapa.
+  - O Codex 0.166 entrega retrato em 1024×1536 (2:3), que precisa de recorte para 4:5.
+  - Suíte inteira com muitos workers estoura os testes longos; rode com `--workers=2`.
+- Regras que ficaram velhas:
+  - A skill `imagens`: versão do Codex, tamanhos de saída e estado do Higgsfield, cuja chave da API venceu em 26/10.
+  - A skill `conteudo`: o "material só aparece se a cliente confirmou" agora tem a exceção da T-0010.
+  - A skill `deploy`: o "Estado em 2026-10-20" está velho.
+  - As propostas de texto foram levadas ao Vitor em 02/11/2026.
