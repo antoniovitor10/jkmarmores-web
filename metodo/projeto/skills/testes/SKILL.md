@@ -25,7 +25,7 @@ Não há testes de unidade. Lógica pura nova (ex.: montar mensagem do WhatsApp)
 
 - Config: `playwright.config.ts`. Usa o Chrome instalado (`channel: "chrome"`), sem baixar navegador. Projetos `mobile` (Pixel 7) e `desktop` (1440×900).
 - O `webServer` sobe `node scripts/preview-local.mjs` na porta 3105 (ou `E2E_PORT`) e reaproveita um servidor já aberto. **Rode `npm run build` antes**: o teste lê `out/`.
-- Rodar tudo: `npx playwright test`. Um arquivo: `npx playwright test e2e/home.spec.ts`. Um teste: `-g "menu do celular"`. Falha guarda trace em `test-results/` (fora do git): `npx playwright show-trace <arquivo>`.
+- Rodar tudo: `npx playwright test --workers=2`. Com mais workers, os testes que percorrem todas as páginas (avisos CA-8, links CA-11) estouram o tempo de 30 s e falham sem defeito real (HU-0001). Um arquivo: `npx playwright test e2e/home.spec.ts`. Um teste: `-g "menu do celular"`. Falha guarda trace em `test-results/` (fora do git): `npx playwright show-trace <arquivo>`.
 - Seletores: papel e nome acessível (`getByRole("link", { name: "Chamar no WhatsApp" })`, `getByRole("navigation", { name: "Navegação móvel" })`). Só use classe quando o elemento não tem papel útil (o `summary` do menu: `.mobile-nav > summary`). Se precisar de identificador, acrescente `data-testid` no componente.
 - O controle do menu (Escape, foco, `inert`) e o movimento montam **depois do evento `load`** (`src/components/SiteInteractions.tsx`). Teste que interage com eles usa `page.goto("/", { waitUntil: "networkidle" })`.
 - Sem JavaScript: `browser.newContext({ javaScriptEnabled: false })`. Todo CA de conteúdo confere também esse caso (princípio 3).

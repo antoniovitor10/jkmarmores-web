@@ -151,4 +151,4 @@ Cada uma teve task e aprovação própria, e nenhuma pede ação aqui. A T-0010 
   - A skill `imagens`: versão do Codex, tamanhos de saída e estado do Higgsfield, cuja chave da API venceu em 26/10.
   - A skill `conteudo`: o "material só aparece se a cliente confirmou" agora tem a exceção da T-0010.
   - A skill `deploy`: o "Estado em 2026-10-20" está velho.
-  - As propostas de texto foram levadas ao Vitor em 02/11/2026.
+  - As propostas de texto foram aplicadas em 02/11/2026, com o "sim" do Vitor ("Sim, aplica as 4"): skills `imagens`, `conteudo`, `testes` e `deploy`.
