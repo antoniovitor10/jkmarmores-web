@@ -19,6 +19,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # historico completo para compilar as versoes antigas de /1/ e /2/
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -37,6 +40,11 @@ jobs:
         env:
           # homolog: noindex + robots Disallow. Trocar a variavel do repositorio
           # para "producao" so no lancamento (o build falha se houver pendencia).
+          SITE_MODE: ${{ vars.SITE_MODE || 'homolog' }}
+
+      - name: Versoes para comparacao (/1/, /2/, /3/)
+        run: bash scripts/versoes/build.sh
+        env:
           SITE_MODE: ${{ vars.SITE_MODE || 'homolog' }}
 
       - name: Configurar SSH
