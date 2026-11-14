@@ -4,6 +4,12 @@
 
 ## Tasks por status
 
+### em-desenvolvimento (1)
+
+| Task | Título | HU | Cobre | Depende de | Risco |
+|---|---|---|---|---|---|
+| [T-0014](avulsas/tasks/T-0014-branco-parana-dolomiticos.md) | Branco Paraná e variações em Mármores dolomíticos | avulsa | — | — | normal |
+
 ### concluida (13)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
