@@ -28,9 +28,12 @@ test.describe("imagens das categorias", () => {
     }
   });
 
+  const BRANCO_PARANA = ["Branco Paraná", "Branco Paraná Matarazzo", "Branco Paraná Monte Cristo", "Branco Paraná Macchia Oro"];
+
   // T-0010: as duas categorias que estavam vazias passam a ter cartões de pedra (nomes de pesquisa, exceção ao princípio 1).
   const NOVAS: Record<string, { link: string; pedras: string[] }> = {
-    "marmore-dolomitico": { link: "Conhecer mármores dolomíticos", pedras: ["Super White", "Branco Michelangelo", "Lunar", "Biancatto", "Donatello", "Thassos"] },
+    // T-0014: o Branco Paraná e as variações pedidas pela cliente abrem a lista de dolomíticos.
+    "marmore-dolomitico": { link: "Conhecer mármores dolomíticos", pedras: [...BRANCO_PARANA, "Super White", "Branco Michelangelo", "Lunar", "Biancatto", "Donatello", "Thassos"] },
     quartzito: { link: "Conhecer quartzitos naturais", pedras: ["Taj Mahal", "Perla Venata", "Mont Blanc", "Cristallo", "Sea Pearl", "Fusion", "Azul Macaúbas", "Verde Alexandrita"] },
   };
   for (const [slug, { link, pedras }] of Object.entries(NOVAS)) {
@@ -70,6 +73,48 @@ test.describe("imagens das categorias", () => {
     expect(taj).toContain("Taj Mahal (quartzito)");
     const [destino] = await Promise.all([page.waitForURL(/wa\.me/).then(() => page.url()), botao.click()]);
     expect(decodeURIComponent(destino)).toContain("Mont Blanc");
+  });
+
+  test("T-0014 CA-2: o Branco Paraná e o Matarazzo continuam em Mármores nacionais, com a mesma imagem dos dolomíticos", async ({ page }) => {
+    await page.goto("/materiais/");
+    const cartaoMarmore = page.locator('[data-categoria="marmore"]');
+    await cartaoMarmore.scrollIntoViewIfNeeded();
+    await cartaoMarmore.getByRole("link", { name: /^Conhecer / }).click();
+    await expect(page).toHaveURL(/\/materiais\/marmore\/$/);
+    // O grupo é a div que tem o h2 "Mármores nacionais" e a lista de cartões dele.
+    const nacionais = page.getByRole("heading", { name: "Mármores nacionais", exact: true }).locator("xpath=..");
+    const imagens: Record<string, string> = {};
+    for (const [slug, nome] of [["marmore-branco-parana", "Branco Paraná"], ["marmore-parana-matarazzo", "Paraná Matarazzo"]]) {
+      const cartao = nacionais.locator(`[data-pedra="${slug}"]`);
+      await cartao.scrollIntoViewIfNeeded();
+      await expect(cartao.locator("h3")).toHaveText(nome);
+      imagens[slug] = await idDaImagem(cartao.locator("img"));
+    }
+    expect(imagens["marmore-branco-parana"]).toBe("pedra-marmore-branco-parana");
+    expect(imagens["marmore-parana-matarazzo"]).toBe("pedra-marmore-parana-matarazzo");
+
+    await page.goto("/materiais/marmore-dolomitico/");
+    for (const [slug, imagem] of [["marmore-dolomitico-branco-parana", "pedra-marmore-branco-parana"], ["marmore-dolomitico-branco-parana-matarazzo", "pedra-marmore-parana-matarazzo"]]) {
+      const img = page.locator(`[data-pedra="${slug}"] img`);
+      await img.scrollIntoViewIfNeeded();
+      expect(await idDaImagem(img)).toBe(imagem);
+    }
+  });
+
+  test("T-0014 CA-3: os botões das 4 pedras novas abrem o WhatsApp com o nome delas", async ({ page, context }) => {
+    await context.route("https://wa.me/**", (rota) => rota.fulfill({ status: 200, contentType: "text/html", body: "<p>WhatsApp</p>" }));
+    await page.goto("/materiais/marmore-dolomitico/");
+    for (const nome of BRANCO_PARANA) {
+      const botao = page.getByRole("link", { name: `Chamar no WhatsApp sobre ${nome}`, exact: true });
+      await botao.scrollIntoViewIfNeeded();
+      const href = decodeURIComponent((await botao.getAttribute("href")) ?? "");
+      expect(href).toMatch(/^https:\/\/wa\.me\/5511967976902\?text=/);
+      // "Branco Paraná" também existe em mármores: a mensagem leva a categoria.
+      expect(href).toContain(nome === "Branco Paraná" ? "Branco Paraná (mármore dolomítico)." : `${nome}.`);
+    }
+    const botao = page.getByRole("link", { name: "Chamar no WhatsApp sobre Branco Paraná Macchia Oro", exact: true });
+    const [destino] = await Promise.all([page.waitForURL(/wa\.me/).then(() => page.url()), botao.click()]);
+    expect(decodeURIComponent(destino)).toContain("Branco Paraná Macchia Oro");
   });
 
   test("CA-12 sem JavaScript: as imagens das categorias continuam no HTML e a home segue sem elas", async ({ browser }) => {

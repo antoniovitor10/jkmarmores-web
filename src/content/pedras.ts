@@ -1,5 +1,6 @@
 // Pedras que a JK trabalha (lista enviada pela cliente em 19/10/2026; HU-0001, T-0002).
-// Dolomíticos e quartzitos vêm de pesquisa de mercado, a confirmar com a cliente (T-0010, exceção ao princípio 1).
+// Dolomíticos e quartzitos vieram de pesquisa de mercado (T-0010) e a cliente confirmou em 11/11/2026;
+// o Branco Paraná e as variações dele em dolomíticos foram pedidos por ela (T-0014).
 // Os dados ficam em pedras.json para o scripts/check-pedras.mjs ler sem TypeScript.
 import dados from './pedras.json';
 import manifesto from '@/generated/images.json';
@@ -10,6 +11,8 @@ export type Pedra = {
   nome: string;
   categoria: CategoriaPedra;
   grupo?: 'Mármores nacionais' | 'Mármores importados';
+  // Imagem de outra pedra do manifesto, quando a mesma pedra aparece em duas categorias (T-0014).
+  imagem?: string;
   oculta?: boolean;
 };
 
@@ -26,7 +29,7 @@ export const tituloPedras = 'Pedras';
 
 const rotuloCategoria: Record<CategoriaPedra, string> = { granito: 'granito', marmore: 'mármore', 'marmore-dolomitico': 'mármore dolomítico', quartzito: 'quartzito', quartzo: 'quartzo', ultracompacto: 'lâmina' };
 
-export const imagemPedra = (pedra: Pedra) => `pedra-${pedra.slug}`;
+export const imagemPedra = (pedra: Pedra) => pedra.imagem ?? `pedra-${pedra.slug}`;
 
 // Uma pedra só aparece se não estiver oculta e já tiver imagem no build (PRD D2).
 export function pedrasVisiveis(categoria: string) {

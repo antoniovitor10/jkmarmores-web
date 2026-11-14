@@ -4,7 +4,7 @@
 
 ## Tasks por status
 
-### em-desenvolvimento (1)
+### em-revisao (1)
 
 | Task | Título | HU | Cobre | Depende de | Risco |
 |---|---|---|---|---|---|
