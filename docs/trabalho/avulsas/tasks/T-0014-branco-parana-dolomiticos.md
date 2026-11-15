@@ -136,7 +136,7 @@ A página `/materiais/marmore-dolomitico/` passa a abrir com 4 cartões: o Branc
 | CA-3 | interacao | `T-0014 CA-3` (`href` dos 4 botões, "(mármore dolomítico)" no Branco Paraná, clique no Macchia Oro) | sim: tirar a categoria da mensagem no HTML gerado fez falhar | ok |
 | CA-4 | manual | pranchas e `comparar-imagens-geradas` (números acima); nenhuma é cópia das referências (enquadramento e chapa diferentes) | — | ok |
 | CA-5 | integracao | `SITE_MODE=producao npm run build`: `check-pendencias` ok, `check-avisos` sem aviso, `check-pedras` 52 pedras e nenhuma no sitemap; `check-imagens-geradas` 69 com registro; nenhum PNG duplicado | — | ok |
-| CA-6 | manual | conferir raiz e `/1` depois do deploy | — | pendente (depende do push) |
+| CA-6 | manual | conferir raiz e `/1` depois do deploy | curl nas duas URLs em 15/11: 200, os 4 cartões na frente do Super White, imagens novas 200; raiz com index, /1 com noindex; Mármores segue com Branco Paraná e Paraná Matarazzo | passou |
 
 **Linha de base:** antes da T-0014, a suíte inteira passava, com 48 pedras. Depois: `npx playwright test --workers=2` deu 102 passaram, 6 pulados e 0 falhas. `npm run lint` deu 0 erros e os 2 avisos antigos em `tools/higgsfield/`. `tsc --noEmit` passou sem erro. O build de produção passou.
 
@@ -158,3 +158,4 @@ A página `/materiais/marmore-dolomitico/` passa a abrir com 4 cartões: o Branc
 - 2026-11-14 · criada (backlog) · claude-code/opus (pedido da cliente de 11/11 lido no Zapmind; entrevista micro com o Vitor, 2 rodadas)
 - 2026-11-14 · backlog → em-desenvolvimento · desenvolvedor ("Aprovo, pode começar" na conversa)
 - 2026-11-14 · em-desenvolvimento → em-revisao · claude-code/opus (build, suíte e Lighthouse ok; sem push, autonomia 0)
+- 2026-11-15 · publicada na raiz (main d9a099f) e em /1 (versao-1 969942d), deploys ok e CA-6 conferido · claude-code/opus ("Sim, publica" do desenvolvedor)
