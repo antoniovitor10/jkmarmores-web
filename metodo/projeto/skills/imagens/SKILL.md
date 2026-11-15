@@ -26,15 +26,17 @@ metadata:
 - A credencial fica em `tools/higgsfield/.env.local` (variável `HF_CREDENTIALS`), lida só por `node --env-file`. Esse arquivo está em `seguranca.arquivos_proibidos`: nunca abra, imprima ou copie.
 - Prompts e parâmetros de cada rodada ficam em JSON em `docs/proposta/` (ex.: `quarta-prova-api.json`, `sequencia-clipes-api.json`). Siga o padrão: prompt completo, modelo, seed, proporção, resultado.
 - Nunca envie a logo, fotos da cliente ou dados da empresa para a API sem autorização explícita.
+- A chave da API venceu em 26/10/2026; antes de usar, renove em `tools/higgsfield/.env.local`. O script `tools/higgsfield/t0010-pedras.mjs` estima e gera close de chapa com `z-image/turbo` ou `qwen-image-3/edit`.
 
 ## Codex (agente Astra)
 
-- A partir da HU-0001 as imagens são geradas pelo Codex (`image_generation`, nativo no Codex CLI 0.163), rodando como agente Astra. Consome o plano do Vitor, sem cobrança por imagem na API.
+- A partir da HU-0001 as imagens são geradas pelo Codex (`image_generation`, nativo no Codex CLI 0.166), rodando como agente Astra. Consome o plano do Vitor, sem cobrança por imagem na API.
 - **Registro (PRD D6 da HU-0001):** o prompt completo, as tentativas, a candidata escolhida e a avaliação vão em `docs/proposta/hu-0001-prompts.json`, uma chave por id. `assets-licencas.md` ganha uma linha por arquivo (arquivo, ferramenta, data, chave do prompt). A chave `_modelos` do JSON guarda os modelos de prompt de close de pedra e de ambiente aplicado. `node scripts/check-imagens-geradas.mjs` confere tudo isso, e também se as pastas de trabalho continuam fora do git (T-0001).
 - **Escolha da candidata (decisão do Vitor em 21/10/2026):** gere de 2 a 4 candidatas e escolha a mais próxima da pedra real. A medida é `node scripts/comparar-imagens-geradas.mjs <id>`: cor em Lab, contraste e porcentagem de pintas e veios contra as fotos reais. Some a isso a revisão visual lado a lado e uma segunda opinião cega do agy (`agy -p`, pedido só de leitura). Não é preciso esperar a aprovação do Vitor. Registre o parecer no relatório da task (T-0001).
 - **Fotos reais para comparar:** prefira chapa em close. Foto de bancada no ambiente puxa a claridade e o contraste da média. O Wikimedia Commons tem chapas de Calacatta com licença aberta (T-0001).
 - **Granitos:** diga no prompt a densidade de pintas (ex.: "well under 2 percent of the surface") e proíba o aspecto salpicado. Sem isso o gerador põe de 3 a 10 vezes mais pintas que a pedra real (Preto São Gabriel e Branco Itaúnas, T-0001).
-- **Saída:** o Codex grava em `~/.codex/generated_images/<sessão>/`. O sandbox dele no Windows não escreve nas pastas ignoradas pelo git, então quem orquestra copia o arquivo para `geradas/`. Os tamanhos vêm por volta de 1122×1402 (4:5) e 1672×941 (16:9). Para um retrato a partir de um 16:9, gere outra composição em vez de recortar (T-0001).
+- **Saída:** o Codex grava em `~/.codex/generated_images/<sessão>/`. O sandbox dele no Windows não escreve nas pastas ignoradas pelo git, então quem orquestra copia o arquivo para `geradas/`. Os tamanhos vêm por volta de 1122×1402 (4:5) e 1672×941 (16:9). Para um retrato a partir de um 16:9, gere outra composição em vez de recortar (T-0001). Desde a 0.166, o retrato vem em 1024×1536 (2:3); recorte pelo centro para 4:5 (1024×1280) e registre o recorte no `assets-licencas.md` (T-0010).
+- **Referências:** use como referência só close de chapa; foto de ambiente (sala, piso, bancada montada) puxa o gerador para o lado errado (T-0010).
 
 ## Vídeos
 

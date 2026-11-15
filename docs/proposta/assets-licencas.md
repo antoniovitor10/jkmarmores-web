@@ -313,3 +313,13 @@ Geradas em 2026-10-31 com o Codex CLI 0.166.0 (`image_generation`, agente Astra)
 | assets/images/pedra-quartzito-fusion.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-fusion` | 1024×1280 (recorte 4:5 de 1024×1536) |
 | assets/images/pedra-quartzito-azul-macaubas.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-azul-macaubas` | 1024×1280 (recorte 4:5 de 1024×1536) |
 | assets/images/pedra-quartzito-verde-alexandrita.png | Codex CLI 0.166.0, image_generation (Astra); modelo não exposto pela ferramenta | 2026-10-31 | `pedra-quartzito-verde-alexandrita` | 1024×1280 (recorte 4:5 de 1024×1536) |
+
+
+## T-0014: Branco Paraná Monte Cristo e Macchia Oro, gerados pelo Codex (Astra)
+
+Geradas em 2026-11-14 com o Codex CLI 0.167.1 (`image_generation`, agente Astra), no plano do Vitor, sem cobrança por imagem. Mesmo protocolo da T-0010: fotos de fornecedores só como referência de cor e veio, fora do git e sem URL registrada; nenhuma imagem é cópia delas (ADR-0001); nada da cliente foi enviado ao gerador; sem aviso de IA no site (princípio 6). Os nomes foram pedidos pela cliente em 11/11/2026. O Branco Paraná e o Branco Paraná Matarazzo de dolomíticos reusam as imagens de mármores (`pedra-marmore-branco-parana` e `pedra-marmore-parana-matarazzo`) pelo campo `imagem` do `pedras.json`, sem arquivo novo. Prompt, tentativas e avaliação em [hu-0001-prompts.json](hu-0001-prompts.json), com `"task": "T-0014"`.
+
+| Arquivo | Ferramenta | Data | Chave do prompt | Tamanho |
+|---|---|---|---|---|
+| assets/images/pedra-marmore-dolomitico-branco-parana-monte-cristo.png | Codex CLI 0.167.1, image_generation (Astra); modelo não exposto pela ferramenta | 2026-11-14 | `pedra-marmore-dolomitico-branco-parana-monte-cristo` | 1122×1402, sem recorte |
+| assets/images/pedra-marmore-dolomitico-branco-parana-macchia-oro.png | Codex CLI 0.167.1, image_generation (Astra); modelo não exposto pela ferramenta | 2026-11-14 | `pedra-marmore-dolomitico-branco-parana-macchia-oro` | 1122×1402, sem recorte |

@@ -32,7 +32,7 @@ for (const pedra of pedras) {
     for (const { arquivo, texto } of paginas) if (texto.includes(marca)) problemas.push(`${pedra.slug}: oculta, mas está em ${path.relative(process.cwd(), arquivo)}`);
     continue;
   }
-  if (!manifesto[`pedra-${pedra.slug}`]) { semImagem.push(pedra.slug); continue; }
+  if (!manifesto[pedra.imagem ?? `pedra-${pedra.slug}`]) { semImagem.push(pedra.slug); continue; }
   const pagina = paginas.find(({ arquivo }) => arquivo === path.join(out, "materiais", pedra.categoria, "index.html"));
   if (!pagina || !pagina.texto.includes(marca)) problemas.push(`${pedra.slug}: visível com imagem, mas não está em out/materiais/${pedra.categoria}/`);
 }

@@ -3,7 +3,7 @@ id: T-0003
 titulo: "Imagens das 31 pedras restantes do catálogo"
 hu: HU-0001
 trilha: funcionalidade
-status: em-teste
+status: concluida
 depende_de: [T-0001]
 cobre: [CA-1, CA-11]
 complexidade: 4
@@ -17,8 +17,8 @@ bloqueios: 0
 ca_nao_verificados: 0
 testes_criados: 0
 testes_pegam: 0
-revisao_humana: ""
-homologacao: ""
+revisao_humana: "aprovado"
+homologacao: "ok"
 ---
 
 # T-0003 · Imagens das 31 pedras restantes do catálogo
@@ -232,3 +232,4 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-21 · handoff (parado a pedido do Vitor para liberar memória; 31 escolhas feitas, falta o parecer do agy e a entrada no repositório) · claude-code/opus
 - 2026-10-21 · retomada e concluída; em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
 - 2026-10-21 · em-revisao → em-teste · desenvolvedor · movida no quadro do Batuta
+- 2026-11-02 · em-teste → concluida · desenvolvedor ("Sim, fecha a HU-0001" na conversa); revisão humana: aprovado; homologação: ok

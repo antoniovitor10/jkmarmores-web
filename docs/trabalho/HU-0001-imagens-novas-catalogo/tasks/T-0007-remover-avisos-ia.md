@@ -3,7 +3,7 @@ id: T-0007
 titulo: "Remover os avisos de IA e de imagem ilustrativa do site"
 hu: HU-0001
 trilha: funcionalidade
-status: em-teste
+status: concluida
 depende_de: []
 cobre: [CA-8]
 complexidade: 3
@@ -17,8 +17,8 @@ bloqueios: 0
 ca_nao_verificados: 1
 testes_criados: 4
 testes_pegam: 4
-revisao_humana: ""
-homologacao: ""
+revisao_humana: "aprovado"
+homologacao: "ok"
 ---
 
 # T-0007 · Remover os avisos de IA e de imagem ilustrativa do site
@@ -164,3 +164,4 @@ Resultado: <a marcar por quem homologa>
 - 2026-10-21 · execução iniciada na branch task/T-0007-remover-avisos-ia (a partir de task/T-0006) · claude-code/opus
 - 2026-10-21 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução (CA-15 parcial, ver pendências); sem push (autonomia 0)
 - 2026-10-21 · em-revisao → em-teste · desenvolvedor · movida no quadro do Batuta
+- 2026-11-02 · em-teste → concluida · desenvolvedor ("Sim, fecha a HU-0001" na conversa); revisão humana: aprovado; homologação: ok

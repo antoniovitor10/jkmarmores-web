@@ -24,9 +24,9 @@ metadata:
 - **Antes de pedir o push**, a task traz no relatório: build com o `SITE_MODE` do destino, `npx playwright test`, Lighthouse mobile da página tocada e a lista do que muda no ar.
 - **Depois do deploy:** Actions com sucesso, HTTP 200 na URL, conferir `meta robots` (produção sem `noindex` nas páginas indexáveis; versões com `noindex`), `robots.txt` e `sitemap.xml`.
 
-## Estado em 2026-10-20
+## Estado em 2026-11-02
 
-- A raiz está no ar desde 02/10 com a versão 1: último deploy por push na `main` em `694cd01` (02/10, sucesso), `SITE_MODE=producao`. A branch `producao` aponta para o mesmo commit e fica como histórico.
+- A raiz está no ar com a versão 2 (fundo branco, fonte Source Serif 4, navegação da T-0013); último deploy de código em `74535f2` (01/11), `SITE_MODE=producao`. `/1` está igual à raiz, sem indexação. A branch `producao` segue em `694cd01`, como histórico do lançamento.
 - SSL Let's Encrypt (*.jkmarmores.com.br + apex) vence em 25/12/2026; o DirectAdmin renova sozinho, mas confira.
 - Pendente do lançamento (`docs/deploy.md`): Search Console (verificar o domínio e enviar o sitemap) e trocar o link "Site" do Perfil da Empresa no Google (pendência D9).
 

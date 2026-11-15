@@ -21,3 +21,6 @@ docs/trabalho/HU-0001-imagens-novas-catalogo/geradas/
 # T-0010: referências da web e candidatas geradas também ficam fora do git (ADR-0001)
 docs/trabalho/avulsas/T-0010/referencias/
 docs/trabalho/avulsas/T-0010/geradas/
+# T-0014: idem
+docs/trabalho/avulsas/T-0014/referencias/
+docs/trabalho/avulsas/T-0014/geradas/

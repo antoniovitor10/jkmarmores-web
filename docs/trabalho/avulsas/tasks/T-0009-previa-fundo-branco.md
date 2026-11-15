@@ -3,7 +3,7 @@ id: T-0009
 titulo: "Prévia do site com fundo branco em /1"
 hu: avulsa
 trilha: micro
-status: em-revisao
+status: concluida
 depende_de: []
 cobre: []
 complexidade: 5
@@ -17,7 +17,7 @@ bloqueios: 0
 ca_nao_verificados: 0
 testes_criados: 6
 testes_pegam: 2
-revisao_humana: ""
+revisao_humana: "aprovado"
 homologacao: ""
 ---
 
@@ -132,3 +132,4 @@ nenhum
 - 2026-10-31 · execução iniciada na branch task/T-0009-previa-fundo-branco (a partir de main, cf105f4) · claude-code/opus
 - 2026-10-31 · em-desenvolvimento → em-revisao · claude-code/opus · relatório na seção Execução; sem push (autonomia 0)
 - 2026-10-31 · publicada em /1 · claude-code/opus · Vitor na conversa: "Sim, publica em /1". Merge na versao-1 (3e989d2) e push; Actions 41239485668 com sucesso; /1/ e 9 páginas com 200 e noindex; raiz intacta (index, monograma original)
+- 2026-11-02 · em-revisao → concluida · desenvolvedor ("Sim, conclui as duas" na conversa); revisão humana: aprovado. A prévia virou o site principal pela T-0012.

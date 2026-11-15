@@ -600,6 +600,40 @@
       }
     ]
   },
+  "pedra-marmore-dolomitico-branco-parana-macchia-oro": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBQCdASoYAB4APu1cqE6ppKQiN/qoATAdiWcAzBwj+39wt8kja8P4ELni3DPhfph9YAD+5+3JHIySAsk+L3rxTs2J9F35OMR6prl9leGc1WIYe4RmiorVm1dZxvu5Hxx9UmnMoNQ+Z4j1icWjVVp/9mWzsgLhK7pHIjUUXOWJhpELigAAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-dolomitico-branco-parana-macchia-oro-390.avif",
+        "webp": "/img/pedra-marmore-dolomitico-branco-parana-macchia-oro-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-dolomitico-branco-parana-macchia-oro-768.avif",
+        "webp": "/img/pedra-marmore-dolomitico-branco-parana-macchia-oro-768.webp"
+      }
+    ]
+  },
+  "pedra-marmore-dolomitico-branco-parana-monte-cristo": {
+    "width": 1122,
+    "height": 1402,
+    "placeholder": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAwAwCdASoYAB4APwF0r1K2pqQiqAqq0CAJaQAAPgGUHgUAAP7p2r85G8tRuSvKDAXaPXMpWE0LvpJX2EtNqxgE9AAAAA==",
+    "variantes": [
+      {
+        "width": 390,
+        "avif": "/img/pedra-marmore-dolomitico-branco-parana-monte-cristo-390.avif",
+        "webp": "/img/pedra-marmore-dolomitico-branco-parana-monte-cristo-390.webp"
+      },
+      {
+        "width": 768,
+        "avif": "/img/pedra-marmore-dolomitico-branco-parana-monte-cristo-768.avif",
+        "webp": "/img/pedra-marmore-dolomitico-branco-parana-monte-cristo-768.webp"
+      }
+    ]
+  },
   "pedra-marmore-dolomitico-donatello": {
     "width": 1024,
     "height": 1280,
